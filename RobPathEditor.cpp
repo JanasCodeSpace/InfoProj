@@ -22,23 +22,9 @@ int main()
 
 	try
 	{
-		CPointSequencer pointSequencer;
-		pointSequencer.createSegments(imgProcessor.getBinaryArrayThinned(), bmpHandler.getWidth(), bmpHandler.getHeight());
-		bmpHandler.drawOnBitmap(pointSequencer.getSegmentsVector(), binary, pixel);
-		bmpHandler.saveWorkingImage("05_segmentsOnBinary.bmp");
-
-		CSegmentApproximator segmentApproximator;
-		segmentApproximator.approx(pointSequencer.getSegmentsVector(), 5.0);
-		bmpHandler.drawOnBitmap(segmentApproximator.getSegmentsApproxVector(), working, lineConnect);
-		bmpHandler.saveWorkingImage("06_segmentsApproxOnBinary.bmp");
-	
-		CSegmentSequencer segmentSequencer;
-		segmentSequencer.sortSegments(segmentApproximator.getSegmentsApproxVector());
-		bmpHandler.drawOnBitmap(segmentSequencer.getSegmentsSortedVector(), binary, lineConnect);
-		bmpHandler.saveWorkingImage("07_segmentsSortedOnBinary.bmp");
 
 		CPathBuilder pathBuilder;
-		pathBuilder.createPath(segmentSequencer.getSegmentsSortedVector(), "08_path.csv");
+		
 
 		CRobCodeGenerator codeGenerator;
 		codeGenerator.scaleX = 0.7;
@@ -51,7 +37,6 @@ int main()
 	
 	
 		float elapsed = (float)(clock() - start) / CLOCKS_PER_SEC;
-		printf("Elapsed time: %f\n", elapsed);
 	}
 
 	catch (exception& e)

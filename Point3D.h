@@ -1,4 +1,7 @@
 
+class CLine3D;
+
+using namespace std;
 
 #pragma once
 class CPoint3D
@@ -17,6 +20,8 @@ public:
 	void setZ(double Z);
 
 	void set(double X, double Y, double Z);
+	double distanceTo(CPoint3D point);
+	double distanceTo(CLine3D line);
 
 private:
 	double x, y, z;

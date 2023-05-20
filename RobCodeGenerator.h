@@ -1,7 +1,6 @@
 #include <vector>
 #include <list>
 #include <iostream>
-#include "Point2D.h"
 #include "Point3D.h"
 
 using namespace std;

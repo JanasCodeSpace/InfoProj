@@ -80,26 +80,17 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="bitmap_image.h" />
-    <ClInclude Include="BmpHandler.h" />
-    <ClInclude Include="ImgProcessor.h" />
-    <ClInclude Include="Line2D.h" />
+    <ClInclude Include="..\..\RobPathEditor\RobPathEditor\Line3D.h" />
     <ClInclude Include="PathBuilder.h" />
-    <ClInclude Include="Point2D.h" />
     <ClInclude Include="Point3D.h" />
-    <ClInclude Include="PointSequencer.h" />
     <ClInclude Include="RobCodeGenerator.h" />
     <ClInclude Include="SegmentApproximator.h" />
     <ClInclude Include="SegmentSequencer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BmpHandler.cpp" />
-    <ClCompile Include="ImgProcessor.cpp" />
-    <ClCompile Include="Line2D.cpp" />
+    <ClCompile Include="Line3D.cpp" />
     <ClCompile Include="PathBuilder.cpp" />
-    <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="Point3D.cpp" />
-    <ClCompile Include="PointSequencer.cpp" />
     <ClCompile Include="RobCodeGenerator.cpp" />
     <ClCompile Include="RobPathEditor.cpp" />
     <ClCompile Include="SegmentApproximator.cpp" />

@@ -1,4 +1,6 @@
 #include "Point3D.h"
+#include "Line3D.h"
+#include <math.h>
 
 
 
@@ -56,4 +58,27 @@ void CPoint3D::set(double X, double Y, double Z)
 	x = X;
 	y = Y;
 	z = Z;
+}
+double CPoint3D::distanceTo(CPoint3D point)
+{
+	return sqrt(pow((double)(x - (double)point.getX()), 2) + pow((double)(y - (double)point.getY()), 2));
+}
+
+double CPoint3D::distanceTo(CLine3D line)
+{
+	double bx, by, bz, rv_sq, dist;
+
+	int rvx = line.p1.x - line.p2.x;
+	int rvy = line.p1.y - line.p2.y;
+	int rvz = line.p1.z - line.p2.z;
+
+	rv_sq = ((double)rvx * (double)rvx) + ((double)rvy * (double)rvy);
+
+	bx = x - (double)line.p1.x;
+	by = y - (double)line.p1.y;
+	bz = z - (double)line.p1.z;
+
+	dist = fabs((bx * rvy - by * rvx)) / sqrt(rv_sq);
+
+	return dist;
 }

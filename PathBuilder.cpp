@@ -14,7 +14,7 @@ vector<CPoint3D>& CPathBuilder::getPath()
 	return path;
 }
 
-void CPathBuilder::createPath(vector<list<CPoint2D>>& segments, string filename)
+void CPathBuilder::createPath(vector<list<CPoint3D>>& segments, string filename)
 {
 
 	FILE* fid = fopen(filename.c_str(), "w");
@@ -34,7 +34,7 @@ void CPathBuilder::createPath(vector<list<CPoint2D>>& segments, string filename)
 
 	for (size_t s = 0; s < segments.size(); s++) //for all segments
 	{
-		list<CPoint2D>::iterator itr = segments[s].begin();
+		list<CPoint3D>::iterator itr = segments[s].begin();
 
 		point.set((double)itr->getX(), (double)itr->getY(), (double)0 + zOffset); //point over start of segment
 		path.push_back(point);

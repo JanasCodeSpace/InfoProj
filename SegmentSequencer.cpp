@@ -1,4 +1,5 @@
 #include "SegmentSequencer.h"
+#include "Point3D.h"
 
 CSegmentSequencer::CSegmentSequencer(void)
 {
@@ -10,16 +11,16 @@ CSegmentSequencer::~CSegmentSequencer(void)
 }
 
 
-vector<list<CPoint2D>>& CSegmentSequencer::getSegmentsSortedVector()
+vector<list<CPoint3D>>& CSegmentSequencer::getSegmentsSortedVector()
 {
 	return segmentsSorted;
 }
 
-void CSegmentSequencer::sortSegments(const vector<list<CPoint2D>>& segments)
+void CSegmentSequencer::sortSegments(const vector<list<CPoint3D>>& segments)
 {
-	vector<list<CPoint2D>> segmentsCopy = segments;
+	vector<list<CPoint3D>> segmentsCopy = segments;
 
-	CPoint2D currPoint = CPoint2D(0,0); //Start at x = 0, y = 0
+	CPoint3D currPoint = CPoint3D(0,0,0); //Start at x = 0, y = 0
 
 	double dist, minDist;
 	size_t minIndex; 

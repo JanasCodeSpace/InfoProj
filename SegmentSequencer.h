@@ -1,8 +1,12 @@
 #include <vector>
 #include <list>
-#include "Point2D.h"
+
+
+#pragma once
+#include "Point3D.h"
 
 using namespace std;
+
 
 #pragma once
 class CSegmentSequencer
@@ -11,13 +15,13 @@ public:
 	CSegmentSequencer(void);
 	~CSegmentSequencer(void);
 
-	vector<list<CPoint2D>>& getSegmentsSortedVector();
+	vector<list<CPoint3D>>& getSegmentsSortedVector();
 
-	void sortSegments(const vector<list<CPoint2D>>& segments);
+	void sortSegments(const vector<list<CPoint3D>>& segments);
 
 private:
 	
-	vector<list<CPoint2D>> segmentsSorted;
+	vector<list<CPoint3D>> segmentsSorted;
 
 };
 
