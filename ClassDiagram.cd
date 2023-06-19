@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CPathBuilder">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAAAAAAAAAACAAIAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>PathBuilder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPoint3D">
+    <Position X="5" Y="2" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAASAIAAAAAAAAQWAAAAAAAAAAAAAABgAWABAAA=</HashCode>
+      <FileName>Point3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRobCodeGenerator">
+    <Position X="12.75" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAADAAgAAAAADAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>RobCodeGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSegmentApproximator">
+    <Position X="8.5" Y="4.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAQAAAAAABAIEAAAAAAABAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>SegmentApproximator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSegmentSequencer">
+    <Position X="9" Y="2" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAARACAIAAA=</HashCode>
+      <FileName>SegmentSequencer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,7 +1,3 @@
-//#include "bitmap_image.h"
-//#include "BmpHandler.h"
-//#include "ImgProcessor.h"
-//#include "PointSequencer.h"
 #include "SegmentApproximator.h"
 #include "SegmentSequencer.h"
 #include "PathBuilder.h"
@@ -22,11 +18,15 @@ int main()
 
 	try
 	{
+		//read Data
+
+		//
 
 		CPathBuilder pathBuilder;
 		
 
 		CRobCodeGenerator codeGenerator;
+
 		codeGenerator.scaleX = 0.7;
 		codeGenerator.scaleY = -0.7;
 		codeGenerator.scaleZ = 50.0;
