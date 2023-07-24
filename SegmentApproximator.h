@@ -23,6 +23,6 @@ private:
 
 	double maxDistance;
 	void douglasPeuckerRecursive(list<CPoint3D>& segment, std::list<CPoint3D>::iterator startItr, std::list<CPoint3D>::iterator endItr, double maxDistance);
-	double calcDist(int xS, int yS, int xE, int yE, int x, int y);
+	double calcDist(int xS, int yS, int zS, int xE, int yE, int zE, int x, int y, int z);
 
 };
