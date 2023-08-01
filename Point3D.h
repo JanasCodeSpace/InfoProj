@@ -9,8 +9,8 @@ class CPoint3D
 {
 public:
 	CPoint3D(void);
-	CPoint3D(double x, double y, double z);
-	CPoint3D(double time, double x, double y, double z);
+	CPoint3D(double X, double Y, double Z);
+	CPoint3D(double time, double X, double Y, double Z);
 	~CPoint3D(void);
 
 	double getTime();
