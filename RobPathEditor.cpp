@@ -2,6 +2,8 @@
 #include "SegmentSequencer.h"
 #include "PathBuilder.h"
 #include "RobCodeGenerator.h"
+#include "CGUI.h"
+#include <QtWidgets/QApplication>
 #include <iostream>
 #include <valarray>
 #include <ctime>
@@ -15,6 +17,10 @@ int main()
 	//TODO: alte Bilder L�schen!
 	clock_t start;
 	start = clock();
+
+	QApplication a(argc, argv);
+	QtWidgetsApplication1 w;
+	w.show();
 
 	try
 	{

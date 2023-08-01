@@ -1,5 +1,6 @@
 
 class CLine3D;
+class CEulerMatrix;
 
 using namespace std;
 
@@ -25,5 +26,8 @@ public:
 
 private:
 	double x, y, z;
+	double timestamp;
+	CEulerMatrix orientationMatrix;
+
 };
 
