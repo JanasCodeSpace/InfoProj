@@ -18,9 +18,14 @@ CPoint3D::CPoint3D(double X, double Y, double Z)
 	z = Z;
 }
 
-
 CPoint3D::~CPoint3D(void)
 {
+}
+
+
+double CPoint3D::getTime()
+{
+	return timestamp;
 }
 
 double CPoint3D::getX(void)
@@ -38,6 +43,18 @@ double CPoint3D::getZ(void)
 	return z;
 }
 
+CEulerMatrix CPoint3D::getEulerMatrix()
+{
+	return orientationMatrix;
+}
+
+
+
+void CPoint3D::setTime(double time)
+{
+	timestamp = time;
+}
+
 void CPoint3D::setX(double X)
 {
 	x = X;
@@ -53,12 +70,27 @@ void CPoint3D::setZ(double Z)
 	z = Z;
 }
 
+void CPoint3D::setEulerMatrix(CEulerMatrix orientation)
+{
+	orientationMatrix = orientation;
+}
+
+
+void CPoint3D::setPoint(double time, double X, double Y, double Z, CEulerMatrix orientation)
+{
+	setTime(time);
+	set(X, Y, Z);
+	setEulerMatrix(orientation);
+}
+
 void CPoint3D::set(double X, double Y, double Z)
 {
 	x = X;
 	y = Y;
 	z = Z;
 }
+
+
 double CPoint3D::distanceTo(CPoint3D point)
 {
 	return sqrt(pow((double)(x - (double)point.getX()), 2) + pow((double)(y - (double)point.getY()), 2));
