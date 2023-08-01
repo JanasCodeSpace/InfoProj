@@ -1,4 +1,3 @@
-
 #include "EulerMatrix.h"
 
 class CLine3D;
@@ -17,7 +16,7 @@ public:
 	double getX();
 	double getY();
 	double getZ();
-	CEulerMatrix getEulerMatrix(); // Wie zum Fick??
+	CEulerMatrix getEulerMatrix();
 
 	void setTime(double time);
 	void setX(double X);
