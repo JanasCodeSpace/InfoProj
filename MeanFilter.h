@@ -19,9 +19,9 @@ public:
 	void mean(double* target);
 
 private:
-	int windowsize;
+	int windowSize;
 	int position;
-	long lenthofarray;
+	long lengthArray;
 
 };
 

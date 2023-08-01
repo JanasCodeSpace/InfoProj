@@ -19,38 +19,38 @@ CMeanFilter::~CMeanFilter()
 
 void CMeanFilter::setWindowSize(int Window)
 {
-	windowsize = Window;
+	windowSize = Window;
 }
 
 void CMeanFilter::setLenth(long lenth)
 {
-	lenthofarray = lenth;
+	lengthArray = lenth;
 }
 
 int CMeanFilter::getWindowSize()
 {
-	return windowsize;
+	return windowSize;
 }
 
 long CMeanFilter::getlenth()
 {
-	return lenthofarray;
+	return lengthArray;
 }
 
 void CMeanFilter::mean(double* target)
 {
-	double* buffer = new double[lenthofarray];		// Speicher für bufferarray reservieren
+	double* buffer = new double[windowSize];		// Speicher für bufferarray reservieren
 
 	int i = 0;
 	int m = 0;
 
-	for( ; i < windowsize / 2; i++)		// erste Hälfte des Arrays für das ererchnen des ersten Wertes belegen
+	for( ; i < windowSize / 2; i++)		// erste Hälfte des Arrays für das berechnen des ersten Wertes belegen
 	{
 		buffer = target + i;
 		buffer++;
 	}
 
-	while (i != lenthofarray)
+	while (i != lengthArray)
 	{
 		
 
