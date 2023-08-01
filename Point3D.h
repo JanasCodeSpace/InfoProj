@@ -10,6 +10,7 @@ class CPoint3D
 public:
 	CPoint3D(void);
 	CPoint3D(double x, double y, double z);
+	CPoint3D(double time, double x, double y, double z);
 	~CPoint3D(void);
 
 	double getTime();

@@ -6,13 +6,15 @@
 
 CPoint3D::CPoint3D(void)
 {
+	timestamp = 0;
 	x = 0;
 	y = 0;
 	z = 0;
 }
 
-CPoint3D::CPoint3D(double X, double Y, double Z)
+CPoint3D::CPoint3D(double time, double X, double Y, double Z)
 {
+	timestamp = time;
 	x = X;
 	y = Y;
 	z = Z;
