@@ -1,6 +1,7 @@
 
+#include "EulerMatrix.h"
+
 class CLine3D;
-class CEulerMatrix;
 
 using namespace std;
 

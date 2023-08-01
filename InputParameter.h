@@ -1,6 +1,6 @@
 #pragma once
 
-#include"EulerMatrix.h"
+#include "EulerMatrix.h"
 
 class CInputParameter
 {
