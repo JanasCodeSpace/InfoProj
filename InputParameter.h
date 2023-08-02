@@ -7,6 +7,7 @@
 #include <list>
 #include <iostream>
 #include <fstream>
+#include <sstream> 
 
 using namespace std;
 
@@ -16,9 +17,8 @@ public:
 	CInputParameter(void);
 	~CInputParameter(void);
 
-	vector<CPoint3D>& CInputParameter::getPath();
-
-	void openFile(std::string path, vector<CPoint3D>& point);
+	void openFile(std::string path);
+	void saveData(string line);
 private:
 	vector<CPoint3D> initialPath;
 	double speed;

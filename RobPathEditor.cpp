@@ -1,9 +1,8 @@
 #include "SegmentApproximator.h"
-#include "SegmentSequencer.h"
 #include "PathBuilder.h"
 #include "RobCodeGenerator.h"
-#include "CGUI.h"
-#include <QtWidgets/QApplication>
+#include "InputParameter.h"
+#include "GUI.h"
 #include <iostream>
 #include <valarray>
 #include <ctime>
@@ -18,13 +17,15 @@ int main()
 	clock_t start;
 	start = clock();
 
-	QApplication a(argc, argv);
-	QtWidgetsApplication1 w;
-	w.show();
-
 	try
 	{
 		//read Data
+
+		CInputParameter inputParameter;
+
+		string path = "path_01.csv";
+
+		inputParameter.openFile(path);
 
 		//
 
