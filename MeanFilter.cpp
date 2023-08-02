@@ -39,26 +39,63 @@ long CMeanFilter::getlenth()
 
 void CMeanFilter::mean(double* target)
 {
-	double* buffer = new double[windowSize];		// Speicher für bufferarray reservieren
+	double sum = 0;		// oder long??
+	double div = 0;
 
 	int i = 0;
 	int m = 0;
+	int OffsetPos = 0;
+	int OffsetNeg = 0;
 
-	for( ; i < windowSize / 2; i++)		// erste Hälfte des Arrays für das berechnen des ersten Wertes belegen
+	if (windowSize % 2)
+	// ungerades Fenster
 	{
-		buffer = target + i;
-		buffer++;
+		OffsetPos = windowSize / 2;
+		OffsetNeg = windowSize / 2;
+	}
+	else
+	// gerades Fenster
+	{
+		OffsetPos = (windowSize / 2) - 1;
+		OffsetNeg = windowSize / 2;
 	}
 
-	while (i != lengthArray)
+	for (i = 0; i < lengthArray; i++)
 	{
-		
+		double* source = target;
+		sum = 0;
+		div = 0;
 
+		//positiven Offset addieren
+		for (m = 0; m < OffsetPos; m++)
+		{
+			if ((i + m) > lengthArray)
+			{
+				break;
+			}
 
+			sum += *source;
+			div++;
+			*source++;
+		}
+
+		*source =- m;
+
+		// negatives Offset addieren
+		for (m = 1; m < OffsetNeg; m++ )
+		{
+			if ((i - m) < 0)
+			{
+				break;
+			}
+
+			sum += *source;
+			div++;
+			*source--;
+		}
+
+		*target = sum / div;
+		target++;
 	}
 
-
-
-
-	delete[] buffer;
 }

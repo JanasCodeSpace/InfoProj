@@ -22,6 +22,5 @@ private:
 	int windowSize;
 	int position;
 	long lengthArray;
-
 };
 
