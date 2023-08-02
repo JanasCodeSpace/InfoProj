@@ -81,7 +81,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="EulerMatrix.h" />
-    <ClInclude Include="FileHandler.h" />
     <ClInclude Include="GUI.h" />
     <ClInclude Include="InputParameter.h" />
     <ClInclude Include="Line3D.h" />
@@ -90,11 +89,9 @@
     <ClInclude Include="Point3D.h" />
     <ClInclude Include="RobCodeGenerator.h" />
     <ClInclude Include="SegmentApproximator.h" />
-    <ClInclude Include="SegmentSequencer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EulerMatrix.cpp" />
-    <ClCompile Include="FileHandler.cpp" />
     <ClCompile Include="GUI.cpp" />
     <ClCompile Include="InputParameter.cpp" />
     <ClCompile Include="Line3D.cpp" />
@@ -104,7 +101,6 @@
     <ClCompile Include="RobCodeGenerator.cpp" />
     <ClCompile Include="RobPathEditor.cpp" />
     <ClCompile Include="SegmentApproximator.cpp" />
-    <ClCompile Include="SegmentSequencer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

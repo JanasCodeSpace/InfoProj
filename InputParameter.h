@@ -8,17 +8,25 @@
 #include <iostream>
 #include <fstream>
 
+using namespace std;
+
 class CInputParameter
 {
-	float speed;
+public:
+	CInputParameter(void);
+	~CInputParameter(void);
+
+	vector<CPoint3D>& CInputParameter::getPath();
+
+	void openFile(std::string path, vector<CPoint3D>& point);
+private:
+	vector<CPoint3D> initialPath;
+	double speed;
 	bool speedManual;
 	bool orientationManual;
-	float lengthA;
-	float lengthB;
-	float lengthC;
+	double lengthA;
+	double lengthB;
+	double lengthC;
 	CEulerMatrix inputMatrix;
-
-public:
-	void openFile(std::string path, list<CPoint3D>& point);
 };
 

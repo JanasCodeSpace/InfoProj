@@ -1,12 +1,10 @@
 #pragma once
 
-#include <gtkmm/button.h>
 
-class CGUI  : public QObject
+class CGUI
 {
-	Q_OBJECT
 
 public:
-	CGUI(QWidget *parent);
+	CGUI();
 	~CGUI();
 };
