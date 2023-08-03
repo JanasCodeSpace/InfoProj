@@ -15,6 +15,8 @@ public:
 	~CSegmentApproximator(void);
 
 	void approx(const vector<list<CPoint3D>>& Segments, double maxDistance);
+	void setmaxDistance(double maxDistanceSource);
+	double getmaxDistance();
 
 	vector<list<CPoint3D>>& getSegmentsApproxVector();
 

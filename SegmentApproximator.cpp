@@ -23,6 +23,16 @@ void CSegmentApproximator::approx(const vector<list<CPoint3D>>& segments, double
 
 }
 
+void CSegmentApproximator::setmaxDistance(double maxDistanceSource)
+{
+	maxDistance = maxDistanceSource;
+}
+
+double CSegmentApproximator::getmaxDistance()
+{
+	return maxDistance;
+}
+
 vector<list<CPoint3D>>& CSegmentApproximator::getSegmentsApproxVector()
 {
 	return segmentsApprox;
