@@ -6,7 +6,8 @@
 /* initialisieren des Punktes */
 CPoint3D::CPoint3D(void)
 {
-	x = 0;
+	timestamp = 0;
+ 	x = 0;
 	y = 0;
 	z = 0;
 }
@@ -14,17 +15,31 @@ CPoint3D::CPoint3D(void)
 /* setzte X Y Z */
 CPoint3D::CPoint3D(double X, double Y, double Z)
 {
+	timestamp = 0;					// Kann das zu Prolemen f�hren??
 	x = X;
 	y = Y;
 	z = Z;
 }
 
+CPoint3D::CPoint3D(double time, double X, double Y, double Z)
+{
+	timestamp = time;
+	x = X;
+	y = Y;
+	z = Z;
+
+}
 
 CPoint3D::~CPoint3D(void)
 {
 }
 
-/* setze jeweils X Y Z */
+
+double CPoint3D::getTime()
+{
+	return timestamp;
+}
+
 double CPoint3D::getX(void)
 {
 	return x;
@@ -40,7 +55,18 @@ double CPoint3D::getZ(void)
 	return z;
 }
 
-/* Ausgabe X Y Z */
+CEulerMatrix CPoint3D::getEulerMatrix()
+{
+	return orientationMatrix;
+}
+
+
+
+void CPoint3D::setTime(double time)
+{
+	timestamp = time;
+}
+
 void CPoint3D::setX(double X)
 {
 	x = X;
@@ -56,7 +82,19 @@ void CPoint3D::setZ(double Z)
 	z = Z;
 }
 
-/* setzte X Y Z */
+void CPoint3D::setEulerMatrix(CEulerMatrix orientation)
+{
+	orientationMatrix = orientation;
+}
+
+
+void CPoint3D::setPoint(double time, double X, double Y, double Z, CEulerMatrix orientation)
+{
+	setTime(time);
+	set(X, Y, Z);
+	setEulerMatrix(orientation);
+}
+
 void CPoint3D::set(double X, double Y, double Z)
 {
 	x = X;
