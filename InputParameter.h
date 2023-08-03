@@ -11,6 +11,7 @@
 
 using namespace std;
 
+#pragma once
 class CInputParameter
 {
 public:
@@ -24,9 +25,9 @@ private:
 	double speed;
 	bool speedManual;
 	bool orientationManual;
-	double lengthA;
-	double lengthB;
-	double lengthC;
+	double A;
+	double B;
+	double C;
 	CEulerMatrix inputMatrix;
 };
 
