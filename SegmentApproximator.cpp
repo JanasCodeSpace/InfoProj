@@ -10,7 +10,7 @@ CSegmentApproximator::~CSegmentApproximator(void)
 {
 }
 
-void CSegmentApproximator::approx(const vector<list<CPoint3D>>& segments, double maxDistance)
+void CSegmentApproximator::approx(const vector<list<CPoint3D>>& segments)
 {
 	CPoint3D p;
 
