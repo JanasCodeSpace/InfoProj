@@ -1,3 +1,7 @@
+#include <vector>
+#include <list>
+#include "Point3D.h"
+
 #pragma once
 
 using namespace std;
@@ -14,13 +18,15 @@ public:
 	void setLenth(long lenth);
 
 	int getWindowSize();
-	long getlenth();
 
-	void mean(double* target);
+	vector<CPoint3D>& getPath();
+
+	void calculateMean(const vector<list<CPoint3D>>& sourcePath);
 
 private:
 	int windowSize;
 	int position;
-	long lengthArray;
+
+	vector<CPoint3D> path;
 };
 

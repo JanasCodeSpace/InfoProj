@@ -19,7 +19,7 @@ public:
 	~CInputParameter(void);
 
 	void openFile(std::string path);
-	void saveData(string line);
+
 private:
 	vector<CPoint3D> initialPath;
 	double speed;

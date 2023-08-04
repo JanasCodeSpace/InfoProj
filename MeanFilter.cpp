@@ -32,14 +32,16 @@ int CMeanFilter::getWindowSize()
 	return windowSize;
 }
 
-long CMeanFilter::getlenth()
+vector<CPoint3D>& CMeanFilter::getPath()
 {
-	return lengthArray;
+	return path;
 }
 
-void CMeanFilter::mean(double* target)
+void CMeanFilter::calculateMean(const vector<list<CPoint3D>>& sourcePath)
 {
-	double sum = 0;		// oder long??
+
+//TODO: anpassen damit CPoint3D verwendet wird
+	double sumX = 0, sumY = 0, sumZ = 0;		// oder long??
 	double div = 0;
 
 	int i = 0;
@@ -60,16 +62,16 @@ void CMeanFilter::mean(double* target)
 		OffsetNeg = windowSize / 2;
 	}
 
-	for (i = 0; i < lengthArray; i++)
+	for (i = 0; i < sourcePath.size(); i++)
 	{
-		double* source = target;
+		vector<list<CPoint3D>> source = sourcePath;
 		sum = 0;
 		div = 0;
 
 		//positiven Offset addieren
 		for (m = 0; m < OffsetPos; m++)
 		{
-			if ((i + m) > lengthArray)
+			if ((i + m) > sourcePath.size())
 			{
 				break;
 			}
