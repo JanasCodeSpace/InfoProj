@@ -20,7 +20,7 @@ public:
 	CEulerMatrix getEulerMatrix();
 
 	void setTime(double time);
-	void setSpeed(double speed);
+	void setSpeed(double speedIn);
 	void setX(double X);
 	void setY(double Y);
 	void setZ(double Z);

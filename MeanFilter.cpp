@@ -20,18 +20,17 @@ void CMeanFilter::setWindowSize(int Window)
 	windowSize = Window;
 }
 
-
 int CMeanFilter::getWindowSize()
 {
 	return windowSize;
 }
 
-list<CPoint3D>& CMeanFilter::getPath()
+vector<CPoint3D>& CMeanFilter::getPath()
 {
 	return path;
 }
 
-void CMeanFilter::calculateMean(vector<list<CPoint3D>>& sourcePath)
+void CMeanFilter::calculateMean(vector<CPoint3D>& sourcePath)
 {
 	double sumX = 0, sumY = 0, sumZ = 0;		// oder long??
 	double div = 0;

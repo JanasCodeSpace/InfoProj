@@ -19,10 +19,10 @@ public:
 	~CInputParameter(void);
 
 	void openFile(std::string path);
-	list<CPoint3D>& getPath();
+	vector<CPoint3D>& getPath();
 
 private:
-	list<CPoint3D> initialPath;
+	vector<CPoint3D> initialPath;
 	double speed;
 	bool speedManual;
 	bool orientationManual;

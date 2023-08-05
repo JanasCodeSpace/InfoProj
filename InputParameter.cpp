@@ -12,7 +12,7 @@ CInputParameter::~CInputParameter(void)
 
 }
 
-list<CPoint3D>& CInputParameter::getPath()
+vector<CPoint3D>& CInputParameter::getPath()
 {
 	return initialPath;
 }
