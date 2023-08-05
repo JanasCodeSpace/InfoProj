@@ -20,6 +20,7 @@ public:
 	CEulerMatrix getEulerMatrix();
 
 	void setTime(double time);
+	void setSpeed(double speed);
 	void setX(double X);
 	void setY(double Y);
 	void setZ(double Z);
@@ -33,6 +34,7 @@ public:
 private:
 	double x, y, z;
 	double timestamp;
+	double speed;
 	CEulerMatrix orientationMatrix;
 
 };

@@ -60,7 +60,10 @@ CEulerMatrix CPoint3D::getEulerMatrix()
 	return orientationMatrix;
 }
 
-
+void CPoint3D::setSpeed(double speedIn)
+{
+	speed = speedIn;
+}
 
 void CPoint3D::setTime(double time)
 {
