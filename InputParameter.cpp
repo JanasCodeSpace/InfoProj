@@ -12,6 +12,10 @@ CInputParameter::~CInputParameter(void)
 
 }
 
+list<CPoint3D>& CInputParameter::getPath()
+{
+	return initialPath;
+}
 
 void CInputParameter::openFile(string path)
 {
@@ -45,9 +49,3 @@ void CInputParameter::openFile(string path)
 	fin.close();
 
 }
-
-void CInputParameter::saveData(string line)
-{
-
-}
-

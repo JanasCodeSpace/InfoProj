@@ -2,6 +2,7 @@
 #include "PathBuilder.h"
 #include "RobCodeGenerator.h"
 #include "InputParameter.h"
+#include "MeanFilter.h"
 #include "GUI.h"
 #include <iostream>
 #include <valarray>
@@ -13,7 +14,6 @@ enum RobCodeLang {KUKA};
 
 int main()
 {
-	//TODO: alte Bilder L�schen!
 	clock_t start;
 	start = clock();
 
@@ -27,10 +27,21 @@ int main()
 
 		inputParameter.openFile(path);
 
-		//
+		//moving Average
+
+		CMeanFilter meanFilter;
+
+		meanFilter.setWindowSize(3);
+
+		meanFilter.calculateMean(inputParameter.getPath());
+
+		CSegmentApproximator segmentApproximator;
+
+		segmentApproximator.setmaxDistance(5);
+
+		segmentApproximator.approx(meanFilter.getPath());
 
 		CPathBuilder pathBuilder;
-		
 
 		CRobCodeGenerator codeGenerator;
 

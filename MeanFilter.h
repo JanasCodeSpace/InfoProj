@@ -15,18 +15,17 @@ public:
 	~CMeanFilter();
 
 	void setWindowSize(int Window);
-	void setLenth(long lenth);
 
 	int getWindowSize();
 
-	vector<CPoint3D>& getPath();
+	list<CPoint3D>& getPath();
 
-	void calculateMean(const vector<list<CPoint3D>>& sourcePath);
+	void calculateMean(vector<list<CPoint3D>>& sourcePath);
 
 private:
 	int windowSize;
 	int position;
 
-	vector<CPoint3D> path;
+	list<CPoint3D> path;
 };
 
