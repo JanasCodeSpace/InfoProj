@@ -42,9 +42,16 @@ void CPathPostProcessing::postProcessing(vector<CPoint3D>& processedPath)
 	{
 		p.setPoint(processedPath[s].getTime(), processedPath[s].getX(), processedPath[s].getY(), processedPath[s].getZ(), processedPath[s].getEulerMatrix());
 		if (speedManual)
-			changeSpeedManual(p);
+			p.setSpeed(speed);
 		else
-			calculateSpeed(p);
+		{
+			if (s == 0)
+				p.setSpeed(1); //Der erste Punkt(0) wird mit Standardgeschwindigkeit 1m/s angefahren.
+
+			else
+				calculateSpeed(p, s); //Die Geschwindigkeit zwischen den weiteren Punkten wird berechnet.
+		}
+			
 		if (orientationManual)
 			changeEulerManual(p);
 
@@ -53,21 +60,19 @@ void CPathPostProcessing::postProcessing(vector<CPoint3D>& processedPath)
 
 }
 
-void CPathPostProcessing::changeSpeedManual(CPoint3D p)
+void CPathPostProcessing::calculateSpeed(CPoint3D& p, size_t s)
 {
-	double speed = 0;
-	
-	p.setSpeed(speed);
+	double distance = 0;
+	double time = 0;
+
+	distance = processedPath[s-1].distanceTo(p); //Strecke zwischen p und dem Punkt zuvor
+	time = p.getTime() - processedPath[s-1].getTime(); //Zeit zwischen p-1 und p
+
+	speed = distance/time; // Berechnug Geschwindigkeit zwischen zwei Punkten
+	p.setSpeed(speed); //Zuweisung der Geschwindigkeit zwis
 }
 
-void CPathPostProcessing::calculateSpeed(CPoint3D p)
+void CPathPostProcessing::changeEulerManual(CPoint3D& p)
 {
-	double speed = 0;
-
-	p.setSpeed(speed);
-}
-
-void CPathPostProcessing::changeEulerManual(CPoint3D p)
-{
-	//Hier kommt das überschreiben der Eulermatrix rein
+	//Hier kommt das ï¿½berschreiben der Eulermatrix rein
 }

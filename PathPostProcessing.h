@@ -17,9 +17,8 @@ public:
 	vector<CPoint3D>& getProcessedPath(void);
 
 	void postProcessing(vector<CPoint3D>& processedPath);
-	void changeSpeedManual(CPoint3D p);
-	void calculateSpeed(CPoint3D p);
-	void changeEulerManual(CPoint3D p);
+	void calculateSpeed(CPoint3D& p, size_t i);
+	void changeEulerManual(CPoint3D& p);
 
 	void setData(double speed, bool speedManual, bool orientationManual, double A, double B, double C);
 
