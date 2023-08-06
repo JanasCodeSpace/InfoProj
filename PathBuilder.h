@@ -12,7 +12,7 @@ public:
 	CPathBuilder(void);
 	~CPathBuilder(void);
 
-	vector<CPoint3D>& CPathBuilder::getPath();
+	vector<CPoint3D>& getPath();
 
 	void createPath(vector<list<CPoint3D>>& segments, string filename);
 
