@@ -60,7 +60,7 @@ void CPathPostProcessing::postProcessing(vector<CPoint3D>& processedPath)
 
 }
 
-void CPathPostProcessing::calculateSpeed(CPoint3D p, size_t s)
+void CPathPostProcessing::calculateSpeed(CPoint3D& p, size_t s)
 {
 	double distance = 0;
 	double time = 0;
@@ -72,7 +72,7 @@ void CPathPostProcessing::calculateSpeed(CPoint3D p, size_t s)
 	p.setSpeed(speed); //Zuweisung der Geschwindigkeit zwis
 }
 
-void CPathPostProcessing::changeEulerManual(CPoint3D p)
+void CPathPostProcessing::changeEulerManual(CPoint3D& p)
 {
 	//Hier kommt das �berschreiben der Eulermatrix rein
 }
