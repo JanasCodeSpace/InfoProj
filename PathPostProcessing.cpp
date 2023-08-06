@@ -42,14 +42,14 @@ void CPathPostProcessing::postProcessing(vector<CPoint3D>& processedPath)
 	{
 		p.setPoint(processedPath[s].getTime(), processedPath[s].getX(), processedPath[s].getY(), processedPath[s].getZ(), processedPath[s].getEulerMatrix());
 		if (speedManual)
-			changeSpeedManual(p);
+			p.setSpeed(speed);
 		else
 		{
 			if (s == 0)
-			p.setSpeed(1); //Der erste Punkt(0) wird mit Standardgeschwindigkeit 1m/s angefahren.
+				p.setSpeed(1); //Der erste Punkt(0) wird mit Standardgeschwindigkeit 1m/s angefahren.
 
 			else
-			calculateSpeed(p, s); //Die Geschwindigkeit zwischen den weiteren Punkten wird berechnet.
+				calculateSpeed(p, s); //Die Geschwindigkeit zwischen den weiteren Punkten wird berechnet.
 		}
 			
 		if (orientationManual)
@@ -60,16 +60,8 @@ void CPathPostProcessing::postProcessing(vector<CPoint3D>& processedPath)
 
 }
 
-void CPathPostProcessing::changeSpeedManual(CPoint3D& p)
+void CPathPostProcessing::calculateSpeed(CPoint3D p, size_t s)
 {
-	double speed = 0;
-	speed = this->speed; //Manuelle Geschwindigkeit die beim Aufruf des Objekts uebergeben wurde
-	p.setSpeed(speed);
-}
-
-void CPathPostProcessing::calculateSpeed(CPoint3D& p, size_t s)
-{
-	double speed = 0;
 	double distance = 0;
 	double time = 0;
 
