@@ -22,29 +22,23 @@ int main()
 		//read Data
 
 		CInputParameter inputParameter;
-
 		string path = "path_01.csv";
-
 		inputParameter.openFile(path);
 
 		//moving Average
 
 		CMeanFilter meanFilter;
-
 		meanFilter.setWindowSize(3);
-
-		meanFilter.calculateMean(inputParameter.getPath());
+		meanFilter.mean(inputParameter.getPath());
 
 		CSegmentApproximator segmentApproximator;
-
 		segmentApproximator.setmaxDistance(5);
-
 		segmentApproximator.approx(meanFilter.getPath());
 
 		CPathBuilder pathBuilder;
+		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), "08_path.csv");
 
 		CRobCodeGenerator codeGenerator;
-
 		codeGenerator.scaleX = 0.7;
 		codeGenerator.scaleY = -0.7;
 		codeGenerator.scaleZ = 50.0;
