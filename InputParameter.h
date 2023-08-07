@@ -19,10 +19,11 @@ public:
 	~CInputParameter(void);
 
 	void openFile(std::string path);
-	vector<CPoint3D>& getPath();
+	bool detectJump(CPoint3D p, double x_prev, double  y_prev,double z_prev);
+	vector<list<CPoint3D>>& getPath();
 
 private:
-	vector<CPoint3D> initialPath;
+	vector<list<CPoint3D>> initialPath;
 	double speed;
 	bool speedManual;
 	bool orientationManual;
@@ -30,5 +31,6 @@ private:
 	double B;
 	double C;
 	CEulerMatrix inputMatrix;
+	double difference = 20;
 };
 

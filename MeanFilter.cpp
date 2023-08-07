@@ -25,43 +25,57 @@ int CMeanFilter::getWindowSize()
 	return windowSize;
 }
 
-vector<CPoint3D>& CMeanFilter::getPath()
+vector<list<CPoint3D>>& CMeanFilter::getPath()
 {
-	return path;
+	return meanPath;
 }
 
-void CMeanFilter::calculateMean(vector<CPoint3D>& sourcePath)
+void CMeanFilter::mean(vector<list<CPoint3D>>& sourcePath)
+{
+	list<CPoint3D> dummyList;
+	for (size_t s = 0; s < sourcePath.size(); s++)
+	{
+		dummyList = calculateMean(sourcePath[s]);
+		meanPath.push_back(dummyList);
+	}
+}
+
+list<CPoint3D> CMeanFilter::calculateMean(list<CPoint3D>& segment)
 {
 	double sumX = 0, sumY = 0, sumZ = 0;		// oder long??
 	double div = 0;
-
-	int i = 0;
 	int m = 0;
 	int OffsetPos = 0;
 	int OffsetNeg = 0;
 
 	CPoint3D p;
 
-	int inputSize = sourcePath.size();
+	int inputSize = segment.size();
 
-	for (i = 0; i < inputSize; ++i)
+	list<CPoint3D>::iterator it = segment.begin();
+	list<CPoint3D> newSegment;
+
+	for (size_t i = 0; i < inputSize; ++i)
 	{
 		sumX = 0, sumY = 0, sumZ = 0;
 		div = 0;
-		for (int j = i - windowSize + 1; j <= i; ++j)
+		p.setTime(it->getTime());
+		p.setEulerMatrix(it->getEulerMatrix());
+		for (size_t j = i; j <= i + windowSize; ++j)
 		{
-			sumX += sourcePath[j].getX();
-			sumY += sourcePath[j].getY();
-			sumZ += sourcePath[j].getZ();
+
+			sumX += it->getX();
+			sumY += it->getY();
+			sumZ += it->getZ();
 			div++;
+			it++;
 		}
 
-
 		p.set(sumX / div, sumY / div, sumZ / div);
-		p.setTime(sourcePath[i].getTime());
-		p.setEulerMatrix(sourcePath[i].getEulerMatrix());
+		it++;
+		newSegment.push_back(p);
 
-		path.push_back(p);
+		return newSegment;
 	}
 
 }

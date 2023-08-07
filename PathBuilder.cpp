@@ -36,30 +36,30 @@ void CPathBuilder::createPath(vector<list<CPoint3D>>& segments, string filename)
 	{
 		list<CPoint3D>::iterator itr = segments[s].begin();
 
-		point.set((double)itr->getX(), (double)itr->getY(), (double)0 + zOffset); //point over start of segment
+		point.set((double)itr->getX(), (double)itr->getY(), (double)itr->getZ()); //point over start of segment
 		path.push_back(point);
 
-		fprintf(fid, "%f %f %f\n", (double)itr->getX(), (double)itr->getY(), (double)0 + zOffset);
+		fprintf(fid, "%f %f %f\n", (double)itr->getX(), (double)itr->getY(), (double)itr->getZ());
 		
 
 		for (; itr != segments[s].end(); itr++) //for all points in the segment
 		{
-			fprintf(fid, "%f %f %f\n", (double)itr->getX(), (double)itr->getY(), (double)0);
+			fprintf(fid, "%f %f %f\n", (double)itr->getX(), (double)itr->getY(), (double)itr->getZ());
 
-			point.set((double)itr->getX(), (double)itr->getY(), (double)0); 
+			point.set((double)itr->getX(), (double)itr->getY(), (double)itr->getZ());
 			path.push_back(point);
 
 		}
 
 		itr--;
-		fprintf(fid, "%f %f %f\n", (double)itr->getX(), (double)itr->getY(), (double)0 + zOffset);
+		fprintf(fid, "%f %f %f\n", (double)itr->getX(), (double)itr->getY(), (double)itr->getZ());
 
 		point.set((double)itr->getX(), (double)itr->getY(), (double)0 + zOffset); //point over end of segment
 		path.push_back(point);
 	}
 
-	fprintf(fid, "%f %f %f\n", (double)0, (double)0, (double)0 + zOffset);
+	fprintf(fid, "%f %f %f\n", (double)0, (double)0, (double)0);
 
-	point.set(0, 0, 0 + zOffset); //endpoint (== startpoint)
+	point.set(0, 0, 0); //endpoint (== startpoint)
 	path.push_back(point);
 }
