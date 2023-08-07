@@ -7,6 +7,8 @@ using namespace std;
 
 #pragma once
 
+#define MAX_SPEED 2.0
+
 class CPathPostProcessing
 {
 public:
@@ -24,7 +26,6 @@ public:
 
 private:
 	vector<CPoint3D> processedPath;
-	float maxSpeed = 2.0;
 	double speed;
 	bool speedManual;
 	bool orientationManual;

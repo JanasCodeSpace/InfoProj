@@ -42,7 +42,12 @@ void CPathPostProcessing::postProcessing(vector<CPoint3D>& processedPath)
 	{
 		p.setPoint(processedPath[s].getTime(), processedPath[s].getX(), processedPath[s].getY(), processedPath[s].getZ(), processedPath[s].getEulerMatrix());
 		if (speedManual)
+		{
+			if (speed > MAX_SPEED) //Wenn maximale Geschwindigkeit überschritten wird, Geschwindigkeit begrenzen
+			speed = MAX_SPEED;
+
 			p.setSpeed(speed);
+		}
 		else
 		{
 			if (s == 0)
@@ -69,7 +74,11 @@ void CPathPostProcessing::calculateSpeed(CPoint3D& p, size_t s)
 	time = p.getTime() - processedPath[s-1].getTime(); //Zeit zwischen p-1 und p
 
 	speed = distance/time; // Berechnug Geschwindigkeit zwischen zwei Punkten
-	p.setSpeed(speed); //Zuweisung der Geschwindigkeit zwis
+
+	if (speed > MAX_SPEED) //Begrenzung auf maximale Geschwindigkeit, falls Trackerdaten höheren Wert aufweisen
+	speed = MAX_SPEED;
+
+	p.setSpeed(speed); //Zuweisung der Geschwindigkeit
 }
 
 void CPathPostProcessing::changeEulerManual(CPoint3D& p)
