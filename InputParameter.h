@@ -8,6 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream> 
+#include<tuple>
 
 using namespace std;
 
@@ -16,7 +17,16 @@ class CInputParameter
 {
 public:
 	CInputParameter(void);
+	CInputParameter(double initSpeed, bool initSeepManual, bool initOrientationManual, double initA, double initB, double initC);
 	~CInputParameter(void);
+
+	void setOrientation(bool initOrientationManual, double initA, double initB, double initC);
+	void setSpeed(double initSpeed, bool initSpeedManual);
+
+	double getSpeed(void);
+	bool getSpeedManual(void);
+	bool getOrientationManual(void);
+	tuple <double, double, double> getAngles(void);
 
 	void openFile(std::string path);
 	bool detectJump(CPoint3D p, double x_prev, double  y_prev,double z_prev);
@@ -30,7 +40,6 @@ private:
 	double A;
 	double B;
 	double C;
-	CEulerMatrix inputMatrix;
 	double difference = 20;
 };
 

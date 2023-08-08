@@ -2,8 +2,25 @@
 #include "Point3D.h"
 #include "EulerMatrix.h"
 
+CInputParameter::CInputParameter(double initSpeed, bool initSpeedManual, bool initOrientationManual, double initA, double initB, double initC)
+{
+	speed = initSpeed;
+	speedManual = initSpeedManual;
+	orientationManual = initOrientationManual;
+	A = initA;
+	B = initB;
+	C = initC;
+
+}
+
 CInputParameter::CInputParameter(void)
 {
+	speed = 0;
+	A = 0;
+	B = 0;
+	C = 0;
+	speedManual = false,
+	orientationManual = false;
 
 }
 
@@ -12,9 +29,43 @@ CInputParameter::~CInputParameter(void)
 
 }
 
+void CInputParameter::setOrientation(bool initOrientationManual, double initA, double initB, double initC)
+{
+	orientationManual = initOrientationManual;
+	A = initA;
+	B = initB;
+	C = initC;
+}
+
+void CInputParameter::setSpeed(double initSpeed, bool initSpeedManual)
+{
+	speed = initSpeed;
+	speedManual = initSpeedManual;
+}
+
 vector<list<CPoint3D>>& CInputParameter::getPath()
 {
 	return initialPath;
+}
+
+double CInputParameter::getSpeed(void)
+{
+	return speed;
+}
+
+bool CInputParameter::getSpeedManual(void)
+{
+	return speedManual;
+}
+
+bool CInputParameter::getOrientationManual(void)
+{
+	return orientationManual;
+}
+
+tuple <double, double, double> CInputParameter::getAngles(void)
+{
+	return make_tuple(A, B, C);
 }
 
 void CInputParameter::openFile(string path)
@@ -43,6 +94,7 @@ void CInputParameter::openFile(string path)
 			>> dummyMatrix[1][0] >> dummyMatrix[1][1] >> dummyMatrix[1][2] >> dummyMatrix[2][0] >> dummyMatrix[2][1] >> dummyMatrix[2][2];
 
 		tmpEuler.setMatrix(dummyMatrix);
+		tmpPoint.setSpeed(0);
 		tmpPoint.setPoint(timestamp, x, y, z, tmpEuler.getMatrix());
 
 		if (detectJump(tmpPoint, x_prev, y_prev, z_prev))
