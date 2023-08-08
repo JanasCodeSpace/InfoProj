@@ -47,7 +47,6 @@ int main()
 		codeGenerator.offsetZ = 750.0; // on top of a table with 0.75m height
 		codeGenerator.generateRobCode(pathBuilder.getPath(), "09_robCode.src");
 	
-	
 		float elapsed = (float)(clock() - start) / CLOCKS_PER_SEC;
 	}
 

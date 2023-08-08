@@ -55,13 +55,13 @@ list<CPoint3D> CMeanFilter::calculateMean(list<CPoint3D>& segment)
 	list<CPoint3D>::iterator it = segment.begin();
 	list<CPoint3D> newSegment;
 
-	for (size_t i = 0; i < inputSize; ++i)
+	for (size_t i = 0; i < inputSize - windowSize; ++i)
 	{
 		sumX = 0, sumY = 0, sumZ = 0;
 		div = 0;
 		p.setTime(it->getTime());
 		p.setEulerMatrix(it->getEulerMatrix());
-		for (size_t j = i; j <= i + windowSize; ++j)
+		for (size_t j = i; j < i + windowSize; ++j)
 		{
 
 			sumX += it->getX();
@@ -70,12 +70,16 @@ list<CPoint3D> CMeanFilter::calculateMean(list<CPoint3D>& segment)
 			div++;
 			it++;
 		}
-
+		for (size_t index = windowSize; index > 0; index--)
+		{
+			it--;
+		}
 		p.set(sumX / div, sumY / div, sumZ / div);
-		it++;
+		if(it != segment.end())
+			it++;
 		newSegment.push_back(p);
 
-		return newSegment;
+		
 	}
-
+	return newSegment;
 }
