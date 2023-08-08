@@ -176,7 +176,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InfoProj\RobPathEditor.vcxproj">
+    <ProjectReference Include="..\mainProject\RobPathEditor.vcxproj">
       <Project>{56448f4e-6d8f-4d4f-af20-8ae5a85da096}</Project>
     </ProjectReference>
   </ItemGroup>
