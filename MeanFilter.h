@@ -1,3 +1,7 @@
+#include <vector>
+#include <list>
+#include "Point3D.h"
+
 #pragma once
 
 using namespace std;
@@ -11,16 +15,20 @@ public:
 	~CMeanFilter();
 
 	void setWindowSize(int Window);
-	void setLenth(long lenth);
 
 	int getWindowSize();
-	long getlenth();
 
-	void mean(double* target);
+	vector<list<CPoint3D>>& getPath();
+
+	list<CPoint3D> calculateMean(list<CPoint3D>& segment);
+	void mean(vector<list<CPoint3D>>& sourcePath);
 
 private:
 	int windowSize;
 	int position;
-	long lengthArray;
+	double sum;
+
+
+	vector<list<CPoint3D>> meanPath;
 };
 

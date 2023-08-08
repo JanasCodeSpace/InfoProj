@@ -34,13 +34,13 @@ vector<CPoint3D>& CPathPostProcessing::getProcessedPath(void)
 	return processedPath;
 }
 
-void CPathPostProcessing::postProcessing(vector<CPoint3D>& processedPath)
+void CPathPostProcessing::postProcessing(vector<CPoint3D>& path)
 {
 	CPoint3D p;
 
-	for (size_t s = 0; s < processedPath.size(); s++)
+	for (size_t s = 0; s < path.size(); s++)
 	{
-		p.setPoint(processedPath[s].getTime(), processedPath[s].getX(), processedPath[s].getY(), processedPath[s].getZ(), processedPath[s].getEulerMatrix());
+		p.setPoint(path[s].getTime(), path[s].getX(), path[s].getY(), path[s].getZ(), path[s].getEulerMatrix());
 		if (speedManual)
 		{
 			if (speed > MAX_SPEED) //Wenn maximale Geschwindigkeit überschritten wird, Geschwindigkeit begrenzen

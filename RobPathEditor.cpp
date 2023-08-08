@@ -2,6 +2,7 @@
 #include "PathBuilder.h"
 #include "RobCodeGenerator.h"
 #include "InputParameter.h"
+#include "MeanFilter.h"
 #include "GUI.h"
 #include <iostream>
 #include <valarray>
@@ -13,7 +14,6 @@ enum RobCodeLang {KUKA};
 
 int main()
 {
-	//TODO: alte Bilder L�schen!
 	clock_t start;
 	start = clock();
 
@@ -22,26 +22,30 @@ int main()
 		//read Data
 
 		CInputParameter inputParameter;
-
 		string path = "path_01.csv";
-
 		inputParameter.openFile(path);
 
-		//
+		//moving Average
+
+		CMeanFilter meanFilter;
+		meanFilter.setWindowSize(3);
+		meanFilter.mean(inputParameter.getPath());
+
+		CSegmentApproximator segmentApproximator;
+		segmentApproximator.setmaxDistance(0.5);
+		segmentApproximator.approx(meanFilter.getPath());
 
 		CPathBuilder pathBuilder;
-		
+		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), "08_path.csv");
 
 		CRobCodeGenerator codeGenerator;
-
-		codeGenerator.scaleX = 0.7;
-		codeGenerator.scaleY = -0.7;
-		codeGenerator.scaleZ = 50.0;
-		codeGenerator.offsetX = 1000.0; // 1m in front of robot
+		codeGenerator.scaleX = 1.0;
+		codeGenerator.scaleY = 1.0;
+		codeGenerator.scaleZ = 1.0;
+		codeGenerator.offsetX = 0.0; // 1m in front of robot
 		codeGenerator.offsetY = 0.0;	
-		codeGenerator.offsetZ = 750.0; // on top of a table with 0.75m height
+		codeGenerator.offsetZ = 0.0; // on top of a table with 0.75m height
 		codeGenerator.generateRobCode(pathBuilder.getPath(), "09_robCode.src");
-	
 	
 		float elapsed = (float)(clock() - start) / CLOCKS_PER_SEC;
 	}

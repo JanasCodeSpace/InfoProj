@@ -4,13 +4,11 @@
 CMeanFilter::CMeanFilter()
 {
 	setWindowSize(0);
-	setLenth(0);
 }
 
 CMeanFilter::CMeanFilter(int Window, long lenth)
 {
 	setWindowSize(Window);
-	setLenth(lenth);
 }
 
 CMeanFilter::~CMeanFilter()
@@ -22,80 +20,66 @@ void CMeanFilter::setWindowSize(int Window)
 	windowSize = Window;
 }
 
-void CMeanFilter::setLenth(long lenth)
-{
-	lengthArray = lenth;
-}
-
 int CMeanFilter::getWindowSize()
 {
 	return windowSize;
 }
 
-long CMeanFilter::getlenth()
+vector<list<CPoint3D>>& CMeanFilter::getPath()
 {
-	return lengthArray;
+	return meanPath;
 }
 
-void CMeanFilter::mean(double* target)
+void CMeanFilter::mean(vector<list<CPoint3D>>& sourcePath)
 {
-	double sum = 0;		// oder long??
-	double div = 0;
+	list<CPoint3D> dummyList;
+	for (size_t s = 0; s < sourcePath.size(); s++)
+	{
+		dummyList = calculateMean(sourcePath[s]);
+		meanPath.push_back(dummyList);
+	}
+}
 
-	int i = 0;
+list<CPoint3D> CMeanFilter::calculateMean(list<CPoint3D>& segment)
+{
+	double sumX = 0, sumY = 0, sumZ = 0;		// oder long??
+	double div = 0;
 	int m = 0;
 	int OffsetPos = 0;
 	int OffsetNeg = 0;
 
-	if (windowSize % 2)
-	// ungerades Fenster
-	{
-		OffsetPos = windowSize / 2;
-		OffsetNeg = windowSize / 2;
-	}
-	else
-	// gerades Fenster
-	{
-		OffsetPos = (windowSize / 2) - 1;
-		OffsetNeg = windowSize / 2;
-	}
+	CPoint3D p;
 
-	for (i = 0; i < lengthArray; i++)
+	int inputSize = segment.size();
+
+	list<CPoint3D>::iterator it = segment.begin();
+	list<CPoint3D> newSegment;
+
+	for (size_t i = 0; i < inputSize - windowSize; ++i)
 	{
-		double* source = target;
-		sum = 0;
+		sumX = 0, sumY = 0, sumZ = 0;
 		div = 0;
-
-		//positiven Offset addieren
-		for (m = 0; m < OffsetPos; m++)
+		p.setTime(it->getTime());
+		p.setEulerMatrix(it->getEulerMatrix());
+		for (size_t j = i; j < i + windowSize; ++j)
 		{
-			if ((i + m) > lengthArray)
-			{
-				break;
-			}
 
-			sum += *source;
+			sumX += it->getX();
+			sumY += it->getY();
+			sumZ += it->getZ();
 			div++;
-			*source++;
+			it++;
 		}
-
-		*source =- m;
-
-		// negatives Offset addieren
-		for (m = 1; m < OffsetNeg; m++ )
+		for (size_t index = windowSize; index > 0; index--)
 		{
-			if ((i - m) < 0)
-			{
-				break;
-			}
-
-			sum += *source;
-			div++;
-			*source--;
+			it--;
 		}
+		p.set(sumX / div, sumY / div, sumZ / div);
+		if(it != segment.end())
+			it++;
+		newSegment.push_back(p);
 
-		*target = sum / div;
-		target++;
+		
 	}
-
+	return newSegment;
 }
