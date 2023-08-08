@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\</FILEPATH>
+      <FILENAME>SegmentApproximator.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Die Variable "CSegmentApproximator::maxDistance" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).</DESCRIPTION>
+    <FUNCTION>CSegmentApproximator::{ctor}</FUNCTION>
+    <DECORATED>??0CSegmentApproximator@@QAE@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CSegmentApproximator::maxDistance</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\</FILEPATH>
+      <FILENAME>SegmentApproximator.cpp</FILENAME>
+      <LINE>105</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetischer Überlauf: Wenn Sie den Operator "-" für einen 4-Bytewert verwenden und das Ergebnis in einen 8-Bytewert umwandeln, wandeln Sie den Wert in den breiteren Typ um, bevor Sie den Operator "-" verwenden, um einen Überlauf zu vermeiden (io.2).</DESCRIPTION>
+    <FUNCTION>CSegmentApproximator::calcDist</FUNCTION>
+    <DECORATED>?calcDist@CSegmentApproximator@@AAENHHHHHHHHH@Z</DECORATED>
+    <FUNCLINE>81</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\</FILEPATH>
+      <FILENAME>SegmentApproximator.cpp</FILENAME>
+      <LINE>106</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetischer Überlauf: Wenn Sie den Operator "-" für einen 4-Bytewert verwenden und das Ergebnis in einen 8-Bytewert umwandeln, wandeln Sie den Wert in den breiteren Typ um, bevor Sie den Operator "-" verwenden, um einen Überlauf zu vermeiden (io.2).</DESCRIPTION>
+    <FUNCTION>CSegmentApproximator::calcDist</FUNCTION>
+    <DECORATED>?calcDist@CSegmentApproximator@@AAENHHHHHHHHH@Z</DECORATED>
+    <FUNCLINE>81</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\</FILEPATH>
+      <FILENAME>SegmentApproximator.cpp</FILENAME>
+      <LINE>107</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetischer Überlauf: Wenn Sie den Operator "-" für einen 4-Bytewert verwenden und das Ergebnis in einen 8-Bytewert umwandeln, wandeln Sie den Wert in den breiteren Typ um, bevor Sie den Operator "-" verwenden, um einen Überlauf zu vermeiden (io.2).</DESCRIPTION>
+    <FUNCTION>CSegmentApproximator::calcDist</FUNCTION>
+    <DECORATED>?calcDist@CSegmentApproximator@@AAENHHHHHHHHH@Z</DECORATED>
+    <FUNCLINE>81</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

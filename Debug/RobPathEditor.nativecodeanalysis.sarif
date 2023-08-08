@@ -1,0 +1,99 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.36.32532.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/robpatheditor.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "a55d36ae33efad19d9b1e6bc6cf2eb082aa763830aaade8f9afaaf0a32244dbc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/segmentapproximator.h"
+          },
+          "hashes": {
+            "sha-256": "51eb3d8009a5d735fcc22df89a31f45e2c2f497dcbd7b89dcaaf1b8f55affedd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/point3d.h"
+          },
+          "hashes": {
+            "sha-256": "7887936081476c402eeaa51d5ca5a1ccd52508569aafa7d4d89ef1061717ca5b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/eulermatrix.h"
+          },
+          "hashes": {
+            "sha-256": "9691ade50e72d7d741d8e8079e1f9e74c091f5489035dc98944532174b83eb58"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/pathbuilder.h"
+          },
+          "hashes": {
+            "sha-256": "8b12219144e39890115c3afc4fbf0ab4f31082b514896d84e5436a7112fcefd2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/robcodegenerator.h"
+          },
+          "hashes": {
+            "sha-256": "810ba9be0919eeaa294332f631cd3e6bd4a76ebb121d46a10cea68b72bc7bd4b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/inputparameter.h"
+          },
+          "hashes": {
+            "sha-256": "abc3e8721fe1c317a2ead23412143f792dc98141a4ef674ac90930188e2dc3d7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/meanfilter.h"
+          },
+          "hashes": {
+            "sha-256": "518c4b4d59861f14d3ed4e6381867aefe5d0ad99bd6f9cd590ffd0a5c41c503e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/gui.h"
+          },
+          "hashes": {
+            "sha-256": "387de8b8b6d1ff4ebefb281ef62820217e0eabaa57f024628ee2460c9927c46e"
+          }
+        }
+      ]
+    }
+  ]
+}

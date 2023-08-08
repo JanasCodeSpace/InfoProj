@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\</FILEPATH>
+      <FILENAME>Point3D.cpp</FILENAME>
+      <LINE>7</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Die Variable "CPoint3D::speed" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).</DESCRIPTION>
+    <FUNCTION>CPoint3D::{ctor}</FUNCTION>
+    <DECORATED>??0CPoint3D@@QAE@XZ</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CPoint3D::speed</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\</FILEPATH>
+      <FILENAME>Point3D.cpp</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Die Variable "CPoint3D::speed" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).</DESCRIPTION>
+    <FUNCTION>CPoint3D::{ctor}</FUNCTION>
+    <DECORATED>??0CPoint3D@@QAE@NNN@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CPoint3D::speed</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\</FILEPATH>
+      <FILENAME>Point3D.cpp</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Die Variable "CPoint3D::speed" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).</DESCRIPTION>
+    <FUNCTION>CPoint3D::{ctor}</FUNCTION>
+    <DECORATED>??0CPoint3D@@QAE@NNNN@Z</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CPoint3D::speed</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

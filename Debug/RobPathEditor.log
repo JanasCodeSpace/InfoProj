@@ -1,71 +1,36 @@
-﻿  PathBuilder.cpp
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,10): error C2061: Syntaxfehler: Bezeichner "CPoint3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,2): error C2535: "CLine3D::CLine3D(void)": Memberfunktion bereits definiert oder deklariert
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(10,2): message : Siehe Deklaration von "CLine3D::CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,11): error C3646: "p1": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,11): error C3646: "p2": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
+﻿  EulerMatrix.cpp
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\EulerMatrix.cpp(51,36): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\EulerMatrix.cpp(52,37): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\EulerMatrix.cpp(53,27): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\EulerMatrix.cpp(55,36): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\EulerMatrix.cpp(56,37): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\EulerMatrix.cpp(57,28): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\EulerMatrix.cpp(59,27): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\EulerMatrix.cpp(60,27): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\EulerMatrix.cpp(61,23): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+  GUI.cpp
+  InputParameter.cpp
+  Line3D.cpp
+  MeanFilter.cpp
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\MeanFilter.cpp(58,23): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+  PathBuilder.cpp
 C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\PathBuilder.cpp(20,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   Point3D.cpp
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,10): error C2061: Syntaxfehler: Bezeichner "CPoint3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,2): error C2535: "CLine3D::CLine3D(void)": Memberfunktion bereits definiert oder deklariert
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(10,2): message : Siehe Deklaration von "CLine3D::CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,11): error C3646: "p1": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,11): error C3646: "p2": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(70,17): error C2039: "p1" ist kein Member von "CLine3D".
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(7,7): message : Siehe Deklaration von "CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(70,29): error C2039: "p2" ist kein Member von "CLine3D".
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(7,7): message : Siehe Deklaration von "CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(71,17): error C2039: "p1" ist kein Member von "CLine3D".
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(7,7): message : Siehe Deklaration von "CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(71,29): error C2039: "p2" ist kein Member von "CLine3D".
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(7,7): message : Siehe Deklaration von "CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(72,17): error C2039: "p1" ist kein Member von "CLine3D".
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(7,7): message : Siehe Deklaration von "CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(72,29): error C2039: "p2" ist kein Member von "CLine3D".
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(7,7): message : Siehe Deklaration von "CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(76,24): error C2039: "p1" ist kein Member von "CLine3D".
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(7,7): message : Siehe Deklaration von "CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(77,24): error C2039: "p1" ist kein Member von "CLine3D".
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(7,7): message : Siehe Deklaration von "CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(78,24): error C2039: "p1" ist kein Member von "CLine3D".
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(7,7): message : Siehe Deklaration von "CLine3D"
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(129,10): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(130,10): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(131,10): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
   RobCodeGenerator.cpp
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,10): error C2061: Syntaxfehler: Bezeichner "CPoint3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,2): error C2535: "CLine3D::CLine3D(void)": Memberfunktion bereits definiert oder deklariert
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(10,2): message : Siehe Deklaration von "CLine3D::CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,11): error C3646: "p1": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,11): error C3646: "p2": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
 C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobCodeGenerator.cpp(16,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   RobPathEditor.cpp
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,10): error C2061: Syntaxfehler: Bezeichner "CPoint3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,2): error C2535: "CLine3D::CLine3D(void)": Memberfunktion bereits definiert oder deklariert
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(10,2): message : Siehe Deklaration von "CLine3D::CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,11): error C3646: "p1": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,11): error C3646: "p2": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
   SegmentApproximator.cpp
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,10): error C2061: Syntaxfehler: Bezeichner "CPoint3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,2): error C2535: "CLine3D::CLine3D(void)": Memberfunktion bereits definiert oder deklariert
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(10,2): message : Siehe Deklaration von "CLine3D::CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,11): error C3646: "p1": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,11): error C3646: "p2": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\SegmentApproximator.cpp(46,25): error C2440: "<function-style-cast>": "initializer list" kann nicht in "CLine3D" konvertiert werden
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\SegmentApproximator.cpp(46,25): message : Quelltyp konnte von keinem Konstruktor angenommen werden, oder die Überladungsauflösung des Konstruktors ist mehrdeutig
-  SegmentSequencer.cpp
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,10): error C2061: Syntaxfehler: Bezeichner "CPoint3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(11,2): error C2535: "CLine3D::CLine3D(void)": Memberfunktion bereits definiert oder deklariert
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(10,2): message : Siehe Deklaration von "CLine3D::CLine3D"
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,11): error C3646: "p1": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(14,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,11): error C3646: "p2": Unbekannter Überschreibungsspezifizierer
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Line3D.h(15,13): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
+  Code Analysis für C/C++ wird ausgeführt...
   Code wird generiert...
+  RobPathEditor.vcxproj -> C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Debug\RobPathEditor.exe
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(7): warning C26495: Die Variable "CPoint3D::speed" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(16): warning C26495: Die Variable "CPoint3D::speed" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Point3D.cpp(24): warning C26495: Die Variable "CPoint3D::speed" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobCodeGenerator.cpp(5): warning C26495: Die Variable "CRobCodeGenerator::scaleX" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\SegmentApproximator.cpp(5): warning C26495: Die Variable "CSegmentApproximator::maxDistance" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\SegmentApproximator.cpp(105): warning C26451: Arithmetischer Überlauf: Wenn Sie den Operator "-" für einen 4-Bytewert verwenden und das Ergebnis in einen 8-Bytewert umwandeln, wandeln Sie den Wert in den breiteren Typ um, bevor Sie den Operator "-" verwenden, um einen Überlauf zu vermeiden (io.2).
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\SegmentApproximator.cpp(106): warning C26451: Arithmetischer Überlauf: Wenn Sie den Operator "-" für einen 4-Bytewert verwenden und das Ergebnis in einen 8-Bytewert umwandeln, wandeln Sie den Wert in den breiteren Typ um, bevor Sie den Operator "-" verwenden, um einen Überlauf zu vermeiden (io.2).
+C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\SegmentApproximator.cpp(107): warning C26451: Arithmetischer Überlauf: Wenn Sie den Operator "-" für einen 4-Bytewert verwenden und das Ergebnis in einen 8-Bytewert umwandeln, wandeln Sie den Wert in den breiteren Typ um, bevor Sie den Operator "-" verwenden, um einen Überlauf zu vermeiden (io.2).
