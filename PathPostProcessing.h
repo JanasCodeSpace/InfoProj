@@ -1,6 +1,7 @@
 #include <vector>
 #include <list>
 #include <iostream>
+#include <tuple>
 #include "Point3D.h"
 
 using namespace std;
@@ -22,7 +23,7 @@ public:
 	void calculateSpeed(CPoint3D& p, size_t i);
 	void changeEulerManual(CPoint3D& p);
 
-	void setData(double speed, bool speedManual, bool orientationManual, double A, double B, double C);
+	void setData(double speed, bool speedManual, bool orientationManual, tuple<double , double , double> angles);
 
 private:
 	vector<CPoint3D> processedPath;

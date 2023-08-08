@@ -1,3 +1,1 @@
 C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Debug\RobPathEditor.exe
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Debug\RobPathEditor.exe.lastcodeanalysissucceeded
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\Debug\NativeCodeAnalysis.read.1.tlog
