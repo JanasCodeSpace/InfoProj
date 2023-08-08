@@ -1,0 +1,351 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Nicht initialisierter Speicher \"minIndex\" wird verwendet."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 41,
+                  "endLine": 59,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CSegmentSequencer::sortSegments",
+                  "decoratedName": "?sortSegments@CSegmentSequencer@@QAEXABV?$vector@V?$list@VCPoint3D@@V?$allocator@VCPoint3D@@@std@@@std@@V?$allocator@V?$list@VCPoint3D@@V?$allocator@VCPoint3D@@@std@@@std@@@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "\"minIndex\" ist nicht initialisiert"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 29,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "In diese Schleife eintreten (Annahme: \"segmentsCopy.size()>0\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 31,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 33,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 33,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Diese Schleife überspringen (Annahme: \"s<segmentsCopy.size()\" ist false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Diese Verzweigung überspringen (Annahme: \"reverse\" ist false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "\"minIndex\" ist ein Eingabe-/Ausgabeargument für \"std::vector<std::list<CPoint3D,std::allocator<CPoint3D> >,std::allocator<std::list<CPoint3D,std::allocator<CPoint3D> > > >::[]\" (in c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.36.32532\\include\\vector:1880 deklariert)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 61,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 64,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "\"minIndex\" wird verwendet, wurde jedoch möglicherweise nicht initialisiert."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.36.32532.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/SegmentSequencer.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "569171fbefa8c20c562911989d41f0ada0996f9f436723fcd7564e65f1177336"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/segmentsequencer.h"
+          },
+          "hashes": {
+            "sha-256": "b3b323ae4d0ecad54969283d6438544986b1196ff830459ff152c02ce8a2e65d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/point3d.h"
+          },
+          "hashes": {
+            "sha-256": "41c5fcbac7b6d4a3f5b2fbb7cf384cc4f1b9f1a522a9be5dfccb82ff3de8f060"
+          }
+        }
+      ]
+    }
+  ]
+}

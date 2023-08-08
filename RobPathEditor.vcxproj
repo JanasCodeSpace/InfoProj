@@ -86,6 +86,7 @@
     <ClInclude Include="Line3D.h" />
     <ClInclude Include="MeanFilter.h" />
     <ClInclude Include="PathBuilder.h" />
+    <ClInclude Include="PathPostProcessing.h" />
     <ClInclude Include="Point3D.h" />
     <ClInclude Include="RobCodeGenerator.h" />
     <ClInclude Include="SegmentApproximator.h" />
@@ -97,6 +98,7 @@
     <ClCompile Include="Line3D.cpp" />
     <ClCompile Include="MeanFilter.cpp" />
     <ClCompile Include="PathBuilder.cpp" />
+    <ClCompile Include="PathPostProcessing.cpp" />
     <ClCompile Include="Point3D.cpp" />
     <ClCompile Include="RobCodeGenerator.cpp" />
     <ClCompile Include="RobPathEditor.cpp" />
@@ -104,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

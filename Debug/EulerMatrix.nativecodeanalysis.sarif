@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.36.32532.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/eulermatrix.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "aee2984545da34be0355f114dbd36bd41b8096233e8ab7e45a12d0f883ea8e2c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/eulermatrix.h"
+          },
+          "hashes": {
+            "sha-256": "9691ade50e72d7d741d8e8079e1f9e74c091f5489035dc98944532174b83eb58"
+          }
+        }
+      ]
+    }
+  ]
+}

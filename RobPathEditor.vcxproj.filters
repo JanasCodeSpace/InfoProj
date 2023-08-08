@@ -42,7 +42,7 @@
     <ClInclude Include="MeanFilter.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\RobPathEditor\RobPathEditor\SegmentSequencer.h">
+    <ClInclude Include="PathPostProcessing.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
@@ -77,11 +77,12 @@
     <ClCompile Include="MeanFilter.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\RobPathEditor\RobPathEditor\SegmentSequencer.cpp">
+    <ClCompile Include="PathPostProcessing.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

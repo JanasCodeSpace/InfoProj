@@ -19,14 +19,14 @@ CPathPostProcessing::~CPathPostProcessing(void)
 {
 }
 
-void CPathPostProcessing::setData(double speedIn, bool speedManualIn, bool orientationManualIn, double AIn, double BIn, double CIn)
+void CPathPostProcessing::setData(double speedIn, bool speedManualIn, bool orientationManualIn, tuple <double, double, double> angles)
 {
 	speed = speedIn;
 	speedManual = speedManualIn;
 	orientationManual = orientationManualIn;
-	A = AIn;
-	B = BIn;
-	C = CIn;
+	A = get<0>(angles);
+	B = get<1>(angles);
+	C = get<2>(angles);
 }
 
 vector<CPoint3D>& CPathPostProcessing::getProcessedPath(void)
