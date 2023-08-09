@@ -11,7 +11,7 @@ namespace UnitTests
 		
 		TEST_METHOD(TestTimeStamp)
 		{
-			CPoint3D Test1;
+			CInputPoint3D Test1;
 			
 			double timestamp = Test1.getTime();
 

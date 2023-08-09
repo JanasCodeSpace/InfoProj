@@ -4,7 +4,6 @@
 #include "InputParameter.h"
 #include "MeanFilter.h"
 #include "GUI.h"
-#include "PathPostProcessing.h"
 #include <iostream>
 #include <valarray>
 #include <ctime>
@@ -39,19 +38,9 @@ int main()
 		CPathBuilder pathBuilder;
 		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), "08_path.csv");
 
-		CPathPostProcessing pathPostProcessing;
-		pathPostProcessing.setData(inputParameter.getSpeed(), inputParameter.getSpeedManual(), 
+		CRobCodeGenerator codeGenerator(inputParameter.getSpeed(), inputParameter.getSpeedManual(),
 			inputParameter.getOrientationManual(), inputParameter.getAngles());
-		pathPostProcessing.postProcessing(pathBuilder.getPath());
-
-		CRobCodeGenerator codeGenerator;
-		codeGenerator.scaleX = 1.0;
-		codeGenerator.scaleY = 1.0;
-		codeGenerator.scaleZ = 1.0;
-		codeGenerator.offsetX = 0.0; // 1m in front of robot
-		codeGenerator.offsetY = 0.0;	
-		codeGenerator.offsetZ = 0.0; // on top of a table with 0.75m height
-		codeGenerator.generateRobCode(pathPostProcessing.getProcessedPath(), "09_robCode.src");
+		codeGenerator.generateRobCode(pathBuilder.getPath(), "09_robCode.src");
 	
 		float elapsed = (float)(clock() - start) / CLOCKS_PER_SEC;
 	}

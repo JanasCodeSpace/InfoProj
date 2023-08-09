@@ -20,13 +20,13 @@ public:
 	vector<CPoint3D>& getProcessedPath(void);
 
 	void postProcessing(vector<CPoint3D>& path);
-	void calculateSpeed(CPoint3D& p, size_t i);
-	void calculateAngles(CPoint3D& p);
+	void calculateSpeed(COutputPoint3D& p, size_t i);
+	void calculateAngles(COutputPoint3D& p);
 
 	void setData(double speed, bool speedManual, bool orientationManual, tuple<double , double , double> angles);
 
 private:
-	vector<CPoint3D> processedPath;
+	vector<COutputPoint3D> processedPath;
 	double speed;
 	bool speedManual;
 	bool orientationManual;

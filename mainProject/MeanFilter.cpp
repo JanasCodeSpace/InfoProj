@@ -25,14 +25,14 @@ int CMeanFilter::getWindowSize()
 	return windowSize;
 }
 
-vector<list<CPoint3D>>& CMeanFilter::getPath()
+vector<list<CInputPoint3D>>& CMeanFilter::getPath()
 {
 	return meanPath;
 }
 
-void CMeanFilter::mean(vector<list<CPoint3D>>& sourcePath)
+void CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath)
 {
-	list<CPoint3D> dummyList;
+	list<CInputPoint3D> dummyList;
 	for (size_t s = 0; s < sourcePath.size(); s++)
 	{
 		dummyList = calculateMean(sourcePath[s]);
@@ -40,7 +40,7 @@ void CMeanFilter::mean(vector<list<CPoint3D>>& sourcePath)
 	}
 }
 
-list<CPoint3D> CMeanFilter::calculateMean(list<CPoint3D>& segment)
+list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)
 {
 	double sumX = 0, sumY = 0, sumZ = 0;		// oder long??
 	double div = 0;
@@ -48,12 +48,12 @@ list<CPoint3D> CMeanFilter::calculateMean(list<CPoint3D>& segment)
 	int OffsetPos = 0;
 	int OffsetNeg = 0;
 
-	CPoint3D p;
+	CInputPoint3D p;
 
-	int inputSize = segment.size();
+	size_t inputSize = segment.size();
 
-	list<CPoint3D>::iterator it = segment.begin();
-	list<CPoint3D> newSegment;
+	list<CInputPoint3D>::iterator it = segment.begin();
+	list<CInputPoint3D> newSegment;
 
 	for (size_t i = 0; i < inputSize - windowSize; ++i)
 	{

@@ -14,17 +14,17 @@ public:
 	CSegmentApproximator(void);
 	~CSegmentApproximator(void);
 
-	void approx(const vector<list<CPoint3D>>& Segments);
+	void approx(const vector<list<CInputPoint3D>>& Segments);
 	void setmaxDistance(double maxDistanceSource);
 	double getmaxDistance();
 
-	vector<list<CPoint3D>>& getSegmentsApproxVector();
+	vector<list<CInputPoint3D>>& getSegmentsApproxVector();
 
 private:
-	vector<list<CPoint3D>> segmentsApprox;
+	vector<list<CInputPoint3D>> segmentsApprox;
 
 	double maxDistance;
-	void douglasPeuckerRecursive(list<CPoint3D>& segment, std::list<CPoint3D>::iterator startItr, std::list<CPoint3D>::iterator endItr, double maxDistance);
+	void douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr, double maxDistance);
 	double calcDist(int xS, int yS, int zS, int xE, int yE, int zE, int x, int y, int z);
 
 };

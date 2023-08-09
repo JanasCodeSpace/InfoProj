@@ -6,50 +6,20 @@
 /* initialisieren des Punktes */
 CPoint3D::CPoint3D(void)
 {
-	timestamp = 0;
  	x = 0;
 	y = 0;
 	z = 0;
-	a = 0;
-	b = 0;
-	c = 0;
-	speed = 0;
 }
 
-/* setzte X Y Z */
 CPoint3D::CPoint3D(double X, double Y, double Z)
 {
-	timestamp = 0;					// Kann das zu Prolemen f�hren??
 	x = X;
 	y = Y;
 	z = Z;
-	a = 0;
-	b = 0;
-	c = 0;
-	speed = 0;
-}
-
-CPoint3D::CPoint3D(double time, double X, double Y, double Z)
-{
-	timestamp = time;
-	x = X;
-	y = Y;
-	z = Z;
-	a = 0;
-	b = 0;
-	c = 0;
-	speed = 0;
-
 }
 
 CPoint3D::~CPoint3D(void)
 {
-}
-
-
-double CPoint3D::getTime()
-{
-	return timestamp;
 }
 
 double CPoint3D::getX(void)
@@ -67,41 +37,6 @@ double CPoint3D::getZ(void)
 	return z;
 }
 
-double CPoint3D::getA(void)
-{
-	return a;
-}
-
-double CPoint3D::getB(void)
-{
-	return b;
-}
-
-double CPoint3D::getC(void)
-{
-	return c;
-}
-
-double CPoint3D::getSpeed(void)
-{
-	return speed;
-}
-
-CEulerMatrix CPoint3D::getEulerMatrix()
-{
-	return orientationMatrix;
-}
-
-void CPoint3D::setSpeed(double speedIn)
-{
-	speed = speedIn;
-}
-
-void CPoint3D::setTime(double time)
-{
-	timestamp = time;
-}
-
 void CPoint3D::setX(double X)
 {
 	x = X;
@@ -112,37 +47,9 @@ void CPoint3D::setY(double Y)
 	y = Y;
 }
 
-void CPoint3D::setA(double A)
-{
-	a = A;
-}
-
-void CPoint3D::setB(double B)
-{
-	b = B;
-}
-
-void CPoint3D::setC(double C)
-{
-	c = C;
-}
-
 void CPoint3D::setZ(double Z)
 {
 	z = Z;
-}
-
-void CPoint3D::setEulerMatrix(CEulerMatrix orientation)
-{
-	orientationMatrix = orientation;
-}
-
-
-void CPoint3D::setPoint(double time, double X, double Y, double Z, CEulerMatrix orientation)
-{
-	setTime(time);
-	set(X, Y, Z);
-	setEulerMatrix(orientation);
 }
 
 void CPoint3D::set(double X, double Y, double Z)
@@ -152,13 +59,10 @@ void CPoint3D::set(double X, double Y, double Z)
 	z = Z;
 }
 
-
 double CPoint3D::distanceTo(CPoint3D point)
 {
 	return sqrt(pow((double)(x - (double)point.getX()), 2) + pow((double)(y - (double)point.getY()), 2) + pow((double)(z - (double)point.getZ()), 2));	// Pythagoras 3D
 }
-
-
 
 double CPoint3D::distanceTo(CLine3D line)
 {
@@ -190,4 +94,119 @@ double CPoint3D::distanceTo(CLine3D line)
 	dist = sqrt(vp1 * vp1 + vp2 * vp2 + vp3 * vp3) / rv_sq;	// Betrag des Vektors berechnen
 
 	return dist;
+}
+
+// InputPoint3D
+
+CInputPoint3D::CInputPoint3D(void) : CPoint3D()
+{
+	timestamp = 0;
+}
+
+CInputPoint3D::CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)
+{
+	x = X;
+	y = Y;
+	z = Z;
+	timestamp = Timestamp;
+	orientationMatrix = Matrix;
+
+}
+
+CInputPoint3D::~CInputPoint3D(void)
+{
+}
+
+void CInputPoint3D::setEulerMatrix(CEulerMatrix orientation)
+{
+	orientationMatrix = orientation;
+}
+
+
+void CInputPoint3D::setPoint(double time, double X, double Y, double Z, CEulerMatrix orientation)
+{
+	setTime(time);
+	set(X, Y, Z);
+	setEulerMatrix(orientation);
+}
+
+void CInputPoint3D::setTime(double time)
+{
+	timestamp = time;
+}
+
+CEulerMatrix CInputPoint3D::getEulerMatrix()
+{
+	return orientationMatrix;
+}
+
+double CInputPoint3D::getTime()
+{
+	return timestamp;
+}
+
+// OutputPoint3D
+
+COutputPoint3D::COutputPoint3D(void) : CPoint3D()
+{
+	speed = 0;
+	a = 0;
+	b = 0;
+	c = 0;
+}
+
+COutputPoint3D::COutputPoint3D(double Speed, double X, double Y, double Z, double A, double B, double C)
+{
+	speed = Speed;
+	a = A;
+	b = B;
+	c = C;
+	x = X;
+	y = Y;
+	z = Z;
+}
+
+COutputPoint3D::~COutputPoint3D(void)
+{
+
+}
+
+double COutputPoint3D::getA(void)
+{
+	return a;
+}
+
+double COutputPoint3D::getB(void)
+{
+	return b;
+}
+
+double COutputPoint3D::getC(void)
+{
+	return c;
+}
+
+double COutputPoint3D::getSpeed(void)
+{
+	return speed;
+}
+
+void COutputPoint3D::setA(double A)
+{
+	a = A;
+}
+
+void COutputPoint3D::setB(double B)
+{
+	b = B;
+}
+
+void COutputPoint3D::setC(double C)
+{
+	c = C;
+}
+
+void COutputPoint3D::setSpeed(double Speed)
+{
+	speed = Speed;
 }

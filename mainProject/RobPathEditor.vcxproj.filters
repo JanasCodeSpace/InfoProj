@@ -42,9 +42,6 @@
     <ClInclude Include="MeanFilter.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="PathPostProcessing.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RobPathEditor.cpp">
@@ -75,9 +72,6 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="MeanFilter.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="PathPostProcessing.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

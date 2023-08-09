@@ -18,17 +18,16 @@ public:
 
 	int getWindowSize();
 
-	vector<list<CPoint3D>>& getPath();
+	vector<list<CInputPoint3D>>& getPath();
 
-	list<CPoint3D> calculateMean(list<CPoint3D>& segment);
-	void mean(vector<list<CPoint3D>>& sourcePath);
+	list<CInputPoint3D> calculateMean(list<CInputPoint3D>& segment);
+	void mean(vector<list<CInputPoint3D>>& sourcePath);
 
 private:
 	int windowSize;
 	int position;
 	double sum;
 
-
-	vector<list<CPoint3D>> meanPath;
+	vector<list<CInputPoint3D>> meanPath;
 };
 

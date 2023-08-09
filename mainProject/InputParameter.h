@@ -29,11 +29,11 @@ public:
 	tuple <double, double, double> getAngles(void);
 
 	void openFile(std::string path);
-	bool detectJump(CPoint3D p, double x_prev, double  y_prev,double z_prev);
-	vector<list<CPoint3D>>& getPath();
+	bool detectJump(CInputPoint3D p, double x_prev, double  y_prev,double z_prev);
+	vector<list<CInputPoint3D>>& getPath();
 
 private:
-	vector<list<CPoint3D>> initialPath;
+	vector<list<CInputPoint3D>> initialPath;
 	double speed;
 	bool speedManual;
 	bool orientationManual;

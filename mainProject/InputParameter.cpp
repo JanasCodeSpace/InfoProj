@@ -43,7 +43,7 @@ void CInputParameter::setSpeed(double initSpeed, bool initSpeedManual)
 	speedManual = initSpeedManual;
 }
 
-vector<list<CPoint3D>>& CInputParameter::getPath()
+vector<list<CInputPoint3D>>& CInputParameter::getPath()
 {
 	return initialPath;
 }
@@ -72,7 +72,7 @@ void CInputParameter::openFile(string path)
 {
 	ifstream fin(path);
 	char delimiter = ' ';
-	CPoint3D tmpPoint;
+	CInputPoint3D tmpPoint;
 	CEulerMatrix tmpEuler;
 	double x, y, z;
 	double x_prev = 0, y_prev = 0, z_prev = 0;
@@ -94,13 +94,12 @@ void CInputParameter::openFile(string path)
 			>> dummyMatrix[1][0] >> dummyMatrix[1][1] >> dummyMatrix[1][2] >> dummyMatrix[2][0] >> dummyMatrix[2][1] >> dummyMatrix[2][2];
 
 		tmpEuler.setMatrix(dummyMatrix);
-		tmpPoint.setSpeed(0);
 		tmpPoint.setPoint(timestamp, x, y, z, tmpEuler.getMatrix());
 
 		if (detectJump(tmpPoint, x_prev, y_prev, z_prev))
 		{
 			segmentCount++;
-			initialPath.push_back(list<CPoint3D>());
+			initialPath.push_back(list<CInputPoint3D>());
 		}
 
 		initialPath[segmentCount].push_back(tmpPoint);
@@ -112,7 +111,7 @@ void CInputParameter::openFile(string path)
 	fin.close();
 }
 
-bool CInputParameter::detectJump(CPoint3D p, double x_prev, double  y_prev, double z_prev)
+bool CInputParameter::detectJump(CInputPoint3D p, double x_prev, double  y_prev, double z_prev)
 {
 	if(abs(p.getX() - x_prev) > difference)
 		return true;

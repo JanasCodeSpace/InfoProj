@@ -10,9 +10,9 @@ CSegmentApproximator::~CSegmentApproximator(void)
 {
 }
 
-void CSegmentApproximator::approx(const vector<list<CPoint3D>>& segments)
+void CSegmentApproximator::approx(const vector<list<CInputPoint3D>>& segments)
 {
-	CPoint3D p;
+	CInputPoint3D p;
 
 	segmentsApprox = segments;
 
@@ -33,23 +33,23 @@ double CSegmentApproximator::getmaxDistance()
 	return maxDistance;
 }
 
-vector<list<CPoint3D>>& CSegmentApproximator::getSegmentsApproxVector()
+vector<list<CInputPoint3D>>& CSegmentApproximator::getSegmentsApproxVector()
 {
 	return segmentsApprox;
 }
 
-void CSegmentApproximator::douglasPeuckerRecursive(list<CPoint3D>& segment, std::list<CPoint3D>::iterator startItr, std::list<CPoint3D>::iterator endItr, double maxDistance)
+void CSegmentApproximator::douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr, double maxDistance)
 {
 	if (segment.size() < 3) return;
 	if (distance(startItr, endItr) == 2) return;
-	CPoint3D pStart; CPoint3D pEnd;
+	CInputPoint3D pStart; CInputPoint3D pEnd;
 	pStart.setX(startItr->getX()); pStart.setY(startItr->getY()); pStart.setZ(startItr->getZ());
 
 	//pEnd.x=segment.back().x; pEnd.y = segment.back().y;
 	pEnd.setX(endItr->getX()); pEnd.setY(endItr->getY()); pEnd.setZ(endItr->getZ());
 
 	double dist = 0.0, maxDist = 0.0;
-	std::list<CPoint3D>::iterator maxItr, itr;
+	std::list<CInputPoint3D>::iterator maxItr, itr;
 
 	for (itr = startItr; itr != endItr; itr++)
 	{

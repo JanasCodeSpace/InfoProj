@@ -12,11 +12,11 @@ public:
 	CPathBuilder(void);
 	~CPathBuilder(void);
 
-	vector<CPoint3D>& getPath();
+	vector<CInputPoint3D>& getPath();
 
-	void createPath(vector<list<CPoint3D>>& segments, string filename);
+	void createPath(vector<list<CInputPoint3D>>& segments, string filename);
 
 private:
-	vector<CPoint3D> path;
+	vector<CInputPoint3D> path;
 };
 
