@@ -21,7 +21,7 @@ public:
 
 	void postProcessing(vector<CPoint3D>& path);
 	void calculateSpeed(CPoint3D& p, size_t i);
-	void changeEulerManual(CPoint3D& p);
+	void calculateAngles(CPoint3D& p);
 
 	void setData(double speed, bool speedManual, bool orientationManual, tuple<double , double , double> angles);
 

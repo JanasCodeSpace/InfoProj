@@ -37,7 +37,9 @@ void CRobCodeGenerator::generateRobCode(vector<CPoint3D>& points, string filenam
 		
 		//currentPoint = Transformation * currentPoint; //Here wee need a transformationmatrix containing public parameters scaleX,offsetX...
 
-		fprintf(fid, "LIN {X %f, Y %f, Z %f, A %f, B %f, C %f}\n", currentPoint.getX(), currentPoint.getY(), currentPoint.getZ(), 0.0, 180.0, 0.0); //A = 0, B = 180, C = 0 (Works for "usual" pen tool perpendicular to "usual" table)
+		fprintf(fid, "&VAL.CP %f", currentPoint.getSpeed());
+		fprintf(fid, "LIN {X %f, Y %f, Z %f, A %f, B %f, C %f}\n", currentPoint.getX(), currentPoint.getY(), currentPoint.getZ(), 
+			currentPoint.getA(), currentPoint.getB(), currentPoint.getC());
 	}
 
 	fputs("END", fid);

@@ -10,6 +10,10 @@ CPoint3D::CPoint3D(void)
  	x = 0;
 	y = 0;
 	z = 0;
+	a = 0;
+	b = 0;
+	c = 0;
+	speed = 0;
 }
 
 /* setzte X Y Z */
@@ -19,6 +23,10 @@ CPoint3D::CPoint3D(double X, double Y, double Z)
 	x = X;
 	y = Y;
 	z = Z;
+	a = 0;
+	b = 0;
+	c = 0;
+	speed = 0;
 }
 
 CPoint3D::CPoint3D(double time, double X, double Y, double Z)
@@ -27,6 +35,10 @@ CPoint3D::CPoint3D(double time, double X, double Y, double Z)
 	x = X;
 	y = Y;
 	z = Z;
+	a = 0;
+	b = 0;
+	c = 0;
+	speed = 0;
 
 }
 
@@ -55,6 +67,26 @@ double CPoint3D::getZ(void)
 	return z;
 }
 
+double CPoint3D::getA(void)
+{
+	return a;
+}
+
+double CPoint3D::getB(void)
+{
+	return b;
+}
+
+double CPoint3D::getC(void)
+{
+	return c;
+}
+
+double CPoint3D::getSpeed(void)
+{
+	return speed;
+}
+
 CEulerMatrix CPoint3D::getEulerMatrix()
 {
 	return orientationMatrix;
@@ -78,6 +110,21 @@ void CPoint3D::setX(double X)
 void CPoint3D::setY(double Y)
 {
 	y = Y;
+}
+
+void CPoint3D::setA(double A)
+{
+	a = A;
+}
+
+void CPoint3D::setB(double B)
+{
+	b = B;
+}
+
+void CPoint3D::setC(double C)
+{
+	c = C;
 }
 
 void CPoint3D::setZ(double Z)

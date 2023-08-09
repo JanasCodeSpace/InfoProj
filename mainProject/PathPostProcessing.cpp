@@ -58,7 +58,13 @@ void CPathPostProcessing::postProcessing(vector<CPoint3D>& path)
 		}
 			
 		if (orientationManual)
-			changeEulerManual(p);
+		{
+			p.setA(A);
+			p.setB(B);
+			p.setC(C);
+		}
+		else
+			calculateAngles(p);
 
 		processedPath.push_back(p);
 	}
@@ -81,7 +87,13 @@ void CPathPostProcessing::calculateSpeed(CPoint3D& p, size_t s)
 	p.setSpeed(speed); //Zuweisung der Geschwindigkeit
 }
 
-void CPathPostProcessing::changeEulerManual(CPoint3D& p)
+void CPathPostProcessing::calculateAngles(CPoint3D& p)
 {
-	//Hier kommt das �berschreiben der Eulermatrix rein
+	double a, b, c;
+
+	// Funktion in Eulermatrix aufrufen die a/b/c neu berechnet
+
+	p.setA(a);
+	p.setB(b);
+	p.setC(c);
 }
