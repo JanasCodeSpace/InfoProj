@@ -22,6 +22,8 @@ CRobCodeGenerator::~CRobCodeGenerator(void)
 
 void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filename)
 {
+	postProcessing(points);
+	
 	FILE* fid = fopen(filename.c_str(), "w");
 
 	if (fid == NULL)
@@ -79,10 +81,10 @@ void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)
 				p.setSpeed(1); //Der erste Punkt(0) wird mit Standardgeschwindigkeit 1m/s angefahren.
 
 			else
-				p.setSpeed(calculateSpeed(pIn, s, timePrev)); //Die Geschwindigkeit zwischen den weiteren Punkten wird berechnet.
+				p.setSpeed(calculateSpeed(path[s], s, timePrev)); //Die Geschwindigkeit zwischen den weiteren Punkten wird berechnet.
 		}
 
-		if (orientationManual)
+		if (!orientationManual)
 		{
 			p.setA(A);
 			p.setB(B);
