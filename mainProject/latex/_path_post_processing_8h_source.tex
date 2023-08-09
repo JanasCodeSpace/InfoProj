@@ -1,0 +1,42 @@
+\doxysection{Path\+Post\+Processing.\+h}
+\hypertarget{_path_post_processing_8h_source}{}\label{_path_post_processing_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Point3D.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ MAX\_SPEED\ 2.0}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_path_post_processing}{CPathPostProcessing}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing}{CPathPostProcessing}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing}{CPathPostProcessing}}(\textcolor{keywordtype}{double}\ speedIn,\ \textcolor{keywordtype}{bool}\ speedManualIn,\ \textcolor{keywordtype}{bool}\ orientationManualIn,\ \textcolor{keywordtype}{double}\ AIn,\ \textcolor{keywordtype}{double}\ BIn,\ \textcolor{keywordtype}{double}\ CIn);}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing}{\string~CPathPostProcessing}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ vector<CPoint3D>\&\ getProcessedPath(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ postProcessing(vector<CPoint3D>\&\ path);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ calculateSpeed(\mbox{\hyperlink{class_c_output_point3_d}{COutputPoint3D}}\&\ p,\ \textcolor{keywordtype}{size\_t}\ i);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ calculateAngles(\mbox{\hyperlink{class_c_output_point3_d}{COutputPoint3D}}\&\ p);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ setData(\textcolor{keywordtype}{double}\ speed,\ \textcolor{keywordtype}{bool}\ speedManual,\ \textcolor{keywordtype}{bool}\ orientationManual,\ tuple<double\ ,\ double\ ,\ double>\ angles);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ vector<COutputPoint3D>\ processedPath;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}\ speed;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ speedManual;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ orientationManual;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{double}\ A;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{double}\ B;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{double}\ C;}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+
+\end{DoxyCode}

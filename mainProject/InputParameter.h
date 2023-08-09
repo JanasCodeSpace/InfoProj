@@ -1,3 +1,12 @@
+/**
+ * @file: InputParameter.h
+ * @brief:
+ * 
+ * 
+ * @author:
+ */
+
+
 #pragma once
 
 #include "EulerMatrix.h"

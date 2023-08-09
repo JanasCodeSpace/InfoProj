@@ -1,0 +1,27 @@
+\doxysection{Path\+Builder.\+h}
+\hypertarget{_path_builder_8h_source}{}\label{_path_builder_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Point3D.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_path_builder}{CPathBuilder}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_c_path_builder}{CPathBuilder}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_c_path_builder}{\string~CPathBuilder}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ vector<CInputPoint3D>\&\ getPath();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ createPath(vector<list<CInputPoint3D>>\&\ segments,\ \textcolor{keywordtype}{string}\ filename);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ vector<CInputPoint3D>\ path;}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+
+\end{DoxyCode}

@@ -5,12 +5,9 @@
 #include "MeanFilter.h"
 #include "GUI.h"
 #include <iostream>
-#include <valarray>
 #include <ctime>
 
 using namespace std;
-
-enum RobCodeLang {KUKA};
 
 int main()
 {

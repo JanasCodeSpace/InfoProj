@@ -1,0 +1,75 @@
+\doxysection{Point3\+D.\+h}
+\hypertarget{_point3_d_8h_source}{}\label{_point3_d_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}EulerMatrix.h"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_line3_d}{CLine3D}};}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_point3_d}{CPoint3D}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z);}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d}{\string~CPoint3D}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ getX();}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ getY();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{double}\ getZ();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ setX(\textcolor{keywordtype}{double}\ X);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ setY(\textcolor{keywordtype}{double}\ Y);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ setZ(\textcolor{keywordtype}{double}\ Z);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ set(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ distanceTo(\mbox{\hyperlink{class_c_point3_d}{CPoint3D}}\ point);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ distanceTo(\mbox{\hyperlink{class_c_line3_d}{CLine3D}}\ line);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ x,\ y,\ z;}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}}
+\DoxyCodeLine{00032\ \{\ \ \ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \textcolor{keywordtype}{double}\ Timestamp,\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ Matrix);}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{\string~CInputPoint3D}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ getTime();}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ getEulerMatrix();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ setTime(\textcolor{keywordtype}{double}\ time);\ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ setEulerMatrix(\mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ orientation);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ setPoint(\textcolor{keywordtype}{double}\ time,\ \textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ orientation);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{double}\ timestamp;}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ orientationMatrix;}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_output_point3_d}{COutputPoint3D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}}
+\DoxyCodeLine{00051\ \{}
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d}{COutputPoint3D}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d}{COutputPoint3D}}(\textcolor{keywordtype}{double}\ Speed,\ \textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \textcolor{keywordtype}{double}\ A,\ \textcolor{keywordtype}{double}\ B,\ \textcolor{keywordtype}{double}\ C);}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d}{\string~COutputPoint3D}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{double}\ getSpeed();}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{double}\ getA();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{double}\ getB();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{double}\ getC();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//void\ setPoint(double\ speed,\ double\ X,\ double\ Y,\ double\ Z,\ CEulerMatrix\ orientation);}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ setSpeed(\textcolor{keywordtype}{double}\ speed);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ setA(\textcolor{keywordtype}{double}\ A);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ setB(\textcolor{keywordtype}{double}\ B);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ setC(\textcolor{keywordtype}{double}\ C);}
+\DoxyCodeLine{00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{double}\ a,\ b,\ c;}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{double}\ speed;}
+\DoxyCodeLine{00070\ \};}
+
+\end{DoxyCode}
