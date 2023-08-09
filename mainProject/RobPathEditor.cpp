@@ -31,12 +31,18 @@ int main()
 		meanFilter.setWindowSize(3);
 		meanFilter.mean(inputParameter.getPath());
 
+		// Douglas-Peuker Algorithm
+
 		CSegmentApproximator segmentApproximator;
 		segmentApproximator.setmaxDistance(0.5);
 		segmentApproximator.approx(meanFilter.getPath());
 
+		// Puts the Segments together to one path
+
 		CPathBuilder pathBuilder;
 		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), "08_path.csv");
+
+		// Calculates Speed, Angle and generates the Output Data
 
 		CRobCodeGenerator codeGenerator(inputParameter.getSpeed(), inputParameter.getSpeedManual(),
 			inputParameter.getOrientationManual(), inputParameter.getAngles());

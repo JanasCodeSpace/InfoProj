@@ -4,6 +4,12 @@
 
 CRobCodeGenerator::CRobCodeGenerator(void)
 {
+	speed = 0;
+	speedManual = 0;
+	orientationManual = 0;
+	A = 0;
+	B = 0;
+	C = 0;
 }
 
 CRobCodeGenerator::CRobCodeGenerator(double Speed, bool SpeedManual, bool OrientationManual, tuple<double, double, double> angles)
@@ -23,10 +29,12 @@ CRobCodeGenerator::~CRobCodeGenerator(void)
 void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filename)
 {
 	postProcessing(points);
-	
-	FILE* fid = fopen(filename.c_str(), "w");
 
-	if (fid == NULL)
+	errno_t err;
+	
+	FILE* fid;
+
+	if ((err = fopen_s(&fid, filename.c_str(), "w")) != 0)
 	{ 
 		string msg = "Open file: ";
 		msg += filename;
