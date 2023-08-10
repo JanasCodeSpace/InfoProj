@@ -17,12 +17,12 @@
   * etc...
   */
 
-#include "SegmentApproximator.h"
-#include "PathBuilder.h"
-#include "RobCodeGenerator.h"
-#include "InputParameter.h"
-#include "MeanFilter.h"
-#include "GUI.h"
+#include "./header/SegmentApproximator.h"
+#include "./header/PathBuilder.h"
+#include "./header/RobCodeGenerator.h"
+#include "./header/InputParameter.h"
+#include "./header/MeanFilter.h"
+#include "./header/GUI.h"
 #include <iostream>
 #include <ctime>
 

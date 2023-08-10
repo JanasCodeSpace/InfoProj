@@ -105,7 +105,6 @@ public:
 	*/
 	bool detectJump(CInputPoint3D p, double x_prev, double y_prev, double z_prev);
 	/**
-	* Gibt die eingegebenen Winkel als tuple zurück
 	* @brief: Gibt Pfad zurück
 	* @return: vector<list<CInputPoint3D>> den eingelesen Pfad
 	*/

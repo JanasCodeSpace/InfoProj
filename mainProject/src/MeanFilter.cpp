@@ -1,14 +1,14 @@
-#include "MeanFilter.h"
+#include "./header/MeanFilter.h"
 #include <math.h>
 
 CMeanFilter::CMeanFilter()
 {
-	setWindowSize(0);
+	windowSize = 3;
 }
 
-CMeanFilter::CMeanFilter(int Window, long lenth)
+CMeanFilter::CMeanFilter(int Window)
 {
-	setWindowSize(Window);
+	windowSize = Window;
 }
 
 CMeanFilter::~CMeanFilter()

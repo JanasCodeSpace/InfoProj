@@ -1,6 +1,6 @@
-#include "SegmentApproximator.h"
-#include "Point3D.h"
-#include "Line3D.h"
+#include "./header/SegmentApproximator.h"
+#include "./header/Point3D.h"
+#include "./header/Line3D.h"
 
 CSegmentApproximator::CSegmentApproximator(void)
 {

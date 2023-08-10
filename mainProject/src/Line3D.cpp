@@ -1,5 +1,5 @@
-#include "Line3D.h"
-#include "Point3D.h"
+#include "./header/Line3D.h"
+#include "./header/Point3D.h"
 
 CLine3D::CLine3D(void)
 {

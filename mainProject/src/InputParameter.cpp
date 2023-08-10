@@ -4,9 +4,9 @@
  * @brief: Source File Daten Einlesen
  */
 
-#include "InputParameter.h"
-#include "Point3D.h"
-#include "EulerMatrix.h"
+#include "./header/InputParameter.h"
+#include "./header/Point3D.h"
+#include "./header/EulerMatrix.h"
 
  /**
   * Initialiserung der Klasse mit allen Werten

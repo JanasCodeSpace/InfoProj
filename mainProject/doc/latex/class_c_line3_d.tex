@@ -2,17 +2,22 @@
 \hypertarget{class_c_line3_d}{}\label{class_c_line3_d}\index{CLine3D@{CLine3D}}
 
 
+\+: Berechnung Geraden  
+
+
+
+
 {\ttfamily \#include $<$Line3\+D.\+h$>$}
 
 \doxysubsubsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_c_line3_d_ae1e5046c32c80e0229a6ec5736625913}{CLine3D}} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Default Konstruktor \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_c_line3_d_a8ad70725de89e5962e7e6ea227db37a4}{CLine3D}} (\mbox{\hyperlink{class_c_point3_d}{CPoint3D}} P1, \mbox{\hyperlink{class_c_point3_d}{CPoint3D}} P2)
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Konstruktor mit zwei Punkten \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_c_line3_d_ae05b21577225f1750869512982a7d0bd}{\texorpdfstring{$\sim$}{\string~}\+CLine3D}} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \+: Dekonstruktor \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
 \item 
@@ -23,9 +28,11 @@
 
 
 \doxysubsection{Ausführliche Beschreibung}
+\+: Berechnung Geraden 
 
+In dieser Klasse werden alle Berechnungen die zwischen zwei Punken passieren gehandhabt. 
 
-Definiert in Zeile \mbox{\hyperlink{_line3_d_8h_source_l00007}{7}} der Datei \mbox{\hyperlink{_line3_d_8h_source}{Line3\+D.\+h}}.
+Definiert in Zeile \mbox{\hyperlink{_line3_d_8h_source_l00018}{18}} der Datei \mbox{\hyperlink{_line3_d_8h_source}{Line3\+D.\+h}}.
 
 
 
@@ -36,6 +43,13 @@ Definiert in Zeile \mbox{\hyperlink{_line3_d_8h_source_l00007}{7}} der Datei \mb
 \doxysubsubsection{\texorpdfstring{CLine3D()}{CLine3D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily CLine3\+D\+::\+CLine3D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
+
+
+\+: Default Konstruktor 
+
+Initialisiert die Klasse \begin{DoxySeeAlso}{Siehe auch}
+\+: \doxylink{class_c_line3_d_a8ad70725de89e5962e7e6ea227db37a4}{CLine3\+D(\+CPoint3\+D P1, CPoint3\+D P2)} 
+\end{DoxySeeAlso}
 
 
 Definiert in Zeile \mbox{\hyperlink{_line3_d_8cpp_source_l00004}{4}} der Datei \mbox{\hyperlink{_line3_d_8cpp_source}{Line3\+D.\+cpp}}.
@@ -54,6 +68,13 @@ Definiert in Zeile \mbox{\hyperlink{_line3_d_8cpp_source_l00004}{4}} der Datei \
 
 
 
+\+: Konstruktor mit zwei Punkten 
+
+Initialisiert die Klasse \begin{DoxySeeAlso}{Siehe auch}
+\+: \doxylink{class_c_line3_d_ae1e5046c32c80e0229a6ec5736625913}{CLine3\+D(void)}; 
+\end{DoxySeeAlso}
+
+
 Definiert in Zeile \mbox{\hyperlink{_line3_d_8cpp_source_l00008}{8}} der Datei \mbox{\hyperlink{_line3_d_8cpp_source}{Line3\+D.\+cpp}}.
 
 
@@ -66,13 +87,17 @@ Definiert in Zeile \mbox{\hyperlink{_line3_d_8cpp_source_l00008}{8}} der Datei \
 \end{DoxyCode}
 
 
-Benutzt \mbox{\hyperlink{_line3_d_8h_source_l00014}{p1}} und \mbox{\hyperlink{_line3_d_8h_source_l00015}{p2}}.
+Benutzt \mbox{\hyperlink{_line3_d_8h_source_l00041}{p1}} und \mbox{\hyperlink{_line3_d_8h_source_l00045}{p2}}.
 
 \Hypertarget{class_c_line3_d_ae05b21577225f1750869512982a7d0bd}\label{class_c_line3_d_ae05b21577225f1750869512982a7d0bd} 
 \index{CLine3D@{CLine3D}!````~CLine3D@{\texorpdfstring{$\sim$}{\string~}CLine3D}}
 \index{````~CLine3D@{\texorpdfstring{$\sim$}{\string~}CLine3D}!CLine3D@{CLine3D}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CLine3D()}{\string~CLine3D()}}
 {\footnotesize\ttfamily CLine3\+D\+::\texorpdfstring{$\sim$}{\string~}\+CLine3D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Dekonstruktor 
 
 
 
@@ -93,9 +118,9 @@ Definiert in Zeile \mbox{\hyperlink{_line3_d_8cpp_source_l00014}{14}} der Datei 
 \doxysubsubsection{\texorpdfstring{p1}{p1}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_c_point3_d}{CPoint3D}} CLine3\+D\+::p1}
 
+Punkt 1 
 
-
-Definiert in Zeile \mbox{\hyperlink{_line3_d_8h_source_l00014}{14}} der Datei \mbox{\hyperlink{_line3_d_8h_source}{Line3\+D.\+h}}.
+Definiert in Zeile \mbox{\hyperlink{_line3_d_8h_source_l00041}{41}} der Datei \mbox{\hyperlink{_line3_d_8h_source}{Line3\+D.\+h}}.
 
 
 
@@ -107,9 +132,9 @@ Wird benutzt von \mbox{\hyperlink{_line3_d_8cpp_source_l00008}{CLine3\+D()}} und
 \doxysubsubsection{\texorpdfstring{p2}{p2}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_c_point3_d}{CPoint3D}} CLine3\+D\+::p2}
 
+Punkt 2 
 
-
-Definiert in Zeile \mbox{\hyperlink{_line3_d_8h_source_l00015}{15}} der Datei \mbox{\hyperlink{_line3_d_8h_source}{Line3\+D.\+h}}.
+Definiert in Zeile \mbox{\hyperlink{_line3_d_8h_source_l00045}{45}} der Datei \mbox{\hyperlink{_line3_d_8h_source}{Line3\+D.\+h}}.
 
 
 

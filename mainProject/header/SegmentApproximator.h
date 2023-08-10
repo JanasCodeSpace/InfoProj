@@ -1,4 +1,9 @@
-#include <valarray>
+/**
+ * @file: SegmentApproximator.h
+ *
+ * @brief: Berechnung des Douglas Peuker Algorithmusses
+ */
+
 #include <vector>
 #include <list>
 #include <iostream>
@@ -8,10 +13,23 @@
 using namespace std;
 
 #pragma once
+
+/**
+ * In dieser Klasse wird der Pfad mit hilfe des Douglas-Peuker Algorithmusses ausgedünnt
+ * @brief: Ausdünnen des Pfades
+ */
 class CSegmentApproximator
 {
 public:
+	/**
+	* Initialisiert die Input Daten mit Null
+	* @brief: Default Konstruktor
+	* @see: CInputParameter(double initSpeed, bool initSeepManual, bool initOrientationManual, double initA, double initB, double initC)
+	*/
 	CSegmentApproximator(void);
+	/**
+	* @brief: Dekonstruktor
+	*/
 	~CSegmentApproximator(void);
 
 	void approx(const vector<list<CInputPoint3D>>& Segments);

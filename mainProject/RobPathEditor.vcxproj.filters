@@ -36,9 +36,6 @@
     <ClInclude Include="header\PathBuilder.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="header\PathPostProcessing.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="header\Point3D.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -66,9 +63,6 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="src\PathBuilder.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PathPostProcessing.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="src\Point3D.cpp">

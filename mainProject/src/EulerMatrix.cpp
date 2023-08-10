@@ -1,4 +1,4 @@
-#include "EulerMatrix.h"
+#include "./header/EulerMatrix.h"
 #include <math.h>
 
 CEulerMatrix::CEulerMatrix(void)

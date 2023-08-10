@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "Point3D.h"
+#include "./header/Point3D.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTests

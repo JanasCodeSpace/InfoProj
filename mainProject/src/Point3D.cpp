@@ -1,5 +1,5 @@
-#include "Point3D.h"
-#include "Line3D.h"
+#include "./header/Point3D.h"
+#include "./header/Line3D.h"
 #include <math.h>
 
 

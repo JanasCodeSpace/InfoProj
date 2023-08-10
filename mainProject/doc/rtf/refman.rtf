@@ -225,9 +225,11 @@ Auflistung der Klassen\par \pard\plain
 \par
 {\b {\b CInputPoint3D} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADL \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
-{\b {\b CLine3D} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADW \\*MERGEFORMAT}{\fldrslt pagenum}}
+{\b {\b CLine3D} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Berechnung Geraden })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADW \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
-{\b {\b CMeanFilter} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEC \\*MERGEFORMAT}{\fldrslt pagenum}}
+{\b {\b CMeanFilter} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: gleitenden Mittelwertfilters })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEC \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 {\b {\b COutputPoint3D} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEP \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
@@ -263,9 +265,11 @@ Auflistung der Dateien\par \pard\plain
 {\b header/{\b InputParameter.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 : Header File Daten Einlesen })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAY \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
-{\b header/{\b Line3D.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+{\b header/{\b Line3D.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Header File Daten Einlesen })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAZ \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
-{\b header/{\b MeanFilter.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABA \\*MERGEFORMAT}{\fldrslt pagenum}}
+{\b header/{\b MeanFilter.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Berechnung des gleitenden Mittelwertfilters })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABA \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 {\b header/{\b PathBuilder.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABB \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
@@ -1016,7 +1020,6 @@ CInputParameter::~CInputParameter (void )}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 : Dekonstruktor }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Initialisiert die Input Daten\par
 Dekonstruktor \par
 }{
 Definiert in Zeile {\b 40} der Datei {\b InputParameter.cpp}.}\par
@@ -1441,7 +1444,7 @@ double CInputParameter::A{\f2 [private]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 User eingegebener Winkel A \par
 }{
-Definiert in Zeile {\b 135} der Datei {\b InputParameter.h}.}\par
+Definiert in Zeile {\b 134} der Datei {\b InputParameter.h}.}\par
 {
 \ql
 Wird benutzt von {\b CInputParameter()}, {\b CInputParameter()}, {\b getAngles()} und {\b setOrientation()}.}\par
@@ -1459,7 +1462,7 @@ double CInputParameter::B{\f2 [private]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 User eingegebener Winkel B \par
 }{
-Definiert in Zeile {\b 139} der Datei {\b InputParameter.h}.}\par
+Definiert in Zeile {\b 138} der Datei {\b InputParameter.h}.}\par
 {
 \ql
 Wird benutzt von {\b CInputParameter()}, {\b CInputParameter()}, {\b getAngles()} und {\b setOrientation()}.}\par
@@ -1477,7 +1480,7 @@ double CInputParameter::C{\f2 [private]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 User eingegebener Winkel C \par
 }{
-Definiert in Zeile {\b 143} der Datei {\b InputParameter.h}.}\par
+Definiert in Zeile {\b 142} der Datei {\b InputParameter.h}.}\par
 {
 \ql
 Wird benutzt von {\b CInputParameter()}, {\b CInputParameter()}, {\b getAngles()} und {\b setOrientation()}.}\par
@@ -1495,7 +1498,7 @@ double CInputParameter::difference = 20{\f2 [private]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Sprung ab dem eine neue Liste angefangen wird \par
 }{
-Definiert in Zeile {\b 147} der Datei {\b InputParameter.h}.}\par
+Definiert in Zeile {\b 146} der Datei {\b InputParameter.h}.}\par
 {
 \ql
 Wird benutzt von {\b detectJump()}.}\par
@@ -1513,7 +1516,7 @@ vector<list<{\b CInputPoint3D}> > CInputParameter::initialPath{\f2 [private]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Vector mit Listen an Input Daten \par
 }{
-Definiert in Zeile {\b 119} der Datei {\b InputParameter.h}.}\par
+Definiert in Zeile {\b 118} der Datei {\b InputParameter.h}.}\par
 {
 \ql
 Wird benutzt von {\b getPath()} und {\b openFile()}.}\par
@@ -1531,7 +1534,7 @@ bool CInputParameter::orientationManual{\f2 [private]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Auswahl ob berechnete oder eingegebene Winkel verwendet werden soll \par
 }{
-Definiert in Zeile {\b 131} der Datei {\b InputParameter.h}.}\par
+Definiert in Zeile {\b 130} der Datei {\b InputParameter.h}.}\par
 {
 \ql
 Wird benutzt von {\b CInputParameter()}, {\b CInputParameter()}, {\b getOrientationManual()} und {\b setOrientation()}.}\par
@@ -1549,7 +1552,7 @@ double CInputParameter::speed{\f2 [private]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 User eingegebene Geschwindigkeit \par
 }{
-Definiert in Zeile {\b 123} der Datei {\b InputParameter.h}.}\par
+Definiert in Zeile {\b 122} der Datei {\b InputParameter.h}.}\par
 {
 \ql
 Wird benutzt von {\b CInputParameter()}, {\b CInputParameter()}, {\b getSpeed()} und {\b setSpeed()}.}\par
@@ -1567,7 +1570,7 @@ bool CInputParameter::speedManual{\f2 [private]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Auswahl ob berechnete oder eingegebene Geschwindigkeit verwendet werden soll \par
 }{
-Definiert in Zeile {\b 127} der Datei {\b InputParameter.h}.}\par
+Definiert in Zeile {\b 126} der Datei {\b InputParameter.h}.}\par
 {
 \ql
 Wird benutzt von {\b CInputParameter()}, {\b CInputParameter()}, {\b getSpeedManual()} und {\b setSpeed()}.}\par
@@ -1936,6 +1939,9 @@ CLine3D Klassenreferenz\par \pard\plain
 {\bkmkend AAAAAAAADW}
 \par
 {
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Berechnung Geraden }}\par
+{
 {\f2 #include <Line3D.h>}}\par
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 \'D6ffentliche Methoden\par
@@ -1944,10 +1950,25 @@ CLine3D Klassenreferenz\par \pard\plain
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b CLine3D} (void)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Default Konstruktor }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b CLine3D} ({\b CPoint3D} P1, {\b CPoint3D} P2)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Konstruktor mit zwei Punkten }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b ~CLine3D} (void)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Dekonstruktor }{
+}\par
+}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 \'D6ffentliche Attribute\par
@@ -1964,8 +1985,14 @@ CLine3D Klassenreferenz\par \pard\plain
 Ausf\'FChrliche Beschreibung\par
 \pard\plain 
 {
-\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
-Definiert in Zeile {\b 7} der Datei {\b Line3D.h}.}\par
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Berechnung Geraden \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+In dieser Klasse werden alle Berechnungen die zwischen zwei Punken passieren gehandhabt. \par
+}{
+Definiert in Zeile {\b 18} der Datei {\b Line3D.h}.}\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -1983,6 +2010,14 @@ CLine3D::CLine3D (void )}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Default Konstruktor }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialisiert die Klasse \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Siehe auch\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+: {\b CLine3D(CPoint3D P1, CPoint3D P2)} \par
+}}}{
 Definiert in Zeile {\b 4} der Datei {\b Line3D.cpp}.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00005 \{\par
@@ -2001,6 +2036,14 @@ CLine3D::CLine3D ({\b CPoint3D}  {\i P1}, {\b CPoint3D}  {\i P2})}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Konstruktor mit zwei Punkten }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialisiert die Klasse \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Siehe auch\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+: {\b CLine3D(void)}; \par
+}}}{
 Definiert in Zeile {\b 8} der Datei {\b Line3D.cpp}.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00009 \{\par
@@ -2024,6 +2067,9 @@ CLine3D::~CLine3D (void )}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Dekonstruktor }}\par
+{
 Definiert in Zeile {\b 14} der Datei {\b Line3D.cpp}.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00015 \{\par
@@ -2044,9 +2090,10 @@ Dokumentation der Datenelemente\par
 {\bkmkend AAAAAAAAEA}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-\par
-{
-Definiert in Zeile {\b 14} der Datei {\b Line3D.h}.}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Punkt 1 \par
+}{
+Definiert in Zeile {\b 41} der Datei {\b Line3D.h}.}\par
 {
 \ql
 Wird benutzt von {\b CLine3D()} und {\b CPoint3D::distanceTo()}.}\par
@@ -2061,9 +2108,10 @@ Wird benutzt von {\b CLine3D()} und {\b CPoint3D::distanceTo()}.}\par
 {\bkmkend AAAAAAAAEB}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-\par
-{
-Definiert in Zeile {\b 15} der Datei {\b Line3D.h}.}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Punkt 2 \par
+}{
+Definiert in Zeile {\b 45} der Datei {\b Line3D.h}.}\par
 {
 \ql
 Wird benutzt von {\b CLine3D()} und {\b CPoint3D::distanceTo()}.}\par
@@ -2086,6 +2134,9 @@ CMeanFilter Klassenreferenz\par \pard\plain
 {\bkmkend AAAAAAAAEC}
 \par
 {
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: gleitenden Mittelwertfilters }}\par
+{
 {\f2 #include <MeanFilter.h>}}\par
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 \'D6ffentliche Methoden\par
@@ -2094,8 +2145,13 @@ CMeanFilter Klassenreferenz\par \pard\plain
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b CMeanFilter} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Default Konstruktor }{
+}\par
+}\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\b CMeanFilter} (int Window, long lenth)\par
+{\b CMeanFilter} (int Window)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b ~CMeanFilter} ()\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
@@ -2128,8 +2184,14 @@ vector< list< {\b CInputPoint3D} > > {\b meanPath}\par
 Ausf\'FChrliche Beschreibung\par
 \pard\plain 
 {
-\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
-Definiert in Zeile {\b 10} der Datei {\b MeanFilter.h}.}\par
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: gleitenden Mittelwertfilters \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+In dieser Klasse werden die eingelesenen Daten mit einem gleitenden Mittelwertfilter mit einstellbarem Fenster gegl\'E4ttet. \par
+}{
+Definiert in Zeile {\b 19} der Datei {\b MeanFilter.h}.}\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -2147,21 +2209,31 @@ CMeanFilter::CMeanFilter ()}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Default Konstruktor }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialisiert die Input Daten mit Null \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Siehe auch\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+: {\b CInputParameter(double initSpeed, bool initSeepManual, bool initOrientationManual, double initA, double initB, double initC)} \par
+}}}{
 Definiert in Zeile {\b 4} der Datei {\b MeanFilter.cpp}.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00005 \{\par
-00006     setWindowSize(0);\par
-00007 \}\par
+00006     windowSize = 3;\par
+00007     position = 0;\par
+00008     sum = 0;\par
+00009 \}\par
 }
 {
 \ql
-Benutzt {\b setWindowSize()}.}\par
+Benutzt {\b position}, {\b sum} und {\b windowSize}.}\par
 }
 {\xe \v CMeanFilter\:CMeanFilter}
 {\xe \v CMeanFilter\:CMeanFilter}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-CMeanFilter::CMeanFilter (int  {\i Window}, long  {\i lenth})}}
+CMeanFilter::CMeanFilter (int  {\i Window})}}
 \par
 {\bkmkstart AAAAAAAAEE}
 {\bkmkend AAAAAAAAEE}
@@ -2169,15 +2241,15 @@ CMeanFilter::CMeanFilter (int  {\i Window}, long  {\i lenth})}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 9} der Datei {\b MeanFilter.cpp}.}\par
+Definiert in Zeile {\b 11} der Datei {\b MeanFilter.cpp}.}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00010 \{\par
-00011     setWindowSize(Window);\par
-00012 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00012 \{\par
+00013     windowSize = Window;\par
+00014 \}\par
 }
 {
 \ql
-Benutzt {\b setWindowSize()}.}\par
+Benutzt {\b windowSize}.}\par
 }
 {\xe \v ~CMeanFilter\:CMeanFilter}
 {\xe \v CMeanFilter\:~CMeanFilter}
@@ -2191,10 +2263,10 @@ CMeanFilter::~CMeanFilter ()}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 14} der Datei {\b MeanFilter.cpp}.}\par
+Definiert in Zeile {\b 16} der Datei {\b MeanFilter.cpp}.}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00015 \{\par
-00016 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00017 \{\par
+00018 \}\par
 }
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
@@ -2213,50 +2285,50 @@ list< {\b CInputPoint3D} > CMeanFilter::calculateMean (list< {\b CInputPoint3D} 
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 43} der Datei {\b MeanFilter.cpp}.}\par
+Definiert in Zeile {\b 45} der Datei {\b MeanFilter.cpp}.}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00044 \{\par
-00045     {\cf18 double} sumX = 0, sumY = 0, sumZ = 0;        {\cf20 // oder long??}\par
-00046     {\cf18 double} div = 0;\par
-00047     {\cf18 int} m = 0;\par
-00048     {\cf18 int} OffsetPos = 0;\par
-00049     {\cf18 int} OffsetNeg = 0;\par
-00050 \par
-00051     CInputPoint3D p;\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00046 \{\par
+00047     {\cf18 double} sumX = 0, sumY = 0, sumZ = 0;        {\cf20 // oder long??}\par
+00048     {\cf18 double} div = 0;\par
+00049     {\cf18 int} m = 0;\par
+00050     {\cf18 int} OffsetPos = 0;\par
+00051     {\cf18 int} OffsetNeg = 0;\par
 00052 \par
-00053     {\cf18 size_t} inputSize = segment.size();\par
+00053     CInputPoint3D p;\par
 00054 \par
-00055     list<CInputPoint3D>::iterator it = segment.begin();\par
-00056     list<CInputPoint3D> newSegment;\par
-00057 \par
-00058     {\cf19 for} ({\cf18 size_t} i = 0; i < inputSize - windowSize; ++i)\par
-00059     \{\par
-00060         sumX = 0, sumY = 0, sumZ = 0;\par
-00061         div = 0;\par
-00062         p.setTime(it->getTime());\par
-00063         p.setEulerMatrix(it->getEulerMatrix());\par
-00064         {\cf19 for} ({\cf18 size_t} j = i; j < i + windowSize; ++j)\par
-00065         \{\par
-00066 \par
-00067             sumX += it->getX();\par
-00068             sumY += it->getY();\par
-00069             sumZ += it->getZ();\par
-00070             div++;\par
-00071             it++;\par
-00072         \}\par
-00073         {\cf19 for} ({\cf18 size_t} index = windowSize; index > 0; index--)\par
-00074         \{\par
-00075             it--;\par
-00076         \}\par
-00077         p.set(sumX / div, sumY / div, sumZ / div);\par
-00078         {\cf19 if}(it != segment.end())\par
-00079             it++;\par
-00080         newSegment.push_back(p);\par
-00081 \par
-00082         \par
-00083     \}\par
-00084     {\cf19 return} newSegment;\par
-00085 \}\par
+00055     {\cf18 size_t} inputSize = segment.size();\par
+00056 \par
+00057     list<CInputPoint3D>::iterator it = segment.begin();\par
+00058     list<CInputPoint3D> newSegment;\par
+00059 \par
+00060     {\cf19 for} ({\cf18 size_t} i = 0; i < inputSize - windowSize; ++i)\par
+00061     \{\par
+00062         sumX = 0, sumY = 0, sumZ = 0;\par
+00063         div = 0;\par
+00064         p.setTime(it->getTime());\par
+00065         p.setEulerMatrix(it->getEulerMatrix());\par
+00066         {\cf19 for} ({\cf18 size_t} j = i; j < i + windowSize; ++j)\par
+00067         \{\par
+00068 \par
+00069             sumX += it->getX();\par
+00070             sumY += it->getY();\par
+00071             sumZ += it->getZ();\par
+00072             div++;\par
+00073             it++;\par
+00074         \}\par
+00075         {\cf19 for} ({\cf18 size_t} index = windowSize; index > 0; index--)\par
+00076         \{\par
+00077             it--;\par
+00078         \}\par
+00079         p.set(sumX / div, sumY / div, sumZ / div);\par
+00080         {\cf19 if}(it != segment.end())\par
+00081             it++;\par
+00082         newSegment.push_back(p);\par
+00083 \par
+00084         \par
+00085     \}\par
+00086     {\cf19 return} newSegment;\par
+00087 \}\par
 }
 {
 \ql
@@ -2277,11 +2349,11 @@ vector< list< {\b CInputPoint3D} > > & CMeanFilter::getPath ()}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 28} der Datei {\b MeanFilter.cpp}.}\par
+Definiert in Zeile {\b 30} der Datei {\b MeanFilter.cpp}.}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00029 \{\par
-00030     {\cf19 return} meanPath;\par
-00031 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00031 \{\par
+00032     {\cf19 return} meanPath;\par
+00033 \}\par
 }
 {
 \ql
@@ -2302,11 +2374,11 @@ int CMeanFilter::getWindowSize ()}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 23} der Datei {\b MeanFilter.cpp}.}\par
+Definiert in Zeile {\b 25} der Datei {\b MeanFilter.cpp}.}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00024 \{\par
-00025     {\cf19 return} windowSize;\par
-00026 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00026 \{\par
+00027     {\cf19 return} windowSize;\par
+00028 \}\par
 }
 {
 \ql
@@ -2324,16 +2396,16 @@ void CMeanFilter::mean (vector< list< {\b CInputPoint3D} > > &  {\i sourcePath})
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 33} der Datei {\b MeanFilter.cpp}.}\par
+Definiert in Zeile {\b 35} der Datei {\b MeanFilter.cpp}.}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00034 \{\par
-00035     list<CInputPoint3D> dummyList;\par
-00036     {\cf19 for} ({\cf18 size_t} s = 0; s < sourcePath.size(); s++)\par
-00037     \{\par
-00038         dummyList = calculateMean(sourcePath[s]);\par
-00039         meanPath.push_back(dummyList);\par
-00040     \}\par
-00041 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00036 \{\par
+00037     list<CInputPoint3D> dummyList;\par
+00038     {\cf19 for} ({\cf18 size_t} s = 0; s < sourcePath.size(); s++)\par
+00039     \{\par
+00040         dummyList = calculateMean(sourcePath[s]);\par
+00041         meanPath.push_back(dummyList);\par
+00042     \}\par
+00043 \}\par
 }
 {
 \ql
@@ -2354,18 +2426,18 @@ void CMeanFilter::setWindowSize (int  {\i Window})}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 18} der Datei {\b MeanFilter.cpp}.}\par
+Definiert in Zeile {\b 20} der Datei {\b MeanFilter.cpp}.}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00019 \{\par
-00020     windowSize = Window;\par
-00021 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00021 \{\par
+00022     windowSize = Window;\par
+00023 \}\par
 }
 {
 \ql
 Benutzt {\b windowSize}.}\par
 {
 \ql
-Wird benutzt von {\b CMeanFilter()}, {\b CMeanFilter()} und {\b main()}.}\par
+Wird benutzt von {\b main()}.}\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -2383,7 +2455,7 @@ vector<list<{\b CInputPoint3D}> > CMeanFilter::meanPath{\f2 [private]}}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 31} der Datei {\b MeanFilter.h}.}\par
+Definiert in Zeile {\b 45} der Datei {\b MeanFilter.h}.}\par
 {
 \ql
 Wird benutzt von {\b getPath()} und {\b mean()}.}\par
@@ -2400,7 +2472,10 @@ int CMeanFilter::position{\f2 [private]}}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 28} der Datei {\b MeanFilter.h}.}\par
+Definiert in Zeile {\b 42} der Datei {\b MeanFilter.h}.}\par
+{
+\ql
+Wird benutzt von {\b CMeanFilter()}.}\par
 }
 {\xe \v sum\:CMeanFilter}
 {\xe \v CMeanFilter\:sum}
@@ -2414,7 +2489,10 @@ double CMeanFilter::sum{\f2 [private]}}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 29} der Datei {\b MeanFilter.h}.}\par
+Definiert in Zeile {\b 43} der Datei {\b MeanFilter.h}.}\par
+{
+\ql
+Wird benutzt von {\b CMeanFilter()}.}\par
 }
 {\xe \v windowSize\:CMeanFilter}
 {\xe \v CMeanFilter\:windowSize}
@@ -2428,10 +2506,10 @@ int CMeanFilter::windowSize{\f2 [private]}}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definiert in Zeile {\b 27} der Datei {\b MeanFilter.h}.}\par
+Definiert in Zeile {\b 41} der Datei {\b MeanFilter.h}.}\par
 {
 \ql
-Wird benutzt von {\b calculateMean()}, {\b getWindowSize()} und {\b setWindowSize()}.}\par
+Wird benutzt von {\b calculateMean()}, {\b CMeanFilter()}, {\b CMeanFilter()}, {\b getWindowSize()} und {\b setWindowSize()}.}\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 Die Dokumentation f\'FCr diese Klasse wurde erzeugt aufgrund der Dateien:{\par
@@ -5006,31 +5084,31 @@ gehe zur Dokumentation dieser Datei{
 00027 {\cf17 public}:\par
 00033     CInputParameter({\cf18 void});\par
 00047     CInputParameter({\cf18 double} initSpeed, {\cf18 bool} initSeepManual, {\cf18 bool} initOrientationManual, {\cf18 double} initA, {\cf18 double} initB, {\cf18 double} initC);\par
-00052     ~CInputParameter({\cf18 void});\par
-00053 \par
-00062     {\cf18 void} setOrientation({\cf18 bool} initOrientationManual, {\cf18 double} initA, {\cf18 double} initB, {\cf18 double} initC);\par
-00069     {\cf18 void} setSpeed({\cf18 double} initSpeed, {\cf18 bool} initSpeedManual);\par
-00070 \par
-00075     {\cf18 double} getSpeed({\cf18 void});\par
-00080     {\cf18 bool} getSpeedManual({\cf18 void});\par
-00085     {\cf18 bool} getOrientationManual({\cf18 void});\par
-00091     tuple <double, double, double> getAngles({\cf18 void});\par
-00092 \par
-00098     {\cf18 void} openFile(std::string path);\par
-00107     {\cf18 bool} detectJump(CInputPoint3D p, {\cf18 double} x_prev, {\cf18 double} y_prev, {\cf18 double} z_prev);\par
-00113     vector<list<CInputPoint3D>>& getPath();\par
-00114 \par
-00115 {\cf17 private}:\par
-00119     vector<list<CInputPoint3D>> initialPath;\par
-00123     {\cf18 double} speed;\par
-00127     {\cf18 bool} speedManual;\par
-00131     {\cf18 bool} orientationManual;\par
-00135     {\cf18 double} A;\par
-00139     {\cf18 double} B;\par
-00143     {\cf18 double} C;\par
-00147     {\cf18 double} difference = 20;\par
-00148 \};\par
-00149 \par
+00051     ~CInputParameter({\cf18 void});\par
+00052 \par
+00061     {\cf18 void} setOrientation({\cf18 bool} initOrientationManual, {\cf18 double} initA, {\cf18 double} initB, {\cf18 double} initC);\par
+00068     {\cf18 void} setSpeed({\cf18 double} initSpeed, {\cf18 bool} initSpeedManual);\par
+00069 \par
+00074     {\cf18 double} getSpeed({\cf18 void});\par
+00079     {\cf18 bool} getSpeedManual({\cf18 void});\par
+00084     {\cf18 bool} getOrientationManual({\cf18 void});\par
+00090     tuple <double, double, double> getAngles({\cf18 void});\par
+00091 \par
+00097     {\cf18 void} openFile(std::string path);\par
+00106     {\cf18 bool} detectJump(CInputPoint3D p, {\cf18 double} x_prev, {\cf18 double} y_prev, {\cf18 double} z_prev);\par
+00112     vector<list<CInputPoint3D>>& getPath();\par
+00113 \par
+00114 {\cf17 private}:\par
+00118     vector<list<CInputPoint3D>> initialPath;\par
+00122     {\cf18 double} speed;\par
+00126     {\cf18 bool} speedManual;\par
+00130     {\cf18 bool} orientationManual;\par
+00134     {\cf18 double} A;\par
+00138     {\cf18 double} B;\par
+00142     {\cf18 double} C;\par
+00146     {\cf18 double} difference = 20;\par
+00147 \};\par
+00148 \par
 }
 \par \pard\plain 
 
@@ -5042,6 +5120,10 @@ header/Line3D.h-Dateireferenz\par \pard\plain
 {\xe \v header/Line3D.h}
 {\bkmkstart AAAAAAAAAZ}
 {\bkmkend AAAAAAAAAZ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Header File Daten Einlesen }}\par
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Point3D.h"}\par
 {\f2 #include <math.h>}\par
@@ -5052,7 +5134,22 @@ Klassen\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b CLine3D}}
+class {\b CLine3D}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Berechnung Geraden }}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Ausf\'FChrliche Beschreibung\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Header File Daten Einlesen \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{
+Definiert in Datei {\b Line3D.h}.}\par
+}
 \par \pard\plain 
 
 \pard\plain \sect\sbkpage
@@ -5064,23 +5161,25 @@ Line3D.h\par \pard\plain
 {\bkmkstart AAAAAAAAAD}
 {\bkmkend AAAAAAAAAD}
 gehe zur Dokumentation dieser Datei{
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf21 #include "Point3D.h"}\par
-00002 {\cf21 #include <math.h>}\par
-00003 \par
-00004 {\cf17 using namespace }std;\par
-00005 \par
-00006 {\cf21 #pragma once}\par
-00007 {\cf17 class }CLine3D\par
-00008 \{\par
-00009 {\cf17 public}:\par
-00010     CLine3D({\cf18 void});\par
-00011     CLine3D(CPoint3D P1, CPoint3D P2);\par
-00012     ~CLine3D({\cf18 void});\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 \par
+00007 {\cf21 #include "Point3D.h"}\par
+00008 {\cf21 #include <math.h>}\par
+00009 \par
+00010 {\cf17 using namespace }std;\par
+00011 \par
+00012 {\cf21 #pragma once}\par
 00013 \par
-00014     CPoint3D p1;\par
-00015     CPoint3D p2;\par
-00016 \};\par
-00017 \par
+00018 {\cf17 class }CLine3D\par
+00019 \{\par
+00020 {\cf17 public}:\par
+00026     CLine3D({\cf18 void});\par
+00032     CLine3D(CPoint3D P1, CPoint3D P2);\par
+00036     ~CLine3D({\cf18 void});\par
+00037 \par
+00041     CPoint3D p1;\par
+00045     CPoint3D p2;\par
+00046 \};\par
+00047 \par
 }
 \par \pard\plain 
 
@@ -5092,6 +5191,10 @@ header/MeanFilter.h-Dateireferenz\par \pard\plain
 {\xe \v header/MeanFilter.h}
 {\bkmkstart AAAAAAAABA}
 {\bkmkend AAAAAAAABA}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Berechnung des gleitenden Mittelwertfilters }}\par
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <vector>}\par
 {\f2 #include <list>}\par
@@ -5103,7 +5206,22 @@ Klassen\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b CMeanFilter}}
+class {\b CMeanFilter}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: gleitenden Mittelwertfilters }}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Ausf\'FChrliche Beschreibung\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+: Berechnung des gleitenden Mittelwertfilters \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{
+Definiert in Datei {\b MeanFilter.h}.}\par
+}
 \par \pard\plain 
 
 \pard\plain \sect\sbkpage
@@ -5115,39 +5233,39 @@ MeanFilter.h\par \pard\plain
 {\bkmkstart AAAAAAAAAE}
 {\bkmkend AAAAAAAAAE}
 gehe zur Dokumentation dieser Datei{
-\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf21 #include <vector>}\par
-00002 {\cf21 #include <list>}\par
-00003 {\cf21 #include "Point3D.h"}\par
-00004 \par
-00005 {\cf21 #pragma once}\par
-00006 \par
-00007 {\cf17 using namespace }std;\par
-00008 \par
-00009 \par
-00010 {\cf17 class }CMeanFilter\par
-00011 \{\par
-00012 {\cf17 public}:\par
-00013     CMeanFilter();\par
-00014     CMeanFilter({\cf18 int} Window, {\cf18 long} lenth);\par
-00015     ~CMeanFilter();\par
-00016 \par
-00017     {\cf18 void} setWindowSize({\cf18 int} Window);\par
-00018 \par
-00019     {\cf18 int} getWindowSize();\par
-00020 \par
-00021     vector<list<CInputPoint3D>>& getPath();\par
-00022 \par
-00023     list<CInputPoint3D> calculateMean(list<CInputPoint3D>& segment);\par
-00024     {\cf18 void} mean(vector<list<CInputPoint3D>>& sourcePath);\par
-00025 \par
-00026 {\cf17 private}:\par
-00027     {\cf18 int} windowSize;\par
-00028     {\cf18 int} position;\par
-00029     {\cf18 double} sum;\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 \par
+00007 {\cf21 #include <vector>}\par
+00008 {\cf21 #include <list>}\par
+00009 {\cf21 #include "Point3D.h"}\par
+00010 \par
+00011 {\cf21 #pragma once}\par
+00012 \par
+00013 {\cf17 using namespace }std;\par
+00014 \par
+00019 {\cf17 class }CMeanFilter\par
+00020 \{\par
+00021 {\cf17 public}:\par
+00027     CMeanFilter();\par
+00028     CMeanFilter({\cf18 int} Window);\par
+00029     ~CMeanFilter();\par
 00030 \par
-00031     vector<list<CInputPoint3D>> meanPath;\par
-00032 \};\par
-00033 \par
+00031     {\cf18 void} setWindowSize({\cf18 int} Window);\par
+00032 \par
+00033     {\cf18 int} getWindowSize();\par
+00034 \par
+00035     vector<list<CInputPoint3D>>& getPath();\par
+00036 \par
+00037     list<CInputPoint3D> calculateMean(list<CInputPoint3D>& segment);\par
+00038     {\cf18 void} mean(vector<list<CInputPoint3D>>& sourcePath);\par
+00039 \par
+00040 {\cf17 private}:\par
+00041     {\cf18 int} windowSize;\par
+00042     {\cf18 int} position;\par
+00043     {\cf18 double} sum;\par
+00044 \par
+00045     vector<list<CInputPoint3D>> meanPath;\par
+00046 \};\par
+00047 \par
 }
 \par \pard\plain 
 
@@ -6149,86 +6267,88 @@ gehe zur Dokumentation dieser Datei{
 00003 \par
 00004 CMeanFilter::CMeanFilter()\par
 00005 \{\par
-00006     setWindowSize(0);\par
-00007 \}\par
-00008 \par
-00009 CMeanFilter::CMeanFilter({\cf18 int} Window, {\cf18 long} lenth)\par
-00010 \{\par
-00011     setWindowSize(Window);\par
-00012 \}\par
-00013 \par
-00014 CMeanFilter::~CMeanFilter()\par
-00015 \{\par
-00016 \}\par
-00017 \par
-00018 {\cf18 void} CMeanFilter::setWindowSize({\cf18 int} Window)\par
-00019 \{\par
-00020     windowSize = Window;\par
-00021 \}\par
-00022 \par
-00023 {\cf18 int} CMeanFilter::getWindowSize()\par
-00024 \{\par
-00025     {\cf19 return} windowSize;\par
-00026 \}\par
-00027 \par
-00028 vector<list<CInputPoint3D>>& CMeanFilter::getPath()\par
-00029 \{\par
-00030     {\cf19 return} meanPath;\par
-00031 \}\par
-00032 \par
-00033 {\cf18 void} CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath)\par
-00034 \{\par
-00035     list<CInputPoint3D> dummyList;\par
-00036     {\cf19 for} ({\cf18 size_t} s = 0; s < sourcePath.size(); s++)\par
-00037     \{\par
-00038         dummyList = calculateMean(sourcePath[s]);\par
-00039         meanPath.push_back(dummyList);\par
-00040     \}\par
-00041 \}\par
-00042 \par
-00043 list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)\par
-00044 \{\par
-00045     {\cf18 double} sumX = 0, sumY = 0, sumZ = 0;        {\cf20 // oder long??}\par
-00046     {\cf18 double} div = 0;\par
-00047     {\cf18 int} m = 0;\par
-00048     {\cf18 int} OffsetPos = 0;\par
-00049     {\cf18 int} OffsetNeg = 0;\par
-00050 \par
-00051     CInputPoint3D p;\par
+00006     windowSize = 3;\par
+00007     position = 0;\par
+00008     sum = 0;\par
+00009 \}\par
+00010 \par
+00011 CMeanFilter::CMeanFilter({\cf18 int} Window)\par
+00012 \{\par
+00013     windowSize = Window;\par
+00014 \}\par
+00015 \par
+00016 CMeanFilter::~CMeanFilter()\par
+00017 \{\par
+00018 \}\par
+00019 \par
+00020 {\cf18 void} CMeanFilter::setWindowSize({\cf18 int} Window)\par
+00021 \{\par
+00022     windowSize = Window;\par
+00023 \}\par
+00024 \par
+00025 {\cf18 int} CMeanFilter::getWindowSize()\par
+00026 \{\par
+00027     {\cf19 return} windowSize;\par
+00028 \}\par
+00029 \par
+00030 vector<list<CInputPoint3D>>& CMeanFilter::getPath()\par
+00031 \{\par
+00032     {\cf19 return} meanPath;\par
+00033 \}\par
+00034 \par
+00035 {\cf18 void} CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath)\par
+00036 \{\par
+00037     list<CInputPoint3D> dummyList;\par
+00038     {\cf19 for} ({\cf18 size_t} s = 0; s < sourcePath.size(); s++)\par
+00039     \{\par
+00040         dummyList = calculateMean(sourcePath[s]);\par
+00041         meanPath.push_back(dummyList);\par
+00042     \}\par
+00043 \}\par
+00044 \par
+00045 list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)\par
+00046 \{\par
+00047     {\cf18 double} sumX = 0, sumY = 0, sumZ = 0;        {\cf20 // oder long??}\par
+00048     {\cf18 double} div = 0;\par
+00049     {\cf18 int} m = 0;\par
+00050     {\cf18 int} OffsetPos = 0;\par
+00051     {\cf18 int} OffsetNeg = 0;\par
 00052 \par
-00053     {\cf18 size_t} inputSize = segment.size();\par
+00053     CInputPoint3D p;\par
 00054 \par
-00055     list<CInputPoint3D>::iterator it = segment.begin();\par
-00056     list<CInputPoint3D> newSegment;\par
-00057 \par
-00058     {\cf19 for} ({\cf18 size_t} i = 0; i < inputSize - windowSize; ++i)\par
-00059     \{\par
-00060         sumX = 0, sumY = 0, sumZ = 0;\par
-00061         div = 0;\par
-00062         p.setTime(it->getTime());\par
-00063         p.setEulerMatrix(it->getEulerMatrix());\par
-00064         {\cf19 for} ({\cf18 size_t} j = i; j < i + windowSize; ++j)\par
-00065         \{\par
-00066 \par
-00067             sumX += it->getX();\par
-00068             sumY += it->getY();\par
-00069             sumZ += it->getZ();\par
-00070             div++;\par
-00071             it++;\par
-00072         \}\par
-00073         {\cf19 for} ({\cf18 size_t} index = windowSize; index > 0; index--)\par
-00074         \{\par
-00075             it--;\par
-00076         \}\par
-00077         p.set(sumX / div, sumY / div, sumZ / div);\par
-00078         {\cf19 if}(it != segment.end())\par
-00079             it++;\par
-00080         newSegment.push_back(p);\par
-00081 \par
-00082         \par
-00083     \}\par
-00084     {\cf19 return} newSegment;\par
-00085 \}\par
+00055     {\cf18 size_t} inputSize = segment.size();\par
+00056 \par
+00057     list<CInputPoint3D>::iterator it = segment.begin();\par
+00058     list<CInputPoint3D> newSegment;\par
+00059 \par
+00060     {\cf19 for} ({\cf18 size_t} i = 0; i < inputSize - windowSize; ++i)\par
+00061     \{\par
+00062         sumX = 0, sumY = 0, sumZ = 0;\par
+00063         div = 0;\par
+00064         p.setTime(it->getTime());\par
+00065         p.setEulerMatrix(it->getEulerMatrix());\par
+00066         {\cf19 for} ({\cf18 size_t} j = i; j < i + windowSize; ++j)\par
+00067         \{\par
+00068 \par
+00069             sumX += it->getX();\par
+00070             sumY += it->getY();\par
+00071             sumZ += it->getZ();\par
+00072             div++;\par
+00073             it++;\par
+00074         \}\par
+00075         {\cf19 for} ({\cf18 size_t} index = windowSize; index > 0; index--)\par
+00076         \{\par
+00077             it--;\par
+00078         \}\par
+00079         p.set(sumX / div, sumY / div, sumZ / div);\par
+00080         {\cf19 if}(it != segment.end())\par
+00081             it++;\par
+00082         newSegment.push_back(p);\par
+00083 \par
+00084         \par
+00085     \}\par
+00086     {\cf19 return} newSegment;\par
+00087 \}\par
 }
 \par \pard\plain 
 

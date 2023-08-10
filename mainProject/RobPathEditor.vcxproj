@@ -52,7 +52,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>header;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,7 +90,6 @@
     <ClInclude Include="header\Line3D.h" />
     <ClInclude Include="header\MeanFilter.h" />
     <ClInclude Include="header\PathBuilder.h" />
-    <ClInclude Include="header\PathPostProcessing.h" />
     <ClInclude Include="header\Point3D.h" />
     <ClInclude Include="header\RobCodeGenerator.h" />
     <ClInclude Include="header\SegmentApproximator.h" />
@@ -102,7 +101,6 @@
     <ClCompile Include="src\Line3D.cpp" />
     <ClCompile Include="src\MeanFilter.cpp" />
     <ClCompile Include="src\PathBuilder.cpp" />
-    <ClCompile Include="src\PathPostProcessing.cpp" />
     <ClCompile Include="src\Point3D.cpp" />
     <ClCompile Include="src\RobCodeGenerator.cpp" />
     <ClCompile Include="src\RobPathEditor.cpp" />
