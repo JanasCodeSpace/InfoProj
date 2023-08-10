@@ -80,7 +80,7 @@ void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)
 		p.set(path[s].getX(), path[s].getY(), path[s].getZ());
 		if (speedManual)
 		{
-			if (speed > MAX_SPEED) //Wenn maximale Geschwindigkeit überschritten wird, Geschwindigkeit begrenzen
+			if (speed > MAX_SPEED) //Wenn maximale Geschwindigkeit ï¿½berschritten wird, Geschwindigkeit begrenzen
 				speed = MAX_SPEED;
 		}
 		else
@@ -116,7 +116,7 @@ double CRobCodeGenerator::calculateSpeed(CInputPoint3D& p, size_t s, double time
 
 	speed = distance / time; // Berechnug Geschwindigkeit zwischen zwei Punkten
 
-	if (speed > MAX_SPEED) //Begrenzung auf maximale Geschwindigkeit, falls Trackerdaten höheren Wert aufweisen
+	if (speed > MAX_SPEED) //Begrenzung auf maximale Geschwindigkeit, falls Trackerdaten hï¿½heren Wert aufweisen
 		speed = MAX_SPEED;
 
 	return speed; //Zuweisung der Geschwindigkeit
@@ -124,11 +124,14 @@ double CRobCodeGenerator::calculateSpeed(CInputPoint3D& p, size_t s, double time
 
 void CRobCodeGenerator::calculateAngles(COutputPoint3D& p, CInputPoint3D& pIn)
 {
-	double a, b, c;
-
 	// Funktion in Eulermatrix aufrufen die a/b/c neu berechnet
 
-	p.setA(a);
-	p.setB(b);
-	p.setC(c);
+	CEulerMatrix matrix = pIn.getEulerMatrix();
+	tuple<double, double, double> abc;
+
+	abc = matrix.calculateAngels();
+
+	p.setA(get<0>(abc));
+	p.setB(get<1>(abc));
+	p.setC(get<2>(abc));
 }
