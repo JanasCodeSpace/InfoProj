@@ -1,7 +1,7 @@
 /**
- * @file: Point3D.h
+ * @file Point3D.h
  *
- * @brief: Verarbeitung der Punkte
+ * @brief Verarbeitung der Punkte
  */
 
 #include "EulerMatrix.h"
@@ -15,80 +15,80 @@ using namespace std;
 /**
  * Das ist die Grundklasse eines Punktes, hier lassen sich die Basiswerte 
  * setzten und Abstände zwishen Punkten berechnen.
- * @brief: Grundklasse Punkt
+ * @brief Grundklasse Punkt
  */
 class CPoint3D
 {
 public:
 	/**
 	* Initialisiert des Punktes mit Null
-	* @brief: Default Konstruktor
-	* @see: CPoint3D(double X, double Y, double Z)
+	* @brief Default Konstruktor
+	* @see CPoint3D(double X, double Y, double Z)
 	*/
 	CPoint3D(void);
 	/**
 	* Initialisiert des Punktes mit Null
-	* @brief: Default Konstruktor
-	* @param: double X
-	* @param: double Y
-	* @param: double Z
-	* @see: CPoint3D(void)
+	* @brief Default Konstruktor
+	* @param double X
+	* @param double Y
+	* @param double Z
+	* @see CPoint3D(void)
 	*/
 	CPoint3D(double X, double Y, double Z);
 	/**
-	* @brief: Dekonstruktor
+	* @brief Dekonstruktor
 	*/
 	~CPoint3D(void);
 
 	/**
-	* @brief: Gibt X zurück
-	* @return: double
+	* @brief Gibt X zurück
+	* @return double
 	*/
 	double getX();
 	/**
-	* @brief: Gibt Y zurück
-	* @return: double
+	* @brief Gibt Y zurück
+	* @return double
 	*/
 	double getY();
 	/**
-	* @brief: Gibt Z zurück
-	* @return: double
+	* @brief Gibt Z zurück
+	* @return double
 	*/
 	double getZ();
 
 	/**
-	* @brief: Setzt X
-	* @param: double X
+	* @brief Setzt X
+	* @param double X
 	*/
 	void setX(double X);
 	/**
-	* @brief: Setzt Y
-	* @param: double Y
+	* @brief Setzt Y
+	* @param double Y
 	*/
 	void setY(double Y);
 	/**
-	* @brief: Setzt Z
-	* @param: double Z
+	* @brief Setzt Z
+	* @param double Z
 	*/
 	void setZ(double Z);
 
 	/**
-	* @brief: Setzt X, Y und Z
-	* @param: double X
-	* @param: double Y
-	* @param: double Z
+	* @brief Setzt X, Y und Z
+	* @param double X
+	* @param double Y
+	* @param double Z
 	*/
 	void set(double X, double Y, double Z);
 	/**
-	* @brief: Berechnet die Distanz zu einem anderen Punkt
-	* @param: CPoint3D point
-	* @return: double Distanz
+	* @brief Berechnet die Distanz zu einem anderen Punkt
+	* @param CPoint3D point
+	* @return double Distanz
 	*/
 	double distanceTo(CPoint3D point);
 	/**
-	* @brief: Berechnet die Distanz zu einer Linie
-	* @param: CLine3D line
-	* @return: double Distanz
+	* @brief Berechnet die Distanz zu einer Linie
+	* @param CLine3D line
+	* @return double Distanz
 	*/
 	double distanceTo(CLine3D line);
 
@@ -101,61 +101,61 @@ protected:
 
 /**
  * Kind der Punkt Grundklasse, erweitert um den Timestamp und die Eulermatrix
- * @brief: Input Punkt
+ * @brief Input Punkt
  */
 class CInputPoint3D : public CPoint3D
 {	
 public:
 	/**
 	* Initialisiert des eingelesenen Punktes mit Null
-	* @brief: Default Konstruktor
-	* @see: CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)
+	* @brief Default Konstruktor
+	* @see CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)
 	*/
 	CInputPoint3D(void);
 	/**
 	* Initialisiert des eingelesenen Punktes mit Null
-	* @brief: Default Konstruktor
-	* @param: double X
-	* @param: double Y
-	* @param: double Z
-	* @param: double Timestamp
-	* @param: CEulerMatrix Matrix
-	* @see: CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)
+	* @brief Default Konstruktor
+	* @param double X
+	* @param double Y
+	* @param double Z
+	* @param double Timestamp
+	* @param CEulerMatrix Matrix
+	* @see CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)
 	*/
 	CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix);
 	/**
-	* @brief: Dekonstruktor
+	* @brief Dekonstruktor
 	*/
 	~CInputPoint3D(void);
 
 	/**
-	* @brief: Gibt den Zeitstempel zurück
-	* @return: double Zeitstempel
+	* @brief Gibt den Zeitstempel zurück
+	* @return double Zeitstempel
 	*/
 	double getTime();
 	/**
-	* @brief: Gibt die gespeicherte Eulermatrix zurück
-	* @return: CEulerMatrix
+	* @brief Gibt die gespeicherte Eulermatrix zurück
+	* @return CEulerMatrix
 	*/
 	CEulerMatrix getEulerMatrix();
 
 	/**
-	* @brief: Setzt den Zeitstempel
-	* @param: double time
+	* @brief Setzt den Zeitstempel
+	* @param double time
 	*/
 	void setTime(double time);	
 	/**
-	* @brief: Setzt die Eulermatrix
-	* @param: CEulerMatrix orientation
+	* @brief Setzt die Eulermatrix
+	* @param CEulerMatrix orientation
 	*/
 	void setEulerMatrix(CEulerMatrix orientation);
 	/**
-	* @brief: Setzt einen Input Punkt
-	* @param: double time
-	* @param: double X
-	* @param: double Y
-	* @param: double Z
-	* @param: CEulerMatrix orientation
+	* @brief Setzt einen Input Punkt
+	* @param double time
+	* @param double X
+	* @param double Y
+	* @param double Z
+	* @param CEulerMatrix orientation
 	*/
 	void setPoint(double time, double X, double Y, double Z, CEulerMatrix orientation);
 
@@ -172,74 +172,74 @@ private:
 
 /**
  * Kind der Punkt Grundklasse, erweitert um die Geschwindigkeit und die Drehwinkel
- * @brief: Output Punkt
+ * @brief Output Punkt
  */
 class COutputPoint3D : public CPoint3D
 {
 public:
 	/**
 	* Initialisiert des fertig bearbeiteten Punktes mit Null
-	* @brief: Default Konstruktor
-	* @see: COutputPoint3D(double Speed, double X, double Y, double Z, double A, double B, double C);
+	* @brief Default Konstruktor
+	* @see COutputPoint3D(double Speed, double X, double Y, double Z, double A, double B, double C);
 	*/
 	COutputPoint3D(void);
 	/**
 	* Initialisiert des eingelesenen Punktes mit Null
-	* @brief: Default Konstruktor
-	* @param: double Speed
-	* @param: double X
-	* @param: double Y
-	* @param: double Z
-	* @param: double A
-	* @param: double B
-	* @param: double C
-	* @see: CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)
+	* @brief Default Konstruktor
+	* @param double Speed
+	* @param double X
+	* @param double Y
+	* @param double Z
+	* @param double A
+	* @param double B
+	* @param double C
+	* @see CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)
 	*/
 	COutputPoint3D(double Speed, double X, double Y, double Z, double A, double B, double C);
 	/**
-	* @brief: Dekonstruktor
+	* @brief Dekonstruktor
 	*/
 	~COutputPoint3D(void);
 
 	/**
-	* @brief: Gibt die Geschwindigkeit zurück
+	* @brief Gibt die Geschwindigkeit zurück
 	* @return: double Geschwindigkeit
 	*/
 	double getSpeed();
 	/**
-	* @brief: Gibt A zurück
+	* @brief Gibt A zurück
 	* @return: double A
 	*/
 	double getA();
 	/**
-	* @brief: Gibt B zurück
+	* @brief Gibt B zurück
 	* @return: double B
 	*/
 	double getB();
 	/**
-	* @brief: Gibt C zurück
+	* @brief Gibt C zurück
 	* @return: double C
 	*/
 	double getC();
 
 	/**
-	* @brief: Setzt die Geschwindigkeit
-	* @param: double speed
+	* @brief Setzt die Geschwindigkeit
+	* @param double speed
 	*/
 	void setSpeed(double speed);
 	/**
-	* @brief: Setzt A
-	* @param: double A
+	* @brief Setzt A
+	* @param double A
 	*/
 	void setA(double A);
 	/**
-	* @brief: Setzt B
-	* @param: double B
+	* @brief Setzt B
+	* @param double B
 	*/
 	void setB(double B);
 	/**
-	* @brief: Setzt C
-	* @param: double C
+	* @brief Setzt C
+	* @param double C
 	*/
 	void setC(double C);
 private:

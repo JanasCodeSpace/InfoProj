@@ -1,3 +1,9 @@
+/**
+ * @file MeanFilter.cpp
+ *
+ * @brief Source File gleitender Mittelwertfilter
+ */
+
 #include "./header/MeanFilter.h"
 #include "./header/Logging.h"
 #include <math.h>
@@ -45,7 +51,7 @@ void CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath, CLogging log)
 
 list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)
 {
-	double sumX = 0, sumY = 0, sumZ = 0;		// oder long??
+	double sumX = 0, sumY = 0, sumZ = 0;
 	double div = 0;
 	int m = 0;
 	int OffsetPos = 0;
@@ -58,31 +64,28 @@ list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)
 	list<CInputPoint3D>::iterator it = segment.begin();
 	list<CInputPoint3D> newSegment;
 
-	for (size_t i = 0; i < inputSize - windowSize; ++i)
+	for (size_t i = 0; i < inputSize - windowSize; ++i) //For each element in the Segment
 	{
 		sumX = 0, sumY = 0, sumZ = 0;
 		div = 0;
 		p.setTime(it->getTime());
 		p.setEulerMatrix(it->getEulerMatrix());
-		for (size_t j = i; j < i + windowSize; ++j)
+		for (size_t j = i; j < i + windowSize; ++j) // Build the sums for the three points
 		{
-
 			sumX += it->getX();
 			sumY += it->getY();
 			sumZ += it->getZ();
 			div++;
 			it++;
 		}
-		for (size_t index = windowSize; index > 0; index--)
+		for (size_t index = windowSize; index > 0; index--) // Pain, the iterator has to be set back
 		{
 			it--;
 		}
-		p.set(sumX / div, sumY / div, sumZ / div);
+		p.set(sumX / div, sumY / div, sumZ / div); // Calculate smoothed values
 		if(it != segment.end())
 			it++;
 		newSegment.push_back(p);
-
-		
 	}
 	return newSegment;
 }

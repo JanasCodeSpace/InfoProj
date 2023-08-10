@@ -1,3 +1,9 @@
+/**
+ * @file Logging.cpp
+ *
+ * @brief Source File Logging
+ */
+
 #include "header/Logging.h"
 
 CLogging::CLogging(void)
@@ -93,7 +99,7 @@ void CLogging::logData(vector<CInputPoint3D>& sourcePath)
 		(double)0, (double)0, (double)0, (double)0, (float)0, (float)0, (float)0,
 		(float)0, (float)0, (float)0, (float)0, (float)0, (float)0);
 
-	for (size_t s = 0; s < sourcePath.size(); s++) //for all segments
+	for (size_t s = 0; s < sourcePath.size(); s++) //for all points in the vector
 	{
 		tmpEuler.getMatrix(dummyMatrix);
 
