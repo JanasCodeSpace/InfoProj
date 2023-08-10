@@ -88,6 +88,7 @@
     <ClInclude Include="header\GUI.h" />
     <ClInclude Include="header\InputParameter.h" />
     <ClInclude Include="header\Line3D.h" />
+    <ClInclude Include="header\Logging.h" />
     <ClInclude Include="header\MeanFilter.h" />
     <ClInclude Include="header\PathBuilder.h" />
     <ClInclude Include="header\Point3D.h" />
@@ -99,6 +100,7 @@
     <ClCompile Include="src\GUI.cpp" />
     <ClCompile Include="src\InputParameter.cpp" />
     <ClCompile Include="src\Line3D.cpp" />
+    <ClCompile Include="src\Logging.cpp" />
     <ClCompile Include="src\MeanFilter.cpp" />
     <ClCompile Include="src\PathBuilder.cpp" />
     <ClCompile Include="src\Point3D.cpp" />

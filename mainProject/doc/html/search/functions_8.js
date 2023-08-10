@@ -1,15 +1,18 @@
 var searchData=
 [
-  ['_7eceulermatrix_0',['~CEulerMatrix',['../class_c_euler_matrix.html#aab38604c693dc9a028e8c92e1239ce58',1,'CEulerMatrix']]],
-  ['_7ecgui_1',['~CGUI',['../class_c_g_u_i.html#af285f98a93a05e0329ec32979cba8e9b',1,'CGUI']]],
-  ['_7ecinputparameter_2',['~CInputParameter',['../class_c_input_parameter.html#a229e6b9e7d884fa57cd032e8fd1dccdb',1,'CInputParameter']]],
-  ['_7ecinputpoint3d_3',['~CInputPoint3D',['../class_c_input_point3_d.html#a095391c3aeb5fb0433aa76d35457c0b1',1,'CInputPoint3D']]],
-  ['_7ecline3d_4',['~CLine3D',['../class_c_line3_d.html#ae05b21577225f1750869512982a7d0bd',1,'CLine3D']]],
-  ['_7ecmeanfilter_5',['~CMeanFilter',['../class_c_mean_filter.html#a03a060f31ed65b1f7e6407668c8801b6',1,'CMeanFilter']]],
-  ['_7ecoutputpoint3d_6',['~COutputPoint3D',['../class_c_output_point3_d.html#a240b7c5844859b74fac53531c45cbc28',1,'COutputPoint3D']]],
-  ['_7ecpathbuilder_7',['~CPathBuilder',['../class_c_path_builder.html#a5c693238a55409b65c02ba4a62226787',1,'CPathBuilder']]],
-  ['_7ecpathpostprocessing_8',['~CPathPostProcessing',['../class_c_path_post_processing.html#ae32519d66f24d5135adad0a3644d862c',1,'CPathPostProcessing']]],
-  ['_7ecpoint3d_9',['~CPoint3D',['../class_c_point3_d.html#a63ac51e6c9aee086f53df53ee459c8d2',1,'CPoint3D']]],
-  ['_7ecrobcodegenerator_10',['~CRobCodeGenerator',['../class_c_rob_code_generator.html#a56ba70ada888827409eff9288282b48b',1,'CRobCodeGenerator']]],
-  ['_7ecsegmentapproximator_11',['~CSegmentApproximator',['../class_c_segment_approximator.html#ac145e1245b9b540aba79204210e95a22',1,'CSegmentApproximator']]]
+  ['set_0',['set',['../class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec',1,'CPoint3D']]],
+  ['seta_1',['setA',['../class_c_output_point3_d.html#a180732285cf09beda40fc13478b2eecc',1,'COutputPoint3D']]],
+  ['setb_2',['setB',['../class_c_output_point3_d.html#adbbdb2ffc0a5a4fa08fa775eb3790017',1,'COutputPoint3D']]],
+  ['setc_3',['setC',['../class_c_output_point3_d.html#a1546fdc484115dc5405df8b7a3e5fcdf',1,'COutputPoint3D']]],
+  ['seteulermatrix_4',['setEulerMatrix',['../class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8',1,'CInputPoint3D']]],
+  ['setmatrix_5',['setMatrix',['../class_c_euler_matrix.html#aee7e2a7b47908dd7f9771e1dfb98cc41',1,'CEulerMatrix']]],
+  ['setmaxdistance_6',['setmaxDistance',['../class_c_segment_approximator.html#aa38b31a78abcd8eadcb6d014bfb7fe85',1,'CSegmentApproximator']]],
+  ['setorientation_7',['setOrientation',['../class_c_input_parameter.html#a04c9fc7d2724593c144586edea4f004e',1,'CInputParameter']]],
+  ['setpoint_8',['setPoint',['../class_c_input_point3_d.html#a71805ac924595c9e4fb977ca21246f6b',1,'CInputPoint3D']]],
+  ['setspeed_9',['setSpeed',['../class_c_input_parameter.html#a7a9327fd632b7a18eac4e3650cf1375f',1,'CInputParameter::setSpeed()'],['../class_c_output_point3_d.html#ae72f85753da775da6e8ce047a502b19d',1,'COutputPoint3D::setSpeed()']]],
+  ['settime_10',['setTime',['../class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd',1,'CInputPoint3D']]],
+  ['setwindowsize_11',['setWindowSize',['../class_c_mean_filter.html#a838914420e15ae2b3ba13fef8902c6ed',1,'CMeanFilter']]],
+  ['setx_12',['setX',['../class_c_point3_d.html#aee2748ffe7a8505efd2c303b53941647',1,'CPoint3D']]],
+  ['sety_13',['setY',['../class_c_point3_d.html#a81465a058c428fe65edef926d975110e',1,'CPoint3D']]],
+  ['setz_14',['setZ',['../class_c_point3_d.html#ac8765fa73306e534a386f87c8c691c24',1,'CPoint3D']]]
 ];

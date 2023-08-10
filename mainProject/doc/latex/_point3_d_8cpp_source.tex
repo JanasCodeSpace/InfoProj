@@ -2,8 +2,8 @@
 \hypertarget{_point3_d_8cpp_source}{}\label{_point3_d_8cpp_source}\index{src/Point3D.cpp@{src/Point3D.cpp}}
 \mbox{\hyperlink{_point3_d_8cpp}{gehe zur Dokumentation dieser Datei}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_point3_d_8h}{Point3D.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_line3_d_8h}{Line3D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_point3_d_8h}{./header/Point3D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_line3_d_8h}{./header/Line3D.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <math.h>}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00004}00004\ }
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00005}00005\ }
@@ -15,11 +15,11 @@
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ 0;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00012}00012\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00013}00013\ }
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00014}\mbox{\hyperlink{class_c_point3_d_a7385de70dccd7dd4fe9cf245ea79439d}{00014}}\ \mbox{\hyperlink{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}{CPoint3D::CPoint3D}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00014}\mbox{\hyperlink{class_c_point3_d_a7385de70dccd7dd4fe9cf245ea79439d}{00014}}\ \mbox{\hyperlink{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}{CPoint3D::CPoint3D}}(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z)}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00015}00015\ \{}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}};}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}};}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}};}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00019}00019\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00020}00020\ }
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00021}\mbox{\hyperlink{class_c_point3_d_a63ac51e6c9aee086f53df53ee459c8d2}{00021}}\ \mbox{\hyperlink{class_c_point3_d_a63ac51e6c9aee086f53df53ee459c8d2}{CPoint3D::\string~CPoint3D}}(\textcolor{keywordtype}{void})}
@@ -41,26 +41,26 @@
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}};}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00038}00038\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00039}00039\ }
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00040}\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{00040}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{CPoint3D::setX}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00040}\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{00040}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{CPoint3D::setX}}(\textcolor{keywordtype}{double}\ X)}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00041}00041\ \{}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}};}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00043}00043\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00044}00044\ }
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00045}\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{00045}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{CPoint3D::setY}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00045}\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{00045}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{CPoint3D::setY}}(\textcolor{keywordtype}{double}\ Y)}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00046}00046\ \{}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00047}00047\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}};}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00047}00047\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00048}00048\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00049}00049\ }
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00050}\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{00050}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{CPoint3D::setZ}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00050}\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{00050}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{CPoint3D::setZ}}(\textcolor{keywordtype}{double}\ Z)}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00051}00051\ \{}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}};}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00053}00053\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00054}00054\ }
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00055}\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{00055}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{CPoint3D::set}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00055}\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{00055}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{CPoint3D::set}}(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z)}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00056}00056\ \{}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00057}00057\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}};}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00058}00058\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}};}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}};}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00057}00057\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00058}00058\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00060}00060\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00061}00061\ }
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00062}\mbox{\hyperlink{class_c_point3_d_a1b28b942ffbee33ba90818ea1c56de05}{00062}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_point3_d_a1b28b942ffbee33ba90818ea1c56de05}{CPoint3D::distanceTo}}(\mbox{\hyperlink{class_c_point3_d}{CPoint3D}}\ point)}
@@ -107,11 +107,11 @@
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00103}00103\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}}\ =\ 0;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00104}00104\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00105}00105\ }
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00106}\mbox{\hyperlink{class_c_input_point3_d_af04dfe4ec49d9a3c807e6464a860c078}{00106}}\ \mbox{\hyperlink{class_c_input_point3_d_ae09b06a0e03216701b1c55715f035d67}{CInputPoint3D::CInputPoint3D}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}},\ \textcolor{keywordtype}{double}\ Timestamp,\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ Matrix)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00106}\mbox{\hyperlink{class_c_input_point3_d_af04dfe4ec49d9a3c807e6464a860c078}{00106}}\ \mbox{\hyperlink{class_c_input_point3_d_ae09b06a0e03216701b1c55715f035d67}{CInputPoint3D::CInputPoint3D}}(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \textcolor{keywordtype}{double}\ Timestamp,\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ Matrix)}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00107}00107\ \{}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00108}00108\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}};}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00109}00109\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}};}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00110}00110\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}};}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00108}00108\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00109}00109\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00110}00110\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00111}00111\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}}\ =\ Timestamp;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00112}00112\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d}{orientationMatrix}}\ =\ Matrix;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00113}00113\ }
@@ -127,10 +127,10 @@
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00123}00123\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00124}00124\ }
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00125}00125\ }
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00126}\mbox{\hyperlink{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}{00126}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}{CInputPoint3D::setPoint}}(\textcolor{keywordtype}{double}\ time,\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}},\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ orientation)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00126}\mbox{\hyperlink{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}{00126}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}{CInputPoint3D::setPoint}}(\textcolor{keywordtype}{double}\ time,\ \textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ orientation)}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00127}00127\ \{}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00128}00128\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{setTime}}(time);}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00129}00129\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(\mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}},\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}},\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}});}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00129}00129\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(X,\ Y,\ Z);}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00130}00130\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{setEulerMatrix}}(orientation);}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00131}00131\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00132}00132\ }
@@ -159,15 +159,15 @@
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00155}00155\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a6781a079d9922cd5ddb624c0d391a045}{c}}\ =\ 0;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00156}00156\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00157}00157\ }
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00158}\mbox{\hyperlink{class_c_output_point3_d_a8fab5c0ba78dd7944317201f69960cd9}{00158}}\ \mbox{\hyperlink{class_c_output_point3_d_ab9f0dffd47a8bd8febcd774a373799b6}{COutputPoint3D::COutputPoint3D}}(\textcolor{keywordtype}{double}\ Speed,\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}},\ \textcolor{keywordtype}{double}\ A,\ \textcolor{keywordtype}{double}\ B,\ \textcolor{keywordtype}{double}\ C)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00158}\mbox{\hyperlink{class_c_output_point3_d_a8fab5c0ba78dd7944317201f69960cd9}{00158}}\ \mbox{\hyperlink{class_c_output_point3_d_ab9f0dffd47a8bd8febcd774a373799b6}{COutputPoint3D::COutputPoint3D}}(\textcolor{keywordtype}{double}\ Speed,\ \textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \textcolor{keywordtype}{double}\ A,\ \textcolor{keywordtype}{double}\ B,\ \textcolor{keywordtype}{double}\ C)}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00159}00159\ \{}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00160}00160\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_aa48312971c33a40ff44cf21de5a6d0a3}{speed}}\ =\ Speed;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00161}00161\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a98207e5bab1268cfc514c3027485fb26}{a}}\ =\ A;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00162}00162\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a999c2a08a8541937e711ca3e91860c28}{b}}\ =\ B;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00163}00163\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a6781a079d9922cd5ddb624c0d391a045}{c}}\ =\ C;}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00164}00164\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}};}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00165}00165\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}};}
-\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00166}00166\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}};}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00164}00164\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00165}00165\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00166}00166\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00167}00167\ \}}
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00168}00168\ }
 \DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00169}\mbox{\hyperlink{class_c_output_point3_d_a240b7c5844859b74fac53531c45cbc28}{00169}}\ \mbox{\hyperlink{class_c_output_point3_d_a240b7c5844859b74fac53531c45cbc28}{COutputPoint3D::\string~COutputPoint3D}}(\textcolor{keywordtype}{void})}

@@ -45,6 +45,9 @@
     <ClInclude Include="header\SegmentApproximator.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="header\Logging.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EulerMatrix.cpp">
@@ -75,6 +78,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="src\SegmentApproximator.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Logging.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

@@ -3,12 +3,12 @@
 \mbox{\hyperlink{_rob_path_editor_8cpp}{gehe zur Dokumentation dieser Datei}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00001}00001\ }
-\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00020}00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_segment_approximator_8h}{SegmentApproximator.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00021}00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_path_builder_8h}{PathBuilder.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00022}00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_rob_code_generator_8h}{RobCodeGenerator.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00023}00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_parameter_8h}{InputParameter.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00024}00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_mean_filter_8h}{MeanFilter.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00025}00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_g_u_i_8h}{GUI.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00020}00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_segment_approximator_8h}{./header/SegmentApproximator.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00021}00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_path_builder_8h}{./header/PathBuilder.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00022}00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_rob_code_generator_8h}{./header/RobCodeGenerator.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00023}00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_parameter_8h}{./header/InputParameter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00024}00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_mean_filter_8h}{./header/MeanFilter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00025}00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_g_u_i_8h}{./header/GUI.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00026}00026\ \textcolor{preprocessor}{\#include\ <iostream>}}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00027}00027\ \textcolor{preprocessor}{\#include\ <ctime>}}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00028}00028\ }
@@ -42,13 +42,13 @@
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Puts\ the\ Segments\ together\ to\ one\ path}}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00057}00057\ }
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder}{CPathBuilder}}\ pathBuilder;}
-\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ pathBuilder.\mbox{\hyperlink{class_c_path_builder_a0839c7167939f075a6351a997344fe47}{createPath}}(segmentApproximator.\mbox{\hyperlink{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}{getSegmentsApproxVector}}(),\ \textcolor{stringliteral}{"{}output/08\_path.csv"{}});}
+\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ pathBuilder.\mbox{\hyperlink{class_c_path_builder_a0839c7167939f075a6351a997344fe47}{createPath}}(segmentApproximator.\mbox{\hyperlink{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}{getSegmentsApproxVector}}(),\ \textcolor{stringliteral}{"{}output/04\_path.csv"{}});}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00060}00060\ }
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Calculates\ Speed,\ Angle\ and\ generates\ the\ Output\ Data}}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00062}00062\ }
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator}{CRobCodeGenerator}}\ codeGenerator(inputParameter.\mbox{\hyperlink{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575}{getSpeed}}(),\ inputParameter.\mbox{\hyperlink{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}{getSpeedManual}}(),}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ inputParameter.\mbox{\hyperlink{class_c_input_parameter_a0cce4aa7d1efbbca24fa9e531a700097}{getOrientationManual}}(),\ inputParameter.\mbox{\hyperlink{class_c_input_parameter_a39a7079b2eccaf59200c42d02f5e7a58}{getAngles}}());}
-\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ codeGenerator.\mbox{\hyperlink{class_c_rob_code_generator_a6ab8e876adc31cc7207fb72497a59b4c}{generateRobCode}}(pathBuilder.\mbox{\hyperlink{class_c_path_builder_aff7eb289b0c0cfa11c9d2dbe31781bf6}{getPath}}(),\ \textcolor{stringliteral}{"{}output/09\_robCode.src"{}});}
+\DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ codeGenerator.\mbox{\hyperlink{class_c_rob_code_generator_a6ab8e876adc31cc7207fb72497a59b4c}{generateRobCode}}(pathBuilder.\mbox{\hyperlink{class_c_path_builder_aff7eb289b0c0cfa11c9d2dbe31781bf6}{getPath}}(),\ \textcolor{stringliteral}{"{}output/robCode.src"{}});}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00066}00066\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ elapsed\ =\ (float)(clock()\ -\/\ start)\ /\ CLOCKS\_PER\_SEC;}
 \DoxyCodeLine{\Hypertarget{_rob_path_editor_8cpp_source_l00068}00068\ \ \ \ \ \}}

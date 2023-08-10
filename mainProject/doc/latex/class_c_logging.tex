@@ -1,0 +1,204 @@
+\doxysection{CLogging Klassenreferenz}
+\hypertarget{class_c_logging}{}\label{class_c_logging}\index{CLogging@{CLogging}}
+
+
+\+: Gleitender Mittelwertfilter  
+
+
+
+
+{\ttfamily \#include $<$Logging.\+h$>$}
+
+\doxysubsubsection*{Ã–ffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_logging_ac2474e9e269351d398af8e305fff26ed}{CLogging}} (void)
+\begin{DoxyCompactList}\small\item\em \+: Default Konstruktor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_logging_a019b638d6603e90ebe6a2078f840ddbf}{CLogging}} (int Step)
+\begin{DoxyCompactList}\small\item\em \+: Default Konstruktor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_logging_a4b190c3f6c49fa929d2b82745d41330c}{\texorpdfstring{$\sim$}{\string~}\+CLogging}} (void)
+\begin{DoxyCompactList}\small\item\em \+: Dekonstruktor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_logging_a67ce0842c85c8821d464fe92e30bbe8e}{log\+Data}} (string Path, vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \&source\+Path)
+\begin{DoxyCompactList}\small\item\em \+: Ruft calculate\+Mean für die einzelnen Segmente auf \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_logging_a641e217b46254fd9ced88c0d846ec25f}{log\+Data}} (string Path, vector$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \&source\+Path)
+\begin{DoxyCompactList}\small\item\em \+: Ruft calculate\+Mean für die einzelnen Segmente auf \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{AusfÃ¼hrliche Beschreibung}
+\+: Gleitender Mittelwertfilter 
+
+In dieser Klasse werden die eingelesenen Daten mit einem gleitenden Mittelwertfilter mit einstellbarem Fenster geglättet. 
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8h_source_l00022}{22}} der Datei \mbox{\hyperlink{_logging_8h_source}{Logging.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_c_logging_ac2474e9e269351d398af8e305fff26ed}\label{class_c_logging_ac2474e9e269351d398af8e305fff26ed} 
+\index{CLogging@{CLogging}!CLogging@{CLogging}}
+\index{CLogging@{CLogging}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{CLogging()}{CLogging()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CLogging\+::\+CLogging (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Default Konstruktor 
+
+Initialisiert Logging Klasse \begin{DoxySeeAlso}{Siehe auch}
+\+: \doxylink{class_c_mean_filter}{CMean\+Filter(int Window)}; 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00003}{3}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ \mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}}\ =\ 0;}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_logging_8h_source_l00062}{step}}.
+
+\Hypertarget{class_c_logging_a019b638d6603e90ebe6a2078f840ddbf}\label{class_c_logging_a019b638d6603e90ebe6a2078f840ddbf} 
+\index{CLogging@{CLogging}!CLogging@{CLogging}}
+\index{CLogging@{CLogging}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{CLogging()}{CLogging()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CLogging\+::\+CLogging (\begin{DoxyParamCaption}\item[{int}]{Step }\end{DoxyParamCaption})}
+
+
+
+\+: Default Konstruktor 
+
+Initialisiert Logging Klasse \begin{DoxySeeAlso}{Siehe auch}
+\+: \doxylink{class_c_mean_filter}{CMean\+Filter(int Window)}; 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00008}{8}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}}\ =\ Step;}
+\DoxyCodeLine{00011\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_logging_8h_source_l00062}{step}}.
+
+\Hypertarget{class_c_logging_a4b190c3f6c49fa929d2b82745d41330c}\label{class_c_logging_a4b190c3f6c49fa929d2b82745d41330c} 
+\index{CLogging@{CLogging}!````~CLogging@{\texorpdfstring{$\sim$}{\string~}CLogging}}
+\index{````~CLogging@{\texorpdfstring{$\sim$}{\string~}CLogging}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CLogging()}{\string~CLogging()}}
+{\footnotesize\ttfamily CLogging\+::\texorpdfstring{$\sim$}{\string~}\+CLogging (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Dekonstruktor 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00013}{13}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_c_logging_a641e217b46254fd9ced88c0d846ec25f}\label{class_c_logging_a641e217b46254fd9ced88c0d846ec25f} 
+\index{CLogging@{CLogging}!logData@{logData}}
+\index{logData@{logData}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{logData()}{logData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CLogging\+::log\+Data (\begin{DoxyParamCaption}\item[{string}]{Path,  }\item[{vector$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \&}]{source\+Path }\end{DoxyParamCaption})}
+
+
+
+\+: Ruft calculate\+Mean für die einzelnen Segmente auf 
+
+Loggingdaten werden weggespeichert 
+\begin{DoxyParams}{Parameter}
+{\em } & string Name \\
+\hline
+{\em } & string Path \\
+\hline
+{\em } & vector$<$\+CInput\+Point3\+D$>$\& source\+Path \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00023}{23}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_c_logging_a67ce0842c85c8821d464fe92e30bbe8e}\label{class_c_logging_a67ce0842c85c8821d464fe92e30bbe8e} 
+\index{CLogging@{CLogging}!logData@{logData}}
+\index{logData@{logData}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{logData()}{logData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CLogging\+::log\+Data (\begin{DoxyParamCaption}\item[{string}]{Path,  }\item[{vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \&}]{source\+Path }\end{DoxyParamCaption})}
+
+
+
+\+: Ruft calculate\+Mean für die einzelnen Segmente auf 
+
+Loggingdaten werden weggespeichert 
+\begin{DoxyParams}{Parameter}
+{\em } & string Name \\
+\hline
+{\em } & string Path \\
+\hline
+{\em } & vector$<$list$<$\+CInput\+Point3\+D$>$$>$\& source\+Path \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00018}{18}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_c_logging_a5728c680af8a761ba8d050407fb05b03}\label{class_c_logging_a5728c680af8a761ba8d050407fb05b03} 
+\index{CLogging@{CLogging}!step@{step}}
+\index{step@{step}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily int CLogging\+::step\hspace{0.3cm}{\ttfamily [private]}}
+
+In welchem Schritt sind wir gerade 
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8h_source_l00062}{62}} der Datei \mbox{\hyperlink{_logging_8h_source}{Logging.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_logging_8cpp_source_l00008}{CLogging()}} und \mbox{\hyperlink{_logging_8cpp_source_l00003}{CLogging()}}.
+
+
+
+Die Dokumentation fÃ¼r diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_logging_8h}{Logging.\+h}}\item 
+src/\mbox{\hyperlink{_logging_8cpp}{Logging.\+cpp}}\end{DoxyCompactItemize}

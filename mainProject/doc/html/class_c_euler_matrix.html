@@ -136,18 +136,17 @@ Private Attribute</h2></td></tr>
 
 <p class="definition">Definiert in Zeile <a class="el" href="_euler_matrix_8cpp_source.html#l00004">4</a> der Datei <a class="el" href="_euler_matrix_8cpp_source.html">EulerMatrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    5</span>{</div>
-<div class="line"><span class="lineno">    6</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; 3; <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++)</div>
+<div class="line"><span class="lineno">    6</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++)</div>
 <div class="line"><span class="lineno">    7</span>    {</div>
 <div class="line"><span class="lineno">    8</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0; m &lt; 3; m++)</div>
 <div class="line"><span class="lineno">    9</span>        {</div>
-<div class="line"><span class="lineno">   10</span>            <a class="code hl_variable" href="class_c_euler_matrix.html#a093d480a272b819d31cc599877d8118b">eulerMatrix</a>[<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>][m] = 0;                  <span class="comment">// eulerMatrix mit 0 initialisieren</span></div>
+<div class="line"><span class="lineno">   10</span>            <a class="code hl_variable" href="class_c_euler_matrix.html#a093d480a272b819d31cc599877d8118b">eulerMatrix</a>[i][m] = 0;                  <span class="comment">// eulerMatrix mit 0 initialisieren</span></div>
 <div class="line"><span class="lineno">   11</span>        }</div>
 <div class="line"><span class="lineno">   12</span>    }</div>
 <div class="line"><span class="lineno">   13</span>}</div>
 <div class="ttc" id="aclass_c_euler_matrix_html_a093d480a272b819d31cc599877d8118b"><div class="ttname"><a href="class_c_euler_matrix.html#a093d480a272b819d31cc599877d8118b">CEulerMatrix::eulerMatrix</a></div><div class="ttdeci">float eulerMatrix[3][3]</div><div class="ttdef"><b>Definition</b> <a href="_euler_matrix_8h_source.html#l00060">EulerMatrix.h:60</a></div></div>
-<div class="ttc" id="aplot_path_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00012">plotPath.m:12</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Benutzt <a class="el" href="_euler_matrix_8h_source.html#l00060">eulerMatrix</a> und <a class="el" href="plot_path_8m_source.html#l00012">i</a>.</p>
+<p class="reference">Benutzt <a class="el" href="_euler_matrix_8h_source.html#l00060">eulerMatrix</a>.</p>
 
 </div>
 </div>
@@ -178,16 +177,16 @@ Private Attribute</h2></td></tr>
 
 <p class="definition">Definiert in Zeile <a class="el" href="_euler_matrix_8cpp_source.html#l00015">15</a> der Datei <a class="el" href="_euler_matrix_8cpp_source.html">EulerMatrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   16</span>{</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; 3; <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++)</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++)</div>
 <div class="line"><span class="lineno">   18</span>    {</div>
 <div class="line"><span class="lineno">   19</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0; m &lt; 3; m++)</div>
 <div class="line"><span class="lineno">   20</span>        {</div>
-<div class="line"><span class="lineno">   21</span>            <a class="code hl_variable" href="class_c_euler_matrix.html#a093d480a272b819d31cc599877d8118b">eulerMatrix</a>[<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>][m] = inputMatrix[<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>][m];  <span class="comment">// eulerMatrix mit Startwerten initialisieren</span></div>
+<div class="line"><span class="lineno">   21</span>            <a class="code hl_variable" href="class_c_euler_matrix.html#a093d480a272b819d31cc599877d8118b">eulerMatrix</a>[i][m] = inputMatrix[i][m];  <span class="comment">// eulerMatrix mit Startwerten initialisieren</span></div>
 <div class="line"><span class="lineno">   22</span>        }</div>
 <div class="line"><span class="lineno">   23</span>    }</div>
 <div class="line"><span class="lineno">   24</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Benutzt <a class="el" href="_euler_matrix_8h_source.html#l00060">eulerMatrix</a> und <a class="el" href="plot_path_8m_source.html#l00012">i</a>.</p>
+<p class="reference">Benutzt <a class="el" href="_euler_matrix_8h_source.html#l00060">eulerMatrix</a>.</p>
 
 </div>
 </div>
@@ -336,16 +335,16 @@ Private Attribute</h2></td></tr>
 
 <p class="definition">Definiert in Zeile <a class="el" href="_euler_matrix_8cpp_source.html#l00031">31</a> der Datei <a class="el" href="_euler_matrix_8cpp_source.html">EulerMatrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>{</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; 3; <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++)</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 3; i++)</div>
 <div class="line"><span class="lineno">   34</span>    { </div>
 <div class="line"><span class="lineno">   35</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0; m &lt; 3; m++)</div>
 <div class="line"><span class="lineno">   36</span>        {</div>
-<div class="line"><span class="lineno">   37</span>            <a class="code hl_variable" href="class_c_euler_matrix.html#a093d480a272b819d31cc599877d8118b">eulerMatrix</a>[<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>][m] = inputMatrix[<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>][m];  <span class="comment">// eulerMatrix mit Übergabewerten überschreiben</span></div>
+<div class="line"><span class="lineno">   37</span>            <a class="code hl_variable" href="class_c_euler_matrix.html#a093d480a272b819d31cc599877d8118b">eulerMatrix</a>[i][m] = inputMatrix[i][m];  <span class="comment">// eulerMatrix mit Übergabewerten überschreiben</span></div>
 <div class="line"><span class="lineno">   38</span>        }</div>
 <div class="line"><span class="lineno">   39</span>    }</div>
 <div class="line"><span class="lineno">   40</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Benutzt <a class="el" href="_euler_matrix_8h_source.html#l00060">eulerMatrix</a> und <a class="el" href="plot_path_8m_source.html#l00012">i</a>.</p>
+<p class="reference">Benutzt <a class="el" href="_euler_matrix_8h_source.html#l00060">eulerMatrix</a>.</p>
 
 <p class="reference">Wird benutzt von <a class="el" href="_input_parameter_8cpp_source.html#l00084">CInputParameter::openFile()</a>.</p>
 

@@ -24,7 +24,7 @@ class CSegmentApproximator
 {
 public:
 	/**
-	* Initialisiert die KLasse
+	* Initialisiert die Klasse
 	* @brief: Default Konstruktor
 	*/
 	CSegmentApproximator(void);
@@ -34,21 +34,19 @@ public:
 	~CSegmentApproximator(void);
 
 	/**
-	* 
-	* @brief: 
+	* Iteriert durch die Listen im Vektor und ruft die Douglas-Peuker-Funktion auf
+	* @brief: Ruft die Douglas-Peuker Funktion auf
 	* @param: Segments const vector<list<CInputPoint3D>>&
 	*/
 	void approx(const vector<list<CInputPoint3D>>& Segments);
 	/**
-	*
-	* @brief:
+	* @brief: Setzt die maximale Abweichung
 	* @param: maxDistanceSource double
 	*/
 	void setmaxDistance(double maxDistanceSource);
 	/**
-	*
-	* @brief:
-	* @param: maxDistanceSource double
+	* @brief: Gibt die maximale Abweichung zurück
+	* @return: maxDistanceSource double
 	*/
 	double getmaxDistance();
 
@@ -69,27 +67,12 @@ private:
 	double maxDistance;
 
 	/**
-	* 
-	* @brief: 
+	* Rekursive Funktion die durch das Segment geht und Punkte aus dem Pfad löscht wenn
+	* ihr Abstand zu groß wird.
+	* @brief: Rekursive Douglas Peuker Funktion
 	* @param: list<CInputPoint3D>& segment
 	* @param: std::list<CInputPoint3D>::iterator startIt
 	* @param: std::list<CInputPoint3D>::iterator endItr
 	*/
 	void douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr);
-	/**
-	*
-	* @brief:
-	* @param: int xS
-	* @param: int yS
-	* @param: int zS
-	* @param: int xE
-	* @param: int yE
-	* @param: int zE
-	* @param: int x
-	* @param: int y
-	* @param: int z
-	* @return: double
-	*/
-	double calcDist(int xS, int yS, int zS, int xE, int yE, int zE, int x, int y, int z);
-
 };

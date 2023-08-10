@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../_rob_path_editor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'RobPathEditor.cpp']]],
-  ['mean_1',['mean',['../class_c_mean_filter.html#a0f20f18445bf2983d60a58b27118c8e0',1,'CMeanFilter']]]
+  ['logdata_0',['logData',['../class_c_logging.html#a67ce0842c85c8821d464fe92e30bbe8e',1,'CLogging::logData(string Path, vector&lt; list&lt; CInputPoint3D &gt; &gt; &amp;sourcePath)'],['../class_c_logging.html#a641e217b46254fd9ced88c0d846ec25f',1,'CLogging::logData(string Path, vector&lt; CInputPoint3D &gt; &amp;sourcePath)']]]
 ];

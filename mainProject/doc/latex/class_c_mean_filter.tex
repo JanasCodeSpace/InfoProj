@@ -2,7 +2,7 @@
 \hypertarget{class_c_mean_filter}{}\label{class_c_mean_filter}\index{CMeanFilter@{CMeanFilter}}
 
 
-\+: gleitenden Mittelwertfilters  
+\+: Gleitender Mittelwertfilter  
 
 
 
@@ -15,38 +15,34 @@
 \mbox{\hyperlink{class_c_mean_filter_ac2ca0c60d987a144d7288a317315f851}{CMean\+Filter}} ()
 \begin{DoxyCompactList}\small\item\em \+: Default Konstruktor \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_c_mean_filter_ae4fdddbd551284005fe3d0bb3f9dc9c5}{CMean\+Filter}} (int Window)
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Konstruktor \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_c_mean_filter_a03a060f31ed65b1f7e6407668c8801b6}{\texorpdfstring{$\sim$}{\string~}\+CMean\+Filter}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Dekonstruktor \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c_mean_filter_a838914420e15ae2b3ba13fef8902c6ed}{set\+Window\+Size}} (int Window)
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Setzt das Fenster \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_c_mean_filter_afea7ab027781d3c7073bf918453e73b5}{get\+Window\+Size}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Gibt das gesetzte Fenster zurück \end{DoxyCompactList}\item 
 vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \& \mbox{\hyperlink{class_c_mean_filter_aaea0182dce726e167d46fc4a4b78e81a}{get\+Path}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Gibt den geglätteten Pfad zurück \end{DoxyCompactList}\item 
 list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \mbox{\hyperlink{class_c_mean_filter_a9efa7170eaf84a72e5aed4e1cca5ab04}{calculate\+Mean}} (list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \&segment)
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Berechnet gleitenden Mittelwert \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c_mean_filter_a0f20f18445bf2983d60a58b27118c8e0}{mean}} (vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \&source\+Path)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \+: Ruft calculate\+Mean für die einzelnen Segmente auf \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{window\+Size}}
-\item 
-int \mbox{\hyperlink{class_c_mean_filter_a2bed719ec48f517b4805f155fcc65c98}{position}}
-\item 
-double \mbox{\hyperlink{class_c_mean_filter_a4616c5419c5d2e20c71401cab1941497}{sum}}
 \item 
 vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \mbox{\hyperlink{class_c_mean_filter_adf004b2b19e5498539bb87851a5439da}{mean\+Path}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{AusfÃ¼hrliche Beschreibung}
-\+: gleitenden Mittelwertfilters 
+\+: Gleitender Mittelwertfilter 
 
 In dieser Klasse werden die eingelesenen Daten mit einem gleitenden Mittelwertfilter mit einstellbarem Fenster geglättet. 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8h_source_l00019}{19}} der Datei \mbox{\hyperlink{_mean_filter_8h_source}{Mean\+Filter.\+h}}.
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8h_source_l00020}{20}} der Datei \mbox{\hyperlink{_mean_filter_8h_source}{Mean\+Filter.\+h}}.
 
 
 
@@ -61,8 +57,8 @@ Definiert in Zeile \mbox{\hyperlink{_mean_filter_8h_source_l00019}{19}} der Date
 
 \+: Default Konstruktor 
 
-Initialisiert die Input Daten mit Null \begin{DoxySeeAlso}{Siehe auch}
-\+: \doxylink{class_c_input_parameter}{CInput\+Parameter(double init\+Speed, bool init\+Seep\+Manual, bool init\+Orientation\+Manual, double init\+A, double init\+B, double init\+C)} 
+Initialisiert des Fensters mit 3 als default Wert \begin{DoxySeeAlso}{Siehe auch}
+\+: \doxylink{class_c_mean_filter_ae4fdddbd551284005fe3d0bb3f9dc9c5}{CMean\+Filter(int Window)}; 
 \end{DoxySeeAlso}
 
 
@@ -72,14 +68,12 @@ Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00004}{4}} der Dat
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00005\ \{}
 \DoxyCodeLine{00006\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}}\ =\ 3;}
-\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a2bed719ec48f517b4805f155fcc65c98}{position}}\ =\ 0;}
-\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a4616c5419c5d2e20c71401cab1941497}{sum}}\ =\ 0;}
-\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00007\ \}}
 
 \end{DoxyCode}
 
 
-Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00042}{position}}, \mbox{\hyperlink{_mean_filter_8h_source_l00043}{sum}} und \mbox{\hyperlink{_mean_filter_8h_source_l00041}{window\+Size}}.
+Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00077}{window\+Size}}.
 
 \Hypertarget{class_c_mean_filter_ae4fdddbd551284005fe3d0bb3f9dc9c5}\label{class_c_mean_filter_ae4fdddbd551284005fe3d0bb3f9dc9c5} 
 \index{CMeanFilter@{CMeanFilter}!CMeanFilter@{CMeanFilter}}
@@ -89,18 +83,30 @@ Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00042}{position}}, \mbox{\hyper
 
 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00011}{11}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
+\+: Konstruktor 
+
+Initialisiert die Input Daten mit Null 
+\begin{DoxyParams}{Parameter}
+{\em } & int Window Konstruktor der Klasse mit Fenster \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Siehe auch}
+\+:\doxylink{class_c_mean_filter_ac2ca0c60d987a144d7288a317315f851}{CMean\+Filter()}; 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00009}{9}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00012\ \{}
-\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}}\ =\ Window;}
-\DoxyCodeLine{00014\ \}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}}\ =\ Window;}
+\DoxyCodeLine{00012\ \}}
 
 \end{DoxyCode}
 
 
-Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00041}{window\+Size}}.
+Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00077}{window\+Size}}.
 
 \Hypertarget{class_c_mean_filter_a03a060f31ed65b1f7e6407668c8801b6}\label{class_c_mean_filter_a03a060f31ed65b1f7e6407668c8801b6} 
 \index{CMeanFilter@{CMeanFilter}!````~CMeanFilter@{\texorpdfstring{$\sim$}{\string~}CMeanFilter}}
@@ -110,12 +116,16 @@ Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00041}{window\+Size}}.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00016}{16}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
+\+: Dekonstruktor 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00014}{14}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00017\ \{}
-\DoxyCodeLine{00018\ \}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \}}
 
 \end{DoxyCode}
 
@@ -129,61 +139,73 @@ Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00016}{16}} der Da
 
 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00045}{45}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
+\+: Berechnet gleitenden Mittelwert 
+
+Hier wird der Mittelwert der einzelnen Segmente berechnet 
+\begin{DoxyParams}{Parameter}
+{\em } & list$<$\+CInput\+Point3\+D$>$\& segment bekommt einzelne Segmente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{RÃ¼ckgabe}
+\+: list$<$\+CInput\+Point3\+D$>$ gibt gelättete Segmente zurück 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00043}{43}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00046\ \{}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{double}\ sumX\ =\ 0,\ sumY\ =\ 0,\ sumZ\ =\ 0;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ oder\ long??}}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{double}\ div\ =\ 0;}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ m\ =\ 0;}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ OffsetPos\ =\ 0;}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ OffsetNeg\ =\ 0;}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{double}\ sumX\ =\ 0,\ sumY\ =\ 0,\ sumZ\ =\ 0;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ oder\ long??}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{double}\ div\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ m\ =\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ OffsetPos\ =\ 0;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ OffsetNeg\ =\ 0;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ p;}
 \DoxyCodeLine{00052\ }
-\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ p;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ inputSize\ =\ segment.size();}
 \DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ inputSize\ =\ segment.size();}
-\DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \ \ \ \ list<CInputPoint3D>::iterator\ it\ =\ segment.begin();}
-\DoxyCodeLine{00058\ \ \ \ \ list<CInputPoint3D>\ newSegment;}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}\ =\ 0;\ \mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}\ <\ inputSize\ -\/\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ ++\mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}})}
-\DoxyCodeLine{00061\ \ \ \ \ \{}
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ sumX\ =\ 0,\ sumY\ =\ 0,\ sumZ\ =\ 0;}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ div\ =\ 0;}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{setTime}}(it-\/>getTime());}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{setEulerMatrix}}(it-\/>getEulerMatrix());}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ j\ =\ \mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}};\ j\ <\ \mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}\ +\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ ++j)}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ sumX\ +=\ it-\/>getX();}
-\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ sumY\ +=\ it-\/>getY();}
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ sumZ\ +=\ it-\/>getZ();}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ div++;}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ index\ =\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ index\ >\ 0;\ index-\/-\/)}
-\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ it-\/-\/;}
-\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(sumX\ /\ div,\ sumY\ /\ div,\ sumZ\ /\ div);}
-\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(it\ !=\ segment.end())}
-\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ newSegment.push\_back(p);}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00085\ \ \ \ \ \}}
-\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{return}\ newSegment;}
-\DoxyCodeLine{00087\ \}}
+\DoxyCodeLine{00055\ \ \ \ \ list<CInputPoint3D>::iterator\ it\ =\ segment.begin();}
+\DoxyCodeLine{00056\ \ \ \ \ list<CInputPoint3D>\ newSegment;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ inputSize\ -\/\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ ++i)}
+\DoxyCodeLine{00059\ \ \ \ \ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ sumX\ =\ 0,\ sumY\ =\ 0,\ sumZ\ =\ 0;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ div\ =\ 0;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{setTime}}(it-\/>getTime());}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{setEulerMatrix}}(it-\/>getEulerMatrix());}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ j\ =\ i;\ j\ <\ i\ +\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ ++j)}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ sumX\ +=\ it-\/>getX();}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ sumY\ +=\ it-\/>getY();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ sumZ\ +=\ it-\/>getZ();}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ div++;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ index\ =\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ index\ >\ 0;\ index-\/-\/)}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ it-\/-\/;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(sumX\ /\ div,\ sumY\ /\ div,\ sumZ\ /\ div);}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(it\ !=\ segment.end())}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ newSegment.push\_back(p);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{return}\ newSegment;}
+\DoxyCodeLine{00085\ \}}
 
 \end{DoxyCode}
 
 
-Benutzt \mbox{\hyperlink{plot_path_8m_source_l00012}{i}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00055}{CPoint3\+D\+::set()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00120}{CInput\+Point3\+D\+::set\+Euler\+Matrix()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00133}{CInput\+Point3\+D\+::set\+Time()}} und \mbox{\hyperlink{_mean_filter_8h_source_l00041}{window\+Size}}.
+Benutzt \mbox{\hyperlink{_point3_d_8cpp_source_l00055}{CPoint3\+D\+::set()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00120}{CInput\+Point3\+D\+::set\+Euler\+Matrix()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00133}{CInput\+Point3\+D\+::set\+Time()}} und \mbox{\hyperlink{_mean_filter_8h_source_l00077}{window\+Size}}.
 
 
 
-Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00035}{mean()}}.
+Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00033}{mean()}}.
 
 \Hypertarget{class_c_mean_filter_aaea0182dce726e167d46fc4a4b78e81a}\label{class_c_mean_filter_aaea0182dce726e167d46fc4a4b78e81a} 
 \index{CMeanFilter@{CMeanFilter}!getPath@{getPath}}
@@ -193,18 +215,25 @@ Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00035}{mean()}}.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00030}{30}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
+\+: Gibt den geglätteten Pfad zurück 
+
+\begin{DoxyReturn}{RÃ¼ckgabe}
+\+: vector$<$list$<$\+CInput\+Point3\+D$>$$>$ 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00028}{28}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00031\ \{}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_mean_filter_adf004b2b19e5498539bb87851a5439da}{meanPath}};}
-\DoxyCodeLine{00033\ \}}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_mean_filter_adf004b2b19e5498539bb87851a5439da}{meanPath}};}
+\DoxyCodeLine{00031\ \}}
 
 \end{DoxyCode}
 
 
-Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00045}{mean\+Path}}.
+Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00081}{mean\+Path}}.
 
 
 
@@ -218,18 +247,25 @@ Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00031}{main()}}.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00025}{25}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
+\+: Gibt das gesetzte Fenster zurück 
+
+\begin{DoxyReturn}{RÃ¼ckgabe}
+\+: Window int 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00023}{23}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00026\ \{}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};}
-\DoxyCodeLine{00028\ \}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};}
+\DoxyCodeLine{00026\ \}}
 
 \end{DoxyCode}
 
 
-Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00041}{window\+Size}}.
+Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00077}{window\+Size}}.
 
 \Hypertarget{class_c_mean_filter_a0f20f18445bf2983d60a58b27118c8e0}\label{class_c_mean_filter_a0f20f18445bf2983d60a58b27118c8e0} 
 \index{CMeanFilter@{CMeanFilter}!mean@{mean}}
@@ -239,23 +275,32 @@ Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00041}{window\+Size}}.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00035}{35}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
+\+: Ruft calculate\+Mean für die einzelnen Segmente auf 
+
+Hier wird durch die Segmente interiert und für jedes die calculate Mean Funktion aufgerufen. Anschliessend werden sie in mean\+Path abgespeichert. 
+\begin{DoxyParams}{Parameter}
+{\em } & list$<$\+CInput\+Point3\+D$>$\& segment bekommt einzelne Segmente \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00033}{33}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00036\ \{}
-\DoxyCodeLine{00037\ \ \ \ \ list<CInputPoint3D>\ dummyList;}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)}
-\DoxyCodeLine{00039\ \ \ \ \ \{}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ dummyList\ =\ \mbox{\hyperlink{class_c_mean_filter_a9efa7170eaf84a72e5aed4e1cca5ab04}{calculateMean}}(sourcePath[s]);}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_adf004b2b19e5498539bb87851a5439da}{meanPath}}.push\_back(dummyList);}
-\DoxyCodeLine{00042\ \ \ \ \ \}}
-\DoxyCodeLine{00043\ \}}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ list<CInputPoint3D>\ dummyList;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)}
+\DoxyCodeLine{00037\ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ dummyList\ =\ \mbox{\hyperlink{class_c_mean_filter_a9efa7170eaf84a72e5aed4e1cca5ab04}{calculateMean}}(sourcePath[s]);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_adf004b2b19e5498539bb87851a5439da}{meanPath}}.push\_back(dummyList);}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \}}
 
 \end{DoxyCode}
 
 
-Benutzt \mbox{\hyperlink{_mean_filter_8cpp_source_l00045}{calculate\+Mean()}} und \mbox{\hyperlink{_mean_filter_8h_source_l00045}{mean\+Path}}.
+Benutzt \mbox{\hyperlink{_mean_filter_8cpp_source_l00043}{calculate\+Mean()}} und \mbox{\hyperlink{_mean_filter_8h_source_l00081}{mean\+Path}}.
 
 
 
@@ -269,18 +314,27 @@ Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00031}{main()}}.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00020}{20}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
+\+: Setzt das Fenster 
+
+
+\begin{DoxyParams}{Parameter}
+{\em } & Window int \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8cpp_source_l00018}{18}} der Datei \mbox{\hyperlink{_mean_filter_8cpp_source}{Mean\+Filter.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00021\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}}\ =\ Window;}
-\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}}\ =\ Window;}
+\DoxyCodeLine{00021\ \}}
 
 \end{DoxyCode}
 
 
-Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00041}{window\+Size}}.
+Benutzt \mbox{\hyperlink{_mean_filter_8h_source_l00077}{window\+Size}}.
 
 
 
@@ -295,41 +349,13 @@ Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00031}{main()}}.
 \doxysubsubsection{\texorpdfstring{meanPath}{meanPath}}
 {\footnotesize\ttfamily vector$<$list$<$\mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}}$>$ $>$ CMean\+Filter\+::mean\+Path\hspace{0.3cm}{\ttfamily [private]}}
 
+Hier werden die geglätteten Daten gespeichert 
 
-
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8h_source_l00045}{45}} der Datei \mbox{\hyperlink{_mean_filter_8h_source}{Mean\+Filter.\+h}}.
-
-
-
-Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00030}{get\+Path()}} und \mbox{\hyperlink{_mean_filter_8cpp_source_l00035}{mean()}}.
-
-\Hypertarget{class_c_mean_filter_a2bed719ec48f517b4805f155fcc65c98}\label{class_c_mean_filter_a2bed719ec48f517b4805f155fcc65c98} 
-\index{CMeanFilter@{CMeanFilter}!position@{position}}
-\index{position@{position}!CMeanFilter@{CMeanFilter}}
-\doxysubsubsection{\texorpdfstring{position}{position}}
-{\footnotesize\ttfamily int CMean\+Filter\+::position\hspace{0.3cm}{\ttfamily [private]}}
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8h_source_l00081}{81}} der Datei \mbox{\hyperlink{_mean_filter_8h_source}{Mean\+Filter.\+h}}.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8h_source_l00042}{42}} der Datei \mbox{\hyperlink{_mean_filter_8h_source}{Mean\+Filter.\+h}}.
-
-
-
-Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00004}{CMean\+Filter()}}.
-
-\Hypertarget{class_c_mean_filter_a4616c5419c5d2e20c71401cab1941497}\label{class_c_mean_filter_a4616c5419c5d2e20c71401cab1941497} 
-\index{CMeanFilter@{CMeanFilter}!sum@{sum}}
-\index{sum@{sum}!CMeanFilter@{CMeanFilter}}
-\doxysubsubsection{\texorpdfstring{sum}{sum}}
-{\footnotesize\ttfamily double CMean\+Filter\+::sum\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8h_source_l00043}{43}} der Datei \mbox{\hyperlink{_mean_filter_8h_source}{Mean\+Filter.\+h}}.
-
-
-
-Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00004}{CMean\+Filter()}}.
+Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00028}{get\+Path()}} und \mbox{\hyperlink{_mean_filter_8cpp_source_l00033}{mean()}}.
 
 \Hypertarget{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}\label{class_c_mean_filter_a247225236ed080e085d43240e47ec94e} 
 \index{CMeanFilter@{CMeanFilter}!windowSize@{windowSize}}
@@ -337,13 +363,13 @@ Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00004}{CMean\+Filter
 \doxysubsubsection{\texorpdfstring{windowSize}{windowSize}}
 {\footnotesize\ttfamily int CMean\+Filter\+::window\+Size\hspace{0.3cm}{\ttfamily [private]}}
 
+Grösse des Fensters des gleitenden Mittelwerts 
+
+Definiert in Zeile \mbox{\hyperlink{_mean_filter_8h_source_l00077}{77}} der Datei \mbox{\hyperlink{_mean_filter_8h_source}{Mean\+Filter.\+h}}.
 
 
-Definiert in Zeile \mbox{\hyperlink{_mean_filter_8h_source_l00041}{41}} der Datei \mbox{\hyperlink{_mean_filter_8h_source}{Mean\+Filter.\+h}}.
 
-
-
-Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00045}{calculate\+Mean()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00004}{CMean\+Filter()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00011}{CMean\+Filter()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00025}{get\+Window\+Size()}} und \mbox{\hyperlink{_mean_filter_8cpp_source_l00020}{set\+Window\+Size()}}.
+Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00043}{calculate\+Mean()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00004}{CMean\+Filter()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00009}{CMean\+Filter()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00023}{get\+Window\+Size()}} und \mbox{\hyperlink{_mean_filter_8cpp_source_l00018}{set\+Window\+Size()}}.
 
 
 

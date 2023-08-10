@@ -56,13 +56,13 @@ int main()
 		// Puts the Segments together to one path
 
 		CPathBuilder pathBuilder;
-		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), "output/08_path.csv");
+		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), "output/04_path.csv");
 
 		// Calculates Speed, Angle and generates the Output Data
 
 		CRobCodeGenerator codeGenerator(inputParameter.getSpeed(), inputParameter.getSpeedManual(),
 			inputParameter.getOrientationManual(), inputParameter.getAngles());
-		codeGenerator.generateRobCode(pathBuilder.getPath(), "output/09_robCode.src");
+		codeGenerator.generateRobCode(pathBuilder.getPath(), "output/robCode.src");
 	
 		float elapsed = (float)(clock() - start) / CLOCKS_PER_SEC;
 	}

@@ -6,6 +6,7 @@
 
 #include <vector>
 #include <list>
+#include <string>
 #include "Point3D.h"
 
 #pragma once

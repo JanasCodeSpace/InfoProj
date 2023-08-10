@@ -34,12 +34,12 @@ public:
 	/**
 	* Initialisiert die Input Daten
 	* @brief: Konstruktor mit Werten
-	* @param: initSpeed double
-	* @param: initSpeedManual bool
-	* @param: initOrientationManual bool
-	* @param: initA double
-	* @param: initB double
-	* @param: initC double
+	* @param: double initSpeed
+	* @param: bool initSeepManual
+	* @param: bool initOrientationManual
+	* @param: double initA
+	* @param: double initB
+	* @param: double initC
 	* @see: CInputParameter()
 	* @see: ~CInputParameter()
 	* @see: CInputParameter(void);
@@ -53,17 +53,17 @@ public:
 	/**
 	* Setzt ob die Orientierung Händisch eingegeben werden soll und die drei Winkel
 	* @brief: Setzt Orientierungs Daten
-	* @param: initOrientationManual bool
-	* @param: initA double
-	* @param: initB double
-	* @param: initC double
+	* @param: bool initOrientationManual
+	* @param: double initA
+	* @param: double initB
+	* @param: double initC
 	*/
 	void setOrientation(bool initOrientationManual, double initA, double initB, double initC);
 	/**
 	* Setzt ob die Geschwindigkeit Händisch eingegeben werden soll und die Geschwindigkeit in m/s
 	* @brief: Setzt Geschwindigkeits Daten
-	* @param: initSpeed double
-	* @param: initSpeedManual bool
+	* @param: double initSpeed
+	* @param: bool initSeepManual
 	*/
 	void setSpeed(double initSpeed, bool initSpeedManual);
 
