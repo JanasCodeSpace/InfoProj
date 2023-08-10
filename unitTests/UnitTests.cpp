@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "Point3D.h"
+#include "./header/Point3D.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTests
@@ -11,7 +11,7 @@ namespace UnitTests
 		
 		TEST_METHOD(TestTimeStamp)
 		{
-			CPoint3D Test1;
+			CInputPoint3D Test1;
 			
 			double timestamp = Test1.getTime();
 

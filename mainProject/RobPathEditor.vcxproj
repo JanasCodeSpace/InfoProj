@@ -52,6 +52,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,33 +81,32 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="EulerMatrix.h" />
-    <ClInclude Include="GUI.h" />
-    <ClInclude Include="InputParameter.h" />
-    <ClInclude Include="Line3D.h" />
-    <ClInclude Include="MeanFilter.h" />
-    <ClInclude Include="PathBuilder.h" />
-    <ClInclude Include="PathPostProcessing.h" />
-    <ClInclude Include="Point3D.h" />
-    <ClInclude Include="RobCodeGenerator.h" />
-    <ClInclude Include="SegmentApproximator.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="EulerMatrix.cpp" />
-    <ClCompile Include="GUI.cpp" />
-    <ClCompile Include="InputParameter.cpp" />
-    <ClCompile Include="Line3D.cpp" />
-    <ClCompile Include="MeanFilter.cpp" />
-    <ClCompile Include="PathBuilder.cpp" />
-    <ClCompile Include="PathPostProcessing.cpp" />
-    <ClCompile Include="Point3D.cpp" />
-    <ClCompile Include="RobCodeGenerator.cpp" />
-    <ClCompile Include="RobPathEditor.cpp" />
-    <ClCompile Include="SegmentApproximator.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="ClassDiagram.cd" />
-    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\EulerMatrix.h" />
+    <ClInclude Include="header\GUI.h" />
+    <ClInclude Include="header\InputParameter.h" />
+    <ClInclude Include="header\Line3D.h" />
+    <ClInclude Include="header\Logging.h" />
+    <ClInclude Include="header\MeanFilter.h" />
+    <ClInclude Include="header\PathBuilder.h" />
+    <ClInclude Include="header\Point3D.h" />
+    <ClInclude Include="header\RobCodeGenerator.h" />
+    <ClInclude Include="header\SegmentApproximator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\EulerMatrix.cpp" />
+    <ClCompile Include="src\GUI.cpp" />
+    <ClCompile Include="src\InputParameter.cpp" />
+    <ClCompile Include="src\Line3D.cpp" />
+    <ClCompile Include="src\Logging.cpp" />
+    <ClCompile Include="src\MeanFilter.cpp" />
+    <ClCompile Include="src\PathBuilder.cpp" />
+    <ClCompile Include="src\Point3D.cpp" />
+    <ClCompile Include="src\RobCodeGenerator.cpp" />
+    <ClCompile Include="src\RobPathEditor.cpp" />
+    <ClCompile Include="src\SegmentApproximator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,51 @@
+\doxysection{Input\+Parameter.\+h}
+\hypertarget{_input_parameter_8h_source}{}\label{_input_parameter_8h_source}\index{header/InputParameter.h@{header/InputParameter.h}}
+\mbox{\hyperlink{_input_parameter_8h}{gehe zur Dokumentation dieser Datei}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_euler_matrix_8h}{EulerMatrix.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_point3_d_8h}{Point3D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <sstream>}\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00017}00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00019}00019\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00025}\mbox{\hyperlink{class_c_input_parameter}{00025}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_input_parameter}{CInputParameter}}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00027}00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00033}00033\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0}{CInputParameter}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00047}00047\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0}{CInputParameter}}(\textcolor{keywordtype}{double}\ initSpeed,\ \textcolor{keywordtype}{bool}\ initSeepManual,\ \textcolor{keywordtype}{bool}\ initOrientationManual,\ \textcolor{keywordtype}{double}\ initA,\ \textcolor{keywordtype}{double}\ initB,\ \textcolor{keywordtype}{double}\ initC);}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a229e6b9e7d884fa57cd032e8fd1dccdb}{\string~CInputParameter}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00061}00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_parameter_a04c9fc7d2724593c144586edea4f004e}{setOrientation}}(\textcolor{keywordtype}{bool}\ initOrientationManual,\ \textcolor{keywordtype}{double}\ initA,\ \textcolor{keywordtype}{double}\ initB,\ \textcolor{keywordtype}{double}\ initC);}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00068}00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_parameter_a7a9327fd632b7a18eac4e3650cf1375f}{setSpeed}}(\textcolor{keywordtype}{double}\ initSpeed,\ \textcolor{keywordtype}{bool}\ initSpeedManual);}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00074}00074\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575}{getSpeed}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00079}00079\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}{getSpeedManual}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00084}00084\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_a0cce4aa7d1efbbca24fa9e531a700097}{getOrientationManual}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00090}00090\ \ \ \ \ tuple\ <double,\ double,\ double>\ \mbox{\hyperlink{class_c_input_parameter_a39a7079b2eccaf59200c42d02f5e7a58}{getAngles}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00097}00097\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_parameter_a2c6f7c743f45164703be3e489d0fb4f0}{openFile}}(std::string\ path);}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00106}00106\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_a7ada1c037dfd55298b2d7d3c865ec667}{detectJump}}(\mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ p,\ \textcolor{keywordtype}{double}\ x\_prev,\ \textcolor{keywordtype}{double}\ y\_prev,\ \textcolor{keywordtype}{double}\ z\_prev);}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00111}00111\ \ \ \ \ vector<list<CInputPoint3D>>\&\ \mbox{\hyperlink{class_c_input_parameter_a1b7ac3c105dea6e2c2cd38b88157feee}{getPath}}();}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00113}00113\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00117}\mbox{\hyperlink{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}{00117}}\ \ \ \ \ vector<list<CInputPoint3D>>\ \mbox{\hyperlink{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}{initialPath}};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00121}\mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{00121}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00125}\mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{00125}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speedManual}};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00129}\mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{00129}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientationManual}};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00133}\mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{00133}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00137}\mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{00137}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00141}\mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{00141}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00145}\mbox{\hyperlink{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}{00145}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}{difference}}\ =\ 20;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00146}00146\ \};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8h_source_l00147}00147\ }
+
+\end{DoxyCode}
