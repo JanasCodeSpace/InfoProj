@@ -33,33 +33,37 @@ public:
 	* @brief: Default Konstruktor
 	* @see: CMeanFilter(int Window);
 	*/
-	CLogging(int Step);
+	CLogging(string path);
 	/**
 	* @brief: Dekonstruktor
 	*/
 	~CLogging(void);
-
+	/**
+	* @brief: Setzt in welchem Schritt wir uns befinden
+	* @param: int Step
+	*/
+	void setStep(int Step);
 	/**
 	* Loggingdaten werden weggespeichert
 	* @brief: Ruft calculateMean für die einzelnen Segmente auf
-	* @param: string Name
-	* @param: string Path
 	* @param: vector<list<CInputPoint3D>>& sourcePath
 	*/
-	void logData(string Path, vector<list<CInputPoint3D>>& sourcePath);
+	void logData(vector<list<CInputPoint3D>>& sourcePath);
 	/**
 	* Loggingdaten werden weggespeichert
 	* @brief: Ruft calculateMean für die einzelnen Segmente auf
-	* @param: string Name
-	* @param: string Path
 	* @param: vector<CInputPoint3D>& sourcePath
 	*/
-	void logData(string Path, vector<CInputPoint3D>& sourcePath);
+	void logData(vector<CInputPoint3D>& sourcePath);
 private:
 	/**
 	* In welchem Schritt sind wir gerade
 	*/
 	int step;
+	/**
+	* Speicherpfad
+	*/
+	string path;
 };
 
 

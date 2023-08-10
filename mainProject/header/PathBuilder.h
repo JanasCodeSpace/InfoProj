@@ -8,6 +8,7 @@
 #include <list>
 #include <iostream>
 #include "Point3D.h"
+#include "Logging.h"
 
 using namespace std;
 
@@ -38,9 +39,9 @@ public:
 	/**
 	* @brief: Gibt Pfad zurück
 	* @param: segments vector<list<CInputPoint3D>>& Pfad aus Segmenten
-	* @param: filename string Pfad für Logging Datei
+	* @param: CLogging log für das Logging
 	*/
-	void createPath(vector<list<CInputPoint3D>>& segments, string filename);
+	void createPath(vector<list<CInputPoint3D>>& segments, CLogging log);
 
 private:
 	/**

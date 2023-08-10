@@ -23,6 +23,7 @@
 #include "./header/InputParameter.h"
 #include "./header/MeanFilter.h"
 #include "./header/GUI.h"
+#include "./header/Logging.h"
 #include <iostream>
 #include <ctime>
 
@@ -35,6 +36,10 @@ int main()
 
 	try
 	{
+		//logging Initialisieren
+		string loggingPath = "output";
+		CLogging logging(loggingPath);
+
 		//read Data
 
 		CInputParameter inputParameter;
@@ -45,18 +50,18 @@ int main()
 
 		CMeanFilter meanFilter;
 		meanFilter.setWindowSize(3);
-		meanFilter.mean(inputParameter.getPath());
+		meanFilter.mean(inputParameter.getPath(), logging);
 
 		// Douglas-Peuker Algorithm
 
 		CSegmentApproximator segmentApproximator;
 		segmentApproximator.setmaxDistance(0.5);
-		segmentApproximator.approx(meanFilter.getPath());
+		segmentApproximator.approx(meanFilter.getPath(), logging);
 
 		// Puts the Segments together to one path
 
 		CPathBuilder pathBuilder;
-		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), "output/04_path.csv");
+		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), logging);
 
 		// Calculates Speed, Angle and generates the Output Data
 

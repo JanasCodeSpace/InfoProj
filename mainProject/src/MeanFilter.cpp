@@ -1,4 +1,5 @@
 #include "./header/MeanFilter.h"
+#include "./header/Logging.h"
 #include <math.h>
 
 CMeanFilter::CMeanFilter()
@@ -30,7 +31,7 @@ vector<list<CInputPoint3D>>& CMeanFilter::getPath()
 	return meanPath;
 }
 
-void CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath)
+void CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath, CLogging log)
 {
 	list<CInputPoint3D> dummyList;
 	for (size_t s = 0; s < sourcePath.size(); s++)
@@ -38,6 +39,8 @@ void CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath)
 		dummyList = calculateMean(sourcePath[s]);
 		meanPath.push_back(dummyList);
 	}
+	log.setStep(2);
+	log.logData(meanPath);
 }
 
 list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)

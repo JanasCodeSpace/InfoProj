@@ -39,10 +39,23 @@ void CEulerMatrix::setMatrix(float inputMatrix[3][3])
     }
 }
 
-CEulerMatrix CEulerMatrix::getMatrix()
+CEulerMatrix CEulerMatrix::getEulerMatrix()
 {
     return eulerMatrix;
 }
+
+void CEulerMatrix::getMatrix(float Matrix[][3])
+{
+    for (int i = 0; i < 3; i++)
+    {
+        for (int m = 0; m < 3; m++)
+        {
+            Matrix[i][m] = eulerMatrix[i][m];  // eulerMatrix mit �bergabewerten �berschreiben
+        }
+    }
+}
+
+
 
 CEulerMatrix CEulerMatrix::angels2mat(double A, double B, double C)
 {

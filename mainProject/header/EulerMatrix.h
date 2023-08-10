@@ -45,8 +45,13 @@ public:
 	* @brief: Auslesen eine Matrix
 	* @return: float inputMatrix[3][3] gibt gespeicherte Matrix zur�ck
 	*/
-	CEulerMatrix getMatrix();
+	CEulerMatrix getEulerMatrix(void);
 
+	/**
+	* @brief: Auslesen eine Matrix
+	* @param: float* inputMatrix[3][3] Pointer zu einer Matrix
+	*/
+	void getMatrix(float Matrix[][3]);
 	/**
 	* @brief: Berechnet die neue Umdrehungsmatrix
 	* @param A double Winkel a

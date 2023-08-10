@@ -8,6 +8,7 @@
 #include <list>
 #include <string>
 #include "Point3D.h"
+#include "Logging.h"
 
 #pragma once
 
@@ -67,8 +68,9 @@ public:
 	* Anschliessend werden sie in meanPath abgespeichert.
 	* @brief: Ruft calculateMean für die einzelnen Segmente auf
 	* @param: list<CInputPoint3D>& segment bekommt einzelne Segmente
+	* @param: CLogging log für das Logging
 	*/
-	void mean(vector<list<CInputPoint3D>>& sourcePath);
+	void mean(vector<list<CInputPoint3D>>& sourcePath, CLogging log);
 
 private:
 	/**

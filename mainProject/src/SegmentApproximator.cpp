@@ -10,7 +10,7 @@ CSegmentApproximator::~CSegmentApproximator(void)
 {
 }
 
-void CSegmentApproximator::approx(const vector<list<CInputPoint3D>>& segments)
+void CSegmentApproximator::approx(const vector<list<CInputPoint3D>>& segments, CLogging log)
 {
 	CInputPoint3D p;
 
@@ -20,7 +20,8 @@ void CSegmentApproximator::approx(const vector<list<CInputPoint3D>>& segments)
 	{
 		douglasPeuckerRecursive(segmentsApprox[s], segmentsApprox[s].begin(), --(segmentsApprox[s].end()));
 	}
-
+	log.setStep(3);
+	log.logData(segmentsApprox);
 }
 
 void CSegmentApproximator::setmaxDistance(double maxDistanceSource)

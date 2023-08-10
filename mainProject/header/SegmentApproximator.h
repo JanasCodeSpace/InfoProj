@@ -11,6 +11,7 @@
 #include <iostream>
 #include <math.h>
 #include "Point3D.h"
+#include "Logging.h"
 
 using namespace std;
 
@@ -37,8 +38,9 @@ public:
 	* Iteriert durch die Listen im Vektor und ruft die Douglas-Peuker-Funktion auf
 	* @brief: Ruft die Douglas-Peuker Funktion auf
 	* @param: Segments const vector<list<CInputPoint3D>>&
+	* @param: CLogging log für das Logging
 	*/
-	void approx(const vector<list<CInputPoint3D>>& Segments);
+	void approx(const vector<list<CInputPoint3D>>& Segments, CLogging log);
 	/**
 	* @brief: Setzt die maximale Abweichung
 	* @param: maxDistanceSource double

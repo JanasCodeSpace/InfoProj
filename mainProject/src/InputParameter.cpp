@@ -107,7 +107,7 @@ void CInputParameter::openFile(string path)
 			>> dummyMatrix[1][0] >> dummyMatrix[1][1] >> dummyMatrix[1][2] >> dummyMatrix[2][0] >> dummyMatrix[2][1] >> dummyMatrix[2][2];
 
 		tmpEuler.setMatrix(dummyMatrix);
-		tmpPoint.setPoint(timestamp, x, y, z, tmpEuler.getMatrix());
+		tmpPoint.setPoint(timestamp, x, y, z, tmpEuler.getEulerMatrix());
 
 		if (detectJump(tmpPoint, x_prev, y_prev, z_prev))
 		{
