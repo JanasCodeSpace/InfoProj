@@ -4,6 +4,8 @@
  * @brief: Berechnung des Douglas Peuker Algorithmusses
  */
 
+//TODO: Kommentare
+
 #include <vector>
 #include <list>
 #include <iostream>
@@ -22,9 +24,8 @@ class CSegmentApproximator
 {
 public:
 	/**
-	* Initialisiert die Input Daten mit Null
+	* Initialisiert die KLasse
 	* @brief: Default Konstruktor
-	* @see: CInputParameter(double initSpeed, bool initSeepManual, bool initOrientationManual, double initA, double initB, double initC)
 	*/
 	CSegmentApproximator(void);
 	/**
@@ -32,17 +33,63 @@ public:
 	*/
 	~CSegmentApproximator(void);
 
+	/**
+	* 
+	* @brief: 
+	* @param: Segments const vector<list<CInputPoint3D>>&
+	*/
 	void approx(const vector<list<CInputPoint3D>>& Segments);
+	/**
+	*
+	* @brief:
+	* @param: maxDistanceSource double
+	*/
 	void setmaxDistance(double maxDistanceSource);
+	/**
+	*
+	* @brief:
+	* @param: maxDistanceSource double
+	*/
 	double getmaxDistance();
 
+	/**
+	* @brief: Gibt den bereinigten Pfad zurück
+	* @return: vector<list<CInputPoint3D>>&
+	*/
 	vector<list<CInputPoint3D>>& getSegmentsApproxVector();
 
 private:
+	/**
+	* Bereinigten Pfad
+	*/
 	vector<list<CInputPoint3D>> segmentsApprox;
-
+	/**
+	* Einstellbare Distanz für den Douglas-Peuker-Algorithmus
+	*/
 	double maxDistance;
-	void douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr, double maxDistance);
+
+	/**
+	* 
+	* @brief: 
+	* @param: list<CInputPoint3D>& segment
+	* @param: std::list<CInputPoint3D>::iterator startIt
+	* @param: std::list<CInputPoint3D>::iterator endItr
+	*/
+	void douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr);
+	/**
+	*
+	* @brief:
+	* @param: int xS
+	* @param: int yS
+	* @param: int zS
+	* @param: int xE
+	* @param: int yE
+	* @param: int zE
+	* @param: int x
+	* @param: int y
+	* @param: int z
+	* @return: double
+	*/
 	double calcDist(int xS, int yS, int zS, int xE, int yE, int zE, int x, int y, int z);
 
 };

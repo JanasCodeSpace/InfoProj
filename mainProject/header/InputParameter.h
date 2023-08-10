@@ -34,14 +34,14 @@ public:
 	/**
 	* Initialisiert die Input Daten
 	* @brief: Konstruktor mit Werten
-	* @param initSpeed double
-	* @param initSpeedManual bool
-	* @param initOrientationManual bool
-	* @param initA double
-	* @param initB double
-	* @param initC double
-	* @see CInputParameter()
-	* @see ~CInputParameter()
+	* @param: initSpeed double
+	* @param: initSpeedManual bool
+	* @param: initOrientationManual bool
+	* @param: initA double
+	* @param: initB double
+	* @param: initC double
+	* @see: CInputParameter()
+	* @see: ~CInputParameter()
 	* @see: CInputParameter(void);
 	*/
 	CInputParameter(double initSpeed, bool initSeepManual, bool initOrientationManual, double initA, double initB, double initC);
@@ -53,17 +53,17 @@ public:
 	/**
 	* Setzt ob die Orientierung Händisch eingegeben werden soll und die drei Winkel
 	* @brief: Setzt Orientierungs Daten
-	* @param initOrientationManual bool
-	* @param initA double
-	* @param initB double
-	* @param initC double
+	* @param: initOrientationManual bool
+	* @param: initA double
+	* @param: initB double
+	* @param: initC double
 	*/
 	void setOrientation(bool initOrientationManual, double initA, double initB, double initC);
 	/**
 	* Setzt ob die Geschwindigkeit Händisch eingegeben werden soll und die Geschwindigkeit in m/s
 	* @brief: Setzt Geschwindigkeits Daten
-	* @param initSpeed double
-	* @param initSpeedManual bool
+	* @param: initSpeed double
+	* @param: initSpeedManual bool
 	*/
 	void setSpeed(double initSpeed, bool initSpeedManual);
 
@@ -85,7 +85,7 @@ public:
 	/**
 	* Gibt die eingegebenen Winkel als tuple zurück
 	* @brief: Gibt Winkel zurück
-	* @output: tuple <double double double> angles
+	* @return: tuple <double double double> angles
 	*/
 	tuple <double, double, double> getAngles(void);
 

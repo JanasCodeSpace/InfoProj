@@ -38,7 +38,7 @@ vector<list<CInputPoint3D>>& CSegmentApproximator::getSegmentsApproxVector()
 	return segmentsApprox;
 }
 
-void CSegmentApproximator::douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr, double maxDistance)
+void CSegmentApproximator::douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr)
 {
 	if (segment.size() < 3) return;
 	if (distance(startItr, endItr) == 2) return;

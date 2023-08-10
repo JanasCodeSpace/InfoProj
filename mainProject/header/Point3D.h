@@ -1,3 +1,11 @@
+/**
+ * @file: Point3D.h
+ *
+ * @brief: Handling der Punkte
+ */
+
+//TODO: Kommentare
+
 #include "EulerMatrix.h"
 
 class CLine3D;
@@ -5,6 +13,12 @@ class CLine3D;
 using namespace std;
 
 #pragma once
+
+/**
+ * Das ist die Grundklasse eines Punktes, hier lassen sich die Basiswerte 
+ * setzten und Abstände zwishen Punkten berechnen.
+ * @brief: Grundklasse Punkt
+ */
 class CPoint3D
 {
 public:

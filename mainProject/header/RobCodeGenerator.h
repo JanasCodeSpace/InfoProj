@@ -4,6 +4,8 @@
  * @brief: Erstellung des Roboter Codes
  */
 
+//TODO: kommentare
+
 #include <vector>
 #include <iostream>
 #include "Point3D.h"
@@ -15,6 +17,10 @@ using namespace std;
 
 #define MAX_SPEED 2.0
 
+/**
+ * In dieser Klasse werden die eingelesenen einstellbaren Daten und das einlesen der Daten aus der Eingabedatei gehandelt.
+ * @brief: Handling Eingabedaten
+ */
 class CRobCodeGenerator
 {
 public:
