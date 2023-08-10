@@ -1,0 +1,383 @@
+\doxysection{CPath\+Post\+Processing Klassenreferenz}
+\hypertarget{class_c_path_post_processing}{}\label{class_c_path_post_processing}\index{CPathPostProcessing@{CPathPostProcessing}}
+
+
+{\ttfamily \#include $<$Path\+Post\+Processing.\+h$>$}
+
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_path_post_processing_ac615585f038e2c81b274ee63dbac29e5}{CPath\+Post\+Processing}} (void)
+\item 
+\mbox{\hyperlink{class_c_path_post_processing_ac058be3533f99f177763a613d3c6b958}{CPath\+Post\+Processing}} (double speed\+In, bool speed\+Manual\+In, bool orientation\+Manual\+In, double AIn, double BIn, double CIn)
+\item 
+\mbox{\hyperlink{class_c_path_post_processing_ae32519d66f24d5135adad0a3644d862c}{\texorpdfstring{$\sim$}{\string~}\+CPath\+Post\+Processing}} (void)
+\item 
+vector$<$ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}} $>$ \& \mbox{\hyperlink{class_c_path_post_processing_ae533bf7ee61a24b71e25c618401dee7c}{get\+Processed\+Path}} (void)
+\item 
+void \mbox{\hyperlink{class_c_path_post_processing_a44d20fedcf0873e20d20cc5519c6cef5}{post\+Processing}} (vector$<$ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}} $>$ \&path)
+\item 
+void \mbox{\hyperlink{class_c_path_post_processing_ad0fe4ee9b05fd80f854609fba9f68dd0}{calculate\+Speed}} (\mbox{\hyperlink{class_c_output_point3_d}{COutput\+Point3D}} \&p, size\+\_\+t \mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}})
+\item 
+void \mbox{\hyperlink{class_c_path_post_processing_a3b67fb7c329444c3e7dc305c6d6db7c8}{calculate\+Angles}} (\mbox{\hyperlink{class_c_output_point3_d}{COutput\+Point3D}} \&p)
+\item 
+void \mbox{\hyperlink{class_c_path_post_processing_a72c52e53adc202820bcc4052621d674b}{set\+Data}} (double \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}, bool \mbox{\hyperlink{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73}{speed\+Manual}}, bool \mbox{\hyperlink{class_c_path_post_processing_a85c127694f64dde63730825add10ee44}{orientation\+Manual}}, tuple$<$ double, double, double $>$ angles)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_c_output_point3_d}{COutput\+Point3D}} $>$ \mbox{\hyperlink{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}{processed\+Path}}
+\item 
+double \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}
+\item 
+bool \mbox{\hyperlink{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73}{speed\+Manual}}
+\item 
+bool \mbox{\hyperlink{class_c_path_post_processing_a85c127694f64dde63730825add10ee44}{orientation\+Manual}}
+\item 
+double \mbox{\hyperlink{class_c_path_post_processing_a2e166fe24f111ce997253172be43202d}{A}}
+\item 
+double \mbox{\hyperlink{class_c_path_post_processing_aec924c03cc54b6cd1e80da06de7fc0ed}{B}}
+\item 
+double \mbox{\hyperlink{class_c_path_post_processing_a3a9be3b467b8d487b8b725df798b35a9}{C}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8h_source_l00013}{13}} der Datei \mbox{\hyperlink{_path_post_processing_8h_source}{Path\+Post\+Processing.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_c_path_post_processing_ac615585f038e2c81b274ee63dbac29e5}\label{class_c_path_post_processing_ac615585f038e2c81b274ee63dbac29e5} 
+\index{CPathPostProcessing@{CPathPostProcessing}!CPathPostProcessing@{CPathPostProcessing}}
+\index{CPathPostProcessing@{CPathPostProcessing}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{CPathPostProcessing()}{CPathPostProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CPath\+Post\+Processing\+::\+CPath\+Post\+Processing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8cpp_source_l00004}{4}} der Datei \mbox{\hyperlink{_path_post_processing_8cpp_source}{Path\+Post\+Processing.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_c_path_post_processing_ac058be3533f99f177763a613d3c6b958}\label{class_c_path_post_processing_ac058be3533f99f177763a613d3c6b958} 
+\index{CPathPostProcessing@{CPathPostProcessing}!CPathPostProcessing@{CPathPostProcessing}}
+\index{CPathPostProcessing@{CPathPostProcessing}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{CPathPostProcessing()}{CPathPostProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CPath\+Post\+Processing\+::\+CPath\+Post\+Processing (\begin{DoxyParamCaption}\item[{double}]{speed\+In,  }\item[{bool}]{speed\+Manual\+In,  }\item[{bool}]{orientation\+Manual\+In,  }\item[{double}]{AIn,  }\item[{double}]{BIn,  }\item[{double}]{CIn }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8cpp_source_l00008}{8}} der Datei \mbox{\hyperlink{_path_post_processing_8cpp_source}{Path\+Post\+Processing.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ speedIn;}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73}{speedManual}}\ =\ speedManualIn;}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a85c127694f64dde63730825add10ee44}{orientationManual}}\ =\ orientationManualIn;}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2e166fe24f111ce997253172be43202d}{A}}\ =\ AIn;}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_aec924c03cc54b6cd1e80da06de7fc0ed}{B}}\ =\ BIn;}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a3a9be3b467b8d487b8b725df798b35a9}{C}}\ =\ CIn;}
+\DoxyCodeLine{00016\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_path_post_processing_8h_source_l00033}{A}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00034}{B}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00035}{C}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00032}{orientation\+Manual}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00030}{speed}} und \mbox{\hyperlink{_path_post_processing_8h_source_l00031}{speed\+Manual}}.
+
+\Hypertarget{class_c_path_post_processing_ae32519d66f24d5135adad0a3644d862c}\label{class_c_path_post_processing_ae32519d66f24d5135adad0a3644d862c} 
+\index{CPathPostProcessing@{CPathPostProcessing}!````~CPathPostProcessing@{\texorpdfstring{$\sim$}{\string~}CPathPostProcessing}}
+\index{````~CPathPostProcessing@{\texorpdfstring{$\sim$}{\string~}CPathPostProcessing}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CPathPostProcessing()}{\string~CPathPostProcessing()}}
+{\footnotesize\ttfamily CPath\+Post\+Processing\+::\texorpdfstring{$\sim$}{\string~}\+CPath\+Post\+Processing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8cpp_source_l00018}{18}} der Datei \mbox{\hyperlink{_path_post_processing_8cpp_source}{Path\+Post\+Processing.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_c_path_post_processing_a3b67fb7c329444c3e7dc305c6d6db7c8}\label{class_c_path_post_processing_a3b67fb7c329444c3e7dc305c6d6db7c8} 
+\index{CPathPostProcessing@{CPathPostProcessing}!calculateAngles@{calculateAngles}}
+\index{calculateAngles@{calculateAngles}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{calculateAngles()}{calculateAngles()}}
+{\footnotesize\ttfamily void CPath\+Post\+Processing\+::calculate\+Angles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_output_point3_d}{COutput\+Point3D}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8cpp_source_l00090}{90}} der Datei \mbox{\hyperlink{_path_post_processing_8cpp_source}{Path\+Post\+Processing.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00091\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{double}\ a,\ b,\ c;}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{//\ Funktion\ in\ Eulermatrix\ aufrufen\ die\ a/b/c\ neu\ berechnet}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_a180732285cf09beda40fc13478b2eecc}{setA}}(a);}
+\DoxyCodeLine{00097\ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_adbbdb2ffc0a5a4fa08fa775eb3790017}{setB}}(b);}
+\DoxyCodeLine{00098\ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_a1546fdc484115dc5405df8b7a3e5fcdf}{setC}}(c);}
+\DoxyCodeLine{00099\ \}}
+
+\end{DoxyCode}
+
+
+Wird benutzt von \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{post\+Processing()}}.
+
+\Hypertarget{class_c_path_post_processing_ad0fe4ee9b05fd80f854609fba9f68dd0}\label{class_c_path_post_processing_ad0fe4ee9b05fd80f854609fba9f68dd0} 
+\index{CPathPostProcessing@{CPathPostProcessing}!calculateSpeed@{calculateSpeed}}
+\index{calculateSpeed@{calculateSpeed}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{calculateSpeed()}{calculateSpeed()}}
+{\footnotesize\ttfamily void CPath\+Post\+Processing\+::calculate\+Speed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_output_point3_d}{COutput\+Point3D}} \&}]{p,  }\item[{size\+\_\+t}]{i }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8cpp_source_l00074}{74}} der Datei \mbox{\hyperlink{_path_post_processing_8cpp_source}{Path\+Post\+Processing.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{double}\ distance\ =\ 0;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{double}\ time\ =\ 0;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ distance\ =\ \mbox{\hyperlink{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}{processedPath}}[s-\/1].distanceTo(p);\ \textcolor{comment}{//Strecke\ zwischen\ p\ und\ dem\ Punkt\ zuvor}}
+\DoxyCodeLine{00080\ \ \ \ \ time\ =\ p.getTime()\ -\/\ \mbox{\hyperlink{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}{processedPath}}[s-\/1].getTime();\ \textcolor{comment}{//Zeit\ zwischen\ p-\/1\ und\ p}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ distance/time;\ \textcolor{comment}{//\ Berechnug\ Geschwindigkeit\ zwischen\ zwei\ Punkten}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ >\ \mbox{\hyperlink{_path_post_processing_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}})\ \textcolor{comment}{//Begrenzung\ auf\ maximale\ Geschwindigkeit,\ falls\ Trackerdaten\ höheren\ Wert\ aufweisen}}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ \mbox{\hyperlink{_path_post_processing_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_ae72f85753da775da6e8ce047a502b19d}{setSpeed}}(\mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}});\ \textcolor{comment}{//Zuweisung\ der\ Geschwindigkeit}}
+\DoxyCodeLine{00088\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_path_post_processing_8h_source_l00011}{MAX\+\_\+\+SPEED}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00029}{processed\+Path}} und \mbox{\hyperlink{_path_post_processing_8h_source_l00030}{speed}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{post\+Processing()}}.
+
+\Hypertarget{class_c_path_post_processing_ae533bf7ee61a24b71e25c618401dee7c}\label{class_c_path_post_processing_ae533bf7ee61a24b71e25c618401dee7c} 
+\index{CPathPostProcessing@{CPathPostProcessing}!getProcessedPath@{getProcessedPath}}
+\index{getProcessedPath@{getProcessedPath}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{getProcessedPath()}{getProcessedPath()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}} $>$ \& CPath\+Post\+Processing\+::get\+Processed\+Path (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8cpp_source_l00032}{32}} der Datei \mbox{\hyperlink{_path_post_processing_8cpp_source}{Path\+Post\+Processing.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}{processedPath}};}
+\DoxyCodeLine{00035\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_path_post_processing_8h_source_l00029}{processed\+Path}}.
+
+\Hypertarget{class_c_path_post_processing_a44d20fedcf0873e20d20cc5519c6cef5}\label{class_c_path_post_processing_a44d20fedcf0873e20d20cc5519c6cef5} 
+\index{CPathPostProcessing@{CPathPostProcessing}!postProcessing@{postProcessing}}
+\index{postProcessing@{postProcessing}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{postProcessing()}{postProcessing()}}
+{\footnotesize\ttfamily void CPath\+Post\+Processing\+::post\+Processing (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}} $>$ \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{37}} der Datei \mbox{\hyperlink{_path_post_processing_8cpp_source}{Path\+Post\+Processing.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}\ p;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ path.size();\ s++)}
+\DoxyCodeLine{00042\ \ \ \ \ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ p.setPoint(path[s].getTime(),\ path[s].getX(),\ path[s].getY(),\ path[s].getZ(),\ path[s].getEulerMatrix());}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73}{speedManual}})}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ >\ \mbox{\hyperlink{_path_post_processing_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}})\ \textcolor{comment}{//Wenn\ maximale\ Geschwindigkeit\ überschritten\ wird,\ Geschwindigkeit\ begrenzen}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ \mbox{\hyperlink{_path_post_processing_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ p.setSpeed(\mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (s\ ==\ 0)}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p.setSpeed(1);\ \textcolor{comment}{//Der\ erste\ Punkt(0)\ wird\ mit\ Standardgeschwindigkeit\ 1m/s\ angefahren.}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_ad0fe4ee9b05fd80f854609fba9f68dd0}{calculateSpeed}}(p,\ s);\ \textcolor{comment}{//Die\ Geschwindigkeit\ zwischen\ den\ weiteren\ Punkten\ wird\ berechnet.}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_path_post_processing_a85c127694f64dde63730825add10ee44}{orientationManual}})}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ p.setA(\mbox{\hyperlink{class_c_path_post_processing_a2e166fe24f111ce997253172be43202d}{A}});}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ p.setB(\mbox{\hyperlink{class_c_path_post_processing_aec924c03cc54b6cd1e80da06de7fc0ed}{B}});}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ p.setC(\mbox{\hyperlink{class_c_path_post_processing_a3a9be3b467b8d487b8b725df798b35a9}{C}});}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a3b67fb7c329444c3e7dc305c6d6db7c8}{calculateAngles}}(p);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}{processedPath}}.push\_back(p);}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_path_post_processing_8h_source_l00033}{A}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00034}{B}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00035}{C}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00090}{calculate\+Angles()}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00074}{calculate\+Speed()}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00011}{MAX\+\_\+\+SPEED}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00032}{orientation\+Manual}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00029}{processed\+Path}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00030}{speed}} und \mbox{\hyperlink{_path_post_processing_8h_source_l00031}{speed\+Manual}}.
+
+\Hypertarget{class_c_path_post_processing_a72c52e53adc202820bcc4052621d674b}\label{class_c_path_post_processing_a72c52e53adc202820bcc4052621d674b} 
+\index{CPathPostProcessing@{CPathPostProcessing}!setData@{setData}}
+\index{setData@{setData}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void CPath\+Post\+Processing\+::set\+Data (\begin{DoxyParamCaption}\item[{double}]{speed,  }\item[{bool}]{speed\+Manual,  }\item[{bool}]{orientation\+Manual,  }\item[{tuple$<$ double, double, double $>$}]{angles }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8cpp_source_l00022}{22}} der Datei \mbox{\hyperlink{_path_post_processing_8cpp_source}{Path\+Post\+Processing.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ speedIn;}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73}{speedManual}}\ =\ speedManualIn;}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a85c127694f64dde63730825add10ee44}{orientationManual}}\ =\ orientationManualIn;}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2e166fe24f111ce997253172be43202d}{A}}\ =\ get<0>(angles);}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_aec924c03cc54b6cd1e80da06de7fc0ed}{B}}\ =\ get<1>(angles);}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a3a9be3b467b8d487b8b725df798b35a9}{C}}\ =\ get<2>(angles);}
+\DoxyCodeLine{00030\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_path_post_processing_8h_source_l00033}{A}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00034}{B}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00035}{C}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00032}{orientation\+Manual}}, \mbox{\hyperlink{_path_post_processing_8h_source_l00030}{speed}} und \mbox{\hyperlink{_path_post_processing_8h_source_l00031}{speed\+Manual}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_c_path_post_processing_a2e166fe24f111ce997253172be43202d}\label{class_c_path_post_processing_a2e166fe24f111ce997253172be43202d} 
+\index{CPathPostProcessing@{CPathPostProcessing}!A@{A}}
+\index{A@{A}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily double CPath\+Post\+Processing\+::A\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8h_source_l00033}{33}} der Datei \mbox{\hyperlink{_path_post_processing_8h_source}{Path\+Post\+Processing.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_post_processing_8cpp_source_l00008}{CPath\+Post\+Processing()}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{post\+Processing()}} und \mbox{\hyperlink{_path_post_processing_8cpp_source_l00022}{set\+Data()}}.
+
+\Hypertarget{class_c_path_post_processing_aec924c03cc54b6cd1e80da06de7fc0ed}\label{class_c_path_post_processing_aec924c03cc54b6cd1e80da06de7fc0ed} 
+\index{CPathPostProcessing@{CPathPostProcessing}!B@{B}}
+\index{B@{B}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily double CPath\+Post\+Processing\+::B\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8h_source_l00034}{34}} der Datei \mbox{\hyperlink{_path_post_processing_8h_source}{Path\+Post\+Processing.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_post_processing_8cpp_source_l00008}{CPath\+Post\+Processing()}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{post\+Processing()}} und \mbox{\hyperlink{_path_post_processing_8cpp_source_l00022}{set\+Data()}}.
+
+\Hypertarget{class_c_path_post_processing_a3a9be3b467b8d487b8b725df798b35a9}\label{class_c_path_post_processing_a3a9be3b467b8d487b8b725df798b35a9} 
+\index{CPathPostProcessing@{CPathPostProcessing}!C@{C}}
+\index{C@{C}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{C}{C}}
+{\footnotesize\ttfamily double CPath\+Post\+Processing\+::C\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8h_source_l00035}{35}} der Datei \mbox{\hyperlink{_path_post_processing_8h_source}{Path\+Post\+Processing.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_post_processing_8cpp_source_l00008}{CPath\+Post\+Processing()}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{post\+Processing()}} und \mbox{\hyperlink{_path_post_processing_8cpp_source_l00022}{set\+Data()}}.
+
+\Hypertarget{class_c_path_post_processing_a85c127694f64dde63730825add10ee44}\label{class_c_path_post_processing_a85c127694f64dde63730825add10ee44} 
+\index{CPathPostProcessing@{CPathPostProcessing}!orientationManual@{orientationManual}}
+\index{orientationManual@{orientationManual}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{orientationManual}{orientationManual}}
+{\footnotesize\ttfamily bool CPath\+Post\+Processing\+::orientation\+Manual\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8h_source_l00032}{32}} der Datei \mbox{\hyperlink{_path_post_processing_8h_source}{Path\+Post\+Processing.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_post_processing_8cpp_source_l00008}{CPath\+Post\+Processing()}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{post\+Processing()}} und \mbox{\hyperlink{_path_post_processing_8cpp_source_l00022}{set\+Data()}}.
+
+\Hypertarget{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}\label{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8} 
+\index{CPathPostProcessing@{CPathPostProcessing}!processedPath@{processedPath}}
+\index{processedPath@{processedPath}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{processedPath}{processedPath}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_c_output_point3_d}{COutput\+Point3D}}$>$ CPath\+Post\+Processing\+::processed\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8h_source_l00029}{29}} der Datei \mbox{\hyperlink{_path_post_processing_8h_source}{Path\+Post\+Processing.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_post_processing_8cpp_source_l00074}{calculate\+Speed()}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00032}{get\+Processed\+Path()}} und \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{post\+Processing()}}.
+
+\Hypertarget{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}\label{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26} 
+\index{CPathPostProcessing@{CPathPostProcessing}!speed@{speed}}
+\index{speed@{speed}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily double CPath\+Post\+Processing\+::speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8h_source_l00030}{30}} der Datei \mbox{\hyperlink{_path_post_processing_8h_source}{Path\+Post\+Processing.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_post_processing_8cpp_source_l00074}{calculate\+Speed()}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00008}{CPath\+Post\+Processing()}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{post\+Processing()}} und \mbox{\hyperlink{_path_post_processing_8cpp_source_l00022}{set\+Data()}}.
+
+\Hypertarget{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73}\label{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73} 
+\index{CPathPostProcessing@{CPathPostProcessing}!speedManual@{speedManual}}
+\index{speedManual@{speedManual}!CPathPostProcessing@{CPathPostProcessing}}
+\doxysubsubsection{\texorpdfstring{speedManual}{speedManual}}
+{\footnotesize\ttfamily bool CPath\+Post\+Processing\+::speed\+Manual\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_post_processing_8h_source_l00031}{31}} der Datei \mbox{\hyperlink{_path_post_processing_8h_source}{Path\+Post\+Processing.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_post_processing_8cpp_source_l00008}{CPath\+Post\+Processing()}}, \mbox{\hyperlink{_path_post_processing_8cpp_source_l00037}{post\+Processing()}} und \mbox{\hyperlink{_path_post_processing_8cpp_source_l00022}{set\+Data()}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_path_post_processing_8h}{Path\+Post\+Processing.\+h}}\item 
+src/\mbox{\hyperlink{_path_post_processing_8cpp}{Path\+Post\+Processing.\+cpp}}\end{DoxyCompactItemize}

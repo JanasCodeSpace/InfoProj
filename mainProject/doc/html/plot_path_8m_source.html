@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RobCodeGenerator: plotPath.m Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RobCodeGenerator
+   </div>
+   <div id="projectbrief">Dieses Tool erstellt aus mit einem Sensor aufgenommenen Pfaden einen Kuka Roboter lesbaren Code. Dabei sind ein paar Werte einstellbar.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Lade ...</div>
+<div class="SRStatus" id="Searching">Suche ...</div>
+<div class="SRStatus" id="NoMatches">Keine Treffer</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">plotPath.m</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="plot_path_8m.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="plot_path_8m.html#a00a349297fa58bc80ff5329e25dcfe28">    1</a></span>clear <a class="code hl_variable" href="plot_path_8m.html#a00a349297fa58bc80ff5329e25dcfe28">all</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>close <a class="code hl_variable" href="plot_path_8m.html#a00a349297fa58bc80ff5329e25dcfe28">all</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="plot_path_8m.html#a3f3d3b13a15c726d6aa03db3dd0d6377">    3</a></span><a class="code hl_variable" href="plot_path_8m.html#a3f3d3b13a15c726d6aa03db3dd0d6377">clc</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="plot_path_8m.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">    5</a></span><a class="code hl_variable" href="plot_path_8m.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a> = dlmread(<span class="stringliteral">&#39;08_path.csv&#39;</span>);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="plot_path_8m.html#ac51b57a703ba1c5869228690c93e1701">    7</a></span><a class="code hl_variable" href="plot_path_8m.html#ac51b57a703ba1c5869228690c93e1701">X</a> = <a class="code hl_variable" href="plot_path_8m.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>(:,1);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="plot_path_8m.html#a0867f43e27585e019c13f7f4b7c4ab6b">    8</a></span><a class="code hl_variable" href="plot_path_8m.html#a0867f43e27585e019c13f7f4b7c4ab6b">Y</a> = <a class="code hl_variable" href="plot_path_8m.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>(:,2);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="plot_path_8m.html#adc18d83abfd9f87d396e8fd6b6ac0fe1">    9</a></span><a class="code hl_variable" href="plot_path_8m.html#adc18d83abfd9f87d396e8fd6b6ac0fe1">Z</a> = <a class="code hl_variable" href="plot_path_8m.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>(:,3) * 50;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">   12</a></span><span class="keywordflow">for</span> <a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>=1:length(<a class="code hl_variable" href="plot_path_8m.html#ac51b57a703ba1c5869228690c93e1701">X</a>)-1</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><a class="code hl_function" href="plot_path_8m.html#acd954ecb9b1b5ef5f098baae3fbac055">plot3</a>(<a class="code hl_variable" href="plot_path_8m.html#a0867f43e27585e019c13f7f4b7c4ab6b">Y</a>(<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>:i+1),X(<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>:<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>+1),Z(<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>:<a class="code hl_variable" href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>+1));</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="plot_path_8m.html#a58ab1fd68e97078232808206b850161b">   14</a></span>hold <a class="code hl_variable" href="plot_path_8m.html#a58ab1fd68e97078232808206b850161b">on</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="plot_path_8m.html#acd954ecb9b1b5ef5f098baae3fbac055">   15</a></span>%<a class="code hl_function" href="plot_path_8m.html#acd954ecb9b1b5ef5f098baae3fbac055">plot3</a>(<a class="code hl_variable" href="plot_path_8m.html#a0867f43e27585e019c13f7f4b7c4ab6b">Y</a>,<a class="code hl_variable" href="plot_path_8m.html#ac51b57a703ba1c5869228690c93e1701">X</a>,<a class="code hl_variable" href="plot_path_8m.html#adc18d83abfd9f87d396e8fd6b6ac0fe1">Z</a>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="plot_path_8m.html#afeaa7ecdd726aa1950ba61dc659eb561">   16</a></span>axis <a class="code hl_variable" href="plot_path_8m.html#afeaa7ecdd726aa1950ba61dc659eb561">equal</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>pause(0.3)</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>end</div>
+<div class="ttc" id="aplot_path_8m_html_a00a349297fa58bc80ff5329e25dcfe28"><div class="ttname"><a href="plot_path_8m.html#a00a349297fa58bc80ff5329e25dcfe28">all</a></div><div class="ttdeci">clear all</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00001">plotPath.m:1</a></div></div>
+<div class="ttc" id="aplot_path_8m_html_a0867f43e27585e019c13f7f4b7c4ab6b"><div class="ttname"><a href="plot_path_8m.html#a0867f43e27585e019c13f7f4b7c4ab6b">Y</a></div><div class="ttdeci">Y</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00008">plotPath.m:8</a></div></div>
+<div class="ttc" id="aplot_path_8m_html_a3f3d3b13a15c726d6aa03db3dd0d6377"><div class="ttname"><a href="plot_path_8m.html#a3f3d3b13a15c726d6aa03db3dd0d6377">clc</a></div><div class="ttdeci">clc</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00003">plotPath.m:3</a></div></div>
+<div class="ttc" id="aplot_path_8m_html_a511ae0b1c13f95e5f08f1a0dd3da3d93"><div class="ttname"><a href="plot_path_8m.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a></div><div class="ttdeci">data</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00005">plotPath.m:5</a></div></div>
+<div class="ttc" id="aplot_path_8m_html_a58ab1fd68e97078232808206b850161b"><div class="ttname"><a href="plot_path_8m.html#a58ab1fd68e97078232808206b850161b">on</a></div><div class="ttdeci">hold on</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00014">plotPath.m:14</a></div></div>
+<div class="ttc" id="aplot_path_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="plot_path_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00012">plotPath.m:12</a></div></div>
+<div class="ttc" id="aplot_path_8m_html_ac51b57a703ba1c5869228690c93e1701"><div class="ttname"><a href="plot_path_8m.html#ac51b57a703ba1c5869228690c93e1701">X</a></div><div class="ttdeci">X</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00007">plotPath.m:7</a></div></div>
+<div class="ttc" id="aplot_path_8m_html_acd954ecb9b1b5ef5f098baae3fbac055"><div class="ttname"><a href="plot_path_8m.html#acd954ecb9b1b5ef5f098baae3fbac055">plot3</a></div><div class="ttdeci">plot3(Y, X, Z)</div></div>
+<div class="ttc" id="aplot_path_8m_html_adc18d83abfd9f87d396e8fd6b6ac0fe1"><div class="ttname"><a href="plot_path_8m.html#adc18d83abfd9f87d396e8fd6b6ac0fe1">Z</a></div><div class="ttdeci">Z</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00009">plotPath.m:9</a></div></div>
+<div class="ttc" id="aplot_path_8m_html_afeaa7ecdd726aa1950ba61dc659eb561"><div class="ttname"><a href="plot_path_8m.html#afeaa7ecdd726aa1950ba61dc659eb561">equal</a></div><div class="ttdeci">axis equal</div><div class="ttdef"><b>Definition</b> <a href="plot_path_8m_source.html#l00016">plotPath.m:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

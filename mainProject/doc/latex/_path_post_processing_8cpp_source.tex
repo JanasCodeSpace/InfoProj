@@ -1,0 +1,105 @@
+\doxysection{Path\+Post\+Processing.\+cpp}
+\hypertarget{_path_post_processing_8cpp_source}{}\label{_path_post_processing_8cpp_source}\index{src/PathPostProcessing.cpp@{src/PathPostProcessing.cpp}}
+\mbox{\hyperlink{_path_post_processing_8cpp}{gehe zur Dokumentation dieser Datei}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_path_post_processing_8h}{PathPostProcessing.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00004}\mbox{\hyperlink{class_c_path_post_processing_ac615585f038e2c81b274ee63dbac29e5}{00004}}\ \mbox{\hyperlink{class_c_path_post_processing_ac615585f038e2c81b274ee63dbac29e5}{CPathPostProcessing::CPathPostProcessing}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00006}00006\ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00008}\mbox{\hyperlink{class_c_path_post_processing_ac058be3533f99f177763a613d3c6b958}{00008}}\ \mbox{\hyperlink{class_c_path_post_processing_ac615585f038e2c81b274ee63dbac29e5}{CPathPostProcessing::CPathPostProcessing}}(\textcolor{keywordtype}{double}\ speedIn,\ \textcolor{keywordtype}{bool}\ speedManualIn,\ \textcolor{keywordtype}{bool}\ orientationManualIn,\ \textcolor{keywordtype}{double}\ AIn,\ \textcolor{keywordtype}{double}\ BIn,\ \textcolor{keywordtype}{double}\ CIn)}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00010}00010\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ speedIn;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73}{speedManual}}\ =\ speedManualIn;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00012}00012\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a85c127694f64dde63730825add10ee44}{orientationManual}}\ =\ orientationManualIn;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00013}00013\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2e166fe24f111ce997253172be43202d}{A}}\ =\ AIn;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00014}00014\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_aec924c03cc54b6cd1e80da06de7fc0ed}{B}}\ =\ BIn;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a3a9be3b467b8d487b8b725df798b35a9}{C}}\ =\ CIn;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00016}00016\ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00018}\mbox{\hyperlink{class_c_path_post_processing_ae32519d66f24d5135adad0a3644d862c}{00018}}\ \mbox{\hyperlink{class_c_path_post_processing_ae32519d66f24d5135adad0a3644d862c}{CPathPostProcessing::\string~CPathPostProcessing}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00019}00019\ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00022}\mbox{\hyperlink{class_c_path_post_processing_a72c52e53adc202820bcc4052621d674b}{00022}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_path_post_processing_a72c52e53adc202820bcc4052621d674b}{CPathPostProcessing::setData}}(\textcolor{keywordtype}{double}\ speedIn,\ \textcolor{keywordtype}{bool}\ speedManualIn,\ \textcolor{keywordtype}{bool}\ orientationManualIn,\ tuple\ <double,\ double,\ double>\ angles)}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00023}00023\ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ speedIn;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73}{speedManual}}\ =\ speedManualIn;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a85c127694f64dde63730825add10ee44}{orientationManual}}\ =\ orientationManualIn;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2e166fe24f111ce997253172be43202d}{A}}\ =\ get<0>(angles);}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_aec924c03cc54b6cd1e80da06de7fc0ed}{B}}\ =\ get<1>(angles);}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a3a9be3b467b8d487b8b725df798b35a9}{C}}\ =\ get<2>(angles);}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00030}00030\ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00032}\mbox{\hyperlink{class_c_path_post_processing_ae533bf7ee61a24b71e25c618401dee7c}{00032}}\ vector<CPoint3D>\&\ \mbox{\hyperlink{class_c_path_post_processing_ae533bf7ee61a24b71e25c618401dee7c}{CPathPostProcessing::getProcessedPath}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00033}00033\ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}{processedPath}};}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00037}\mbox{\hyperlink{class_c_path_post_processing_a44d20fedcf0873e20d20cc5519c6cef5}{00037}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_path_post_processing_a44d20fedcf0873e20d20cc5519c6cef5}{CPathPostProcessing::postProcessing}}(vector<CPoint3D>\&\ path)}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00038}00038\ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}\ p;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ path.size();\ s++)}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00042}00042\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ p.setPoint(path[s].getTime(),\ path[s].getX(),\ path[s].getY(),\ path[s].getZ(),\ path[s].getEulerMatrix());}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_path_post_processing_a072c0f2a2a3746fc30576a2b6236be73}{speedManual}})}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ >\ \mbox{\hyperlink{_path_post_processing_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}})\ \textcolor{comment}{//Wenn\ maximale\ Geschwindigkeit\ überschritten\ wird,\ Geschwindigkeit\ begrenzen}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ \mbox{\hyperlink{_path_post_processing_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}};}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ p.setSpeed(\mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}});}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (s\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p.setSpeed(1);\ \textcolor{comment}{//Der\ erste\ Punkt(0)\ wird\ mit\ Standardgeschwindigkeit\ 1m/s\ angefahren.}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_ad0fe4ee9b05fd80f854609fba9f68dd0}{calculateSpeed}}(p,\ s);\ \textcolor{comment}{//Die\ Geschwindigkeit\ zwischen\ den\ weiteren\ Punkten\ wird\ berechnet.}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_path_post_processing_a85c127694f64dde63730825add10ee44}{orientationManual}})}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ p.setA(\mbox{\hyperlink{class_c_path_post_processing_a2e166fe24f111ce997253172be43202d}{A}});}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ p.setB(\mbox{\hyperlink{class_c_path_post_processing_aec924c03cc54b6cd1e80da06de7fc0ed}{B}});}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ p.setC(\mbox{\hyperlink{class_c_path_post_processing_a3a9be3b467b8d487b8b725df798b35a9}{C}});}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a3b67fb7c329444c3e7dc305c6d6db7c8}{calculateAngles}}(p);}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}{processedPath}}.push\_back(p);}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00070}00070\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00074}\mbox{\hyperlink{class_c_path_post_processing_ad0fe4ee9b05fd80f854609fba9f68dd0}{00074}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_path_post_processing_ad0fe4ee9b05fd80f854609fba9f68dd0}{CPathPostProcessing::calculateSpeed}}(\mbox{\hyperlink{class_c_point3_d}{CPoint3D}}\&\ p,\ \textcolor{keywordtype}{size\_t}\ s)}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00075}00075\ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordtype}{double}\ distance\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{keywordtype}{double}\ time\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00079}00079\ \ \ \ \ distance\ =\ \mbox{\hyperlink{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}{processedPath}}[s-\/1].distanceTo(p);\ \textcolor{comment}{//Strecke\ zwischen\ p\ und\ dem\ Punkt\ zuvor}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00080}00080\ \ \ \ \ time\ =\ p.getTime()\ -\/\ \mbox{\hyperlink{class_c_path_post_processing_a742472c4ab8b287fb428e80b4fb62ec8}{processedPath}}[s-\/1].getTime();\ \textcolor{comment}{//Zeit\ zwischen\ p-\/1\ und\ p}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00082}00082\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ distance/time;\ \textcolor{comment}{//\ Berechnug\ Geschwindigkeit\ zwischen\ zwei\ Punkten}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ >\ \mbox{\hyperlink{_path_post_processing_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}})\ \textcolor{comment}{//Begrenzung\ auf\ maximale\ Geschwindigkeit,\ falls\ Trackerdaten\ höheren\ Wert\ aufweisen}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00085}00085\ \ \ \ \ \mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}}\ =\ \mbox{\hyperlink{_path_post_processing_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}};}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00087}00087\ \ \ \ \ p.setSpeed(\mbox{\hyperlink{class_c_path_post_processing_a2500cf7c2777f8c57ec84cac32d05d26}{speed}});\ \textcolor{comment}{//Zuweisung\ der\ Geschwindigkeit}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00088}00088\ \}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00090}\mbox{\hyperlink{class_c_path_post_processing_a3b67fb7c329444c3e7dc305c6d6db7c8}{00090}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_path_post_processing_a3b67fb7c329444c3e7dc305c6d6db7c8}{CPathPostProcessing::calculateAngles}}(\mbox{\hyperlink{class_c_point3_d}{CPoint3D}}\&\ p)}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00091}00091\ \{}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00092}00092\ \ \ \ \ \textcolor{keywordtype}{double}\ a,\ b,\ c;}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00094}00094\ \ \ \ \ \textcolor{comment}{//\ Funktion\ in\ Eulermatrix\ aufrufen\ die\ a/b/c\ neu\ berechnet}}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00096}00096\ \ \ \ \ p.setA(a);}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00097}00097\ \ \ \ \ p.setB(b);}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00098}00098\ \ \ \ \ p.setC(c);}
+\DoxyCodeLine{\Hypertarget{_path_post_processing_8cpp_source_l00099}00099\ \}}
+
+\end{DoxyCode}

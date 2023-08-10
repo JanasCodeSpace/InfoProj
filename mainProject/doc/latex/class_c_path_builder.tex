@@ -1,0 +1,185 @@
+\doxysection{CPath\+Builder Klassenreferenz}
+\hypertarget{class_c_path_builder}{}\label{class_c_path_builder}\index{CPathBuilder@{CPathBuilder}}
+
+
+{\ttfamily \#include $<$Path\+Builder.\+h$>$}
+
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_path_builder_a34ad86c626564c8c7e157079f441afae}{CPath\+Builder}} (void)
+\item 
+\mbox{\hyperlink{class_c_path_builder_a5c693238a55409b65c02ba4a62226787}{\texorpdfstring{$\sim$}{\string~}\+CPath\+Builder}} (void)
+\item 
+vector$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \& \mbox{\hyperlink{class_c_path_builder_aff7eb289b0c0cfa11c9d2dbe31781bf6}{get\+Path}} ()
+\item 
+void \mbox{\hyperlink{class_c_path_builder_a0839c7167939f075a6351a997344fe47}{create\+Path}} (vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \&segments, string filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_builder_8h_source_l00009}{9}} der Datei \mbox{\hyperlink{_path_builder_8h_source}{Path\+Builder.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_c_path_builder_a34ad86c626564c8c7e157079f441afae}\label{class_c_path_builder_a34ad86c626564c8c7e157079f441afae} 
+\index{CPathBuilder@{CPathBuilder}!CPathBuilder@{CPathBuilder}}
+\index{CPathBuilder@{CPathBuilder}!CPathBuilder@{CPathBuilder}}
+\doxysubsubsection{\texorpdfstring{CPathBuilder()}{CPathBuilder()}}
+{\footnotesize\ttfamily CPath\+Builder\+::\+CPath\+Builder (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_builder_8cpp_source_l00003}{3}} der Datei \mbox{\hyperlink{_path_builder_8cpp_source}{Path\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_c_path_builder_a5c693238a55409b65c02ba4a62226787}\label{class_c_path_builder_a5c693238a55409b65c02ba4a62226787} 
+\index{CPathBuilder@{CPathBuilder}!````~CPathBuilder@{\texorpdfstring{$\sim$}{\string~}CPathBuilder}}
+\index{````~CPathBuilder@{\texorpdfstring{$\sim$}{\string~}CPathBuilder}!CPathBuilder@{CPathBuilder}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CPathBuilder()}{\string~CPathBuilder()}}
+{\footnotesize\ttfamily CPath\+Builder\+::\texorpdfstring{$\sim$}{\string~}\+CPath\+Builder (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_builder_8cpp_source_l00008}{8}} der Datei \mbox{\hyperlink{_path_builder_8cpp_source}{Path\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_c_path_builder_a0839c7167939f075a6351a997344fe47}\label{class_c_path_builder_a0839c7167939f075a6351a997344fe47} 
+\index{CPathBuilder@{CPathBuilder}!createPath@{createPath}}
+\index{createPath@{createPath}!CPathBuilder@{CPathBuilder}}
+\doxysubsubsection{\texorpdfstring{createPath()}{createPath()}}
+{\footnotesize\ttfamily void CPath\+Builder\+::create\+Path (\begin{DoxyParamCaption}\item[{vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \&}]{segments,  }\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_builder_8cpp_source_l00017}{17}} der Datei \mbox{\hyperlink{_path_builder_8cpp_source}{Path\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ FILE*\ fid\ =\ fopen(filename.c\_str(),\ \textcolor{stringliteral}{"{}w"{}});}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{if}\ (fid\ ==\ NULL)}
+\DoxyCodeLine{00023\ \ \ \ \ \{\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR\ -\/\ Can\ NOT\ write\ to\ output\ file!\(\backslash\)n"{}};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ zOffset\ =\ 1.0;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ point;\ \textcolor{comment}{//startpoint}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})0,\ (\textcolor{keywordtype}{double})0,\ (\textcolor{keywordtype}{double})0\ +\ zOffset);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ segments.size();\ s++)\ \textcolor{comment}{//for\ all\ segments}}
+\DoxyCodeLine{00036\ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ list<CInputPoint3D>::iterator\ itr\ =\ segments[s].begin();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ point.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}((\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ());\ \textcolor{comment}{//point\ over\ start\ of\ segment}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ());}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (;\ itr\ !=\ segments[s].end();\ itr++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ segment}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ());}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ point.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}((\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ());}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ itr-\/-\/;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ());}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ point.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}((\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})0\ +\ zOffset);\ \textcolor{comment}{//point\ over\ end\ of\ segment}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})0,\ (\textcolor{keywordtype}{double})0,\ (\textcolor{keywordtype}{double})0);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ point.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(0,\ 0,\ 0);\ \textcolor{comment}{//endpoint\ (==\ startpoint)}}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
+\DoxyCodeLine{00065\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_path_builder_8h_source_l00020}{path}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00055}{CPoint3\+D\+::set()}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00031}{main()}}.
+
+\Hypertarget{class_c_path_builder_aff7eb289b0c0cfa11c9d2dbe31781bf6}\label{class_c_path_builder_aff7eb289b0c0cfa11c9d2dbe31781bf6} 
+\index{CPathBuilder@{CPathBuilder}!getPath@{getPath}}
+\index{getPath@{getPath}!CPathBuilder@{CPathBuilder}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \& CPath\+Builder\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_builder_8cpp_source_l00012}{12}} der Datei \mbox{\hyperlink{_path_builder_8cpp_source}{Path\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}};}
+\DoxyCodeLine{00015\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_path_builder_8h_source_l00020}{path}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00031}{main()}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}\label{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b} 
+\index{CPathBuilder@{CPathBuilder}!path@{path}}
+\index{path@{path}!CPathBuilder@{CPathBuilder}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}}$>$ CPath\+Builder\+::path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_path_builder_8h_source_l00020}{20}} der Datei \mbox{\hyperlink{_path_builder_8h_source}{Path\+Builder.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_builder_8cpp_source_l00017}{create\+Path()}} und \mbox{\hyperlink{_path_builder_8cpp_source_l00012}{get\+Path()}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_path_builder_8h}{Path\+Builder.\+h}}\item 
+src/\mbox{\hyperlink{_path_builder_8cpp}{Path\+Builder.\+cpp}}\end{DoxyCompactItemize}

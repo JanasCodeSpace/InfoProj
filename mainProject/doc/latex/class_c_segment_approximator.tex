@@ -1,0 +1,331 @@
+\doxysection{CSegment\+Approximator Klassenreferenz}
+\hypertarget{class_c_segment_approximator}{}\label{class_c_segment_approximator}\index{CSegmentApproximator@{CSegmentApproximator}}
+
+
+{\ttfamily \#include $<$Segment\+Approximator.\+h$>$}
+
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_segment_approximator_a47c403bea113a7b09e8d25c5401ddf16}{CSegment\+Approximator}} (void)
+\item 
+\mbox{\hyperlink{class_c_segment_approximator_ac145e1245b9b540aba79204210e95a22}{\texorpdfstring{$\sim$}{\string~}\+CSegment\+Approximator}} (void)
+\item 
+void \mbox{\hyperlink{class_c_segment_approximator_aadd8a0df7c9b978c7abf4cb77c92dc46}{approx}} (const vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \&Segments)
+\item 
+void \mbox{\hyperlink{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85}{setmax\+Distance}} (double max\+Distance\+Source)
+\item 
+double \mbox{\hyperlink{class_c_segment_approximator_a6c5626d8afc213e3ed2637b610671b03}{getmax\+Distance}} ()
+\item 
+vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \& \mbox{\hyperlink{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}{get\+Segments\+Approx\+Vector}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_segment_approximator_a7da7b2d6bcf0f3e0a3ffd2ee605b70bf}{douglas\+Peucker\+Recursive}} (list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \&segment, std\+::list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$\+::iterator start\+Itr, std\+::list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$\+::iterator end\+Itr, double \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{max\+Distance}})
+\item 
+double \mbox{\hyperlink{class_c_segment_approximator_a94ea9fa065978afe4c0b09bdb96d0895}{calc\+Dist}} (int xS, int yS, int zS, int xE, int yE, int zE, int x, int y, int z)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segments\+Approx}}
+\item 
+double \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{max\+Distance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8h_source_l00011}{11}} der Datei \mbox{\hyperlink{_segment_approximator_8h_source}{Segment\+Approximator.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_c_segment_approximator_a47c403bea113a7b09e8d25c5401ddf16}\label{class_c_segment_approximator_a47c403bea113a7b09e8d25c5401ddf16} 
+\index{CSegmentApproximator@{CSegmentApproximator}!CSegmentApproximator@{CSegmentApproximator}}
+\index{CSegmentApproximator@{CSegmentApproximator}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{CSegmentApproximator()}{CSegmentApproximator()}}
+{\footnotesize\ttfamily CSegment\+Approximator\+::\+CSegment\+Approximator (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00005}{5}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_c_segment_approximator_ac145e1245b9b540aba79204210e95a22}\label{class_c_segment_approximator_ac145e1245b9b540aba79204210e95a22} 
+\index{CSegmentApproximator@{CSegmentApproximator}!````~CSegmentApproximator@{\texorpdfstring{$\sim$}{\string~}CSegmentApproximator}}
+\index{````~CSegmentApproximator@{\texorpdfstring{$\sim$}{\string~}CSegmentApproximator}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CSegmentApproximator()}{\string~CSegmentApproximator()}}
+{\footnotesize\ttfamily CSegment\+Approximator\+::\texorpdfstring{$\sim$}{\string~}\+CSegment\+Approximator (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00009}{9}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_c_segment_approximator_aadd8a0df7c9b978c7abf4cb77c92dc46}\label{class_c_segment_approximator_aadd8a0df7c9b978c7abf4cb77c92dc46} 
+\index{CSegmentApproximator@{CSegmentApproximator}!approx@{approx}}
+\index{approx@{approx}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{approx()}{approx()}}
+{\footnotesize\ttfamily void CSegment\+Approximator\+::approx (\begin{DoxyParamCaption}\item[{const vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \&}]{Segments }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00013}{13}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ p;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}\ =\ segments;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ segments.size();\ s++)}
+\DoxyCodeLine{00020\ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_a7da7b2d6bcf0f3e0a3ffd2ee605b70bf}{douglasPeuckerRecursive}}(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s],\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].begin(),\ -\/-\/(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].end()),\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}});}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8cpp_source_l00041}{douglas\+Peucker\+Recursive()}}, \mbox{\hyperlink{_segment_approximator_8h_source_l00026}{max\+Distance}} und \mbox{\hyperlink{_segment_approximator_8h_source_l00024}{segments\+Approx}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00031}{main()}}.
+
+\Hypertarget{class_c_segment_approximator_a94ea9fa065978afe4c0b09bdb96d0895}\label{class_c_segment_approximator_a94ea9fa065978afe4c0b09bdb96d0895} 
+\index{CSegmentApproximator@{CSegmentApproximator}!calcDist@{calcDist}}
+\index{calcDist@{calcDist}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{calcDist()}{calcDist()}}
+{\footnotesize\ttfamily double CSegment\+Approximator\+::calc\+Dist (\begin{DoxyParamCaption}\item[{int}]{xS,  }\item[{int}]{yS,  }\item[{int}]{zS,  }\item[{int}]{xE,  }\item[{int}]{yE,  }\item[{int}]{zE,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00081}{81}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00082\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00084\ \textcolor{comment}{\ \ \ \ xS,\ yS,\ zS\ \ \ \ \ \ ==\ Startpunkt }}
+\DoxyCodeLine{00085\ \textcolor{comment}{\ \ \ \ xE,\ yE,\ zE\ \ \ \ \ \ ==\ Endpunkt }}
+\DoxyCodeLine{00086\ \textcolor{comment}{\ \ \ \ x,\ y,\ z\ \ \ \ \ \ \ \ \ ==\ Vermessungspunkt }}
+\DoxyCodeLine{00087\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{comment}{//Crossproduct}}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{double}\ bx,\ by,\ bz,\ rv\_sq,\ dist,\ vp1,\ vp2,\ vp3;}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00093\ \textcolor{comment}{\ \ \ \ bx,\ by,\ bz\ \ \ \ \ \ ==\ Vektordifferenz }}
+\DoxyCodeLine{00094\ \textcolor{comment}{\ \ \ \ rv\_sq\ \ \ \ \ \ \ \ \ \ \ ==\ Betrag\ des\ Linienvektors }}
+\DoxyCodeLine{00095\ \textcolor{comment}{\ \ \ \ dist\ \ \ \ \ \ \ \ \ \ \ \ ==\ Distanz\ von\ Punkt\ zu\ Linie }}
+\DoxyCodeLine{00096\ \textcolor{comment}{\ \ \ \ vp1,\ vp2,\ vp3\ \ \ ==\ Vektorprodukte }}
+\DoxyCodeLine{00097\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{int}\ rvx\ =\ xS\ -\/\ xE;\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ X\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ rvy\ =\ yS\ -\/\ yE;\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Y\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ rvz\ =\ zS\ -\/\ zE;\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Z\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ rv\_sq\ =\ sqrt((rvx\ *\ rvx)\ +\ (rvy\ *\ rvy)\ +\ (rvz\ *\ rvz));\ \ \ \ \ \ \textcolor{comment}{//\ Betrag\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ bx\ =\ x\ -\/\ xS;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ X(Punkt)\ -\/\ X(Aufpunkt)}}
+\DoxyCodeLine{00106\ \ \ \ \ by\ =\ y\ -\/\ yS;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Y(Punkt)\ -\/\ Y(Aufpunkt)}}
+\DoxyCodeLine{00107\ \ \ \ \ bz\ =\ z\ -\/\ zS;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Z(Punkt)\ -\/\ Z(Aufpunkt)}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ vp1\ =\ by\ *\ rvz\ -\/\ bz\ *\ rvy;\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ X\ Vektorprodukt}}
+\DoxyCodeLine{00110\ \ \ \ \ vp2\ =\ bz\ *\ rvx\ -\/\ bx\ *\ rvz;\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Y\ Vektorprodukt}}
+\DoxyCodeLine{00111\ \ \ \ \ vp3\ =\ bx\ *\ rvy\ -\/\ by\ *\ rvx;\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Z\ Vektorprodukt}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ dist\ =\ sqrt(vp1\ *\ vp1\ +\ vp2\ *\ vp2\ +\ vp3\ *\ vp3)\ /\ rv\_sq;\ \textcolor{comment}{//\ Betrag\ des\ Vektors\ berechnen}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordflow}{return}\ dist;}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_c_segment_approximator_a7da7b2d6bcf0f3e0a3ffd2ee605b70bf}\label{class_c_segment_approximator_a7da7b2d6bcf0f3e0a3ffd2ee605b70bf} 
+\index{CSegmentApproximator@{CSegmentApproximator}!douglasPeuckerRecursive@{douglasPeuckerRecursive}}
+\index{douglasPeuckerRecursive@{douglasPeuckerRecursive}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{douglasPeuckerRecursive()}{douglasPeuckerRecursive()}}
+{\footnotesize\ttfamily void CSegment\+Approximator\+::douglas\+Peucker\+Recursive (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \&}]{segment,  }\item[{std\+::list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$\+::iterator}]{start\+Itr,  }\item[{std\+::list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$\+::iterator}]{end\+Itr,  }\item[{double}]{max\+Distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00041}{41}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00042\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordflow}{if}\ (segment.size()\ <\ 3)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{if}\ (distance(startItr,\ endItr)\ ==\ 2)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pStart;\ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pEnd;}
+\DoxyCodeLine{00046\ \ \ \ \ pStart.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(startItr-\/>getX());\ pStart.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(startItr-\/>getY());\ pStart.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(startItr-\/>getZ());}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//pEnd.x=segment.back().x;\ pEnd.y\ =\ segment.back().y;}}
+\DoxyCodeLine{00049\ \ \ \ \ pEnd.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(endItr-\/>getX());\ pEnd.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(endItr-\/>getY());\ pEnd.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(endItr-\/>getZ());}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{double}\ dist\ =\ 0.0,\ maxDist\ =\ 0.0;}
+\DoxyCodeLine{00052\ \ \ \ \ std::list<CInputPoint3D>::iterator\ maxItr,\ itr;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{for}\ (itr\ =\ startItr;\ itr\ !=\ endItr;\ itr++)}
+\DoxyCodeLine{00055\ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}\ line\ =\ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}(pStart,\ pEnd);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calc\ distance}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ dist\ =\ itr-\/>distanceTo(line);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{comment}{//dist=calcDist(pStart.getX(),\ pStart.getY(),\ pEnd.getX(),\ pEnd.getY(),\ itr-\/>getX(),\ itr-\/>getY());}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dist\ >\ maxDist)\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ maxDist\ =\ dist;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ maxItr\ =\ itr;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{if}\ (maxDist\ <=\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}})\ \{}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ segment.erase((++startItr),\ endItr);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{comment}{//for(itr\ =\ (++startItr);\ itr\ !=\ -\/-\/(endItr);)}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\{}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \ //\ erase\ elements:}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \ itr\ =\ segment.erase(itr);}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\}}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_a7da7b2d6bcf0f3e0a3ffd2ee605b70bf}{douglasPeuckerRecursive}}(segment,\ startItr,\ maxItr,\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}});}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_a7da7b2d6bcf0f3e0a3ffd2ee605b70bf}{douglasPeuckerRecursive}}(segment,\ maxItr,\ endItr,\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}});}
+\DoxyCodeLine{00079\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8cpp_source_l00041}{douglas\+Peucker\+Recursive()}}, \mbox{\hyperlink{_segment_approximator_8h_source_l00026}{max\+Distance}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00040}{CPoint3\+D\+::set\+X()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00045}{CPoint3\+D\+::set\+Y()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00050}{CPoint3\+D\+::set\+Z()}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00013}{approx()}} und \mbox{\hyperlink{_segment_approximator_8cpp_source_l00041}{douglas\+Peucker\+Recursive()}}.
+
+\Hypertarget{class_c_segment_approximator_a6c5626d8afc213e3ed2637b610671b03}\label{class_c_segment_approximator_a6c5626d8afc213e3ed2637b610671b03} 
+\index{CSegmentApproximator@{CSegmentApproximator}!getmaxDistance@{getmaxDistance}}
+\index{getmaxDistance@{getmaxDistance}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{getmaxDistance()}{getmaxDistance()}}
+{\footnotesize\ttfamily double CSegment\+Approximator\+::getmax\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00031}{31}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}};}
+\DoxyCodeLine{00034\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8h_source_l00026}{max\+Distance}}.
+
+\Hypertarget{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}\label{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6} 
+\index{CSegmentApproximator@{CSegmentApproximator}!getSegmentsApproxVector@{getSegmentsApproxVector}}
+\index{getSegmentsApproxVector@{getSegmentsApproxVector}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{getSegmentsApproxVector()}{getSegmentsApproxVector()}}
+{\footnotesize\ttfamily vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \& CSegment\+Approximator\+::get\+Segments\+Approx\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00036}{36}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}};}
+\DoxyCodeLine{00039\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8h_source_l00024}{segments\+Approx}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00031}{main()}}.
+
+\Hypertarget{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85}\label{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85} 
+\index{CSegmentApproximator@{CSegmentApproximator}!setmaxDistance@{setmaxDistance}}
+\index{setmaxDistance@{setmaxDistance}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{setmaxDistance()}{setmaxDistance()}}
+{\footnotesize\ttfamily void CSegment\+Approximator\+::setmax\+Distance (\begin{DoxyParamCaption}\item[{double}]{max\+Distance\+Source }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00026}{26}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}}\ =\ maxDistanceSource;}
+\DoxyCodeLine{00029\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8h_source_l00026}{max\+Distance}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00031}{main()}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}\label{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655} 
+\index{CSegmentApproximator@{CSegmentApproximator}!maxDistance@{maxDistance}}
+\index{maxDistance@{maxDistance}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{maxDistance}{maxDistance}}
+{\footnotesize\ttfamily double CSegment\+Approximator\+::max\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8h_source_l00026}{26}} der Datei \mbox{\hyperlink{_segment_approximator_8h_source}{Segment\+Approximator.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00013}{approx()}}, \mbox{\hyperlink{_segment_approximator_8cpp_source_l00041}{douglas\+Peucker\+Recursive()}}, \mbox{\hyperlink{_segment_approximator_8cpp_source_l00031}{getmax\+Distance()}} und \mbox{\hyperlink{_segment_approximator_8cpp_source_l00026}{setmax\+Distance()}}.
+
+\Hypertarget{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}\label{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0} 
+\index{CSegmentApproximator@{CSegmentApproximator}!segmentsApprox@{segmentsApprox}}
+\index{segmentsApprox@{segmentsApprox}!CSegmentApproximator@{CSegmentApproximator}}
+\doxysubsubsection{\texorpdfstring{segmentsApprox}{segmentsApprox}}
+{\footnotesize\ttfamily vector$<$list$<$\mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}}$>$ $>$ CSegment\+Approximator\+::segments\+Approx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8h_source_l00024}{24}} der Datei \mbox{\hyperlink{_segment_approximator_8h_source}{Segment\+Approximator.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00013}{approx()}} und \mbox{\hyperlink{_segment_approximator_8cpp_source_l00036}{get\+Segments\+Approx\+Vector()}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_segment_approximator_8h}{Segment\+Approximator.\+h}}\item 
+src/\mbox{\hyperlink{_segment_approximator_8cpp}{Segment\+Approximator.\+cpp}}\end{DoxyCompactItemize}

@@ -15,68 +15,73 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SegmentApproximator.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="PathBuilder.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="RobCodeGenerator.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="Point3D.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="Line3D.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="GUI.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="InputParameter.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="EulerMatrix.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="MeanFilter.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="RobPathEditor.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="SegmentApproximator.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="PathBuilder.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="RobCodeGenerator.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="Point3D.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="Line3D.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="GUI.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="InputParameter.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="EulerMatrix.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="MeanFilter.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="ClassDiagram.cd" />
-    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\EulerMatrix.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="header\GUI.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="header\InputParameter.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Line3D.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="header\MeanFilter.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="header\PathBuilder.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="header\PathPostProcessing.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Point3D.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="header\RobCodeGenerator.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="header\SegmentApproximator.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\EulerMatrix.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputParameter.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Line3D.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeanFilter.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PathBuilder.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PathPostProcessing.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Point3D.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobCodeGenerator.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobPathEditor.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SegmentApproximator.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
