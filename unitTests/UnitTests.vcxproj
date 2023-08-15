@@ -77,19 +77,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\mainProject;$(IncludePath)</IncludePath>
+    <IncludePath>..\mainProject\header;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\mainProject;$(IncludePath)</IncludePath>
+    <IncludePath>..\mainProject\header;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\mainProject;$(IncludePath)</IncludePath>
+    <IncludePath>..\mainProject\header;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\mainProject;$(IncludePath)</IncludePath>
+    <IncludePath>..\mainProject\header;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -104,7 +104,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;..\mainProject\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>EulerMatrix.obj;GUI.obj;InputParameter.obj;Line3D.obj;MeanFilter.obj;PathBuilder.obj;PathPostProcessing.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>EulerMatrix.obj;GUI.obj;InputParameter.obj;Line3D.obj;Logging.obj;MeanFilter.obj;PathBuilder.obj;Point3D.obj;RobCodeGenerator.obj;PathPostProcessing.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -120,7 +120,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;..\mainProject\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>EulerMatrix.obj;GUI.obj;InputParameter.obj;Line3D.obj;MeanFilter.obj;PathBuilder.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>EulerMatrix.obj;GUI.obj;InputParameter.obj;Line3D.obj;Logging.obj;MeanFilter.obj;PathBuilder.obj;Point3D.obj;RobCodeGenerator.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -140,7 +140,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;..\mainProject\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>EulerMatrix.obj;GUI.obj;InputParameter.obj;Line3D.obj;MeanFilter.obj;PathBuilder.obj;PathPostProcessing.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>EulerMatrix.obj;GUI.obj;InputParameter.obj;Line3D.obj;Logging.obj;MeanFilter.obj;PathBuilder.obj;Point3D.obj;RobCodeGenerator.obj;PathPostProcessing.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -160,7 +160,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;..\mainProject\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>EulerMatrix.obj;GUI.obj;InputParameter.obj;Line3D.obj;MeanFilter.obj;PathBuilder.obj;PathPostProcessing.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>EulerMatrix.obj;GUI.obj;InputParameter.obj;Line3D.obj;Logging.obj;MeanFilter.obj;PathBuilder.obj;Point3D.obj;RobCodeGenerator.obj;PathPostProcessing.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -170,7 +170,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="UnitTests.cpp" />
+    <ClCompile Include="UnitTests_Logging.cpp" />
+    <ClCompile Include="UnitTests_MeanFilter.cpp" />
+    <ClCompile Include="UnitTests_PathBuilder.cpp" />
+    <ClCompile Include="UnitTests_Point3D.cpp" />
+    <ClCompile Include="UnitTests_EulerMatrix.cpp" />
+    <ClCompile Include="UnitTests_InputParameter.cpp" />
+    <ClCompile Include="UnitTests_Line3D.cpp" />
+    <ClCompile Include="UnitTests_SegmentApproximator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
