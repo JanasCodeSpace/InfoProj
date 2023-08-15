@@ -13,23 +13,32 @@ namespace UnitTests
         {
             CSegmentApproximator approximator;
             CEulerMatrix Euler;
-
-            std::list<CInputPoint3D> testSegment;
-            testSegment.emplace_back(CInputPoint3D(0.0, 0.0, 0.0, 0.1, Euler));
-            testSegment.emplace_back(CInputPoint3D(1.0, 1.0, 1.0, 0.2, Euler));
-            testSegment.emplace_back(CInputPoint3D(2.0, 2.0, 2.0, 0.3, Euler));
+            CLogging log("../output"); // Pfad zum Testen
+            std::vector<list<CInputPoint3D>> outputVector;
             
-            approximator.douglasPeuckerRecursive(testSegment, testSegment.begin(), --testSegment.end());
+            log.setStep(2);
 
-            Assert::AreEqual<size_t>(2, testSegment.size());
+            std::vector<list<CInputPoint3D>> testVector;
+
+            testVector.push_back(list<CInputPoint3D>());
+
+            testVector[0].push_back(CInputPoint3D(0.0, 0.0, 0.0, 0.1, Euler));
+            testVector[0].push_back(CInputPoint3D(1.0, 20.0, 1.0, 0.2, Euler));
+            testVector[0].push_back(CInputPoint3D(2.0, 2.0, 2.0, 0.3, Euler));
+
+            approximator.approx(testVector, log);
+
+            outputVector = approximator.getSegmentsApproxVector();
+
+            Assert::AreEqual<size_t>(2, outputVector[0].size());
                         
-            Assert::AreEqual<double>(0.0, testSegment.front().getX(), L"X-Koordinate des ersten Punktes stimmt nicht überein");
-            Assert::AreEqual<double>(0.0, testSegment.front().getY(), L"Y-Koordinate des ersten Punktes stimmt nicht überein");
-            Assert::AreEqual<double>(0.0, testSegment.front().getZ(), L"Z-Koordinate des ersten Punktes stimmt nicht überein");
+            Assert::AreEqual<double>(0.0, outputVector[0].front().getX(), L"X-Koordinate des ersten Punktes stimmt nicht überein");
+            Assert::AreEqual<double>(0.0, outputVector[0].front().getY(), L"Y-Koordinate des ersten Punktes stimmt nicht überein");
+            Assert::AreEqual<double>(0.0, outputVector[0].front().getZ(), L"Z-Koordinate des ersten Punktes stimmt nicht überein");
 
-            Assert::AreEqual<double>(2.0, testSegment.back().getX(), L"X-Koordinate des letzten Punktes stimmt nicht überein");
-            Assert::AreEqual<double>(2.0, testSegment.back().getY(), L"Y-Koordinate des letzten Punktes stimmt nicht überein");
-            Assert::AreEqual<double>(2.0, testSegment.back().getZ(), L"Z-Koordinate des letzten Punktes stimmt nicht überein");
+            Assert::AreEqual<double>(2.0, outputVector[0].back().getX(), L"X-Koordinate des letzten Punktes stimmt nicht überein");
+            Assert::AreEqual<double>(2.0, outputVector[0].back().getY(), L"Y-Koordinate des letzten Punktes stimmt nicht überein");
+            Assert::AreEqual<double>(2.0, outputVector[0].back().getZ(), L"Z-Koordinate des letzten Punktes stimmt nicht überein");
         }
     };
 }

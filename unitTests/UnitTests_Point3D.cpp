@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "../header/Point3D.h"
+#include "../mainProject/header/Line3D.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTests
@@ -12,7 +13,7 @@ namespace UnitTests
         {
             CPoint3D point1(1.0, 2.0, 3.0);
             CPoint3D point2(4.0, 5.0, 6.0);
-            CLine3D line = CLine3D(point1, point2);
+            CLine3D line(point1, point2);
 
             double expectedDistance = sqrt(27.0);
 

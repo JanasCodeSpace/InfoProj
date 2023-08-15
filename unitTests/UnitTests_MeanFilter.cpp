@@ -52,10 +52,10 @@ namespace UnitTests
 
             list<CInputPoint3D> result = filter.calculateMean(inputSegment);
 
-            Assert::AreEqual(inputSegment.size() - filter.getWindowSize() + 1, result.size());
+            Assert::AreEqual(inputSegment.size() - filter.getWindowSize(), result.size());
 
             list<CInputPoint3D>::iterator it = inputSegment.begin();
-            for (size_t i = 0; i < inputSegment.size() - filter.getWindowSize() + 1; i++)
+            for (size_t i = 0; i < inputSegment.size() - filter.getWindowSize(); i++)
             {
                 double sumX = 0, sumY = 0, sumZ = 0;
                 int div = 0;
@@ -67,6 +67,12 @@ namespace UnitTests
                     div++;
                     it++;
                 }
+                for (size_t index = filter.getWindowSize(); index > 0; index--) // Pain, the iterator has to be set back
+                {
+                    it--;
+                }
+                if (it != inputSegment.end())
+                    it++;
                 double expectedMeanX = sumX / div;
                 double expectedMeanY = sumY / div;
                 double expectedMeanZ = sumZ / div;
