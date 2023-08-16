@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RobCodeGenerator: My Personal Index Page</title>
+<title>RobCodeGenerator: Beschreibung Roboter Path Editor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,17 +70,27 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">My Personal Index Page </div></div>
+  <div class="headertitle"><div class="title">Beschreibung Roboter Path Editor </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
-Introduction</h1>
-<p>This is the introduction.</p>
+Nutzen</h1>
+<p>Mit diesem Programm sollen händisch aufgenommene Pfad Daten einer Roboterbewegung zu einem für Kuka Roboter lesbaren File gemacht werden. Zusätzlich soll einstellbar sein ob die Orientierung berechnet werden soll, oder eingegeben werden soll. Das selbe gilt für Geschwindigkeitsdaten.</p>
 <h1><a class="anchor" id="install_sec"></a>
-Installation</h1>
+Aufbau</h1>
+<p>In der Grundidee werden die eingelesenen Daten immer aus der vorhergegangenen Klasse ausgelesen und nach der Verarbeitung in der aktuellen Klasse gespeichert.</p>
 <h2><a class="anchor" id="step1"></a>
-Step 1: Opening the box</h2>
-<p>etc... </p>
+Logging</h2>
+<p>Zuerst wird die Loggingklasse <a class="el" href="class_c_logging.html" title="Gleitender Mittelwertfilter.">CLogging</a> initialisiert. In ihr wird gespeichert in welchem Schritt das Programm gerade ist. Dieser Klasse wird ein Pfad übergeben an welchem die Daten gespeichert werden sollen.</p>
+<h2><a class="anchor" id="step2"></a>
+Daten einlesen</h2>
+<p>Als nächstes werden die Nutzerdaten eingelesen und anschliessend die aufgenommenen Daten eingelesen. Dabei wird Überprüft ob es sich um einen zusammenhängenden Pfad handelt. Das passiert in der Klasse <a class="el" href="class_c_input_parameter.html" title="Handling Eingabedaten.">CInputParameter</a>.</p>
+<h2><a class="anchor" id="step3"></a>
+Daten verarbeiten</h2>
+<p>In mehreren Schritten folgt eine Nachbearbeitung der Daten. Zuerst werden die Daten mit einem gleitendem Mittelwertfilter in der Klasse <a class="el" href="class_c_mean_filter.html" title="Gleitender Mittelwertfilter.">CMeanFilter</a> geglättet. Anschliessend werden Punkte mit Hilfe des Douglas-Peuker Algorithmuses in der Klasse <a class="el" href="class_c_segment_approximator.html" title="Ausdünnen des Pfades.">CSegmentApproximator</a> gelöscht. Sollten es mehrere nicht zusammenhängende Pfade sein müssen diese jetzt noch zusammengesetzt werden.</p>
+<h2><a class="anchor" id="step4"></a>
+Roboter Code erstellen</h2>
+<p>Als letzter Schritt werden die Nutzereinstellungen in die Daten übernommen und der Robotercode erstellt. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,7 +1,7 @@
 /**
- * @file: PathBuilder.h
+ * @file PathBuilder.h
  *
- * @brief: Setzt die einzelnen Segmente zu einem Vector zusammen
+ * @brief Setzt die einzelnen Segmente zu einem Vector zusammen
  */
 
 #include <vector>
@@ -16,30 +16,30 @@ using namespace std;
 
 /**
  * In dieser Klasse wird aus den Segmenten ein zusammenhängender Pfad erstellt
- * @brief: Zusammensetzten des Pfades
+ * @brief Zusammensetzten des Pfades
  */
 class CPathBuilder
 {
 public:
 	/**
 	* Initialisiert der Klasse
-	* @brief: Default Konstruktor
+	* @brief Default Konstruktor
 	*/
 	CPathBuilder(void);
 	/**
-	* @brief: Dekonstruktor
+	* @brief Dekonstruktor
 	*/
 	~CPathBuilder(void);
 
 	/**
-	* @brief: Gibt Pfad zurück
+	* @brief Gibt Pfad zurück
 	* @return: vector<CInputPoint3D> zusammengesetzter Pfad
 	*/
 	vector<CInputPoint3D>& getPath();
 	/**
-	* @brief: Gibt Pfad zurück
-	* @param: segments vector<list<CInputPoint3D>>& Pfad aus Segmenten
-	* @param: CLogging log für das Logging
+	* @brief Gibt Pfad zurück
+	* @param segments vector<list<CInputPoint3D>>& Pfad aus Segmenten
+	* @param CLogging log für das Logging
 	*/
 	void createPath(vector<list<CInputPoint3D>>& segments, CLogging log);
 

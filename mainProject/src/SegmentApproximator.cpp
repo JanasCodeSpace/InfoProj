@@ -1,3 +1,9 @@
+/**
+ * @file SegmentApproximator.cpp
+ *
+ * @brief Source File Douglas-Peuker
+ */
+
 #include "./header/SegmentApproximator.h"
 #include "./header/Point3D.h"
 #include "./header/Line3D.h"
@@ -39,6 +45,7 @@ vector<list<CInputPoint3D>>& CSegmentApproximator::getSegmentsApproxVector()
 	return segmentsApprox;
 }
 
+//TODO: Kommentar
 void CSegmentApproximator::douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr)
 {
 	if (segment.size() < 3) return;

@@ -1,16 +1,13 @@
 /**
- * @file: InputParameter.c
+ * @file InputParameter.cpp
  * 
- * @brief: Source File Daten Einlesen
+ * @brief Source File Daten Einlesen
  */
 
 #include "./header/InputParameter.h"
 #include "./header/Point3D.h"
 #include "./header/EulerMatrix.h"
 
- /**
-  * Initialiserung der Klasse mit allen Werten
-  */
 CInputParameter::CInputParameter(double initSpeed, bool initSpeedManual, bool initOrientationManual, double initA, double initB, double initC)
 {
 	speed = initSpeed;
@@ -21,9 +18,7 @@ CInputParameter::CInputParameter(double initSpeed, bool initSpeedManual, bool in
 	C = initC;
 
 }
-/**
- * Initialiserung der Klasse mit 0
- */
+
 CInputParameter::CInputParameter(void)
 {
 	speed = 0;
@@ -34,9 +29,7 @@ CInputParameter::CInputParameter(void)
 	orientationManual = false;
 
 }
-/**
- * Dekonstruktor
- */
+
 CInputParameter::~CInputParameter(void)
 {
 
@@ -109,7 +102,7 @@ void CInputParameter::openFile(string path)
 		tmpEuler.setMatrix(dummyMatrix);
 		tmpPoint.setPoint(timestamp, x, y, z, tmpEuler.getEulerMatrix());
 
-		if (detectJump(tmpPoint, x_prev, y_prev, z_prev))
+		if (detectJump(tmpPoint, x_prev, y_prev, z_prev)) // if there is a jump in the data, start da new segment 
 		{
 			segmentCount++;
 			initialPath.push_back(list<CInputPoint3D>());

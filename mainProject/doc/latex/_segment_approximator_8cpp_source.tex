@@ -2,77 +2,80 @@
 \hypertarget{_segment_approximator_8cpp_source}{}\label{_segment_approximator_8cpp_source}\index{src/SegmentApproximator.cpp@{src/SegmentApproximator.cpp}}
 \mbox{\hyperlink{_segment_approximator_8cpp}{gehe zur Dokumentation dieser Datei}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_segment_approximator_8h}{./header/SegmentApproximator.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_point3_d_8h}{./header/Point3D.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_line3_d_8h}{./header/Line3D.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00004}00004\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00005}\mbox{\hyperlink{class_c_segment_approximator_a47c403bea113a7b09e8d25c5401ddf16}{00005}}\ \mbox{\hyperlink{class_c_segment_approximator_a47c403bea113a7b09e8d25c5401ddf16}{CSegmentApproximator::CSegmentApproximator}}(\textcolor{keywordtype}{void})}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00006}00006\ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00007}00007\ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00008}00008\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00009}\mbox{\hyperlink{class_c_segment_approximator_ac145e1245b9b540aba79204210e95a22}{00009}}\ \mbox{\hyperlink{class_c_segment_approximator_ac145e1245b9b540aba79204210e95a22}{CSegmentApproximator::\string~CSegmentApproximator}}(\textcolor{keywordtype}{void})}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00010}00010\ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00011}00011\ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00012}00012\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00013}\mbox{\hyperlink{class_c_segment_approximator_aadd8a0df7c9b978c7abf4cb77c92dc46}{00013}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_segment_approximator_aadd8a0df7c9b978c7abf4cb77c92dc46}{CSegmentApproximator::approx}}(\textcolor{keyword}{const}\ vector<list<CInputPoint3D>>\&\ segments)}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00014}00014\ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ p;}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00016}00016\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}\ =\ segments;}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_segment_approximator_8h}{./header/SegmentApproximator.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_point3_d_8h}{./header/Point3D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_line3_d_8h}{./header/Line3D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00011}\mbox{\hyperlink{class_c_segment_approximator_a47c403bea113a7b09e8d25c5401ddf16}{00011}}\ \mbox{\hyperlink{class_c_segment_approximator_a47c403bea113a7b09e8d25c5401ddf16}{CSegmentApproximator::CSegmentApproximator}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00013}00013\ \}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00015}\mbox{\hyperlink{class_c_segment_approximator_ac145e1245b9b540aba79204210e95a22}{00015}}\ \mbox{\hyperlink{class_c_segment_approximator_ac145e1245b9b540aba79204210e95a22}{CSegmentApproximator::\string~CSegmentApproximator}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00016}00016\ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00017}00017\ \}}
 \DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00018}00018\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ segments.size();\ s++)}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00020}00020\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s],\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].begin(),\ -\/-\/(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].end()));}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00022}00022\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00023}00023\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00024}00024\ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00025}00025\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00026}\mbox{\hyperlink{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85}{00026}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85}{CSegmentApproximator::setmaxDistance}}(\textcolor{keywordtype}{double}\ maxDistanceSource)}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00027}00027\ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}}\ =\ maxDistanceSource;}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00029}00029\ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00030}00030\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00031}\mbox{\hyperlink{class_c_segment_approximator_a6c5626d8afc213e3ed2637b610671b03}{00031}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_segment_approximator_a6c5626d8afc213e3ed2637b610671b03}{CSegmentApproximator::getmaxDistance}}()}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00032}00032\ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}};}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00034}00034\ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00035}00035\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00036}\mbox{\hyperlink{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}{00036}}\ vector<list<CInputPoint3D>>\&\ \mbox{\hyperlink{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}{CSegmentApproximator::getSegmentsApproxVector}}()}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00037}00037\ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}};}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00039}00039\ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00040}00040\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00041}\mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{00041}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{CSegmentApproximator::douglasPeuckerRecursive}}(list<CInputPoint3D>\&\ segment,\ std::list<CInputPoint3D>::iterator\ startItr,\ std::list<CInputPoint3D>::iterator\ endItr)}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00042}00042\ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{if}\ (segment.size()\ <\ 3)\ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00044}00044\ \ \ \ \ \textcolor{keywordflow}{if}\ (distance(startItr,\ endItr)\ ==\ 2)\ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pStart;\ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pEnd;}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00046}00046\ \ \ \ \ pStart.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(startItr-\/>getX());\ pStart.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(startItr-\/>getY());\ pStart.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(startItr-\/>getZ());}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00019}\mbox{\hyperlink{class_c_segment_approximator_adf9e03a7f07a723f9d516dfda659c949}{00019}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_segment_approximator_adf9e03a7f07a723f9d516dfda659c949}{CSegmentApproximator::approx}}(\textcolor{keyword}{const}\ vector<list<CInputPoint3D>>\&\ segments,\ \mbox{\hyperlink{class_c_logging}{CLogging}}\ log)}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00020}00020\ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ p;}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00023}00023\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}\ =\ segments;}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ segments.size();\ s++)}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00026}00026\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s],\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].begin(),\ -\/-\/(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].end()));}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00028}00028\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00029}00029\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba}{setStep}}(3);}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00030}00030\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{logData}}(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}});}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00031}00031\ \}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00033}\mbox{\hyperlink{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85}{00033}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85}{CSegmentApproximator::setmaxDistance}}(\textcolor{keywordtype}{double}\ maxDistanceSource)}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00034}00034\ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00035}00035\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}}\ =\ maxDistanceSource;}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00038}\mbox{\hyperlink{class_c_segment_approximator_a6c5626d8afc213e3ed2637b610671b03}{00038}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_segment_approximator_a6c5626d8afc213e3ed2637b610671b03}{CSegmentApproximator::getmaxDistance}}()}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00039}00039\ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}};}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00043}\mbox{\hyperlink{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}{00043}}\ vector<list<CInputPoint3D>>\&\ \mbox{\hyperlink{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}{CSegmentApproximator::getSegmentsApproxVector}}()}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00044}00044\ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}};}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00046}00046\ \}}
 \DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00047}00047\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00048}00048\ \ \ \ \ pEnd.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(endItr-\/>getX());\ pEnd.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(endItr-\/>getY());\ pEnd.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(endItr-\/>getZ());}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00049}00049\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordtype}{double}\ dist\ =\ 0.0,\ maxDist\ =\ 0.0;}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00051}00051\ \ \ \ \ std::list<CInputPoint3D>::iterator\ maxItr,\ itr;}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00052}00052\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{for}\ (itr\ =\ startItr;\ itr\ !=\ endItr;\ itr++)}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00054}00054\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}\ line\ =\ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}(pStart,\ pEnd);}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calc\ distance}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ dist\ =\ itr-\/>distanceTo(line);}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dist\ >\ maxDist)\ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ maxDist\ =\ dist;}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ maxItr\ =\ itr;}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00062}00062\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00063}00063\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{keywordflow}{if}\ (maxDist\ <=\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}})\ \{}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00065}00065\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ segment.erase((++startItr),\ endItr);}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00068}00068\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00069}00069\ }
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00070}00070\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(segment,\ startItr,\ maxItr);}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00071}00071\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(segment,\ maxItr,\ endItr);}
-\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00048}00048\ \textcolor{comment}{//TODO:\ Kommentar}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00049}\mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{00049}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{CSegmentApproximator::douglasPeuckerRecursive}}(list<CInputPoint3D>\&\ segment,\ std::list<CInputPoint3D>::iterator\ startItr,\ std::list<CInputPoint3D>::iterator\ endItr)}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00050}00050\ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{keywordflow}{if}\ (segment.size()\ <\ 3)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{if}\ (distance(startItr,\ endItr)\ ==\ 2)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pStart;\ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pEnd;}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00054}00054\ \ \ \ \ pStart.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(startItr-\/>getX());\ pStart.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(startItr-\/>getY());\ pStart.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(startItr-\/>getZ());}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00056}00056\ \ \ \ \ pEnd.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(endItr-\/>getX());\ pEnd.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(endItr-\/>getY());\ pEnd.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(endItr-\/>getZ());}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keywordtype}{double}\ dist\ =\ 0.0,\ maxDist\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00059}00059\ \ \ \ \ std::list<CInputPoint3D>::iterator\ maxItr,\ itr;}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keywordflow}{for}\ (itr\ =\ startItr;\ itr\ !=\ endItr;\ itr++)}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00062}00062\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}\ line\ =\ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}(pStart,\ pEnd);}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calc\ distance}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ dist\ =\ itr-\/>distanceTo(line);}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dist\ >\ maxDist)\ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ maxDist\ =\ dist;}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ maxItr\ =\ itr;}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00070}00070\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{keywordflow}{if}\ (maxDist\ <=\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}})\ \{}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ segment.erase((++startItr),\ endItr);}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00076}00076\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00078}00078\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(segment,\ startItr,\ maxItr);}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00079}00079\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(segment,\ maxItr,\ endItr);}
+\DoxyCodeLine{\Hypertarget{_segment_approximator_8cpp_source_l00080}00080\ \}}
 
 \end{DoxyCode}

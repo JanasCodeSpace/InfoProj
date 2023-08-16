@@ -1,3 +1,9 @@
+/**
+ * @file PathBuilder.cpp
+ *
+ * @brief Source File Segmente zu Pfad
+ */
+
 #include "./header/PathBuilder.h"
 
 CPathBuilder::CPathBuilder(void)

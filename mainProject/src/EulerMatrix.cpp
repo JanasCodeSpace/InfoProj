@@ -1,4 +1,4 @@
-#include "header/EulerMatrix.h"
+#include "./header/EulerMatrix.h"
 #include <math.h>
 
 CEulerMatrix::CEulerMatrix(void)
@@ -34,7 +34,7 @@ void CEulerMatrix::setMatrix(float inputMatrix[3][3])
     { 
         for (int m = 0; m < 3; m++)
         {
-            eulerMatrix[i][m] = inputMatrix[i][m];  // eulerMatrix mit �bergabewerten �berschreiben
+            eulerMatrix[i][m] = inputMatrix[i][m];  // eulerMatrix mit Übergabewerten überschreiben
         }
     }
 }
@@ -55,8 +55,7 @@ void CEulerMatrix::getMatrix(float Matrix[][3])
     }
 }
 
-
-
+//TODO: Kommentar
 CEulerMatrix CEulerMatrix::angels2mat(double A, double B, double C)
 {
     float Matrix[3][3];
@@ -77,6 +76,7 @@ CEulerMatrix CEulerMatrix::angels2mat(double A, double B, double C)
     return buffer;
 }
 
+//TODO: Kommentar
 tuple<double , double , double> CEulerMatrix::calculateAngels(void)
 {
     double a, b, c, sin_a, cos_a, sin_b, abs_cos_b, sin_c, cos_c;
