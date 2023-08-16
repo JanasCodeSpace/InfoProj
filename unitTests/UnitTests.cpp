@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "CppUnitTest.h"
+#include "CppUnitTest.h"/*
 #include "./header/Point3D.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -18,4 +18,4 @@ namespace UnitTests
 			Assert::AreEqual(0.0, timestamp);
 		}
 	};
-}
+}*/

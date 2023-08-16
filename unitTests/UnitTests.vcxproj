@@ -140,7 +140,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;..\mainProject\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>EulerMatrix.obj;GUI.obj;InputParameter.obj;Line3D.obj;MeanFilter.obj;PathBuilder.obj;PathPostProcessing.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>EulerMatrix.obj;Logging.obj;GUI.obj;InputParameter.obj;Line3D.obj;MeanFilter.obj;PathBuilder.obj;Point3D.obj;RobCodeGenerator.obj;RobPathEditor.obj;SegmentApproximator.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -176,8 +176,8 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\mainProject\RobPathEditor.vcxproj">
-      <Project>{56448f4e-6d8f-4d4f-af20-8ae5a85da096}</Project>
+    <ProjectReference Include="..\RobPathEditorGUI\RobPathEditorGUI.vcxproj">
+      <Project>{26c8e7c5-b16c-4b00-be5d-6ee7f2f870bc}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

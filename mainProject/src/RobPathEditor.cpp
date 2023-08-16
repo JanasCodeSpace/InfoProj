@@ -22,7 +22,6 @@
 #include "./header/RobCodeGenerator.h"
 #include "./header/InputParameter.h"
 #include "./header/MeanFilter.h"
-#include "./header/GUI.h"
 #include "./header/Logging.h"
 #include <iostream>
 #include <ctime>

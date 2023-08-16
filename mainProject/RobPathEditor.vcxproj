@@ -82,10 +82,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="MainWindow.ui" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\EulerMatrix.h" />
-    <ClInclude Include="header\GUI.h" />
     <ClInclude Include="header\InputParameter.h" />
     <ClInclude Include="header\Line3D.h" />
     <ClInclude Include="header\Logging.h" />
@@ -94,10 +94,10 @@
     <ClInclude Include="header\Point3D.h" />
     <ClInclude Include="header\RobCodeGenerator.h" />
     <ClInclude Include="header\SegmentApproximator.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EulerMatrix.cpp" />
-    <ClCompile Include="src\GUI.cpp" />
     <ClCompile Include="src\InputParameter.cpp" />
     <ClCompile Include="src\Line3D.cpp" />
     <ClCompile Include="src\Logging.cpp" />
@@ -107,6 +107,9 @@
     <ClCompile Include="src\RobCodeGenerator.cpp" />
     <ClCompile Include="src\RobPathEditor.cpp" />
     <ClCompile Include="src\SegmentApproximator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RobPathEditor1.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -16,12 +16,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="MainWindow.ui" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\EulerMatrix.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="header\GUI.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="header\InputParameter.h">
@@ -48,12 +46,12 @@
     <ClInclude Include="header\Logging.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EulerMatrix.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\GUI.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="src\InputParameter.cpp">
@@ -83,5 +81,10 @@
     <ClCompile Include="src\Logging.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RobPathEditor1.rc">
+      <Filter>Ressourcendateien</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

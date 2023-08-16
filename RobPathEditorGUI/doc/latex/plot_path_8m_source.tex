@@ -1,0 +1,23 @@
+\doxysection{plot\+Path.\+m}
+\hypertarget{plot_path_8m_source}{}\label{plot_path_8m_source}\mbox{\hyperlink{plot_path_8m}{gehe zur Dokumentation dieser Datei}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00001}\mbox{\hyperlink{plot_path_8m_a00a349297fa58bc80ff5329e25dcfe28}{00001}}\ clear\ \mbox{\hyperlink{plot_path_8m_a00a349297fa58bc80ff5329e25dcfe28}{all}};}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00002}00002\ close\ \mbox{\hyperlink{plot_path_8m_a00a349297fa58bc80ff5329e25dcfe28}{all}};}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00003}\mbox{\hyperlink{plot_path_8m_a3f3d3b13a15c726d6aa03db3dd0d6377}{00003}}\ \mbox{\hyperlink{plot_path_8m_a3f3d3b13a15c726d6aa03db3dd0d6377}{clc}};}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00005}\mbox{\hyperlink{plot_path_8m_a511ae0b1c13f95e5f08f1a0dd3da3d93}{00005}}\ \mbox{\hyperlink{plot_path_8m_a511ae0b1c13f95e5f08f1a0dd3da3d93}{data}}\ =\ dlmread(\textcolor{stringliteral}{'08\_path.csv'});}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00007}\mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{00007}}\ \mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}}\ =\ \mbox{\hyperlink{plot_path_8m_a511ae0b1c13f95e5f08f1a0dd3da3d93}{data}}(:,1);}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00008}\mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{00008}}\ \mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}}\ =\ \mbox{\hyperlink{plot_path_8m_a511ae0b1c13f95e5f08f1a0dd3da3d93}{data}}(:,2);}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00009}\mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{00009}}\ \mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}}\ =\ \mbox{\hyperlink{plot_path_8m_a511ae0b1c13f95e5f08f1a0dd3da3d93}{data}}(:,3)\ *\ 50;}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00012}\mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{00012}}\ \textcolor{keywordflow}{for}\ \mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}=1:length(\mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}})-\/1}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00013}00013\ \mbox{\hyperlink{plot_path_8m_acd954ecb9b1b5ef5f098baae3fbac055}{plot3}}(\mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}}(\mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}:i+1),X(\mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}:\mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}+1),Z(\mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}:\mbox{\hyperlink{plot_path_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}+1));}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00014}\mbox{\hyperlink{plot_path_8m_a58ab1fd68e97078232808206b850161b}{00014}}\ hold\ \mbox{\hyperlink{plot_path_8m_a58ab1fd68e97078232808206b850161b}{on}};}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00015}\mbox{\hyperlink{plot_path_8m_acd954ecb9b1b5ef5f098baae3fbac055}{00015}}\ \%\mbox{\hyperlink{plot_path_8m_acd954ecb9b1b5ef5f098baae3fbac055}{plot3}}(\mbox{\hyperlink{plot_path_8m_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}},\mbox{\hyperlink{plot_path_8m_ac51b57a703ba1c5869228690c93e1701}{X}},\mbox{\hyperlink{plot_path_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}});}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00016}\mbox{\hyperlink{plot_path_8m_afeaa7ecdd726aa1950ba61dc659eb561}{00016}}\ axis\ \mbox{\hyperlink{plot_path_8m_afeaa7ecdd726aa1950ba61dc659eb561}{equal}};}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00017}00017\ pause(0.3)}
+\DoxyCodeLine{\Hypertarget{plot_path_8m_source_l00018}00018\ end}
+
+\end{DoxyCode}
