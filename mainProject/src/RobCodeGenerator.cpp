@@ -99,7 +99,7 @@ void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)
 			p.setC(C);
 		}
 		else // Sonst den Winkel berechnen
-			calculateAngles(p, pIn);
+			calculateAngles(p, path[s]);
 		timePrev = path[s].getTime();
 		processedPath.push_back(p);
 	}
