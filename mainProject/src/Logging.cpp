@@ -52,12 +52,12 @@ void CLogging::logData(vector<list<CInputPoint3D>>& sourcePath)
 
 		tmpEuler = itr->getEulerMatrix();
 		tmpEuler.getMatrix(dummyMatrix);
-
+		/*
 		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)itr->getTime(), (double)itr->getX(), (double)itr->getY(), (double)itr->getZ(),
 			dummyMatrix[0][0], dummyMatrix[0][1], dummyMatrix[0][2], dummyMatrix[1][0],
 			dummyMatrix[1][1], dummyMatrix[1][2], dummyMatrix[2][0], dummyMatrix[2][1],
 			dummyMatrix[2][2]);
-
+*/
 
 		for (; itr != sourcePath[s].end(); itr++) //for all points in the segment
 		{
@@ -68,10 +68,11 @@ void CLogging::logData(vector<list<CInputPoint3D>>& sourcePath)
 		}
 
 		itr--;
+		/*
 		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)itr->getTime(), (double)itr->getX(), (double)itr->getY(), (double)itr->getZ(),
 			dummyMatrix[0][0], dummyMatrix[0][1], dummyMatrix[0][2], dummyMatrix[1][0],
 			dummyMatrix[1][1], dummyMatrix[1][2], dummyMatrix[2][0], dummyMatrix[2][1],
-			dummyMatrix[2][2]);
+			dummyMatrix[2][2]);*/
 	}
 
 	fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n",
