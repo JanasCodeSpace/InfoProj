@@ -48,8 +48,6 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 		throw exception(msg.c_str());
 	}
 
-	COutputPoint3D currentPoint;
-
 	filename.erase(filename.end()-4,filename.end());
 	fprintf(fid, "DEF %s \n", filename.c_str());
 
@@ -62,12 +60,10 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 
 	for (size_t s = 0; s < points.size(); s++)
 	{
-		currentPoint.set(points[s].getX(),points[s].getY(),points[s].getZ());
-		
 		if (!speedManual) // If the speed is calculated it needs to be before every LIN command
-			fprintf(fid, "&VEL.CP %f\n", currentPoint.getSpeed());
-		fprintf(fid, "LIN {X %f, Y %f, Z %f, A %f, B %f, C %f}\n", currentPoint.getX(), currentPoint.getY(), currentPoint.getZ(), 
-			currentPoint.getA(), currentPoint.getB(), currentPoint.getC());
+			fprintf(fid, "&VEL.CP %f\n", (float)processedPath[s].getSpeed());
+		fprintf(fid, "LIN {X %f, Y %f, Z %f, A %f, B %f, C %f}\n", processedPath[s].getX(), processedPath[s].getY(), processedPath[s].getZ(),
+			processedPath[s].getA(), processedPath[s].getB(), processedPath[s].getC());
 	}
 
 	fputs("END", fid);
@@ -77,7 +73,7 @@ void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)
 {
 	COutputPoint3D p;
 	CInputPoint3D  pIn;
-	double timePrev = 0;
+	double timePrev = 1;
 
 	for (size_t s = 0; s < path.size(); s++) // Für jeden Punkt in dem Vector
 	{
@@ -96,14 +92,14 @@ void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)
 				p.setSpeed(calculateSpeed(path[s], s, timePrev)); //Die Geschwindigkeit zwischen den weiteren Punkten wird berechnet.
 		}
 
-		if (!orientationManual) // Wenn der Winkel vorgegeben ist diesen setzten
+		if (orientationManual) // Wenn der Winkel vorgegeben ist diesen setzten
 		{
 			p.setA(A);
 			p.setB(B);
 			p.setC(C);
 		}
 		else // Sonst den Winkel berechnen
-			calculateAngles(p, pIn);
+			calculateAngles(p, path[s]);
 		timePrev = path[s].getTime();
 		processedPath.push_back(p);
 	}
