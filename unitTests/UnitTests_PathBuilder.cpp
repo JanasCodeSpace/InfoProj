@@ -3,9 +3,9 @@
 #include "../mainProject/header/PathBuilder.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace UnitTests
+namespace PathBuilder
 {
-    TEST_CLASS(PathBuilderTests)
+    TEST_CLASS(PathBuilderTests_1)
     {
     public:
         TEST_METHOD(TestCreatePath)

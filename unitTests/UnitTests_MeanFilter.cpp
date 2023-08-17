@@ -3,9 +3,9 @@
 #include "../mainProject/header/MeanFilter.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace UnitTests
+namespace MeanFilter
 {
-    TEST_CLASS(MeanFilterTests)
+    TEST_CLASS(MeanFilterTests_1)
     {
     public:
         TEST_METHOD(Constructor_Default)

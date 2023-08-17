@@ -1,12 +1,12 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "../header/Point3D.h"
-#include "../mainProject/header/Line3D.h"
+#include "../header/Line3D.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace UnitTests
+namespace Point3D
 {
-    TEST_CLASS(Point3DTests)
+    TEST_CLASS(Point3DTests_1)
     {
     public:
         TEST_METHOD(TestDistanceTo)

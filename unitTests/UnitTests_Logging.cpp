@@ -3,9 +3,9 @@
 #include "../mainProject/header/Logging.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace UnitTests
+namespace Logging
 {
-    TEST_CLASS(LoggingTests)
+    TEST_CLASS(LoggingTests_1)
     {
     public:
         TEST_METHOD(TestLogData)

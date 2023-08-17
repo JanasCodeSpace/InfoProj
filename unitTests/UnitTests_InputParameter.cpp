@@ -3,28 +3,52 @@
 #include "../mainProject/header/InputParameter.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace UnitTests
+namespace InputParameter
 {
-    TEST_CLASS(InputParameterTests)
+    TEST_CLASS(InputParameterTests_1)
     {
-    private:
-        static constexpr double DifferenceThreshold = 0.01;
-
     public:
-        TEST_METHOD(TestConstructorAndGetters)
+        TEST_METHOD(DefaultConstructorAndSettersAndGetters)
         {
-            CInputParameter inputParam(10.0, true, false, 1.0, 2.0, 3.0);
+            CInputParameter inputParam;
+            bool testOrientationManual = false;
+            double testA = 0.0;
+            double testB = 2.0;
+            double testC = 5.0;
+            bool testSpeedManual = true;
+            double testSpeed = 10.0;
 
-            Assert::AreEqual(10.0, inputParam.getSpeed());
-            Assert::IsTrue(inputParam.getSpeedManual());
-            Assert::IsFalse(inputParam.getOrientationManual());
+            inputParam.setOrientation(testOrientationManual, testA, testB, testC);
+            inputParam.setSpeed(testSpeed, testSpeedManual);
 
-            auto angles = inputParam.getAngles();
-            Assert::AreEqual(1.0, std::get<0>(angles));
-            Assert::AreEqual(2.0, std::get<1>(angles));
-            Assert::AreEqual(3.0, std::get<2>(angles));
+            Assert::AreEqual(testOrientationManual, inputParam.getOrientationManual());
+            Assert::AreEqual(testA, std::get<0>(inputParam.getAngles()));
+            Assert::AreEqual(testB, std::get<1>(inputParam.getAngles()));
+            Assert::AreEqual(testC, std::get<2>(inputParam.getAngles()));
+            Assert::AreEqual(testSpeedManual, inputParam.getSpeedManual());
+            Assert::AreEqual(testSpeed, inputParam.getSpeed());
+
         }
-        TEST_METHOD(TestSetSpeedAndGetSpeed)
+        TEST_METHOD(ParameterizedConstructorAndGetters)
+        {
+            bool testOrientationManual = true;
+            double testA = 5.0;
+            double testB = 102.0;
+            double testC = 34.0;
+            bool testSpeedManual = false;
+            double testSpeed = 222.2;
+
+            CInputParameter inputParam(testSpeed, testSpeedManual, testOrientationManual, testA, testB, testC);
+
+            Assert::AreEqual(testSpeed, inputParam.getSpeed());
+            Assert::AreEqual(testSpeedManual, inputParam.getSpeedManual());
+            Assert::AreEqual(testOrientationManual, inputParam.getOrientationManual());
+                        
+            Assert::AreEqual(testA, std::get<0>(inputParam.getAngles()));
+            Assert::AreEqual(testB, std::get<1>(inputParam.getAngles()));
+            Assert::AreEqual(testC, std::get<2>(inputParam.getAngles()));
+        }
+        TEST_METHOD(SetSpeedAndGetSpeed)
         {
             CInputParameter inputParam;
             inputParam.setSpeed(15.0, true);
@@ -32,28 +56,36 @@ namespace UnitTests
             Assert::AreEqual(15.0, inputParam.getSpeed());
             Assert::IsTrue(inputParam.getSpeedManual());
         }
-        TEST_METHOD(TestSetOrientationAndGetOrientation)
+        TEST_METHOD(SetOrientationAndGetOrientation)
         {
             CInputParameter inputParam;
             inputParam.setOrientation(true, 1.0, 2.0, 3.0);
 
             Assert::IsTrue(inputParam.getOrientationManual());
-            auto angles = inputParam.getAngles();
-            Assert::AreEqual(1.0, std::get<0>(angles));
-            Assert::AreEqual(2.0, std::get<1>(angles));
-            Assert::AreEqual(3.0, std::get<2>(angles));
+            Assert::AreEqual(1.0, std::get<0>(inputParam.getAngles()));
+            Assert::AreEqual(2.0, std::get<1>(inputParam.getAngles()));
+            Assert::AreEqual(3.0, std::get<2>(inputParam.getAngles()));
         }
-        TEST_METHOD(TestOpenFile)
+        TEST_METHOD(OpenFile)
         {
             CInputParameter inputParam;
-            inputParam.openFile("../input/path_01.csv"); // Testdateipfad
+            string testPath = "../input/path_01.csv";
+
+            inputParam.openFile(testPath);
 
             vector<list<CInputPoint3D>>& path = inputParam.getPath();
 
             Assert::IsTrue(!path.empty(), L"Leerer Pfad");
-        }
 
-        TEST_METHOD(TestDetectJump)
+            int listIndex = 0;
+            std::list<CInputPoint3D>& targetList = path[listIndex];
+            std::advance(targetList.begin(), path.size());
+
+
+
+
+        }
+        TEST_METHOD(DetectJump)
         {
             CInputParameter inputParam;
             CEulerMatrix Euler;

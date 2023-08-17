@@ -3,9 +3,9 @@
 #include "../mainProject/header/Line3D.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace UnitTests
+namespace Line3D
 {
-    TEST_CLASS(Line3DTests)
+    TEST_CLASS(Line3DTests_1)
     {
     public:
         TEST_METHOD(Constructor_Default)
