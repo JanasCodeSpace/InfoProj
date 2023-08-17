@@ -65,9 +65,9 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 		currentPoint.set(points[s].getX(),points[s].getY(),points[s].getZ());
 		
 		if (!speedManual) // If the speed is calculated it needs to be before every LIN command
-			fprintf(fid, "&VEL.CP %f\n", currentPoint.getSpeed());
-		fprintf(fid, "LIN {X %f, Y %f, Z %f, A %f, B %f, C %f}\n", currentPoint.getX(), currentPoint.getY(), currentPoint.getZ(), 
-			currentPoint.getA(), currentPoint.getB(), currentPoint.getC());
+			fprintf(fid, "&VEL.CP %f\n", processedPath[s].getSpeed());
+		fprintf(fid, "LIN {X %f, Y %f, Z %f, A %f, B %f, C %f}\n", processedPath[s].getX(), processedPath[s].getY(), processedPath[s].getZ(),
+			processedPath[s].getA(), processedPath[s].getB(), processedPath[s].getC());
 	}
 
 	fputs("END", fid);
@@ -96,7 +96,7 @@ void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)
 				p.setSpeed(calculateSpeed(path[s], s, timePrev)); //Die Geschwindigkeit zwischen den weiteren Punkten wird berechnet.
 		}
 
-		if (!orientationManual) // Wenn der Winkel vorgegeben ist diesen setzten
+		if (orientationManual) // Wenn der Winkel vorgegeben ist diesen setzten
 		{
 			p.setA(A);
 			p.setB(B);
