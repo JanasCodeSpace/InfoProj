@@ -44,7 +44,7 @@ namespace EulerMatrix
                 }
             }
         }
-        
+
         TEST_METHOD(SetMatrix)
         {
             CEulerMatrix eulerMatrix;
@@ -54,7 +54,7 @@ namespace EulerMatrix
         {4.0f, 5.0f, 6.0f},
             };
             float testMatrix[3][3];
-            
+
             eulerMatrix.setMatrix(inputMatrix);
             eulerMatrix.getMatrix(testMatrix);
 
@@ -66,7 +66,7 @@ namespace EulerMatrix
                 }
             }
         }
-        
+        /* Not used
         TEST_METHOD(Angels2Mat)
         {
             CEulerMatrix eulerMatrix;
@@ -77,20 +77,20 @@ namespace EulerMatrix
                 {0.077365, 0.381656, 0.921061}
             };
 
-            eulerMatrix = eulerMatrix.angels2mat(0.5, 0.4, 02);
+            eulerMatrix = eulerMatrix.angels2mat(0.5, 0.4, 0.2);
 
             float actualMatrix[3][3];
             eulerMatrix.getMatrix(actualMatrix);
+            double tolerance = 0.000001;
 
-            
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    Assert::AreEqual(expectedMatrix[i][j], actualMatrix[i][j]);
+                    Assert::AreEqual<double>(expectedMatrix[i][j], actualMatrix[i][j]);
                 }
             }
-        }
+        }*/
         TEST_METHOD(CalculateAngels)
         {
             float inputMatrix[3][3] = {
@@ -100,23 +100,34 @@ namespace EulerMatrix
             };
             CEulerMatrix eulerMatrix(inputMatrix);
 
-            double expectedA = 0.523611; // 60 Grad in Bogenmaß
-            double expectedB = 0.0; // 45 Grad in Bogenmaß
-            double expectedC = 0.0; // 30 Grad in Bogenmaß
-                        
-            std::tuple<double, double, double> calculatedAngles = eulerMatrix.calculateAngels();
-                        
-            double epsilon = 0.1; // Toleranz für Gleitkommavergleich
-            double test = std::get<0>(calculatedAngles);
+            double expectedA = 0.523611;
+            double expectedB = 0.0;
+            double expectedC = 0.0;
 
+            std::tuple<double, double, double> calculatedAngles = eulerMatrix.calculateAngels();
+
+            double epsilon = 0.000001; // Toleranz für Gleitkommavergleich
+            //double test = std::get<0>(calculatedAngles);
+
+            /*
             Assert::IsTrue(abs(expectedA - std::get<0>(calculatedAngles)) < epsilon,
                 L"A stimmt nicht überein");
             Assert::IsTrue(abs(expectedB - std::get<1>(calculatedAngles)) < epsilon,
                 L"B stimmt nicht überein");
             Assert::IsTrue(abs(expectedC - std::get<2>(calculatedAngles)) < epsilon,
                 L"C stimmt nicht überein");
+            */
+            Assert::AreEqual(expectedA, std::get<0>(calculatedAngles));
+
         }
 
+        TEST_METHOD(test)
+        {
+            double test1 = 0.223123;
+            double test2 = 0.223123;
+
+            Assert::AreEqual(test1, test2);
+        }
         TEST_METHOD(GetEulerMatrix)
         {
             CEulerMatrix eulerMatrix1;

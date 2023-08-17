@@ -102,7 +102,7 @@ void CInputParameter::openFile(string path)
 		tmpEuler.setMatrix(dummyMatrix);
 		tmpPoint.setPoint(timestamp, x, y, z, tmpEuler.getEulerMatrix());
 
-		if (detectJump(tmpPoint, x_prev, y_prev, z_prev)) // if there is a jump in the data, start da new segment 
+		if (detectJump(tmpPoint, x_prev, y_prev, z_prev)) // if there is a jump in the data, start a new segment 
 		{
 			segmentCount++;
 			initialPath.push_back(list<CInputPoint3D>());
