@@ -41,6 +41,7 @@ void CPathBuilder::createPath(vector<list<CInputPoint3D>>& segments, CLogging lo
 		itr--;
 
 		point.set((double)itr->getX(), (double)itr->getY(), (double)itr->getZ()); //point over end of segment
+		point.setTime(itr->getTime());
 		point.setEulerMatrix(itr->getEulerMatrix());
 		path.push_back(point);
 	}

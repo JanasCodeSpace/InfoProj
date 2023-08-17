@@ -52,8 +52,12 @@ void CSegmentApproximator::douglasPeuckerRecursive(list<CInputPoint3D>& segment,
 	if (distance(startItr, endItr) == 2) return;
 	CInputPoint3D pStart; CInputPoint3D pEnd;
 	pStart.setX(startItr->getX()); pStart.setY(startItr->getY()); pStart.setZ(startItr->getZ());
+	pStart.setTime(startItr->getTime());
+	pStart.setEulerMatrix(startItr->getEulerMatrix());
 
 	pEnd.setX(endItr->getX()); pEnd.setY(endItr->getY()); pEnd.setZ(endItr->getZ());
+	pEnd.setTime(endItr->getTime());
+	pEnd.setEulerMatrix(endItr->getEulerMatrix());
 
 	double dist = 0.0, maxDist = 0.0;
 	std::list<CInputPoint3D>::iterator maxItr, itr;
