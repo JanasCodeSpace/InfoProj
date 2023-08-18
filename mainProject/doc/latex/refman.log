@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.4)  10 AUG 2023 12:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.4)  10 AUG 2023 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,169 +897,73 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 \tf@toc=\write6
 \openout6 = `refman.toc'.
 
-Package hyperref Info: Option `pageanchor' set `true' on input line 208.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 205.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 205.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 205.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 20
+5.
 
+(C:\Users\anche\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+[1] [2] [3] [4] [5] [6] [7] [8
+
+]
+Package hyperref Info: Option `pageanchor' set `true' on input line 208.
+ (index.tex
 Kapitel 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 210.
+(Font)              scaled to size 18.66588pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 210.
+(Font)              scaled to size 18.66588pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 210.
+(Font)              scaled to size 22.39185pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 210.
-(hierarchy.tex
+(Font)              scaled to size 12.9599pt on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 6.
-
-
-LaTeX Warning: Reference `class_c_line3_d' on page 1 undefined on input line 6.
-
-
-
-LaTeX Warning: Reference `class_c_mean_filter' on page 1 undefined on input lin
-e 7.
-
-
-LaTeX Warning: Reference `class_c_path_builder' on page 1 undefined on input li
-ne 8.
-
-
-LaTeX Warning: Reference `class_c_path_post_processing' on page 1 undefined on 
-input line 9.
-
-
-LaTeX Warning: Reference `class_c_point3_d' on page 1 undefined on input line 1
-0.
-
-
-LaTeX Warning: Reference `class_c_input_point3_d' on page 1 undefined on input 
-line 12.
-
-
-LaTeX Warning: Reference `class_c_output_point3_d' on page 1 undefined on input
- line 13.
-
-
-LaTeX Warning: Reference `class_c_rob_code_generator' on page 1 undefined on in
-put line 15.
-
-
-LaTeX Warning: Reference `class_c_segment_approximator' on page 1 undefined on 
-input line 16.
-
+(Font)              scaled to size 10.79993pt on input line 5.
 ) [1
-
 
 ] [2
 
 ]
 Kapitel 2.
-(annotated.tex
-
-LaTeX Warning: Reference `class_c_input_point3_d' on page 3 undefined on input 
-line 6.
-
-
-LaTeX Warning: Reference `class_c_line3_d' on page 3 undefined on input line 7.
-
-
-
-LaTeX Warning: Reference `class_c_mean_filter' on page 3 undefined on input lin
-e 8.
-
-
-LaTeX Warning: Reference `class_c_output_point3_d' on page 3 undefined on input
- line 9.
-
-
-LaTeX Warning: Reference `class_c_path_builder' on page 3 undefined on input li
-ne 10.
-
-
-LaTeX Warning: Reference `class_c_path_post_processing' on page 3 undefined on 
-input line 11.
-
-
-LaTeX Warning: Reference `class_c_point3_d' on page 3 undefined on input line 1
-2.
-
-
-LaTeX Warning: Reference `class_c_rob_code_generator' on page 3 undefined on in
-put line 13.
-
-
-LaTeX Warning: Reference `class_c_segment_approximator' on page 3 undefined on 
-input line 14.
-
-) [3] [4
+(hierarchy.tex) [3] [4
 
 ]
 Kapitel 3.
-(files.tex
-
-LaTeX Warning: Reference `_euler_matrix_8h_source' on page 5 undefined on input
- line 3.
-
-
-LaTeX Warning: Reference `_g_u_i_8h_source' on page 5 undefined on input line 4
-.
-
-
-LaTeX Warning: Reference `_input_parameter_8h' on page 5 undefined on input lin
-e 5.
-
-
-LaTeX Warning: Reference `_line3_d_8h_source' on page 5 undefined on input line
- 6.
-
-
-LaTeX Warning: Reference `_mean_filter_8h_source' on page 5 undefined on input 
-line 7.
-
-
-LaTeX Warning: Reference `_path_builder_8h_source' on page 5 undefined on input
- line 8.
-
-
-LaTeX Warning: Reference `_path_post_processing_8h_source' on page 5 undefined 
-on input line 9.
-
-
-LaTeX Warning: Reference `_point3_d_8h_source' on page 5 undefined on input lin
-e 10.
-
-
-LaTeX Warning: Reference `_rob_code_generator_8h_source' on page 5 undefined on
- input line 11.
-
-
-LaTeX Warning: Reference `_segment_approximator_8h_source' on page 5 undefined 
-on input line 12.
-
-) [5] [6
+(annotated.tex) [5] [6
 
 ]
 Kapitel 4.
+(files.tex [7]) [8]
+Kapitel 5.
 (class_c_euler_matrix.tex
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
-.
 
+! LaTeX Error: Invalid UTF-8 byte sequence (Öf).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \doxysubsubsection*{Öffentliche Methoden}
+                                              
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+5.
 (C:\Users\anche\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 6.
-)
-(class_c_g_u_i.tex) (class_c_input_parameter.tex
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
-.
-
-(C:\Users\anche\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
+(Font)              scaled to size 8.99994pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
@@ -1071,7 +975,6 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 16.
 
-[7]
 
 ! LaTeX Error: Invalid UTF-8 byte "FC.
 
@@ -1079,9 +982,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 ...mall\item\em \+: Gibt Geschwindigkeit zurü
-                                                  ck \end{DoxyCompactList}\item
-
+l.38 \doxysubsection{Ausführliche Beschreibung}
+                                               
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
@@ -1089,576 +991,609 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-! LaTeX Error: Invalid UTF-8 byte "FC.
+! LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 ...xyCompactList}\small\item\em \+: Gibt zurü
-                                                  ck ob händische Geschwindi...
+l.41 ...t die Euler Matrix und hat Funktionen fï¿½
+                                                  r Berechnungen mit eben je...
 
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (änd).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 ...ist}\small\item\em \+: Gibt zurück ob händ
-                                                  ische Geschwindigkeit verw...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...xyCompactList}\small\item\em \+: Gibt zurü
-                                                  ck ob händische Orientieru...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (änd).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...ist}\small\item\em \+: Gibt zurück ob händ
-                                                  ische Orientierung verwend...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 ...ctList}\small\item\em \+: Gibt Winkel zurü
-                                                  ck \end{DoxyCompactList}\item
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.36 ...ompactList}\small\item\em \+: Erkennt Sprü
-                                                  nge in den Daten \end{Doxy...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 ...pactList}\small\item\em \+: Gibt Pfad zurü
-                                                  ck \end{DoxyCompactList}\e...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 41.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 48.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 49.
+(Font)              scaled to size 7.19995pt on input line 51.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 49.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 52.
+[9
+
+
+! Undefined control sequence.
+\UseRawInputEncoding ...tencodingname \@undefined 
+                                                  \let \DeclareFontEncoding@...
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.53 
+     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.53 
+     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.53 
+     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Undefined control sequence.
+\default@M ->\def \accentclass@ 
+                                {7}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \@undefined 
+                       
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 55.
-
-Underfull \hbox (badness 10000) detected at line 55
-[][][]
- []
-
-
-Overfull \hbox (64.50862pt too wide) in paragraph at lines 56--57
-[][]\T1/phv/m/n/10 : [] 
- []
-
+(Font)              scaled to size 8.99994pt on input line 58.
 
 Underfull \hbox (badness 10000) detected at line 58
 [][][]
  []
 
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 82.
 
-Overfull \hbox (65.10266pt too wide) in paragraph at lines 59--60
-[][] 
+Underfull \hbox (badness 10000) detected at line 93
+[][][]
  []
 
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 67.
-[8]
+[10]
+
+! LaTeX Error: Invalid UTF-8 byte "FC.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 \begin{DoxyReturn}{Rückgabe}
+                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \hbox (badness 10000) detected at line 155
+[][][]
+ []
+
+
+! LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 ...{]} gibt die neu berechnete Matrix zurï¿½
+                                                  ck
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Invalid UTF-8 byte "FC.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \begin{DoxyReturn}{Rückgabe}
+                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \hbox (badness 10000) detected at line 194
+[][][]
+ []
+
+[11]
+
+! LaTeX Error: Invalid UTF-8 byte "FC.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 \begin{DoxyReturn}{Rückgabe}
+                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \hbox (badness 10000) detected at line 234
+[][][]
+ []
+
+
+! LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 ...3\mbox{]} gibt gespeicherte Matrix zurï¿½
+                                                  ck
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 ... mit\ ï¿½bergabewerten\ ï¿½berschreiben}}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 ... mit\ ï¿½bergabewerten\ ï¿½berschreiben}}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[12]
+
+! LaTeX Error: Invalid UTF-8 byte "FC.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 Die Dokumentation fü
+                          r diese Klasse wurde erzeugt aufgrund der Dateien\...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+) (class_c_g_u_i.tex [13]) (class_c_input_parameter.tex [14]
+Underfull \hbox (badness 10000) detected at line 80
+[][][]
+ []
+
+
+Overfull \hbox (64.50862pt too wide) in paragraph at lines 81--82
+[][]\T1/phv/m/n/10 : [] 
+ []
+
+[15]
+Underfull \hbox (badness 10000) detected at line 125
+[][][]
+ []
+
+[16]
+Underfull \hbox (badness 10000) detected at line 222
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 267
+[][][]
+ []
+
+[17] [18] [19] [20]) (class_c_input_point3_d.tex <./class_c_input_point3_d.pdf>
+<class_c_input_point3_d.pdf, id=1814, 501.875pt x 401.5pt>
+File: class_c_input_point3_d.pdf Graphic file (type pdf)
+<use class_c_input_point3_d.pdf>
+Package pdftex.def Info: class_c_input_point3_d.pdf  used on input line 15.
+(pdftex.def)             Requested size: 71.12737pt x 56.9055pt.
+[21] [22]
+Underfull \hbox (badness 10000) detected at line 103
+[][][]
+ []
+
+[23]
+Underfull \hbox (badness 10000) detected at line 141
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 193
+[][][]
+ []
+
+[24]
+Underfull \hbox (badness 10000) detected at line 217
+[][][]
+ []
+
+[25]) (class_c_line3_d.tex [26]
+Underfull \hbox (badness 10000) detected at line 50
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 73
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.1 on input line 90.
-
-
-Underfull \hbox (badness 10000) detected at line 91
+[27]) (class_c_logging.tex [28]
+Underfull \hbox (badness 10000) detected at line 56
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 108
+Underfull \hbox (badness 10000) detected at line 80
+[][][]
+ []
+
+[29] [30] [31]) (class_c_mean_filter.tex [32]
+Underfull \hbox (badness 10000) detected at line 60
 [][][]
  []
 
 
-Overfull \hbox (65.10266pt too wide) in paragraph at lines 109--110
-[][] 
+Underfull \hbox (badness 10000) detected at line 89
+[][][]
  []
 
-[9]
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124 \+: Erkennt Sprü
-                      nge in den Daten
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.126 ...n ob es mehrere Pfade sind wird nach Sprü
-                                                  ngen gesucht, bei einem Sp...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 \+: Gibt Winkel zurü
-                          ck
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 Gibt die eingegebenen Winkel als tuple zurü
-                                                 ck \Hypertarget{class_c_inp...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 \+: Gibt zurü
-                   ck ob händische Orientierung verwendet werden soll
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (änd).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 \+: Gibt zurück ob händ
-                             ische Orientierung verwendet werden soll
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 Gibt zurü
-               ck ob händische Orientierung verwendet werden soll, sonst wir...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (änd).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 Gibt zurück ob händ
-                         ische Orientierung verwendet werden soll, sonst wir...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (äte).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 ...rwendet werden soll, sonst wird sie späte
-                                                  r berechnet. \Hypertarget{...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.154 \+: Gibt Pfad zurü
-                        ck
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.156 Gibt die eingegebenen Winkel als tuple zurü
-                                                 ck \Hypertarget{class_c_inp...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.164 \+: Gibt Geschwindigkeit zurü
-                                   ck
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 Gibt die eingegebene Geschwindigkeit zurü
-                                               ck \Hypertarget{class_c_input...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.174 \+: Gibt zurü
-                   ck ob händische Geschwindigkeit verwendet werden soll
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (änd).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.174 \+: Gibt zurück ob händ
-                             ische Geschwindigkeit verwendet werden soll
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.176 Gibt zurü
-               ck ob händische Geschwindigekit verwendet werden soll, sonst ...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (änd).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.176 Gibt zurück ob händ
-                         ische Geschwindigekit verwendet werden soll, sonst ...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (äte).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.176 ...rwendet werden soll, sonst wird sie späte
-                                                  r berechnet. \Hypertarget{...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[10]
-
-! LaTeX Error: Invalid UTF-8 byte sequence (änd).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 Setzt ob die Orientierung Händ
-                                    isch eingegeben werden soll und die drei...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (änd).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.206 Setzt ob die Geschwindigkeit Händ
-                                       isch eingegeben werden soll und die G...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-) (class_c_input_point3_d.tex <./class_c_input_point3_d.pdf>
-<class_c_input_point3_d.pdf, id=210, 501.875pt x 401.5pt>
-File: class_c_input_point3_d.pdf Graphic file (type pdf)
-<use class_c_input_point3_d.pdf>
-Package pdftex.def Info: class_c_input_point3_d.pdf  used on input line 6.
-(pdftex.def)             Requested size: 71.12737pt x 56.9055pt.
- [11])
-(class_c_line3_d.tex [12]) (class_c_mean_filter.tex)
-(class_c_output_point3_d.tex <./class_c_output_point3_d.pdf>
-<class_c_output_point3_d.pdf, id=260, 501.875pt x 365.365pt>
+[33]
+Underfull \hbox (badness 10000) detected at line 141
+[][][]
+ []
+
+[34]
+Underfull \hbox (badness 10000) detected at line 202
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 226
+[][][]
+ []
+
+[35]) (class_c_output_point3_d.tex [36] <./class_c_output_point3_d.pdf>
+<class_c_output_point3_d.pdf, id=2240, 501.875pt x 365.365pt>
 File: class_c_output_point3_d.pdf Graphic file (type pdf)
 <use class_c_output_point3_d.pdf>
-Package pdftex.def Info: class_c_output_point3_d.pdf  used on input line 6.
+Package pdftex.def Info: class_c_output_point3_d.pdf  used on input line 15.
 (pdftex.def)             Requested size: 78.16505pt x 56.9055pt.
- [13])
-(class_c_path_builder.tex) (class_c_path_post_processing.tex)
-(class_c_point3_d.tex <./class_c_point3_d.pdf>
-<class_c_point3_d.pdf, id=303, 501.875pt x 182.6825pt>
+
+[37]
+Underfull \hbox (badness 10000) detected at line 113
+[][][]
+ []
+
+[38]
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+[39]
+Underfull \hbox (badness 10000) detected at line 212
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 236
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 260
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 284
+[][][]
+ []
+
+[40] [41] [42]) (class_c_path_builder.tex [43] [44] [45]
+Underfull \hbox (badness 10000) detected at line 147
+[][][]
+ []
+
+) (class_c_point3_d.tex <./class_c_point3_d.pdf>
+<class_c_point3_d.pdf, id=2473, 501.875pt x 182.6825pt>
 File: class_c_point3_d.pdf Graphic file (type pdf)
 <use class_c_point3_d.pdf>
-Package pdftex.def Info: class_c_point3_d.pdf  used on input line 6.
+Package pdftex.def Info: class_c_point3_d.pdf  used on input line 15.
 (pdftex.def)             Requested size: 156.33012pt x 56.9055pt.
- [14])
-(class_c_rob_code_generator.tex) (class_c_segment_approximator.tex [15])
-[16]
-Kapitel 5.
-(_euler_matrix_8h_source.tex) (_g_u_i_8h_source.tex) (_input_parameter_8h.tex
+ [46]
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+[47]
+Underfull \hbox (badness 10000) detected at line 111
+[][][]
+ []
+
+[48]
+Underfull \hbox (badness 10000) detected at line 165
+[][][]
+ []
+
+[49]
+Underfull \hbox (badness 10000) detected at line 221
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 245
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 269
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 293
+[][][]
+ []
+
+[50] [51]) (class_c_rob_code_generator.tex [52]
+Underfull \hbox (badness 10000) detected at line 68
+[][][]
+ []
+
+
+Overfull \hbox (72.86504pt too wide) in paragraph at lines 69--70
+[][]\T1/phv/m/n/10 : [] 
+ []
+
+[53]
+Underfull \hbox (badness 10000) detected at line 112
+[][][]
+ []
+
+[54]
+Underfull \hbox (badness 10000) detected at line 210
+[][][]
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 2
+28.
+(C:\Users\anche\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+[55] [56] [57]) (class_c_segment_approximator.tex [58] [59] [60]
+Underfull \hbox (badness 10000) detected at line 199
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 223
+[][][]
+ []
+
+[61]) [62]
+Kapitel 6.
+(_euler_matrix_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+) (_euler_matrix_8h_source.tex) (_g_u_i_8h.tex [63
+
+]) (_g_u_i_8h_source.tex)
+(_input_parameter_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--17
 
  []
 
-[17
+) (_input_parameter_8h_source.tex [64]) (_line3_d_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
-]) (_input_parameter_8h_source.tex) (_line3_d_8h_source.tex [18])
-(_mean_filter_8h_source.tex) (_path_builder_8h_source.tex)
-(_path_post_processing_8h_source.tex [19]) (_point3_d_8h_source.tex [20])
-(_rob_code_generator_8h_source.tex) (_segment_approximator_8h_source.tex
-[21]) [22] (refman.ind
+ []
+
+) (_line3_d_8h_source.tex [65]) (_logging_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--16
+
+ []
+
+) (_logging_8h_source.tex [66]) (_mean_filter_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+) (_mean_filter_8h_source.tex [67]) (_path_builder_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+) (_path_builder_8h_source.tex [68]) (_point3_d_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (_point3_d_8h_source.tex [69]) (_rob_code_generator_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+
+ []
+
+[70]) (_rob_code_generator_8h_source.tex) (_segment_approximator_8h.tex
+[71]
+Underfull \hbox (badness 10000) in paragraph at lines 8--14
+
+ []
+
+) (_segment_approximator_8h_source.tex) (_euler_matrix_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+[72]) (_euler_matrix_8cpp_source.tex
+
+! LaTeX Error: Unicode character Âœ (U+009C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ...mit\ ÃƒÂœbergabewerten\ ÃƒÂ¼berschreiben}}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[73]) (_g_u_i_8cpp.tex) (_g_u_i_8cpp_source.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--1
+
+ []
+
+) (_input_parameter_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+[74]) (_input_parameter_8cpp_source.tex [75]) (_line3_d_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+) (_line3_d_8cpp_source.tex [76]) (_logging_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (_logging_8cpp_source.tex [77]) (_mean_filter_8cpp.tex [78]
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+) (_mean_filter_8cpp_source.tex [79]) (_path_builder_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (_path_builder_8cpp_source.tex [80]) (_point3_d_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+) (_point3_d_8cpp_source.tex [81] [82] [83]) (_rob_code_generator_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+) (_rob_code_generator_8cpp_source.tex [84] [85]) (_rob_path_editor_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--17
+
+ []
+
+[86]) (_rob_path_editor_8cpp_source.tex [87]) (_segment_approximator_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+) (_segment_approximator_8cpp_source.tex [88]) [89] [90
+
+] (refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
- [23
+ [91
 
 
+]
+[92] [93] [94
 
-
-])
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(refman.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+]) (refman.aux)
 
 Package rerunfilecheck Warning: File `refman.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `refman.out':
-(rerunfilecheck)             Before: 767173478927171FA1390B5AD1C4E598;1803
-(rerunfilecheck)             After:  D73249A373DE21449BEA873BCA7AC5C4;9221.
+(rerunfilecheck)             Before: 5CDD2DFFA98D653DAC9AD5BC59C7CB7A;53430
+(rerunfilecheck)             After:  E3B23D94CAE221FB76DB7F48CF4C00D5;53422.
  ) 
 Here is how much of TeX's memory you used:
- 19313 strings out of 478582
- 326331 string characters out of 2844345
- 638258 words of memory out of 3000000
- 36910 multiletter control sequences out of 15000+600000
- 525857 words of font info for 98 fonts, out of 8000000 for 9000
+ 21632 strings out of 478582
+ 392780 string characters out of 2844345
+ 702233 words of memory out of 3000000
+ 37419 multiletter control sequences out of 15000+600000
+ 526150 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,117p,463b,589s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,16n,117p,1978b,717s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmmi8.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fo
-nts/type1/urw/courier/ucrb8a.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/
-fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/anche/AppData/Local/Programs/MiKTe
-X/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/anche/AppData/Local/Programs/Mi
-KTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/anche/AppData/Local/Programs
-/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/anche/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/anche/AppData/Local/P
-rograms/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (25 pages, 228982 bytes).
+1/public/amsfonts/cm/cmsy7.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/anche/AppData/Local/Programs/M
+iKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/anche/AppData/Local/Programs
+/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/anche/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/anche/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/anche/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/anche/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/anche/AppData
+/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (104 pages, 1160341 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 190 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5766 PDF objects out of 6186 (max. 8388607)
+ 1933 named destinations out of 2073 (max. 500000)
+ 2096 words of extra memory for PDF output out of 10000 (max. 10000000)
 
