@@ -7,6 +7,7 @@
 #include "./header/RobCodeGenerator.h"
 #include "./header/Point3D.h"
 
+/* CRobCodeGenerator mit 0 initialiseren */
 CRobCodeGenerator::CRobCodeGenerator(void)
 {
 	speed = 0;
@@ -17,6 +18,7 @@ CRobCodeGenerator::CRobCodeGenerator(void)
 	C = 0;
 }
 
+/* CRobCodeGenerator mit Uebergabewerten initialisieren */
 CRobCodeGenerator::CRobCodeGenerator(double Speed, bool SpeedManual, bool OrientationManual, tuple<double, double, double> angles)
 {
 	speed = Speed;
@@ -50,14 +52,14 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 		throw exception(msg.c_str());
 	}
 
-	filename.erase(filename.end()-4,filename.end());
-	fprintf(fid, "DEF %s \n", filename.c_str());
+	filename.erase(filename.end()-4,filename.end());		// löscht .src
+	fprintf(fid, "DEF %s \n", filename.c_str());			// DEF in file schreiben
 
-	fputs("PTP $POS_ACT\n", fid);
+	fputs("PTP $POS_ACT\n", fid);							// PTP zur aktuellen Position in file schreiben
 
 	if (speedManual) // If the speed is set to manual, it will be defined once at the beginning of the file
 	{
-		fprintf(fid, "$VEL.CP = %f\n", speed);
+		fprintf(fid, "$VEL.CP = %f\n", speed);		// Geschwindigkeit ein file schreiben
 	}
 
 	for (size_t s = 0; s < points.size(); s++)
@@ -75,7 +77,6 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)
 {
 	COutputPoint3D p;
-	CInputPoint3D  pIn;
 	double timePrev = 1;
 
 	for (size_t s = 0; s < path.size(); s++) // Für jeden Punkt in dem Vector
@@ -83,7 +84,7 @@ void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)
 		p.set(path[s].getX(), path[s].getY(), path[s].getZ());
 		if (speedManual)
 		{
-			if (speed > MAX_SPEED) //Wenn maximale Geschwindigkeit �berschritten wird, Geschwindigkeit begrenzen
+			if (speed > MAX_SPEED) //Wenn maximale Geschwindigkeit ueberschritten wird, Geschwindigkeit begrenzen
 				speed = MAX_SPEED;
 		}
 		else
