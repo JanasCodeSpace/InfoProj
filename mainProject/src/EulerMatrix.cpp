@@ -125,6 +125,7 @@ tuple<double , double , double> CEulerMatrix::calculateAngels(void)
     b = b * 180 / M_PI;
     c = c * 180 / M_PI;
 
+
     return make_tuple(a, b, c);     // Rückgabe der Winkel
 }
 

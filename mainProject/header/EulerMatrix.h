@@ -74,5 +74,6 @@ private:
 	* Gespeicherte Euler Matrix
 	*/
 	float eulerMatrix[3][3];
+
 };
 
