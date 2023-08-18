@@ -31,7 +31,7 @@ CRobCodeGenerator::~CRobCodeGenerator(void)
 {
 }
 
-void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filename)
+void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& path, string filepath, string filename)
 {
 	postProcessing(points); // Calculates all the necessary values
 
