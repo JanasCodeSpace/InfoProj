@@ -120,6 +120,11 @@ tuple<double , double , double> CEulerMatrix::calculateAngels(void)
 
     c = atan2(sin_c, cos_c);
 
+    /* Bogenmass in Gradmass umrechnen */
+    a = a * 180 / M_PI;
+    b = b * 180 / M_PI;
+    c = c * 180 / M_PI;
+
     return make_tuple(a, b, c);     // Rückgabe der Winkel
 }
 

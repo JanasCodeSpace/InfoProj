@@ -7,6 +7,8 @@
 #include <tuple>
 #include <cmath>
 
+#define _USE_MATH_DEFINES
+
 using namespace std;
 
 #pragma once
