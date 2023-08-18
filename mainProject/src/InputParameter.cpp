@@ -23,12 +23,12 @@ CInputParameter::CInputParameter(double initSpeed, bool initSpeedManual, bool in
 /* CInputParameter mit 0 initialisieren */
 CInputParameter::CInputParameter(void)
 {
-	speed = 1;
+	speed = 0.1;
 	A = 0;
-	B = 0;
+	B = 75;
 	C = 0;
 	speedManual = true,
-	orientationManual = false;
+	orientationManual = true;
 
 }
 

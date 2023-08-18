@@ -55,15 +55,16 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 
 	if (speedManual) // If the speed is set to manual, it will be defined once at the beginning of the file
 	{
-		fprintf(fid, "&VEL.CP %f\n", speed);
+		fprintf(fid, "$VEL.CP %f\n", speed);
 	}
 
 	for (size_t s = 0; s < points.size(); s++)
 	{
 		if (!speedManual) // If the speed is calculated it needs to be before every LIN command
 			fprintf(fid, "&VEL.CP %f\n", (float)processedPath[s].getSpeed());
-		fprintf(fid, "LIN {X %f, Y %f, Z %f, A %f, B %f, C %f}\n", processedPath[s].getX(), processedPath[s].getY(), processedPath[s].getZ(),
-			processedPath[s].getA(), processedPath[s].getB(), processedPath[s].getC());
+		fprintf(fid, "LIN {X %f, Y %f, Z %f, A %f, B %f, C %f}\n", round(processedPath[s].getX() * 10.0) / 10.0, round(processedPath[s].getY() * 10.0) / 10.0, 
+			round(processedPath[s].getZ() * 10.0) / 10.0, round(processedPath[s].getA() * 10.0) / 10.0, round(processedPath[s].getB() * 10.0) / 10.0, 
+			round(processedPath[s].getC() * 10.0) / 10.0);
 	}
 
 	fputs("END", fid);
