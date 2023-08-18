@@ -31,7 +31,7 @@ CRobCodeGenerator::~CRobCodeGenerator(void)
 {
 }
 
-void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& path, string filepath, string filename)
+void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filepath, string filename)
 {
 	postProcessing(points); // Calculates all the necessary values
 
@@ -39,7 +39,9 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& path, string file
 	
 	FILE* fid;
 
-	if ((err = fopen_s(&fid, filename.c_str(), "w")) != 0) // Errorhandling for File opening
+	string fullPath = filepath + "/" + filename;
+
+	if ((err = fopen_s(&fid, fullPath.c_str(), "w")) != 0) // Errorhandling for File opening
 	{ 
 		string msg = "Open file: ";
 		msg += filename;

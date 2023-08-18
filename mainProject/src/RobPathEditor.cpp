@@ -90,7 +90,7 @@ int main()
 
 		CRobCodeGenerator codeGenerator(inputParameter.getSpeed(), inputParameter.getSpeedManual(),
 			inputParameter.getOrientationManual(), inputParameter.getAngles());
-		codeGenerator.generateRobCode(pathBuilder.getPath(), loggingPath + "/robCode.src");
+		codeGenerator.generateRobCode(pathBuilder.getPath(), loggingPath, "robCode.src");
 	
 		float elapsed = (float)(clock() - start) / CLOCKS_PER_SEC;
 	}

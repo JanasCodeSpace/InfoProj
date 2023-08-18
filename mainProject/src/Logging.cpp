@@ -44,23 +44,12 @@ void CLogging::logData(vector<list<CInputPoint3D>>& sourcePath)
 		return;
 	}
 
-	/* Schreiben des ersten Null-Punktes */
-	fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", 
-		(double)0, (double)0, (double)0, (double)0, (float)0, (float)0, (float)0,
-		(float)0, (float)0, (float)0, (float)0, (float)0, (float)0);
-
 	for (size_t s = 0; s < sourcePath.size(); s++) //for all segments
 	{
 		list<CInputPoint3D>::iterator itr = sourcePath[s].begin();
 
 		tmpEuler = itr->getEulerMatrix();
 		tmpEuler.getMatrix(dummyMatrix);
-		/*
-		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)itr->getTime(), (double)itr->getX(), (double)itr->getY(), (double)itr->getZ(),
-			dummyMatrix[0][0], dummyMatrix[0][1], dummyMatrix[0][2], dummyMatrix[1][0],
-			dummyMatrix[1][1], dummyMatrix[1][2], dummyMatrix[2][0], dummyMatrix[2][1],
-			dummyMatrix[2][2]);
-*/
 
 		/* Ausgeben der Punkte mit dummyMatrix */
 		for (; itr != sourcePath[s].end(); itr++) //for all points in the segment
@@ -72,17 +61,7 @@ void CLogging::logData(vector<list<CInputPoint3D>>& sourcePath)
 		}
 
 		itr--;
-		/*
-		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)itr->getTime(), (double)itr->getX(), (double)itr->getY(), (double)itr->getZ(),
-			dummyMatrix[0][0], dummyMatrix[0][1], dummyMatrix[0][2], dummyMatrix[1][0],
-			dummyMatrix[1][1], dummyMatrix[1][2], dummyMatrix[2][0], dummyMatrix[2][1],
-			dummyMatrix[2][2]);*/
 	}
-
-	/* Schreiben des Endpunktes */
-	fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n",
-		(double)0, (double)0, (double)0, (double)0, (float)0, (float)0, (float)0,
-		(float)0, (float)0, (float)0, (float)0, (float)0, (float)0);
 }
 
 void CLogging::logData(vector<CInputPoint3D>& sourcePath)
@@ -101,11 +80,6 @@ void CLogging::logData(vector<CInputPoint3D>& sourcePath)
 		return;
 	}
 
-	/* Schreiben des ersten Null-Punktes */
-	fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n",
-		(double)0, (double)0, (double)0, (double)0, (float)0, (float)0, (float)0,
-		(float)0, (float)0, (float)0, (float)0, (float)0, (float)0);
-
 	/* Ausgeben der Punkte mit dummyMatrix */
 	for (size_t s = 0; s < sourcePath.size(); s++) //for all points in the vector
 	{
@@ -117,9 +91,4 @@ void CLogging::logData(vector<CInputPoint3D>& sourcePath)
 			dummyMatrix[1][0], dummyMatrix[1][1], dummyMatrix[1][2],
 			dummyMatrix[2][0], dummyMatrix[2][1], dummyMatrix[2][2]);
 	}
-
-	/* Schreiben des Endpunktes */
-	fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n",
-		(double)0, (double)0, (double)0, (double)0, (float)0, (float)0, (float)0,
-		(float)0, (float)0, (float)0, (float)0, (float)0, (float)0);
 }

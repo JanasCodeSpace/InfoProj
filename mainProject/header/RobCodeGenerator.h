@@ -52,7 +52,7 @@ public:
 	* @param vector<CInputPoint3D>& path
 	* @param string filename
 	*/
-	void generateRobCode(vector<CInputPoint3D>& path, string filename);
+	void generateRobCode(vector<CInputPoint3D>& path, string filepath, string filename);
 	/**
 	* Integration der Manuellen Eingabedaten in die eingelesenen und bearbeiteten Daten
 	* Hier werden calculateSpeed und calculateAngles aufgerufen.
