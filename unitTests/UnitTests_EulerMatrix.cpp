@@ -107,27 +107,15 @@ namespace EulerMatrix
             std::tuple<double, double, double> calculatedAngles = eulerMatrix.calculateAngels();
 
             double epsilon = 0.000001; // Toleranz für Gleitkommavergleich
-            //double test = std::get<0>(calculatedAngles);
-
-            /*
+            
             Assert::IsTrue(abs(expectedA - std::get<0>(calculatedAngles)) < epsilon,
                 L"A stimmt nicht überein");
             Assert::IsTrue(abs(expectedB - std::get<1>(calculatedAngles)) < epsilon,
                 L"B stimmt nicht überein");
             Assert::IsTrue(abs(expectedC - std::get<2>(calculatedAngles)) < epsilon,
                 L"C stimmt nicht überein");
-            */
-            Assert::AreEqual(expectedA, std::get<0>(calculatedAngles));
-
         }
 
-        TEST_METHOD(test)
-        {
-            double test1 = 0.223123;
-            double test2 = 0.223123;
-
-            Assert::AreEqual(test1, test2);
-        }
         TEST_METHOD(GetEulerMatrix)
         {
             CEulerMatrix eulerMatrix1;

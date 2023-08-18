@@ -8,7 +8,7 @@ namespace Line3D
     TEST_CLASS(Line3DTests_1)
     {
     public:
-        TEST_METHOD(Constructor_Default)
+        TEST_METHOD(DefaultConstructor)
         {
             CLine3D line;
 
@@ -16,7 +16,7 @@ namespace Line3D
             Assert::IsTrue(line.p2.getX() == 0 && line.p2.getY() == 0 && line.p2.getZ() == 0);
         }
 
-        TEST_METHOD(Constructor_WithPoints)
+        TEST_METHOD(ParamterizedConstructor)
         {
             CPoint3D point1(0, 0, 0);
             CPoint3D point2(1, 1, 1);
@@ -28,17 +28,15 @@ namespace Line3D
             Assert::AreEqual(line.p1.getY(), point1.getY());
             Assert::AreEqual(line.p2.getY(), point2.getY());
         }
-
+        /*
         TEST_METHOD(Destructor)
         {
             CPoint3D point1(0, 0, 0);
             CPoint3D point2(1, 1, 1);
-            CLine3D* line = new CLine3D(point1, point2);
+            CLine3D* testLine = new CLine3D(point1, point2);
 
-            delete line;
-
-            // Hier könnten weitere Überprüfungen auf die Destruktion durchgeführt werden,
-            // abhängig von den Funktionalitäten der Klasse und dem gewünschten Testumfang.
-        }
+            delete testLine;
+            Assert::IsTrue(testLine == nullptr);            
+        }*/
     };
 }

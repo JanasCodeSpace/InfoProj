@@ -77,21 +77,54 @@ namespace InputParameter
 
             Assert::IsTrue(!path.empty(), L"Leerer Pfad");
 
+            // Überprüfung der ersten Eingabedatenzeile
+            float dummyMatrix[3][3] = {
+                                            {-0.130535, -0.984082, 0.120599},
+                                            {-0.977709, 0.147948, 0.148988},
+                                            {-0.164459, -0.098463, -0.981457}
+            };
+            float testMatrix[3][3];
+            CInputPoint3D inputPoint3D;
+            double timestamp = 13261.420898;
+            double x = 1021.710788;
+            double y = -547.198540;
+            double z = 632.801115; 
+            CEulerMatrix eulerMatrix(dummyMatrix);
             int listIndex = 0;
-            std::list<CInputPoint3D>& targetList = path[listIndex];
-            std::advance(targetList.begin(), path.size());
+            int elementIndex = 0;
 
+            inputPoint3D.setPoint(timestamp, x, y, z, eulerMatrix);
+            list<CInputPoint3D>& targetList = path[listIndex];            
+            auto elementIter = targetList.begin();
+            advance(elementIter, elementIndex);
+            CInputPoint3D testInputPoint3D = *elementIter;
 
-
-
+            Assert::AreEqual(inputPoint3D.getTime(), testInputPoint3D.getTime());
+            Assert::AreEqual(inputPoint3D.getX(), testInputPoint3D.getX());
+            Assert::AreEqual(inputPoint3D.getY(), testInputPoint3D.getY());
+            Assert::AreEqual(inputPoint3D.getZ(), testInputPoint3D.getZ());
+            eulerMatrix.getMatrix(testMatrix);
+            for (int i = 0; i < 3; i++)
+            {
+                for (int m = 0; m < 3; m++)
+                {
+                    Assert::AreEqual(testMatrix[i][m], dummyMatrix[i][m]);
+                }
+            }
         }
         TEST_METHOD(DetectJump)
         {
             CInputParameter inputParam;
             CEulerMatrix Euler;
-            Assert::IsFalse(inputParam.detectJump(CInputPoint3D(1.0, 2.0, 3.0, 0.1, Euler), 0.0, 0.0, 0.0));
-            Assert::IsFalse(inputParam.detectJump(CInputPoint3D(1.0, 1.0, 1.0, 0.2, Euler), 0.0, 0.0, 0.0));
-            
+            CInputPoint3D p1(1.0, 2.0, 3.0, 0.1, Euler);
+            CInputPoint3D p2(2.0, 1.0, 1.0, 0.2, Euler);
+            CInputPoint3D p3(3.0, 200.0, 1.0, 0.2, Euler);
+            CInputPoint3D p4(4.0, 30.0, 1.0, 340.2, Euler);
+
+            Assert::IsFalse(inputParam.detectJump(p1, 0.0, 0.0, 0.0));
+            Assert::IsFalse(inputParam.detectJump(p2, 0.0, 0.0, 0.0));
+            Assert::IsTrue(inputParam.detectJump(p3, 0.0, 0.0, 0.0));
+            Assert::IsTrue(inputParam.detectJump(p4, 0.0, 0.0, 0.0));            
         }
     };
 }
