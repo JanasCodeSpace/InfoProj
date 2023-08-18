@@ -22,46 +22,55 @@ void CSegmentApproximator::approx(const vector<list<CInputPoint3D>>& segments, C
 
 	segmentsApprox = segments;
 
+	/* Douglas Peucker für Segmente aufrufen*/
 	for (size_t s = 0; s < segments.size(); s++)
 	{
 		douglasPeuckerRecursive(segmentsApprox[s], segmentsApprox[s].begin(), --(segmentsApprox[s].end()));
 	}
+
+	/*  Logging der Daten*/
 	log.setStep(3);
 	log.logData(segmentsApprox);
 }
 
 void CSegmentApproximator::setmaxDistance(double maxDistanceSource)
 {
-	maxDistance = maxDistanceSource;
+	maxDistance = maxDistanceSource;		// setze maxDistance
 }
 
 double CSegmentApproximator::getmaxDistance()
 {
-	return maxDistance;
+	return maxDistance;		// Rueckgabe von maxDistance
 }
 
 vector<list<CInputPoint3D>>& CSegmentApproximator::getSegmentsApproxVector()
 {
-	return segmentsApprox;
+	return segmentsApprox;		// Rueckgabe der Segmente
 }
 
 //TODO: Kommentar
 void CSegmentApproximator::douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr)
 {
-	if (segment.size() < 3) return;
-	if (distance(startItr, endItr) == 2) return;
-	CInputPoint3D pStart; CInputPoint3D pEnd;
+	if (segment.size() < 3) return;  // min Größe pro Seg 3
+	if (distance(startItr, endItr) == 2) return;		// Zeigerabstand == 2
+	CInputPoint3D pStart; CInputPoint3D pEnd;		// Variablen deklarieren
+
+
+	/* Startpunkt setzen */
 	pStart.setX(startItr->getX()); pStart.setY(startItr->getY()); pStart.setZ(startItr->getZ());
 	pStart.setTime(startItr->getTime());
 	pStart.setEulerMatrix(startItr->getEulerMatrix());
 
+	/* Endpunkt setzen */
 	pEnd.setX(endItr->getX()); pEnd.setY(endItr->getY()); pEnd.setZ(endItr->getZ());
 	pEnd.setTime(endItr->getTime());
 	pEnd.setEulerMatrix(endItr->getEulerMatrix());
 
-	double dist = 0.0, maxDist = 0.0;
-	std::list<CInputPoint3D>::iterator maxItr, itr;
+	double dist = 0.0, maxDist = 0.0;					// dist und maxDist initialisieren 
+	std::list<CInputPoint3D>::iterator maxItr, itr;		// Zeiger bilden
 
+
+	/* am weitesten Entfernten Punkt suchen */
 	for (itr = startItr; itr != endItr; itr++)
 	{
 		CLine3D line = CLine3D(pStart, pEnd);
@@ -75,10 +84,11 @@ void CSegmentApproximator::douglasPeuckerRecursive(list<CInputPoint3D>& segment,
 
 	if (maxDist <= maxDistance) {
 
-		segment.erase((++startItr), endItr);
+		segment.erase((++startItr), endItr);		// Punkt löschen
 		return;
 	}
 
+	/*  Douglas Peucker erneut aufrufen */
 	douglasPeuckerRecursive(segment, startItr, maxItr);
 	douglasPeuckerRecursive(segment, maxItr, endItr);
 }

@@ -78,7 +78,7 @@ int main()
 		// Douglas-Peuker Algorithm
 
 		CSegmentApproximator segmentApproximator;
-		segmentApproximator.setmaxDistance(0.5);
+		segmentApproximator.setmaxDistance(1.5);
 		segmentApproximator.approx(meanFilter.getPath(), logging);
 
 		// Puts the Segments together to one path
@@ -90,7 +90,7 @@ int main()
 
 		CRobCodeGenerator codeGenerator(inputParameter.getSpeed(), inputParameter.getSpeedManual(),
 			inputParameter.getOrientationManual(), inputParameter.getAngles());
-		codeGenerator.generateRobCode(pathBuilder.getPath(), loggingPath + "/robCode.src");
+		codeGenerator.generateRobCode(pathBuilder.getPath(), loggingPath, "robCode.src");
 	
 		float elapsed = (float)(clock() - start) / CLOCKS_PER_SEC;
 	}
