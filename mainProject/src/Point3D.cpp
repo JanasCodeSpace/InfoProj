@@ -9,14 +9,15 @@
 #include <math.h>
 
 
-/* initialisieren des Punktes */
+/* initialisieren des Punktes mit 0-Werten */
 CPoint3D::CPoint3D(void)
 {
- 	x = 0;
+	x = 0;
 	y = 0;
 	z = 0;
 }
 
+/* initialiseren des Punktes mit Koordinaten */
 CPoint3D::CPoint3D(double X, double Y, double Z)
 {
 	x = X;
@@ -30,44 +31,46 @@ CPoint3D::~CPoint3D(void)
 
 double CPoint3D::getX(void)
 {
-	return x;
+	return x;	// X-Koordinate zurück geben
 }
 
 double CPoint3D::getY(void)
 {
-	return y;
+	return y;	// Y-Koordinate zurück geben
 }
 
 double CPoint3D::getZ(void)
 {
-	return z;
+	return z;	// Z-Koordinate zurück geben
 }
 
 void CPoint3D::setX(double X)
 {
-	x = X;
+	x = X;	// X-Koordinate setzen
 }
 
 void CPoint3D::setY(double Y)
 {
-	y = Y;
+	y = Y;	// Y-Koordinate setzen
 }
 
 void CPoint3D::setZ(double Z)
 {
-	z = Z;
+	z = Z;	// Z-Koordinate setzen
 }
 
+/* X-, Y- und Z-Koordinate setzen */
 void CPoint3D::set(double X, double Y, double Z)
 {
-	x = X;
-	y = Y;
-	z = Z;
-}
+	x = X;	// X-Koordinate setzen
+	y = Y;	// Y-Koordinate setzen
+	z = Z;	// Z-Koordinate setzen
+}	
 
+/* Distanz zwischen Punkt und übergebenen Punkt berechnen */
 double CPoint3D::distanceTo(CPoint3D point)
 {
-	return sqrt(pow((double)(x - (double)point.getX()), 2) + pow((double)(y - (double)point.getY()), 2) + pow((double)(z - (double)point.getZ()), 2));	// Pythagoras 3D
+	return sqrt(pow((double)(x - (double)point.getX()), 2) + pow((double)(y - (double)point.getY()), 2) + pow((double)(z - (double)point.getZ()), 2));	//  Pythagoras 3D
 }
 
 double CPoint3D::distanceTo(CLine3D line)
@@ -106,9 +109,10 @@ double CPoint3D::distanceTo(CLine3D line)
 
 CInputPoint3D::CInputPoint3D(void) : CPoint3D()
 {
-	timestamp = 0;
+	timestamp = 0;		// Zeitstempel mit 0 initialisieren
 }
 
+/* Initialisieren des Punktes mit Parameter */
 CInputPoint3D::CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)
 {
 	x = X;
@@ -116,7 +120,6 @@ CInputPoint3D::CInputPoint3D(double X, double Y, double Z, double Timestamp, CEu
 	z = Z;
 	timestamp = Timestamp;
 	orientationMatrix = Matrix;
-
 }
 
 CInputPoint3D::~CInputPoint3D(void)
@@ -125,34 +128,34 @@ CInputPoint3D::~CInputPoint3D(void)
 
 void CInputPoint3D::setEulerMatrix(CEulerMatrix orientation)
 {
-	orientationMatrix = orientation;
+	orientationMatrix = orientation;	// EulerMatrix setzen
 }
 
 
 void CInputPoint3D::setPoint(double time, double X, double Y, double Z, CEulerMatrix orientation)
 {
-	setTime(time);
-	set(X, Y, Z);
-	setEulerMatrix(orientation);
+	setTime(time);	// Zeitstempel setzen
+	set(X, Y, Z);	// setze Punkt-Koordinaten
+	setEulerMatrix(orientation); // EulerMatrix setzen
 }
 
 void CInputPoint3D::setTime(double time)
 {
-	timestamp = time;
+	timestamp = time;	// Zeitstempel setzen
 }
 
 CEulerMatrix CInputPoint3D::getEulerMatrix()
 {
-	return orientationMatrix;
+	return orientationMatrix;	// Rückgabe der EulerMatrix
 }
 
 double CInputPoint3D::getTime()
 {
-	return timestamp;
+	return timestamp;		// Rückgabe des Zeitstempel
 }
 
 // OutputPoint3D
-
+/* Punkt mit 0 initialisieren */
 COutputPoint3D::COutputPoint3D(void) : CPoint3D()
 {
 	speed = 0;
@@ -161,6 +164,7 @@ COutputPoint3D::COutputPoint3D(void) : CPoint3D()
 	c = 0;
 }
 
+/* Punkt mit Parameter initialisieren*/
 COutputPoint3D::COutputPoint3D(double Speed, double X, double Y, double Z, double A, double B, double C)
 {
 	speed = Speed;
@@ -179,40 +183,40 @@ COutputPoint3D::~COutputPoint3D(void)
 
 double COutputPoint3D::getA(void)
 {
-	return a;
+	return a;	// Rückgabe Winkel alpha
 }
 
 double COutputPoint3D::getB(void)
 {
-	return b;
+	return b;	// Rückgabe Winkel beta
 }
 
 double COutputPoint3D::getC(void)
 {
-	return c;
+	return c;	// Rückgabe Winkel gamma
 }
 
 double COutputPoint3D::getSpeed(void)
 {
-	return speed;
+	return speed;	// Rückgabe Geschwindigkeit
 }
 
 void COutputPoint3D::setA(double A)
 {
-	a = A;
+	a = A;		// setze Winkel alpha
 }
 
 void COutputPoint3D::setB(double B)
 {
-	b = B;
+	b = B;		// setze Winkel beta
 }
 
 void COutputPoint3D::setC(double C)
 {
-	c = C;
+	c = C;		// setze Winkel gamma
 }
 
 void COutputPoint3D::setSpeed(double Speed)
 {
-	speed = Speed;
+	speed = Speed;		// setze Geschwindigkeit
 }
