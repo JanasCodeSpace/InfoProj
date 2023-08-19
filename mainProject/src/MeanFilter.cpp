@@ -4,8 +4,8 @@
  * @brief Source File gleitender Mittelwertfilter
  */
 
-#include "./header/MeanFilter.h"
-#include "./header/Logging.h"
+#include "../header/MeanFilter.h"
+#include "../header/Logging.h"
 #include <math.h>
 
 CMeanFilter::CMeanFilter()

@@ -4,7 +4,7 @@
  * @brief Source File Segmente zu Pfad
  */
 
-#include "./header/PathBuilder.h"
+#include "../header/PathBuilder.h"
 
 CPathBuilder::CPathBuilder(void)
 {

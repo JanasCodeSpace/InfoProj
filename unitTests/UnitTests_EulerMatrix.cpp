@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "../mainProject/header/EulerMatrix.h"
+#include <math.h>
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace EulerMatrix
@@ -100,13 +102,13 @@ namespace EulerMatrix
             };
             CEulerMatrix eulerMatrix(inputMatrix);
 
-            double expectedA = 0.523611;
-            double expectedB = 0.0;
-            double expectedC = 0.0;
+            double expectedA = 0.523611 * 180 / M_PI;
+            double expectedB = 0.0 * 180 / M_PI;
+            double expectedC = 0.0 * 180 / M_PI;
 
             std::tuple<double, double, double> calculatedAngles = eulerMatrix.calculateAngels();
 
-            double epsilon = 0.000001; // Toleranz für Gleitkommavergleich
+            double epsilon = 0.0001; // Toleranz für Gleitkommavergleich
             
             Assert::IsTrue(abs(expectedA - std::get<0>(calculatedAngles)) < epsilon,
                 L"A stimmt nicht überein");

@@ -8,25 +8,30 @@ namespace MeanFilter
     TEST_CLASS(MeanFilterTests_1)
     {
     public:
-        TEST_METHOD(Constructor_Default)
+        TEST_METHOD(DefaultConstructor)
         {
             CMeanFilter filter;
             Assert::AreEqual(3, filter.getWindowSize());
         }
 
-        TEST_METHOD(Constructor_WithWindowSize)
+        TEST_METHOD(ParamterizedConstructor)
         {
             int windowSize = 5;
             CMeanFilter filter(windowSize);
             Assert::AreEqual(windowSize, filter.getWindowSize());
         }
 
-        TEST_METHOD(SetWindowSize)
+        TEST_METHOD(SetterAndGetter)
         {
             CMeanFilter filter;
             int windowSize = 7;
             filter.setWindowSize(windowSize);
             Assert::AreEqual(windowSize, filter.getWindowSize());
+        }
+        TEST_METHOD(Mean)
+        {
+            CMeanFilter filter;
+
         }
 
         TEST_METHOD(GetPath)

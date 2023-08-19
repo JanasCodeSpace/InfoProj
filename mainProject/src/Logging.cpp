@@ -4,7 +4,7 @@
  * @brief Source File Logging
  */
 
-#include "header/Logging.h"
+#include "../header/Logging.h"
 
 /* Step mit 0 initialisiren */
 CLogging::CLogging(void)

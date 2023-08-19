@@ -1,4 +1,4 @@
-#include "./header/GUI.h"
+#include "../header/GUI.h"
 
 CGUI::CGUI()
 {}

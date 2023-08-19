@@ -4,9 +4,9 @@
  * @brief Source File Daten Einlesen
  */
 
-#include "./header/InputParameter.h"
-#include "./header/Point3D.h"
-#include "./header/EulerMatrix.h"
+#include "../header/InputParameter.h"
+#include "../header/Point3D.h"
+#include "../header/EulerMatrix.h"
 
 /* CInputParamameter mir Übergabewerten initialisieren */ 
 CInputParameter::CInputParameter(double initSpeed, bool initSpeedManual, bool initOrientationManual, double initA, double initB, double initC)
