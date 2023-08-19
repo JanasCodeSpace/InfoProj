@@ -92,3 +92,30 @@ void CLogging::logData(vector<CInputPoint3D>& sourcePath)
 			dummyMatrix[2][0], dummyMatrix[2][1], dummyMatrix[2][2]);
 	}
 }
+
+void CLogging::logData(vector<COutputPoint3D>& sourcePath)
+{
+	string filepath;			// file Pfad
+	float dummyMatrix[3][3];	// dummyMatrix zum Zwischenspeichern
+	CEulerMatrix tmpEuler;		// CEulerMatrix zum Zwischenspeichern
+
+	filepath = path + "/" + "0" + std::to_string(step) + "_path.csv";
+
+	FILE* fid = fopen(filepath.c_str(), "w");	// file öffnen
+
+	if (fid == NULL)
+	{
+		cerr << "ERROR - Can NOT write to output file!\n";	// Fehler beim file öffnen
+		return;
+	}
+
+	/* Ausgeben der Punkte mit dummyMatrix */
+	for (size_t s = 0; s < sourcePath.size(); s++) //for all points in the vector
+	{
+		tmpEuler.getMatrix(dummyMatrix);
+
+		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)sourcePath[s].getSpeed(),
+			(double)sourcePath[s].getX(), (double)sourcePath[s].getY(), (double)sourcePath[s].getZ(),
+			(double)sourcePath[s].getA(), (double)sourcePath[s].getB(), (double)sourcePath[s].getC());
+	}
+}

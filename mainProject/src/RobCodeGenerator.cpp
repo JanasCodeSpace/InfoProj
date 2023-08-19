@@ -33,9 +33,12 @@ CRobCodeGenerator::~CRobCodeGenerator(void)
 {
 }
 
-void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filepath, string filename)
+void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filepath, string filename, CLogging log)
 {
 	postProcessing(points); // Calculates all the necessary values
+
+	log.setStep(5);
+	log.logData(processedPath);
 
 	errno_t err;
 	
