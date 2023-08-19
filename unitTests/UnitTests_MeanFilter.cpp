@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../RobPathCode/header/MeanFilter.h"
+#include "../RobPathGen/header/MeanFilter.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTests

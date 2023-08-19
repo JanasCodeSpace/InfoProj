@@ -1,7 +1,8 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../RobPathCode/header/Point3D.h"
-#include "../RobPathCode/header/SegmentApproximator.h"
+#include "../RobPathGen/header/Point3D.h"
+#include "../RobPathGen/header/SegmentApproximator.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTests

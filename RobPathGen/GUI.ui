@@ -130,7 +130,10 @@
       <string>Filterlänge gleitender Mittelwert</string>
      </property>
     </widget>
-    <widget class="QWidget" name="widget" native="true">
+    <widget class="QWidget" name="speed_2" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -192,7 +195,7 @@
       </widget>
      </widget>
     </widget>
-    <widget class="QRadioButton" name="radioButton">
+    <widget class="QCheckBox" name="bSpeed">
      <property name="geometry">
       <rect>
        <x>220</x>
@@ -218,7 +221,10 @@
       <string>Manuelle Geschwindigkeit</string>
      </property>
     </widget>
-    <widget class="QWidget" name="widget_2" native="true">
+    <widget class="QWidget" name="orientation" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -317,7 +323,7 @@
      <zorder>label_11</zorder>
      <zorder>label_12</zorder>
     </widget>
-    <widget class="QRadioButton" name="bManOrientation">
+    <widget class="QCheckBox" name="bManOrientation">
      <property name="geometry">
       <rect>
        <x>220</x>
@@ -343,7 +349,7 @@
       <string>Manuelle Ausrichtung</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="bLogging">
+    <widget class="QCheckBox" name="bLogging">
      <property name="geometry">
       <rect>
        <x>210</x>
@@ -369,7 +375,7 @@
       <string>Detailliertes Logging</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="bOffset">
+    <widget class="QCheckBox" name="bOffset">
      <property name="geometry">
       <rect>
        <x>210</x>
@@ -395,7 +401,10 @@
       <string>Offset Einstellen</string>
      </property>
     </widget>
-    <widget class="QWidget" name="widget_3" native="true">
+    <widget class="QWidget" name="offfset" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -490,7 +499,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QDoubleSpinBox" name="dpToleranz">
+    <widget class="QSpinBox" name="dpToleranz">
      <property name="geometry">
       <rect>
        <x>230</x>
@@ -500,7 +509,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QDoubleSpinBox" name="meanLength">
+    <widget class="QSpinBox" name="meanLength">
      <property name="geometry">
       <rect>
        <x>230</x>
@@ -534,31 +543,39 @@
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>460</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuPfad_ndern">
-    <property name="title">
-     <string>Pfad ändern</string>
+   <widget class="QPushButton" name="pushInput">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
     </property>
-    <addaction name="actionEinsgabepfad_ndern"/>
-    <addaction name="actionAusgabepfad_ndern"/>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
    </widget>
-   <addaction name="menuPfad_ndern"/>
+   <widget class="QPushButton" name="pushOutput">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>40</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
   </widget>
-  <action name="actionEinsgabepfad_ndern">
+  <action name="actionEingabepfad">
    <property name="text">
     <string>Eingabepfad ändern</string>
    </property>
   </action>
-  <action name="actionAusgabepfad_ndern">
+  <action name="actionAusgabepfad">
    <property name="text">
     <string>Ausgabepfad ändern</string>
    </property>
