@@ -2,7 +2,8 @@
 
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/qfiledialog.h>
-#include <QtQuick/qquickrendercontrol.h>
+#include <QtWidgets/qmessagebox.h>
+
 #include "InputParameter.h"
 #include "ui_GUI.h"
 #include <string>
@@ -26,6 +27,8 @@ private slots:
     void setMean(void);
     void activateSpeed(void);
     void setSpeed(void);
+    void activateOrientation(void);
+    void setOrientation(void);
 
 private:
     Ui::GUIClass ui;

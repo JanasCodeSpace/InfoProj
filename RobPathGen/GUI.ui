@@ -2,14 +2,6 @@
 <ui version="4.0">
  <class>GUIClass</class>
  <widget class="QMainWindow" name="GUIClass">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>460</width>
-    <height>720</height>
-   </rect>
-  </property>
   <property name="sizePolicy">
    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
     <horstretch>0</horstretch>
@@ -19,7 +11,7 @@
   <property name="minimumSize">
    <size>
     <width>460</width>
-    <height>720</height>
+    <height>530</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -45,7 +37,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>590</y>
+      <y>410</y>
       <width>431</width>
       <height>31</height>
      </rect>
@@ -92,7 +84,7 @@
       <x>10</x>
       <y>80</y>
       <width>431</width>
-      <height>501</height>
+      <height>321</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -349,58 +341,6 @@
       <string>Manuelle Ausrichtung</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="bLogging">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>310</y>
-       <width>89</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>RadioButton</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_14">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>310</y>
-       <width>121</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Detailliertes Logging</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="bOffset">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>340</y>
-       <width>89</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>RadioButton</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_15">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>340</y>
-       <width>91</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Offset Einstellen</string>
-     </property>
-    </widget>
     <widget class="QWidget" name="offfset" native="true">
      <property name="enabled">
       <bool>false</bool>
@@ -413,91 +353,6 @@
        <height>121</height>
       </rect>
      </property>
-     <widget class="QLabel" name="label_19">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>49</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>X</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_20">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>50</y>
-        <width>49</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Y</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_21">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>80</y>
-        <width>49</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Z</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="XOffset">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>20</y>
-        <width>113</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="YOffset">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>50</y>
-        <width>113</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="ZOffset">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>80</y>
-        <width>113</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QFrame" name="frame_4">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>411</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-     </widget>
     </widget>
     <widget class="QSpinBox" name="dpToleranz">
      <property name="geometry">
@@ -519,29 +374,6 @@
       </rect>
      </property>
     </widget>
-   </widget>
-   <widget class="QTextBrowser" name="outputStatus">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>630</y>
-      <width>461</width>
-      <height>71</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QScrollBar" name="verticalScrollBar">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>630</y>
-      <width>20</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
    </widget>
    <widget class="QPushButton" name="pushInput">
     <property name="geometry">
@@ -567,6 +399,32 @@
     </property>
     <property name="text">
      <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>480</y>
+      <width>461</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>431</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
