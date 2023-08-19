@@ -46,7 +46,7 @@
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00047}00047\ }
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00048}\mbox{\hyperlink{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}{00048}}\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ \mbox{\hyperlink{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}{CEulerMatrix::getEulerMatrix}}()}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00049}00049\ \{}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}};}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ EulerMatrix\ zurÃ¼ck\ geben}}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00051}00051\ \}}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00052}00052\ }
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00053}\mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{00053}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{CEulerMatrix::getMatrix}}(\textcolor{keywordtype}{float}\ Matrix[][3])}
@@ -63,45 +63,70 @@
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00064}00064\ \textcolor{comment}{//TODO:\ Kommentar}}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00065}\mbox{\hyperlink{class_c_euler_matrix_aca0eb63d21e774832bfb93cac5ad9466}{00065}}\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ \mbox{\hyperlink{class_c_euler_matrix_aca0eb63d21e774832bfb93cac5ad9466}{CEulerMatrix::angels2mat}}(\textcolor{keywordtype}{double}\ A,\ \textcolor{keywordtype}{double}\ B,\ \textcolor{keywordtype}{double}\ C)}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00066}00066\ \{}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keywordtype}{float}\ Matrix[3][3];}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keywordtype}{float}\ Matrix[3][3];\ \ \ \ \ \textcolor{comment}{//\ DummyMatrix\ erstellen}}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00068}00068\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00069}00069\ \ \ \ \ Matrix[0][0]\ =\ cos(A)\ *\ cos(C)\ -\/\ sin(A)\ *\ cos(B)\ *\ sin(C);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00070}00070\ \ \ \ \ Matrix[0][1]\ =\ -\/cos(A)\ *\ sin(C)\ -\/\ sin(A)\ *\ cos(B)\ *\ cos(C);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00071}00071\ \ \ \ \ Matrix[0][2]\ =\ sin(A)\ *\ sin(B);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00072}00072\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00073}00073\ \ \ \ \ Matrix[1][0]\ =\ sin(A)\ *\ cos(C)\ +\ cos(A)\ *\ cos(B)\ *\ sin(C);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00074}00074\ \ \ \ \ Matrix[1][1]\ =\ -\/sin(A)\ *\ sin(C)\ +\ cos(A)\ *\ cos(B)\ *\ cos(C);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00075}00075\ \ \ \ \ Matrix[1][2]\ =\ -\/cos(A)\ *\ sin(B);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00076}00076\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00077}00077\ \ \ \ \ Matrix[2][0]\ =\ sin(B)\ *\ sin(C);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00078}00078\ \ \ \ \ Matrix[2][1]\ =\ sin(B)\ *\ cos(C);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00079}00079\ \ \ \ \ Matrix[2][2]\ =\ cos(B);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00080}00080\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00081}00081\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ buffer(Matrix);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{keywordflow}{return}\ buffer;}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00083}00083\ \}}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00084}00084\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00085}00085\ \textcolor{comment}{//TODO:\ Kommentar}}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00086}\mbox{\hyperlink{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947}{00086}}\ tuple<double\ ,\ double\ ,\ double>\ \mbox{\hyperlink{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947}{CEulerMatrix::calculateAngels}}(\textcolor{keywordtype}{void})}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00087}00087\ \{}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{keywordtype}{double}\ a,\ b,\ c,\ sin\_a,\ cos\_a,\ sin\_b,\ abs\_cos\_b,\ sin\_c,\ cos\_c;}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00089}00089\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00090}00090\ \ \ \ \ a\ =\ atan2(\mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][0],\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][0]);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{comment}{/*\ Berechnung\ der\ Matrix\ */}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00071}00071\ \ \ \ \ Matrix[0][0]\ =\ cos(A)\ *\ cos(C)\ -\/\ sin(A)\ *\ cos(B)\ *\ sin(C);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00072}00072\ \ \ \ \ Matrix[0][1]\ =\ -\/cos(A)\ *\ sin(C)\ -\/\ sin(A)\ *\ cos(B)\ *\ cos(C);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00073}00073\ \ \ \ \ Matrix[0][2]\ =\ sin(A)\ *\ sin(B);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00075}00075\ \ \ \ \ Matrix[1][0]\ =\ sin(A)\ *\ cos(C)\ +\ cos(A)\ *\ cos(B)\ *\ sin(C);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00076}00076\ \ \ \ \ Matrix[1][1]\ =\ -\/sin(A)\ *\ sin(C)\ +\ cos(A)\ *\ cos(B)\ *\ cos(C);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00077}00077\ \ \ \ \ Matrix[1][2]\ =\ -\/cos(A)\ *\ sin(B);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00079}00079\ \ \ \ \ Matrix[2][0]\ =\ sin(B)\ *\ sin(C);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00080}00080\ \ \ \ \ Matrix[2][1]\ =\ sin(B)\ *\ cos(C);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00081}00081\ \ \ \ \ Matrix[2][2]\ =\ cos(B);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00083}00083\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ buffer(Matrix);\ \ \ \ \ \ \ \ \textcolor{comment}{//\ DummyMatrix\ in\ DummyEulerMatrix\ schreiben}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{keywordflow}{return}\ buffer;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Matrix\ zurÃ¼ck\ geben}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00085}00085\ \}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00087}00087\ \textcolor{comment}{//TODO:\ Kommentar}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00088}\mbox{\hyperlink{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947}{00088}}\ tuple<double\ ,\ double\ ,\ double>\ \mbox{\hyperlink{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947}{CEulerMatrix::calculateAngels}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00089}00089\ \{}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keywordtype}{double}\ a,\ b,\ c,\ sin\_a,\ cos\_a,\ sin\_b,\ abs\_cos\_b,\ sin\_c,\ cos\_c;}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00091}00091\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00092}00092\ \ \ \ \ sin\_a\ =\ sin(a);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00093}00093\ \ \ \ \ cos\_a\ =\ cos(a);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00094}00094\ \ \ \ \ sin\_b\ =\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[2][0]\ *\ -\/1;}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00095}00095\ \ \ \ \ abs\_cos\_b\ =\ cos(a)\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][0]\ +\ sin(a)\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][0];}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00096}00096\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00097}00097\ \ \ \ \ b\ =\ atan2\ (sin\_b,\ abs\_cos\_b);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00098}00098\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00099}00099\ \ \ \ \ sin\_c\ =\ \ sin\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][2]\ -\/\ cos\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][2];}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00100}00100\ \ \ \ \ cos\_c\ =\ -\/sin\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][1]\ +\ cos\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][1];}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00101}00101\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00102}00102\ \ \ \ c\ =\ atan2(sin\_c,\ cos\_c);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00103}00103\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00104}00104\ \ \ \ \textcolor{keywordflow}{return}\ make\_tuple(a,\ b,\ c);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00105}00105\ \}}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00092}00092\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00093}00093\ \textcolor{comment}{\ \ \ \ a\ ==\ Winkel\ Alpha}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00094}00094\ \textcolor{comment}{\ \ \ \ b\ ==\ Winkel\ Beta}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00095}00095\ \textcolor{comment}{\ \ \ \ c\ ==\ Winkel\ Gamma}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00096}00096\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00097}00097\ \textcolor{comment}{\ \ \ \ sin\_a\ ==\ sinus\ alpha}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00098}00098\ \textcolor{comment}{\ \ \ \ cos\_a\ ==\ cosinus\ alpha}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00099}00099\ \textcolor{comment}{\ \ \ \ sin\_b\ ==\ Matrix[2][0]\ *\ -\/1}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00100}00100\ \textcolor{comment}{\ \ \ \ abs\_cos\_b\ ==\ ??}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00101}00101\ \textcolor{comment}{\ \ \ \ sin\_c\ ==\ sinus\ gamma}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00102}00102\ \textcolor{comment}{\ \ \ \ cos\_c\ ==\ cosinus\ gamma}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00103}00103\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00106}00106\ \ \ \ \ \textcolor{comment}{/*\ Berechnung\ von\ alpha*/}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00107}00107\ \ \ \ \ a\ =\ atan2(\mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][0],\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][0]);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00109}00109\ \ \ \ \ \textcolor{comment}{/*\ Berechung\ von\ beta\ */}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00110}00110\ \ \ \ \ sin\_a\ =\ sin(a);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00111}00111\ \ \ \ \ cos\_a\ =\ cos(a);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00112}00112\ \ \ \ \ sin\_b\ =\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[2][0]\ *\ -\/1;}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00113}00113\ \ \ \ \ abs\_cos\_b\ =\ cos(a)\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][0]\ +\ sin(a)\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][0];}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00115}00115\ \ \ \ \ b\ =\ atan2\ (sin\_b,\ abs\_cos\_b);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00117}00117\ \ \ \ \ \textcolor{comment}{/*\ Berechung\ von\ gamma\ */}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00118}00118\ \ \ \ \ sin\_c\ =\ \ sin\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][2]\ -\/\ cos\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][2];}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00119}00119\ \ \ \ \ cos\_c\ =\ -\/sin\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][1]\ +\ cos\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][1];}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00121}00121\ \ \ \ \ c\ =\ atan2(sin\_c,\ cos\_c);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00123}00123\ \ \ \ \ \textcolor{comment}{/*\ Bogenmass\ in\ Gradmass\ umrechnen\ */}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00124}00124\ \ \ \ \ a\ =\ a\ *\ 180\ /\ M\_PI;}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00125}00125\ \ \ \ \ b\ =\ b\ *\ 180\ /\ M\_PI;}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00126}00126\ \ \ \ \ c\ =\ c\ *\ 180\ /\ M\_PI;}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00129}00129\ \ \ \ \ \textcolor{keywordflow}{return}\ make\_tuple(a,\ b,\ c);\ \ \ \ \ \textcolor{comment}{//\ RÃ¼ckgabe\ der\ Winkel}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00130}00130\ \}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8cpp_source_l00131}00131\ }
 
 \end{DoxyCode}

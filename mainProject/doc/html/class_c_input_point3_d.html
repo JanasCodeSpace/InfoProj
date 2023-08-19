@@ -198,14 +198,16 @@ Weitere Geerbte Elemente</h2></td></tr>
 <p>Default Konstruktor. </p>
 <p>Initialisiert des eingelesenen Punktes mit Null </p><dl class="section see"><dt>Siehe auch</dt><dd><a class="el" href="class_c_input_point3_d.html#af04dfe4ec49d9a3c807e6464a860c078" title="Default Konstruktor.">CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)</a> </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00107">107</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>                                 : <a class="code hl_function" href="class_c_point3_d.html#a6361fc5bc936cc8929f6251061c68b00">CPoint3D</a>()</div>
-<div class="line"><span class="lineno">  108</span>{</div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#a5ed7b2fa590b550a2b04d0266208412a">timestamp</a> = 0;</div>
-<div class="line"><span class="lineno">  110</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00110">110</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>                                 : <a class="code hl_function" href="class_c_point3_d.html#a6361fc5bc936cc8929f6251061c68b00">CPoint3D</a>()</div>
+<div class="line"><span class="lineno">  111</span>{</div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#a5ed7b2fa590b550a2b04d0266208412a">timestamp</a> = 0;      <span class="comment">// Zeitstempel mit 0 initialisieren</span></div>
+<div class="line"><span class="lineno">  113</span>}</div>
 <div class="ttc" id="aclass_c_input_point3_d_html_a5ed7b2fa590b550a2b04d0266208412a"><div class="ttname"><a href="class_c_input_point3_d.html#a5ed7b2fa590b550a2b04d0266208412a">CInputPoint3D::timestamp</a></div><div class="ttdeci">double timestamp</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00166">Point3D.h:166</a></div></div>
 <div class="ttc" id="aclass_c_point3_d_html_a6361fc5bc936cc8929f6251061c68b00"><div class="ttname"><a href="class_c_point3_d.html#a6361fc5bc936cc8929f6251061c68b00">CPoint3D::CPoint3D</a></div><div class="ttdeci">CPoint3D(void)</div><div class="ttdoc">Default Konstruktor.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00013">Point3D.cpp:13</a></div></div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00166">timestamp</a>.</p>
+
 </div>
 </div>
 <a id="af04dfe4ec49d9a3c807e6464a860c078" name="af04dfe4ec49d9a3c807e6464a860c078"></a>
@@ -265,20 +267,21 @@ Weitere Geerbte Elemente</h2></td></tr>
 </dl>
 <dl class="section see"><dt>Siehe auch</dt><dd><a class="el" href="class_c_input_point3_d.html#af04dfe4ec49d9a3c807e6464a860c078" title="Default Konstruktor.">CInputPoint3D(double X, double Y, double Z, double Timestamp, CEulerMatrix Matrix)</a> </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00112">112</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> = X;</div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> = Y;</div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> = Z;</div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#a5ed7b2fa590b550a2b04d0266208412a">timestamp</a> = Timestamp;</div>
-<div class="line"><span class="lineno">  118</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#affee074b5c3326cd68329665c19d882d">orientationMatrix</a> = Matrix;</div>
-<div class="line"><span class="lineno">  119</span> </div>
-<div class="line"><span class="lineno">  120</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00116">116</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  117</span>{</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> = X;</div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> = Y;</div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> = Z;</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#a5ed7b2fa590b550a2b04d0266208412a">timestamp</a> = Timestamp;</div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#affee074b5c3326cd68329665c19d882d">orientationMatrix</a> = Matrix;</div>
+<div class="line"><span class="lineno">  123</span>}</div>
 <div class="ttc" id="aclass_c_input_point3_d_html_affee074b5c3326cd68329665c19d882d"><div class="ttname"><a href="class_c_input_point3_d.html#affee074b5c3326cd68329665c19d882d">CInputPoint3D::orientationMatrix</a></div><div class="ttdeci">CEulerMatrix orientationMatrix</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00170">Point3D.h:170</a></div></div>
 <div class="ttc" id="aclass_c_point3_d_html_a207ba5415400672d0129f441c5f2f3b9"><div class="ttname"><a href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">CPoint3D::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00099">Point3D.h:99</a></div></div>
 <div class="ttc" id="aclass_c_point3_d_html_ae49f7fe3b58d674538fc00509e6316ac"><div class="ttname"><a href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">CPoint3D::z</a></div><div class="ttdeci">double z</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00099">Point3D.h:99</a></div></div>
 <div class="ttc" id="aclass_c_point3_d_html_ae5d5fb687ece1bebb535ee5d72509f50"><div class="ttname"><a href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">CPoint3D::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00099">Point3D.h:99</a></div></div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00170">orientationMatrix</a>, <a class="el" href="_point3_d_8h_source.html#l00166">timestamp</a>, <a class="el" href="_point3_d_8h_source.html#l00099">CPoint3D::x</a>, <a class="el" href="_point3_d_8h_source.html#l00099">CPoint3D::y</a> und <a class="el" href="_point3_d_8h_source.html#l00099">CPoint3D::z</a>.</p>
+
 </div>
 </div>
 <a id="a095391c3aeb5fb0433aa76d35457c0b1" name="a095391c3aeb5fb0433aa76d35457c0b1"></a>
@@ -299,9 +302,9 @@ Weitere Geerbte Elemente</h2></td></tr>
 
 <p>Dekonstruktor. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00122">122</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  123</span>{</div>
-<div class="line"><span class="lineno">  124</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00125">125</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
+<div class="line"><span class="lineno">  127</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -324,11 +327,15 @@ Weitere Geerbte Elemente</h2></td></tr>
 <p>Gibt die gespeicherte Eulermatrix zurück. </p>
 <dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="class_c_euler_matrix.html" title="Handling und Berechnung Euler Matrix.">CEulerMatrix</a> </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00144">144</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
-<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_point3_d.html#affee074b5c3326cd68329665c19d882d">orientationMatrix</a>;</div>
-<div class="line"><span class="lineno">  147</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00147">147</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  148</span>{</div>
+<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_point3_d.html#affee074b5c3326cd68329665c19d882d">orientationMatrix</a>;   <span class="comment">// Rückgabe der EulerMatrix</span></div>
+<div class="line"><span class="lineno">  150</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00170">orientationMatrix</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_rob_code_generator_8cpp_source.html#l00129">CRobCodeGenerator::calculateAngles()</a>.</p>
+
 </div>
 </div>
 <a id="a9404d0ef8b0f917903e18f1a70a7da64" name="a9404d0ef8b0f917903e18f1a70a7da64"></a>
@@ -349,11 +356,15 @@ Weitere Geerbte Elemente</h2></td></tr>
 <p>Gibt den Zeitstempel zurück. </p>
 <dl class="section return"><dt>Rückgabe</dt><dd>double Zeitstempel </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00149">149</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  150</span>{</div>
-<div class="line"><span class="lineno">  151</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_point3_d.html#a5ed7b2fa590b550a2b04d0266208412a">timestamp</a>;</div>
-<div class="line"><span class="lineno">  152</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00152">152</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  153</span>{</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_point3_d.html#a5ed7b2fa590b550a2b04d0266208412a">timestamp</a>;       <span class="comment">// Rückgabe des Zeitstempel</span></div>
+<div class="line"><span class="lineno">  155</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00166">timestamp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_rob_code_generator_8cpp_source.html#l00113">CRobCodeGenerator::calculateSpeed()</a>.</p>
+
 </div>
 </div>
 <a id="aa1ffef5d44dbf0f82fea3c6ff25dd1e8" name="aa1ffef5d44dbf0f82fea3c6ff25dd1e8"></a>
@@ -380,11 +391,15 @@ Weitere Geerbte Elemente</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00126">126</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>{</div>
-<div class="line"><span class="lineno">  128</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#affee074b5c3326cd68329665c19d882d">orientationMatrix</a> = orientation;</div>
-<div class="line"><span class="lineno">  129</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00129">129</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>{</div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#affee074b5c3326cd68329665c19d882d">orientationMatrix</a> = orientation;    <span class="comment">// EulerMatrix setzen</span></div>
+<div class="line"><span class="lineno">  132</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00170">orientationMatrix</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_mean_filter_8cpp_source.html#l00052">CMeanFilter::calculateMean()</a>, <a class="el" href="_path_builder_8cpp_source.html#l00023">CPathBuilder::createPath()</a>, <a class="el" href="_segment_approximator_8cpp_source.html#l00052">CSegmentApproximator::douglasPeuckerRecursive()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00135">setPoint()</a>.</p>
+
 </div>
 </div>
 <a id="a71805ac924595c9e4fb977ca21246f6b" name="a71805ac924595c9e4fb977ca21246f6b"></a>
@@ -443,16 +458,20 @@ Weitere Geerbte Elemente</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00132">132</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  133</span>{</div>
-<div class="line"><span class="lineno">  134</span>    <a class="code hl_function" href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">setTime</a>(time);</div>
-<div class="line"><span class="lineno">  135</span>    <a class="code hl_function" href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">set</a>(X, Y, Z);</div>
-<div class="line"><span class="lineno">  136</span>    <a class="code hl_function" href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">setEulerMatrix</a>(orientation);</div>
-<div class="line"><span class="lineno">  137</span>}</div>
-<div class="ttc" id="aclass_c_input_point3_d_html_a64595602198fb39f73b3ba7ca23670fd"><div class="ttname"><a href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">CInputPoint3D::setTime</a></div><div class="ttdeci">void setTime(double time)</div><div class="ttdoc">Setzt den Zeitstempel.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00139">Point3D.cpp:139</a></div></div>
-<div class="ttc" id="aclass_c_input_point3_d_html_aa1ffef5d44dbf0f82fea3c6ff25dd1e8"><div class="ttname"><a href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">CInputPoint3D::setEulerMatrix</a></div><div class="ttdeci">void setEulerMatrix(CEulerMatrix orientation)</div><div class="ttdoc">Setzt die Eulermatrix.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00126">Point3D.cpp:126</a></div></div>
-<div class="ttc" id="aclass_c_point3_d_html_a85934ab180860df1ff2161d14efb98ec"><div class="ttname"><a href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">CPoint3D::set</a></div><div class="ttdeci">void set(double X, double Y, double Z)</div><div class="ttdoc">Setzt X, Y und Z.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00061">Point3D.cpp:61</a></div></div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00135">135</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  136</span>{</div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_function" href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">setTime</a>(time);  <span class="comment">// Zeitstempel setzen</span></div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_function" href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">set</a>(X, Y, Z);   <span class="comment">// setze Punkt-Koordinaten</span></div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_function" href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">setEulerMatrix</a>(orientation); <span class="comment">// EulerMatrix setzen</span></div>
+<div class="line"><span class="lineno">  140</span>}</div>
+<div class="ttc" id="aclass_c_input_point3_d_html_a64595602198fb39f73b3ba7ca23670fd"><div class="ttname"><a href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">CInputPoint3D::setTime</a></div><div class="ttdeci">void setTime(double time)</div><div class="ttdoc">Setzt den Zeitstempel.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00142">Point3D.cpp:142</a></div></div>
+<div class="ttc" id="aclass_c_input_point3_d_html_aa1ffef5d44dbf0f82fea3c6ff25dd1e8"><div class="ttname"><a href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">CInputPoint3D::setEulerMatrix</a></div><div class="ttdeci">void setEulerMatrix(CEulerMatrix orientation)</div><div class="ttdoc">Setzt die Eulermatrix.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00129">Point3D.cpp:129</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_a85934ab180860df1ff2161d14efb98ec"><div class="ttname"><a href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">CPoint3D::set</a></div><div class="ttdeci">void set(double X, double Y, double Z)</div><div class="ttdoc">Setzt X, Y und Z.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00063">Point3D.cpp:63</a></div></div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8cpp_source.html#l00063">CPoint3D::set()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00129">setEulerMatrix()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00142">setTime()</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_input_parameter_8cpp_source.html#l00084">CInputParameter::openFile()</a>.</p>
+
 </div>
 </div>
 <a id="a64595602198fb39f73b3ba7ca23670fd" name="a64595602198fb39f73b3ba7ca23670fd"></a>
@@ -479,11 +498,15 @@ Weitere Geerbte Elemente</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00139">139</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  140</span>{</div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#a5ed7b2fa590b550a2b04d0266208412a">timestamp</a> = time;</div>
-<div class="line"><span class="lineno">  142</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00142">142</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  143</span>{</div>
+<div class="line"><span class="lineno">  144</span>    <a class="code hl_variable" href="class_c_input_point3_d.html#a5ed7b2fa590b550a2b04d0266208412a">timestamp</a> = time;   <span class="comment">// Zeitstempel setzen</span></div>
+<div class="line"><span class="lineno">  145</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00166">timestamp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_mean_filter_8cpp_source.html#l00052">CMeanFilter::calculateMean()</a>, <a class="el" href="_path_builder_8cpp_source.html#l00023">CPathBuilder::createPath()</a>, <a class="el" href="_segment_approximator_8cpp_source.html#l00052">CSegmentApproximator::douglasPeuckerRecursive()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00135">setPoint()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Dokumentation der Datenelemente</h2>
@@ -510,6 +533,8 @@ Weitere Geerbte Elemente</h2></td></tr>
 
 <p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8h_source.html#l00170">170</a> der Datei <a class="el" href="_point3_d_8h_source.html">Point3D.h</a>.</p>
 
+<p class="reference">Wird benutzt von <a class="el" href="_point3_d_8cpp_source.html#l00116">CInputPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00147">getEulerMatrix()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00129">setEulerMatrix()</a>.</p>
+
 </div>
 </div>
 <a id="a5ed7b2fa590b550a2b04d0266208412a" name="a5ed7b2fa590b550a2b04d0266208412a"></a>
@@ -534,6 +559,8 @@ Weitere Geerbte Elemente</h2></td></tr>
 <p>Zeitstempel </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8h_source.html#l00166">166</a> der Datei <a class="el" href="_point3_d_8h_source.html">Point3D.h</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_point3_d_8cpp_source.html#l00116">CInputPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00110">CInputPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00152">getTime()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00142">setTime()</a>.</p>
 
 </div>
 </div>

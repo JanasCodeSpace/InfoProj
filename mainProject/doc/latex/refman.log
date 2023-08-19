@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.4)  10 AUG 2023 23:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.4)  19 AUG 2023 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,6 +578,42 @@ Writing index file refman.idx
 dechar.sty
 Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
 )
+
+! Package newunicodechar Error: ASCII character requested.
+
+See the newunicodechar package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141   \doxynewunicodechar{?}{${}^{-}$}
+                                        % Superscript minus
+Only characters above U+007F may be defined; you asked for
+a plain ASCII character and your definition has been ignored.
+
+
+! Package newunicodechar Error: ASCII character requested.
+
+See the newunicodechar package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142   \doxynewunicodechar{²}{${}^{2}$}
+                                        % Superscript two
+Only characters above U+007F may be defined; you asked for
+a plain ASCII character and your definition has been ignored.
+
+
+! Package newunicodechar Error: ASCII character requested.
+
+See the newunicodechar package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143   \doxynewunicodechar{³}{${}^{3}$}
+                                        % Superscript three
+Only characters above U+007F may be defined; you asked for
+a plain ASCII character and your definition has been ignored.
+
 (C:\Users\anche\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
 
@@ -942,23 +978,9 @@ Kapitel 4.
 (files.tex [7]) [8]
 Kapitel 5.
 (class_c_euler_matrix.tex
-
-! LaTeX Error: Invalid UTF-8 byte sequence (Öf).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \doxysubsubsection*{Öffentliche Methoden}
-                                              
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
 5.
+
 (C:\Users\anche\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
@@ -970,103 +992,12 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 16.
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \doxysubsection{Ausführliche Beschreibung}
-                                               
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Unicode character ï¿½ (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 ...t die Euler Matrix und hat Funktionen fï¿½
-                                                  r Berechnungen mit eben je...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 7.19995pt on input line 51.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 52.
+
 [9
-
-
-! Undefined control sequence.
-\UseRawInputEncoding ...tencodingname \@undefined 
-                                                  \let \DeclareFontEncoding@...
-l.53 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \let 
-l.53 
-     
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \let 
-l.53 
-     
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \let 
-l.53 
-     
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Undefined control sequence.
-\default@M ->\def \accentclass@ 
-                                {7}
-l.53 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \@undefined 
-                       
-l.53 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
@@ -1077,195 +1008,114 @@ Underfull \hbox (badness 10000) detected at line 58
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 82.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 86.
 
-Underfull \hbox (badness 10000) detected at line 93
+Underfull \hbox (badness 10000) detected at line 97
 [][][]
  []
 
 [10]
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 \begin{DoxyReturn}{Rückgabe}
-                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-Underfull \hbox (badness 10000) detected at line 155
+Underfull \hbox (badness 10000) detected at line 163
 [][][]
  []
 
-
-! LaTeX Error: Unicode character ï¿½ (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.156 ...{]} gibt die neu berechnete Matrix zurï¿½
-                                                  ck
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 \begin{DoxyReturn}{Rückgabe}
-                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-Underfull \hbox (badness 10000) detected at line 194
-[][][]
- []
-
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 1
+90.
+(C:\Users\anche\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
 [11]
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.234 \begin{DoxyReturn}{Rückgabe}
-                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-Underfull \hbox (badness 10000) detected at line 234
+Underfull \hbox (badness 10000) detected at line 204
 [][][]
  []
 
 
-! LaTeX Error: Unicode character ï¿½ (U+FFFD)
+Underfull \hbox (badness 10000) detected at line 275
+[][][]
+ []
+
+[12] [13]
+
+! LaTeX Error: Unicode character Âœ (U+009C)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 ...3\mbox{]} gibt gespeicherte Matrix zurï¿½
-                                                  ck
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ï¿½ (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.274 ... mit\ ï¿½bergabewerten\ ï¿½berschreiben}}
+l.363 ...it\ ÃƒÂœbergabewerten\ ÃƒÂ¼berschreiben}}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-
-! LaTeX Error: Unicode character ï¿½ (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.274 ... mit\ ï¿½bergabewerten\ ï¿½berschreiben}}
-                                                  
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-[12]
-
-! LaTeX Error: Invalid UTF-8 byte "FC.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.327 Die Dokumentation fü
-                          r diese Klasse wurde erzeugt aufgrund der Dateien\...
-
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-) (class_c_g_u_i.tex [13]) (class_c_input_parameter.tex [14]
+) (class_c_g_u_i.tex [14]) (class_c_input_parameter.tex [15] [16]
 Underfull \hbox (badness 10000) detected at line 80
 [][][]
  []
 
 
-Overfull \hbox (64.50862pt too wide) in paragraph at lines 81--82
-[][]\T1/phv/m/n/10 : [] 
+Overfull \hbox (60.09875pt too wide) in paragraph at lines 81--82
+[][] 
  []
 
-[15]
-Underfull \hbox (badness 10000) detected at line 125
+
+Underfull \hbox (badness 10000) detected at line 129
 [][][]
  []
 
-[16]
-Underfull \hbox (badness 10000) detected at line 222
+[17] [18]
+Underfull \hbox (badness 10000) detected at line 238
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 267
+Underfull \hbox (badness 10000) detected at line 299
 [][][]
  []
 
-[17] [18] [19] [20]) (class_c_input_point3_d.tex <./class_c_input_point3_d.pdf>
-<class_c_input_point3_d.pdf, id=1814, 501.875pt x 401.5pt>
+[19] [20]
+Overfull \hbox (24.8326pt too wide) in paragraph at lines 444--445
+[]\T1/phv/m/n/10 Benutzt [], [], [], [] und []. 
+ []
+
+[21] [22] [23]) (class_c_input_point3_d.tex <./class_c_input_point3_d.pdf>
+<class_c_input_point3_d.pdf, id=1936, 501.875pt x 401.5pt>
 File: class_c_input_point3_d.pdf Graphic file (type pdf)
 <use class_c_input_point3_d.pdf>
 Package pdftex.def Info: class_c_input_point3_d.pdf  used on input line 15.
 (pdftex.def)             Requested size: 71.12737pt x 56.9055pt.
-[21] [22]
+
+[24] [25]
 Underfull \hbox (badness 10000) detected at line 103
 [][][]
  []
 
-[23]
-Underfull \hbox (badness 10000) detected at line 141
+
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+[26]
+Underfull \hbox (badness 10000) detected at line 200
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 193
+Underfull \hbox (badness 10000) detected at line 232
 [][][]
  []
 
-[24]
-Underfull \hbox (badness 10000) detected at line 217
-[][][]
+[27]
+Overfull \hbox (56.60338pt too wide) in paragraph at lines 286--287
+[]\T1/phv/m/n/10 Wird be-nutzt von [], [], []
  []
 
-[25]) (class_c_line3_d.tex [26]
+[28]
+Overfull \hbox (56.60338pt too wide) in paragraph at lines 364--365
+[]\T1/phv/m/n/10 Wird be-nutzt von [], [], []
+ []
+
+) (class_c_line3_d.tex [29]
 Underfull \hbox (badness 10000) detected at line 50
 [][][]
  []
@@ -1275,116 +1125,111 @@ Underfull \hbox (badness 10000) detected at line 73
 [][][]
  []
 
-[27]) (class_c_logging.tex [28]
+[30]) (class_c_logging.tex [31]
 Underfull \hbox (badness 10000) detected at line 56
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 80
+Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
-[29] [30] [31]) (class_c_mean_filter.tex [32]
+[32] [33] [34]) (class_c_mean_filter.tex [35]
 Underfull \hbox (badness 10000) detected at line 60
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 89
+[36]
+Underfull \hbox (badness 10000) detected at line 146
 [][][]
  []
 
-[33]
-Underfull \hbox (badness 10000) detected at line 141
-[][][]
- []
-
-[34]
-Underfull \hbox (badness 10000) detected at line 202
+[37]
+Underfull \hbox (badness 10000) detected at line 211
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 226
+Underfull \hbox (badness 10000) detected at line 243
 [][][]
  []
 
-[35]) (class_c_output_point3_d.tex [36] <./class_c_output_point3_d.pdf>
-<class_c_output_point3_d.pdf, id=2240, 501.875pt x 365.365pt>
+[38] [39]) (class_c_output_point3_d.tex <./class_c_output_point3_d.pdf>
+<class_c_output_point3_d.pdf, id=2444, 501.875pt x 365.365pt>
 File: class_c_output_point3_d.pdf Graphic file (type pdf)
 <use class_c_output_point3_d.pdf>
 Package pdftex.def Info: class_c_output_point3_d.pdf  used on input line 15.
 (pdftex.def)             Requested size: 78.16505pt x 56.9055pt.
 
-[37]
+[40] [41]
 Underfull \hbox (badness 10000) detected at line 113
 [][][]
  []
 
-[38]
-Underfull \hbox (badness 10000) detected at line 158
+
+Underfull \hbox (badness 10000) detected at line 162
 [][][]
  []
 
-[39]
-Underfull \hbox (badness 10000) detected at line 212
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 236
+[42]
+Underfull \hbox (badness 10000) detected at line 220
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 260
+Underfull \hbox (badness 10000) detected at line 248
+[][][]
+ []
+
+[43]
+Underfull \hbox (badness 10000) detected at line 276
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 284
+Underfull \hbox (badness 10000) detected at line 304
 [][][]
  []
 
-[40] [41] [42]) (class_c_path_builder.tex [43] [44] [45]
+[44] [45]) (class_c_path_builder.tex [46] [47]
+Underfull \hbox (badness 940) in paragraph at lines 131--132
+[]\T1/phv/m/n/10 Benutzt [], [], [], [], [] und
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 147
 [][][]
  []
 
-) (class_c_point3_d.tex <./class_c_point3_d.pdf>
-<class_c_point3_d.pdf, id=2473, 501.875pt x 182.6825pt>
+[48]) (class_c_point3_d.tex <./class_c_point3_d.pdf>
+<class_c_point3_d.pdf, id=2725, 501.875pt x 182.6825pt>
 File: class_c_point3_d.pdf Graphic file (type pdf)
 <use class_c_point3_d.pdf>
 Package pdftex.def Info: class_c_point3_d.pdf  used on input line 15.
 (pdftex.def)             Requested size: 156.33012pt x 56.9055pt.
- [46]
+ [49]
 Underfull \hbox (badness 10000) detected at line 76
 [][][]
  []
 
-[47]
-Underfull \hbox (badness 10000) detected at line 111
+[50]
+Underfull \hbox (badness 10000) detected at line 115
 [][][]
  []
 
-[48]
-Underfull \hbox (badness 10000) detected at line 165
+[51]
+Underfull \hbox (badness 10000) detected at line 173
 [][][]
  []
 
-[49]
-Underfull \hbox (badness 10000) detected at line 221
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 245
+[52]
+Underfull \hbox (badness 10000) detected at line 233
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 269
+Underfull \hbox (badness 10000) detected at line 261
 [][][]
  []
 
@@ -1393,88 +1238,118 @@ Underfull \hbox (badness 10000) detected at line 293
 [][][]
  []
 
-[50] [51]) (class_c_rob_code_generator.tex [52]
+[53]
+Underfull \hbox (badness 10000) detected at line 325
+[][][]
+ []
+
+[54] [55]) (class_c_rob_code_generator.tex [56]
 Underfull \hbox (badness 10000) detected at line 68
 [][][]
  []
 
 
-Overfull \hbox (72.86504pt too wide) in paragraph at lines 69--70
-[][]\T1/phv/m/n/10 : [] 
+Overfull \hbox (68.45517pt too wide) in paragraph at lines 69--70
+[][] 
  []
 
-[53]
-Underfull \hbox (badness 10000) detected at line 112
-[][][]
- []
-
-[54]
-Underfull \hbox (badness 10000) detected at line 210
-[][][]
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 2
-28.
-(C:\Users\anche\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-)
-[55] [56] [57]) (class_c_segment_approximator.tex [58] [59] [60]
-Underfull \hbox (badness 10000) detected at line 199
+[57]
+Underfull \hbox (badness 10000) detected at line 116
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 223
+Overfull \hbox (1.47571pt too wide) in paragraph at lines 3--4
+[]\T1/phv/m/n/10 p[] 
+ []
+
+[58]
+Overfull \hbox (31.87044pt too wide) in paragraph at lines 201--202
+[]\T1/phv/m/n/10 Benutzt [], [], [], []
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 226
 [][][]
  []
 
-[61]) [62]
+[59] [60]
+Underfull \hbox (badness 4805) in paragraph at lines 390--391
+[]\T1/phv/m/n/10 Benutzt [], [], [], [], [], [], [], [],
+ []
+
+
+Overfull \hbox (22.80743pt too wide) in paragraph at lines 390--391
+[]\T1/phv/m/n/10 , [], [], [], [],
+ []
+
+[61]
+Underfull \hbox (badness 1231) in paragraph at lines 481--482
+[]\T1/phv/m/n/10 Wird be-nutzt von [], [], [], [] und
+ []
+
+) (class_c_segment_approximator.tex [62] [63] [64] [65]
+Underfull \hbox (badness 1742) in paragraph at lines 213--214
+[]\T1/phv/m/n/10 Benutzt [], [], [], [],
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 229
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 257
+[][][]
+ []
+
+[66]) [67] [68
+
+]
 Kapitel 6.
 (_euler_matrix_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-) (_euler_matrix_8h_source.tex) (_g_u_i_8h.tex [63
-
-]) (_g_u_i_8h_source.tex)
+) (_euler_matrix_8h_source.tex [69]) (_g_u_i_8h.tex) (_g_u_i_8h_source.tex)
 (_input_parameter_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--17
 
  []
 
-) (_input_parameter_8h_source.tex [64]) (_line3_d_8h.tex
+[70]) (_input_parameter_8h_source.tex) (_line3_d_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-) (_line3_d_8h_source.tex [65]) (_logging_8h.tex
+[71]) (_line3_d_8h_source.tex) (_logging_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--16
 
  []
 
-) (_logging_8h_source.tex [66]) (_mean_filter_8h.tex
+) (_logging_8h_source.tex [72]) (_mean_filter_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-) (_mean_filter_8h_source.tex [67]) (_path_builder_8h.tex
+) (_mean_filter_8h_source.tex [73]) (_path_builder_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-) (_path_builder_8h_source.tex [68]) (_point3_d_8h.tex
+) (_path_builder_8h_source.tex [74]) (_point3_d_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-) (_point3_d_8h_source.tex [69]) (_rob_code_generator_8h.tex
+) (_point3_d_8h_source.tex [75]) (_rob_code_generator_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
 
-[70]) (_rob_code_generator_8h_source.tex) (_segment_approximator_8h.tex
-[71]
+[76]) (_rob_code_generator_8h_source.tex) (_segment_approximator_8h.tex
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
  []
@@ -1484,7 +1359,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[72]) (_euler_matrix_8cpp_source.tex
+[78]) (_euler_matrix_8cpp_source.tex
 
 ! LaTeX Error: Unicode character Âœ (U+009C)
                not set up for use with LaTeX.
@@ -1498,102 +1373,111 @@ l.42 ...mit\ ÃƒÂœbergabewerten\ ÃƒÂ¼berschreiben}}
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[73]) (_g_u_i_8cpp.tex) (_g_u_i_8cpp_source.tex
+[79]) (_g_u_i_8cpp.tex) (_g_u_i_8cpp_source.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--1
 
  []
 
-) (_input_parameter_8cpp.tex
+[80]) (_input_parameter_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[74]) (_input_parameter_8cpp_source.tex [75]) (_line3_d_8cpp.tex
+) (_input_parameter_8cpp_source.tex [81] [82]) (_line3_d_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-) (_line3_d_8cpp_source.tex [76]) (_logging_8cpp.tex
+) (_line3_d_8cpp_source.tex) (_logging_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-) (_logging_8cpp_source.tex [77]) (_mean_filter_8cpp.tex [78]
+) (_logging_8cpp_source.tex [83] [84]) (_mean_filter_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-) (_mean_filter_8cpp_source.tex [79]) (_path_builder_8cpp.tex
+) (_mean_filter_8cpp_source.tex [85]) (_path_builder_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-) (_path_builder_8cpp_source.tex [80]) (_point3_d_8cpp.tex
+) (_path_builder_8cpp_source.tex [86]) (_point3_d_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-) (_point3_d_8cpp_source.tex [81] [82] [83]) (_rob_code_generator_8cpp.tex
+) (_point3_d_8cpp_source.tex [87] [88] [89]) (_rob_code_generator_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-) (_rob_code_generator_8cpp_source.tex [84] [85]) (_rob_path_editor_8cpp.tex
+) (_rob_code_generator_8cpp_source.tex [90] [91]) (_rob_path_editor_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--17
 
  []
 
-[86]) (_rob_path_editor_8cpp_source.tex [87]) (_segment_approximator_8cpp.tex
+[92]
+Overfull \hbox (45.13623pt too wide) in paragraph at lines 101--102
+[]\T1/phv/m/n/10 , [], [], [],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+[]\T1/phv/m/n/10 , [], [],
+ []
+
+
+Overfull \hbox (71.87555pt too wide) in paragraph at lines 101--102
+[]\T1/phv/m/n/10 , [], [], []
+ []
+
+) (_rob_path_editor_8cpp_source.tex [93]) (_segment_approximator_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-) (_segment_approximator_8cpp_source.tex [88]) [89] [90
-
-] (refman.ind
+[94]) (_segment_approximator_8cpp_source.tex [95]) [96] (refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
- [91
+ [97
+
 
 
 ]
-[92] [93] [94
+[98] [99] [100
 
 ]) (refman.aux)
-
-Package rerunfilecheck Warning: File `refman.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `refman.out':
-(rerunfilecheck)             Before: 5CDD2DFFA98D653DAC9AD5BC59C7CB7A;53430
-(rerunfilecheck)             After:  E3B23D94CAE221FB76DB7F48CF4C00D5;53422.
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: 38F970ABEA90FBB7BE8C555AB88D6568;53831.
  ) 
 Here is how much of TeX's memory you used:
- 21632 strings out of 478582
- 392780 string characters out of 2844345
- 702233 words of memory out of 3000000
- 37419 multiletter control sequences out of 15000+600000
+ 21657 strings out of 478582
+ 393732 string characters out of 2844345
+ 702728 words of memory out of 3000000
+ 37418 multiletter control sequences out of 15000+600000
  526150 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,117p,1978b,717s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,16n,117p,1493b,710s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/anche/AppData/Local/Programs/M
-iKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/anche/AppData/Local/Programs
-/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/anche/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/anche/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/anche/AppData/Local/
-Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/anche/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/anche/AppData
-/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (104 pages, 1160341 bytes).
+/cm/cmmi7.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/anche/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/anche/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/anche/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/anche/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/anche/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/anche/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/anche/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/anche
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (110 pages, 1273553 bytes).
 PDF statistics:
- 5766 PDF objects out of 6186 (max. 8388607)
- 1933 named destinations out of 2073 (max. 500000)
- 2096 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6220 PDF objects out of 7423 (max. 8388607)
+ 1958 named destinations out of 2073 (max. 500000)
+ 2112 words of extra memory for PDF output out of 10000 (max. 10000000)
 

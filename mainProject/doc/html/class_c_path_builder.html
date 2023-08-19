@@ -197,39 +197,37 @@ Private Attribute</h2></td></tr>
 <p class="definition">Definiert in Zeile <a class="el" href="_path_builder_8cpp_source.html#l00023">23</a> der Datei <a class="el" href="_path_builder_8cpp_source.html">PathBuilder.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
 <div class="line"><span class="lineno">   25</span>    <a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a> point; <span class="comment">//startpoint</span></div>
-<div class="line"><span class="lineno">   26</span>    <a class="code hl_variable" href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">path</a>.push_back(point);</div>
-<div class="line"><span class="lineno">   27</span> </div>
-<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> s = 0; s &lt; segments.size(); s++) <span class="comment">//for all segments</span></div>
-<div class="line"><span class="lineno">   29</span>    {</div>
-<div class="line"><span class="lineno">   30</span>        list&lt;CInputPoint3D&gt;::iterator itr = segments[s].begin();</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>        point.<a class="code hl_function" href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">set</a>((<span class="keywordtype">double</span>)itr-&gt;getX(), (<span class="keywordtype">double</span>)itr-&gt;getY(), (<span class="keywordtype">double</span>)itr-&gt;getZ()); <span class="comment">//point over start of segment</span></div>
-<div class="line"><span class="lineno">   33</span>        <a class="code hl_variable" href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">path</a>.push_back(point);</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">for</span> (; itr != segments[s].end(); itr++) <span class="comment">//for all points in the segment</span></div>
-<div class="line"><span class="lineno">   36</span>        {</div>
-<div class="line"><span class="lineno">   37</span>            point.<a class="code hl_function" href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">set</a>((<span class="keywordtype">double</span>)itr-&gt;getX(), (<span class="keywordtype">double</span>)itr-&gt;getY(), (<span class="keywordtype">double</span>)itr-&gt;getZ());</div>
-<div class="line"><span class="lineno">   38</span>            <a class="code hl_variable" href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">path</a>.push_back(point);</div>
-<div class="line"><span class="lineno">   39</span>        }</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>        itr--;</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>        point.<a class="code hl_function" href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">set</a>((<span class="keywordtype">double</span>)itr-&gt;getX(), (<span class="keywordtype">double</span>)itr-&gt;getY(), (<span class="keywordtype">double</span>)itr-&gt;getZ()); <span class="comment">//point over end of segment</span></div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">path</a>.push_back(point);</div>
-<div class="line"><span class="lineno">   45</span>    }</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    point.<a class="code hl_function" href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">set</a>(0, 0, 0); <span class="comment">//endpoint (== startpoint)</span></div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_variable" href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">path</a>.push_back(point);</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    log.<a class="code hl_function" href="class_c_logging.html#a143b13eb97fb0a7b8306ec707e822cba">setStep</a>(4);</div>
-<div class="line"><span class="lineno">   51</span>    log.<a class="code hl_function" href="class_c_logging.html#a1416b9fdd6d86c53d268580ed9912cff">logData</a>(<a class="code hl_variable" href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">path</a>);</div>
-<div class="line"><span class="lineno">   52</span>}</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> s = 0; s &lt; segments.size(); s++) <span class="comment">//for all segments</span></div>
+<div class="line"><span class="lineno">   28</span>    {</div>
+<div class="line"><span class="lineno">   29</span>        list&lt;CInputPoint3D&gt;::iterator itr = segments[s].begin();</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">for</span> (; itr != segments[s].end(); itr++) <span class="comment">//for all points in the segment</span></div>
+<div class="line"><span class="lineno">   32</span>        {</div>
+<div class="line"><span class="lineno">   33</span>            point.<a class="code hl_function" href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">set</a>((<span class="keywordtype">double</span>)itr-&gt;getX(), (<span class="keywordtype">double</span>)itr-&gt;getY(), (<span class="keywordtype">double</span>)itr-&gt;getZ());</div>
+<div class="line"><span class="lineno">   34</span>            point.<a class="code hl_function" href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">setTime</a>(itr-&gt;getTime());</div>
+<div class="line"><span class="lineno">   35</span>            point.<a class="code hl_function" href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">setEulerMatrix</a>(itr-&gt;getEulerMatrix());</div>
+<div class="line"><span class="lineno">   36</span>            <a class="code hl_variable" href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">path</a>.push_back(point);</div>
+<div class="line"><span class="lineno">   37</span>        }</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>        itr--;</div>
+<div class="line"><span class="lineno">   40</span>    }</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    log.<a class="code hl_function" href="class_c_logging.html#a143b13eb97fb0a7b8306ec707e822cba">setStep</a>(4);</div>
+<div class="line"><span class="lineno">   43</span>    log.<a class="code hl_function" href="class_c_logging.html#a1416b9fdd6d86c53d268580ed9912cff">logData</a>(<a class="code hl_variable" href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">path</a>);</div>
+<div class="line"><span class="lineno">   44</span>}</div>
 <div class="ttc" id="aclass_c_input_point3_d_html"><div class="ttname"><a href="class_c_input_point3_d.html">CInputPoint3D</a></div><div class="ttdoc">Input Punkt.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00106">Point3D.h:107</a></div></div>
-<div class="ttc" id="aclass_c_logging_html_a1416b9fdd6d86c53d268580ed9912cff"><div class="ttname"><a href="class_c_logging.html#a1416b9fdd6d86c53d268580ed9912cff">CLogging::logData</a></div><div class="ttdeci">void logData(vector&lt; list&lt; CInputPoint3D &gt; &gt; &amp;sourcePath)</div><div class="ttdoc">Ruft calculateMean für die einzelnen Segmente auf.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00029">Logging.cpp:29</a></div></div>
-<div class="ttc" id="aclass_c_logging_html_a143b13eb97fb0a7b8306ec707e822cba"><div class="ttname"><a href="class_c_logging.html#a143b13eb97fb0a7b8306ec707e822cba">CLogging::setStep</a></div><div class="ttdeci">void setStep(int Step)</div><div class="ttdoc">Setzt in welchem Schritt wir uns befinden.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00024">Logging.cpp:24</a></div></div>
+<div class="ttc" id="aclass_c_input_point3_d_html_a64595602198fb39f73b3ba7ca23670fd"><div class="ttname"><a href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">CInputPoint3D::setTime</a></div><div class="ttdeci">void setTime(double time)</div><div class="ttdoc">Setzt den Zeitstempel.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00142">Point3D.cpp:142</a></div></div>
+<div class="ttc" id="aclass_c_input_point3_d_html_aa1ffef5d44dbf0f82fea3c6ff25dd1e8"><div class="ttname"><a href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">CInputPoint3D::setEulerMatrix</a></div><div class="ttdeci">void setEulerMatrix(CEulerMatrix orientation)</div><div class="ttdoc">Setzt die Eulermatrix.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00129">Point3D.cpp:129</a></div></div>
+<div class="ttc" id="aclass_c_logging_html_a1416b9fdd6d86c53d268580ed9912cff"><div class="ttname"><a href="class_c_logging.html#a1416b9fdd6d86c53d268580ed9912cff">CLogging::logData</a></div><div class="ttdeci">void logData(vector&lt; list&lt; CInputPoint3D &gt; &gt; &amp;sourcePath)</div><div class="ttdoc">Ruft calculateMean für die einzelnen Segmente auf.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00031">Logging.cpp:31</a></div></div>
+<div class="ttc" id="aclass_c_logging_html_a143b13eb97fb0a7b8306ec707e822cba"><div class="ttname"><a href="class_c_logging.html#a143b13eb97fb0a7b8306ec707e822cba">CLogging::setStep</a></div><div class="ttdeci">void setStep(int Step)</div><div class="ttdoc">Setzt in welchem Schritt wir uns befinden.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00026">Logging.cpp:26</a></div></div>
 <div class="ttc" id="aclass_c_path_builder_html_ad4d126d2b98aa89e4082249c7e06b50b"><div class="ttname"><a href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">CPathBuilder::path</a></div><div class="ttdeci">vector&lt; CInputPoint3D &gt; path</div><div class="ttdef"><b>Definition</b> <a href="_path_builder_8h_source.html#l00050">PathBuilder.h:50</a></div></div>
-<div class="ttc" id="aclass_c_point3_d_html_a85934ab180860df1ff2161d14efb98ec"><div class="ttname"><a href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">CPoint3D::set</a></div><div class="ttdeci">void set(double X, double Y, double Z)</div><div class="ttdoc">Setzt X, Y und Z.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00061">Point3D.cpp:61</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_a85934ab180860df1ff2161d14efb98ec"><div class="ttname"><a href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">CPoint3D::set</a></div><div class="ttdeci">void set(double X, double Y, double Z)</div><div class="ttdoc">Setzt X, Y und Z.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00063">Point3D.cpp:63</a></div></div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_logging_8cpp_source.html#l00031">CLogging::logData()</a>, <a class="el" href="_path_builder_8h_source.html#l00050">path</a>, <a class="el" href="_point3_d_8cpp_source.html#l00063">CPoint3D::set()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00129">CInputPoint3D::setEulerMatrix()</a>, <a class="el" href="_logging_8cpp_source.html#l00026">CLogging::setStep()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00142">CInputPoint3D::setTime()</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_rob_path_editor_8cpp_source.html#l00055">main()</a>.</p>
+
 </div>
 </div>
 <a id="aff7eb289b0c0cfa11c9d2dbe31781bf6" name="aff7eb289b0c0cfa11c9d2dbe31781bf6"></a>
@@ -255,6 +253,10 @@ Private Attribute</h2></td></tr>
 <div class="line"><span class="lineno">   20</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_path_builder.html#ad4d126d2b98aa89e4082249c7e06b50b">path</a>;</div>
 <div class="line"><span class="lineno">   21</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_path_builder_8h_source.html#l00050">path</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_rob_path_editor_8cpp_source.html#l00055">main()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Dokumentation der Datenelemente</h2>
@@ -280,6 +282,8 @@ Private Attribute</h2></td></tr>
 <p>Vector mit den zusammengesetzten Pfad Daten </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="_path_builder_8h_source.html#l00050">50</a> der Datei <a class="el" href="_path_builder_8h_source.html">PathBuilder.h</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_path_builder_8cpp_source.html#l00023">createPath()</a> und <a class="el" href="_path_builder_8cpp_source.html#l00018">getPath()</a>.</p>
 
 </div>
 </div>
