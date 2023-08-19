@@ -12,6 +12,7 @@ GUI::GUI(QWidget *parent)
 {
     ui.setupUi(this);
     connect(ui.startCalculation, &QPushButton::clicked, this, &GUI::calculate);
+	connect(ui.pathInput, &QLabel::setText, this, &GUI::setInputPath)
 }
 
 GUI::~GUI()
@@ -52,7 +53,7 @@ void GUI::calculate()
 
 		CRobCodeGenerator codeGenerator(inputParameter.getSpeed(), inputParameter.getSpeedManual(),
 			inputParameter.getOrientationManual(), inputParameter.getAngles());
-		codeGenerator.generateRobCode(pathBuilder.getPath(), loggingPath + "/ robCode.src");
+		codeGenerator.generateRobCode(pathBuilder.getPath(), loggingPath, "robCode.src");
 	}
 
 	catch (exception& e)

@@ -10,12 +10,12 @@
 
 CMeanFilter::CMeanFilter()
 {
-	windowSize = 3;
+	windowSize = 3;			// initialisieren mit Standardfenstergröße 3
 }
 
 CMeanFilter::CMeanFilter(int Window)
 {
-	windowSize = Window;
+	windowSize = Window;	// initialisieren der Fenstergröße mit Übergabewert
 }
 
 CMeanFilter::~CMeanFilter()
@@ -24,17 +24,17 @@ CMeanFilter::~CMeanFilter()
 
 void CMeanFilter::setWindowSize(int Window)
 {
-	windowSize = Window;
+	windowSize = Window;	// setzen der Fenstergröße mit Übergabewert
 }
 
 int CMeanFilter::getWindowSize()
 {
-	return windowSize;
+	return windowSize;		// Fenstergröße zurück geben
 }
 
 vector<list<CInputPoint3D>>& CMeanFilter::getPath()
 {
-	return meanPath;
+	return meanPath;		// Mittelwert zurück geben
 }
 
 void CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath, CLogging log)
@@ -51,13 +51,10 @@ void CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath, CLogging log)
 
 list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)
 {
-	double sumX = 0, sumY = 0, sumZ = 0;
-	double div = 0;
-	int m = 0;
-	int OffsetPos = 0;
-	int OffsetNeg = 0;
+	double sumX = 0, sumY = 0, sumZ = 0;	// Variablen zum Speichern der Summe
+	double div = 0;							// Variable zum Speichern des Teilers
 
-	CInputPoint3D p;
+	CInputPoint3D p;		//Point3D zum Zwischenspeichern
 
 	size_t inputSize = segment.size();
 
@@ -66,8 +63,8 @@ list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)
 
 	for (size_t i = 0; i < inputSize - windowSize; ++i) //For each element in the Segment
 	{
-		sumX = 0, sumY = 0, sumZ = 0;
-		div = 0;
+		sumX = 0, sumY = 0, sumZ = 0;	// Variablen zum Speichern der Summe auf 0 zurück setzen
+		div = 0;						// Variable zum Speichern des Teilers auf 0 zurück setzen
 		p.setTime(it->getTime());
 		p.setEulerMatrix(it->getEulerMatrix());
 		for (size_t j = i; j < i + windowSize; ++j) // Build the sums for the three points

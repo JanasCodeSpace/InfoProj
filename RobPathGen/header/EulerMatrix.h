@@ -7,6 +7,8 @@
 #include <tuple>
 #include <cmath>
 
+#define _USE_MATH_DEFINES
+
 using namespace std;
 
 #pragma once
@@ -72,5 +74,6 @@ private:
 	* Gespeicherte Euler Matrix
 	*/
 	float eulerMatrix[3][3];
+
 };
 
