@@ -31,9 +31,31 @@ namespace MeanFilter
         TEST_METHOD(Mean)
         {
             CMeanFilter filter;
+            CLogging log;
+            CInputPoint3D testPoint;
+            CEulerMatrix eulerMatrix;
+            vector<list<CInputPoint3D>> sourcePath, destinationPath;
+            list<CInputPoint3D> dummyDaten, outputDaten;
+            for (int i = 1; i <= 5; i++)
+            {
+                CInputPoint3D point;
+                point.setX(i);
+                point.setY(i * 2);
+                point.setZ(i * 3);
+                dummyDaten.push_back(point);
+            }            
+            sourcePath.push_back(dummyDaten);
+            filter.mean(sourcePath, log);
+            destinationPath = filter.getPath();
+            outputDaten = destinationPath[0];
 
+            list<CInputPoint3D>::iterator it = outputDaten.begin();
+            testPoint.setPoint(it->getTime(), it->getX(), it->getY(), it->getZ(), eulerMatrix);
+            for (int i = 2; i <= 5-filter.getWindowSize(); i++)
+            {
+                Assert::AreEqual(testPoint.getX(), (double)i);
+            }
         }
-
         TEST_METHOD(GetPath)
         {
             CMeanFilter filter;
