@@ -32,13 +32,13 @@ namespace PathBuilder
                         
             Assert::IsTrue(path.size() > 0);
 
-            Assert::AreEqual(0.0, path[0].getX());
-            Assert::AreEqual(0.0, path[0].getY());
-            Assert::AreEqual(0.0, path[0].getZ());
+            Assert::AreEqual(1.0, path[0].getX());
+            Assert::AreEqual(2.0, path[0].getY());
+            Assert::AreEqual(3.0, path[0].getZ());
 
-            Assert::AreEqual(0.0, path[path.size() - 1].getX());
-            Assert::AreEqual(0.0, path[path.size() - 1].getY());
-            Assert::AreEqual(0.0, path[path.size() - 1].getZ());
+            Assert::AreEqual(10.0, path[path.size() - 1].getX());
+            Assert::AreEqual(20.0, path[path.size() - 1].getY());
+            Assert::AreEqual(30.0, path[path.size() - 1].getZ());
         }
     };
 }
