@@ -2,6 +2,14 @@
 <ui version="4.0">
  <class>GUIClass</class>
  <widget class="QMainWindow" name="GUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>355</width>
+    <height>530</height>
+   </rect>
+  </property>
   <property name="sizePolicy">
    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
     <horstretch>0</horstretch>
@@ -10,15 +18,20 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>460</width>
+    <width>355</width>
     <height>530</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>460</width>
+    <width>355</width>
     <height>720</height>
    </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Rubik</family>
+   </font>
   </property>
   <property name="windowTitle">
    <string>Roboter Pfad Editor</string>
@@ -33,59 +46,57 @@
    <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="startCalculation">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>410</y>
-      <width>431</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
-    </property>
-   </widget>
+   <property name="font">
+    <font>
+     <family>Rubik</family>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(3, 8, 14);
+color: rgb(3, 8, 14)
+</string>
+   </property>
    <widget class="QLabel" name="pathInput">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>10</y>
-      <width>421</width>
-      <height>21</height>
+      <width>331</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rubik</family>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black; 
+border-radius: 10px;
+background-color: rgb(210, 211, 218);
+color: rgb(3, 8, 14);</string>
     </property>
     <property name="text">
      <string>Eingabedatei</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="pathOutput">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>421</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Ausgabeordner</string>
     </property>
    </widget>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>80</y>
-      <width>431</width>
+      <y>90</y>
+      <width>331</width>
       <height>321</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black; 
+border-radius: 10px;
+background-color: rgb(117, 125, 149)</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -96,32 +107,6 @@
     <property name="lineWidth">
      <number>1</number>
     </property>
-    <widget class="QLabel" name="label_dp">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>141</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Douglas-Peuker-Toleranz</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>191</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Filterlänge gleitender Mittelwert</string>
-     </property>
-    </widget>
     <widget class="QWidget" name="speed_2" native="true">
      <property name="enabled">
       <bool>false</bool>
@@ -130,84 +115,85 @@
       <rect>
        <x>10</x>
        <y>110</y>
-       <width>411</width>
-       <height>51</height>
+       <width>301</width>
+       <height>41</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Rubik</family>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(210,211,218);
+color: rgb(117, 125, 149);
+border: 1px solid rgb(67, 72, 91); </string>
+     </property>
+     <widget class="QDoubleSpinBox" name="speed">
+      <property name="geometry">
+       <rect>
+        <x>159</x>
+        <y>12</y>
+        <width>136</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(210, 211, 218);
+
+border-radius: 6px;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="suffix">
+       <string> m/s</string>
+      </property>
+     </widget>
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>141</width>
-        <height>20</height>
+        <x>11</x>
+        <y>12</y>
+        <width>93</width>
+        <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rubik</family>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px</string>
       </property>
       <property name="text">
        <string>Geschwindigkeit</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>10</y>
-        <width>41</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>m/s</string>
-      </property>
-     </widget>
-     <widget class="QFrame" name="frame_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>411</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <widget class="QDoubleSpinBox" name="speed">
-       <property name="geometry">
-        <rect>
-         <x>251</x>
-         <y>10</y>
-         <width>81</width>
-         <height>22</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
     </widget>
     <widget class="QCheckBox" name="bSpeed">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>80</y>
-       <width>89</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>RadioButton</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
        <x>10</x>
        <y>80</y>
-       <width>161</width>
+       <width>171</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rubik</family>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(3, 8, 14);
+border: 0px</string>
      </property>
      <property name="text">
       <string>Manuelle Geschwindigkeit</string>
@@ -220,19 +206,34 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>180</y>
-       <width>411</width>
-       <height>121</height>
+       <y>190</y>
+       <width>301</width>
+       <height>111</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(210,211,218);
+color: rgb(117, 125, 149);
+border: 1px solid rgb(67, 72, 91); </string>
      </property>
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
-        <width>49</width>
+        <y>15</y>
+        <width>18</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rubik</family>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px</string>
       </property>
       <property name="text">
        <string>Phi</string>
@@ -241,11 +242,22 @@
      <widget class="QLabel" name="label_11">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>50</y>
-        <width>49</width>
+        <x>11</x>
+        <y>47</y>
+        <width>33</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rubik</family>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+border: 0px</string>
       </property>
       <property name="text">
        <string>Theta</string>
@@ -254,190 +266,332 @@
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>80</y>
-        <width>49</width>
+        <x>11</x>
+        <y>78</y>
+        <width>17</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rubik</family>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px</string>
       </property>
       <property name="text">
        <string>Psi</string>
       </property>
      </widget>
-     <widget class="QFrame" name="frame_3">
+     <widget class="QDoubleSpinBox" name="AValue">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>411</width>
-        <height>121</height>
+        <x>153</x>
+        <y>15</y>
+        <width>141</width>
+        <height>20</height>
        </rect>
       </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(210, 211, 218);
+
+border-radius: 6px;</string>
       </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <widget class="QDoubleSpinBox" name="AValue">
-       <property name="geometry">
-        <rect>
-         <x>290</x>
-         <y>10</y>
-         <width>81</width>
-         <height>22</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QDoubleSpinBox" name="BValue">
-       <property name="geometry">
-        <rect>
-         <x>290</x>
-         <y>40</y>
-         <width>81</width>
-         <height>22</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QDoubleSpinBox" name="CValue">
-       <property name="geometry">
-        <rect>
-         <x>290</x>
-         <y>70</y>
-         <width>81</width>
-         <height>22</height>
-        </rect>
-       </property>
-      </widget>
      </widget>
-     <zorder>frame_3</zorder>
-     <zorder>label_10</zorder>
-     <zorder>label_11</zorder>
+     <widget class="QDoubleSpinBox" name="BValue">
+      <property name="geometry">
+       <rect>
+        <x>154</x>
+        <y>47</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(210, 211, 218);
+
+border-radius: 6px;</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="CValue">
+      <property name="geometry">
+       <rect>
+        <x>154</x>
+        <y>78</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(210, 211, 218);
+
+border-radius: 6px;</string>
+      </property>
+     </widget>
      <zorder>label_12</zorder>
+     <zorder>label_10</zorder>
+     <zorder>AValue</zorder>
+     <zorder>BValue</zorder>
+     <zorder>CValue</zorder>
+     <zorder>label_11</zorder>
     </widget>
     <widget class="QCheckBox" name="bManOrientation">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>10</x>
        <y>160</y>
-       <width>89</width>
+       <width>151</width>
        <height>20</height>
       </rect>
      </property>
-     <property name="text">
-      <string>RadioButton</string>
+     <property name="font">
+      <font>
+       <family>Rubik</family>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
      </property>
-    </widget>
-    <widget class="QLabel" name="label_13">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>160</y>
-       <width>121</width>
-       <height>16</height>
-      </rect>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(3, 8, 14);
+border: 0px</string>
      </property>
      <property name="text">
       <string>Manuelle Ausrichtung</string>
      </property>
     </widget>
-    <widget class="QWidget" name="offfset" native="true">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
+    <widget class="QSpinBox" name="meanLength">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>370</y>
-       <width>411</width>
-       <height>121</height>
+       <x>198</x>
+       <y>48</y>
+       <width>116</width>
+       <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(210, 211, 218);
+
+border-radius: 6px;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_dp">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>22</y>
+       <width>144</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rubik</family>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(3, 8, 14);
+border: 0px</string>
+     </property>
+     <property name="text">
+      <string>Douglas-Peuker-Toleranz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>48</y>
+       <width>180</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rubik</family>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(3, 8, 14);
+border: 0px</string>
+     </property>
+     <property name="text">
+      <string>Filterlänge gleitender Mittelwert</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="dpToleranz">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>20</y>
-       <width>81</width>
-       <height>22</height>
+       <x>198</x>
+       <y>22</y>
+       <width>116</width>
+       <height>20</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QSpinBox" name="meanLength">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>50</y>
-       <width>81</width>
-       <height>22</height>
-      </rect>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(210, 211, 218);
+
+border-radius: 6px;</string>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::UpDownArrows</enum>
+     </property>
+     <property name="specialValueText">
+      <string/>
+     </property>
+     <property name="accelerated">
+      <bool>false</bool>
+     </property>
+     <property name="suffix">
+      <string/>
      </property>
     </widget>
    </widget>
    <widget class="QPushButton" name="pushInput">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>240</x>
       <y>10</y>
-      <width>75</width>
-      <height>24</height>
+      <width>101</width>
+      <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Rubik</family>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black; 
+border-radius: 10px;
+background-color: rgb(117, 125, 149);
+color: rgb(3, 8, 14);</string>
+    </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Datei wählen</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushOutput">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>40</y>
-      <width>75</width>
-      <height>24</height>
+      <x>240</x>
+      <y>50</y>
+      <width>101</width>
+      <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Rubik</family>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black; 
+border-radius: 10px;
+background-color: rgb(117, 125, 149);
+color: rgb(3, 8, 14);</string>
+    </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Pfad wählen</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>480</y>
-      <width>461</width>
-      <height>51</height>
+      <y>460</y>
+      <width>355</width>
+      <height>71</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(210, 211, 218);
+border-radius: 0px</string>
+    </property>
    </widget>
-   <widget class="QProgressBar" name="progressBar">
+   <widget class="QPushButton" name="startCalculation">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>450</y>
-      <width>431</width>
-      <height>23</height>
+      <y>420</y>
+      <width>331</width>
+      <height>31</height>
      </rect>
     </property>
-    <property name="value">
-     <number>24</number>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
-    <property name="textVisible">
-     <bool>false</bool>
+    <property name="font">
+     <font>
+      <family>Rubik</family>
+      <pointsize>10</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black;
+border-radius: 10px;
+background-color: rgb(67, 72, 91);
+color: rgb(210, 211, 218)</string>
+    </property>
+    <property name="text">
+     <string>Datei erstellen</string>
     </property>
    </widget>
+   <widget class="QLabel" name="pathOutput">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rubik</family>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black; 
+border-radius: 10px;
+background-color: rgb(210, 211, 218);
+color: rgb(3, 8, 14);</string>
+    </property>
+    <property name="text">
+     <string>Ausgabeordner</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::MarkdownText</enum>
+    </property>
+   </widget>
+   <zorder>pathInput</zorder>
+   <zorder>frame</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>startCalculation</zorder>
+   <zorder>pathOutput</zorder>
+   <zorder>pushOutput</zorder>
+   <zorder>pushInput</zorder>
   </widget>
-  <action name="actionEingabepfad">
-   <property name="text">
-    <string>Eingabepfad ändern</string>
-   </property>
-  </action>
-  <action name="actionAusgabepfad">
-   <property name="text">
-    <string>Ausgabepfad ändern</string>
-   </property>
-  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>

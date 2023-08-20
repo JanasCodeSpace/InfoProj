@@ -12,9 +12,9 @@ GUI::GUI(QWidget *parent)
     ui.setupUi(this);
 
 	//Dateioperationen und Anzeige
-	inputPathUI = "input/path_01.csv";
+	inputPathUI = "";
 	ui.pathInput->setText(inputPathUI);
-	outputPathUI = "output";
+	outputPathUI = "";
 	ui.pathOutput->setText(outputPathUI);
 
 	connect(ui.pushOutput, &QPushButton::clicked, this, &GUI::setOutputPath);
@@ -58,7 +58,7 @@ GUI::GUI(QWidget *parent)
 	connect(ui.CValue, &QDoubleSpinBox::valueChanged, this, &GUI::setOrientation);
 
 	connect(ui.startCalculation, &QPushButton::clicked, this, &GUI::calculate);
-	ui.progressBar->reset();
+	//ui.progressBar->reset();
 }
 
 GUI::~GUI()
@@ -73,9 +73,15 @@ void GUI::setOrientation(void)
 void GUI::activateOrientation(void)
 {
 	if (ui.bManOrientation->isChecked())
+	{
 		ui.orientation->setEnabled(true);
+		ui.orientation->setStyleSheet("background-color:  rgb(67, 72, 91); color: rgb(3, 8, 14); border: 1px solid black;");
+	}
 	else
+	{
 		ui.orientation->setEnabled(false);
+		ui.orientation->setStyleSheet("background-color: rgb(210,211,218); color: rgb(117,125,149)");
+	}
 }
 
 void GUI::setSpeed(void)
@@ -85,10 +91,16 @@ void GUI::setSpeed(void)
 
 void GUI::activateSpeed(void)
 {
-	if(ui.bSpeed->isChecked())
+	if (ui.bSpeed->isChecked())
+	{
 		ui.speed_2->setEnabled(true);
+		ui.speed_2->setStyleSheet("background-color:  rgb(67, 72, 91); color: rgb(3, 8, 14); border: 1px solid black; ");
+	}
 	else
+	{
 		ui.speed_2->setEnabled(false);
+		ui.speed_2->setStyleSheet("background-color: rgb(210,211,218); color: rgb(117,125,149)");
+	}
 }
 
 void GUI::setMean(void)
@@ -129,8 +141,8 @@ void GUI::calculate()
 	{
 		string outputPath = outputPathUI.toUtf8().constData();
 		string inputPath = inputPathUI.toUtf8().constData();
-		ui.progressBar->setMaximum(5);
-		ui.progressBar->reset();
+		//ui.progressBar->setMaximum(5);
+		//ui.progressBar->reset();
 		ui.textBrowser->clear();
 
 		//logging Initialisieren
@@ -140,7 +152,7 @@ void GUI::calculate()
 		inputParameter.openFile(inputPath);
 
 		ui.textBrowser->insertPlainText("Datei eingelesen\n");
-		ui.progressBar->setValue(1);
+		//ui.progressBar->setValue(1);
 		//moving Average
 
 		CMeanFilter meanFilter;
@@ -148,7 +160,7 @@ void GUI::calculate()
 		meanFilter.mean(inputParameter.getPath(), logging);
 
 		ui.textBrowser->insertPlainText("Gleitender Mittelwert berechnet\n");
-		ui.progressBar->setValue(2);
+		//ui.progressBar->setValue(2);
 		// Douglas-Peuker Algorithm
 
 		CSegmentApproximator segmentApproximator;
@@ -156,7 +168,7 @@ void GUI::calculate()
 		segmentApproximator.approx(meanFilter.getPath(), logging);
 
 		ui.textBrowser->insertPlainText("Douglas-Peuker-Algorithmus berechnet\n");
-		ui.progressBar->setValue(3);
+		//ui.progressBar->setValue(3);
 
 		// Puts the Segments together to one path
 
@@ -164,14 +176,14 @@ void GUI::calculate()
 		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), logging);
 
 		ui.textBrowser->insertPlainText("Pfad zusammengesetzt\n");
-		ui.progressBar->setValue(4);
+		//ui.progressBar->setValue(4);
 		// Calculates Speed, Angle and generates the Output Data
 
 		CRobCodeGenerator codeGenerator(inputParameter.getSpeed(), inputParameter.getSpeedManual(),
 			inputParameter.getOrientationManual(), inputParameter.getAngles());
 		codeGenerator.generateRobCode(pathBuilder.getPath(), outputPath, "robCode.src");
 		ui.textBrowser->insertPlainText("Datei erstellt\n");
-		ui.progressBar->setValue(5);
+		//ui.progressBar->setValue(5);
 	}
 
 	catch (exception& e)
