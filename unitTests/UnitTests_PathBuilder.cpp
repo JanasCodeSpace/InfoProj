@@ -12,9 +12,19 @@ namespace PathBuilder
         {
             CPathBuilder pathBuilder;
             CLogging log;
+            int numberPoints = 10;
                         
-            std::vector<std::list<CInputPoint3D>> segments;
-            // segments füllen
+            vector<list<CInputPoint3D>> segments;
+            list<CInputPoint3D> dummyDaten, outputDaten;
+            for (int i = 1; i <= numberPoints; i++)
+            {
+                CInputPoint3D point;
+                point.setX(i);
+                point.setY(i * 2);
+                point.setZ(i * 3);
+                dummyDaten.push_back(point);
+            }
+            segments.push_back(dummyDaten);
 
             pathBuilder.createPath(segments, log);
 

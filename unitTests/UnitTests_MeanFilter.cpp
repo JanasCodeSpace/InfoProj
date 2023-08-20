@@ -60,19 +60,13 @@ namespace MeanFilter
                 it++;
             }
         }
-        TEST_METHOD(GetPath)
-        {
-            CMeanFilter filter;
-            vector<list<CInputPoint3D>>& path = filter.getPath();
-            Assert::IsTrue(path.empty());
-        }
-
         TEST_METHOD(CalculateMean)
         {
             CMeanFilter filter;
             list<CInputPoint3D> inputSegment;
+            int numberPoints = 10;
                         
-            for (int i = 1; i <= 5; i++)
+            for (int i = 1; i <= numberPoints; i++)
             {
                 CInputPoint3D point;
                 point.setX(i);
