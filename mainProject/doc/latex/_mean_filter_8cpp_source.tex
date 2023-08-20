@@ -1,0 +1,89 @@
+\doxysection{Mean\+Filter.\+cpp}
+\hypertarget{_mean_filter_8cpp_source}{}\label{_mean_filter_8cpp_source}\index{src/MeanFilter.cpp@{src/MeanFilter.cpp}}
+\mbox{\hyperlink{_mean_filter_8cpp}{gehe zur Dokumentation dieser Datei}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_mean_filter_8h}{./header/MeanFilter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_logging_8h}{./header/Logging.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00011}\mbox{\hyperlink{class_c_mean_filter_ac2ca0c60d987a144d7288a317315f851}{00011}}\ \mbox{\hyperlink{class_c_mean_filter_ac2ca0c60d987a144d7288a317315f851}{CMeanFilter::CMeanFilter}}()}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00013}00013\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}}\ =\ 3;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ initialisieren\ mit\ Standardfenstergröße\ 3}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00014}00014\ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00016}\mbox{\hyperlink{class_c_mean_filter_ae4fdddbd551284005fe3d0bb3f9dc9c5}{00016}}\ \mbox{\hyperlink{class_c_mean_filter_ac2ca0c60d987a144d7288a317315f851}{CMeanFilter::CMeanFilter}}(\textcolor{keywordtype}{int}\ Window)}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00017}00017\ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}}\ =\ Window;\ \ \textcolor{comment}{//\ initialisieren\ der\ Fenstergröße\ mit\ Übergabewert}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00019}00019\ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00021}\mbox{\hyperlink{class_c_mean_filter_a03a060f31ed65b1f7e6407668c8801b6}{00021}}\ \mbox{\hyperlink{class_c_mean_filter_a03a060f31ed65b1f7e6407668c8801b6}{CMeanFilter::\string~CMeanFilter}}()}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00023}00023\ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00025}\mbox{\hyperlink{class_c_mean_filter_a838914420e15ae2b3ba13fef8902c6ed}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_mean_filter_a838914420e15ae2b3ba13fef8902c6ed}{CMeanFilter::setWindowSize}}(\textcolor{keywordtype}{int}\ Window)}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}}\ =\ Window;\ \ \textcolor{comment}{//\ setzen\ der\ Fenstergröße\ mit\ Übergabewert}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00030}\mbox{\hyperlink{class_c_mean_filter_afea7ab027781d3c7073bf918453e73b5}{00030}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_c_mean_filter_afea7ab027781d3c7073bf918453e73b5}{CMeanFilter::getWindowSize}}()}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00031}00031\ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Fenstergröße\ zurück\ geben}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00035}\mbox{\hyperlink{class_c_mean_filter_aaea0182dce726e167d46fc4a4b78e81a}{00035}}\ vector<list<CInputPoint3D>>\&\ \mbox{\hyperlink{class_c_mean_filter_aaea0182dce726e167d46fc4a4b78e81a}{CMeanFilter::getPath}}()}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00036}00036\ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_mean_filter_adf004b2b19e5498539bb87851a5439da}{meanPath}};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mittelwert\ zurück\ geben}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00038}00038\ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00040}\mbox{\hyperlink{class_c_mean_filter_a7137cd05a9a31536560b0230a63a91ee}{00040}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_mean_filter_a7137cd05a9a31536560b0230a63a91ee}{CMeanFilter::mean}}(vector<list<CInputPoint3D>>\&\ sourcePath,\ \mbox{\hyperlink{class_c_logging}{CLogging}}\ log)}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00041}00041\ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00042}00042\ \ \ \ \ list<CInputPoint3D>\ dummyList;}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00044}00044\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ dummyList\ =\ \mbox{\hyperlink{class_c_mean_filter_a9efa7170eaf84a72e5aed4e1cca5ab04}{calculateMean}}(sourcePath[s]);}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter_adf004b2b19e5498539bb87851a5439da}{meanPath}}.push\_back(dummyList);}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00047}00047\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00048}00048\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba}{setStep}}(2);}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00049}00049\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{logData}}(\mbox{\hyperlink{class_c_mean_filter_adf004b2b19e5498539bb87851a5439da}{meanPath}});}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00050}00050\ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00052}\mbox{\hyperlink{class_c_mean_filter_a9efa7170eaf84a72e5aed4e1cca5ab04}{00052}}\ list<CInputPoint3D>\ \mbox{\hyperlink{class_c_mean_filter_a9efa7170eaf84a72e5aed4e1cca5ab04}{CMeanFilter::calculateMean}}(list<CInputPoint3D>\&\ segment)}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00053}00053\ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordtype}{double}\ sumX\ =\ 0,\ sumY\ =\ 0,\ sumZ\ =\ 0;\ \ \ \ \textcolor{comment}{//\ Variablen\ zum\ Speichern\ der\ Summe}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keywordtype}{double}\ div\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Variable\ zum\ Speichern\ des\ Teilers}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00057}00057\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ p;\ \ \ \ \ \ \ \textcolor{comment}{//Point3D\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ inputSize\ =\ segment.size();}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00061}00061\ \ \ \ \ list<CInputPoint3D>::iterator\ it\ =\ segment.begin();}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00062}00062\ \ \ \ \ list<CInputPoint3D>\ newSegment;}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ inputSize\ -\/\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ ++i)\ \textcolor{comment}{//For\ each\ element\ in\ the\ Segment}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00065}00065\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ sumX\ =\ 0,\ sumY\ =\ 0,\ sumZ\ =\ 0;\ \ \ \textcolor{comment}{//\ Variablen\ zum\ Speichern\ der\ Summe\ auf\ 0\ zurück\ setzen}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ div\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Variable\ zum\ Speichern\ des\ Teilers\ auf\ 0\ zurück\ setzen}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{setTime}}(it-\/>getTime());}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{setEulerMatrix}}(it-\/>getEulerMatrix());}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ j\ =\ i;\ j\ <\ i\ +\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ ++j)\ \textcolor{comment}{//\ Build\ the\ sums\ for\ the\ three\ points}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ sumX\ +=\ it-\/>getX();}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ sumY\ +=\ it-\/>getY();}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ sumZ\ +=\ it-\/>getZ();}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ div++;}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ index\ =\ \mbox{\hyperlink{class_c_mean_filter_a247225236ed080e085d43240e47ec94e}{windowSize}};\ index\ >\ 0;\ index-\/-\/)\ \textcolor{comment}{//\ Pain,\ the\ iterator\ has\ to\ be\ set\ back}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ it-\/-\/;}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(sumX\ /\ div,\ sumY\ /\ div,\ sumZ\ /\ div);\ \textcolor{comment}{//\ Calculate\ smoothed\ values}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(it\ !=\ segment.end())}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ newSegment.push\_back(p);}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00086}00086\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00087}00087\ \ \ \ \ \textcolor{keywordflow}{return}\ newSegment;}
+\DoxyCodeLine{\Hypertarget{_mean_filter_8cpp_source_l00088}00088\ \}}
+
+\end{DoxyCode}

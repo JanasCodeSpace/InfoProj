@@ -7,6 +7,7 @@
 #include <vector>
 #include <iostream>
 #include "Point3D.h"
+#include "Logging.h"
 #include "InputParameter.h"
 #include <tuple>
 
@@ -53,7 +54,7 @@ public:
 	* @param vector<CInputPoint3D>& path
 	* @param string filename
 	*/
-	void generateRobCode(vector<CInputPoint3D>& path, string filepath, string filename);
+	void generateRobCode(vector<CInputPoint3D>& path, string filepath, string filename, CLogging log);
 	/**
 	* Integration der Manuellen Eingabedaten in die eingelesenen und bearbeiteten Daten
 	* Hier werden calculateSpeed und calculateAngles aufgerufen.

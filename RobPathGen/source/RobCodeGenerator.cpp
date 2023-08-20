@@ -21,9 +21,12 @@ CRobCodeGenerator::~CRobCodeGenerator(void)
 {
 }
 
-void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filepath, string filename)
+void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filepath, string filename, CLogging log)
 {
 	postProcessing(points); // Calculates all the necessary values
+
+	log.setStep(5);
+	log.logData(processedPath);
 
 	errno_t err;
 	
@@ -55,7 +58,7 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 	for (size_t s = 0; s < points.size(); s++)
 	{
 		if (!input.getSpeedManual()) // If the speed is calculated it needs to be before every LIN command
-			fprintf(fid, "&VEL.CP = %f\n", (float)processedPath[s].getSpeed());
+			fprintf(fid, "$VEL.CP = %f\n", (float)processedPath[s].getSpeed());
 		fprintf(fid, "LIN {X %f, Y %f, Z %f, A %f, B %f, C %f}\n", processedPath[s].getX() + get<0>(offset), processedPath[s].getY() + get<1>(offset),
 			processedPath[s].getZ() + get<2>(offset), processedPath[s].getA(), processedPath[s].getB(),
 			processedPath[s].getC());

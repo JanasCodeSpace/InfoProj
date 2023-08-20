@@ -1,0 +1,102 @@
+\doxysection{src/\+Rob\+Path\+Editor.cpp-\/\+Dateireferenz}
+\hypertarget{_rob_path_editor_8cpp}{}\label{_rob_path_editor_8cpp}\index{src/RobPathEditor.cpp@{src/RobPathEditor.cpp}}
+
+
+Hier wird die main Funktion aufgerufen.  
+
+
+{\ttfamily \#include \"{}./header/\+Segment\+Approximator.\+h\"{}}\newline
+{\ttfamily \#include \"{}./header/\+Path\+Builder.\+h\"{}}\newline
+{\ttfamily \#include \"{}./header/\+Rob\+Code\+Generator.\+h\"{}}\newline
+{\ttfamily \#include \"{}./header/\+Input\+Parameter.\+h\"{}}\newline
+{\ttfamily \#include \"{}./header/\+Mean\+Filter.\+h\"{}}\newline
+{\ttfamily \#include \"{}./header/\+GUI.\+h\"{}}\newline
+{\ttfamily \#include \"{}./header/\+Logging.\+h\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+\doxysubsubsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_rob_path_editor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+Hier wird die main Funktion aufgerufen. 
+
+
+
+Definiert in Datei \mbox{\hyperlink{_rob_path_editor_8cpp_source}{Rob\+Path\+Editor.\+cpp}}.
+
+
+
+\doxysubsection{Dokumentation der Funktionen}
+\Hypertarget{_rob_path_editor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_rob_path_editor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{RobPathEditor.cpp@{RobPathEditor.cpp}!main@{main}}
+\index{main@{main}!RobPathEditor.cpp@{RobPathEditor.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00055}{55}} der Datei \mbox{\hyperlink{_rob_path_editor_8cpp_source}{Rob\+Path\+Editor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00056\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ clock\_t\ start;}
+\DoxyCodeLine{00058\ \ \ \ \ start\ =\ clock();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00061\ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{comment}{//logging\ Initialisieren}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ loggingPath\ =\ \textcolor{stringliteral}{"{}output"{}};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_logging}{CLogging}}\ logging(loggingPath);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{comment}{//read\ Data}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter}{CInputParameter}}\ inputParameter;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ path\ =\ \textcolor{stringliteral}{"{}input/path\_01.csv"{}};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ inputParameter.\mbox{\hyperlink{class_c_input_parameter_a2c6f7c743f45164703be3e489d0fb4f0}{openFile}}(path);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{comment}{//moving\ Average}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter}{CMeanFilter}}\ meanFilter;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ meanFilter.\mbox{\hyperlink{class_c_mean_filter_a838914420e15ae2b3ba13fef8902c6ed}{setWindowSize}}(3);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ meanFilter.\mbox{\hyperlink{class_c_mean_filter_a7137cd05a9a31536560b0230a63a91ee}{mean}}(inputParameter.\mbox{\hyperlink{class_c_input_parameter_a1b7ac3c105dea6e2c2cd38b88157feee}{getPath}}(),\ logging);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Douglas-\/Peuker\ Algorithm}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator}{CSegmentApproximator}}\ segmentApproximator;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ segmentApproximator.\mbox{\hyperlink{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85}{setmaxDistance}}(1.5);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ segmentApproximator.\mbox{\hyperlink{class_c_segment_approximator_adf9e03a7f07a723f9d516dfda659c949}{approx}}(meanFilter.\mbox{\hyperlink{class_c_mean_filter_aaea0182dce726e167d46fc4a4b78e81a}{getPath}}(),\ logging);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Puts\ the\ Segments\ together\ to\ one\ path}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder}{CPathBuilder}}\ pathBuilder;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ pathBuilder.\mbox{\hyperlink{class_c_path_builder_ae61bf6e9ef8130799677aaaa8172c501}{createPath}}(segmentApproximator.\mbox{\hyperlink{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}{getSegmentsApproxVector}}(),\ logging);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Calculates\ Speed,\ Angle\ and\ generates\ the\ Output\ Data}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator}{CRobCodeGenerator}}\ codeGenerator(inputParameter.\mbox{\hyperlink{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575}{getSpeed}}(),\ inputParameter.\mbox{\hyperlink{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}{getSpeedManual}}(),}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ inputParameter.\mbox{\hyperlink{class_c_input_parameter_a0cce4aa7d1efbbca24fa9e531a700097}{getOrientationManual}}(),\ inputParameter.\mbox{\hyperlink{class_c_input_parameter_a39a7079b2eccaf59200c42d02f5e7a58}{getAngles}}());}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ codeGenerator.generateRobCode(pathBuilder.\mbox{\hyperlink{class_c_path_builder_aff7eb289b0c0cfa11c9d2dbe31781bf6}{getPath}}(),\ loggingPath,\ \textcolor{stringliteral}{"{}robCode.src"{}});}
+\DoxyCodeLine{00094\ \ \ \ \ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ elapsed\ =\ (float)(clock()\ -\/\ start)\ /\ CLOCKS\_PER\_SEC;}
+\DoxyCodeLine{00096\ \ \ \ \ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordflow}{catch}\ (exception\&\ e)}
+\DoxyCodeLine{00099\ \ \ \ \ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ cerr\ <<\ e.what()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00101\ \ \ \ \ \}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ system(\textcolor{stringliteral}{"{}pause"{}});}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00106\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8cpp_source_l00019}{CSegment\+Approximator\+::approx()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{CPath\+Builder\+::create\+Path()}}, \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00036}{CRob\+Code\+Generator\+::generate\+Rob\+Code()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00077}{CInput\+Parameter\+::get\+Angles()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00072}{CInput\+Parameter\+::get\+Orientation\+Manual()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00057}{CInput\+Parameter\+::get\+Path()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00035}{CMean\+Filter\+::get\+Path()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00018}{CPath\+Builder\+::get\+Path()}}, \mbox{\hyperlink{_segment_approximator_8cpp_source_l00046}{CSegment\+Approximator\+::get\+Segments\+Approx\+Vector()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00062}{CInput\+Parameter\+::get\+Speed()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00067}{CInput\+Parameter\+::get\+Speed\+Manual()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00040}{CMean\+Filter\+::mean()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00084}{CInput\+Parameter\+::open\+File()}}, \mbox{\hyperlink{_segment_approximator_8cpp_source_l00036}{CSegment\+Approximator\+::setmax\+Distance()}} und \mbox{\hyperlink{_mean_filter_8cpp_source_l00025}{CMean\+Filter\+::set\+Window\+Size()}}.
+

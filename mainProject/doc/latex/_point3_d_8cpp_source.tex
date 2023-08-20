@@ -1,0 +1,223 @@
+\doxysection{Point3\+D.\+cpp}
+\hypertarget{_point3_d_8cpp_source}{}\label{_point3_d_8cpp_source}\index{src/Point3D.cpp@{src/Point3D.cpp}}
+\mbox{\hyperlink{_point3_d_8cpp}{gehe zur Dokumentation dieser Datei}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_point3_d_8h}{./header/Point3D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_line3_d_8h}{./header/Line3D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00012}00012\ \textcolor{comment}{/*\ initialisieren\ des\ Punktes\ mit\ 0-\/Werten\ */}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00013}\mbox{\hyperlink{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}{00013}}\ \mbox{\hyperlink{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}{CPoint3D::CPoint3D}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00020}00020\ \textcolor{comment}{/*\ initialiseren\ des\ Punktes\ mit\ Koordinaten\ */}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00021}\mbox{\hyperlink{class_c_point3_d_a7385de70dccd7dd4fe9cf245ea79439d}{00021}}\ \mbox{\hyperlink{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}{CPoint3D::CPoint3D}}(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00023}00023\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00026}00026\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00028}\mbox{\hyperlink{class_c_point3_d_a63ac51e6c9aee086f53df53ee459c8d2}{00028}}\ \mbox{\hyperlink{class_c_point3_d_a63ac51e6c9aee086f53df53ee459c8d2}{CPoint3D::\string~CPoint3D}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00029}00029\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00030}00030\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00032}\mbox{\hyperlink{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62}{00032}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62}{CPoint3D::getX}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00033}00033\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}};\ \ \textcolor{comment}{//\ X-\/Koordinate\ zurück\ geben}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00037}\mbox{\hyperlink{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326}{00037}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326}{CPoint3D::getY}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00038}00038\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}};\ \ \textcolor{comment}{//\ Y-\/Koordinate\ zurück\ geben}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00040}00040\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00042}\mbox{\hyperlink{class_c_point3_d_a73feea0036b64b0604c10058b193ae43}{00042}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_point3_d_a73feea0036b64b0604c10058b193ae43}{CPoint3D::getZ}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00043}00043\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00044}00044\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}};\ \ \textcolor{comment}{//\ Z-\/Koordinate\ zurück\ geben}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00045}00045\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00047}\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{00047}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{CPoint3D::setX}}(\textcolor{keywordtype}{double}\ X)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00048}00048\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;\ \textcolor{comment}{//\ X-\/Koordinate\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00050}00050\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00052}\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{00052}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{CPoint3D::setY}}(\textcolor{keywordtype}{double}\ Y)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00053}00053\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00054}00054\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;\ \textcolor{comment}{//\ Y-\/Koordinate\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00055}00055\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00057}\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{00057}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{CPoint3D::setZ}}(\textcolor{keywordtype}{double}\ Z)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00058}00058\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;\ \textcolor{comment}{//\ Z-\/Koordinate\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00062}00062\ \textcolor{comment}{/*\ X-\/,\ Y-\/\ und\ Z-\/Koordinate\ setzen\ */}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00063}\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{00063}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{CPoint3D::set}}(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00064}00064\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00065}00065\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;\ \textcolor{comment}{//\ X-\/Koordinate\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00066}00066\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;\ \textcolor{comment}{//\ Y-\/Koordinate\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00067}00067\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;\ \textcolor{comment}{//\ Z-\/Koordinate\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00068}00068\ \}\ \ \ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00070}00070\ \textcolor{comment}{/*\ Distanz\ zwischen\ Punkt\ und\ übergebenen\ Punkt\ berechnen\ */}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00071}\mbox{\hyperlink{class_c_point3_d_a1b28b942ffbee33ba90818ea1c56de05}{00071}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_point3_d_a1b28b942ffbee33ba90818ea1c56de05}{CPoint3D::distanceTo}}(\mbox{\hyperlink{class_c_point3_d}{CPoint3D}}\ point)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00072}00072\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{keywordflow}{return}\ sqrt(pow((\textcolor{keywordtype}{double})(\mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ -\/\ (\textcolor{keywordtype}{double})point.\mbox{\hyperlink{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62}{getX}}()),\ 2)\ +\ pow((\textcolor{keywordtype}{double})(\mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ -\/\ (\textcolor{keywordtype}{double})point.\mbox{\hyperlink{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326}{getY}}()),\ 2)\ +\ pow((\textcolor{keywordtype}{double})(\mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ -\/\ (\textcolor{keywordtype}{double})point.\mbox{\hyperlink{class_c_point3_d_a73feea0036b64b0604c10058b193ae43}{getZ}}()),\ 2));\ \ \ \textcolor{comment}{//\ \ Pythagoras\ 3D}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00074}00074\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00076}\mbox{\hyperlink{class_c_point3_d_aeaa6b56609c5550f7688f3c3721aa28a}{00076}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_point3_d_a1b28b942ffbee33ba90818ea1c56de05}{CPoint3D::distanceTo}}(\mbox{\hyperlink{class_c_line3_d}{CLine3D}}\ line)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00077}00077\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00078}00078\ \ \ \ \ \textcolor{keywordtype}{double}\ bx,\ by,\ bz,\ rv\_sq,\ dist,\ vp1,\ vp2,\ vp3;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Variablen\ Anlegen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00081}00081\ \textcolor{comment}{\ \ \ \ Vermessen\ wird\ der\ Punkt\ selbst}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00082}00082\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00083}00083\ \textcolor{comment}{\ \ \ \ bx,\ by,\ bz\ \ \ \ \ \ ==\ Vektordifferenz}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00084}00084\ \textcolor{comment}{\ \ \ \ rv\_sq\ \ \ \ \ \ \ \ \ \ \ ==\ Betrag\ des\ Linienvektors}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00085}00085\ \textcolor{comment}{\ \ \ \ dist\ \ \ \ \ \ \ \ \ \ \ \ ==\ Distanz\ von\ Punkt\ zu\ Linie}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00086}00086\ \textcolor{comment}{\ \ \ \ vp1,\ vp2,\ vp3\ \ \ ==\ Vektorprodukte}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00087}00087\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{keywordtype}{int}\ rvx\ =\ line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ -\/\ line.\mbox{\hyperlink{class_c_line3_d_af54f121c474e11318113cb820e3b7345}{p2}}.\mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}};\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ X\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keywordtype}{int}\ rvy\ =\ line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ -\/\ line.\mbox{\hyperlink{class_c_line3_d_af54f121c474e11318113cb820e3b7345}{p2}}.\mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}};\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Y\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordtype}{int}\ rvz\ =\ line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ -\/\ line.\mbox{\hyperlink{class_c_line3_d_af54f121c474e11318113cb820e3b7345}{p2}}.\mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}};\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Z\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00093}00093\ \ \ \ \ rv\_sq\ =\ sqrt(((\textcolor{keywordtype}{double})rvx\ *\ (\textcolor{keywordtype}{double})rvx)\ +\ ((\textcolor{keywordtype}{double})rvy\ *\ (\textcolor{keywordtype}{double})rvy)\ +\ ((\textcolor{keywordtype}{double})rvz\ *\ (\textcolor{keywordtype}{double})rvz));\ \ \ \ \ \ \textcolor{comment}{//\ Betrag\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00095}00095\ \ \ \ \ bx\ =\ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ -\/\ (double)line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ X(Punkt)\ -\/\ X(Aufpunkt)\ }}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00096}00096\ \ \ \ \ by\ =\ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ -\/\ (double)line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Y(Punkt)\ -\/\ Y(Aufpunkt)}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00097}00097\ \ \ \ \ bz\ =\ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ -\/\ (double)line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Z(Punkt)\ -\/\ Z(Aufpunkt)}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00099}00099\ \ \ \ \ vp1\ =\ by\ *\ rvz\ -\/\ bz\ *\ rvy;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ X\ Vektorprodukt}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00100}00100\ \ \ \ \ vp2\ =\ bz\ *\ rvx\ -\/\ bx\ *\ rvz;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Y\ Vektorprodukt}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00101}00101\ \ \ \ \ vp3\ =\ bx\ *\ rvy\ -\/\ by\ *\ rvx;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Z\ Vektorprodukt}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00103}00103\ \ \ \ \ dist\ =\ sqrt(vp1\ *\ vp1\ +\ vp2\ *\ vp2\ +\ vp3\ *\ vp3)\ /\ rv\_sq;\ \textcolor{comment}{//\ Betrag\ des\ Vektors\ berechnen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00105}00105\ \ \ \ \ \textcolor{keywordflow}{return}\ dist;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00106}00106\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00108}00108\ \textcolor{comment}{//\ InputPoint3D}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00110}\mbox{\hyperlink{class_c_input_point3_d_ae09b06a0e03216701b1c55715f035d67}{00110}}\ \mbox{\hyperlink{class_c_input_point3_d_ae09b06a0e03216701b1c55715f035d67}{CInputPoint3D::CInputPoint3D}}(\textcolor{keywordtype}{void})\ :\ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}()}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00111}00111\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00112}00112\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}}\ =\ 0;\ \ \ \ \ \textcolor{comment}{//\ Zeitstempel\ mit\ 0\ initialisieren}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00113}00113\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00115}00115\ \textcolor{comment}{/*\ Initialisieren\ des\ Punktes\ mit\ Parameter\ */}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00116}\mbox{\hyperlink{class_c_input_point3_d_af04dfe4ec49d9a3c807e6464a860c078}{00116}}\ \mbox{\hyperlink{class_c_input_point3_d_ae09b06a0e03216701b1c55715f035d67}{CInputPoint3D::CInputPoint3D}}(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \textcolor{keywordtype}{double}\ Timestamp,\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ Matrix)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00117}00117\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00118}00118\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00119}00119\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00120}00120\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00121}00121\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}}\ =\ Timestamp;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00122}00122\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d}{orientationMatrix}}\ =\ Matrix;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00123}00123\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00125}\mbox{\hyperlink{class_c_input_point3_d_a095391c3aeb5fb0433aa76d35457c0b1}{00125}}\ \mbox{\hyperlink{class_c_input_point3_d_a095391c3aeb5fb0433aa76d35457c0b1}{CInputPoint3D::\string~CInputPoint3D}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00126}00126\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00127}00127\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00129}\mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{00129}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{CInputPoint3D::setEulerMatrix}}(\mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ orientation)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00130}00130\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00131}00131\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d}{orientationMatrix}}\ =\ orientation;\ \ \ \textcolor{comment}{//\ EulerMatrix\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00132}00132\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00135}\mbox{\hyperlink{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}{00135}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}{CInputPoint3D::setPoint}}(\textcolor{keywordtype}{double}\ time,\ \textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ orientation)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00136}00136\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00137}00137\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{setTime}}(time);\ \ \ \textcolor{comment}{//\ Zeitstempel\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00138}00138\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(X,\ Y,\ Z);\ \ \ \ \textcolor{comment}{//\ setze\ Punkt-\/Koordinaten}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00139}00139\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{setEulerMatrix}}(orientation);\ \textcolor{comment}{//\ EulerMatrix\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00140}00140\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00142}\mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{00142}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{CInputPoint3D::setTime}}(\textcolor{keywordtype}{double}\ time)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00143}00143\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00144}00144\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}}\ =\ time;\ \ \textcolor{comment}{//\ Zeitstempel\ setzen}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00145}00145\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00147}\mbox{\hyperlink{class_c_input_point3_d_a3b9f4e7c702d56dbd384397fd5486c1d}{00147}}\ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ \mbox{\hyperlink{class_c_input_point3_d_a3b9f4e7c702d56dbd384397fd5486c1d}{CInputPoint3D::getEulerMatrix}}()}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00148}00148\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00149}00149\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d}{orientationMatrix}};\ \ \textcolor{comment}{//\ Rückgabe\ der\ EulerMatrix}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00150}00150\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00151}00151\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00152}\mbox{\hyperlink{class_c_input_point3_d_a9404d0ef8b0f917903e18f1a70a7da64}{00152}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_input_point3_d_a9404d0ef8b0f917903e18f1a70a7da64}{CInputPoint3D::getTime}}()}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00153}00153\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00154}00154\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}};\ \ \ \ \ \ \textcolor{comment}{//\ Rückgabe\ des\ Zeitstempel}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00155}00155\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00156}00156\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00157}00157\ \textcolor{comment}{//\ OutputPoint3D}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00158}00158\ \textcolor{comment}{/*\ Punkt\ mit\ 0\ initialisieren\ */}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00159}\mbox{\hyperlink{class_c_output_point3_d_ab9f0dffd47a8bd8febcd774a373799b6}{00159}}\ \mbox{\hyperlink{class_c_output_point3_d_ab9f0dffd47a8bd8febcd774a373799b6}{COutputPoint3D::COutputPoint3D}}(\textcolor{keywordtype}{void})\ :\ \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}()}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00160}00160\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00161}00161\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_aa48312971c33a40ff44cf21de5a6d0a3}{speed}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00162}00162\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a98207e5bab1268cfc514c3027485fb26}{a}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00163}00163\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a999c2a08a8541937e711ca3e91860c28}{b}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00164}00164\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a6781a079d9922cd5ddb624c0d391a045}{c}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00165}00165\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00167}00167\ \textcolor{comment}{/*\ Punkt\ mit\ Parameter\ initialisieren*/}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00168}\mbox{\hyperlink{class_c_output_point3_d_a8fab5c0ba78dd7944317201f69960cd9}{00168}}\ \mbox{\hyperlink{class_c_output_point3_d_ab9f0dffd47a8bd8febcd774a373799b6}{COutputPoint3D::COutputPoint3D}}(\textcolor{keywordtype}{double}\ Speed,\ \textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \textcolor{keywordtype}{double}\ A,\ \textcolor{keywordtype}{double}\ B,\ \textcolor{keywordtype}{double}\ C)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00169}00169\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00170}00170\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_aa48312971c33a40ff44cf21de5a6d0a3}{speed}}\ =\ Speed;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00171}00171\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a98207e5bab1268cfc514c3027485fb26}{a}}\ =\ A;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00172}00172\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a999c2a08a8541937e711ca3e91860c28}{b}}\ =\ B;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00173}00173\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a6781a079d9922cd5ddb624c0d391a045}{c}}\ =\ C;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00174}00174\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00175}00175\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00176}00176\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00177}00177\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00178}00178\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00179}\mbox{\hyperlink{class_c_output_point3_d_a240b7c5844859b74fac53531c45cbc28}{00179}}\ \mbox{\hyperlink{class_c_output_point3_d_a240b7c5844859b74fac53531c45cbc28}{COutputPoint3D::\string~COutputPoint3D}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00180}00180\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00182}00182\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00183}00183\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00184}\mbox{\hyperlink{class_c_output_point3_d_a107066506a8bfcbd0969785b08926bd6}{00184}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_output_point3_d_a107066506a8bfcbd0969785b08926bd6}{COutputPoint3D::getA}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00185}00185\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00186}00186\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_output_point3_d_a98207e5bab1268cfc514c3027485fb26}{a}};\ \ \textcolor{comment}{//\ Rückgabe\ Winkel\ alpha}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00187}00187\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00189}\mbox{\hyperlink{class_c_output_point3_d_aa66054bc36b4cdd7cdf74037fb9e6106}{00189}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_output_point3_d_aa66054bc36b4cdd7cdf74037fb9e6106}{COutputPoint3D::getB}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00190}00190\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00191}00191\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_output_point3_d_a999c2a08a8541937e711ca3e91860c28}{b}};\ \ \textcolor{comment}{//\ Rückgabe\ Winkel\ beta}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00192}00192\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00193}00193\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00194}\mbox{\hyperlink{class_c_output_point3_d_a688329e8baac764b8865167329673a79}{00194}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_output_point3_d_a688329e8baac764b8865167329673a79}{COutputPoint3D::getC}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00195}00195\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00196}00196\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_output_point3_d_a6781a079d9922cd5ddb624c0d391a045}{c}};\ \ \textcolor{comment}{//\ Rückgabe\ Winkel\ gamma}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00197}00197\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00198}00198\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00199}\mbox{\hyperlink{class_c_output_point3_d_ada86f40197ede37dcfaeb52da3931e78}{00199}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_output_point3_d_ada86f40197ede37dcfaeb52da3931e78}{COutputPoint3D::getSpeed}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00200}00200\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00201}00201\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_output_point3_d_aa48312971c33a40ff44cf21de5a6d0a3}{speed}};\ \ \textcolor{comment}{//\ Rückgabe\ Geschwindigkeit}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00202}00202\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00204}\mbox{\hyperlink{class_c_output_point3_d_a180732285cf09beda40fc13478b2eecc}{00204}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_output_point3_d_a180732285cf09beda40fc13478b2eecc}{COutputPoint3D::setA}}(\textcolor{keywordtype}{double}\ A)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00205}00205\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00206}00206\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a98207e5bab1268cfc514c3027485fb26}{a}}\ =\ A;\ \ \ \ \ \textcolor{comment}{//\ setze\ Winkel\ alpha}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00207}00207\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00208}00208\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00209}\mbox{\hyperlink{class_c_output_point3_d_adbbdb2ffc0a5a4fa08fa775eb3790017}{00209}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_output_point3_d_adbbdb2ffc0a5a4fa08fa775eb3790017}{COutputPoint3D::setB}}(\textcolor{keywordtype}{double}\ B)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00210}00210\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00211}00211\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a999c2a08a8541937e711ca3e91860c28}{b}}\ =\ B;\ \ \ \ \ \textcolor{comment}{//\ setze\ Winkel\ beta}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00212}00212\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00213}00213\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00214}\mbox{\hyperlink{class_c_output_point3_d_a1546fdc484115dc5405df8b7a3e5fcdf}{00214}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_output_point3_d_a1546fdc484115dc5405df8b7a3e5fcdf}{COutputPoint3D::setC}}(\textcolor{keywordtype}{double}\ C)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00215}00215\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00216}00216\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_a6781a079d9922cd5ddb624c0d391a045}{c}}\ =\ C;\ \ \ \ \ \textcolor{comment}{//\ setze\ Winkel\ gamma}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00217}00217\ \}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00218}00218\ }
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00219}\mbox{\hyperlink{class_c_output_point3_d_ae72f85753da775da6e8ce047a502b19d}{00219}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_output_point3_d_ae72f85753da775da6e8ce047a502b19d}{COutputPoint3D::setSpeed}}(\textcolor{keywordtype}{double}\ Speed)}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00220}00220\ \{}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00221}00221\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d_aa48312971c33a40ff44cf21de5a6d0a3}{speed}}\ =\ Speed;\ \ \ \ \ \textcolor{comment}{//\ setze\ Geschwindigkeit}}
+\DoxyCodeLine{\Hypertarget{_point3_d_8cpp_source_l00222}00222\ \}}
+
+\end{DoxyCode}
