@@ -45,8 +45,11 @@ void CMeanFilter::mean(vector<list<CInputPoint3D>>& sourcePath, CLogging log)
 		dummyList = calculateMean(sourcePath[s]);
 		meanPath.push_back(dummyList);
 	}
-	log.setStep(2);
-	log.logData(meanPath);
+	if (log.getDetailed())
+	{
+		log.setStep(2);
+		log.logData(meanPath);
+	}
 }
 
 list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)

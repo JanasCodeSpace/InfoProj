@@ -33,7 +33,7 @@ public:
 	* @brief Default Konstruktor
 	* @see CMeanFilter(int Window);
 	*/
-	CLogging(string path);
+	CLogging(string path, bool detailed);
 	/**
 	* @brief Dekonstruktor
 	*/
@@ -43,6 +43,11 @@ public:
 	* @param int Step
 	*/
 	void setStep(int Step);
+	/**
+	* @brief Gibt es ein detailliertes Logging
+	* @return bool detailed
+	*/
+	bool getDetailed(void);
 	/**
 	* Loggingdaten werden weggespeichert
 	* @brief Ruft calculateMean für die einzelnen Segmente auf
@@ -64,6 +69,12 @@ private:
 	* Speicherpfad
 	*/
 	string path;
+	/**
+	* Speicherpfad
+	*/
+	bool detailed;
+
+
 };
 
 

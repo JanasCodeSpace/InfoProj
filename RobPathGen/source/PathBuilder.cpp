@@ -38,7 +38,9 @@ void CPathBuilder::createPath(vector<list<CInputPoint3D>>& segments, CLogging lo
 
 		itr--;
 	}
-
-	log.setStep(4);
-	log.logData(path);
+	if (log.getDetailed())
+	{
+		log.setStep(4);
+		log.logData(path);
+	}
 }

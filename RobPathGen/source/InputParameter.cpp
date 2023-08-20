@@ -46,6 +46,19 @@ void CInputParameter::setOrientation(bool initOrientationManual, double initA, d
 	C = initC;
 }
 
+void CInputParameter::setOffset(double X, double Y, double Z, bool initOffsetManual)
+{
+	offsetManual = initOffsetManual;
+	offsetX = X;
+	offsetY = Y;
+	offsetZ = Z;
+}
+
+void CInputParameter::setLogging(bool initLoggingManual)
+{
+	loggingManual = initLoggingManual;
+}
+
 /* Einstellung für Geschwindigkeit und Geschwindigkeit setzen */
 void CInputParameter::setSpeed(double initSpeed, bool initSpeedManual)
 {
@@ -73,9 +86,24 @@ bool CInputParameter::getOrientationManual(void)
 	return orientationManual;		// Vorgewählte Einstellung für Orientierung zurück geben
 }
 
+bool CInputParameter::getOffsetManual(void)
+{
+	return offsetManual;		// Vorgewählte Einstellung für den Offset zurück
+}
+
+bool CInputParameter::getLoggingManual(void)
+{
+	return loggingManual;		// Vorgewählte Einstellung für das Logging zurück
+}
+
 tuple <double, double, double> CInputParameter::getAngles(void)
 {
 	return make_tuple(A, B, C);		// Winkel zurück geben
+}
+
+tuple <double, double, double> CInputParameter::getOffset(void)
+{
+	return make_tuple(offsetX, offsetY, offsetZ);		// Offset zurück geben
 }
 
 

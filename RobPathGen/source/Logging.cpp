@@ -13,14 +13,20 @@ CLogging::CLogging(void)
 }
 
 /* Path mit Parameter initialisieren*/
-CLogging::CLogging(string Path)
+CLogging::CLogging(string Path, bool Detailed)
 {
 	path = Path;
+	detailed = Detailed;
 }
 
 CLogging::~CLogging(void)
 {
 
+}
+
+bool CLogging::getDetailed(void)
+{
+	return detailed;
 }
 
 void CLogging::setStep(int Step)

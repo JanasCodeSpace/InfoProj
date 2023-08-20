@@ -66,7 +66,21 @@ public:
 	* @param bool initSeepManual
 	*/
 	void setSpeed(double initSpeed, bool initSpeedManual);
-
+	/**
+	* Setzt den  gewünschten Offset
+	* @brief Setzt den  gewünschten Offset
+	* @param double X
+	* @param double Y
+	* @param double Z
+	* @param bool offsetManual
+	*/
+	void setOffset(double X, double Y, double Z, bool offsetManual);
+	/**
+	* Setzt ob es ein detailliertes Logging geben soll
+	* @brief Setzt ob es ein detailliertes Logging geben soll
+	* @param bool initLoggingManual
+	*/
+	void setLogging(bool initLoggingManual);
 	/**
 	* Gibt die eingegebene Geschwindigkeit zurück
 	* @brief Gibt Geschwindigkeit zurück
@@ -88,6 +102,22 @@ public:
 	* @return: tuple <double double double> angles
 	*/
 	tuple <double, double, double> getAngles(void);
+	/**
+	* Gibt zurück ob ein Offset eingestellt werden soll
+	* @brief Gibt zurück ob ein Offset eingestellt werden soll
+	*/
+	bool getOffsetManual(void);
+	/**
+	* Gibt zurück ob ein detailliertes Logging ausgegeben werden soll
+	* @brief Gibt zurück ob ein detailliertes Logging ausgegeben werden soll
+	*/
+	bool getLoggingManual(void);
+	/**
+	* Gibt den Offset als tuple zurück
+	* @brief Gibt Offset zurück
+	* @return: tuple <double double double> offset
+	*/
+	tuple <double, double, double> getOffset(void);
 
 	/**
 	* Liest die Daten aus einen beliebigen File ein und ruft @detectJump auf um zu erkennen ob es mehrere Aufnahmen sind.
@@ -143,5 +173,25 @@ private:
 	* Sprung ab dem eine neue Liste angefangen wird
 	*/
 	double difference = 20;
+	/**
+	* Auswahl ob ein Offset eingegeben werden soll
+	*/
+	bool offsetManual;
+	/**
+	* Offset X
+	*/
+	double offsetX;
+	/**
+	* Offset Y
+	*/
+	double offsetY;
+	/**
+	* Offset Z
+	*/
+	double offsetZ;
+	/**
+	* Auswahl ob ein Offset eingegeben werden soll
+	*/
+	bool loggingManual;
 };
 

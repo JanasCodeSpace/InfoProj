@@ -57,12 +57,62 @@ GUI::GUI(QWidget *parent)
 	ui.CValue->setValue(0);
 	connect(ui.CValue, &QDoubleSpinBox::valueChanged, this, &GUI::setOrientation);
 
+	//Offset
+	connect(ui.bOffset, &QCheckBox::clicked, this, &GUI::activateOffset);
+	ui.offsetX->setRange(-400, 400);
+	ui.offsetX->setSingleStep(10);
+	ui.offsetX->setValue(0);
+	connect(ui.offsetX, &QDoubleSpinBox::valueChanged, this, &GUI::setOffset);
+
+	ui.offsetY->setRange(-400, 400);
+	ui.offsetY->setSingleStep(10);
+	ui.offsetY->setValue(0);
+	connect(ui.offsetY, &QDoubleSpinBox::valueChanged, this, &GUI::setOffset);
+
+	ui.offsetZ->setRange(-400, 400);
+	ui.offsetZ->setSingleStep(10);
+	ui.offsetZ->setValue(0);
+	connect(ui.offsetZ, &QDoubleSpinBox::valueChanged, this, &GUI::setOffset);
+
+	//Logging
+	ui.bLogging->setChecked(true);
+	inputParameter.setOffset(0, 0, 0, false);
+	connect(ui.bLogging, &QCheckBox::clicked, this, &GUI::activateLogging);
+
 	connect(ui.startCalculation, &QPushButton::clicked, this, &GUI::calculate);
-	//ui.progressBar->reset();
 }
 
 GUI::~GUI()
 {}
+
+void GUI::activateLogging(void)
+{
+	inputParameter.setLogging(ui.bLogging->isChecked());
+}
+
+void GUI::setOffset(void)
+{
+	inputParameter.setOffset(ui.offsetX->value(), ui.offsetY->value(), ui.offsetZ->value(),
+		ui.bOffset->isChecked());
+}
+
+void GUI::activateOffset(void)
+{
+	if (ui.bOffset->isChecked())
+	{
+		ui.offset->setEnabled(true);
+		ui.offset->setStyleSheet("background-color:  rgb(67, 72, 91); color: rgb(3, 8, 14); border: 1px solid black;");
+	}
+	else
+	{
+		ui.offset->setEnabled(false);
+		ui.offset->setStyleSheet("background-color: rgb(210,211,218); color: rgb(117,125,149)");
+		ui.offsetX->setValue(0);
+		ui.offsetY->setValue(0);
+		ui.offsetZ->setValue(0);
+		inputParameter.setOffset(0, 0, 0, false);
+	}
+}
 
 void GUI::setOrientation(void)
 {
@@ -141,49 +191,40 @@ void GUI::calculate()
 	{
 		string outputPath = outputPathUI.toUtf8().constData();
 		string inputPath = inputPathUI.toUtf8().constData();
-		//ui.progressBar->setMaximum(5);
-		//ui.progressBar->reset();
 		ui.textBrowser->clear();
 
 		//logging Initialisieren
-		CLogging logging(outputPath);
+		CLogging logging(outputPath, inputParameter.getLoggingManual());
 
 		//read Data
 		inputParameter.openFile(inputPath);
-
 		ui.textBrowser->insertPlainText("Datei eingelesen\n");
-		//ui.progressBar->setValue(1);
+
 		//moving Average
 
 		CMeanFilter meanFilter;
 		meanFilter.setWindowSize(meanLength);
 		meanFilter.mean(inputParameter.getPath(), logging);
-
 		ui.textBrowser->insertPlainText("Gleitender Mittelwert berechnet\n");
-		//ui.progressBar->setValue(2);
+
 		// Douglas-Peuker Algorithm
 
 		CSegmentApproximator segmentApproximator;
 		segmentApproximator.setmaxDistance(dpTolerance);
 		segmentApproximator.approx(meanFilter.getPath(), logging);
-
 		ui.textBrowser->insertPlainText("Douglas-Peuker-Algorithmus berechnet\n");
-		//ui.progressBar->setValue(3);
 
 		// Puts the Segments together to one path
 
 		CPathBuilder pathBuilder;
 		pathBuilder.createPath(segmentApproximator.getSegmentsApproxVector(), logging);
-
 		ui.textBrowser->insertPlainText("Pfad zusammengesetzt\n");
-		//ui.progressBar->setValue(4);
+
 		// Calculates Speed, Angle and generates the Output Data
 
-		CRobCodeGenerator codeGenerator(inputParameter.getSpeed(), inputParameter.getSpeedManual(),
-			inputParameter.getOrientationManual(), inputParameter.getAngles());
+		CRobCodeGenerator codeGenerator(inputParameter);
 		codeGenerator.generateRobCode(pathBuilder.getPath(), outputPath, "robCode.src");
-		ui.textBrowser->insertPlainText("Datei erstellt\n");
-		//ui.progressBar->setValue(5);
+		ui.textBrowser->insertPlainText("Datei erstellt\n");;
 	}
 
 	catch (exception& e)

@@ -29,6 +29,9 @@ private slots:
     void setSpeed(void);
     void activateOrientation(void);
     void setOrientation(void);
+    void activateOffset(void);
+    void setOffset(void);
+    void activateLogging(void);
 
 private:
     Ui::GUIClass ui;

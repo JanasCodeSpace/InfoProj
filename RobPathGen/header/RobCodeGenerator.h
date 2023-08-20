@@ -7,6 +7,7 @@
 #include <vector>
 #include <iostream>
 #include "Point3D.h"
+#include "InputParameter.h"
 #include <tuple>
 
 using namespace std;
@@ -40,7 +41,7 @@ public:
 	* @param initC double
 	* @see CRobCodeGenerator(void)
 	*/
-	CRobCodeGenerator(double speedIn, bool speedManualIn, bool orientationManualIn, tuple<double, double, double> angles);
+	CRobCodeGenerator(CInputParameter inputParam);
 	/**
 	* @brief Dekonstruktor
 	*/
@@ -83,27 +84,7 @@ private:
 	/**
 	* User eingegebene Geschwindigkeit
 	*/
-	double speed;
-	/**
-	* Auswahl ob berechnete oder eingegebene Geschwindigkeit verwendet werden soll
-	*/
-	bool speedManual;
-	/**
-	* Auswahl ob berechnete oder eingegebene Winkel verwendet werden soll
-	*/
-	bool orientationManual;
-	/**
-	* User eingegebener Winkel A
-	*/
-	double A;
-	/**
-	* User eingegebener Winkel B
-	*/
-	double B;
-	/**
-	* User eingegebener Winkel C
-	*/
-	double C;
+	CInputParameter input;
 
 };
 

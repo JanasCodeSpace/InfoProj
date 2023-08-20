@@ -29,8 +29,11 @@ void CSegmentApproximator::approx(const vector<list<CInputPoint3D>>& segments, C
 	}
 
 	/*  Logging der Daten*/
-	log.setStep(3);
-	log.logData(segmentsApprox);
+	if (log.getDetailed())
+	{
+		log.setStep(3);
+		log.logData(segmentsApprox);
+	}
 }
 
 void CSegmentApproximator::setmaxDistance(double maxDistanceSource)
