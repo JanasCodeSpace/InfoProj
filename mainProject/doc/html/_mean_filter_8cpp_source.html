@@ -84,12 +84,12 @@ $(function() {
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_c_mean_filter.html#ac2ca0c60d987a144d7288a317315f851">   11</a></span><a class="code hl_function" href="class_c_mean_filter.html#ac2ca0c60d987a144d7288a317315f851">CMeanFilter::CMeanFilter</a>()</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a> = 3;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a> = 3;         <span class="comment">// initialisieren mit Standardfenstergröße 3</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_c_mean_filter.html#ae4fdddbd551284005fe3d0bb3f9dc9c5">   16</a></span><a class="code hl_function" href="class_c_mean_filter.html#ac2ca0c60d987a144d7288a317315f851">CMeanFilter::CMeanFilter</a>(<span class="keywordtype">int</span> Window)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a> = Window;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a> = Window;    <span class="comment">// initialisieren der Fenstergröße mit Übergabewert</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_c_mean_filter.html#a03a060f31ed65b1f7e6407668c8801b6">   21</a></span><a class="code hl_function" href="class_c_mean_filter.html#a03a060f31ed65b1f7e6407668c8801b6">CMeanFilter::~CMeanFilter</a>()</div>
@@ -98,17 +98,17 @@ $(function() {
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_c_mean_filter.html#a838914420e15ae2b3ba13fef8902c6ed">   25</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_c_mean_filter.html#a838914420e15ae2b3ba13fef8902c6ed">CMeanFilter::setWindowSize</a>(<span class="keywordtype">int</span> Window)</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a> = Window;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a> = Window;    <span class="comment">// setzen der Fenstergröße mit Übergabewert</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_c_mean_filter.html#afea7ab027781d3c7073bf918453e73b5">   30</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_c_mean_filter.html#afea7ab027781d3c7073bf918453e73b5">CMeanFilter::getWindowSize</a>()</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a>;      <span class="comment">// Fenstergröße zurück geben</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_c_mean_filter.html#aaea0182dce726e167d46fc4a4b78e81a">   35</a></span>vector&lt;list&lt;CInputPoint3D&gt;&gt;&amp; <a class="code hl_function" href="class_c_mean_filter.html#aaea0182dce726e167d46fc4a4b78e81a">CMeanFilter::getPath</a>()</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_mean_filter.html#adf004b2b19e5498539bb87851a5439da">meanPath</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_mean_filter.html#adf004b2b19e5498539bb87851a5439da">meanPath</a>;        <span class="comment">// Mittelwert zurück geben</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_c_mean_filter.html#a7137cd05a9a31536560b0230a63a91ee">   40</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_c_mean_filter.html#a7137cd05a9a31536560b0230a63a91ee">CMeanFilter::mean</a>(vector&lt;list&lt;CInputPoint3D&gt;&gt;&amp; sourcePath, <a class="code hl_class" href="class_c_logging.html">CLogging</a> log)</div>
@@ -125,52 +125,49 @@ $(function() {
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_c_mean_filter.html#a9efa7170eaf84a72e5aed4e1cca5ab04">   52</a></span>list&lt;CInputPoint3D&gt; <a class="code hl_function" href="class_c_mean_filter.html#a9efa7170eaf84a72e5aed4e1cca5ab04">CMeanFilter::calculateMean</a>(list&lt;CInputPoint3D&gt;&amp; segment)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">double</span> sumX = 0, sumY = 0, sumZ = 0;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">double</span> div = 0;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">int</span> m = 0;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">int</span> OffsetPos = 0;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">int</span> OffsetNeg = 0;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a> p;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">size_t</span> inputSize = segment.size();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">double</span> sumX = 0, sumY = 0, sumZ = 0;    <span class="comment">// Variablen zum Speichern der Summe</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">double</span> div = 0;                         <span class="comment">// Variable zum Speichern des Teilers</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a> p;        <span class="comment">//Point3D zum Zwischenspeichern</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">size_t</span> inputSize = segment.size();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    list&lt;CInputPoint3D&gt;::iterator it = segment.begin();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    list&lt;CInputPoint3D&gt; newSegment;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    list&lt;CInputPoint3D&gt;::iterator it = segment.begin();</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    list&lt;CInputPoint3D&gt; newSegment;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; inputSize - <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a>; ++i) <span class="comment">//For each element in the Segment</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        sumX = 0, sumY = 0, sumZ = 0;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        div = 0;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        p.<a class="code hl_function" href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">setTime</a>(it-&gt;getTime());</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        p.<a class="code hl_function" href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">setEulerMatrix</a>(it-&gt;getEulerMatrix());</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = i; j &lt; i + <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a>; ++j) <span class="comment">// Build the sums for the three points</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            sumX += it-&gt;getX();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            sumY += it-&gt;getY();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            sumZ += it-&gt;getZ();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            div++;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            it++;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> index = <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a>; index &gt; 0; index--) <span class="comment">// Pain, the iterator has to be set back</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            it--;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        p.<a class="code hl_function" href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">set</a>(sumX / div, sumY / div, sumZ / div); <span class="comment">// Calculate smoothed values</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">if</span>(it != segment.end())</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            it++;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        newSegment.push_back(p);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> newSegment;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; inputSize - <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a>; ++i) <span class="comment">//For each element in the Segment</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        sumX = 0, sumY = 0, sumZ = 0;   <span class="comment">// Variablen zum Speichern der Summe auf 0 zurück setzen</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        div = 0;                        <span class="comment">// Variable zum Speichern des Teilers auf 0 zurück setzen</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        p.<a class="code hl_function" href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">setTime</a>(it-&gt;getTime());</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        p.<a class="code hl_function" href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">setEulerMatrix</a>(it-&gt;getEulerMatrix());</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = i; j &lt; i + <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a>; ++j) <span class="comment">// Build the sums for the three points</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            sumX += it-&gt;getX();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            sumY += it-&gt;getY();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            sumZ += it-&gt;getZ();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            div++;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            it++;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> index = <a class="code hl_variable" href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">windowSize</a>; index &gt; 0; index--) <span class="comment">// Pain, the iterator has to be set back</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            it--;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        p.<a class="code hl_function" href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">set</a>(sumX / div, sumY / div, sumZ / div); <span class="comment">// Calculate smoothed values</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span>(it != segment.end())</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            it++;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        newSegment.push_back(p);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> newSegment;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 <div class="ttc" id="a_logging_8h_html"><div class="ttname"><a href="_logging_8h.html">Logging.h</a></div><div class="ttdoc">Logging der Daten.</div></div>
 <div class="ttc" id="a_mean_filter_8h_html"><div class="ttname"><a href="_mean_filter_8h.html">MeanFilter.h</a></div><div class="ttdoc">Berechnung des gleitenden Mittelwertfilters.</div></div>
 <div class="ttc" id="aclass_c_input_point3_d_html"><div class="ttname"><a href="class_c_input_point3_d.html">CInputPoint3D</a></div><div class="ttdoc">Input Punkt.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00106">Point3D.h:107</a></div></div>
-<div class="ttc" id="aclass_c_input_point3_d_html_a64595602198fb39f73b3ba7ca23670fd"><div class="ttname"><a href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">CInputPoint3D::setTime</a></div><div class="ttdeci">void setTime(double time)</div><div class="ttdoc">Setzt den Zeitstempel.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00139">Point3D.cpp:139</a></div></div>
-<div class="ttc" id="aclass_c_input_point3_d_html_aa1ffef5d44dbf0f82fea3c6ff25dd1e8"><div class="ttname"><a href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">CInputPoint3D::setEulerMatrix</a></div><div class="ttdeci">void setEulerMatrix(CEulerMatrix orientation)</div><div class="ttdoc">Setzt die Eulermatrix.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00126">Point3D.cpp:126</a></div></div>
+<div class="ttc" id="aclass_c_input_point3_d_html_a64595602198fb39f73b3ba7ca23670fd"><div class="ttname"><a href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">CInputPoint3D::setTime</a></div><div class="ttdeci">void setTime(double time)</div><div class="ttdoc">Setzt den Zeitstempel.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00142">Point3D.cpp:142</a></div></div>
+<div class="ttc" id="aclass_c_input_point3_d_html_aa1ffef5d44dbf0f82fea3c6ff25dd1e8"><div class="ttname"><a href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">CInputPoint3D::setEulerMatrix</a></div><div class="ttdeci">void setEulerMatrix(CEulerMatrix orientation)</div><div class="ttdoc">Setzt die Eulermatrix.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00129">Point3D.cpp:129</a></div></div>
 <div class="ttc" id="aclass_c_logging_html"><div class="ttname"><a href="class_c_logging.html">CLogging</a></div><div class="ttdoc">Gleitender Mittelwertfilter.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8h_source.html#l00022">Logging.h:23</a></div></div>
-<div class="ttc" id="aclass_c_logging_html_a1416b9fdd6d86c53d268580ed9912cff"><div class="ttname"><a href="class_c_logging.html#a1416b9fdd6d86c53d268580ed9912cff">CLogging::logData</a></div><div class="ttdeci">void logData(vector&lt; list&lt; CInputPoint3D &gt; &gt; &amp;sourcePath)</div><div class="ttdoc">Ruft calculateMean für die einzelnen Segmente auf.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00029">Logging.cpp:29</a></div></div>
-<div class="ttc" id="aclass_c_logging_html_a143b13eb97fb0a7b8306ec707e822cba"><div class="ttname"><a href="class_c_logging.html#a143b13eb97fb0a7b8306ec707e822cba">CLogging::setStep</a></div><div class="ttdeci">void setStep(int Step)</div><div class="ttdoc">Setzt in welchem Schritt wir uns befinden.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00024">Logging.cpp:24</a></div></div>
+<div class="ttc" id="aclass_c_logging_html_a1416b9fdd6d86c53d268580ed9912cff"><div class="ttname"><a href="class_c_logging.html#a1416b9fdd6d86c53d268580ed9912cff">CLogging::logData</a></div><div class="ttdeci">void logData(vector&lt; list&lt; CInputPoint3D &gt; &gt; &amp;sourcePath)</div><div class="ttdoc">Ruft calculateMean für die einzelnen Segmente auf.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00031">Logging.cpp:31</a></div></div>
+<div class="ttc" id="aclass_c_logging_html_a143b13eb97fb0a7b8306ec707e822cba"><div class="ttname"><a href="class_c_logging.html#a143b13eb97fb0a7b8306ec707e822cba">CLogging::setStep</a></div><div class="ttdeci">void setStep(int Step)</div><div class="ttdoc">Setzt in welchem Schritt wir uns befinden.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00026">Logging.cpp:26</a></div></div>
 <div class="ttc" id="aclass_c_mean_filter_html_a03a060f31ed65b1f7e6407668c8801b6"><div class="ttname"><a href="class_c_mean_filter.html#a03a060f31ed65b1f7e6407668c8801b6">CMeanFilter::~CMeanFilter</a></div><div class="ttdeci">~CMeanFilter()</div><div class="ttdoc">Dekonstruktor.</div><div class="ttdef"><b>Definition</b> <a href="_mean_filter_8cpp_source.html#l00021">MeanFilter.cpp:21</a></div></div>
 <div class="ttc" id="aclass_c_mean_filter_html_a247225236ed080e085d43240e47ec94e"><div class="ttname"><a href="class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e">CMeanFilter::windowSize</a></div><div class="ttdeci">int windowSize</div><div class="ttdef"><b>Definition</b> <a href="_mean_filter_8h_source.html#l00079">MeanFilter.h:79</a></div></div>
 <div class="ttc" id="aclass_c_mean_filter_html_a7137cd05a9a31536560b0230a63a91ee"><div class="ttname"><a href="class_c_mean_filter.html#a7137cd05a9a31536560b0230a63a91ee">CMeanFilter::mean</a></div><div class="ttdeci">void mean(vector&lt; list&lt; CInputPoint3D &gt; &gt; &amp;sourcePath, CLogging log)</div><div class="ttdoc">Ruft calculateMean für die einzelnen Segmente auf.</div><div class="ttdef"><b>Definition</b> <a href="_mean_filter_8cpp_source.html#l00040">MeanFilter.cpp:40</a></div></div>
@@ -180,7 +177,7 @@ $(function() {
 <div class="ttc" id="aclass_c_mean_filter_html_ac2ca0c60d987a144d7288a317315f851"><div class="ttname"><a href="class_c_mean_filter.html#ac2ca0c60d987a144d7288a317315f851">CMeanFilter::CMeanFilter</a></div><div class="ttdeci">CMeanFilter()</div><div class="ttdoc">Default Konstruktor.</div><div class="ttdef"><b>Definition</b> <a href="_mean_filter_8cpp_source.html#l00011">MeanFilter.cpp:11</a></div></div>
 <div class="ttc" id="aclass_c_mean_filter_html_adf004b2b19e5498539bb87851a5439da"><div class="ttname"><a href="class_c_mean_filter.html#adf004b2b19e5498539bb87851a5439da">CMeanFilter::meanPath</a></div><div class="ttdeci">vector&lt; list&lt; CInputPoint3D &gt; &gt; meanPath</div><div class="ttdef"><b>Definition</b> <a href="_mean_filter_8h_source.html#l00083">MeanFilter.h:83</a></div></div>
 <div class="ttc" id="aclass_c_mean_filter_html_afea7ab027781d3c7073bf918453e73b5"><div class="ttname"><a href="class_c_mean_filter.html#afea7ab027781d3c7073bf918453e73b5">CMeanFilter::getWindowSize</a></div><div class="ttdeci">int getWindowSize()</div><div class="ttdoc">Gibt das gesetzte Fenster zurück.</div><div class="ttdef"><b>Definition</b> <a href="_mean_filter_8cpp_source.html#l00030">MeanFilter.cpp:30</a></div></div>
-<div class="ttc" id="aclass_c_point3_d_html_a85934ab180860df1ff2161d14efb98ec"><div class="ttname"><a href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">CPoint3D::set</a></div><div class="ttdeci">void set(double X, double Y, double Z)</div><div class="ttdoc">Setzt X, Y und Z.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00061">Point3D.cpp:61</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_a85934ab180860df1ff2161d14efb98ec"><div class="ttname"><a href="class_c_point3_d.html#a85934ab180860df1ff2161d14efb98ec">CPoint3D::set</a></div><div class="ttdeci">void set(double X, double Y, double Z)</div><div class="ttdoc">Setzt X, Y und Z.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00063">Point3D.cpp:63</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

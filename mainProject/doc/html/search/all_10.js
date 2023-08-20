@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9',1,'CPoint3D']]]
+  ['x_0',['x',['../class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50',1,'CPoint3D']]]
 ];

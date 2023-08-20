@@ -6,28 +6,31 @@
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <tuple>}}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <cmath>}}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00009}00009\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00010}00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00010}\mbox{\hyperlink{_euler_matrix_8h_a525335710b53cb064ca56b936120431e}{00010}}\ \textcolor{preprocessor}{\#define\ \_USE\_MATH\_DEFINES}}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00011}00011\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00012}00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00012}00012\ \textcolor{keyword}{using\ namespace\ }std;}
 \DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00013}00013\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00018}\mbox{\hyperlink{class_c_euler_matrix}{00018}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00019}00019\ \{}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00020}00020\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix_a45d6e6bd0fff4d617cd489128ec3a583}{CEulerMatrix}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00033}00033\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix_a45d6e6bd0fff4d617cd489128ec3a583}{CEulerMatrix}}(\textcolor{keywordtype}{float}\ inputMatrix[3][3]);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00037}00037\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix_aab38604c693dc9a028e8c92e1239ce58}{\string~CEulerMatrix}}();}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00038}00038\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00043}00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_euler_matrix_aee7e2a7b47908dd7f9771e1dfb98cc41}{setMatrix}}(\textcolor{keywordtype}{float}\ inputMatrix[3][3]);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ \mbox{\hyperlink{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}{getEulerMatrix}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00049}00049\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00054}00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{getMatrix}}(\textcolor{keywordtype}{float}\ Matrix[][3]);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00062}00062\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ \mbox{\hyperlink{class_c_euler_matrix_aca0eb63d21e774832bfb93cac5ad9466}{angels2mat}}(\textcolor{keywordtype}{double}\ A,\ \textcolor{keywordtype}{double}\ B,\ \textcolor{keywordtype}{double}\ C);}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00063}00063\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00068}00068\ \ \ \ \ tuple<double\ ,\ double\ ,\ double>\ \mbox{\hyperlink{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947}{calculateAngels}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00069}00069\ }
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00070}00070\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00074}\mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{00074}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[3][3];}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00075}00075\ \};}
-\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00014}00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00020}\mbox{\hyperlink{class_c_euler_matrix}{00020}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00022}00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix_a45d6e6bd0fff4d617cd489128ec3a583}{CEulerMatrix}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00035}00035\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix_a45d6e6bd0fff4d617cd489128ec3a583}{CEulerMatrix}}(\textcolor{keywordtype}{float}\ inputMatrix[3][3]);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix_aab38604c693dc9a028e8c92e1239ce58}{\string~CEulerMatrix}}();}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00045}00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_euler_matrix_aee7e2a7b47908dd7f9771e1dfb98cc41}{setMatrix}}(\textcolor{keywordtype}{float}\ inputMatrix[3][3]);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ \mbox{\hyperlink{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}{getEulerMatrix}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00056}00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{getMatrix}}(\textcolor{keywordtype}{float}\ Matrix[][3]);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00064}00064\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ \mbox{\hyperlink{class_c_euler_matrix_aca0eb63d21e774832bfb93cac5ad9466}{angels2mat}}(\textcolor{keywordtype}{double}\ A,\ \textcolor{keywordtype}{double}\ B,\ \textcolor{keywordtype}{double}\ C);}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00070}00070\ \ \ \ \ tuple<double\ ,\ double\ ,\ double>\ \mbox{\hyperlink{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947}{calculateAngels}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00072}00072\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00076}\mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{00076}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[3][3];}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00078}00078\ \};}
+\DoxyCodeLine{\Hypertarget{_euler_matrix_8h_source_l00079}00079\ }
 
 \end{DoxyCode}

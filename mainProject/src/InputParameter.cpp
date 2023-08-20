@@ -27,8 +27,8 @@ CInputParameter::CInputParameter(void)
 	A = 0;
 	B = 75;
 	C = 0;
-	speedManual = true,
-	orientationManual = true;
+	speedManual = false,
+	orientationManual = false;
 
 }
 

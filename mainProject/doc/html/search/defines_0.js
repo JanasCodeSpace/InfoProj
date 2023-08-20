@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['max_5fspeed_0',['MAX_SPEED',['../_rob_code_generator_8h.html#ac2cd96d53dd3ba6407db6766c3d92b26',1,'RobCodeGenerator.h']]]
+  ['_5fuse_5fmath_5fdefines_0',['_USE_MATH_DEFINES',['../_euler_matrix_8h.html#a525335710b53cb064ca56b936120431e',1,'EulerMatrix.h']]]
 ];
