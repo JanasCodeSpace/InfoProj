@@ -55,6 +55,12 @@ public:
 	* @param vector<CInputPoint3D>& sourcePath
 	*/
 	void logData(vector<CInputPoint3D>& sourcePath);
+	/**
+	* Loggingdaten werden weggespeichert
+	* @brief Ruft calculateMean für die einzelnen Segmente auf
+	* @param vector<COutputPoint3D>& sourcePath
+	*/
+	void logData(vector<COutputPoint3D>& sourcePath);
 private:
 	/**
 	* In welchem Schritt sind wir gerade
