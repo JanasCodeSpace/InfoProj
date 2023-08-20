@@ -34,9 +34,10 @@ namespace MeanFilter
             CLogging log;
             CInputPoint3D testPoint;
             CEulerMatrix eulerMatrix;
+            int numberPoints = 10;
             vector<list<CInputPoint3D>> sourcePath, destinationPath;
             list<CInputPoint3D> dummyDaten, outputDaten;
-            for (int i = 1; i <= 5; i++)
+            for (int i = 1; i <= numberPoints; i++)
             {
                 CInputPoint3D point;
                 point.setX(i);
@@ -49,11 +50,14 @@ namespace MeanFilter
             destinationPath = filter.getPath();
             outputDaten = destinationPath[0];
 
-            list<CInputPoint3D>::iterator it = outputDaten.begin();
-            testPoint.setPoint(it->getTime(), it->getX(), it->getY(), it->getZ(), eulerMatrix);
-            for (int i = 2; i <= 5-filter.getWindowSize(); i++)
+            list<CInputPoint3D>::iterator it = outputDaten.begin();            
+            for (int i = 2; i <= numberPoints-filter.getWindowSize(); i++)
             {
+                testPoint.setPoint(it->getTime(), it->getX(), it->getY(), it->getZ(), eulerMatrix);
                 Assert::AreEqual(testPoint.getX(), (double)i);
+                Assert::AreEqual(testPoint.getY(), (double)i*2);
+                Assert::AreEqual(testPoint.getZ(), (double)i*3);
+                it++;
             }
         }
         TEST_METHOD(GetPath)
