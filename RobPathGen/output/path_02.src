@@ -1,7 +1,0 @@
-DEF path_02 
-PTP $POS_ACT
-$VEL.CP = 1.000000
-LIN {X -nan(ind), Y -nan(ind), Z -nan(ind), A -97.604653, B 9.465803, C -174.271099}
-$VEL.CP = -nan(ind)
-LIN {X -nan(ind), Y -nan(ind), Z -nan(ind), A -83.986663, B 15.156352, C 169.769548}
-END

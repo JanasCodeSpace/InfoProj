@@ -105,7 +105,7 @@ void CLogging::logData(vector<COutputPoint3D>& sourcePath)
 	float dummyMatrix[3][3];	// dummyMatrix zum Zwischenspeichern
 	CEulerMatrix tmpEuler;		// CEulerMatrix zum Zwischenspeichern
 
-	filepath = path + "/" + "0" + std::to_string(step) + "_path.csv";
+	filepath = path + "/" + "0" + std::to_string(step) + "_log.csv";
 
 	FILE* fid = fopen(filepath.c_str(), "w");	// file oeffnen
 
