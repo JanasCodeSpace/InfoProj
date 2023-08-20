@@ -15,7 +15,7 @@ namespace SegmentApproximator
             double maxDistance = 12.002;
             segmentApproximator.setmaxDistance(maxDistance);
 
-            Assert::AreEqual(maxDistance, segmentApproximator.getmaxDistance());
+            Assert::AreEqual(maxDistance, segmentApproximator. getmaxDistance());
         }
         TEST_METHOD(ApproxIncludingDouglasPeuckerRecursive)
         {
@@ -26,7 +26,7 @@ namespace SegmentApproximator
             
             log.setStep(2);
 
-            std::vector<list<CInputPoint3D>> testVector;
+            vector<list<CInputPoint3D>> testVector;
 
             testVector.push_back(list<CInputPoint3D>());
 

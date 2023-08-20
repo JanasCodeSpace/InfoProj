@@ -65,12 +65,12 @@ namespace InputParameter
             Assert::AreEqual(1.0, std::get<0>(inputParam.getAngles()));
             Assert::AreEqual(2.0, std::get<1>(inputParam.getAngles()));
             Assert::AreEqual(3.0, std::get<2>(inputParam.getAngles()));
-        }
+        } 
+        
         TEST_METHOD(OpenFile)
         {
             CInputParameter inputParam;
-            string testPath = "../input/path_01.csv";
-
+            string testPath = "../../../mainProject/input/path_01.csv"; // Pfad relativ zu den erstellten Objects            
             inputParam.openFile(testPath);
 
             vector<list<CInputPoint3D>>& path = inputParam.getPath();
