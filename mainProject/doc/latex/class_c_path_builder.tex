@@ -105,35 +105,35 @@ Definiert in Zeile \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{23}} der D
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00024\ \{}
 \DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ point;\ \textcolor{comment}{//startpoint}}
-\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ segments.size();\ s++)\ \textcolor{comment}{//for\ all\ segments}}
-\DoxyCodeLine{00029\ \ \ \ \ \{}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ list<CInputPoint3D>::iterator\ itr\ =\ segments[s].begin();}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ point.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}((\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ());\ \textcolor{comment}{//point\ over\ start\ of\ segment}}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (;\ itr\ !=\ segments[s].end();\ itr++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ segment}}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ point.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}((\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ());}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ itr-\/-\/;}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ point.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}((\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ());\ \textcolor{comment}{//point\ over\ end\ of\ segment}}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
-\DoxyCodeLine{00045\ \ \ \ \ \}}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ point.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(0,\ 0,\ 0);\ \textcolor{comment}{//endpoint\ (==\ startpoint)}}
-\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba}{setStep}}(4);}
-\DoxyCodeLine{00051\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{logData}}(\mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}});}
-\DoxyCodeLine{00052\ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ segments.size();\ s++)\ \textcolor{comment}{//for\ all\ segments}}
+\DoxyCodeLine{00028\ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ list<CInputPoint3D>::iterator\ itr\ =\ segments[s].begin();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (;\ itr\ !=\ segments[s].end();\ itr++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ segment}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ point.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}((\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ());}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ point.\mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{setTime}}(itr-\/>getTime());}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ point.\mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{setEulerMatrix}}(itr-\/>getEulerMatrix());}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}}.push\_back(point);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ itr-\/-\/;}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba}{setStep}}(4);}
+\DoxyCodeLine{00043\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{logData}}(\mbox{\hyperlink{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}{path}});}
+\DoxyCodeLine{00044\ \}}
 
 \end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_logging_8cpp_source_l00031}{CLogging\+::log\+Data()}}, \mbox{\hyperlink{_path_builder_8h_source_l00050}{path}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00063}{CPoint3\+D\+::set()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00129}{CInput\+Point3\+D\+::set\+Euler\+Matrix()}}, \mbox{\hyperlink{_logging_8cpp_source_l00026}{CLogging\+::set\+Step()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00142}{CInput\+Point3\+D\+::set\+Time()}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00055}{main()}}.
+
 \Hypertarget{class_c_path_builder_aff7eb289b0c0cfa11c9d2dbe31781bf6}\label{class_c_path_builder_aff7eb289b0c0cfa11c9d2dbe31781bf6} 
 \index{CPathBuilder@{CPathBuilder}!getPath@{getPath}}
 \index{getPath@{getPath}!CPathBuilder@{CPathBuilder}}
@@ -160,6 +160,14 @@ Definiert in Zeile \mbox{\hyperlink{_path_builder_8cpp_source_l00018}{18}} der D
 \end{DoxyCode}
 
 
+Benutzt \mbox{\hyperlink{_path_builder_8h_source_l00050}{path}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00055}{main()}}.
+
+
+
 \doxysubsection{Dokumentation der Datenelemente}
 \Hypertarget{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b}\label{class_c_path_builder_ad4d126d2b98aa89e4082249c7e06b50b} 
 \index{CPathBuilder@{CPathBuilder}!path@{path}}
@@ -170,6 +178,10 @@ Definiert in Zeile \mbox{\hyperlink{_path_builder_8cpp_source_l00018}{18}} der D
 Vector mit den zusammengesetzten Pfad Daten 
 
 Definiert in Zeile \mbox{\hyperlink{_path_builder_8h_source_l00050}{50}} der Datei \mbox{\hyperlink{_path_builder_8h_source}{Path\+Builder.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{create\+Path()}} und \mbox{\hyperlink{_path_builder_8cpp_source_l00018}{get\+Path()}}.
 
 
 

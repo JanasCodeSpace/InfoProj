@@ -176,6 +176,8 @@ Geschützte Attribute</h2></td></tr>
 <div class="ttc" id="aclass_c_point3_d_html_ae49f7fe3b58d674538fc00509e6316ac"><div class="ttname"><a href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">CPoint3D::z</a></div><div class="ttdeci">double z</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00099">Point3D.h:99</a></div></div>
 <div class="ttc" id="aclass_c_point3_d_html_ae5d5fb687ece1bebb535ee5d72509f50"><div class="ttname"><a href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">CPoint3D::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00099">Point3D.h:99</a></div></div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00099">x</a>, <a class="el" href="_point3_d_8h_source.html#l00099">y</a> und <a class="el" href="_point3_d_8h_source.html#l00099">z</a>.</p>
+
 </div>
 </div>
 <a id="a7385de70dccd7dd4fe9cf245ea79439d" name="a7385de70dccd7dd4fe9cf245ea79439d"></a>
@@ -221,13 +223,15 @@ Geschützte Attribute</h2></td></tr>
 </dl>
 <dl class="section see"><dt>Siehe auch</dt><dd><a class="el" href="class_c_point3_d.html#a6361fc5bc936cc8929f6251061c68b00" title="Default Konstruktor.">CPoint3D(void)</a> </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00020">20</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>{</div>
-<div class="line"><span class="lineno">   22</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> = X;</div>
-<div class="line"><span class="lineno">   23</span>    <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> = Y;</div>
-<div class="line"><span class="lineno">   24</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> = Z;</div>
-<div class="line"><span class="lineno">   25</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00021">21</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
+<div class="line"><span class="lineno">   23</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> = X;</div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> = Y;</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> = Z;</div>
+<div class="line"><span class="lineno">   26</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00099">x</a>, <a class="el" href="_point3_d_8h_source.html#l00099">y</a> und <a class="el" href="_point3_d_8h_source.html#l00099">z</a>.</p>
+
 </div>
 </div>
 <a id="a63ac51e6c9aee086f53df53ee459c8d2" name="a63ac51e6c9aee086f53df53ee459c8d2"></a>
@@ -248,9 +252,9 @@ Geschützte Attribute</h2></td></tr>
 
 <p>Dekonstruktor. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00027">27</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
-<div class="line"><span class="lineno">   29</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00028">28</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{</div>
+<div class="line"><span class="lineno">   30</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -280,40 +284,42 @@ Geschützte Attribute</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>double Distanz </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00073">73</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>{</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordtype">double</span> bx, by, bz, rv_sq, dist, vp1, vp2, vp3;          <span class="comment">// Variablen Anlegen</span></div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    <span class="comment">/*</span></div>
-<div class="line"><span class="lineno">   78</span><span class="comment">    Vermessen wird der Punkt selbst</span></div>
-<div class="line"><span class="lineno">   79</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   80</span><span class="comment">    bx, by, bz      == Vektordifferenz</span></div>
-<div class="line"><span class="lineno">   81</span><span class="comment">    rv_sq           == Betrag des Linienvektors</span></div>
-<div class="line"><span class="lineno">   82</span><span class="comment">    dist            == Distanz von Punkt zu Linie</span></div>
-<div class="line"><span class="lineno">   83</span><span class="comment">    vp1, vp2, vp3   == Vektorprodukte</span></div>
-<div class="line"><span class="lineno">   84</span><span class="comment">    */</span></div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordtype">int</span> rvx = line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> - line.<a class="code hl_variable" href="class_c_line3_d.html#af54f121c474e11318113cb820e3b7345">p2</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a>;        <span class="comment">// Parameter X des Linienvektor berechnen</span></div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">int</span> rvy = line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> - line.<a class="code hl_variable" href="class_c_line3_d.html#af54f121c474e11318113cb820e3b7345">p2</a>.<a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a>;        <span class="comment">// Parameter Y des Linienvektor berechnen</span></div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordtype">int</span> rvz = line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> - line.<a class="code hl_variable" href="class_c_line3_d.html#af54f121c474e11318113cb820e3b7345">p2</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a>;        <span class="comment">// Parameter Z des Linienvektor berechnen</span></div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    rv_sq = sqrt(((<span class="keywordtype">double</span>)rvx * (<span class="keywordtype">double</span>)rvx) + ((<span class="keywordtype">double</span>)rvy * (<span class="keywordtype">double</span>)rvy) + ((<span class="keywordtype">double</span>)rvz * (<span class="keywordtype">double</span>)rvz));      <span class="comment">// Betrag des Linienvektor berechnen</span></div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    bx = <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> - (double)line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a>;             <span class="comment">// X(Punkt) - X(Aufpunkt) </span></div>
-<div class="line"><span class="lineno">   93</span>    by = <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> - (double)line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a>;             <span class="comment">// Y(Punkt) - Y(Aufpunkt)</span></div>
-<div class="line"><span class="lineno">   94</span>    bz = <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> - (double)line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a>;             <span class="comment">// Z(Punkt) - Z(Aufpunkt)</span></div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    vp1 = by * rvz - bz * rvy;              <span class="comment">// Parameter X Vektorprodukt</span></div>
-<div class="line"><span class="lineno">   97</span>    vp2 = bz * rvx - bx * rvz;              <span class="comment">// Parameter Y Vektorprodukt</span></div>
-<div class="line"><span class="lineno">   98</span>    vp3 = bx * rvy - by * rvx;              <span class="comment">// Parameter Z Vektorprodukt</span></div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>    dist = sqrt(vp1 * vp1 + vp2 * vp2 + vp3 * vp3) / rv_sq; <span class="comment">// Betrag des Vektors berechnen</span></div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> dist;</div>
-<div class="line"><span class="lineno">  103</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00076">76</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>{</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordtype">double</span> bx, by, bz, rv_sq, dist, vp1, vp2, vp3;          <span class="comment">// Variablen Anlegen</span></div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    <span class="comment">/*</span></div>
+<div class="line"><span class="lineno">   81</span><span class="comment">    Vermessen wird der Punkt selbst</span></div>
+<div class="line"><span class="lineno">   82</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   83</span><span class="comment">    bx, by, bz      == Vektordifferenz</span></div>
+<div class="line"><span class="lineno">   84</span><span class="comment">    rv_sq           == Betrag des Linienvektors</span></div>
+<div class="line"><span class="lineno">   85</span><span class="comment">    dist            == Distanz von Punkt zu Linie</span></div>
+<div class="line"><span class="lineno">   86</span><span class="comment">    vp1, vp2, vp3   == Vektorprodukte</span></div>
+<div class="line"><span class="lineno">   87</span><span class="comment">    */</span></div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordtype">int</span> rvx = line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> - line.<a class="code hl_variable" href="class_c_line3_d.html#af54f121c474e11318113cb820e3b7345">p2</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a>;        <span class="comment">// Parameter X des Linienvektor berechnen</span></div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordtype">int</span> rvy = line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> - line.<a class="code hl_variable" href="class_c_line3_d.html#af54f121c474e11318113cb820e3b7345">p2</a>.<a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a>;        <span class="comment">// Parameter Y des Linienvektor berechnen</span></div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordtype">int</span> rvz = line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> - line.<a class="code hl_variable" href="class_c_line3_d.html#af54f121c474e11318113cb820e3b7345">p2</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a>;        <span class="comment">// Parameter Z des Linienvektor berechnen</span></div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    rv_sq = sqrt(((<span class="keywordtype">double</span>)rvx * (<span class="keywordtype">double</span>)rvx) + ((<span class="keywordtype">double</span>)rvy * (<span class="keywordtype">double</span>)rvy) + ((<span class="keywordtype">double</span>)rvz * (<span class="keywordtype">double</span>)rvz));      <span class="comment">// Betrag des Linienvektor berechnen</span></div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    bx = <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> - (double)line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a>;             <span class="comment">// X(Punkt) - X(Aufpunkt) </span></div>
+<div class="line"><span class="lineno">   96</span>    by = <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> - (double)line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a>;             <span class="comment">// Y(Punkt) - Y(Aufpunkt)</span></div>
+<div class="line"><span class="lineno">   97</span>    bz = <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> - (double)line.<a class="code hl_variable" href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">p1</a>.<a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a>;             <span class="comment">// Z(Punkt) - Z(Aufpunkt)</span></div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>    vp1 = by * rvz - bz * rvy;              <span class="comment">// Parameter X Vektorprodukt</span></div>
+<div class="line"><span class="lineno">  100</span>    vp2 = bz * rvx - bx * rvz;              <span class="comment">// Parameter Y Vektorprodukt</span></div>
+<div class="line"><span class="lineno">  101</span>    vp3 = bx * rvy - by * rvx;              <span class="comment">// Parameter Z Vektorprodukt</span></div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    dist = sqrt(vp1 * vp1 + vp2 * vp2 + vp3 * vp3) / rv_sq; <span class="comment">// Betrag des Vektors berechnen</span></div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> dist;</div>
+<div class="line"><span class="lineno">  106</span>}</div>
 <div class="ttc" id="aclass_c_line3_d_html_a021b39708b1dfc9c5f71054fe0f62ef8"><div class="ttname"><a href="class_c_line3_d.html#a021b39708b1dfc9c5f71054fe0f62ef8">CLine3D::p1</a></div><div class="ttdeci">CPoint3D p1</div><div class="ttdef"><b>Definition</b> <a href="_line3_d_8h_source.html#l00041">Line3D.h:41</a></div></div>
 <div class="ttc" id="aclass_c_line3_d_html_af54f121c474e11318113cb820e3b7345"><div class="ttname"><a href="class_c_line3_d.html#af54f121c474e11318113cb820e3b7345">CLine3D::p2</a></div><div class="ttdeci">CPoint3D p2</div><div class="ttdef"><b>Definition</b> <a href="_line3_d_8h_source.html#l00045">Line3D.h:45</a></div></div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_line3_d_8h_source.html#l00041">CLine3D::p1</a>, <a class="el" href="_line3_d_8h_source.html#l00045">CLine3D::p2</a>, <a class="el" href="_point3_d_8h_source.html#l00099">x</a>, <a class="el" href="_point3_d_8h_source.html#l00099">y</a> und <a class="el" href="_point3_d_8h_source.html#l00099">z</a>.</p>
+
 </div>
 </div>
 <a id="a1b28b942ffbee33ba90818ea1c56de05" name="a1b28b942ffbee33ba90818ea1c56de05"></a>
@@ -341,14 +347,16 @@ Geschützte Attribute</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>double Distanz </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00068">68</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>{</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> sqrt(pow((<span class="keywordtype">double</span>)(<a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> - (<span class="keywordtype">double</span>)point.<a class="code hl_function" href="class_c_point3_d.html#a7d6b88b707eef43f162f6da8de9a4a62">getX</a>()), 2) + pow((<span class="keywordtype">double</span>)(<a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> - (<span class="keywordtype">double</span>)point.<a class="code hl_function" href="class_c_point3_d.html#ace64e8f7777f557ef0ca44bc5fed7326">getY</a>()), 2) + pow((<span class="keywordtype">double</span>)(<a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> - (<span class="keywordtype">double</span>)point.<a class="code hl_function" href="class_c_point3_d.html#a73feea0036b64b0604c10058b193ae43">getZ</a>()), 2));  <span class="comment">// Pythagoras 3D</span></div>
-<div class="line"><span class="lineno">   71</span>}</div>
-<div class="ttc" id="aclass_c_point3_d_html_a73feea0036b64b0604c10058b193ae43"><div class="ttname"><a href="class_c_point3_d.html#a73feea0036b64b0604c10058b193ae43">CPoint3D::getZ</a></div><div class="ttdeci">double getZ()</div><div class="ttdoc">Gibt Z zurück.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00041">Point3D.cpp:41</a></div></div>
-<div class="ttc" id="aclass_c_point3_d_html_a7d6b88b707eef43f162f6da8de9a4a62"><div class="ttname"><a href="class_c_point3_d.html#a7d6b88b707eef43f162f6da8de9a4a62">CPoint3D::getX</a></div><div class="ttdeci">double getX()</div><div class="ttdoc">Gibt X zurück.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00031">Point3D.cpp:31</a></div></div>
-<div class="ttc" id="aclass_c_point3_d_html_ace64e8f7777f557ef0ca44bc5fed7326"><div class="ttname"><a href="class_c_point3_d.html#ace64e8f7777f557ef0ca44bc5fed7326">CPoint3D::getY</a></div><div class="ttdeci">double getY()</div><div class="ttdoc">Gibt Y zurück.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00036">Point3D.cpp:36</a></div></div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00071">71</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">return</span> sqrt(pow((<span class="keywordtype">double</span>)(<a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> - (<span class="keywordtype">double</span>)point.<a class="code hl_function" href="class_c_point3_d.html#a7d6b88b707eef43f162f6da8de9a4a62">getX</a>()), 2) + pow((<span class="keywordtype">double</span>)(<a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> - (<span class="keywordtype">double</span>)point.<a class="code hl_function" href="class_c_point3_d.html#ace64e8f7777f557ef0ca44bc5fed7326">getY</a>()), 2) + pow((<span class="keywordtype">double</span>)(<a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> - (<span class="keywordtype">double</span>)point.<a class="code hl_function" href="class_c_point3_d.html#a73feea0036b64b0604c10058b193ae43">getZ</a>()), 2));  <span class="comment">//  Pythagoras 3D</span></div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="aclass_c_point3_d_html_a73feea0036b64b0604c10058b193ae43"><div class="ttname"><a href="class_c_point3_d.html#a73feea0036b64b0604c10058b193ae43">CPoint3D::getZ</a></div><div class="ttdeci">double getZ()</div><div class="ttdoc">Gibt Z zurück.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00042">Point3D.cpp:42</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_a7d6b88b707eef43f162f6da8de9a4a62"><div class="ttname"><a href="class_c_point3_d.html#a7d6b88b707eef43f162f6da8de9a4a62">CPoint3D::getX</a></div><div class="ttdeci">double getX()</div><div class="ttdoc">Gibt X zurück.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00032">Point3D.cpp:32</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_ace64e8f7777f557ef0ca44bc5fed7326"><div class="ttname"><a href="class_c_point3_d.html#ace64e8f7777f557ef0ca44bc5fed7326">CPoint3D::getY</a></div><div class="ttdeci">double getY()</div><div class="ttdoc">Gibt Y zurück.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00037">Point3D.cpp:37</a></div></div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8cpp_source.html#l00032">getX()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00037">getY()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00042">getZ()</a>, <a class="el" href="_point3_d_8h_source.html#l00099">x</a>, <a class="el" href="_point3_d_8h_source.html#l00099">y</a> und <a class="el" href="_point3_d_8h_source.html#l00099">z</a>.</p>
+
 </div>
 </div>
 <a id="a7d6b88b707eef43f162f6da8de9a4a62" name="a7d6b88b707eef43f162f6da8de9a4a62"></a>
@@ -370,11 +378,15 @@ Geschützte Attribute</h2></td></tr>
 <p>Gibt X zurück. </p>
 <dl class="section return"><dt>Rückgabe</dt><dd>double </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00031">31</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a>;</div>
-<div class="line"><span class="lineno">   34</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00032">32</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a>;   <span class="comment">// X-Koordinate zurück geben</span></div>
+<div class="line"><span class="lineno">   35</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00099">x</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_input_parameter_8cpp_source.html#l00126">CInputParameter::detectJump()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00071">distanceTo()</a>.</p>
+
 </div>
 </div>
 <a id="ace64e8f7777f557ef0ca44bc5fed7326" name="ace64e8f7777f557ef0ca44bc5fed7326"></a>
@@ -396,11 +408,15 @@ Geschützte Attribute</h2></td></tr>
 <p>Gibt Y zurück. </p>
 <dl class="section return"><dt>Rückgabe</dt><dd>double </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00036">36</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>{</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a>;</div>
-<div class="line"><span class="lineno">   39</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00037">37</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>{</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a>;   <span class="comment">// Y-Koordinate zurück geben</span></div>
+<div class="line"><span class="lineno">   40</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00099">y</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_input_parameter_8cpp_source.html#l00126">CInputParameter::detectJump()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00071">distanceTo()</a>.</p>
+
 </div>
 </div>
 <a id="a73feea0036b64b0604c10058b193ae43" name="a73feea0036b64b0604c10058b193ae43"></a>
@@ -422,11 +438,15 @@ Geschützte Attribute</h2></td></tr>
 <p>Gibt Z zurück. </p>
 <dl class="section return"><dt>Rückgabe</dt><dd>double </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00041">41</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>{</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a>;</div>
-<div class="line"><span class="lineno">   44</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00042">42</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a>;   <span class="comment">// Z-Koordinate zurück geben</span></div>
+<div class="line"><span class="lineno">   45</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00099">z</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_input_parameter_8cpp_source.html#l00126">CInputParameter::detectJump()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00071">distanceTo()</a>.</p>
+
 </div>
 </div>
 <a id="a85934ab180860df1ff2161d14efb98ec" name="a85934ab180860df1ff2161d14efb98ec"></a>
@@ -471,13 +491,17 @@ Geschützte Attribute</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00061">61</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>{</div>
-<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> = X;</div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> = Y;</div>
-<div class="line"><span class="lineno">   65</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> = Z;</div>
-<div class="line"><span class="lineno">   66</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00063">63</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> = X;  <span class="comment">// X-Koordinate setzen</span></div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> = Y;  <span class="comment">// Y-Koordinate setzen</span></div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> = Z;  <span class="comment">// Z-Koordinate setzen</span></div>
+<div class="line"><span class="lineno">   68</span>}   </div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00099">x</a>, <a class="el" href="_point3_d_8h_source.html#l00099">y</a> und <a class="el" href="_point3_d_8h_source.html#l00099">z</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_mean_filter_8cpp_source.html#l00052">CMeanFilter::calculateMean()</a>, <a class="el" href="_path_builder_8cpp_source.html#l00023">CPathBuilder::createPath()</a>, <a class="el" href="_rob_code_generator_8cpp_source.html#l00077">CRobCodeGenerator::postProcessing()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00135">CInputPoint3D::setPoint()</a>.</p>
+
 </div>
 </div>
 <a id="aee2748ffe7a8505efd2c303b53941647" name="aee2748ffe7a8505efd2c303b53941647"></a>
@@ -504,11 +528,15 @@ Geschützte Attribute</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00046">46</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> = X;</div>
-<div class="line"><span class="lineno">   49</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00047">47</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50">x</a> = X;  <span class="comment">// X-Koordinate setzen</span></div>
+<div class="line"><span class="lineno">   50</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00099">x</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_segment_approximator_8cpp_source.html#l00052">CSegmentApproximator::douglasPeuckerRecursive()</a>.</p>
+
 </div>
 </div>
 <a id="a81465a058c428fe65edef926d975110e" name="a81465a058c428fe65edef926d975110e"></a>
@@ -535,11 +563,15 @@ Geschützte Attribute</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00051">51</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
-<div class="line"><span class="lineno">   53</span>    <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> = Y;</div>
-<div class="line"><span class="lineno">   54</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00052">52</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>{</div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_variable" href="class_c_point3_d.html#a207ba5415400672d0129f441c5f2f3b9">y</a> = Y;  <span class="comment">// Y-Koordinate setzen</span></div>
+<div class="line"><span class="lineno">   55</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00099">y</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_segment_approximator_8cpp_source.html#l00052">CSegmentApproximator::douglasPeuckerRecursive()</a>.</p>
+
 </div>
 </div>
 <a id="ac8765fa73306e534a386f87c8c691c24" name="ac8765fa73306e534a386f87c8c691c24"></a>
@@ -566,11 +598,15 @@ Geschützte Attribute</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00056">56</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{</div>
-<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> = Z;</div>
-<div class="line"><span class="lineno">   59</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8cpp_source.html#l00057">57</a> der Datei <a class="el" href="_point3_d_8cpp_source.html">Point3D.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_variable" href="class_c_point3_d.html#ae49f7fe3b58d674538fc00509e6316ac">z</a> = Z;  <span class="comment">// Z-Koordinate setzen</span></div>
+<div class="line"><span class="lineno">   60</span>}</div>
 </div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_point3_d_8h_source.html#l00099">z</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_segment_approximator_8cpp_source.html#l00052">CSegmentApproximator::douglasPeuckerRecursive()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Dokumentation der Datenelemente</h2>
@@ -597,6 +633,8 @@ Geschützte Attribute</h2></td></tr>
 
 <p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8h_source.html#l00099">99</a> der Datei <a class="el" href="_point3_d_8h_source.html">Point3D.h</a>.</p>
 
+<p class="reference">Wird benutzt von <a class="el" href="_point3_d_8cpp_source.html#l00116">CInputPoint3D::CInputPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00168">COutputPoint3D::COutputPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00021">CPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00013">CPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00076">distanceTo()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00071">distanceTo()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00032">getX()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00063">set()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00047">setX()</a>.</p>
+
 </div>
 </div>
 <a id="a207ba5415400672d0129f441c5f2f3b9" name="a207ba5415400672d0129f441c5f2f3b9"></a>
@@ -621,6 +659,8 @@ Geschützte Attribute</h2></td></tr>
 
 <p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8h_source.html#l00099">99</a> der Datei <a class="el" href="_point3_d_8h_source.html">Point3D.h</a>.</p>
 
+<p class="reference">Wird benutzt von <a class="el" href="_point3_d_8cpp_source.html#l00116">CInputPoint3D::CInputPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00168">COutputPoint3D::COutputPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00021">CPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00013">CPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00076">distanceTo()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00071">distanceTo()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00037">getY()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00063">set()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00052">setY()</a>.</p>
+
 </div>
 </div>
 <a id="ae49f7fe3b58d674538fc00509e6316ac" name="ae49f7fe3b58d674538fc00509e6316ac"></a>
@@ -644,6 +684,8 @@ Geschützte Attribute</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definiert in Zeile <a class="el" href="_point3_d_8h_source.html#l00099">99</a> der Datei <a class="el" href="_point3_d_8h_source.html">Point3D.h</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_point3_d_8cpp_source.html#l00116">CInputPoint3D::CInputPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00168">COutputPoint3D::COutputPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00021">CPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00013">CPoint3D()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00076">distanceTo()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00071">distanceTo()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00042">getZ()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00063">set()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00057">setZ()</a>.</p>
 
 </div>
 </div>

@@ -119,15 +119,26 @@ Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00019}{19
 \DoxyCodeLine{00022\ }
 \DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}\ =\ segments;}
 \DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ segments.size();\ s++)}
-\DoxyCodeLine{00026\ \ \ \ \ \{}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s],\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].begin(),\ -\/-\/(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].end()));}
-\DoxyCodeLine{00028\ \ \ \ \ \}}
-\DoxyCodeLine{00029\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba}{setStep}}(3);}
-\DoxyCodeLine{00030\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{logData}}(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}});}
-\DoxyCodeLine{00031\ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{/*\ Douglas\ Peucker\ für\ Segmente\ aufrufen*/}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ segments.size();\ s++)}
+\DoxyCodeLine{00027\ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s],\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].begin(),\ -\/-\/(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}}[s].end()));}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{/*\ \ Logging\ der\ Daten*/}}
+\DoxyCodeLine{00032\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba}{setStep}}(3);}
+\DoxyCodeLine{00033\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{logData}}(\mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}});}
+\DoxyCodeLine{00034\ \}}
 
 \end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8cpp_source_l00052}{douglas\+Peucker\+Recursive()}}, \mbox{\hyperlink{_logging_8cpp_source_l00031}{CLogging\+::log\+Data()}}, \mbox{\hyperlink{_segment_approximator_8h_source_l00063}{segments\+Approx}} und \mbox{\hyperlink{_logging_8cpp_source_l00026}{CLogging\+::set\+Step()}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00055}{main()}}.
+
 \Hypertarget{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}\label{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c} 
 \index{CSegmentApproximator@{CSegmentApproximator}!douglasPeuckerRecursive@{douglasPeuckerRecursive}}
 \index{douglasPeuckerRecursive@{douglasPeuckerRecursive}!CSegmentApproximator@{CSegmentApproximator}}
@@ -149,43 +160,62 @@ Rekursive Funktion die durch das Segment geht und Punkte aus dem Pfad löscht we
 \end{DoxyParams}
 
 
-Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00049}{49}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00052}{52}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00050\ \{}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{if}\ (segment.size()\ <\ 3)\ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordflow}{if}\ (distance(startItr,\ endItr)\ ==\ 2)\ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pStart;\ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pEnd;}
-\DoxyCodeLine{00054\ \ \ \ \ pStart.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(startItr-\/>getX());\ pStart.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(startItr-\/>getY());\ pStart.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(startItr-\/>getZ());}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \ \ \ \ pEnd.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(endItr-\/>getX());\ pEnd.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(endItr-\/>getY());\ pEnd.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(endItr-\/>getZ());}
+\DoxyCodeLine{00053\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{if}\ (segment.size()\ <\ 3)\ \textcolor{keywordflow}{return};\ \ \textcolor{comment}{//\ min\ Größe\ pro\ Seg\ 3}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordflow}{if}\ (distance(startItr,\ endItr)\ ==\ 2)\ \textcolor{keywordflow}{return};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Zeigerabstand\ ==\ 2}}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pStart;\ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ pEnd;\ \ \ \ \ \textcolor{comment}{//\ Variablen\ deklarieren}}
 \DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{double}\ dist\ =\ 0.0,\ maxDist\ =\ 0.0;}
-\DoxyCodeLine{00059\ \ \ \ \ std::list<CInputPoint3D>::iterator\ maxItr,\ itr;}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordflow}{for}\ (itr\ =\ startItr;\ itr\ !=\ endItr;\ itr++)}
-\DoxyCodeLine{00062\ \ \ \ \ \{}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}\ line\ =\ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}(pStart,\ pEnd);}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calc\ distance}}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ dist\ =\ itr-\/>distanceTo(line);}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dist\ >\ maxDist)\ \{}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ maxDist\ =\ dist;}
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ maxItr\ =\ itr;}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00070\ \ \ \ \ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{/*\ Startpunkt\ setzen\ */}}
+\DoxyCodeLine{00060\ \ \ \ \ pStart.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(startItr-\/>getX());\ pStart.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(startItr-\/>getY());\ pStart.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(startItr-\/>getZ());}
+\DoxyCodeLine{00061\ \ \ \ \ pStart.\mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{setTime}}(startItr-\/>getTime());}
+\DoxyCodeLine{00062\ \ \ \ \ pStart.\mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{setEulerMatrix}}(startItr-\/>getEulerMatrix());}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{comment}{/*\ Endpunkt\ setzen\ */}}
+\DoxyCodeLine{00065\ \ \ \ \ pEnd.\mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}}(endItr-\/>getX());\ pEnd.\mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}}(endItr-\/>getY());\ pEnd.\mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}}(endItr-\/>getZ());}
+\DoxyCodeLine{00066\ \ \ \ \ pEnd.\mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{setTime}}(endItr-\/>getTime());}
+\DoxyCodeLine{00067\ \ \ \ \ pEnd.\mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{setEulerMatrix}}(endItr-\/>getEulerMatrix());}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{double}\ dist\ =\ 0.0,\ maxDist\ =\ 0.0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ dist\ und\ maxDist\ initialisieren\ }}
+\DoxyCodeLine{00070\ \ \ \ \ std::list<CInputPoint3D>::iterator\ maxItr,\ itr;\ \ \ \ \ \textcolor{comment}{//\ Zeiger\ bilden}}
 \DoxyCodeLine{00071\ }
-\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordflow}{if}\ (maxDist\ <=\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}})\ \{}
-\DoxyCodeLine{00073\ }
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ segment.erase((++startItr),\ endItr);}
-\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{00076\ \ \ \ \ \}}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(segment,\ startItr,\ maxItr);}
-\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(segment,\ maxItr,\ endItr);}
-\DoxyCodeLine{00080\ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{/*\ am\ weitesten\ Entfernten\ Punkt\ suchen\ */}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{for}\ (itr\ =\ startItr;\ itr\ !=\ endItr;\ itr++)}
+\DoxyCodeLine{00075\ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}\ line\ =\ \mbox{\hyperlink{class_c_line3_d}{CLine3D}}(pStart,\ pEnd);}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calc\ distance}}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ dist\ =\ itr-\/>distanceTo(line);}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dist\ >\ maxDist)\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ maxDist\ =\ dist;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ maxItr\ =\ itr;}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordflow}{if}\ (maxDist\ <=\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}})\ \{}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ segment.erase((++startItr),\ endItr);\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Punkt\ löschen}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{comment}{/*\ \ Douglas\ Peucker\ erneut\ aufrufen\ */}}
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(segment,\ startItr,\ maxItr);}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ad5517eaee16b72b7932095a6431e5d8c}{douglasPeuckerRecursive}}(segment,\ maxItr,\ endItr);}
+\DoxyCodeLine{00094\ \}}
 
 \end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8cpp_source_l00052}{douglas\+Peucker\+Recursive()}}, \mbox{\hyperlink{_segment_approximator_8h_source_l00067}{max\+Distance}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00129}{CInput\+Point3\+D\+::set\+Euler\+Matrix()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00142}{CInput\+Point3\+D\+::set\+Time()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00047}{CPoint3\+D\+::set\+X()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00052}{CPoint3\+D\+::set\+Y()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00057}{CPoint3\+D\+::set\+Z()}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00019}{approx()}} und \mbox{\hyperlink{_segment_approximator_8cpp_source_l00052}{douglas\+Peucker\+Recursive()}}.
+
 \Hypertarget{class_c_segment_approximator_a6c5626d8afc213e3ed2637b610671b03}\label{class_c_segment_approximator_a6c5626d8afc213e3ed2637b610671b03} 
 \index{CSegmentApproximator@{CSegmentApproximator}!getmaxDistance@{getmaxDistance}}
 \index{getmaxDistance@{getmaxDistance}!CSegmentApproximator@{CSegmentApproximator}}
@@ -201,15 +231,19 @@ max\+Distance\+Source double
 \end{DoxyReturn}
 
 
-Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00038}{38}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00041}{41}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00039\ \{}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}};}
-\DoxyCodeLine{00041\ \}}
+\DoxyCodeLine{00042\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}};\ \ \ \ \ \ \textcolor{comment}{//\ Rueckgabe\ von\ maxDistance}}
+\DoxyCodeLine{00044\ \}}
 
 \end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8h_source_l00067}{max\+Distance}}.
+
 \Hypertarget{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}\label{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6} 
 \index{CSegmentApproximator@{CSegmentApproximator}!getSegmentsApproxVector@{getSegmentsApproxVector}}
 \index{getSegmentsApproxVector@{getSegmentsApproxVector}!CSegmentApproximator@{CSegmentApproximator}}
@@ -225,15 +259,23 @@ vector$<$list$<$\+CInput\+Point3\+D$>$$>$\&
 \end{DoxyReturn}
 
 
-Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00043}{43}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00046}{46}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00044\ \{}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}};}
-\DoxyCodeLine{00046\ \}}
+\DoxyCodeLine{00047\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}{segmentsApprox}};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Rueckgabe\ der\ Segmente}}
+\DoxyCodeLine{00049\ \}}
 
 \end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8h_source_l00063}{segments\+Approx}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00055}{main()}}.
+
 \Hypertarget{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85}\label{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85} 
 \index{CSegmentApproximator@{CSegmentApproximator}!setmaxDistance@{setmaxDistance}}
 \index{setmaxDistance@{setmaxDistance}!CSegmentApproximator@{CSegmentApproximator}}
@@ -251,15 +293,23 @@ Setzt die maximale Abweichung.
 \end{DoxyParams}
 
 
-Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00033}{33}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
+Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8cpp_source_l00036}{36}} der Datei \mbox{\hyperlink{_segment_approximator_8cpp_source}{Segment\+Approximator.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00034\ \{}
-\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}}\ =\ maxDistanceSource;}
-\DoxyCodeLine{00036\ \}}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator_ae513075f6c1c8d2f187bffad2922c655}{maxDistance}}\ =\ maxDistanceSource;\ \ \ \ \ \textcolor{comment}{//\ setze\ maxDistance}}
+\DoxyCodeLine{00039\ \}}
 
 \end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8h_source_l00067}{max\+Distance}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_path_editor_8cpp_source_l00055}{main()}}.
+
 
 
 \doxysubsection{Dokumentation der Datenelemente}
@@ -273,6 +323,10 @@ Einstellbare Distanz für den Douglas-\/\+Peuker-\/\+Algorithmus
 
 Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8h_source_l00067}{67}} der Datei \mbox{\hyperlink{_segment_approximator_8h_source}{Segment\+Approximator.\+h}}.
 
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00052}{douglas\+Peucker\+Recursive()}}, \mbox{\hyperlink{_segment_approximator_8cpp_source_l00041}{getmax\+Distance()}} und \mbox{\hyperlink{_segment_approximator_8cpp_source_l00036}{setmax\+Distance()}}.
+
 \Hypertarget{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0}\label{class_c_segment_approximator_a34a3e5c3e787b2adc5f2d4dd09e8e6b0} 
 \index{CSegmentApproximator@{CSegmentApproximator}!segmentsApprox@{segmentsApprox}}
 \index{segmentsApprox@{segmentsApprox}!CSegmentApproximator@{CSegmentApproximator}}
@@ -282,6 +336,10 @@ Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8h_source_l00067}{67}}
 Bereinigten Pfad 
 
 Definiert in Zeile \mbox{\hyperlink{_segment_approximator_8h_source_l00063}{63}} der Datei \mbox{\hyperlink{_segment_approximator_8h_source}{Segment\+Approximator.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00019}{approx()}} und \mbox{\hyperlink{_segment_approximator_8cpp_source_l00046}{get\+Segments\+Approx\+Vector()}}.
 
 
 

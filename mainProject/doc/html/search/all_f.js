@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../class_c_point3_d.html#ae5d5fb687ece1bebb535ee5d72509f50',1,'CPoint3D']]]
+  ['windowsize_0',['windowSize',['../class_c_mean_filter.html#a247225236ed080e085d43240e47ec94e',1,'CMeanFilter']]]
 ];
