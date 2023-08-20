@@ -1,0 +1,420 @@
+\doxysection{CLogging Klassenreferenz}
+\hypertarget{class_c_logging}{}\label{class_c_logging}\index{CLogging@{CLogging}}
+
+
+Gleitender Mittelwertfilter.  
+
+
+
+
+{\ttfamily \#include $<$Logging.\+h$>$}
+
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_logging_ac2474e9e269351d398af8e305fff26ed}{CLogging}} (void)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_logging_afd8f43358f562c0a8e85746855873044}{CLogging}} (string \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}, bool \mbox{\hyperlink{class_c_logging_aab3a3cff9b613c4f785990c6e9b38b36}{detailed}})
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_logging_a4b190c3f6c49fa929d2b82745d41330c}{\texorpdfstring{$\sim$}{\string~}\+CLogging}} (void)
+\begin{DoxyCompactList}\small\item\em Dekonstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba}{set\+Step}} (int Step)
+\begin{DoxyCompactList}\small\item\em Setzt in welchem Schritt wir uns befinden. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_logging_a144e10c211b3e044ce15970514f1d231}{get\+Detailed}} (void)
+\begin{DoxyCompactList}\small\item\em Gibt es ein detailliertes Logging. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{log\+Data}} (vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \&source\+Path)
+\begin{DoxyCompactList}\small\item\em Ruft calculate\+Mean fuer die einzelnen Segmente auf. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_logging_abbbb0154126a0f8e8db1b37d34e2019d}{log\+Data}} (vector$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \&source\+Path)
+\begin{DoxyCompactList}\small\item\em Ruft calculate\+Mean fuer die einzelnen Segmente auf. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_logging_a60e0aeeac421c452bf83e7dd3778be2a}{log\+Data}} (vector$<$ \mbox{\hyperlink{class_c_output_point3_d}{COutput\+Point3D}} $>$ \&source\+Path)
+\begin{DoxyCompactList}\small\item\em Ruft calculate\+Mean fuer die einzelnen Segmente auf. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}}
+\item 
+string \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}
+\item 
+bool \mbox{\hyperlink{class_c_logging_aab3a3cff9b613c4f785990c6e9b38b36}{detailed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+Gleitender Mittelwertfilter. 
+
+In dieser Klasse werden die eingelesenen Daten mit einem gleitenden Mittelwertfilter mit einstellbarem Fenster geglaettet. 
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8h_source_l00022}{22}} der Datei \mbox{\hyperlink{_logging_8h_source}{Logging.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_c_logging_ac2474e9e269351d398af8e305fff26ed}\label{class_c_logging_ac2474e9e269351d398af8e305fff26ed} 
+\index{CLogging@{CLogging}!CLogging@{CLogging}}
+\index{CLogging@{CLogging}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{CLogging()}{CLogging()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CLogging\+::\+CLogging (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert Logging Klasse \begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_mean_filter}{CMean\+Filter(int Window)}; 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00010}{10}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}}\ =\ 0;}
+\DoxyCodeLine{00013\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_logging_8h_source_l00073}{step}}.
+
+\Hypertarget{class_c_logging_afd8f43358f562c0a8e85746855873044}\label{class_c_logging_afd8f43358f562c0a8e85746855873044} 
+\index{CLogging@{CLogging}!CLogging@{CLogging}}
+\index{CLogging@{CLogging}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{CLogging()}{CLogging()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CLogging\+::\+CLogging (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{bool}]{detailed }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert Logging Klasse \begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_mean_filter}{CMean\+Filter(int Window)}; 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00016}{16}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}\ =\ Path;}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_c_logging_aab3a3cff9b613c4f785990c6e9b38b36}{detailed}}\ =\ Detailed;}
+\DoxyCodeLine{00020\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_logging_8h_source_l00081}{detailed}} und \mbox{\hyperlink{_logging_8h_source_l00077}{path}}.
+
+\Hypertarget{class_c_logging_a4b190c3f6c49fa929d2b82745d41330c}\label{class_c_logging_a4b190c3f6c49fa929d2b82745d41330c} 
+\index{CLogging@{CLogging}!````~CLogging@{\texorpdfstring{$\sim$}{\string~}CLogging}}
+\index{````~CLogging@{\texorpdfstring{$\sim$}{\string~}CLogging}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CLogging()}{\string~CLogging()}}
+{\footnotesize\ttfamily CLogging\+::\texorpdfstring{$\sim$}{\string~}\+CLogging (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Dekonstruktor. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00022}{22}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_c_logging_a144e10c211b3e044ce15970514f1d231}\label{class_c_logging_a144e10c211b3e044ce15970514f1d231} 
+\index{CLogging@{CLogging}!getDetailed@{getDetailed}}
+\index{getDetailed@{getDetailed}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{getDetailed()}{getDetailed()}}
+{\footnotesize\ttfamily bool CLogging\+::get\+Detailed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt es ein detailliertes Logging. 
+
+\begin{DoxyReturn}{Rückgabe}
+bool detailed 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00027}{27}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_logging_aab3a3cff9b613c4f785990c6e9b38b36}{detailed}};}
+\DoxyCodeLine{00030\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_logging_8h_source_l00081}{detailed}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00019}{CSegment\+Approximator\+::approx()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{CPath\+Builder\+::create\+Path()}} und \mbox{\hyperlink{_mean_filter_8cpp_source_l00040}{CMean\+Filter\+::mean()}}.
+
+\Hypertarget{class_c_logging_abbbb0154126a0f8e8db1b37d34e2019d}\label{class_c_logging_abbbb0154126a0f8e8db1b37d34e2019d} 
+\index{CLogging@{CLogging}!logData@{logData}}
+\index{logData@{logData}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{logData()}{logData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void CLogging\+::log\+Data (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ \&}]{source\+Path }\end{DoxyParamCaption})}
+
+
+
+Ruft calculate\+Mean fuer die einzelnen Segmente auf. 
+
+Loggingdaten werden weggespeichert 
+\begin{DoxyParams}{Parameter}
+{\em vector$<$\+CInput\+Point3\+D$>$\&} & source\+Path \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00073}{73}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00074\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{string}\ filepath;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ file\ Pfad}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{float}\ dummyMatrix[3][3];\ \ \ \ \textcolor{comment}{//\ dummyMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ tmpEuler;\ \ \ \ \ \ \textcolor{comment}{//\ CEulerMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ filepath\ =\ \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ \textcolor{stringliteral}{"{}0"{}}\ +\ std::to\_string(\mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}})\ +\ \textcolor{stringliteral}{"{}\_log.csv"{}};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ FILE*\ fid\ =\ fopen(filepath.c\_str(),\ \textcolor{stringliteral}{"{}w"{}});\ \ \ \textcolor{comment}{//\ file\ oeffnen}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordflow}{if}\ (fid\ ==\ NULL)}
+\DoxyCodeLine{00084\ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR\ -\/\ Can\ NOT\ write\ to\ output\ file!\(\backslash\)n"{}};\ \ \textcolor{comment}{//\ Fehler\ beim\ file\ oeffnen}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00087\ \ \ \ \ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{comment}{/*\ Ausgeben\ der\ Punkte\ mit\ dummyMatrix\ */}}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ vector}}
+\DoxyCodeLine{00091\ \ \ \ \ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{getMatrix}}(dummyMatrix);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})sourcePath[s].getTime(),\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keywordtype}{double})sourcePath[s].getX(),\ (\textcolor{keywordtype}{double})sourcePath[s].getY(),\ (\textcolor{keywordtype}{double})sourcePath[s].getZ(),}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[0][0],\ dummyMatrix[0][1],\ dummyMatrix[0][2],}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[1][0],\ dummyMatrix[1][1],\ dummyMatrix[1][2],}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[2][0],\ dummyMatrix[2][1],\ dummyMatrix[2][2]);}
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_euler_matrix_8cpp_source_l00047}{CEuler\+Matrix\+::get\+Matrix()}}, \mbox{\hyperlink{_logging_8h_source_l00077}{path}} und \mbox{\hyperlink{_logging_8h_source_l00073}{step}}.
+
+\Hypertarget{class_c_logging_a60e0aeeac421c452bf83e7dd3778be2a}\label{class_c_logging_a60e0aeeac421c452bf83e7dd3778be2a} 
+\index{CLogging@{CLogging}!logData@{logData}}
+\index{logData@{logData}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{logData()}{logData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void CLogging\+::log\+Data (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_c_output_point3_d}{COutput\+Point3D}} $>$ \&}]{source\+Path }\end{DoxyParamCaption})}
+
+
+
+Ruft calculate\+Mean fuer die einzelnen Segmente auf. 
+
+Loggingdaten werden weggespeichert 
+\begin{DoxyParams}{Parameter}
+{\em vector$<$\+COutput\+Point3\+D$>$\&} & source\+Path \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00102}{102}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00103\ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{string}\ filepath;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ file\ Pfad}}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{float}\ dummyMatrix[3][3];\ \ \ \ \textcolor{comment}{//\ dummyMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ tmpEuler;\ \ \ \ \ \ \textcolor{comment}{//\ CEulerMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ filepath\ =\ \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ \textcolor{stringliteral}{"{}0"{}}\ +\ std::to\_string(\mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}})\ +\ \textcolor{stringliteral}{"{}\_path.csv"{}};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ FILE*\ fid\ =\ fopen(filepath.c\_str(),\ \textcolor{stringliteral}{"{}w"{}});\ \ \ \textcolor{comment}{//\ file\ oeffnen}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{if}\ (fid\ ==\ NULL)}
+\DoxyCodeLine{00113\ \ \ \ \ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR\ -\/\ Can\ NOT\ write\ to\ output\ file!\(\backslash\)n"{}};\ \ \textcolor{comment}{//\ Fehler\ beim\ file\ oeffnen}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00116\ \ \ \ \ \}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{comment}{/*\ Ausgeben\ der\ Punkte\ mit\ dummyMatrix\ */}}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ vector}}
+\DoxyCodeLine{00120\ \ \ \ \ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{getMatrix}}(dummyMatrix);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})sourcePath[s].getSpeed(),}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keywordtype}{double})sourcePath[s].getX(),\ (\textcolor{keywordtype}{double})sourcePath[s].getY(),\ (\textcolor{keywordtype}{double})sourcePath[s].getZ(),}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keywordtype}{double})sourcePath[s].getA(),\ (\textcolor{keywordtype}{double})sourcePath[s].getB(),\ (\textcolor{keywordtype}{double})sourcePath[s].getC());}
+\DoxyCodeLine{00126\ \ \ \ \ \}}
+\DoxyCodeLine{00127\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_euler_matrix_8cpp_source_l00047}{CEuler\+Matrix\+::get\+Matrix()}}, \mbox{\hyperlink{_logging_8h_source_l00077}{path}} und \mbox{\hyperlink{_logging_8h_source_l00073}{step}}.
+
+\Hypertarget{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}\label{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff} 
+\index{CLogging@{CLogging}!logData@{logData}}
+\index{logData@{logData}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{logData()}{logData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void CLogging\+::log\+Data (\begin{DoxyParamCaption}\item[{vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \&}]{source\+Path }\end{DoxyParamCaption})}
+
+
+
+Ruft calculate\+Mean fuer die einzelnen Segmente auf. 
+
+Loggingdaten werden weggespeichert 
+\begin{DoxyParams}{Parameter}
+{\em vector$<$list$<$\+CInput\+Point3\+D$>$$>$\&} & source\+Path \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00037}{37}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{string}\ filepath;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ file\ Pfad}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{float}\ dummyMatrix[3][3];\ \ \ \ \textcolor{comment}{//\ dummyMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ tmpEuler;\ \ \ \ \ \ \textcolor{comment}{//\ CEulerMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ filepath\ =\ \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ \textcolor{stringliteral}{"{}0"{}}\ +\ std::to\_string(\mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}})\ +\ \textcolor{stringliteral}{"{}\_log.csv"{}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ FILE*\ fid\ =\ fopen(filepath.c\_str(),\ \textcolor{stringliteral}{"{}w"{}});\ \ \ \ \ \ \ \textcolor{comment}{//\ file\ oeffnen}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordflow}{if}\ (fid\ ==\ NULL)}
+\DoxyCodeLine{00048\ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR\ -\/\ Can\ NOT\ write\ to\ output\ file!\(\backslash\)n"{}};\ \ \ \ \ \ \textcolor{comment}{//\ Fehler\ beim\ file\ oeffnen}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00051\ \ \ \ \ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)\ \textcolor{comment}{//for\ all\ segments}}
+\DoxyCodeLine{00054\ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ list<CInputPoint3D>::iterator\ itr\ =\ sourcePath[s].begin();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ tmpEuler\ =\ itr-\/>\mbox{\hyperlink{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}{getEulerMatrix}}();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{getMatrix}}(dummyMatrix);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Ausgeben\ der\ Punkte\ mit\ dummyMatrix\ */}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (;\ itr\ !=\ sourcePath[s].end();\ itr++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ segment}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})itr-\/>getTime(),\ (\textcolor{keywordtype}{double})itr-\/>getX(),\ (\textcolor{keywordtype}{double})itr-\/>getY(),\ (\textcolor{keywordtype}{double})itr-\/>getZ(),}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[0][0],\ dummyMatrix[0][1],\ dummyMatrix[0][2],}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[1][0],\ dummyMatrix[1][1],\ dummyMatrix[1][2],}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[2][0],\ dummyMatrix[2][1],\ dummyMatrix[2][2]);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ itr-\/-\/;}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_euler_matrix_8cpp_source_l00042}{CEuler\+Matrix\+::get\+Euler\+Matrix()}}, \mbox{\hyperlink{_euler_matrix_8cpp_source_l00047}{CEuler\+Matrix\+::get\+Matrix()}}, \mbox{\hyperlink{_logging_8h_source_l00077}{path}} und \mbox{\hyperlink{_logging_8h_source_l00073}{step}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00019}{CSegment\+Approximator\+::approx()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{CPath\+Builder\+::create\+Path()}}, \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00024}{CRob\+Code\+Generator\+::generate\+Rob\+Code()}} und \mbox{\hyperlink{_mean_filter_8cpp_source_l00040}{CMean\+Filter\+::mean()}}.
+
+\Hypertarget{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba}\label{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba} 
+\index{CLogging@{CLogging}!setStep@{setStep}}
+\index{setStep@{setStep}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{setStep()}{setStep()}}
+{\footnotesize\ttfamily void CLogging\+::set\+Step (\begin{DoxyParamCaption}\item[{int}]{Step }\end{DoxyParamCaption})}
+
+
+
+Setzt in welchem Schritt wir uns befinden. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em int} & Step \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8cpp_source_l00032}{32}} der Datei \mbox{\hyperlink{_logging_8cpp_source}{Logging.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}}\ =\ Step;\ \ \ \ \textcolor{comment}{//\ Step\ setzen}}
+\DoxyCodeLine{00035\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_logging_8h_source_l00073}{step}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00019}{CSegment\+Approximator\+::approx()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{CPath\+Builder\+::create\+Path()}}, \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00024}{CRob\+Code\+Generator\+::generate\+Rob\+Code()}} und \mbox{\hyperlink{_mean_filter_8cpp_source_l00040}{CMean\+Filter\+::mean()}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_c_logging_aab3a3cff9b613c4f785990c6e9b38b36}\label{class_c_logging_aab3a3cff9b613c4f785990c6e9b38b36} 
+\index{CLogging@{CLogging}!detailed@{detailed}}
+\index{detailed@{detailed}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{detailed}{detailed}}
+{\footnotesize\ttfamily bool CLogging\+::detailed\hspace{0.3cm}{\ttfamily [private]}}
+
+Speicherpfad 
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8h_source_l00081}{81}} der Datei \mbox{\hyperlink{_logging_8h_source}{Logging.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_logging_8cpp_source_l00016}{CLogging()}} und \mbox{\hyperlink{_logging_8cpp_source_l00027}{get\+Detailed()}}.
+
+\Hypertarget{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}\label{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27} 
+\index{CLogging@{CLogging}!path@{path}}
+\index{path@{path}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily string CLogging\+::path\hspace{0.3cm}{\ttfamily [private]}}
+
+Speicherpfad 
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8h_source_l00077}{77}} der Datei \mbox{\hyperlink{_logging_8h_source}{Logging.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_logging_8cpp_source_l00016}{CLogging()}}, \mbox{\hyperlink{_logging_8cpp_source_l00073}{log\+Data()}}, \mbox{\hyperlink{_logging_8cpp_source_l00102}{log\+Data()}} und \mbox{\hyperlink{_logging_8cpp_source_l00037}{log\+Data()}}.
+
+\Hypertarget{class_c_logging_a5728c680af8a761ba8d050407fb05b03}\label{class_c_logging_a5728c680af8a761ba8d050407fb05b03} 
+\index{CLogging@{CLogging}!step@{step}}
+\index{step@{step}!CLogging@{CLogging}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily int CLogging\+::step\hspace{0.3cm}{\ttfamily [private]}}
+
+In welchem Schritt sind wir gerade 
+
+Definiert in Zeile \mbox{\hyperlink{_logging_8h_source_l00073}{73}} der Datei \mbox{\hyperlink{_logging_8h_source}{Logging.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_logging_8cpp_source_l00010}{CLogging()}}, \mbox{\hyperlink{_logging_8cpp_source_l00073}{log\+Data()}}, \mbox{\hyperlink{_logging_8cpp_source_l00102}{log\+Data()}}, \mbox{\hyperlink{_logging_8cpp_source_l00037}{log\+Data()}} und \mbox{\hyperlink{_logging_8cpp_source_l00032}{set\+Step()}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_logging_8h}{Logging.\+h}}\item 
+source/\mbox{\hyperlink{_logging_8cpp}{Logging.\+cpp}}\end{DoxyCompactItemize}

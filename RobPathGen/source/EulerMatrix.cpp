@@ -34,14 +34,14 @@ void CEulerMatrix::setMatrix(float inputMatrix[3][3])
     { 
         for (int m = 0; m < 3; m++)
         {
-            eulerMatrix[i][m] = inputMatrix[i][m];  // eulerMatrix mit Übergabewerten überschreiben
+            eulerMatrix[i][m] = inputMatrix[i][m];  // eulerMatrix mit Uebergabewerten ueberschreiben
         }
     }
 }
 
 CEulerMatrix CEulerMatrix::getEulerMatrix()
 {
-    return eulerMatrix;         // EulerMatrix zurück geben
+    return eulerMatrix;         // EulerMatrix zurueck geben
 }
 
 void CEulerMatrix::getMatrix(float Matrix[][3])
@@ -50,7 +50,7 @@ void CEulerMatrix::getMatrix(float Matrix[][3])
     {
         for (int m = 0; m < 3; m++)
         {
-            Matrix[i][m] = eulerMatrix[i][m];  // eulerMatrix mit �bergabewerten �berschreiben
+            Matrix[i][m] = eulerMatrix[i][m];  // eulerMatrix mit Uebergabewerten ueberschreiben
         }
     }
 }
@@ -75,7 +75,7 @@ CEulerMatrix CEulerMatrix::angels2mat(double A, double B, double C)
     Matrix[2][2] = cos(B);
 
     CEulerMatrix buffer(Matrix);        // DummyMatrix in DummyEulerMatrix schreiben
-    return buffer;                      // Matrix zurück geben
+    return buffer;                      // Matrix zurueck geben
 }
 
 //TODO: Kommentar
@@ -120,6 +120,6 @@ tuple<double , double , double> CEulerMatrix::calculateAngels(void)
     c = c * 180 / M_PI;
 
 
-    return make_tuple(a, b, c);     // Rückgabe der Winkel
+    return make_tuple(a, b, c);     // Rueckgabe der Winkel
 }
 

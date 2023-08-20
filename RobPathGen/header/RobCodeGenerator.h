@@ -18,7 +18,7 @@ using namespace std;
 #define MAX_SPEED 2.0
 
 /**
- * In dieser Klasse wird die Nachbearbeitung der Daten mit den einstellbaren Daten durchgeführt.
+ * In dieser Klasse wird die Nachbearbeitung der Daten mit den einstellbaren Daten durchgefuehrt.
  * 
  * @brief Klasse zum erstellen des Roboter Codes
  */

@@ -34,9 +34,6 @@
     <QtMoc Include="header\GUI.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="switch.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\GUI.cpp">
@@ -72,9 +69,6 @@
     <ClCompile Include="source\SegmentApproximator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="switch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\EulerMatrix.h">
@@ -104,8 +98,8 @@
     <ClInclude Include="header\SegmentApproximator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="style.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

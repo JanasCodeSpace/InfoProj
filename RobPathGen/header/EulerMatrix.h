@@ -3,6 +3,7 @@
  *
  * @brief Header File handling Euler Matrix
  */
+#pragma once
 
 #include <tuple>
 #include <cmath>
@@ -11,10 +12,8 @@
 
 using namespace std;
 
-#pragma once
-
 /**
- * Diese Klasse speichert die Euler Matrix und hat Funktionen f�r Berechnungen mit eben jener.
+ * Diese Klasse speichert die Euler Matrix und hat Funktionen fuer Berechnungen mit eben jener.
  * @brief Handling und Berechnung Euler Matrix
  */
 class CEulerMatrix
@@ -45,7 +44,7 @@ public:
 	void setMatrix(float inputMatrix[3][3]);
 	/**
 	* @brief Auslesen eine Matrix
-	* @return: float inputMatrix[3][3] gibt gespeicherte Matrix zur�ck
+	* @return: float inputMatrix[3][3] gibt gespeicherte Matrix zurueck
 	*/
 	CEulerMatrix getEulerMatrix(void);
 
@@ -65,7 +64,7 @@ public:
 
 /**
 	* @brief Berechnet die Kuka Wunkel A,B,C
-	* @return: tuple<double , double , double> gibt die berechneten Winkel A, B, C zurück
+	* @return: tuple<double , double , double> gibt die berechneten Winkel A, B, C zurueck
 	*/
 	tuple<double , double , double> calculateAngels(void);
 

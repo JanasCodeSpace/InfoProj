@@ -1,0 +1,724 @@
+\doxysection{GUI Klassenreferenz}
+\hypertarget{class_g_u_i}{}\label{class_g_u_i}\index{GUI@{GUI}}
+
+
+UI und Funktionen.  
+
+
+
+
+{\ttfamily \#include $<$GUI.\+h$>$}
+
+Klassendiagramm für GUI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_g_u_i}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_g_u_i_aeb87cfbd669a2ebbcc46dd640103c25b}{GUI}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_g_u_i_ac9cae2328dcb5d83bdfaeca49a2eb695}{\texorpdfstring{$\sim$}{\string~}\+GUI}} ()
+\begin{DoxyCompactList}\small\item\em Dekonstruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_g_u_i_afe6fca06b902d6ef20351aa36ba06bb9}{calculate}} (void)
+\begin{DoxyCompactList}\small\item\em Ruft nacheinander die Klassen fuer die Berechnung auf und erstellt alle notwendigen Files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a5902f5772468d93e9d96649c69423288}{set\+Input\+Path}} (void)
+\begin{DoxyCompactList}\small\item\em Liest den Pfad der Input Datei ein. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a1466c48943c14dbb13da3555480861ce}{set\+Output\+Path}} (void)
+\begin{DoxyCompactList}\small\item\em Liest den Pfad des Output Ordners aus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a800968621d1ce7efd41eccac199e7480}{set\+DP}} (void)
+\begin{DoxyCompactList}\small\item\em Liest die DP Toleranz ein. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a9f4684782703fc556441c6bcd6f8a149}{set\+Mean}} (void)
+\begin{DoxyCompactList}\small\item\em Liest das Fenster fuer den gleitenden Mittelwertsfilter ein. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_ab9d09b8ad6a5a35210b4bf178fe06256}{activate\+Speed}} (void)
+\begin{DoxyCompactList}\small\item\em Aktiviert die das manuelle Einstellen der Geschwindigkeit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a781ffdbd0d321c95476bebd69bd412f9}{set\+Speed}} (void)
+\begin{DoxyCompactList}\small\item\em Setzt eine gewaehlte Geschwindigkeit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a35459ae8a9ec0f4af838dacca8b92bc6}{activate\+Orientation}} (void)
+\begin{DoxyCompactList}\small\item\em Aktiviert die das manuelle Einstellen der Orientierung. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a0105cf2fe657404fe696e58d2f91a56e}{set\+Orientation}} (void)
+\begin{DoxyCompactList}\small\item\em Setzt eine gewaehlte Orientierung. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a043999342c5aef3cdeafffee341cf963}{activate\+Offset}} (void)
+\begin{DoxyCompactList}\small\item\em Aktiviert die das manuelle Einstellen des Offsets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_af998ca14c7fabdbb2511ec7da6e39cc4}{set\+Offset}} (void)
+\begin{DoxyCompactList}\small\item\em Setzt eine gewaehlten Offset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_a4d1ede582a9f9a2f17b587cc3b99c2d8}{activate\+Logging}} (void)
+\begin{DoxyCompactList}\small\item\em Das detaillierte Logging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ui_1_1_g_u_i_class}{Ui\+::\+GUIClass}} \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}
+\item 
+QString \mbox{\hyperlink{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}{input\+Path\+UI}}
+\item 
+QString \mbox{\hyperlink{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}{output\+Path\+UI}}
+\item 
+double \mbox{\hyperlink{class_g_u_i_ad957e2d6319db5aaccd5ab4d40574bb1}{dp\+Tolerance}}
+\item 
+double \mbox{\hyperlink{class_g_u_i_a0017dccef65f12bb37d9f225eaa0d319}{mean\+Length}}
+\item 
+\mbox{\hyperlink{class_c_input_parameter}{CInput\+Parameter}} \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{input\+Parameter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+UI und Funktionen. 
+
+Diese Klasse ruft das User Interface auf und stellt alle Funktionalitaeten bereit 
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8h_source_l00021}{21}} der Datei \mbox{\hyperlink{_g_u_i_8h_source}{GUI.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_g_u_i_aeb87cfbd669a2ebbcc46dd640103c25b}\label{class_g_u_i_aeb87cfbd669a2ebbcc46dd640103c25b} 
+\index{GUI@{GUI}!GUI@{GUI}}
+\index{GUI@{GUI}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{GUI()}{GUI()}}
+{\footnotesize\ttfamily GUI\+::\+GUI (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert das UI Fenster 
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{15}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016\ \ \ \ \ :\ QMainWindow(parent) }
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a81ab1a446b71bd28a4bd7a7c78fe8e9f}{setupUi}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//Dateioperationen\ und\ Anzeige}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}{inputPathUI}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aaa06ae016a21c08cbe7871d8b536015d}{pathInput}}-\/>setText(\mbox{\hyperlink{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}{inputPathUI}});}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}{outputPathUI}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5a533d0bcf29f656372faaf159fa431a}{pathOutput}}-\/>setText(\mbox{\hyperlink{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}{outputPathUI}});}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ad740590b92194e9777ea5aff8e6fcd8f}{pushOutput}},\ \&QPushButton::clicked,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a1466c48943c14dbb13da3555480861ce}{GUI::setOutputPath}});}
+\DoxyCodeLine{00027\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ae7fb201aeb5d892c132c8fb4d1f1d331}{pushInput}},\ \&QPushButton::clicked,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a5902f5772468d93e9d96649c69423288}{GUI::setInputPath}});}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//Zwingende\ Einstellwerte}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//Douglas-\/Peuker-\/Toleranz}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac3f58d814a17def241aedbf9207d6a74}{dpToleranz}}-\/>setRange(1,\ 100);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac3f58d814a17def241aedbf9207d6a74}{dpToleranz}}-\/>setSingleStep(1);}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac3f58d814a17def241aedbf9207d6a74}{dpToleranz}}-\/>setValue(40);}
+\DoxyCodeLine{00034\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac3f58d814a17def241aedbf9207d6a74}{dpToleranz}},\ \&QSpinBox::valueChanged,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a800968621d1ce7efd41eccac199e7480}{GUI::setDP}});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//Fenster\ fuer\ gleitenden\ Mittelwert}}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a0492e5b817a3f42191b681688e724f93}{meanLength}}-\/>setRange(3,\ 500);}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a0492e5b817a3f42191b681688e724f93}{meanLength}}-\/>setSingleStep(1);}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a0492e5b817a3f42191b681688e724f93}{meanLength}}-\/>setValue(50);}
+\DoxyCodeLine{00040\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a0492e5b817a3f42191b681688e724f93}{meanLength}},\ \&QSpinBox::valueChanged,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a9f4684782703fc556441c6bcd6f8a149}{GUI::setMean}});}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//Geschwindigkeit}}
+\DoxyCodeLine{00043\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a80af1228bf6dbf4e2e593439c2135979}{bSpeed}},\ \&QCheckBox::clicked,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_ab9d09b8ad6a5a35210b4bf178fe06256}{GUI::activateSpeed}});}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a333a66c0b40fc39a5a54414402328d4d}{speed}}-\/>setRange(0.01,\ 2);}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a333a66c0b40fc39a5a54414402328d4d}{speed}}-\/>setSingleStep(0.01);}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a333a66c0b40fc39a5a54414402328d4d}{speed}}-\/>setValue(1);}
+\DoxyCodeLine{00047\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a333a66c0b40fc39a5a54414402328d4d}{speed}},\ \&QDoubleSpinBox::valueChanged,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a781ffdbd0d321c95476bebd69bd412f9}{GUI::setSpeed}});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//Ausrichtung}}
+\DoxyCodeLine{00050\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aa2d884c274e9983e0ff21fdd9b2ed0c6}{bManOrientation}},\ \&QCheckBox::clicked,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a35459ae8a9ec0f4af838dacca8b92bc6}{GUI::activateOrientation}});}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac77df68a6ef1ecb2312a5df1fc00c028}{AValue}}-\/>setRange(-\/180,\ 180);}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac77df68a6ef1ecb2312a5df1fc00c028}{AValue}}-\/>setSingleStep(5);}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac77df68a6ef1ecb2312a5df1fc00c028}{AValue}}-\/>setValue(0);}
+\DoxyCodeLine{00054\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac77df68a6ef1ecb2312a5df1fc00c028}{AValue}},\ \&QDoubleSpinBox::valueChanged,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a0105cf2fe657404fe696e58d2f91a56e}{GUI::setOrientation}});}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_affdeaf6dba943b07c2392b52f133cea2}{BValue}}-\/>setRange(-\/180,\ 180);}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_affdeaf6dba943b07c2392b52f133cea2}{BValue}}-\/>setSingleStep(5);}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_affdeaf6dba943b07c2392b52f133cea2}{BValue}}-\/>setValue(90);}
+\DoxyCodeLine{00059\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_affdeaf6dba943b07c2392b52f133cea2}{BValue}},\ \&QDoubleSpinBox::valueChanged,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a0105cf2fe657404fe696e58d2f91a56e}{GUI::setOrientation}});}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aadb70b09dcbf85f0ca4eefbd272643f9}{CValue}}-\/>setRange(-\/180,\ 180);}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aadb70b09dcbf85f0ca4eefbd272643f9}{CValue}}-\/>setSingleStep(5);}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aadb70b09dcbf85f0ca4eefbd272643f9}{CValue}}-\/>setValue(0);}
+\DoxyCodeLine{00064\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aadb70b09dcbf85f0ca4eefbd272643f9}{CValue}},\ \&QDoubleSpinBox::valueChanged,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a0105cf2fe657404fe696e58d2f91a56e}{GUI::setOrientation}});}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//Offset}}
+\DoxyCodeLine{00067\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a6e7fb979d15401ff4ac737dbc426de43}{bOffset}},\ \&QCheckBox::clicked,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a043999342c5aef3cdeafffee341cf963}{GUI::activateOffset}});}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ae98822372a900a2ed4e781399406be92}{offsetX}}-\/>setRange(-\/400,\ 400);}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ae98822372a900a2ed4e781399406be92}{offsetX}}-\/>setSingleStep(10);}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ae98822372a900a2ed4e781399406be92}{offsetX}}-\/>setValue(0);}
+\DoxyCodeLine{00071\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ae98822372a900a2ed4e781399406be92}{offsetX}},\ \&QDoubleSpinBox::valueChanged,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_af998ca14c7fabdbb2511ec7da6e39cc4}{GUI::setOffset}});}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ad3cc0e2b787990720073ac8d4abd3c}{offsetY}}-\/>setRange(-\/400,\ 400);}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ad3cc0e2b787990720073ac8d4abd3c}{offsetY}}-\/>setSingleStep(10);}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ad3cc0e2b787990720073ac8d4abd3c}{offsetY}}-\/>setValue(0);}
+\DoxyCodeLine{00076\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ad3cc0e2b787990720073ac8d4abd3c}{offsetY}},\ \&QDoubleSpinBox::valueChanged,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_af998ca14c7fabdbb2511ec7da6e39cc4}{GUI::setOffset}});}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a53a0e562cafe68d6bacf034929c17068}{offsetZ}}-\/>setRange(-\/400,\ 400);}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a53a0e562cafe68d6bacf034929c17068}{offsetZ}}-\/>setSingleStep(10);}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a53a0e562cafe68d6bacf034929c17068}{offsetZ}}-\/>setValue(0);}
+\DoxyCodeLine{00081\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a53a0e562cafe68d6bacf034929c17068}{offsetZ}},\ \&QDoubleSpinBox::valueChanged,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_af998ca14c7fabdbb2511ec7da6e39cc4}{GUI::setOffset}});}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{comment}{//Logging}}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aacc17b15f178040c9520f24d4461de2c}{bLogging}}-\/>setChecked(\textcolor{keyword}{true});}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}}.\mbox{\hyperlink{class_c_input_parameter_a7d054f366f9568f02d604708d5529c23}{setOffset}}(0,\ 0,\ 0,\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00086\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aacc17b15f178040c9520f24d4461de2c}{bLogging}},\ \&QCheckBox::clicked,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_a4d1ede582a9f9a2f17b587cc3b99c2d8}{GUI::activateLogging}});}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ connect(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a890ed2cc042d5f0c8537674359d0aacc}{startCalculation}},\ \&QPushButton::clicked,\ \textcolor{keyword}{this},\ \&\mbox{\hyperlink{class_g_u_i_afe6fca06b902d6ef20351aa36ba06bb9}{GUI::calculate}});}
+\DoxyCodeLine{00089\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_g_u_i_8cpp_source_l00094}{activate\+Logging()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00105}{activate\+Offset()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00129}{activate\+Orientation()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00148}{activate\+Speed()}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00040}{Ui\+\_\+\+GUIClass\+::\+AValue}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00048}{Ui\+\_\+\+GUIClass\+::b\+Logging}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00043}{Ui\+\_\+\+GUIClass\+::b\+Man\+Orientation}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00049}{Ui\+\_\+\+GUIClass\+::b\+Offset}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00035}{Ui\+\_\+\+GUIClass\+::b\+Speed}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00041}{Ui\+\_\+\+GUIClass\+::\+BValue}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{calculate()}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00042}{Ui\+\_\+\+GUIClass\+::\+CValue}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00047}{Ui\+\_\+\+GUIClass\+::dp\+Toleranz}}, \mbox{\hyperlink{_g_u_i_8h_source_l00101}{input\+Parameter}}, \mbox{\hyperlink{_g_u_i_8h_source_l00094}{input\+Path\+UI}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00044}{Ui\+\_\+\+GUIClass\+::mean\+Length}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00054}{Ui\+\_\+\+GUIClass\+::offsetX}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00055}{Ui\+\_\+\+GUIClass\+::offsetY}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00056}{Ui\+\_\+\+GUIClass\+::offsetZ}}, \mbox{\hyperlink{_g_u_i_8h_source_l00098}{output\+Path\+UI}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00030}{Ui\+\_\+\+GUIClass\+::path\+Input}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00061}{Ui\+\_\+\+GUIClass\+::path\+Output}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00057}{Ui\+\_\+\+GUIClass\+::push\+Input}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00058}{Ui\+\_\+\+GUIClass\+::push\+Output}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00168}{set\+DP()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00173}{set\+Input\+Path()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00162}{set\+Mean()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00049}{CInput\+Parameter\+::set\+Offset()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00099}{set\+Offset()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00123}{set\+Orientation()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00179}{set\+Output\+Path()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00143}{set\+Speed()}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00063}{Ui\+\_\+\+GUIClass\+::setup\+Ui()}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00033}{Ui\+\_\+\+GUIClass\+::speed}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00060}{Ui\+\_\+\+GUIClass\+::start\+Calculation}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+\Hypertarget{class_g_u_i_ac9cae2328dcb5d83bdfaeca49a2eb695}\label{class_g_u_i_ac9cae2328dcb5d83bdfaeca49a2eb695} 
+\index{GUI@{GUI}!````~GUI@{\texorpdfstring{$\sim$}{\string~}GUI}}
+\index{````~GUI@{\texorpdfstring{$\sim$}{\string~}GUI}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GUI()}{\string~GUI()}}
+{\footnotesize\ttfamily GUI\+::\texorpdfstring{$\sim$}{\string~}\+GUI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dekonstruktor. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00091}{91}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00092\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_g_u_i_a4d1ede582a9f9a2f17b587cc3b99c2d8}\label{class_g_u_i_a4d1ede582a9f9a2f17b587cc3b99c2d8} 
+\index{GUI@{GUI}!activateLogging@{activateLogging}}
+\index{activateLogging@{activateLogging}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{activateLogging}{activateLogging}}
+{\footnotesize\ttfamily void GUI\+::activate\+Logging (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Das detaillierte Logging. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00094}{94}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}}.\mbox{\hyperlink{class_c_input_parameter_a848430192a01d3a79c7f84664ab04f55}{setLogging}}(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aacc17b15f178040c9520f24d4461de2c}{bLogging}}-\/>isChecked());}
+\DoxyCodeLine{00097\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00048}{Ui\+\_\+\+GUIClass\+::b\+Logging}}, \mbox{\hyperlink{_g_u_i_8h_source_l00101}{input\+Parameter}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00057}{CInput\+Parameter\+::set\+Logging()}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_a043999342c5aef3cdeafffee341cf963}\label{class_g_u_i_a043999342c5aef3cdeafffee341cf963} 
+\index{GUI@{GUI}!activateOffset@{activateOffset}}
+\index{activateOffset@{activateOffset}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{activateOffset}{activateOffset}}
+{\footnotesize\ttfamily void GUI\+::activate\+Offset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Aktiviert die das manuelle Einstellen des Offsets. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00105}{105}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00106\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a6e7fb979d15401ff4ac737dbc426de43}{bOffset}}-\/>isChecked())}
+\DoxyCodeLine{00108\ \ \ \ \ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a61885685bccef762ec0bbd0d0e40abee}{offset}}-\/>setEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a61885685bccef762ec0bbd0d0e40abee}{offset}}-\/>setStyleSheet(\textcolor{stringliteral}{"{}background-\/color:\ \ rgb(67,\ 72,\ 91);\ color:\ rgb(3,\ 8,\ 14);\ border:\ 1px\ solid\ black;"{}});}
+\DoxyCodeLine{00111\ \ \ \ \ \}}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00113\ \ \ \ \ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a61885685bccef762ec0bbd0d0e40abee}{offset}}-\/>setEnabled(\textcolor{keyword}{false});}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a61885685bccef762ec0bbd0d0e40abee}{offset}}-\/>setStyleSheet(\textcolor{stringliteral}{"{}background-\/color:\ rgb(210,211,218);\ color:\ rgb(117,125,149)"{}});}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ae98822372a900a2ed4e781399406be92}{offsetX}}-\/>setValue(0);}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ad3cc0e2b787990720073ac8d4abd3c}{offsetY}}-\/>setValue(0);}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a53a0e562cafe68d6bacf034929c17068}{offsetZ}}-\/>setValue(0);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}}.\mbox{\hyperlink{class_c_input_parameter_a7d054f366f9568f02d604708d5529c23}{setOffset}}(0,\ 0,\ 0,\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00120\ \ \ \ \ \}}
+\DoxyCodeLine{00121\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00049}{Ui\+\_\+\+GUIClass\+::b\+Offset}}, \mbox{\hyperlink{_g_u_i_8h_source_l00101}{input\+Parameter}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00050}{Ui\+\_\+\+GUIClass\+::offset}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00054}{Ui\+\_\+\+GUIClass\+::offsetX}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00055}{Ui\+\_\+\+GUIClass\+::offsetY}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00056}{Ui\+\_\+\+GUIClass\+::offsetZ}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00049}{CInput\+Parameter\+::set\+Offset()}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_a35459ae8a9ec0f4af838dacca8b92bc6}\label{class_g_u_i_a35459ae8a9ec0f4af838dacca8b92bc6} 
+\index{GUI@{GUI}!activateOrientation@{activateOrientation}}
+\index{activateOrientation@{activateOrientation}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{activateOrientation}{activateOrientation}}
+{\footnotesize\ttfamily void GUI\+::activate\+Orientation (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Aktiviert die das manuelle Einstellen der Orientierung. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00129}{129}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00130\ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aa2d884c274e9983e0ff21fdd9b2ed0c6}{bManOrientation}}-\/>isChecked())}
+\DoxyCodeLine{00132\ \ \ \ \ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a0038172a3955f21cac5fdebb11f025ca}{orientation}}-\/>setEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a0038172a3955f21cac5fdebb11f025ca}{orientation}}-\/>setStyleSheet(\textcolor{stringliteral}{"{}background-\/color:\ \ rgb(67,\ 72,\ 91);\ color:\ rgb(3,\ 8,\ 14);\ border:\ 1px\ solid\ black;"{}});}
+\DoxyCodeLine{00135\ \ \ \ \ \}}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00137\ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a0038172a3955f21cac5fdebb11f025ca}{orientation}}-\/>setEnabled(\textcolor{keyword}{false});}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a0038172a3955f21cac5fdebb11f025ca}{orientation}}-\/>setStyleSheet(\textcolor{stringliteral}{"{}background-\/color:\ rgb(210,211,218);\ color:\ rgb(117,125,149)"{}});}
+\DoxyCodeLine{00140\ \ \ \ \ \}}
+\DoxyCodeLine{00141\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00043}{Ui\+\_\+\+GUIClass\+::b\+Man\+Orientation}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00036}{Ui\+\_\+\+GUIClass\+::orientation}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_ab9d09b8ad6a5a35210b4bf178fe06256}\label{class_g_u_i_ab9d09b8ad6a5a35210b4bf178fe06256} 
+\index{GUI@{GUI}!activateSpeed@{activateSpeed}}
+\index{activateSpeed@{activateSpeed}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{activateSpeed}{activateSpeed}}
+{\footnotesize\ttfamily void GUI\+::activate\+Speed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Aktiviert die das manuelle Einstellen der Geschwindigkeit. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00148}{148}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00149\ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a80af1228bf6dbf4e2e593439c2135979}{bSpeed}}-\/>isChecked())}
+\DoxyCodeLine{00151\ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_adb3c81ee79061cf42b1b4a59d741fbab}{speed\_2}}-\/>setEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_adb3c81ee79061cf42b1b4a59d741fbab}{speed\_2}}-\/>setStyleSheet(\textcolor{stringliteral}{"{}background-\/color:\ \ rgb(67,\ 72,\ 91);\ color:\ rgb(3,\ 8,\ 14);\ border:\ 1px\ solid\ black;\ "{}});}
+\DoxyCodeLine{00154\ \ \ \ \ \}}
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00156\ \ \ \ \ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_adb3c81ee79061cf42b1b4a59d741fbab}{speed\_2}}-\/>setEnabled(\textcolor{keyword}{false});}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_adb3c81ee79061cf42b1b4a59d741fbab}{speed\_2}}-\/>setStyleSheet(\textcolor{stringliteral}{"{}background-\/color:\ rgb(210,211,218);\ color:\ rgb(117,125,149)"{}});}
+\DoxyCodeLine{00159\ \ \ \ \ \}}
+\DoxyCodeLine{00160\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00035}{Ui\+\_\+\+GUIClass\+::b\+Speed}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00032}{Ui\+\_\+\+GUIClass\+::speed\+\_\+2}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_afe6fca06b902d6ef20351aa36ba06bb9}\label{class_g_u_i_afe6fca06b902d6ef20351aa36ba06bb9} 
+\index{GUI@{GUI}!calculate@{calculate}}
+\index{calculate@{calculate}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{calculate}{calculate}}
+{\footnotesize\ttfamily void GUI\+::calculate (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Ruft nacheinander die Klassen fuer die Berechnung auf und erstellt alle notwendigen Files. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{185}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00186\ \{}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}{inputPathUI}}.isEmpty()\ ||\ \mbox{\hyperlink{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}{outputPathUI}}.isEmpty())}
+\DoxyCodeLine{00189\ \ \ \ \ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ QMessageBox\ messageBox;}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ messageBox.critical(0,\ \textcolor{stringliteral}{"{}Error"{}},\ \textcolor{stringliteral}{"{}Keine\ Datei\ ausgewaehlt!"{}});}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ messageBox.setFixedSize(500,\ 200);}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00194\ \ \ \ \ \}}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00197\ \ \ \ \ \{}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ outputPath\ =\ \mbox{\hyperlink{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}{outputPathUI}}.toUtf8().constData();}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ inputPath\ =\ \mbox{\hyperlink{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}{inputPathUI}}.toUtf8().constData();}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ca981d2e305e5263d282cb6600a4de7}{textBrowser}}-\/>clear();}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{comment}{//logging\ Initialisieren}}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_logging}{CLogging}}\ logging(outputPath,\ \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}}.\mbox{\hyperlink{class_c_input_parameter_af4692e32d893bf00164e897f8a19f17a}{getLoggingManual}}());}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \textcolor{comment}{//read\ Data}}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}}.\mbox{\hyperlink{class_c_input_parameter_a2c6f7c743f45164703be3e489d0fb4f0}{openFile}}(inputPath);}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ca981d2e305e5263d282cb6600a4de7}{textBrowser}}-\/>insertPlainText(\textcolor{stringliteral}{"{}Datei\ eingelesen\(\backslash\)n"{}});}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \textcolor{comment}{//moving\ Average}}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_mean_filter}{CMeanFilter}}\ meanFilter;}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ meanFilter.\mbox{\hyperlink{class_c_mean_filter_a838914420e15ae2b3ba13fef8902c6ed}{setWindowSize}}(\mbox{\hyperlink{class_g_u_i_a0017dccef65f12bb37d9f225eaa0d319}{meanLength}});}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ meanFilter.\mbox{\hyperlink{class_c_mean_filter_a7137cd05a9a31536560b0230a63a91ee}{mean}}(\mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}}.\mbox{\hyperlink{class_c_input_parameter_a1b7ac3c105dea6e2c2cd38b88157feee}{getPath}}(),\ logging);}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ca981d2e305e5263d282cb6600a4de7}{textBrowser}}-\/>insertPlainText(\textcolor{stringliteral}{"{}Gleitender\ Mittelwert\ berechnet\(\backslash\)n"{}});}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Douglas-\/Peuker\ Algorithm}}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_segment_approximator}{CSegmentApproximator}}\ segmentApproximator;}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ segmentApproximator.\mbox{\hyperlink{class_c_segment_approximator_aa38b31a78abcd8eadcb6d014bfb7fe85}{setmaxDistance}}(\mbox{\hyperlink{class_g_u_i_ad957e2d6319db5aaccd5ab4d40574bb1}{dpTolerance}});}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ segmentApproximator.\mbox{\hyperlink{class_c_segment_approximator_adf9e03a7f07a723f9d516dfda659c949}{approx}}(meanFilter.\mbox{\hyperlink{class_c_mean_filter_aaea0182dce726e167d46fc4a4b78e81a}{getPath}}(),\ logging);}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ca981d2e305e5263d282cb6600a4de7}{textBrowser}}-\/>insertPlainText(\textcolor{stringliteral}{"{}Douglas-\/Peuker-\/Algorithmus\ berechnet\(\backslash\)n"{}});}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Puts\ the\ Segments\ together\ to\ one\ path}}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_path_builder}{CPathBuilder}}\ pathBuilder;}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ pathBuilder.\mbox{\hyperlink{class_c_path_builder_ae61bf6e9ef8130799677aaaa8172c501}{createPath}}(segmentApproximator.\mbox{\hyperlink{class_c_segment_approximator_a844d1beeb790d3f00a7c8154b1632ec6}{getSegmentsApproxVector}}(),\ logging);}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ca981d2e305e5263d282cb6600a4de7}{textBrowser}}-\/>insertPlainText(\textcolor{stringliteral}{"{}Pfad\ zusammengesetzt\(\backslash\)n"{}});}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Calculates\ Speed,\ Angle\ and\ generates\ the\ Output\ Data}}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator}{CRobCodeGenerator}}\ codeGenerator(\mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}});}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ codeGenerator.generateRobCode(pathBuilder.\mbox{\hyperlink{class_c_path_builder_aff7eb289b0c0cfa11c9d2dbe31781bf6}{getPath}}(),\ outputPath,\ inputPath,\ logging);}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ca981d2e305e5263d282cb6600a4de7}{textBrowser}}-\/>insertPlainText(\textcolor{stringliteral}{"{}Datei\ erstellt\(\backslash\)n"{}});;}
+\DoxyCodeLine{00234\ \ \ \ \ \}}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keywordflow}{catch}\ (exception\&\ e)}
+\DoxyCodeLine{00237\ \ \ \ \ \{}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ cerr\ <<\ e.what()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00239\ \ \ \ \ \}}
+\DoxyCodeLine{00240\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_segment_approximator_8cpp_source_l00019}{CSegment\+Approximator\+::approx()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{CPath\+Builder\+::create\+Path()}}, \mbox{\hyperlink{_g_u_i_8h_source_l00099}{dp\+Tolerance}}, \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00024}{CRob\+Code\+Generator\+::generate\+Rob\+Code()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00094}{CInput\+Parameter\+::get\+Logging\+Manual()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00069}{CInput\+Parameter\+::get\+Path()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00035}{CMean\+Filter\+::get\+Path()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00018}{CPath\+Builder\+::get\+Path()}}, \mbox{\hyperlink{_segment_approximator_8cpp_source_l00049}{CSegment\+Approximator\+::get\+Segments\+Approx\+Vector()}}, \mbox{\hyperlink{_g_u_i_8h_source_l00101}{input\+Parameter}}, \mbox{\hyperlink{_g_u_i_8h_source_l00094}{input\+Path\+UI}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00040}{CMean\+Filter\+::mean()}}, \mbox{\hyperlink{_g_u_i_8h_source_l00100}{mean\+Length}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00111}{CInput\+Parameter\+::open\+File()}}, \mbox{\hyperlink{_g_u_i_8h_source_l00098}{output\+Path\+UI}}, \mbox{\hyperlink{_segment_approximator_8cpp_source_l00039}{CSegment\+Approximator\+::setmax\+Distance()}}, \mbox{\hyperlink{_mean_filter_8cpp_source_l00025}{CMean\+Filter\+::set\+Window\+Size()}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00059}{Ui\+\_\+\+GUIClass\+::text\+Browser}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_a800968621d1ce7efd41eccac199e7480}\label{class_g_u_i_a800968621d1ce7efd41eccac199e7480} 
+\index{GUI@{GUI}!setDP@{setDP}}
+\index{setDP@{setDP}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setDP}{setDP}}
+{\footnotesize\ttfamily void GUI\+::set\+DP (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Liest die DP Toleranz ein. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00168}{168}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00169\ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_ad957e2d6319db5aaccd5ab4d40574bb1}{dpTolerance}}\ =\ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac3f58d814a17def241aedbf9207d6a74}{dpToleranz}}-\/>value();}
+\DoxyCodeLine{00171\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_g_u_i_8h_source_l00099}{dp\+Tolerance}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00047}{Ui\+\_\+\+GUIClass\+::dp\+Toleranz}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_a5902f5772468d93e9d96649c69423288}\label{class_g_u_i_a5902f5772468d93e9d96649c69423288} 
+\index{GUI@{GUI}!setInputPath@{setInputPath}}
+\index{setInputPath@{setInputPath}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setInputPath}{setInputPath}}
+{\footnotesize\ttfamily void GUI\+::set\+Input\+Path (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Liest den Pfad der Input Datei ein. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00173}{173}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00174\ \{}
+\DoxyCodeLine{00175\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}{inputPathUI}}\ =\ QFileDialog::getOpenFileName(\textcolor{keyword}{this});}
+\DoxyCodeLine{00176\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aaa06ae016a21c08cbe7871d8b536015d}{pathInput}}-\/>setText(\mbox{\hyperlink{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}{inputPathUI}});}
+\DoxyCodeLine{00177\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_g_u_i_8h_source_l00094}{input\+Path\+UI}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00030}{Ui\+\_\+\+GUIClass\+::path\+Input}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_a9f4684782703fc556441c6bcd6f8a149}\label{class_g_u_i_a9f4684782703fc556441c6bcd6f8a149} 
+\index{GUI@{GUI}!setMean@{setMean}}
+\index{setMean@{setMean}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setMean}{setMean}}
+{\footnotesize\ttfamily void GUI\+::set\+Mean (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Liest das Fenster fuer den gleitenden Mittelwertsfilter ein. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00162}{162}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00163\ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a0017dccef65f12bb37d9f225eaa0d319}{meanLength}}\ =\ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a0492e5b817a3f42191b681688e724f93}{meanLength}}-\/>value();}
+\DoxyCodeLine{00165\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_g_u_i_8h_source_l00100}{mean\+Length}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00044}{Ui\+\_\+\+GUIClass\+::mean\+Length}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_af998ca14c7fabdbb2511ec7da6e39cc4}\label{class_g_u_i_af998ca14c7fabdbb2511ec7da6e39cc4} 
+\index{GUI@{GUI}!setOffset@{setOffset}}
+\index{setOffset@{setOffset}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setOffset}{setOffset}}
+{\footnotesize\ttfamily void GUI\+::set\+Offset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Setzt eine gewaehlten Offset. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00099}{99}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00100\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}}.\mbox{\hyperlink{class_c_input_parameter_a7d054f366f9568f02d604708d5529c23}{setOffset}}(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ae98822372a900a2ed4e781399406be92}{offsetX}}-\/>value(),\ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5ad3cc0e2b787990720073ac8d4abd3c}{offsetY}}-\/>value(),\ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a53a0e562cafe68d6bacf034929c17068}{offsetZ}}-\/>value(),}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a6e7fb979d15401ff4ac737dbc426de43}{bOffset}}-\/>isChecked());}
+\DoxyCodeLine{00103\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00049}{Ui\+\_\+\+GUIClass\+::b\+Offset}}, \mbox{\hyperlink{_g_u_i_8h_source_l00101}{input\+Parameter}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00054}{Ui\+\_\+\+GUIClass\+::offsetX}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00055}{Ui\+\_\+\+GUIClass\+::offsetY}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00056}{Ui\+\_\+\+GUIClass\+::offsetZ}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00049}{CInput\+Parameter\+::set\+Offset()}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_a0105cf2fe657404fe696e58d2f91a56e}\label{class_g_u_i_a0105cf2fe657404fe696e58d2f91a56e} 
+\index{GUI@{GUI}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setOrientation}{setOrientation}}
+{\footnotesize\ttfamily void GUI\+::set\+Orientation (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Setzt eine gewaehlte Orientierung. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00123}{123}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124\ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}}.\mbox{\hyperlink{class_c_input_parameter_a04c9fc7d2724593c144586edea4f004e}{setOrientation}}(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_ac77df68a6ef1ecb2312a5df1fc00c028}{AValue}}-\/>value(),\ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_affdeaf6dba943b07c2392b52f133cea2}{BValue}}-\/>value(),\ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aadb70b09dcbf85f0ca4eefbd272643f9}{CValue}}-\/>value(),}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_aa2d884c274e9983e0ff21fdd9b2ed0c6}{bManOrientation}}-\/>isChecked());}
+\DoxyCodeLine{00127\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00040}{Ui\+\_\+\+GUIClass\+::\+AValue}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00043}{Ui\+\_\+\+GUIClass\+::b\+Man\+Orientation}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00041}{Ui\+\_\+\+GUIClass\+::\+BValue}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00042}{Ui\+\_\+\+GUIClass\+::\+CValue}}, \mbox{\hyperlink{_g_u_i_8h_source_l00101}{input\+Parameter}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00041}{CInput\+Parameter\+::set\+Orientation()}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_a1466c48943c14dbb13da3555480861ce}\label{class_g_u_i_a1466c48943c14dbb13da3555480861ce} 
+\index{GUI@{GUI}!setOutputPath@{setOutputPath}}
+\index{setOutputPath@{setOutputPath}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setOutputPath}{setOutputPath}}
+{\footnotesize\ttfamily void GUI\+::set\+Output\+Path (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Liest den Pfad des Output Ordners aus. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00179}{179}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00180\ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}{outputPathUI}}\ =\ QFileDialog::getExistingDirectory(\textcolor{keyword}{this});}
+\DoxyCodeLine{00182\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a5a533d0bcf29f656372faaf159fa431a}{pathOutput}}-\/>setText(\mbox{\hyperlink{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}{outputPathUI}});}
+\DoxyCodeLine{00183\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_g_u_i_8h_source_l00098}{output\+Path\+UI}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00061}{Ui\+\_\+\+GUIClass\+::path\+Output}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+\Hypertarget{class_g_u_i_a781ffdbd0d321c95476bebd69bd412f9}\label{class_g_u_i_a781ffdbd0d321c95476bebd69bd412f9} 
+\index{GUI@{GUI}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setSpeed}{setSpeed}}
+{\footnotesize\ttfamily void GUI\+::set\+Speed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Setzt eine gewaehlte Geschwindigkeit. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8cpp_source_l00143}{143}} der Datei \mbox{\hyperlink{_g_u_i_8cpp_source}{GUI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00144\ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}}.\mbox{\hyperlink{class_c_input_parameter_a7a9327fd632b7a18eac4e3650cf1375f}{setSpeed}}(\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a333a66c0b40fc39a5a54414402328d4d}{speed}}-\/>value(),\ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}}.\mbox{\hyperlink{class_ui___g_u_i_class_a80af1228bf6dbf4e2e593439c2135979}{bSpeed}}-\/>isChecked());}
+\DoxyCodeLine{00146\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00035}{Ui\+\_\+\+GUIClass\+::b\+Speed}}, \mbox{\hyperlink{_g_u_i_8h_source_l00101}{input\+Parameter}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00063}{CInput\+Parameter\+::set\+Speed()}}, \mbox{\hyperlink{_debug_2uic_2ui___g_u_i_8h_source_l00033}{Ui\+\_\+\+GUIClass\+::speed}} und \mbox{\hyperlink{_g_u_i_8h_source_l00090}{ui}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_g_u_i_ad957e2d6319db5aaccd5ab4d40574bb1}\label{class_g_u_i_ad957e2d6319db5aaccd5ab4d40574bb1} 
+\index{GUI@{GUI}!dpTolerance@{dpTolerance}}
+\index{dpTolerance@{dpTolerance}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{dpTolerance}{dpTolerance}}
+{\footnotesize\ttfamily double GUI\+::dp\+Tolerance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8h_source_l00099}{99}} der Datei \mbox{\hyperlink{_g_u_i_8h_source}{GUI.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{calculate()}} und \mbox{\hyperlink{_g_u_i_8cpp_source_l00168}{set\+DP()}}.
+
+\Hypertarget{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}\label{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d} 
+\index{GUI@{GUI}!inputParameter@{inputParameter}}
+\index{inputParameter@{inputParameter}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{inputParameter}{inputParameter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_input_parameter}{CInput\+Parameter}} GUI\+::input\+Parameter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8h_source_l00101}{101}} der Datei \mbox{\hyperlink{_g_u_i_8h_source}{GUI.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00094}{activate\+Logging()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00105}{activate\+Offset()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{calculate()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00099}{set\+Offset()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00123}{set\+Orientation()}} und \mbox{\hyperlink{_g_u_i_8cpp_source_l00143}{set\+Speed()}}.
+
+\Hypertarget{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}\label{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21} 
+\index{GUI@{GUI}!inputPathUI@{inputPathUI}}
+\index{inputPathUI@{inputPathUI}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{inputPathUI}{inputPathUI}}
+{\footnotesize\ttfamily QString GUI\+::input\+Path\+UI\hspace{0.3cm}{\ttfamily [private]}}
+
+Pfad des Eingabefiles 
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8h_source_l00094}{94}} der Datei \mbox{\hyperlink{_g_u_i_8h_source}{GUI.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{calculate()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}} und \mbox{\hyperlink{_g_u_i_8cpp_source_l00173}{set\+Input\+Path()}}.
+
+\Hypertarget{class_g_u_i_a0017dccef65f12bb37d9f225eaa0d319}\label{class_g_u_i_a0017dccef65f12bb37d9f225eaa0d319} 
+\index{GUI@{GUI}!meanLength@{meanLength}}
+\index{meanLength@{meanLength}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{meanLength}{meanLength}}
+{\footnotesize\ttfamily double GUI\+::mean\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8h_source_l00100}{100}} der Datei \mbox{\hyperlink{_g_u_i_8h_source}{GUI.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{calculate()}} und \mbox{\hyperlink{_g_u_i_8cpp_source_l00162}{set\+Mean()}}.
+
+\Hypertarget{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}\label{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0} 
+\index{GUI@{GUI}!outputPathUI@{outputPathUI}}
+\index{outputPathUI@{outputPathUI}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{outputPathUI}{outputPathUI}}
+{\footnotesize\ttfamily QString GUI\+::output\+Path\+UI\hspace{0.3cm}{\ttfamily [private]}}
+
+Pfad fuer Ausgabedateien 
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8h_source_l00098}{98}} der Datei \mbox{\hyperlink{_g_u_i_8h_source}{GUI.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{calculate()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}} und \mbox{\hyperlink{_g_u_i_8cpp_source_l00179}{set\+Output\+Path()}}.
+
+\Hypertarget{class_g_u_i_acccc0df36863844c176a9df36331f3cd}\label{class_g_u_i_acccc0df36863844c176a9df36331f3cd} 
+\index{GUI@{GUI}!ui@{ui}}
+\index{ui@{ui}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ui_1_1_g_u_i_class}{Ui\+::\+GUIClass}} GUI\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+Verbindung mit der im ui file graphisch erstellten Oberflaeche 
+
+Definiert in Zeile \mbox{\hyperlink{_g_u_i_8h_source_l00090}{90}} der Datei \mbox{\hyperlink{_g_u_i_8h_source}{GUI.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00094}{activate\+Logging()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00105}{activate\+Offset()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00129}{activate\+Orientation()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00148}{activate\+Speed()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{calculate()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00168}{set\+DP()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00173}{set\+Input\+Path()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00162}{set\+Mean()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00099}{set\+Offset()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00123}{set\+Orientation()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00179}{set\+Output\+Path()}} und \mbox{\hyperlink{_g_u_i_8cpp_source_l00143}{set\+Speed()}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_g_u_i_8h}{GUI.\+h}}\item 
+source/\mbox{\hyperlink{_g_u_i_8cpp}{GUI.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,399 @@
+\doxysection{CEuler\+Matrix Klassenreferenz}
+\hypertarget{class_c_euler_matrix}{}\label{class_c_euler_matrix}\index{CEulerMatrix@{CEulerMatrix}}
+
+
+Handling und Berechnung Euler Matrix.  
+
+
+
+
+{\ttfamily \#include $<$Euler\+Matrix.\+h$>$}
+
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_euler_matrix_a45d6e6bd0fff4d617cd489128ec3a583}{CEuler\+Matrix}} (void)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_euler_matrix_a3e082cf00d3439c8db450036ae463fd7}{CEuler\+Matrix}} (float input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_euler_matrix_aab38604c693dc9a028e8c92e1239ce58}{\texorpdfstring{$\sim$}{\string~}\+CEuler\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Dekonstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_euler_matrix_aee7e2a7b47908dd7f9771e1dfb98cc41}{set\+Matrix}} (float input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Setzt eine Matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} \mbox{\hyperlink{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}{get\+Euler\+Matrix}} (void)
+\begin{DoxyCompactList}\small\item\em Auslesen eine Matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{get\+Matrix}} (float Matrix\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Auslesen eine Matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} \mbox{\hyperlink{class_c_euler_matrix_aca0eb63d21e774832bfb93cac5ad9466}{angels2mat}} (double A, double B, double C)
+\begin{DoxyCompactList}\small\item\em Berechnet die neue Umdrehungsmatrix. \end{DoxyCompactList}\item 
+tuple$<$ double, double, double $>$ \mbox{\hyperlink{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947}{calculate\+Angels}} (void)
+\begin{DoxyCompactList}\small\item\em Berechnet die Kuka Wunkel A,B,C. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{euler\+Matrix}} \mbox{[}3\mbox{]}\mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+Handling und Berechnung Euler Matrix. 
+
+Diese Klasse speichert die Euler Matrix und hat Funktionen fuer Berechnungen mit eben jener. 
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8h_source_l00019}{19}} der Datei \mbox{\hyperlink{_euler_matrix_8h_source}{Euler\+Matrix.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_c_euler_matrix_a45d6e6bd0fff4d617cd489128ec3a583}\label{class_c_euler_matrix_a45d6e6bd0fff4d617cd489128ec3a583} 
+\index{CEulerMatrix@{CEulerMatrix}!CEulerMatrix@{CEulerMatrix}}
+\index{CEulerMatrix@{CEulerMatrix}!CEulerMatrix@{CEulerMatrix}}
+\doxysubsubsection{\texorpdfstring{CEulerMatrix()}{CEulerMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CEuler\+Matrix\+::\+CEuler\+Matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert die Input Daten mit Null \begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_euler_matrix_a3e082cf00d3439c8db450036ae463fd7}{CEuler\+Matrix(float input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})} 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8cpp_source_l00004}{4}} der Datei \mbox{\hyperlink{_euler_matrix_8cpp_source}{Euler\+Matrix.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 3;\ i++)}
+\DoxyCodeLine{00007\ \ \ \ \ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ m\ =\ 0;\ m\ <\ 3;\ m++)}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[i][m]\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ eulerMatrix\ mit\ 0\ initialisieren}}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00012\ \ \ \ \ \}}
+\DoxyCodeLine{00013\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_euler_matrix_8h_source_l00075}{euler\+Matrix}}.
+
+\Hypertarget{class_c_euler_matrix_a3e082cf00d3439c8db450036ae463fd7}\label{class_c_euler_matrix_a3e082cf00d3439c8db450036ae463fd7} 
+\index{CEulerMatrix@{CEulerMatrix}!CEulerMatrix@{CEulerMatrix}}
+\index{CEulerMatrix@{CEulerMatrix}!CEulerMatrix@{CEulerMatrix}}
+\doxysubsubsection{\texorpdfstring{CEulerMatrix()}{CEulerMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CEuler\+Matrix\+::\+CEuler\+Matrix (\begin{DoxyParamCaption}\item[{float}]{input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert die Input Daten mit Null 
+\begin{DoxyParams}{Parameter}
+{\em float} & input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]} initialisiert die Klasse mit einer Euler Matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_euler_matrix_a45d6e6bd0fff4d617cd489128ec3a583}{CEuler\+Matrix(void)} 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8cpp_source_l00015}{15}} der Datei \mbox{\hyperlink{_euler_matrix_8cpp_source}{Euler\+Matrix.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 3;\ i++)}
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ m\ =\ 0;\ m\ <\ 3;\ m++)}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[i][m]\ =\ inputMatrix[i][m];\ \ \textcolor{comment}{//\ eulerMatrix\ mit\ Startwerten\ initialisieren}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_euler_matrix_8h_source_l00075}{euler\+Matrix}}.
+
+\Hypertarget{class_c_euler_matrix_aab38604c693dc9a028e8c92e1239ce58}\label{class_c_euler_matrix_aab38604c693dc9a028e8c92e1239ce58} 
+\index{CEulerMatrix@{CEulerMatrix}!````~CEulerMatrix@{\texorpdfstring{$\sim$}{\string~}CEulerMatrix}}
+\index{````~CEulerMatrix@{\texorpdfstring{$\sim$}{\string~}CEulerMatrix}!CEulerMatrix@{CEulerMatrix}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CEulerMatrix()}{\string~CEulerMatrix()}}
+{\footnotesize\ttfamily CEuler\+Matrix\+::\texorpdfstring{$\sim$}{\string~}\+CEuler\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dekonstruktor. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8cpp_source_l00026}{26}} der Datei \mbox{\hyperlink{_euler_matrix_8cpp_source}{Euler\+Matrix.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_c_euler_matrix_aca0eb63d21e774832bfb93cac5ad9466}\label{class_c_euler_matrix_aca0eb63d21e774832bfb93cac5ad9466} 
+\index{CEulerMatrix@{CEulerMatrix}!angels2mat@{angels2mat}}
+\index{angels2mat@{angels2mat}!CEulerMatrix@{CEulerMatrix}}
+\doxysubsubsection{\texorpdfstring{angels2mat()}{angels2mat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} CEuler\+Matrix\+::angels2mat (\begin{DoxyParamCaption}\item[{double}]{A,  }\item[{double}]{B,  }\item[{double}]{C }\end{DoxyParamCaption})}
+
+
+
+Berechnet die neue Umdrehungsmatrix. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em A} & double Winkel a \\
+\hline
+{\em B} & double Winkel b \\
+\hline
+{\em C} & double Winkel c \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+\+: float input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]} gibt die neu berechnete Matrix zur{\ucr}ck 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8cpp_source_l00059}{59}} der Datei \mbox{\hyperlink{_euler_matrix_8cpp_source}{Euler\+Matrix.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00060\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{float}\ Matrix[3][3];\ \ \ \ \ \textcolor{comment}{//\ DummyMatrix\ erstellen}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{/*\ Berechnung\ der\ Matrix\ */}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ Matrix[0][0]\ =\ cos(A)\ *\ cos(C)\ -\/\ sin(A)\ *\ cos(B)\ *\ sin(C);}
+\DoxyCodeLine{00066\ \ \ \ \ Matrix[0][1]\ =\ -\/cos(A)\ *\ sin(C)\ -\/\ sin(A)\ *\ cos(B)\ *\ cos(C);}
+\DoxyCodeLine{00067\ \ \ \ \ Matrix[0][2]\ =\ sin(A)\ *\ sin(B);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ Matrix[1][0]\ =\ sin(A)\ *\ cos(C)\ +\ cos(A)\ *\ cos(B)\ *\ sin(C);}
+\DoxyCodeLine{00070\ \ \ \ \ Matrix[1][1]\ =\ -\/sin(A)\ *\ sin(C)\ +\ cos(A)\ *\ cos(B)\ *\ cos(C);}
+\DoxyCodeLine{00071\ \ \ \ \ Matrix[1][2]\ =\ -\/cos(A)\ *\ sin(B);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ Matrix[2][0]\ =\ sin(B)\ *\ sin(C);}
+\DoxyCodeLine{00074\ \ \ \ \ Matrix[2][1]\ =\ sin(B)\ *\ cos(C);}
+\DoxyCodeLine{00075\ \ \ \ \ Matrix[2][2]\ =\ cos(B);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ buffer(Matrix);\ \ \ \ \ \ \ \ \textcolor{comment}{//\ DummyMatrix\ in\ DummyEulerMatrix\ schreiben}}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{return}\ buffer;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Matrix\ zurueck\ geben}}
+\DoxyCodeLine{00079\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947}\label{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947} 
+\index{CEulerMatrix@{CEulerMatrix}!calculateAngels@{calculateAngels}}
+\index{calculateAngels@{calculateAngels}!CEulerMatrix@{CEulerMatrix}}
+\doxysubsubsection{\texorpdfstring{calculateAngels()}{calculateAngels()}}
+{\footnotesize\ttfamily tuple$<$ double, double, double $>$ CEuler\+Matrix\+::calculate\+Angels (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Berechnet die Kuka Wunkel A,B,C. 
+
+\begin{DoxyReturn}{Rückgabe}
+\+: tuple$<$double , double , double$>$ gibt die berechneten Winkel A, B, C zurueck 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8cpp_source_l00082}{82}} der Datei \mbox{\hyperlink{_euler_matrix_8cpp_source}{Euler\+Matrix.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{double}\ a,\ b,\ c,\ sin\_a,\ cos\_a,\ sin\_b,\ abs\_cos\_b,\ sin\_c,\ cos\_c;}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00087\ \textcolor{comment}{\ \ \ \ a\ ==\ Winkel\ Alpha }}
+\DoxyCodeLine{00088\ \textcolor{comment}{\ \ \ \ b\ ==\ Winkel\ Beta }}
+\DoxyCodeLine{00089\ \textcolor{comment}{\ \ \ \ c\ ==\ Winkel\ Gamma }}
+\DoxyCodeLine{00090\ \textcolor{comment}{}}
+\DoxyCodeLine{00091\ \textcolor{comment}{\ \ \ \ sin\_a\ ==\ sinus\ alpha }}
+\DoxyCodeLine{00092\ \textcolor{comment}{\ \ \ \ cos\_a\ ==\ cosinus\ alpha }}
+\DoxyCodeLine{00093\ \textcolor{comment}{\ \ \ \ sin\_b\ ==\ Matrix[2][0]\ *\ -\/1 }}
+\DoxyCodeLine{00094\ \textcolor{comment}{\ \ \ \ abs\_cos\_b\ ==\ ?? }}
+\DoxyCodeLine{00095\ \textcolor{comment}{\ \ \ \ sin\_c\ ==\ sinus\ gamma }}
+\DoxyCodeLine{00096\ \textcolor{comment}{\ \ \ \ cos\_c\ ==\ cosinus\ gamma }}
+\DoxyCodeLine{00097\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{comment}{/*\ Berechnung\ von\ alpha*/}}
+\DoxyCodeLine{00101\ \ \ \ \ a\ =\ atan2(\mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][0],\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][0]);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{comment}{/*\ Berechung\ von\ beta\ */}}
+\DoxyCodeLine{00104\ \ \ \ \ sin\_a\ =\ sin(a);}
+\DoxyCodeLine{00105\ \ \ \ \ cos\_a\ =\ cos(a);}
+\DoxyCodeLine{00106\ \ \ \ \ sin\_b\ =\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[2][0]\ *\ -\/1;}
+\DoxyCodeLine{00107\ \ \ \ \ abs\_cos\_b\ =\ cos(a)\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][0]\ +\ sin(a)\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][0];}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ b\ =\ atan2\ (sin\_b,\ abs\_cos\_b);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{/*\ Berechung\ von\ gamma\ */}}
+\DoxyCodeLine{00112\ \ \ \ \ sin\_c\ =\ \ sin\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][2]\ -\/\ cos\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][2];}
+\DoxyCodeLine{00113\ \ \ \ \ cos\_c\ =\ -\/sin\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[0][1]\ +\ cos\_a\ *\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[1][1];}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ c\ =\ atan2(sin\_c,\ cos\_c);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{comment}{/*\ Bogenmass\ in\ Gradmass\ umrechnen\ */}}
+\DoxyCodeLine{00118\ \ \ \ \ a\ =\ a\ *\ 180\ /\ M\_PI;}
+\DoxyCodeLine{00119\ \ \ \ \ b\ =\ b\ *\ 180\ /\ M\_PI;}
+\DoxyCodeLine{00120\ \ \ \ \ c\ =\ c\ *\ 180\ /\ M\_PI;}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordflow}{return}\ make\_tuple(a,\ b,\ c);\ \ \ \ \ \textcolor{comment}{//\ Rueckgabe\ der\ Winkel}}
+\DoxyCodeLine{00124\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_euler_matrix_8h_source_l00075}{euler\+Matrix}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00131}{CRob\+Code\+Generator\+::calculate\+Angles()}}.
+
+\Hypertarget{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}\label{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef} 
+\index{CEulerMatrix@{CEulerMatrix}!getEulerMatrix@{getEulerMatrix}}
+\index{getEulerMatrix@{getEulerMatrix}!CEulerMatrix@{CEulerMatrix}}
+\doxysubsubsection{\texorpdfstring{getEulerMatrix()}{getEulerMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} CEuler\+Matrix\+::get\+Euler\+Matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Auslesen eine Matrix. 
+
+\begin{DoxyReturn}{Rückgabe}
+\+: float input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]} gibt gespeicherte Matrix zurueck 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8cpp_source_l00042}{42}} der Datei \mbox{\hyperlink{_euler_matrix_8cpp_source}{Euler\+Matrix.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ EulerMatrix\ zurueck\ geben}}
+\DoxyCodeLine{00045\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_euler_matrix_8h_source_l00075}{euler\+Matrix}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_logging_8cpp_source_l00037}{CLogging\+::log\+Data()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00111}{CInput\+Parameter\+::open\+File()}}.
+
+\Hypertarget{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}\label{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d} 
+\index{CEulerMatrix@{CEulerMatrix}!getMatrix@{getMatrix}}
+\index{getMatrix@{getMatrix}!CEulerMatrix@{CEulerMatrix}}
+\doxysubsubsection{\texorpdfstring{getMatrix()}{getMatrix()}}
+{\footnotesize\ttfamily void CEuler\+Matrix\+::get\+Matrix (\begin{DoxyParamCaption}\item[{float}]{Matrix\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Auslesen eine Matrix. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em float\texorpdfstring{$\ast$}{*}} & input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]} Pointer zu einer Matrix \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8cpp_source_l00047}{47}} der Datei \mbox{\hyperlink{_euler_matrix_8cpp_source}{Euler\+Matrix.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00048\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 3;\ i++)}
+\DoxyCodeLine{00050\ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ m\ =\ 0;\ m\ <\ 3;\ m++)}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ Matrix[i][m]\ =\ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[i][m];\ \ \textcolor{comment}{//\ eulerMatrix\ mit\ Uebergabewerten\ ueberschreiben}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_euler_matrix_8h_source_l00075}{euler\+Matrix}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_logging_8cpp_source_l00073}{CLogging\+::log\+Data()}}, \mbox{\hyperlink{_logging_8cpp_source_l00102}{CLogging\+::log\+Data()}} und \mbox{\hyperlink{_logging_8cpp_source_l00037}{CLogging\+::log\+Data()}}.
+
+\Hypertarget{class_c_euler_matrix_aee7e2a7b47908dd7f9771e1dfb98cc41}\label{class_c_euler_matrix_aee7e2a7b47908dd7f9771e1dfb98cc41} 
+\index{CEulerMatrix@{CEulerMatrix}!setMatrix@{setMatrix}}
+\index{setMatrix@{setMatrix}!CEulerMatrix@{CEulerMatrix}}
+\doxysubsubsection{\texorpdfstring{setMatrix()}{setMatrix()}}
+{\footnotesize\ttfamily void CEuler\+Matrix\+::set\+Matrix (\begin{DoxyParamCaption}\item[{float}]{input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Setzt eine Matrix. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em float} & input\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]} zum setzten einer Matrix \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8cpp_source_l00031}{31}} der Datei \mbox{\hyperlink{_euler_matrix_8cpp_source}{Euler\+Matrix.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 3;\ i++)}
+\DoxyCodeLine{00034\ \ \ \ \ \{\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ m\ =\ 0;\ m\ <\ 3;\ m++)}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}{eulerMatrix}}[i][m]\ =\ inputMatrix[i][m];\ \ \textcolor{comment}{//\ eulerMatrix\ mit\ Uebergabewerten\ ueberschreiben}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+\DoxyCodeLine{00040\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_euler_matrix_8h_source_l00075}{euler\+Matrix}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00111}{CInput\+Parameter\+::open\+File()}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b}\label{class_c_euler_matrix_a093d480a272b819d31cc599877d8118b} 
+\index{CEulerMatrix@{CEulerMatrix}!eulerMatrix@{eulerMatrix}}
+\index{eulerMatrix@{eulerMatrix}!CEulerMatrix@{CEulerMatrix}}
+\doxysubsubsection{\texorpdfstring{eulerMatrix}{eulerMatrix}}
+{\footnotesize\ttfamily float CEuler\+Matrix\+::euler\+Matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+Gespeicherte Euler Matrix 
+
+Definiert in Zeile \mbox{\hyperlink{_euler_matrix_8h_source_l00075}{75}} der Datei \mbox{\hyperlink{_euler_matrix_8h_source}{Euler\+Matrix.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_euler_matrix_8cpp_source_l00082}{calculate\+Angels()}}, \mbox{\hyperlink{_euler_matrix_8cpp_source_l00015}{CEuler\+Matrix()}}, \mbox{\hyperlink{_euler_matrix_8cpp_source_l00004}{CEuler\+Matrix()}}, \mbox{\hyperlink{_euler_matrix_8cpp_source_l00042}{get\+Euler\+Matrix()}}, \mbox{\hyperlink{_euler_matrix_8cpp_source_l00047}{get\+Matrix()}} und \mbox{\hyperlink{_euler_matrix_8cpp_source_l00031}{set\+Matrix()}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_euler_matrix_8h}{Euler\+Matrix.\+h}}\item 
+source/\mbox{\hyperlink{_euler_matrix_8cpp}{Euler\+Matrix.\+cpp}}\end{DoxyCompactItemize}

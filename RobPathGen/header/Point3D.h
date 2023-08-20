@@ -14,7 +14,7 @@ using namespace std;
 
 /**
  * Das ist die Grundklasse eines Punktes, hier lassen sich die Basiswerte 
- * setzten und Abstände zwishen Punkten berechnen.
+ * setzten und Abstaende zwishen Punkten berechnen.
  * @brief Grundklasse Punkt
  */
 class CPoint3D
@@ -41,17 +41,17 @@ public:
 	~CPoint3D(void);
 
 	/**
-	* @brief Gibt X zurück
+	* @brief Gibt X zurueck
 	* @return double
 	*/
 	double getX();
 	/**
-	* @brief Gibt Y zurück
+	* @brief Gibt Y zurueck
 	* @return double
 	*/
 	double getY();
 	/**
-	* @brief Gibt Z zurück
+	* @brief Gibt Z zurueck
 	* @return double
 	*/
 	double getZ();
@@ -129,12 +129,12 @@ public:
 	~CInputPoint3D(void);
 
 	/**
-	* @brief Gibt den Zeitstempel zurück
+	* @brief Gibt den Zeitstempel zurueck
 	* @return double Zeitstempel
 	*/
 	double getTime();
 	/**
-	* @brief Gibt die gespeicherte Eulermatrix zurück
+	* @brief Gibt die gespeicherte Eulermatrix zurueck
 	* @return CEulerMatrix
 	*/
 	CEulerMatrix getEulerMatrix();
@@ -202,22 +202,22 @@ public:
 	~COutputPoint3D(void);
 
 	/**
-	* @brief Gibt die Geschwindigkeit zurück
+	* @brief Gibt die Geschwindigkeit zurueck
 	* @return: double Geschwindigkeit
 	*/
 	double getSpeed();
 	/**
-	* @brief Gibt A zurück
+	* @brief Gibt A zurueck
 	* @return: double A
 	*/
 	double getA();
 	/**
-	* @brief Gibt B zurück
+	* @brief Gibt B zurueck
 	* @return: double B
 	*/
 	double getB();
 	/**
-	* @brief Gibt C zurück
+	* @brief Gibt C zurueck
 	* @return: double C
 	*/
 	double getC();
@@ -248,7 +248,7 @@ private:
 	*/
 	double a, b, c;
 	/**
-	* Geschwindigkeit zum Punkt hin? TODO: überprüfen
+	* Geschwindigkeit zum Punkt hin? TODO: ueberpruefen
 	*/
 	double speed;
 };

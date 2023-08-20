@@ -1,0 +1,48 @@
+\doxysection{GUI.\+h}
+\hypertarget{_g_u_i_8h_source}{}\label{_g_u_i_8h_source}\index{header/GUI.h@{header/GUI.h}}
+\mbox{\hyperlink{_g_u_i_8h}{gehe zur Dokumentation dieser Datei}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00007}00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <QtWidgets/QMainWindow>}}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <QtWidgets/qfiledialog.h>}}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <QtWidgets/qmessagebox.h>}}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_parameter_8h}{InputParameter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}ui\_GUI.h"{}}}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00021}\mbox{\hyperlink{class_g_u_i}{00021}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_g_u_i}{GUI}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00023}00023\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00025}00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00030}00030\ \ \ \ \ \mbox{\hyperlink{class_g_u_i}{GUI}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00034}00034\ \ \ \ \ \mbox{\hyperlink{class_g_u_i_ac9cae2328dcb5d83bdfaeca49a2eb695}{\string~GUI}}();}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00036}00036\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00040}00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_afe6fca06b902d6ef20351aa36ba06bb9}{calculate}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00044}00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_a5902f5772468d93e9d96649c69423288}{setInputPath}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_a1466c48943c14dbb13da3555480861ce}{setOutputPath}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00052}00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_a800968621d1ce7efd41eccac199e7480}{setDP}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00056}00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_a9f4684782703fc556441c6bcd6f8a149}{setMean}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00060}00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_ab9d09b8ad6a5a35210b4bf178fe06256}{activateSpeed}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00064}00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_a781ffdbd0d321c95476bebd69bd412f9}{setSpeed}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00068}00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_a35459ae8a9ec0f4af838dacca8b92bc6}{activateOrientation}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00072}00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_a0105cf2fe657404fe696e58d2f91a56e}{setOrientation}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00076}00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_a043999342c5aef3cdeafffee341cf963}{activateOffset}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00080}00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_af998ca14c7fabdbb2511ec7da6e39cc4}{setOffset}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00084}00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_g_u_i_a4d1ede582a9f9a2f17b587cc3b99c2d8}{activateLogging}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00086}00086\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00090}\mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{00090}}\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_g_u_i_class}{Ui::GUIClass}}\ \mbox{\hyperlink{class_g_u_i_acccc0df36863844c176a9df36331f3cd}{ui}};}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00094}\mbox{\hyperlink{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}{00094}}\ \ \ \ \ QString\ \mbox{\hyperlink{class_g_u_i_acffb559c582eeefeddad052bc5bf1e21}{inputPathUI}};}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00098}\mbox{\hyperlink{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}{00098}}\ \ \ \ \ QString\ \mbox{\hyperlink{class_g_u_i_a8301ebb6c4976c96ef6fafa81244a7f0}{outputPathUI}};}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00099}\mbox{\hyperlink{class_g_u_i_ad957e2d6319db5aaccd5ab4d40574bb1}{00099}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_g_u_i_ad957e2d6319db5aaccd5ab4d40574bb1}{dpTolerance}};}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00100}\mbox{\hyperlink{class_g_u_i_a0017dccef65f12bb37d9f225eaa0d319}{00100}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_g_u_i_a0017dccef65f12bb37d9f225eaa0d319}{meanLength}};}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00101}\mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{00101}}\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter}{CInputParameter}}\ \mbox{\hyperlink{class_g_u_i_a8d7671325d1cab7529dab858ff391d5d}{inputParameter}};}
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{_g_u_i_8h_source_l00103}00103\ \};}
+
+\end{DoxyCode}

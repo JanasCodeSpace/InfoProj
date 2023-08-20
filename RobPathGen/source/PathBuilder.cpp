@@ -40,7 +40,7 @@ void CPathBuilder::createPath(vector<list<CInputPoint3D>>& segments, CLogging lo
 	}
 	if (log.getDetailed())
 	{
-		log.setStep(4);
+		log.setStep(3);
 		log.logData(path);
 	}
 }

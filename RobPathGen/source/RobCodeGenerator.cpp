@@ -21,16 +21,22 @@ CRobCodeGenerator::~CRobCodeGenerator(void)
 {
 }
 
-void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filepath, string filename, CLogging log)
+void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filepath, string inputPath, CLogging log)
 {
+	string filename;
+	
 	postProcessing(points); // Calculates all the necessary values
 
-	log.setStep(5);
+	log.setStep(4);
 	log.logData(processedPath);
 
 	errno_t err;
 	
 	FILE* fid;
+
+	filename = inputPath.substr(inputPath.find_last_of("/\\") + 1);
+	filename.erase(filename.end() - 4, filename.end());
+	filename = filename + ".src";
 
 	string fullPath = filepath + "/" + filename;
 
@@ -43,7 +49,7 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 		throw exception(msg.c_str());
 	}
 
-	filename.erase(filename.end()-4,filename.end());		// löscht .src
+	filename.erase(filename.end()-4,filename.end());		// loescht .src
 	fprintf(fid, "DEF %s \n", filename.c_str());			// DEF in file schreiben
 
 	fputs("PTP $POS_ACT\n", fid);							// PTP zur aktuellen Position in file schreiben
@@ -72,7 +78,7 @@ void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)
 	COutputPoint3D p;
 	double timePrev = 1;
 
-	for (size_t s = 0; s < path.size(); s++) // Für jeden Punkt in dem Vector
+	for (size_t s = 0; s < path.size(); s++) // Fuer jeden Punkt in dem Vector
 	{
 		p.set(path[s].getX(), path[s].getY(), path[s].getZ());
 		if (input.getSpeedManual())

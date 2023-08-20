@@ -236,7 +236,7 @@ border: 1px solid rgb(67, 72, 91); </string>
        <string notr="true">border: 0px</string>
       </property>
       <property name="text">
-       <string>Phi</string>
+       <string>A</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_11">
@@ -260,7 +260,7 @@ border: 1px solid rgb(67, 72, 91); </string>
 border: 0px</string>
       </property>
       <property name="text">
-       <string>Theta</string>
+       <string>B</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_12">
@@ -283,7 +283,7 @@ border: 0px</string>
        <string notr="true">border: 0px</string>
       </property>
       <property name="text">
-       <string>Psi</string>
+       <string>C</string>
       </property>
      </widget>
      <widget class="QDoubleSpinBox" name="AValue">
@@ -422,7 +422,7 @@ border: 0px</string>
 border: 0px</string>
      </property>
      <property name="text">
-      <string>Filterlänge gleitender Mittelwert</string>
+      <string>Filterlaenge gleitender Mittelwert</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="dpToleranz">
@@ -660,7 +660,7 @@ background-color: rgb(117, 125, 149);
 color: rgb(3, 8, 14);</string>
     </property>
     <property name="text">
-     <string>Datei wählen</string>
+     <string>Datei waehlen</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushOutput">
@@ -686,7 +686,7 @@ background-color: rgb(117, 125, 149);
 color: rgb(3, 8, 14);</string>
     </property>
     <property name="text">
-     <string>Pfad wählen</string>
+     <string>Pfad waehlen</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">

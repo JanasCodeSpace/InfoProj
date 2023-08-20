@@ -333,12 +333,12 @@ public:
         speed->setSuffix(QCoreApplication::translate("GUIClass", " m/s", nullptr));
         label_5->setText(QCoreApplication::translate("GUIClass", "Geschwindigkeit", nullptr));
         bSpeed->setText(QCoreApplication::translate("GUIClass", "Manuelle Geschwindigkeit", nullptr));
-        label_10->setText(QCoreApplication::translate("GUIClass", "Phi", nullptr));
-        label_11->setText(QCoreApplication::translate("GUIClass", "Theta", nullptr));
-        label_12->setText(QCoreApplication::translate("GUIClass", "Psi", nullptr));
+        label_10->setText(QCoreApplication::translate("GUIClass", "A", nullptr));
+        label_11->setText(QCoreApplication::translate("GUIClass", "B", nullptr));
+        label_12->setText(QCoreApplication::translate("GUIClass", "C", nullptr));
         bManOrientation->setText(QCoreApplication::translate("GUIClass", "Manuelle Ausrichtung", nullptr));
         label_dp->setText(QCoreApplication::translate("GUIClass", "Douglas-Peuker-Toleranz", nullptr));
-        label_4->setText(QCoreApplication::translate("GUIClass", "Filterl\303\244nge gleitender Mittelwert", nullptr));
+        label_4->setText(QCoreApplication::translate("GUIClass", "Filterlaenge gleitender Mittelwert", nullptr));
         dpToleranz->setSpecialValueText(QString());
         dpToleranz->setSuffix(QString());
         bLogging->setText(QCoreApplication::translate("GUIClass", "Detailliertes Logging", nullptr));
@@ -346,8 +346,8 @@ public:
         label_13->setText(QCoreApplication::translate("GUIClass", "X", nullptr));
         label_14->setText(QCoreApplication::translate("GUIClass", "Y", nullptr));
         label_15->setText(QCoreApplication::translate("GUIClass", "Z", nullptr));
-        pushInput->setText(QCoreApplication::translate("GUIClass", "Datei w\303\244hlen", nullptr));
-        pushOutput->setText(QCoreApplication::translate("GUIClass", "Pfad w\303\244hlen", nullptr));
+        pushInput->setText(QCoreApplication::translate("GUIClass", "Datei waehlen", nullptr));
+        pushOutput->setText(QCoreApplication::translate("GUIClass", "Pfad waehlen", nullptr));
         startCalculation->setText(QCoreApplication::translate("GUIClass", "Datei erstellen", nullptr));
         pathOutput->setText(QCoreApplication::translate("GUIClass", "Ausgabeordner", nullptr));
     } // retranslateUi

@@ -8,7 +8,7 @@
 #include "../header/Point3D.h"
 #include "../header/EulerMatrix.h"
 
-/* CInputParamameter mir Übergabewerten initialisieren */ 
+/* CInputParamameter mir Uebergabewerten initialisieren */ 
 CInputParameter::CInputParameter(double initSpeed, bool initSpeedManual, bool initOrientationManual, double initA, double initB, double initC)
 {
 	speed = initSpeed;
@@ -37,7 +37,7 @@ CInputParameter::~CInputParameter(void)
 
 }
 
-/* Einstellung für Orientierung und Winkel setzten */
+/* Einstellung fuer Orientierung und Winkel setzten */
 void CInputParameter::setOrientation(bool initOrientationManual, double initA, double initB, double initC)
 {
 	orientationManual = initOrientationManual;
@@ -59,7 +59,7 @@ void CInputParameter::setLogging(bool initLoggingManual)
 	loggingManual = initLoggingManual;
 }
 
-/* Einstellung für Geschwindigkeit und Geschwindigkeit setzen */
+/* Einstellung fuer Geschwindigkeit und Geschwindigkeit setzen */
 void CInputParameter::setSpeed(double initSpeed, bool initSpeedManual)
 {
 	speed = initSpeed;
@@ -68,61 +68,61 @@ void CInputParameter::setSpeed(double initSpeed, bool initSpeedManual)
 
 vector<list<CInputPoint3D>>& CInputParameter::getPath()
 {
-	return initialPath;		// Path zurück geben
+	return initialPath;		// Path zurueck geben
 }
 
 double CInputParameter::getSpeed(void)
 {
-	return speed;			// Geschwindigkeit zurück geben
+	return speed;			// Geschwindigkeit zurueck geben
 }
 
 bool CInputParameter::getSpeedManual(void)
 {
-	return speedManual;				// Vorgewählte Einstellung für Geschwindigkeit zurück geben
+	return speedManual;				// Vorgewaehlte Einstellung fuer Geschwindigkeit zurueck geben
 }
 
 bool CInputParameter::getOrientationManual(void)
 {
-	return orientationManual;		// Vorgewählte Einstellung für Orientierung zurück geben
+	return orientationManual;		// Vorgewaehlte Einstellung fuer Orientierung zurueck geben
 }
 
 bool CInputParameter::getOffsetManual(void)
 {
-	return offsetManual;		// Vorgewählte Einstellung für den Offset zurück
+	return offsetManual;		// Vorgewaehlte Einstellung fuer den Offset zurueck
 }
 
 bool CInputParameter::getLoggingManual(void)
 {
-	return loggingManual;		// Vorgewählte Einstellung für das Logging zurück
+	return loggingManual;		// Vorgewaehlte Einstellung fuer das Logging zurueck
 }
 
 tuple <double, double, double> CInputParameter::getAngles(void)
 {
-	return make_tuple(A, B, C);		// Winkel zurück geben
+	return make_tuple(A, B, C);		// Winkel zurueck geben
 }
 
 tuple <double, double, double> CInputParameter::getOffset(void)
 {
-	return make_tuple(offsetX, offsetY, offsetZ);		// Offset zurück geben
+	return make_tuple(offsetX, offsetY, offsetZ);		// Offset zurueck geben
 }
 
 
-/* Eingabedatei öffnen */ 
+/* Eingabedatei oeffnen */ 
 void CInputParameter::openFile(string path)
 {
 	ifstream fin(path);
 	CInputPoint3D tmpPoint;		// Zwischenspeicher zum konvertieren von tmpEuler in Point3D
 	CEulerMatrix tmpEuler;		// Zwischenspeicher zum konverteiren von DummyMatrix in EulerMatrix
 	double x, y, z;				// Punktkoordinaten
-	double x_prev = 0, y_prev = 0, z_prev = 0;		// Zwischenspeicher für Punktkoordinaten
+	double x_prev = 0, y_prev = 0, z_prev = 0;		// Zwischenspeicher fuer Punktkoordinaten
 	double timestamp;			// Zeitstempel
-	int segmentCount = -1;		// Segmentzähler
+	int segmentCount = -1;		// Segmentzaehler
 	float dummyMatrix[3][3];	// DummyMatrix zum speichern
 
 
 	if (!fin.is_open())
 	{
-		cerr << "Datei konnte nicht geöffnet werden" << endl;		// Fehler Datei konnte nicht geöffnet werden.
+		cerr << "Datei konnte nicht geoeffnet werden" << endl;		// Fehler Datei konnte nicht geoeffnet werden.
 	}
 	string line;
 
@@ -147,16 +147,16 @@ void CInputParameter::openFile(string path)
 		y_prev = y;		// Y-Wert zwischenspeichern
 		z_prev = z;		// Z-Wert zwischenspeichern
 	}
-	fin.close();		// Datei schließen
+	fin.close();		// Datei schliessen
 }
 
 bool CInputParameter::detectJump(CInputPoint3D p, double x_prev, double  y_prev, double z_prev)
 {
-	if(abs(p.getX() - x_prev) > difference)				// Abstand zwischen Punkten größer max Differenz??
+	if(abs(p.getX() - x_prev) > difference)				// Abstand zwischen Punkten groesser max Differenz??
 		return true;
-	else if(abs(p.getY() - y_prev) > difference)		// Abstand zwischen Punkten größer max Differenz??
+	else if(abs(p.getY() - y_prev) > difference)		// Abstand zwischen Punkten groesser max Differenz??
 		return true;
-	else if(abs(p.getZ() - z_prev) > difference)			// Abstand zwischen Punkten größer max Differenz??
+	else if(abs(p.getZ() - z_prev) > difference)			// Abstand zwischen Punkten groesser max Differenz??
 		return true;
 	else
 		return false;

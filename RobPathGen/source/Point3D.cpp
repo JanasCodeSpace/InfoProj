@@ -31,17 +31,17 @@ CPoint3D::~CPoint3D(void)
 
 double CPoint3D::getX(void)
 {
-	return x;	// X-Koordinate zurück geben
+	return x;	// X-Koordinate zurueck geben
 }
 
 double CPoint3D::getY(void)
 {
-	return y;	// Y-Koordinate zurück geben
+	return y;	// Y-Koordinate zurueck geben
 }
 
 double CPoint3D::getZ(void)
 {
-	return z;	// Z-Koordinate zurück geben
+	return z;	// Z-Koordinate zurueck geben
 }
 
 void CPoint3D::setX(double X)
@@ -67,7 +67,7 @@ void CPoint3D::set(double X, double Y, double Z)
 	z = Z;	// Z-Koordinate setzen
 }	
 
-/* Distanz zwischen Punkt und übergebenen Punkt berechnen */
+/* Distanz zwischen Punkt und uebergebenen Punkt berechnen */
 double CPoint3D::distanceTo(CPoint3D point)
 {
 	return sqrt(pow((double)(x - (double)point.getX()), 2) + pow((double)(y - (double)point.getY()), 2) + pow((double)(z - (double)point.getZ()), 2));	//  Pythagoras 3D
@@ -146,12 +146,12 @@ void CInputPoint3D::setTime(double time)
 
 CEulerMatrix CInputPoint3D::getEulerMatrix()
 {
-	return orientationMatrix;	// Rückgabe der EulerMatrix
+	return orientationMatrix;	// Rueckgabe der EulerMatrix
 }
 
 double CInputPoint3D::getTime()
 {
-	return timestamp;		// Rückgabe des Zeitstempel
+	return timestamp;		// Rueckgabe des Zeitstempel
 }
 
 // OutputPoint3D
@@ -183,22 +183,22 @@ COutputPoint3D::~COutputPoint3D(void)
 
 double COutputPoint3D::getA(void)
 {
-	return a;	// Rückgabe Winkel alpha
+	return a;	// Rueckgabe Winkel alpha
 }
 
 double COutputPoint3D::getB(void)
 {
-	return b;	// Rückgabe Winkel beta
+	return b;	// Rueckgabe Winkel beta
 }
 
 double COutputPoint3D::getC(void)
 {
-	return c;	// Rückgabe Winkel gamma
+	return c;	// Rueckgabe Winkel gamma
 }
 
 double COutputPoint3D::getSpeed(void)
 {
-	return speed;	// Rückgabe Geschwindigkeit
+	return speed;	// Rueckgabe Geschwindigkeit
 }
 
 void COutputPoint3D::setA(double A)

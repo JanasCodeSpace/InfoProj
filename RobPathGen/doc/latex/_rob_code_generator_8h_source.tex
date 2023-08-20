@@ -1,0 +1,38 @@
+\doxysection{Rob\+Code\+Generator.\+h}
+\hypertarget{_rob_code_generator_8h_source}{}\label{_rob_code_generator_8h_source}\index{header/RobCodeGenerator.h@{header/RobCodeGenerator.h}}
+\mbox{\hyperlink{_rob_code_generator_8h}{gehe zur Dokumentation dieser Datei}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_point3_d_8h}{Point3D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_logging_8h}{Logging.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_parameter_8h}{InputParameter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00014}00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00016}00016\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00018}\mbox{\hyperlink{_rob_code_generator_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{00018}}\ \textcolor{preprocessor}{\#define\ MAX\_SPEED\ 2.0}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00025}\mbox{\hyperlink{class_c_rob_code_generator}{00025}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_rob_code_generator}{CRobCodeGenerator}}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00027}00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00033}00033\ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_aca0cd42605627710ccd271b877f8835e}{CRobCodeGenerator}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_aca0cd42605627710ccd271b877f8835e}{CRobCodeGenerator}}(\mbox{\hyperlink{class_c_input_parameter}{CInputParameter}}\ inputParam);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_a56ba70ada888827409eff9288282b48b}{\string~CRobCodeGenerator}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00057}00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_rob_code_generator_ab5d4efbaf76bcaaff34a79259dd699bf}{generateRobCode}}(vector<CInputPoint3D>\&\ path,\ \textcolor{keywordtype}{string}\ filepath,\ \textcolor{keywordtype}{string}\ filename,\ \mbox{\hyperlink{class_c_logging}{CLogging}}\ log);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00064}00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_rob_code_generator_ae075389c789bb131a6b8209a7b7d0690}{postProcessing}}(vector<CInputPoint3D>\&\ path);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00072}00072\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_rob_code_generator_a7d1b9da357bc85b5d6942adb41eed931}{calculateSpeed}}(\mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\&\ p,\ \textcolor{keywordtype}{size\_t}\ i,\ \textcolor{keywordtype}{double}\ timePrev);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00078}00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_rob_code_generator_a322a66503f10674f4479388ed0bc2328}{calculateAngles}}(\mbox{\hyperlink{class_c_output_point3_d}{COutputPoint3D}}\&\ p,\ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\&\ pIn);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00080}00080\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00084}\mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{00084}}\ \ \ \ \ vector<COutputPoint3D>\ \mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}};}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00088}\mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{00088}}\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter}{CInputParameter}}\ \mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}};}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00090}00090\ \};}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8h_source_l00091}00091\ }
+
+\end{DoxyCode}

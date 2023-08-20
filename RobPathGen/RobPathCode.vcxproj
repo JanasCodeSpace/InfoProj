@@ -106,7 +106,6 @@
     <ClCompile Include="source\RobCodeGenerator.cpp" />
     <ClCompile Include="source\RobPathEditor.cpp" />
     <ClCompile Include="source\SegmentApproximator.cpp" />
-    <ClCompile Include="switch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\EulerMatrix.h" />
@@ -118,8 +117,9 @@
     <ClInclude Include="header\Point3D.h" />
     <ClInclude Include="header\RobCodeGenerator.h" />
     <ClInclude Include="header\SegmentApproximator.h" />
-    <ClInclude Include="style.h" />
-    <QtMoc Include="switch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

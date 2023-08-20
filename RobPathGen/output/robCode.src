@@ -1,6 +1,0 @@
-DEF robCode 
-PTP $POS_ACT
-$VEL.CP = 0.100000
-LIN {X -nan(ind), Y -nan(ind), Z -nan(ind), A 0.000000, B 75.000000, C 0.000000}
-LIN {X -nan(ind), Y -nan(ind), Z -nan(ind), A 0.000000, B 75.000000, C 0.000000}
-END

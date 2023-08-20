@@ -1,3 +1,9 @@
+/**
+ * @file GUI.cpp
+ *
+ * @brief Source File User Interface
+ */
+
 #include "../header/GUI.h"
 
 #include "../header/SegmentApproximator.h"
@@ -27,7 +33,7 @@ GUI::GUI(QWidget *parent)
 	ui.dpToleranz->setValue(40);
 	connect(ui.dpToleranz, &QSpinBox::valueChanged, this, &GUI::setDP);
 
-	//Fenster für gleitenden Mittelwert
+	//Fenster fuer gleitenden Mittelwert
 	ui.meanLength->setRange(3, 500);
 	ui.meanLength->setSingleStep(1);
 	ui.meanLength->setValue(50);
@@ -182,7 +188,7 @@ void GUI::calculate()
 	if (inputPathUI.isEmpty() || outputPathUI.isEmpty())
 	{
 		QMessageBox messageBox;
-		messageBox.critical(0, "Error", "Keine Datei ausgewählt!");
+		messageBox.critical(0, "Error", "Keine Datei ausgewaehlt!");
 		messageBox.setFixedSize(500, 200);
 		return;
 	}
@@ -223,7 +229,7 @@ void GUI::calculate()
 		// Calculates Speed, Angle and generates the Output Data
 
 		CRobCodeGenerator codeGenerator(inputParameter);
-		codeGenerator.generateRobCode(pathBuilder.getPath(), outputPath, "robCode.src");
+		codeGenerator.generateRobCode(pathBuilder.getPath(), outputPath, inputPath, logging);
 		ui.textBrowser->insertPlainText("Datei erstellt\n");;
 	}
 

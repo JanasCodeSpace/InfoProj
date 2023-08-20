@@ -16,8 +16,8 @@ using namespace std;
 #pragma once
 
 /**
- * In dieser Klasse wird der Pfad mit hilfe des Douglas-Peuker Algorithmusses ausgedünnt
- * @brief Ausdünnen des Pfades
+ * In dieser Klasse wird der Pfad mit hilfe des Douglas-Peuker Algorithmusses ausgeduennt
+ * @brief Ausduennen des Pfades
  */
 class CSegmentApproximator
 {
@@ -36,7 +36,7 @@ public:
 	* Iteriert durch die Listen im Vektor und ruft die Douglas-Peuker-Funktion auf
 	* @brief Ruft die Douglas-Peuker Funktion auf
 	* @param Segments const vector<list<CInputPoint3D>>&
-	* @param CLogging log für das Logging
+	* @param CLogging log fuer das Logging
 	*/
 	void approx(const vector<list<CInputPoint3D>>& Segments, CLogging log);
 	/**
@@ -45,13 +45,13 @@ public:
 	*/
 	void setmaxDistance(double maxDistanceSource);
 	/**
-	* @brief Gibt die maximale Abweichung zurück
+	* @brief Gibt die maximale Abweichung zurueck
 	* @return maxDistanceSource double
 	*/
 	double getmaxDistance();
 
 	/**
-	* @brief Gibt den bereinigten Pfad zurück
+	* @brief Gibt den bereinigten Pfad zurueck
 	* @return vector<list<CInputPoint3D>>&
 	*/
 	vector<list<CInputPoint3D>>& getSegmentsApproxVector();
@@ -62,13 +62,13 @@ private:
 	*/
 	vector<list<CInputPoint3D>> segmentsApprox;
 	/**
-	* Einstellbare Distanz für den Douglas-Peuker-Algorithmus
+	* Einstellbare Distanz fuer den Douglas-Peuker-Algorithmus
 	*/
 	double maxDistance;
 
 	/**
-	* Rekursive Funktion die durch das Segment geht und Punkte aus dem Pfad löscht wenn
-	* ihr Abstand zu groß wird.
+	* Rekursive Funktion die durch das Segment geht und Punkte aus dem Pfad loescht wenn
+	* ihr Abstand zu gross wird.
 	* @brief Rekursive Douglas Peuker Funktion
 	* @param list<CInputPoint3D>& segment
 	* @param std::list<CInputPoint3D>::iterator startIt

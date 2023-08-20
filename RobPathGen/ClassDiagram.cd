@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CEulerMatrix">
+    <Position X="15.25" Y="5.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAIAAAAAIAAAIAIAAAIAAQAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>header\EulerMatrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInputParameter">
+    <Position X="12.5" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAEgACAGAAADAQgBAAAIAQAAQAQQBBAAl4AMAACQ=</HashCode>
+      <FileName>header\InputParameter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CLine3D">
+    <Position X="5.75" Y="11.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAgAAAIQAAAAA=</HashCode>
+      <FileName>header\Line3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CLogging">
+    <Position X="15.25" Y="1.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAQAAACAAAAACAgAAAAAAAABYAAAAA=</HashCode>
+      <FileName>header\Logging.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMeanFilter">
+    <Position X="7" Y="8.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAIAACQAAAQABEAAAAgEAAA=</HashCode>
+      <FileName>header\MeanFilter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPathBuilder">
+    <Position X="0.5" Y="11.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAAAAAAAAAACAAIAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>header\PathBuilder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPoint3D">
+    <Position X="3.25" Y="6.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAASAIAAAAAAAAQWAAAAAAAAAAAAAABgAWABAAA=</HashCode>
+      <FileName>header\Point3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInputPoint3D">
+    <Position X="6.75" Y="1.5" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACAAAAAEAAAAAAAAAAAgACECAAAAAAAAEQAAA=</HashCode>
+      <FileName>header\Point3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COutputPoint3D">
+    <Position X="0.5" Y="1.5" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAABAAAAAAABoAAAAAAAAQARChAQAAAAAAAKA=</HashCode>
+      <FileName>header\Point3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRobCodeGenerator">
+    <Position X="12" Y="8.75" Width="6.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAAAAABAAAAAAAAABAAAAABAAgAAQAAAAAgA=</HashCode>
+      <FileName>header\RobCodeGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSegmentApproximator">
+    <Position X="7" Y="5.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAQAAAAAABAIEAAAAAAABAAAAAAAAEAAAAQAAAAA=</HashCode>
+      <FileName>header\SegmentApproximator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI">
+    <Position X="0.5" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAABAABCCAEIBAAMIgIAAAhBAQAAAAAAABAAAAAQA=</HashCode>
+      <FileName>header\GUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -51,7 +51,7 @@ public:
 	~CInputParameter(void);
 
 	/**
-	* Setzt ob die Orientierung Händisch eingegeben werden soll und die drei Winkel
+	* Setzt ob die Orientierung Haendisch eingegeben werden soll und die drei Winkel
 	* @brief Setzt Orientierungs Daten
 	* @param bool initOrientationManual
 	* @param double initA
@@ -60,15 +60,15 @@ public:
 	*/
 	void setOrientation(bool initOrientationManual, double initA, double initB, double initC);
 	/**
-	* Setzt ob die Geschwindigkeit Händisch eingegeben werden soll und die Geschwindigkeit in m/s
+	* Setzt ob die Geschwindigkeit Haendisch eingegeben werden soll und die Geschwindigkeit in m/s
 	* @brief Setzt Geschwindigkeits Daten
 	* @param double initSpeed
 	* @param bool initSeepManual
 	*/
 	void setSpeed(double initSpeed, bool initSpeedManual);
 	/**
-	* Setzt den  gewünschten Offset
-	* @brief Setzt den  gewünschten Offset
+	* Setzt den  gewuenschten Offset
+	* @brief Setzt den  gewuenschten Offset
 	* @param double X
 	* @param double Y
 	* @param double Z
@@ -82,39 +82,39 @@ public:
 	*/
 	void setLogging(bool initLoggingManual);
 	/**
-	* Gibt die eingegebene Geschwindigkeit zurück
-	* @brief Gibt Geschwindigkeit zurück
+	* Gibt die eingegebene Geschwindigkeit zurueck
+	* @brief Gibt Geschwindigkeit zurueck
 	*/
 	double getSpeed(void);
 	/**
-	* Gibt zurück ob händische Geschwindigekit verwendet werden soll, sonst wird sie später berechnet.
-	* @brief Gibt zurück ob händische Geschwindigkeit verwendet werden soll
+	* Gibt zurueck ob haendische Geschwindigekit verwendet werden soll, sonst wird sie spaeter berechnet.
+	* @brief Gibt zurueck ob haendische Geschwindigkeit verwendet werden soll
 	*/
 	bool getSpeedManual(void);
 	/**
-	* Gibt zurück ob händische Orientierung verwendet werden soll, sonst wird sie später berechnet.
-	* @brief Gibt zurück ob händische Orientierung verwendet werden soll
+	* Gibt zurueck ob haendische Orientierung verwendet werden soll, sonst wird sie spaeter berechnet.
+	* @brief Gibt zurueck ob haendische Orientierung verwendet werden soll
 	*/
 	bool getOrientationManual(void);
 	/**
-	* Gibt die eingegebenen Winkel als tuple zurück
-	* @brief Gibt Winkel zurück
+	* Gibt die eingegebenen Winkel als tuple zurueck
+	* @brief Gibt Winkel zurueck
 	* @return: tuple <double double double> angles
 	*/
 	tuple <double, double, double> getAngles(void);
 	/**
-	* Gibt zurück ob ein Offset eingestellt werden soll
-	* @brief Gibt zurück ob ein Offset eingestellt werden soll
+	* Gibt zurueck ob ein Offset eingestellt werden soll
+	* @brief Gibt zurueck ob ein Offset eingestellt werden soll
 	*/
 	bool getOffsetManual(void);
 	/**
-	* Gibt zurück ob ein detailliertes Logging ausgegeben werden soll
-	* @brief Gibt zurück ob ein detailliertes Logging ausgegeben werden soll
+	* Gibt zurueck ob ein detailliertes Logging ausgegeben werden soll
+	* @brief Gibt zurueck ob ein detailliertes Logging ausgegeben werden soll
 	*/
 	bool getLoggingManual(void);
 	/**
-	* Gibt den Offset als tuple zurück
-	* @brief Gibt Offset zurück
+	* Gibt den Offset als tuple zurueck
+	* @brief Gibt Offset zurueck
 	* @return: tuple <double double double> offset
 	*/
 	tuple <double, double, double> getOffset(void);
@@ -126,8 +126,8 @@ public:
 	*/
 	void openFile(std::string path);
 	/**
-	* Um zu erkennen ob es mehrere Pfade sind wird nach Sprüngen gesucht, bei einem Sprung wird eine neue Liste angefangen.
-	* @brief Erkennt Sprünge in den Daten
+	* Um zu erkennen ob es mehrere Pfade sind wird nach Spruengen gesucht, bei einem Sprung wird eine neue Liste angefangen.
+	* @brief Erkennt Spruenge in den Daten
 	* @param CInputPoint3D p den aktuellen Punkt
 	* @param double x_prev die vorherige x Position
 	* @param double y_prev die vorherige y Position
@@ -135,7 +135,7 @@ public:
 	*/
 	bool detectJump(CInputPoint3D p, double x_prev, double y_prev, double z_prev);
 	/**
-	* @brief Gibt Pfad zurück
+	* @brief Gibt Pfad zurueck
 	* @return: vector<list<CInputPoint3D>> den eingelesen Pfad
 	*/
 	vector<list<CInputPoint3D>>& getPath();

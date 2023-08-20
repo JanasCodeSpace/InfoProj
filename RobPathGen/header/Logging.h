@@ -16,7 +16,7 @@
 
 #pragma once
  /**
-  * In dieser Klasse werden die eingelesenen Daten mit einem gleitenden Mittelwertfilter mit einstellbarem Fenster geglättet.
+  * In dieser Klasse werden die eingelesenen Daten mit einem gleitenden Mittelwertfilter mit einstellbarem Fenster geglaettet.
   * @brief Gleitender Mittelwertfilter
   */
 class CLogging
@@ -50,19 +50,19 @@ public:
 	bool getDetailed(void);
 	/**
 	* Loggingdaten werden weggespeichert
-	* @brief Ruft calculateMean für die einzelnen Segmente auf
+	* @brief Ruft calculateMean fuer die einzelnen Segmente auf
 	* @param vector<list<CInputPoint3D>>& sourcePath
 	*/
 	void logData(vector<list<CInputPoint3D>>& sourcePath);
 	/**
 	* Loggingdaten werden weggespeichert
-	* @brief Ruft calculateMean für die einzelnen Segmente auf
+	* @brief Ruft calculateMean fuer die einzelnen Segmente auf
 	* @param vector<CInputPoint3D>& sourcePath
 	*/
 	void logData(vector<CInputPoint3D>& sourcePath);
 	/**
 	* Loggingdaten werden weggespeichert
-	* @brief Ruft calculateMean für die einzelnen Segmente auf
+	* @brief Ruft calculateMean fuer die einzelnen Segmente auf
 	* @param vector<COutputPoint3D>& sourcePath
 	*/
 	void logData(vector<COutputPoint3D>& sourcePath);

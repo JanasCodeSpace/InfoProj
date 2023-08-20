@@ -1,0 +1,144 @@
+\doxysection{Rob\+Code\+Generator.\+cpp}
+\hypertarget{_rob_code_generator_8cpp_source}{}\label{_rob_code_generator_8cpp_source}\index{source/RobCodeGenerator.cpp@{source/RobCodeGenerator.cpp}}
+\mbox{\hyperlink{_rob_code_generator_8cpp}{gehe zur Dokumentation dieser Datei}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}../header/RobCodeGenerator.h"{}}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00009}00009\ \textcolor{comment}{/*\ CRobCodeGenerator\ mit\ 0\ initialiseren\ */}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00010}\mbox{\hyperlink{class_c_rob_code_generator_aca0cd42605627710ccd271b877f8835e}{00010}}\ \mbox{\hyperlink{class_c_rob_code_generator_aca0cd42605627710ccd271b877f8835e}{CRobCodeGenerator::CRobCodeGenerator}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00012}00012\ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00014}00014\ \textcolor{comment}{/*\ CRobCodeGenerator\ mit\ Uebergabewerten\ initialisieren\ */}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00015}\mbox{\hyperlink{class_c_rob_code_generator_a050c9e18ae458066944f7f4e410b0501}{00015}}\ \mbox{\hyperlink{class_c_rob_code_generator_aca0cd42605627710ccd271b877f8835e}{CRobCodeGenerator::CRobCodeGenerator}}(\mbox{\hyperlink{class_c_input_parameter}{CInputParameter}}\ inputParam)}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00016}00016\ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}\ =\ inputParam;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00020}\mbox{\hyperlink{class_c_rob_code_generator_a56ba70ada888827409eff9288282b48b}{00020}}\ \mbox{\hyperlink{class_c_rob_code_generator_a56ba70ada888827409eff9288282b48b}{CRobCodeGenerator::\string~CRobCodeGenerator}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00022}00022\ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00024}\mbox{\hyperlink{class_c_rob_code_generator_ab5d4efbaf76bcaaff34a79259dd699bf}{00024}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_rob_code_generator_ab5d4efbaf76bcaaff34a79259dd699bf}{CRobCodeGenerator::generateRobCode}}(vector<CInputPoint3D>\&\ points,\ \textcolor{keywordtype}{string}\ filepath,\ \textcolor{keywordtype}{string}\ inputPath,\ \mbox{\hyperlink{class_c_logging}{CLogging}}\ log)}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{string}\ filename;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00027}00027\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_ae075389c789bb131a6b8209a7b7d0690}{postProcessing}}(points);\ \textcolor{comment}{//\ Calculates\ all\ the\ necessary\ values}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00030}00030\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a143b13eb97fb0a7b8306ec707e822cba}{setStep}}(4);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00031}00031\ \ \ \ \ log.\mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{logData}}(\mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}});}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00033}00033\ \ \ \ \ errno\_t\ err;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00034}00034\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00035}00035\ \ \ \ \ FILE*\ fid;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00037}00037\ \ \ \ \ filename\ =\ inputPath.substr(inputPath.find\_last\_of(\textcolor{stringliteral}{"{}/\(\backslash\)\(\backslash\)"{}})\ +\ 1);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00038}00038\ \ \ \ \ filename.erase(filename.end()\ -\/\ 4,\ filename.end());}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00039}00039\ \ \ \ \ filename\ =\ filename\ +\ \textcolor{stringliteral}{"{}.src"{}};}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{keywordtype}{string}\ fullPath\ =\ filepath\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ filename;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{if}\ ((err\ =\ fopen\_s(\&fid,\ fullPath.c\_str(),\ \textcolor{stringliteral}{"{}w"{}}))\ !=\ 0)\ \textcolor{comment}{//\ Errorhandling\ for\ File\ opening}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00044}00044\ \ \ \ \ \{\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ msg\ =\ \textcolor{stringliteral}{"{}Open\ file:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ msg\ +=\ filename;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ msg\ +=\ \textcolor{stringliteral}{"{}\ failed!"{}};}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ exception(msg.c\_str());}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00052}00052\ \ \ \ \ filename.erase(filename.end()-\/4,filename.end());\ \ \ \ \ \ \ \ \textcolor{comment}{//\ loescht\ .src}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00053}00053\ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}DEF\ \%s\ \(\backslash\)n"{}},\ filename.c\_str());\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ DEF\ in\ file\ schreiben}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00055}00055\ \ \ \ \ fputs(\textcolor{stringliteral}{"{}PTP\ \$POS\_ACT\(\backslash\)n"{}},\ fid);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ PTP\ zur\ aktuellen\ Position\ in\ file\ schreiben}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}.\mbox{\hyperlink{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}{getSpeedManual}}())\ \textcolor{comment}{//\ If\ the\ speed\ is\ set\ to\ manual,\ it\ will\ be\ defined\ once\ at\ the\ beginning\ of\ the\ file}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00058}00058\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\$VEL.CP\ =\ \%f\(\backslash\)n"{}},\ \mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}.\mbox{\hyperlink{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575}{getSpeed}}());\ \ \ \ \ \ \textcolor{comment}{//\ Geschwindigkeit\ ein\ file\ schreiben}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00060}00060\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00062}00062\ \ \ \ \ tuple\ <double,\ double,\ double>\ offset\ =\ \mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}.\mbox{\hyperlink{class_c_input_parameter_aebed0a8873555a54cbed12a61219fce8}{getOffset}}();}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ points.size();\ s++)}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00065}00065\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}.\mbox{\hyperlink{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}{getSpeedManual}}())\ \textcolor{comment}{//\ If\ the\ speed\ is\ calculated\ it\ needs\ to\ be\ before\ every\ LIN\ command}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\$VEL.CP\ =\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{float})\mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}}[s].getSpeed());}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}LIN\ \{X\ \%f,\ Y\ \%f,\ Z\ \%f,\ A\ \%f,\ B\ \%f,\ C\ \%f\}\(\backslash\)n"{}},\ \mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}}[s].getX()\ +\ get<0>(offset),\ \mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}}[s].getY()\ +\ get<1>(offset),}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}}[s].getZ()\ +\ get<2>(offset),\ \mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}}[s].getA(),\ \mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}}[s].getB(),}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}}[s].getC());}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00071}00071\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00073}00073\ \ \ \ \ fputs(\textcolor{stringliteral}{"{}END"{}},\ fid);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00074}00074\ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00076}\mbox{\hyperlink{class_c_rob_code_generator_ae075389c789bb131a6b8209a7b7d0690}{00076}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_rob_code_generator_ae075389c789bb131a6b8209a7b7d0690}{CRobCodeGenerator::postProcessing}}(vector<CInputPoint3D>\&\ path)}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00077}00077\ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00078}00078\ \ \ \ \ \mbox{\hyperlink{class_c_output_point3_d}{COutputPoint3D}}\ p;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keywordtype}{double}\ timePrev\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ path.size();\ s++)\ \textcolor{comment}{//\ Fuer\ jeden\ Punkt\ in\ dem\ Vector}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00082}00082\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(path[s].getX(),\ path[s].getY(),\ path[s].getZ());}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00084}00084\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}.\mbox{\hyperlink{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}{getSpeedManual}}())}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}.\mbox{\hyperlink{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575}{getSpeed}}()\ >\ \mbox{\hyperlink{_rob_code_generator_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}})\ \textcolor{comment}{//Wenn\ maximale\ Geschwindigkeit\ ueberschritten\ wird,\ Geschwindigkeit\ begrenzen}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}.\mbox{\hyperlink{class_c_input_parameter_a7a9327fd632b7a18eac4e3650cf1375f}{setSpeed}}(\mbox{\hyperlink{_rob_code_generator_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00088}00088\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (s\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_ae72f85753da775da6e8ce047a502b19d}{setSpeed}}(1);\ \textcolor{comment}{//Der\ erste\ Punkt(0)\ wird\ mit\ Standardgeschwindigkeit\ 1m/s\ angefahren.}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_ae72f85753da775da6e8ce047a502b19d}{setSpeed}}(\mbox{\hyperlink{class_c_rob_code_generator_a7d1b9da357bc85b5d6942adb41eed931}{calculateSpeed}}(path[s],\ s,\ timePrev));\ \textcolor{comment}{//Die\ Geschwindigkeit\ zwischen\ den\ weiteren\ Punkten\ wird\ berechnet.}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}.\mbox{\hyperlink{class_c_input_parameter_a0cce4aa7d1efbbca24fa9e531a700097}{getOrientationManual}}())\ \textcolor{comment}{//\ Wenn\ der\ Winkel\ vorgegeben\ ist\ diesen\ setzten}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00099}00099\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ tuple\ <double,\ double,\ double>\ angles;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ angles\ =\ \mbox{\hyperlink{class_c_rob_code_generator_a1c77ee1390f46dabf0d04aeb50ca7a1a}{input}}.\mbox{\hyperlink{class_c_input_parameter_a39a7079b2eccaf59200c42d02f5e7a58}{getAngles}}();}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_a180732285cf09beda40fc13478b2eecc}{setA}}(get<0>(angles));}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_adbbdb2ffc0a5a4fa08fa775eb3790017}{setB}}(get<1>(angles));}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_a1546fdc484115dc5405df8b7a3e5fcdf}{setC}}(get<2>(angles));}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00105}00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00106}00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{comment}{//\ Sonst\ den\ Winkel\ berechnen}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_a322a66503f10674f4479388ed0bc2328}{calculateAngles}}(p,\ path[s]);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00108}00108\ \ \ \ \ \ \ \ \ timePrev\ =\ path[s].getTime();}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00109}00109\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}}.push\_back(p);}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00110}00110\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00112}00112\ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00114}\mbox{\hyperlink{class_c_rob_code_generator_a7d1b9da357bc85b5d6942adb41eed931}{00114}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_rob_code_generator_a7d1b9da357bc85b5d6942adb41eed931}{CRobCodeGenerator::calculateSpeed}}(\mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\&\ p,\ \textcolor{keywordtype}{size\_t}\ s,\ \textcolor{keywordtype}{double}\ timePrev)}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00115}00115\ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00116}00116\ \ \ \ \ \textcolor{keywordtype}{double}\ distance\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00117}00117\ \ \ \ \ \textcolor{keywordtype}{double}\ time\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00118}00118\ \ \ \ \ \textcolor{keywordtype}{double}\ speed;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00120}00120\ \ \ \ \ distance\ =\ \mbox{\hyperlink{class_c_rob_code_generator_a4cd474d8c607e9df2ec52885c7d68bdc}{processedPath}}[s\ -\/\ 1].distanceTo(p);\ \textcolor{comment}{//Strecke\ zwischen\ p\ und\ dem\ Punkt\ zuvor}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00121}00121\ \ \ \ \ time\ =\ p.\mbox{\hyperlink{class_c_input_point3_d_a9404d0ef8b0f917903e18f1a70a7da64}{getTime}}()\ -\/\ timePrev;\ \textcolor{comment}{//Zeit\ zwischen\ p-\/1\ und\ p}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00123}00123\ \ \ \ \ speed\ =\ distance\ /\ time;\ \textcolor{comment}{//\ Berechnug\ Geschwindigkeit\ zwischen\ zwei\ Punkten}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00125}00125\ \ \ \ \ \textcolor{keywordflow}{if}\ (speed\ >\ \mbox{\hyperlink{_rob_code_generator_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}})\ \textcolor{comment}{//Begrenzung\ auf\ maximale\ Geschwindigkeit,\ falls\ Trackerdaten\ h{\ucr}heren\ Wert\ aufweisen}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00126}00126\ \ \ \ \ \ \ \ \ speed\ =\ \mbox{\hyperlink{_rob_code_generator_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}};}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00128}00128\ \ \ \ \ \textcolor{keywordflow}{return}\ speed;\ \textcolor{comment}{//Zuweisung\ der\ Geschwindigkeit}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00129}00129\ \}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00131}\mbox{\hyperlink{class_c_rob_code_generator_a322a66503f10674f4479388ed0bc2328}{00131}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_rob_code_generator_a322a66503f10674f4479388ed0bc2328}{CRobCodeGenerator::calculateAngles}}(\mbox{\hyperlink{class_c_output_point3_d}{COutputPoint3D}}\&\ p,\ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\&\ pIn)}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00132}00132\ \{}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00133}00133\ \ \ \ \ \textcolor{comment}{//\ Funktion\ in\ Eulermatrix\ aufrufen\ die\ a/b/c\ neu\ berechnet}}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00135}00135\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ matrix\ =\ pIn.\mbox{\hyperlink{class_c_input_point3_d_a3b9f4e7c702d56dbd384397fd5486c1d}{getEulerMatrix}}();}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00136}00136\ \ \ \ \ tuple<double,\ double,\ double>\ abc;}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00138}00138\ \ \ \ \ abc\ =\ matrix.\mbox{\hyperlink{class_c_euler_matrix_a71a8ce672603bb4316530e54fd3b8947}{calculateAngels}}();}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00140}00140\ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_a180732285cf09beda40fc13478b2eecc}{setA}}(get<0>(abc));}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00141}00141\ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_adbbdb2ffc0a5a4fa08fa775eb3790017}{setB}}(get<1>(abc));}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00142}00142\ \ \ \ \ p.\mbox{\hyperlink{class_c_output_point3_d_a1546fdc484115dc5405df8b7a3e5fcdf}{setC}}(get<2>(abc));}
+\DoxyCodeLine{\Hypertarget{_rob_code_generator_8cpp_source_l00143}00143\ \}}
+
+\end{DoxyCode}

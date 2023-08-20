@@ -15,7 +15,7 @@ using namespace std;
 #pragma once
 
 /**
- * In dieser Klasse wird aus den Segmenten ein zusammenhängender Pfad erstellt
+ * In dieser Klasse wird aus den Segmenten ein zusammenhaengender Pfad erstellt
  * @brief Zusammensetzten des Pfades
  */
 class CPathBuilder
@@ -32,14 +32,14 @@ public:
 	~CPathBuilder(void);
 
 	/**
-	* @brief Gibt Pfad zurück
+	* @brief Gibt Pfad zurueck
 	* @return: vector<CInputPoint3D> zusammengesetzter Pfad
 	*/
 	vector<CInputPoint3D>& getPath();
 	/**
-	* @brief Gibt Pfad zurück
+	* @brief Gibt Pfad zurueck
 	* @param segments vector<list<CInputPoint3D>>& Pfad aus Segmenten
-	* @param CLogging log für das Logging
+	* @param CLogging log fuer das Logging
 	*/
 	void createPath(vector<list<CInputPoint3D>>& segments, CLogging log);
 

@@ -15,7 +15,7 @@
 using namespace std;
 
 /**
- * In dieser Klasse werden die eingelesenen Daten mit einem gleitenden Mittelwertfilter mit einstellbarem Fenster geglättet.
+ * In dieser Klasse werden die eingelesenen Daten mit einem gleitenden Mittelwertfilter mit einstellbarem Fenster geglaettet.
  * @brief Gleitender Mittelwertfilter
  */
 class CMeanFilter
@@ -46,12 +46,12 @@ public:
 	void setWindowSize(int Window);
 
 	/**
-	* @brief Gibt das gesetzte Fenster zurück
+	* @brief Gibt das gesetzte Fenster zurueck
 	* @return: Window int
 	*/
 	int getWindowSize();
 	/**
-	* @brief Gibt den geglätteten Pfad zurück
+	* @brief Gibt den geglaetteten Pfad zurueck
 	* @return: vector<list<CInputPoint3D>>
 	*/
 	vector<list<CInputPoint3D>>& getPath();
@@ -60,25 +60,25 @@ public:
 	* Hier wird der Mittelwert der einzelnen Segmente berechnet
 	* @brief Berechnet gleitenden Mittelwert
 	* @param list<CInputPoint3D>& segment bekommt einzelne Segmente
-	* @return: list<CInputPoint3D> gibt gelättete Segmente zurück
+	* @return: list<CInputPoint3D> gibt gelaettete Segmente zurueck
 	*/
 	list<CInputPoint3D> calculateMean(list<CInputPoint3D>& segment);
 	/**
-	* Hier wird durch die Segmente interiert und für jedes die calculate Mean Funktion aufgerufen.
+	* Hier wird durch die Segmente interiert und fuer jedes die calculate Mean Funktion aufgerufen.
 	* Anschliessend werden sie in meanPath abgespeichert.
-	* @brief Ruft calculateMean für die einzelnen Segmente auf
+	* @brief Ruft calculateMean fuer die einzelnen Segmente auf
 	* @param list<CInputPoint3D>& segment bekommt einzelne Segmente
-	* @param CLogging log für das Logging
+	* @param CLogging log fuer das Logging
 	*/
 	void mean(vector<list<CInputPoint3D>>& sourcePath, CLogging log);
 
 private:
 	/**
-	* Grösse des Fensters des gleitenden Mittelwerts
+	* Groesse des Fensters des gleitenden Mittelwerts
 	*/
 	int windowSize;
 	/**
-	* Hier werden die geglätteten Daten gespeichert
+	* Hier werden die geglaetteten Daten gespeichert
 	*/
 	vector<list<CInputPoint3D>> meanPath;
 };

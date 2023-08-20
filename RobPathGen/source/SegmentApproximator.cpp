@@ -22,7 +22,7 @@ void CSegmentApproximator::approx(const vector<list<CInputPoint3D>>& segments, C
 
 	segmentsApprox = segments;
 
-	/* Douglas Peucker für Segmente aufrufen*/
+	/* Douglas Peucker fuer Segmente aufrufen*/
 	for (size_t s = 0; s < segments.size(); s++)
 	{
 		douglasPeuckerRecursive(segmentsApprox[s], segmentsApprox[s].begin(), --(segmentsApprox[s].end()));
@@ -31,7 +31,7 @@ void CSegmentApproximator::approx(const vector<list<CInputPoint3D>>& segments, C
 	/*  Logging der Daten*/
 	if (log.getDetailed())
 	{
-		log.setStep(3);
+		log.setStep(2);
 		log.logData(segmentsApprox);
 	}
 }
@@ -51,10 +51,9 @@ vector<list<CInputPoint3D>>& CSegmentApproximator::getSegmentsApproxVector()
 	return segmentsApprox;		// Rueckgabe der Segmente
 }
 
-//TODO: Kommentar
 void CSegmentApproximator::douglasPeuckerRecursive(list<CInputPoint3D>& segment, std::list<CInputPoint3D>::iterator startItr, std::list<CInputPoint3D>::iterator endItr)
 {
-	if (segment.size() < 3) return;  // min Größe pro Seg 3
+	if (segment.size() < 3) return;  // min Groesse pro Seg 3
 	if (distance(startItr, endItr) == 2) return;		// Zeigerabstand == 2
 	CInputPoint3D pStart; CInputPoint3D pEnd;		// Variablen deklarieren
 
@@ -87,7 +86,7 @@ void CSegmentApproximator::douglasPeuckerRecursive(list<CInputPoint3D>& segment,
 
 	if (maxDist <= maxDistance) {
 
-		segment.erase((++startItr), endItr);		// Punkt löschen
+		segment.erase((++startItr), endItr);		// Punkt loeschen
 		return;
 	}
 

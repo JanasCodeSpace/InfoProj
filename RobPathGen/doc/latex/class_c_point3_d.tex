@@ -1,0 +1,539 @@
+\doxysection{CPoint3D Klassenreferenz}
+\hypertarget{class_c_point3_d}{}\label{class_c_point3_d}\index{CPoint3D@{CPoint3D}}
+
+
+Grundklasse Punkt.  
+
+
+
+
+{\ttfamily \#include $<$Point3\+D.\+h$>$}
+
+Klassendiagramm für CPoint3D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_point3_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}{CPoint3D}} (void)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_point3_d_a7385de70dccd7dd4fe9cf245ea79439d}{CPoint3D}} (double X, double Y, double Z)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_point3_d_a63ac51e6c9aee086f53df53ee459c8d2}{\texorpdfstring{$\sim$}{\string~}\+CPoint3D}} (void)
+\begin{DoxyCompactList}\small\item\em Dekonstruktor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Gibt X zurueck. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Gibt Y zurueck. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_a73feea0036b64b0604c10058b193ae43}{getZ}} ()
+\begin{DoxyCompactList}\small\item\em Gibt Z zurueck. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}} (double X)
+\begin{DoxyCompactList}\small\item\em Setzt X. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}} (double Y)
+\begin{DoxyCompactList}\small\item\em Setzt Y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}} (double Z)
+\begin{DoxyCompactList}\small\item\em Setzt Z. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}} (double X, double Y, double Z)
+\begin{DoxyCompactList}\small\item\em Setzt X, Y und Z. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_a1b28b942ffbee33ba90818ea1c56de05}{distance\+To}} (\mbox{\hyperlink{class_c_point3_d}{CPoint3D}} point)
+\begin{DoxyCompactList}\small\item\em Berechnet die Distanz zu einem anderen Punkt. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_aeaa6b56609c5550f7688f3c3721aa28a}{distance\+To}} (\mbox{\hyperlink{class_c_line3_d}{CLine3D}} line)
+\begin{DoxyCompactList}\small\item\em Berechnet die Distanz zu einer Linie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}
+\item 
+double \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}
+\item 
+double \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+Grundklasse Punkt. 
+
+Das ist die Grundklasse eines Punktes, hier lassen sich die Basiswerte setzten und Abstaende zwishen Punkten berechnen. 
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8h_source_l00020}{20}} der Datei \mbox{\hyperlink{_point3_d_8h_source}{Point3\+D.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}\label{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00} 
+\index{CPoint3D@{CPoint3D}!CPoint3D@{CPoint3D}}
+\index{CPoint3D@{CPoint3D}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{CPoint3D()}{CPoint3D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CPoint3\+D\+::\+CPoint3D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert des Punktes mit Null \begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_point3_d_a7385de70dccd7dd4fe9cf245ea79439d}{CPoint3\+D(double X, double Y, double Z)} 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00013}{13}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ 0;}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ 0;}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ 0;}
+\DoxyCodeLine{00018\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00099}{x}}, \mbox{\hyperlink{_point3_d_8h_source_l00099}{y}} und \mbox{\hyperlink{_point3_d_8h_source_l00099}{z}}.
+
+\Hypertarget{class_c_point3_d_a7385de70dccd7dd4fe9cf245ea79439d}\label{class_c_point3_d_a7385de70dccd7dd4fe9cf245ea79439d} 
+\index{CPoint3D@{CPoint3D}!CPoint3D@{CPoint3D}}
+\index{CPoint3D@{CPoint3D}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{CPoint3D()}{CPoint3D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CPoint3\+D\+::\+CPoint3D (\begin{DoxyParamCaption}\item[{double}]{X,  }\item[{double}]{Y,  }\item[{double}]{Z }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert des Punktes mit Null 
+\begin{DoxyParams}{Parameter}
+{\em double} & X \\
+\hline
+{\em double} & Y \\
+\hline
+{\em double} & Z \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}{CPoint3\+D(void)} 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00021}{21}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
+\DoxyCodeLine{00026\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00099}{x}}, \mbox{\hyperlink{_point3_d_8h_source_l00099}{y}} und \mbox{\hyperlink{_point3_d_8h_source_l00099}{z}}.
+
+\Hypertarget{class_c_point3_d_a63ac51e6c9aee086f53df53ee459c8d2}\label{class_c_point3_d_a63ac51e6c9aee086f53df53ee459c8d2} 
+\index{CPoint3D@{CPoint3D}!````~CPoint3D@{\texorpdfstring{$\sim$}{\string~}CPoint3D}}
+\index{````~CPoint3D@{\texorpdfstring{$\sim$}{\string~}CPoint3D}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CPoint3D()}{\string~CPoint3D()}}
+{\footnotesize\ttfamily CPoint3\+D\+::\texorpdfstring{$\sim$}{\string~}\+CPoint3D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Dekonstruktor. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00028}{28}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_c_point3_d_aeaa6b56609c5550f7688f3c3721aa28a}\label{class_c_point3_d_aeaa6b56609c5550f7688f3c3721aa28a} 
+\index{CPoint3D@{CPoint3D}!distanceTo@{distanceTo}}
+\index{distanceTo@{distanceTo}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{distanceTo()}{distanceTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double CPoint3\+D\+::distance\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_line3_d}{CLine3D}}}]{line }\end{DoxyParamCaption})}
+
+
+
+Berechnet die Distanz zu einer Linie. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em \doxylink{class_c_line3_d}{CLine3D}} & line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+double Distanz 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00076}{76}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00077\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{double}\ bx,\ by,\ bz,\ rv\_sq,\ dist,\ vp1,\ vp2,\ vp3;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Variablen\ Anlegen}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00081\ \textcolor{comment}{\ \ \ \ Vermessen\ wird\ der\ Punkt\ selbst }}
+\DoxyCodeLine{00082\ \textcolor{comment}{}}
+\DoxyCodeLine{00083\ \textcolor{comment}{\ \ \ \ bx,\ by,\ bz\ \ \ \ \ \ ==\ Vektordifferenz }}
+\DoxyCodeLine{00084\ \textcolor{comment}{\ \ \ \ rv\_sq\ \ \ \ \ \ \ \ \ \ \ ==\ Betrag\ des\ Linienvektors }}
+\DoxyCodeLine{00085\ \textcolor{comment}{\ \ \ \ dist\ \ \ \ \ \ \ \ \ \ \ \ ==\ Distanz\ von\ Punkt\ zu\ Linie }}
+\DoxyCodeLine{00086\ \textcolor{comment}{\ \ \ \ vp1,\ vp2,\ vp3\ \ \ ==\ Vektorprodukte }}
+\DoxyCodeLine{00087\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{int}\ rvx\ =\ line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ -\/\ line.\mbox{\hyperlink{class_c_line3_d_af54f121c474e11318113cb820e3b7345}{p2}}.\mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}};\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ X\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{int}\ rvy\ =\ line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ -\/\ line.\mbox{\hyperlink{class_c_line3_d_af54f121c474e11318113cb820e3b7345}{p2}}.\mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}};\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Y\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ rvz\ =\ line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ -\/\ line.\mbox{\hyperlink{class_c_line3_d_af54f121c474e11318113cb820e3b7345}{p2}}.\mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}};\ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Z\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ rv\_sq\ =\ sqrt(((\textcolor{keywordtype}{double})rvx\ *\ (\textcolor{keywordtype}{double})rvx)\ +\ ((\textcolor{keywordtype}{double})rvy\ *\ (\textcolor{keywordtype}{double})rvy)\ +\ ((\textcolor{keywordtype}{double})rvz\ *\ (\textcolor{keywordtype}{double})rvz));\ \ \ \ \ \ \textcolor{comment}{//\ Betrag\ des\ Linienvektor\ berechnen}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ bx\ =\ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ -\/\ (double)line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ X(Punkt)\ -\/\ X(Aufpunkt)\ }}
+\DoxyCodeLine{00096\ \ \ \ \ by\ =\ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ -\/\ (double)line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Y(Punkt)\ -\/\ Y(Aufpunkt)}}
+\DoxyCodeLine{00097\ \ \ \ \ bz\ =\ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ -\/\ (double)line.\mbox{\hyperlink{class_c_line3_d_a021b39708b1dfc9c5f71054fe0f62ef8}{p1}}.\mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Z(Punkt)\ -\/\ Z(Aufpunkt)}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ vp1\ =\ by\ *\ rvz\ -\/\ bz\ *\ rvy;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ X\ Vektorprodukt}}
+\DoxyCodeLine{00100\ \ \ \ \ vp2\ =\ bz\ *\ rvx\ -\/\ bx\ *\ rvz;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Y\ Vektorprodukt}}
+\DoxyCodeLine{00101\ \ \ \ \ vp3\ =\ bx\ *\ rvy\ -\/\ by\ *\ rvx;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Parameter\ Z\ Vektorprodukt}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ dist\ =\ sqrt(vp1\ *\ vp1\ +\ vp2\ *\ vp2\ +\ vp3\ *\ vp3)\ /\ rv\_sq;\ \textcolor{comment}{//\ Betrag\ des\ Vektors\ berechnen}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordflow}{return}\ dist;}
+\DoxyCodeLine{00106\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_line3_d_8h_source_l00041}{CLine3\+D\+::p1}}, \mbox{\hyperlink{_line3_d_8h_source_l00045}{CLine3\+D\+::p2}}, \mbox{\hyperlink{_point3_d_8h_source_l00099}{x}}, \mbox{\hyperlink{_point3_d_8h_source_l00099}{y}} und \mbox{\hyperlink{_point3_d_8h_source_l00099}{z}}.
+
+\Hypertarget{class_c_point3_d_a1b28b942ffbee33ba90818ea1c56de05}\label{class_c_point3_d_a1b28b942ffbee33ba90818ea1c56de05} 
+\index{CPoint3D@{CPoint3D}!distanceTo@{distanceTo}}
+\index{distanceTo@{distanceTo}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{distanceTo()}{distanceTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double CPoint3\+D\+::distance\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_point3_d}{CPoint3D}}}]{point }\end{DoxyParamCaption})}
+
+
+
+Berechnet die Distanz zu einem anderen Punkt. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em \doxylink{class_c_point3_d}{CPoint3D}} & point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+double Distanz 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00071}{71}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00072\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{return}\ sqrt(pow((\textcolor{keywordtype}{double})(\mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ -\/\ (\textcolor{keywordtype}{double})point.\mbox{\hyperlink{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62}{getX}}()),\ 2)\ +\ pow((\textcolor{keywordtype}{double})(\mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ -\/\ (\textcolor{keywordtype}{double})point.\mbox{\hyperlink{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326}{getY}}()),\ 2)\ +\ pow((\textcolor{keywordtype}{double})(\mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ -\/\ (\textcolor{keywordtype}{double})point.\mbox{\hyperlink{class_c_point3_d_a73feea0036b64b0604c10058b193ae43}{getZ}}()),\ 2));\ \ \ \textcolor{comment}{//\ \ Pythagoras\ 3D}}
+\DoxyCodeLine{00074\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8cpp_source_l00032}{get\+X()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00037}{get\+Y()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00042}{get\+Z()}}, \mbox{\hyperlink{_point3_d_8h_source_l00099}{x}}, \mbox{\hyperlink{_point3_d_8h_source_l00099}{y}} und \mbox{\hyperlink{_point3_d_8h_source_l00099}{z}}.
+
+\Hypertarget{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62}\label{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62} 
+\index{CPoint3D@{CPoint3D}!getX@{getX}}
+\index{getX@{getX}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily double CPoint3\+D\+::getX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt X zurueck. 
+
+\begin{DoxyReturn}{Rückgabe}
+double 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00032}{32}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}};\ \ \textcolor{comment}{//\ X-\/Koordinate\ zurueck\ geben}}
+\DoxyCodeLine{00035\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00099}{x}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00153}{CInput\+Parameter\+::detect\+Jump()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00071}{distance\+To()}}.
+
+\Hypertarget{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326}\label{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326} 
+\index{CPoint3D@{CPoint3D}!getY@{getY}}
+\index{getY@{getY}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily double CPoint3\+D\+::getY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt Y zurueck. 
+
+\begin{DoxyReturn}{Rückgabe}
+double 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00037}{37}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}};\ \ \textcolor{comment}{//\ Y-\/Koordinate\ zurueck\ geben}}
+\DoxyCodeLine{00040\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00099}{y}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00153}{CInput\+Parameter\+::detect\+Jump()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00071}{distance\+To()}}.
+
+\Hypertarget{class_c_point3_d_a73feea0036b64b0604c10058b193ae43}\label{class_c_point3_d_a73feea0036b64b0604c10058b193ae43} 
+\index{CPoint3D@{CPoint3D}!getZ@{getZ}}
+\index{getZ@{getZ}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{getZ()}{getZ()}}
+{\footnotesize\ttfamily double CPoint3\+D\+::getZ (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt Z zurueck. 
+
+\begin{DoxyReturn}{Rückgabe}
+double 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00042}{42}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}};\ \ \textcolor{comment}{//\ Z-\/Koordinate\ zurueck\ geben}}
+\DoxyCodeLine{00045\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00099}{z}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00153}{CInput\+Parameter\+::detect\+Jump()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00071}{distance\+To()}}.
+
+\Hypertarget{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}\label{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec} 
+\index{CPoint3D@{CPoint3D}!set@{set}}
+\index{set@{set}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void CPoint3\+D\+::set (\begin{DoxyParamCaption}\item[{double}]{X,  }\item[{double}]{Y,  }\item[{double}]{Z }\end{DoxyParamCaption})}
+
+
+
+Setzt X, Y und Z. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em double} & X \\
+\hline
+{\em double} & Y \\
+\hline
+{\em double} & Z \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00063}{63}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00064\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;\ \textcolor{comment}{//\ X-\/Koordinate\ setzen}}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;\ \textcolor{comment}{//\ Y-\/Koordinate\ setzen}}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;\ \textcolor{comment}{//\ Z-\/Koordinate\ setzen}}
+\DoxyCodeLine{00068\ \}\ \ \ }
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00099}{x}}, \mbox{\hyperlink{_point3_d_8h_source_l00099}{y}} und \mbox{\hyperlink{_point3_d_8h_source_l00099}{z}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00055}{CMean\+Filter\+::calculate\+Mean()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{CPath\+Builder\+::create\+Path()}}, \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00076}{CRob\+Code\+Generator\+::post\+Processing()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00135}{CInput\+Point3\+D\+::set\+Point()}}.
+
+\Hypertarget{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}\label{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647} 
+\index{CPoint3D@{CPoint3D}!setX@{setX}}
+\index{setX@{setX}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void CPoint3\+D\+::setX (\begin{DoxyParamCaption}\item[{double}]{X }\end{DoxyParamCaption})}
+
+
+
+Setzt X. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em double} & X \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00047}{47}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00048\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;\ \textcolor{comment}{//\ X-\/Koordinate\ setzen}}
+\DoxyCodeLine{00050\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00099}{x}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00054}{CSegment\+Approximator\+::douglas\+Peucker\+Recursive()}}.
+
+\Hypertarget{class_c_point3_d_a81465a058c428fe65edef926d975110e}\label{class_c_point3_d_a81465a058c428fe65edef926d975110e} 
+\index{CPoint3D@{CPoint3D}!setY@{setY}}
+\index{setY@{setY}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void CPoint3\+D\+::setY (\begin{DoxyParamCaption}\item[{double}]{Y }\end{DoxyParamCaption})}
+
+
+
+Setzt Y. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em double} & Y \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00052}{52}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00053\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;\ \textcolor{comment}{//\ Y-\/Koordinate\ setzen}}
+\DoxyCodeLine{00055\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00099}{y}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00054}{CSegment\+Approximator\+::douglas\+Peucker\+Recursive()}}.
+
+\Hypertarget{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}\label{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24} 
+\index{CPoint3D@{CPoint3D}!setZ@{setZ}}
+\index{setZ@{setZ}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{setZ()}{setZ()}}
+{\footnotesize\ttfamily void CPoint3\+D\+::setZ (\begin{DoxyParamCaption}\item[{double}]{Z }\end{DoxyParamCaption})}
+
+
+
+Setzt Z. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em double} & Z \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00057}{57}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;\ \textcolor{comment}{//\ Z-\/Koordinate\ setzen}}
+\DoxyCodeLine{00060\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00099}{z}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_segment_approximator_8cpp_source_l00054}{CSegment\+Approximator\+::douglas\+Peucker\+Recursive()}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}\label{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50} 
+\index{CPoint3D@{CPoint3D}!x@{x}}
+\index{x@{x}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily double CPoint3\+D\+::x\hspace{0.3cm}{\ttfamily [protected]}}
+
+Koordinaten des Punkts 
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8h_source_l00099}{99}} der Datei \mbox{\hyperlink{_point3_d_8h_source}{Point3\+D.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_point3_d_8cpp_source_l00116}{CInput\+Point3\+D\+::\+CInput\+Point3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00168}{COutput\+Point3\+D\+::\+COutput\+Point3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00021}{CPoint3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00013}{CPoint3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00076}{distance\+To()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00071}{distance\+To()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00032}{get\+X()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00063}{set()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00047}{set\+X()}}.
+
+\Hypertarget{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}\label{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9} 
+\index{CPoint3D@{CPoint3D}!y@{y}}
+\index{y@{y}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily double CPoint3\+D\+::y\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8h_source_l00099}{99}} der Datei \mbox{\hyperlink{_point3_d_8h_source}{Point3\+D.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_point3_d_8cpp_source_l00116}{CInput\+Point3\+D\+::\+CInput\+Point3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00168}{COutput\+Point3\+D\+::\+COutput\+Point3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00021}{CPoint3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00013}{CPoint3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00076}{distance\+To()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00071}{distance\+To()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00037}{get\+Y()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00063}{set()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00052}{set\+Y()}}.
+
+\Hypertarget{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}\label{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac} 
+\index{CPoint3D@{CPoint3D}!z@{z}}
+\index{z@{z}!CPoint3D@{CPoint3D}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily double CPoint3\+D\+::z\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8h_source_l00099}{99}} der Datei \mbox{\hyperlink{_point3_d_8h_source}{Point3\+D.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_point3_d_8cpp_source_l00116}{CInput\+Point3\+D\+::\+CInput\+Point3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00168}{COutput\+Point3\+D\+::\+COutput\+Point3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00021}{CPoint3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00013}{CPoint3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00076}{distance\+To()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00071}{distance\+To()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00042}{get\+Z()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00063}{set()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00057}{set\+Z()}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_point3_d_8h}{Point3\+D.\+h}}\item 
+source/\mbox{\hyperlink{_point3_d_8cpp}{Point3\+D.\+cpp}}\end{DoxyCompactItemize}

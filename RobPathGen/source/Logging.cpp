@@ -40,13 +40,13 @@ void CLogging::logData(vector<list<CInputPoint3D>>& sourcePath)
 	float dummyMatrix[3][3];	// dummyMatrix zum Zwischenspeichern
 	CEulerMatrix tmpEuler;		// CEulerMatrix zum Zwischenspeichern
 
-	filepath = path + "/" + "0" + std::to_string(step) + "_path.csv";
+	filepath = path + "/" + "0" + std::to_string(step) + "_log.csv";
 
-	FILE* fid = fopen(filepath.c_str(), "w");		// file öffnen
+	FILE* fid = fopen(filepath.c_str(), "w");		// file oeffnen
 
 	if (fid == NULL)
 	{
-		cerr << "ERROR - Can NOT write to output file!\n";		// Fehler beim file öffnen
+		cerr << "ERROR - Can NOT write to output file!\n";		// Fehler beim file oeffnen
 		return;
 	}
 
@@ -76,13 +76,13 @@ void CLogging::logData(vector<CInputPoint3D>& sourcePath)
 	float dummyMatrix[3][3];	// dummyMatrix zum Zwischenspeichern
 	CEulerMatrix tmpEuler;		// CEulerMatrix zum Zwischenspeichern
 
-	filepath = path + "/" + "0" + std::to_string(step) + "_path.csv";
+	filepath = path + "/" + "0" + std::to_string(step) + "_log.csv";
 
-	FILE* fid = fopen(filepath.c_str(), "w");	// file öffnen
+	FILE* fid = fopen(filepath.c_str(), "w");	// file oeffnen
 
 	if (fid == NULL)
 	{
-		cerr << "ERROR - Can NOT write to output file!\n";	// Fehler beim file öffnen
+		cerr << "ERROR - Can NOT write to output file!\n";	// Fehler beim file oeffnen
 		return;
 	}
 
@@ -107,11 +107,11 @@ void CLogging::logData(vector<COutputPoint3D>& sourcePath)
 
 	filepath = path + "/" + "0" + std::to_string(step) + "_path.csv";
 
-	FILE* fid = fopen(filepath.c_str(), "w");	// file öffnen
+	FILE* fid = fopen(filepath.c_str(), "w");	// file oeffnen
 
 	if (fid == NULL)
 	{
-		cerr << "ERROR - Can NOT write to output file!\n";	// Fehler beim file öffnen
+		cerr << "ERROR - Can NOT write to output file!\n";	// Fehler beim file oeffnen
 		return;
 	}
 

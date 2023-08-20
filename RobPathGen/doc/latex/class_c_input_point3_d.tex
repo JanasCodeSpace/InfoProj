@@ -1,0 +1,402 @@
+\doxysection{CInput\+Point3D Klassenreferenz}
+\hypertarget{class_c_input_point3_d}{}\label{class_c_input_point3_d}\index{CInputPoint3D@{CInputPoint3D}}
+
+
+Input Punkt.  
+
+
+
+
+{\ttfamily \#include $<$Point3\+D.\+h$>$}
+
+Klassendiagramm für CInput\+Point3D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_input_point3_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_input_point3_d_ae09b06a0e03216701b1c55715f035d67}{CInput\+Point3D}} (void)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_input_point3_d_af04dfe4ec49d9a3c807e6464a860c078}{CInput\+Point3D}} (double X, double Y, double Z, double Timestamp, \mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} Matrix)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_input_point3_d_a095391c3aeb5fb0433aa76d35457c0b1}{\texorpdfstring{$\sim$}{\string~}\+CInput\+Point3D}} (void)
+\begin{DoxyCompactList}\small\item\em Dekonstruktor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_input_point3_d_a9404d0ef8b0f917903e18f1a70a7da64}{get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Gibt den Zeitstempel zurueck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} \mbox{\hyperlink{class_c_input_point3_d_a3b9f4e7c702d56dbd384397fd5486c1d}{get\+Euler\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Gibt die gespeicherte Eulermatrix zurueck. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{set\+Time}} (double time)
+\begin{DoxyCompactList}\small\item\em Setzt den Zeitstempel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{set\+Euler\+Matrix}} (\mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} orientation)
+\begin{DoxyCompactList}\small\item\em Setzt die Eulermatrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}{set\+Point}} (double time, double X, double Y, double Z, \mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} orientation)
+\begin{DoxyCompactList}\small\item\em Setzt einen Input Punkt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche Methoden geerbt von \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}{CPoint3D}} (void)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_point3_d_a7385de70dccd7dd4fe9cf245ea79439d}{CPoint3D}} (double X, double Y, double Z)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_point3_d_a63ac51e6c9aee086f53df53ee459c8d2}{\texorpdfstring{$\sim$}{\string~}\+CPoint3D}} (void)
+\begin{DoxyCompactList}\small\item\em Dekonstruktor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Gibt X zurueck. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Gibt Y zurueck. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_a73feea0036b64b0604c10058b193ae43}{getZ}} ()
+\begin{DoxyCompactList}\small\item\em Gibt Z zurueck. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_point3_d_aee2748ffe7a8505efd2c303b53941647}{setX}} (double X)
+\begin{DoxyCompactList}\small\item\em Setzt X. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_point3_d_a81465a058c428fe65edef926d975110e}{setY}} (double Y)
+\begin{DoxyCompactList}\small\item\em Setzt Y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_point3_d_ac8765fa73306e534a386f87c8c691c24}{setZ}} (double Z)
+\begin{DoxyCompactList}\small\item\em Setzt Z. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}} (double X, double Y, double Z)
+\begin{DoxyCompactList}\small\item\em Setzt X, Y und Z. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_a1b28b942ffbee33ba90818ea1c56de05}{distance\+To}} (\mbox{\hyperlink{class_c_point3_d}{CPoint3D}} point)
+\begin{DoxyCompactList}\small\item\em Berechnet die Distanz zu einem anderen Punkt. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_point3_d_aeaa6b56609c5550f7688f3c3721aa28a}{distance\+To}} (\mbox{\hyperlink{class_c_line3_d}{CLine3D}} line)
+\begin{DoxyCompactList}\small\item\em Berechnet die Distanz zu einer Linie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}}
+\item 
+\mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} \mbox{\hyperlink{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d}{orientation\+Matrix}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Weitere Geerbte Elemente}
+\doxysubsection*{Geschützte Attribute geerbt von \mbox{\hyperlink{class_c_point3_d}{CPoint3D}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}
+\item 
+double \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}
+\item 
+double \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+Input Punkt. 
+
+Kind der Punkt Grundklasse, erweitert um den Timestamp und die Eulermatrix 
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8h_source_l00106}{106}} der Datei \mbox{\hyperlink{_point3_d_8h_source}{Point3\+D.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_c_input_point3_d_ae09b06a0e03216701b1c55715f035d67}\label{class_c_input_point3_d_ae09b06a0e03216701b1c55715f035d67} 
+\index{CInputPoint3D@{CInputPoint3D}!CInputPoint3D@{CInputPoint3D}}
+\index{CInputPoint3D@{CInputPoint3D}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{CInputPoint3D()}{CInputPoint3D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CInput\+Point3\+D\+::\+CInput\+Point3D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert des eingelesenen Punktes mit Null \begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_input_point3_d_af04dfe4ec49d9a3c807e6464a860c078}{CInput\+Point3\+D(double X, double Y, double Z, double Timestamp, CEuler\+Matrix Matrix)} 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00110}{110}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_c_point3_d_a6361fc5bc936cc8929f6251061c68b00}{CPoint3D}}() }
+\DoxyCodeLine{00111\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}}\ =\ 0;\ \ \ \ \ \textcolor{comment}{//\ Zeitstempel\ mit\ 0\ initialisieren}}
+\DoxyCodeLine{00113\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00166}{timestamp}}.
+
+\Hypertarget{class_c_input_point3_d_af04dfe4ec49d9a3c807e6464a860c078}\label{class_c_input_point3_d_af04dfe4ec49d9a3c807e6464a860c078} 
+\index{CInputPoint3D@{CInputPoint3D}!CInputPoint3D@{CInputPoint3D}}
+\index{CInputPoint3D@{CInputPoint3D}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{CInputPoint3D()}{CInputPoint3D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CInput\+Point3\+D\+::\+CInput\+Point3D (\begin{DoxyParamCaption}\item[{double}]{X,  }\item[{double}]{Y,  }\item[{double}]{Z,  }\item[{double}]{Timestamp,  }\item[{\mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}}}]{Matrix }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert des eingelesenen Punktes mit Null 
+\begin{DoxyParams}{Parameter}
+{\em double} & X \\
+\hline
+{\em double} & Y \\
+\hline
+{\em double} & Z \\
+\hline
+{\em double} & Timestamp \\
+\hline
+{\em \doxylink{class_c_euler_matrix}{CEuler\+Matrix}} & Matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_input_point3_d_af04dfe4ec49d9a3c807e6464a860c078}{CInput\+Point3\+D(double X, double Y, double Z, double Timestamp, CEuler\+Matrix Matrix)} 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00116}{116}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00117\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae5d5fb687ece1bebb535ee5d72509f50}{x}}\ =\ X;}
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a207ba5415400672d0129f441c5f2f3b9}{y}}\ =\ Y;}
+\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_ae49f7fe3b58d674538fc00509e6316ac}{z}}\ =\ Z;}
+\DoxyCodeLine{00121\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}}\ =\ Timestamp;}
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d}{orientationMatrix}}\ =\ Matrix;}
+\DoxyCodeLine{00123\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00170}{orientation\+Matrix}}, \mbox{\hyperlink{_point3_d_8h_source_l00166}{timestamp}}, \mbox{\hyperlink{_point3_d_8h_source_l00099}{CPoint3\+D\+::x}}, \mbox{\hyperlink{_point3_d_8h_source_l00099}{CPoint3\+D\+::y}} und \mbox{\hyperlink{_point3_d_8h_source_l00099}{CPoint3\+D\+::z}}.
+
+\Hypertarget{class_c_input_point3_d_a095391c3aeb5fb0433aa76d35457c0b1}\label{class_c_input_point3_d_a095391c3aeb5fb0433aa76d35457c0b1} 
+\index{CInputPoint3D@{CInputPoint3D}!````~CInputPoint3D@{\texorpdfstring{$\sim$}{\string~}CInputPoint3D}}
+\index{````~CInputPoint3D@{\texorpdfstring{$\sim$}{\string~}CInputPoint3D}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CInputPoint3D()}{\string~CInputPoint3D()}}
+{\footnotesize\ttfamily CInput\+Point3\+D\+::\texorpdfstring{$\sim$}{\string~}\+CInput\+Point3D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Dekonstruktor. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00125}{125}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00126\ \{}
+\DoxyCodeLine{00127\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_c_input_point3_d_a3b9f4e7c702d56dbd384397fd5486c1d}\label{class_c_input_point3_d_a3b9f4e7c702d56dbd384397fd5486c1d} 
+\index{CInputPoint3D@{CInputPoint3D}!getEulerMatrix@{getEulerMatrix}}
+\index{getEulerMatrix@{getEulerMatrix}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{getEulerMatrix()}{getEulerMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} CInput\+Point3\+D\+::get\+Euler\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt die gespeicherte Eulermatrix zurueck. 
+
+\begin{DoxyReturn}{Rückgabe}
+\doxylink{class_c_euler_matrix}{CEuler\+Matrix} 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00147}{147}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00148\ \{}
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d}{orientationMatrix}};\ \ \textcolor{comment}{//\ Rueckgabe\ der\ EulerMatrix}}
+\DoxyCodeLine{00150\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00170}{orientation\+Matrix}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00131}{CRob\+Code\+Generator\+::calculate\+Angles()}}.
+
+\Hypertarget{class_c_input_point3_d_a9404d0ef8b0f917903e18f1a70a7da64}\label{class_c_input_point3_d_a9404d0ef8b0f917903e18f1a70a7da64} 
+\index{CInputPoint3D@{CInputPoint3D}!getTime@{getTime}}
+\index{getTime@{getTime}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily double CInput\+Point3\+D\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt den Zeitstempel zurueck. 
+
+\begin{DoxyReturn}{Rückgabe}
+double Zeitstempel 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00152}{152}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00153\ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}};\ \ \ \ \ \ \textcolor{comment}{//\ Rueckgabe\ des\ Zeitstempel}}
+\DoxyCodeLine{00155\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00166}{timestamp}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00114}{CRob\+Code\+Generator\+::calculate\+Speed()}}.
+
+\Hypertarget{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}\label{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8} 
+\index{CInputPoint3D@{CInputPoint3D}!setEulerMatrix@{setEulerMatrix}}
+\index{setEulerMatrix@{setEulerMatrix}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{setEulerMatrix()}{setEulerMatrix()}}
+{\footnotesize\ttfamily void CInput\+Point3\+D\+::set\+Euler\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}}}]{orientation }\end{DoxyParamCaption})}
+
+
+
+Setzt die Eulermatrix. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em \doxylink{class_c_euler_matrix}{CEuler\+Matrix}} & orientation \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00129}{129}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00130\ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d}{orientationMatrix}}\ =\ orientation;\ \ \ \textcolor{comment}{//\ EulerMatrix\ setzen}}
+\DoxyCodeLine{00132\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00170}{orientation\+Matrix}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00055}{CMean\+Filter\+::calculate\+Mean()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{CPath\+Builder\+::create\+Path()}}, \mbox{\hyperlink{_segment_approximator_8cpp_source_l00054}{CSegment\+Approximator\+::douglas\+Peucker\+Recursive()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00135}{set\+Point()}}.
+
+\Hypertarget{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}\label{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b} 
+\index{CInputPoint3D@{CInputPoint3D}!setPoint@{setPoint}}
+\index{setPoint@{setPoint}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{setPoint()}{setPoint()}}
+{\footnotesize\ttfamily void CInput\+Point3\+D\+::set\+Point (\begin{DoxyParamCaption}\item[{double}]{time,  }\item[{double}]{X,  }\item[{double}]{Y,  }\item[{double}]{Z,  }\item[{\mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}}}]{orientation }\end{DoxyParamCaption})}
+
+
+
+Setzt einen Input Punkt. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em double} & time \\
+\hline
+{\em double} & X \\
+\hline
+{\em double} & Y \\
+\hline
+{\em double} & Z \\
+\hline
+{\em \doxylink{class_c_euler_matrix}{CEuler\+Matrix}} & orientation \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00135}{135}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00136\ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}{setTime}}(time);\ \ \ \textcolor{comment}{//\ Zeitstempel\ setzen}}
+\DoxyCodeLine{00138\ \ \ \ \ \mbox{\hyperlink{class_c_point3_d_a85934ab180860df1ff2161d14efb98ec}{set}}(X,\ Y,\ Z);\ \ \ \ \textcolor{comment}{//\ setze\ Punkt-\/Koordinaten}}
+\DoxyCodeLine{00139\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_aa1ffef5d44dbf0f82fea3c6ff25dd1e8}{setEulerMatrix}}(orientation);\ \textcolor{comment}{//\ EulerMatrix\ setzen}}
+\DoxyCodeLine{00140\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8cpp_source_l00063}{CPoint3\+D\+::set()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00129}{set\+Euler\+Matrix()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00142}{set\+Time()}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00111}{CInput\+Parameter\+::open\+File()}}.
+
+\Hypertarget{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd}\label{class_c_input_point3_d_a64595602198fb39f73b3ba7ca23670fd} 
+\index{CInputPoint3D@{CInputPoint3D}!setTime@{setTime}}
+\index{setTime@{setTime}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void CInput\+Point3\+D\+::set\+Time (\begin{DoxyParamCaption}\item[{double}]{time }\end{DoxyParamCaption})}
+
+
+
+Setzt den Zeitstempel. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em double} & time \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8cpp_source_l00142}{142}} der Datei \mbox{\hyperlink{_point3_d_8cpp_source}{Point3\+D.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00143\ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}{timestamp}}\ =\ time;\ \ \textcolor{comment}{//\ Zeitstempel\ setzen}}
+\DoxyCodeLine{00145\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_point3_d_8h_source_l00166}{timestamp}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_mean_filter_8cpp_source_l00055}{CMean\+Filter\+::calculate\+Mean()}}, \mbox{\hyperlink{_path_builder_8cpp_source_l00023}{CPath\+Builder\+::create\+Path()}}, \mbox{\hyperlink{_segment_approximator_8cpp_source_l00054}{CSegment\+Approximator\+::douglas\+Peucker\+Recursive()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00135}{set\+Point()}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d}\label{class_c_input_point3_d_affee074b5c3326cd68329665c19d882d} 
+\index{CInputPoint3D@{CInputPoint3D}!orientationMatrix@{orientationMatrix}}
+\index{orientationMatrix@{orientationMatrix}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{orientationMatrix}{orientationMatrix}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_euler_matrix}{CEuler\+Matrix}} CInput\+Point3\+D\+::orientation\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+Eulermatrix des Punktes 
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8h_source_l00170}{170}} der Datei \mbox{\hyperlink{_point3_d_8h_source}{Point3\+D.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_point3_d_8cpp_source_l00116}{CInput\+Point3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00147}{get\+Euler\+Matrix()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00129}{set\+Euler\+Matrix()}}.
+
+\Hypertarget{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a}\label{class_c_input_point3_d_a5ed7b2fa590b550a2b04d0266208412a} 
+\index{CInputPoint3D@{CInputPoint3D}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!CInputPoint3D@{CInputPoint3D}}
+\doxysubsubsection{\texorpdfstring{timestamp}{timestamp}}
+{\footnotesize\ttfamily double CInput\+Point3\+D\+::timestamp\hspace{0.3cm}{\ttfamily [private]}}
+
+Zeitstempel 
+
+Definiert in Zeile \mbox{\hyperlink{_point3_d_8h_source_l00166}{166}} der Datei \mbox{\hyperlink{_point3_d_8h_source}{Point3\+D.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_point3_d_8cpp_source_l00116}{CInput\+Point3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00110}{CInput\+Point3\+D()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00152}{get\+Time()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00142}{set\+Time()}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_point3_d_8h}{Point3\+D.\+h}}\item 
+source/\mbox{\hyperlink{_point3_d_8cpp}{Point3\+D.\+cpp}}\end{DoxyCompactItemize}

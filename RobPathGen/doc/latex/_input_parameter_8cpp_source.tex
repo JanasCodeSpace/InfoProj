@@ -1,0 +1,164 @@
+\doxysection{Input\+Parameter.\+cpp}
+\hypertarget{_input_parameter_8cpp_source}{}\label{_input_parameter_8cpp_source}\index{source/InputParameter.cpp@{source/InputParameter.cpp}}
+\mbox{\hyperlink{_input_parameter_8cpp}{gehe zur Dokumentation dieser Datei}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}../header/InputParameter.h"{}}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}../header/Point3D.h"{}}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}../header/EulerMatrix.h"{}}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00011}00011\ \textcolor{comment}{/*\ CInputParamameter\ mir\ Uebergabewerten\ initialisieren\ */}\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00012}\mbox{\hyperlink{class_c_input_parameter_a476e60fd10e2430c388f335398f095cb}{00012}}\ \mbox{\hyperlink{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0}{CInputParameter::CInputParameter}}(\textcolor{keywordtype}{double}\ initSpeed,\ \textcolor{keywordtype}{bool}\ initSpeedManual,\ \textcolor{keywordtype}{bool}\ initOrientationManual,\ \textcolor{keywordtype}{double}\ initA,\ \textcolor{keywordtype}{double}\ initB,\ \textcolor{keywordtype}{double}\ initC)}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00014}00014\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}}\ =\ initSpeed;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speedManual}}\ =\ initSpeedManual;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientationManual}}\ =\ initOrientationManual;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}}\ =\ initA;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}}\ =\ initB;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00019}00019\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}}\ =\ initC;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00023}00023\ \textcolor{comment}{/*\ CInputParameter\ mit\ 0\ initialisieren\ */}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00024}\mbox{\hyperlink{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0}{00024}}\ \mbox{\hyperlink{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0}{CInputParameter::CInputParameter}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}}\ =\ 0.1;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}}\ =\ 75;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00030}00030\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speedManual}}\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientationManual}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00035}\mbox{\hyperlink{class_c_input_parameter_a229e6b9e7d884fa57cd032e8fd1dccdb}{00035}}\ \mbox{\hyperlink{class_c_input_parameter_a229e6b9e7d884fa57cd032e8fd1dccdb}{CInputParameter::\string~CInputParameter}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00036}00036\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00038}00038\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00040}00040\ \textcolor{comment}{/*\ Einstellung\ fuer\ Orientierung\ und\ Winkel\ setzten\ */}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00041}\mbox{\hyperlink{class_c_input_parameter_a04c9fc7d2724593c144586edea4f004e}{00041}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_parameter_a04c9fc7d2724593c144586edea4f004e}{CInputParameter::setOrientation}}(\textcolor{keywordtype}{bool}\ initOrientationManual,\ \textcolor{keywordtype}{double}\ initA,\ \textcolor{keywordtype}{double}\ initB,\ \textcolor{keywordtype}{double}\ initC)}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00042}00042\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientationManual}}\ =\ initOrientationManual;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}}\ =\ initA;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}}\ =\ initB;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}}\ =\ initC;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00047}00047\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00049}\mbox{\hyperlink{class_c_input_parameter_a7d054f366f9568f02d604708d5529c23}{00049}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_parameter_a7d054f366f9568f02d604708d5529c23}{CInputParameter::setOffset}}(\textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ \textcolor{keywordtype}{double}\ Z,\ \textcolor{keywordtype}{bool}\ initOffsetManual)}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00050}00050\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a0a846cec65de60f9c444f507edc69317}{offsetManual}}\ =\ initOffsetManual;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aab1e077fb692132e6c656d05dc4413ba}{offsetX}}\ =\ X;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_ae1a6fcdaed5065678bb97b0cdd4546d9}{offsetY}}\ =\ Y;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00054}00054\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a420116b3f1382f85859259f57a7a2f95}{offsetZ}}\ =\ Z;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00055}00055\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00057}\mbox{\hyperlink{class_c_input_parameter_a848430192a01d3a79c7f84664ab04f55}{00057}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_parameter_a848430192a01d3a79c7f84664ab04f55}{CInputParameter::setLogging}}(\textcolor{keywordtype}{bool}\ initLoggingManual)}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00058}00058\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a7b6fcb6b63c77adbe75dc476f3e299f3}{loggingManual}}\ =\ initLoggingManual;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00062}00062\ \textcolor{comment}{/*\ Einstellung\ fuer\ Geschwindigkeit\ und\ Geschwindigkeit\ setzen\ */}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00063}\mbox{\hyperlink{class_c_input_parameter_a7a9327fd632b7a18eac4e3650cf1375f}{00063}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_parameter_a7a9327fd632b7a18eac4e3650cf1375f}{CInputParameter::setSpeed}}(\textcolor{keywordtype}{double}\ initSpeed,\ \textcolor{keywordtype}{bool}\ initSpeedManual)}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00064}00064\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00065}00065\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}}\ =\ initSpeed;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00066}00066\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speedManual}}\ =\ initSpeedManual;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00067}00067\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00069}\mbox{\hyperlink{class_c_input_parameter_a1b7ac3c105dea6e2c2cd38b88157feee}{00069}}\ vector<list<CInputPoint3D>>\&\ \mbox{\hyperlink{class_c_input_parameter_a1b7ac3c105dea6e2c2cd38b88157feee}{CInputParameter::getPath}}()}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00070}00070\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00071}00071\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}{initialPath}};\ \ \ \ \ \ \textcolor{comment}{//\ Path\ zurueck\ geben}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00074}\mbox{\hyperlink{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575}{00074}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575}{CInputParameter::getSpeed}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00075}00075\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Geschwindigkeit\ zurueck\ geben}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00077}00077\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00079}\mbox{\hyperlink{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}{00079}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}{CInputParameter::getSpeedManual}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00080}00080\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speedManual}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Vorgewaehlte\ Einstellung\ fuer\ Geschwindigkeit\ zurueck\ geben}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00082}00082\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00084}\mbox{\hyperlink{class_c_input_parameter_a0cce4aa7d1efbbca24fa9e531a700097}{00084}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_a0cce4aa7d1efbbca24fa9e531a700097}{CInputParameter::getOrientationManual}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00085}00085\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00086}00086\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientationManual}};\ \ \ \ \ \ \textcolor{comment}{//\ Vorgewaehlte\ Einstellung\ fuer\ Orientierung\ zurueck\ geben}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00087}00087\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00089}\mbox{\hyperlink{class_c_input_parameter_a7702087cae7dae327790ba4beeb0740b}{00089}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_a7702087cae7dae327790ba4beeb0740b}{CInputParameter::getOffsetManual}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00090}00090\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_a0a846cec65de60f9c444f507edc69317}{offsetManual}};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Vorgewaehlte\ Einstellung\ fuer\ den\ Offset\ zurueck}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00092}00092\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00094}\mbox{\hyperlink{class_c_input_parameter_af4692e32d893bf00164e897f8a19f17a}{00094}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_af4692e32d893bf00164e897f8a19f17a}{CInputParameter::getLoggingManual}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00095}00095\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00096}00096\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_a7b6fcb6b63c77adbe75dc476f3e299f3}{loggingManual}};\ \ \ \ \ \ \textcolor{comment}{//\ Vorgewaehlte\ Einstellung\ fuer\ das\ Logging\ zurueck}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00097}00097\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00099}\mbox{\hyperlink{class_c_input_parameter_a39a7079b2eccaf59200c42d02f5e7a58}{00099}}\ tuple\ <double,\ double,\ double>\ \mbox{\hyperlink{class_c_input_parameter_a39a7079b2eccaf59200c42d02f5e7a58}{CInputParameter::getAngles}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00100}00100\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{keywordflow}{return}\ make\_tuple(\mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}},\ \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}},\ \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}});\ \ \ \ \ \ \textcolor{comment}{//\ Winkel\ zurueck\ geben}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00102}00102\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00104}\mbox{\hyperlink{class_c_input_parameter_aebed0a8873555a54cbed12a61219fce8}{00104}}\ tuple\ <double,\ double,\ double>\ \mbox{\hyperlink{class_c_input_parameter_aebed0a8873555a54cbed12a61219fce8}{CInputParameter::getOffset}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00105}00105\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00106}00106\ \ \ \ \ \textcolor{keywordflow}{return}\ make\_tuple(\mbox{\hyperlink{class_c_input_parameter_aab1e077fb692132e6c656d05dc4413ba}{offsetX}},\ \mbox{\hyperlink{class_c_input_parameter_ae1a6fcdaed5065678bb97b0cdd4546d9}{offsetY}},\ \mbox{\hyperlink{class_c_input_parameter_a420116b3f1382f85859259f57a7a2f95}{offsetZ}});\ \ \ \ \ \ \textcolor{comment}{//\ Offset\ zurueck\ geben}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00107}00107\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00110}00110\ \textcolor{comment}{/*\ Eingabedatei\ oeffnen\ */}\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00111}\mbox{\hyperlink{class_c_input_parameter_a2c6f7c743f45164703be3e489d0fb4f0}{00111}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_input_parameter_a2c6f7c743f45164703be3e489d0fb4f0}{CInputParameter::openFile}}(\textcolor{keywordtype}{string}\ path)}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00112}00112\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00113}00113\ \ \ \ \ ifstream\ fin(path);}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00114}00114\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ tmpPoint;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Zwischenspeicher\ zum\ konvertieren\ von\ tmpEuler\ in\ Point3D}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00115}00115\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ tmpEuler;\ \ \ \ \ \ \textcolor{comment}{//\ Zwischenspeicher\ zum\ konverteiren\ von\ DummyMatrix\ in\ EulerMatrix}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00116}00116\ \ \ \ \ \textcolor{keywordtype}{double}\ x,\ y,\ z;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Punktkoordinaten}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00117}00117\ \ \ \ \ \textcolor{keywordtype}{double}\ x\_prev\ =\ 0,\ y\_prev\ =\ 0,\ z\_prev\ =\ 0;\ \ \ \ \ \ \textcolor{comment}{//\ Zwischenspeicher\ fuer\ Punktkoordinaten}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00118}00118\ \ \ \ \ \textcolor{keywordtype}{double}\ timestamp;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Zeitstempel}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00119}00119\ \ \ \ \ \textcolor{keywordtype}{int}\ segmentCount\ =\ -\/1;\ \ \ \ \ \ \textcolor{comment}{//\ Segmentzaehler}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00120}00120\ \ \ \ \ \textcolor{keywordtype}{float}\ dummyMatrix[3][3];\ \ \ \ \textcolor{comment}{//\ DummyMatrix\ zum\ speichern}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00123}00123\ \ \ \ \ \textcolor{keywordflow}{if}\ (!fin.is\_open())}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00124}00124\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00125}00125\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Datei\ konnte\ nicht\ geoeffnet\ werden"{}}\ <<\ endl;\ \ \ \ \ \ \textcolor{comment}{//\ Fehler\ Datei\ konnte\ nicht\ geoeffnet\ werden.}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00126}00126\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00127}00127\ \ \ \ \ \textcolor{keywordtype}{string}\ line;}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00129}00129\ \ \ \ \ \textcolor{keywordflow}{while}(getline(fin,\ line))}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00130}00130\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00131}00131\ \ \ \ \ \ \ \ \ std::istringstream\ sStream\ (line);}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00132}00132\ \ \ \ \ \ \ \ \ sStream\ >>\ timestamp\ >>\ x\ >>\ y\ >>\ z\ >>\ dummyMatrix[0][0]\ >>\ dummyMatrix[0][1]\ >>\ dummyMatrix[0][2]\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Zeile\ in\ die\ einzelnen\ Parameter\ zerlegen\ }}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00133}00133\ \ \ \ \ \ \ \ \ \ \ \ \ >>\ dummyMatrix[1][0]\ >>\ dummyMatrix[1][1]\ >>\ dummyMatrix[1][2]\ >>\ dummyMatrix[2][0]\ >>\ dummyMatrix[2][1]\ >>\ dummyMatrix[2][2];\ \ \ \ \ \ \textcolor{comment}{//\ und\ in\ DummyMatrix\ bzw.\ Variablen\ abspeichern}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00135}00135\ \ \ \ \ \ \ \ \ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_aee7e2a7b47908dd7f9771e1dfb98cc41}{setMatrix}}(dummyMatrix);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ DummyMatrix[3][3]\ in\ EulerMatrix\ speichern\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00136}00136\ \ \ \ \ \ \ \ \ tmpPoint.\mbox{\hyperlink{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}{setPoint}}(timestamp,\ x,\ y,\ z,\ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}{getEulerMatrix}}());\ \textcolor{comment}{//\ Variablen\ und\ EulerWinkel\ in\ CPoint3D\ speichern}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00138}00138\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_input_parameter_a7ada1c037dfd55298b2d7d3c865ec667}{detectJump}}(tmpPoint,\ x\_prev,\ y\_prev,\ z\_prev))\ \textcolor{comment}{//\ if\ there\ is\ a\ jump\ in\ the\ data,\ start\ da\ new\ segment\ }}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00139}00139\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ segmentCount++;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ neues\ Segement\ anlegen}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}{initialPath}}.push\_back(list<CInputPoint3D>());\ \ \ \ \textcolor{comment}{//\ Punkt\ in\ Segent\ speichern}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00142}00142\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00144}00144\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}{initialPath}}[segmentCount].push\_back(tmpPoint);\ \ \ \ \ \ \ \textcolor{comment}{//\ Punkt\ in\ bestehendes\ Segment\ abspeichern}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00146}00146\ \ \ \ \ \ \ \ \ x\_prev\ =\ x;\ \ \ \ \ \textcolor{comment}{//\ X-\/Wert\ zwischenspeichern}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00147}00147\ \ \ \ \ \ \ \ \ y\_prev\ =\ y;\ \ \ \ \ \textcolor{comment}{//\ Y-\/Wert\ zwischenspeichern}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00148}00148\ \ \ \ \ \ \ \ \ z\_prev\ =\ z;\ \ \ \ \ \textcolor{comment}{//\ Z-\/Wert\ zwischenspeichern}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00149}00149\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00150}00150\ \ \ \ \ fin.close();\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Datei\ schliessen}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00151}00151\ \}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00153}\mbox{\hyperlink{class_c_input_parameter_a7ada1c037dfd55298b2d7d3c865ec667}{00153}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_input_parameter_a7ada1c037dfd55298b2d7d3c865ec667}{CInputParameter::detectJump}}(\mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ p,\ \textcolor{keywordtype}{double}\ x\_prev,\ \textcolor{keywordtype}{double}\ \ y\_prev,\ \textcolor{keywordtype}{double}\ z\_prev)}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00154}00154\ \{}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00155}00155\ \ \ \ \ \textcolor{keywordflow}{if}(abs(p.\mbox{\hyperlink{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62}{getX}}()\ -\/\ x\_prev)\ >\ \mbox{\hyperlink{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}{difference}})\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Abstand\ zwischen\ Punkten\ groesser\ max\ Differenz??}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00156}00156\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00157}00157\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(abs(p.\mbox{\hyperlink{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326}{getY}}()\ -\/\ y\_prev)\ >\ \mbox{\hyperlink{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}{difference}})\ \ \ \ \ \ \textcolor{comment}{//\ Abstand\ zwischen\ Punkten\ groesser\ max\ Differenz??}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00158}00158\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00159}00159\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(abs(p.\mbox{\hyperlink{class_c_point3_d_a73feea0036b64b0604c10058b193ae43}{getZ}}()\ -\/\ z\_prev)\ >\ \mbox{\hyperlink{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}{difference}})\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Abstand\ zwischen\ Punkten\ groesser\ max\ Differenz??}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00160}00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00161}00161\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00162}00162\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_input_parameter_8cpp_source_l00163}00163\ \}}
+
+\end{DoxyCode}
