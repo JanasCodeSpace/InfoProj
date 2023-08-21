@@ -68,6 +68,7 @@ void CLogging::logData(vector<list<CInputPoint3D>>& sourcePath)
 
 		itr--;
 	}
+	fclose(fid);
 }
 
 void CLogging::logData(vector<CInputPoint3D>& sourcePath)
@@ -97,6 +98,7 @@ void CLogging::logData(vector<CInputPoint3D>& sourcePath)
 			dummyMatrix[1][0], dummyMatrix[1][1], dummyMatrix[1][2],
 			dummyMatrix[2][0], dummyMatrix[2][1], dummyMatrix[2][2]);
 	}
+	fclose(fid);
 }
 
 void CLogging::logData(vector<COutputPoint3D>& sourcePath)
@@ -124,4 +126,5 @@ void CLogging::logData(vector<COutputPoint3D>& sourcePath)
 			(double)sourcePath[s].getX(), (double)sourcePath[s].getY(), (double)sourcePath[s].getZ(),
 			(double)sourcePath[s].getA(), (double)sourcePath[s].getB(), (double)sourcePath[s].getC());
 	}
+	fclose(fid);
 }
