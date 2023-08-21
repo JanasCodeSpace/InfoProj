@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RobCodeGenerator: source/InputParameter.cpp Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RobCodeGenerator
+   </div>
+   <div id="projectbrief">Dieses Tool erstellt aus mit einem Sensor aufgenommenen Pfaden einen Kuka Roboter lesbaren Code. Dabei sind ein paar Werte einstellbar.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Lade ...</div>
+<div class="SRStatus" id="Searching">Suche ...</div>
+<div class="SRStatus" id="NoMatches">Keine Treffer</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">InputParameter.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_input_parameter_8cpp.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../header/InputParameter.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;../header/Point3D.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../header/EulerMatrix.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/* CInputParamameter mir Uebergabewerten initialisieren */</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a476e60fd10e2430c388f335398f095cb">   12</a></span><a class="code hl_function" href="class_c_input_parameter.html#aae7de58c19fc12c32ddd38732f4a33e0">CInputParameter::CInputParameter</a>(<span class="keywordtype">double</span> initSpeed, <span class="keywordtype">bool</span> initSpeedManual, <span class="keywordtype">bool</span> initOrientationManual, <span class="keywordtype">double</span> initA, <span class="keywordtype">double</span> initB, <span class="keywordtype">double</span> initC)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_variable" href="class_c_input_parameter.html#aead01c343a4f8798d654baeba5ce4a51">speed</a> = initSpeed;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_variable" href="class_c_input_parameter.html#ae7d3f34951c79600ff11c30a8cca3cc1">speedManual</a> = initSpeedManual;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a20dc6bd4fe1582dd645a886114ae1d78">orientationManual</a> = initOrientationManual;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a083030f7932a1139f5eb97cd642f76e9">A</a> = initA;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_variable" href="class_c_input_parameter.html#abc1db148f5a759b3da7a283ae7a67329">B</a> = initB;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a64ef7dbb87e3eebfae624dede13fcb20">C</a> = initC;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/* CInputParameter mit 0 initialisieren */</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#aae7de58c19fc12c32ddd38732f4a33e0">   24</a></span><a class="code hl_function" href="class_c_input_parameter.html#aae7de58c19fc12c32ddd38732f4a33e0">CInputParameter::CInputParameter</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_variable" href="class_c_input_parameter.html#aead01c343a4f8798d654baeba5ce4a51">speed</a> = 0.1;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a083030f7932a1139f5eb97cd642f76e9">A</a> = 0;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_variable" href="class_c_input_parameter.html#abc1db148f5a759b3da7a283ae7a67329">B</a> = 75;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a64ef7dbb87e3eebfae624dede13fcb20">C</a> = 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_variable" href="class_c_input_parameter.html#ae7d3f34951c79600ff11c30a8cca3cc1">speedManual</a> = <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a20dc6bd4fe1582dd645a886114ae1d78">orientationManual</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a229e6b9e7d884fa57cd032e8fd1dccdb">   35</a></span><a class="code hl_function" href="class_c_input_parameter.html#a229e6b9e7d884fa57cd032e8fd1dccdb">CInputParameter::~CInputParameter</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/* Einstellung fuer Orientierung und Winkel setzten */</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a04c9fc7d2724593c144586edea4f004e">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_c_input_parameter.html#a04c9fc7d2724593c144586edea4f004e">CInputParameter::setOrientation</a>(<span class="keywordtype">bool</span> initOrientationManual, <span class="keywordtype">double</span> initA, <span class="keywordtype">double</span> initB, <span class="keywordtype">double</span> initC)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a20dc6bd4fe1582dd645a886114ae1d78">orientationManual</a> = initOrientationManual;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a083030f7932a1139f5eb97cd642f76e9">A</a> = initA;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_variable" href="class_c_input_parameter.html#abc1db148f5a759b3da7a283ae7a67329">B</a> = initB;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a64ef7dbb87e3eebfae624dede13fcb20">C</a> = initC;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a7d054f366f9568f02d604708d5529c23">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_c_input_parameter.html#a7d054f366f9568f02d604708d5529c23">CInputParameter::setOffset</a>(<span class="keywordtype">double</span> X, <span class="keywordtype">double</span> Y, <span class="keywordtype">double</span> Z, <span class="keywordtype">bool</span> initOffsetManual)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a0a846cec65de60f9c444f507edc69317">offsetManual</a> = initOffsetManual;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_variable" href="class_c_input_parameter.html#aab1e077fb692132e6c656d05dc4413ba">offsetX</a> = X;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_variable" href="class_c_input_parameter.html#ae1a6fcdaed5065678bb97b0cdd4546d9">offsetY</a> = Y;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a420116b3f1382f85859259f57a7a2f95">offsetZ</a> = Z;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a848430192a01d3a79c7f84664ab04f55">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_c_input_parameter.html#a848430192a01d3a79c7f84664ab04f55">CInputParameter::setLogging</a>(<span class="keywordtype">bool</span> initLoggingManual)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_variable" href="class_c_input_parameter.html#a7b6fcb6b63c77adbe75dc476f3e299f3">loggingManual</a> = initLoggingManual;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">/* Einstellung fuer Geschwindigkeit und Geschwindigkeit setzen */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a7a9327fd632b7a18eac4e3650cf1375f">   63</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_c_input_parameter.html#a7a9327fd632b7a18eac4e3650cf1375f">CInputParameter::setSpeed</a>(<span class="keywordtype">double</span> initSpeed, <span class="keywordtype">bool</span> initSpeedManual)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_variable" href="class_c_input_parameter.html#aead01c343a4f8798d654baeba5ce4a51">speed</a> = initSpeed;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_variable" href="class_c_input_parameter.html#ae7d3f34951c79600ff11c30a8cca3cc1">speedManual</a> = initSpeedManual;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a1b7ac3c105dea6e2c2cd38b88157feee">   69</a></span>vector&lt;list&lt;CInputPoint3D&gt;&gt;&amp; <a class="code hl_function" href="class_c_input_parameter.html#a1b7ac3c105dea6e2c2cd38b88157feee">CInputParameter::getPath</a>()</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_parameter.html#af3b25ec5c1398b83da05f6d9d680ad2f">initialPath</a>;     <span class="comment">// Path zurueck geben</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a15d6fb6e9ed6a2f74ab8d29f21a51575">   74</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="class_c_input_parameter.html#a15d6fb6e9ed6a2f74ab8d29f21a51575">CInputParameter::getSpeed</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_parameter.html#aead01c343a4f8798d654baeba5ce4a51">speed</a>;           <span class="comment">// Geschwindigkeit zurueck geben</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a94105d489929c9c6c36391ae90806e47">   79</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_input_parameter.html#a94105d489929c9c6c36391ae90806e47">CInputParameter::getSpeedManual</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_parameter.html#ae7d3f34951c79600ff11c30a8cca3cc1">speedManual</a>;             <span class="comment">// Vorgewaehlte Einstellung fuer Geschwindigkeit zurueck geben</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a0cce4aa7d1efbbca24fa9e531a700097">   84</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_input_parameter.html#a0cce4aa7d1efbbca24fa9e531a700097">CInputParameter::getOrientationManual</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_parameter.html#a20dc6bd4fe1582dd645a886114ae1d78">orientationManual</a>;       <span class="comment">// Vorgewaehlte Einstellung fuer Orientierung zurueck geben</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a7702087cae7dae327790ba4beeb0740b">   89</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_input_parameter.html#a7702087cae7dae327790ba4beeb0740b">CInputParameter::getOffsetManual</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_parameter.html#a0a846cec65de60f9c444f507edc69317">offsetManual</a>;        <span class="comment">// Vorgewaehlte Einstellung fuer den Offset zurueck</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#af4692e32d893bf00164e897f8a19f17a">   94</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_input_parameter.html#af4692e32d893bf00164e897f8a19f17a">CInputParameter::getLoggingManual</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_input_parameter.html#a7b6fcb6b63c77adbe75dc476f3e299f3">loggingManual</a>;       <span class="comment">// Vorgewaehlte Einstellung fuer das Logging zurueck</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a39a7079b2eccaf59200c42d02f5e7a58">   99</a></span>tuple &lt;double, double, double&gt; <a class="code hl_function" href="class_c_input_parameter.html#a39a7079b2eccaf59200c42d02f5e7a58">CInputParameter::getAngles</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>{</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">return</span> make_tuple(<a class="code hl_variable" href="class_c_input_parameter.html#a083030f7932a1139f5eb97cd642f76e9">A</a>, <a class="code hl_variable" href="class_c_input_parameter.html#abc1db148f5a759b3da7a283ae7a67329">B</a>, <a class="code hl_variable" href="class_c_input_parameter.html#a64ef7dbb87e3eebfae624dede13fcb20">C</a>);     <span class="comment">// Winkel zurueck geben</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#aebed0a8873555a54cbed12a61219fce8">  104</a></span>tuple &lt;double, double, double&gt; <a class="code hl_function" href="class_c_input_parameter.html#aebed0a8873555a54cbed12a61219fce8">CInputParameter::getOffset</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>{</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> make_tuple(<a class="code hl_variable" href="class_c_input_parameter.html#aab1e077fb692132e6c656d05dc4413ba">offsetX</a>, <a class="code hl_variable" href="class_c_input_parameter.html#ae1a6fcdaed5065678bb97b0cdd4546d9">offsetY</a>, <a class="code hl_variable" href="class_c_input_parameter.html#a420116b3f1382f85859259f57a7a2f95">offsetZ</a>);       <span class="comment">// Offset zurueck geben</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">/* Eingabedatei oeffnen */</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a2c6f7c743f45164703be3e489d0fb4f0">  111</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_c_input_parameter.html#a2c6f7c743f45164703be3e489d0fb4f0">CInputParameter::openFile</a>(<span class="keywordtype">string</span> path)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    ifstream fin(path);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a> tmpPoint;     <span class="comment">// Zwischenspeicher zum konvertieren von tmpEuler in Point3D</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <a class="code hl_class" href="class_c_euler_matrix.html">CEulerMatrix</a> tmpEuler;      <span class="comment">// Zwischenspeicher zum konverteiren von DummyMatrix in EulerMatrix</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">double</span> x, y, z;             <span class="comment">// Punktkoordinaten</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">double</span> x_prev = 0, y_prev = 0, z_prev = 0;      <span class="comment">// Zwischenspeicher fuer Punktkoordinaten</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">double</span> timestamp;           <span class="comment">// Zeitstempel</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">int</span> segmentCount = -1;      <span class="comment">// Segmentzaehler</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">float</span> dummyMatrix[3][3];    <span class="comment">// DummyMatrix zum speichern</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">if</span> (!fin.is_open())</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        cerr &lt;&lt; <span class="stringliteral">&quot;Datei konnte nicht geoeffnet werden&quot;</span> &lt;&lt; endl;      <span class="comment">// Fehler Datei konnte nicht geoeffnet werden.</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">string</span> line;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">while</span>(getline(fin, line))</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        std::istringstream sStream (line);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        sStream &gt;&gt; timestamp &gt;&gt; x &gt;&gt; y &gt;&gt; z &gt;&gt; dummyMatrix[0][0] &gt;&gt; dummyMatrix[0][1] &gt;&gt; dummyMatrix[0][2]                                      <span class="comment">// Zeile in die einzelnen Parameter zerlegen </span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            &gt;&gt; dummyMatrix[1][0] &gt;&gt; dummyMatrix[1][1] &gt;&gt; dummyMatrix[1][2] &gt;&gt; dummyMatrix[2][0] &gt;&gt; dummyMatrix[2][1] &gt;&gt; dummyMatrix[2][2];      <span class="comment">// und in DummyMatrix bzw. Variablen abspeichern</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        tmpEuler.<a class="code hl_function" href="class_c_euler_matrix.html#aee7e2a7b47908dd7f9771e1dfb98cc41">setMatrix</a>(dummyMatrix);                                    <span class="comment">// DummyMatrix[3][3] in EulerMatrix speichern                           </span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        tmpPoint.<a class="code hl_function" href="class_c_input_point3_d.html#a71805ac924595c9e4fb977ca21246f6b">setPoint</a>(timestamp, x, y, z, tmpEuler.<a class="code hl_function" href="class_c_euler_matrix.html#a5df41a830311468a806e1ae7c3e165ef">getEulerMatrix</a>());   <span class="comment">// Variablen und EulerWinkel in CPoint3D speichern</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="class_c_input_parameter.html#a7ada1c037dfd55298b2d7d3c865ec667">detectJump</a>(tmpPoint, x_prev, y_prev, z_prev)) <span class="comment">// if there is a jump in the data, start da new segment </span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            segmentCount++;                                 <span class="comment">// neues Segement anlegen</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <a class="code hl_variable" href="class_c_input_parameter.html#af3b25ec5c1398b83da05f6d9d680ad2f">initialPath</a>.push_back(list&lt;CInputPoint3D&gt;());   <span class="comment">// Punkt in Segent speichern</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <a class="code hl_variable" href="class_c_input_parameter.html#af3b25ec5c1398b83da05f6d9d680ad2f">initialPath</a>[segmentCount].push_back(tmpPoint);      <span class="comment">// Punkt in bestehendes Segment abspeichern</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        x_prev = x;     <span class="comment">// X-Wert zwischenspeichern</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        y_prev = y;     <span class="comment">// Y-Wert zwischenspeichern</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        z_prev = z;     <span class="comment">// Z-Wert zwischenspeichern</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    fin.close();        <span class="comment">// Datei schliessen</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="class_c_input_parameter.html#a7ada1c037dfd55298b2d7d3c865ec667">  153</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_input_parameter.html#a7ada1c037dfd55298b2d7d3c865ec667">CInputParameter::detectJump</a>(<a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a> p, <span class="keywordtype">double</span> x_prev, <span class="keywordtype">double</span>  y_prev, <span class="keywordtype">double</span> z_prev)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">if</span>(abs(p.<a class="code hl_function" href="class_c_point3_d.html#a7d6b88b707eef43f162f6da8de9a4a62">getX</a>() - x_prev) &gt; <a class="code hl_variable" href="class_c_input_parameter.html#a08dcd2762795aa2a4271a28fe61ed4fc">difference</a>)             <span class="comment">// Abstand zwischen Punkten groesser max Differenz??</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(abs(p.<a class="code hl_function" href="class_c_point3_d.html#ace64e8f7777f557ef0ca44bc5fed7326">getY</a>() - y_prev) &gt; <a class="code hl_variable" href="class_c_input_parameter.html#a08dcd2762795aa2a4271a28fe61ed4fc">difference</a>)        <span class="comment">// Abstand zwischen Punkten groesser max Differenz??</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(abs(p.<a class="code hl_function" href="class_c_point3_d.html#a73feea0036b64b0604c10058b193ae43">getZ</a>() - z_prev) &gt; <a class="code hl_variable" href="class_c_input_parameter.html#a08dcd2762795aa2a4271a28fe61ed4fc">difference</a>)            <span class="comment">// Abstand zwischen Punkten groesser max Differenz??</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>}</div>
+<div class="ttc" id="aclass_c_euler_matrix_html"><div class="ttname"><a href="class_c_euler_matrix.html">CEulerMatrix</a></div><div class="ttdoc">Handling und Berechnung Euler Matrix.</div><div class="ttdef"><b>Definition</b> <a href="_euler_matrix_8h_source.html#l00019">EulerMatrix.h:20</a></div></div>
+<div class="ttc" id="aclass_c_euler_matrix_html_a5df41a830311468a806e1ae7c3e165ef"><div class="ttname"><a href="class_c_euler_matrix.html#a5df41a830311468a806e1ae7c3e165ef">CEulerMatrix::getEulerMatrix</a></div><div class="ttdeci">CEulerMatrix getEulerMatrix(void)</div><div class="ttdoc">Auslesen eine Matrix.</div><div class="ttdef"><b>Definition</b> <a href="_euler_matrix_8cpp_source.html#l00042">EulerMatrix.cpp:42</a></div></div>
+<div class="ttc" id="aclass_c_euler_matrix_html_aee7e2a7b47908dd7f9771e1dfb98cc41"><div class="ttname"><a href="class_c_euler_matrix.html#aee7e2a7b47908dd7f9771e1dfb98cc41">CEulerMatrix::setMatrix</a></div><div class="ttdeci">void setMatrix(float inputMatrix[3][3])</div><div class="ttdoc">Setzt eine Matrix.</div><div class="ttdef"><b>Definition</b> <a href="_euler_matrix_8cpp_source.html#l00031">EulerMatrix.cpp:31</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a04c9fc7d2724593c144586edea4f004e"><div class="ttname"><a href="class_c_input_parameter.html#a04c9fc7d2724593c144586edea4f004e">CInputParameter::setOrientation</a></div><div class="ttdeci">void setOrientation(bool initOrientationManual, double initA, double initB, double initC)</div><div class="ttdoc">Setzt Orientierungs Daten.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00041">InputParameter.cpp:41</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a083030f7932a1139f5eb97cd642f76e9"><div class="ttname"><a href="class_c_input_parameter.html#a083030f7932a1139f5eb97cd642f76e9">CInputParameter::A</a></div><div class="ttdeci">double A</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00163">InputParameter.h:163</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a08dcd2762795aa2a4271a28fe61ed4fc"><div class="ttname"><a href="class_c_input_parameter.html#a08dcd2762795aa2a4271a28fe61ed4fc">CInputParameter::difference</a></div><div class="ttdeci">double difference</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00175">InputParameter.h:175</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a0a846cec65de60f9c444f507edc69317"><div class="ttname"><a href="class_c_input_parameter.html#a0a846cec65de60f9c444f507edc69317">CInputParameter::offsetManual</a></div><div class="ttdeci">bool offsetManual</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00179">InputParameter.h:179</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a0cce4aa7d1efbbca24fa9e531a700097"><div class="ttname"><a href="class_c_input_parameter.html#a0cce4aa7d1efbbca24fa9e531a700097">CInputParameter::getOrientationManual</a></div><div class="ttdeci">bool getOrientationManual(void)</div><div class="ttdoc">Gibt zurueck ob haendische Orientierung verwendet werden soll.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00084">InputParameter.cpp:84</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a15d6fb6e9ed6a2f74ab8d29f21a51575"><div class="ttname"><a href="class_c_input_parameter.html#a15d6fb6e9ed6a2f74ab8d29f21a51575">CInputParameter::getSpeed</a></div><div class="ttdeci">double getSpeed(void)</div><div class="ttdoc">Gibt Geschwindigkeit zurueck.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00074">InputParameter.cpp:74</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a1b7ac3c105dea6e2c2cd38b88157feee"><div class="ttname"><a href="class_c_input_parameter.html#a1b7ac3c105dea6e2c2cd38b88157feee">CInputParameter::getPath</a></div><div class="ttdeci">vector&lt; list&lt; CInputPoint3D &gt; &gt; &amp; getPath()</div><div class="ttdoc">Gibt Pfad zurueck.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00069">InputParameter.cpp:69</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a20dc6bd4fe1582dd645a886114ae1d78"><div class="ttname"><a href="class_c_input_parameter.html#a20dc6bd4fe1582dd645a886114ae1d78">CInputParameter::orientationManual</a></div><div class="ttdeci">bool orientationManual</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00159">InputParameter.h:159</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a229e6b9e7d884fa57cd032e8fd1dccdb"><div class="ttname"><a href="class_c_input_parameter.html#a229e6b9e7d884fa57cd032e8fd1dccdb">CInputParameter::~CInputParameter</a></div><div class="ttdeci">~CInputParameter(void)</div><div class="ttdoc">Dekonstruktor.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00035">InputParameter.cpp:35</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a2c6f7c743f45164703be3e489d0fb4f0"><div class="ttname"><a href="class_c_input_parameter.html#a2c6f7c743f45164703be3e489d0fb4f0">CInputParameter::openFile</a></div><div class="ttdeci">void openFile(std::string path)</div><div class="ttdoc">Liest die Daten aus dem Input File ein.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00111">InputParameter.cpp:111</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a39a7079b2eccaf59200c42d02f5e7a58"><div class="ttname"><a href="class_c_input_parameter.html#a39a7079b2eccaf59200c42d02f5e7a58">CInputParameter::getAngles</a></div><div class="ttdeci">tuple&lt; double, double, double &gt; getAngles(void)</div><div class="ttdoc">Gibt Winkel zurueck.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00099">InputParameter.cpp:99</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a420116b3f1382f85859259f57a7a2f95"><div class="ttname"><a href="class_c_input_parameter.html#a420116b3f1382f85859259f57a7a2f95">CInputParameter::offsetZ</a></div><div class="ttdeci">double offsetZ</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00191">InputParameter.h:191</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a64ef7dbb87e3eebfae624dede13fcb20"><div class="ttname"><a href="class_c_input_parameter.html#a64ef7dbb87e3eebfae624dede13fcb20">CInputParameter::C</a></div><div class="ttdeci">double C</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00171">InputParameter.h:171</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a7702087cae7dae327790ba4beeb0740b"><div class="ttname"><a href="class_c_input_parameter.html#a7702087cae7dae327790ba4beeb0740b">CInputParameter::getOffsetManual</a></div><div class="ttdeci">bool getOffsetManual(void)</div><div class="ttdoc">Gibt zurueck ob ein Offset eingestellt werden soll.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00089">InputParameter.cpp:89</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a7a9327fd632b7a18eac4e3650cf1375f"><div class="ttname"><a href="class_c_input_parameter.html#a7a9327fd632b7a18eac4e3650cf1375f">CInputParameter::setSpeed</a></div><div class="ttdeci">void setSpeed(double initSpeed, bool initSpeedManual)</div><div class="ttdoc">Setzt Geschwindigkeits Daten.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00063">InputParameter.cpp:63</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a7ada1c037dfd55298b2d7d3c865ec667"><div class="ttname"><a href="class_c_input_parameter.html#a7ada1c037dfd55298b2d7d3c865ec667">CInputParameter::detectJump</a></div><div class="ttdeci">bool detectJump(CInputPoint3D p, double x_prev, double y_prev, double z_prev)</div><div class="ttdoc">Erkennt Spruenge in den Daten.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00153">InputParameter.cpp:153</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a7b6fcb6b63c77adbe75dc476f3e299f3"><div class="ttname"><a href="class_c_input_parameter.html#a7b6fcb6b63c77adbe75dc476f3e299f3">CInputParameter::loggingManual</a></div><div class="ttdeci">bool loggingManual</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00195">InputParameter.h:195</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a7d054f366f9568f02d604708d5529c23"><div class="ttname"><a href="class_c_input_parameter.html#a7d054f366f9568f02d604708d5529c23">CInputParameter::setOffset</a></div><div class="ttdeci">void setOffset(double X, double Y, double Z, bool offsetManual)</div><div class="ttdoc">Setzt den gewuenschten Offset.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00049">InputParameter.cpp:49</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a848430192a01d3a79c7f84664ab04f55"><div class="ttname"><a href="class_c_input_parameter.html#a848430192a01d3a79c7f84664ab04f55">CInputParameter::setLogging</a></div><div class="ttdeci">void setLogging(bool initLoggingManual)</div><div class="ttdoc">Setzt ob es ein detailliertes Logging geben soll.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00057">InputParameter.cpp:57</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_a94105d489929c9c6c36391ae90806e47"><div class="ttname"><a href="class_c_input_parameter.html#a94105d489929c9c6c36391ae90806e47">CInputParameter::getSpeedManual</a></div><div class="ttdeci">bool getSpeedManual(void)</div><div class="ttdoc">Gibt zurueck ob haendische Geschwindigkeit verwendet werden soll.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00079">InputParameter.cpp:79</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_aab1e077fb692132e6c656d05dc4413ba"><div class="ttname"><a href="class_c_input_parameter.html#aab1e077fb692132e6c656d05dc4413ba">CInputParameter::offsetX</a></div><div class="ttdeci">double offsetX</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00183">InputParameter.h:183</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_aae7de58c19fc12c32ddd38732f4a33e0"><div class="ttname"><a href="class_c_input_parameter.html#aae7de58c19fc12c32ddd38732f4a33e0">CInputParameter::CInputParameter</a></div><div class="ttdeci">CInputParameter(void)</div><div class="ttdoc">Default Konstruktor.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00024">InputParameter.cpp:24</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_abc1db148f5a759b3da7a283ae7a67329"><div class="ttname"><a href="class_c_input_parameter.html#abc1db148f5a759b3da7a283ae7a67329">CInputParameter::B</a></div><div class="ttdeci">double B</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00167">InputParameter.h:167</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_ae1a6fcdaed5065678bb97b0cdd4546d9"><div class="ttname"><a href="class_c_input_parameter.html#ae1a6fcdaed5065678bb97b0cdd4546d9">CInputParameter::offsetY</a></div><div class="ttdeci">double offsetY</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00187">InputParameter.h:187</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_ae7d3f34951c79600ff11c30a8cca3cc1"><div class="ttname"><a href="class_c_input_parameter.html#ae7d3f34951c79600ff11c30a8cca3cc1">CInputParameter::speedManual</a></div><div class="ttdeci">bool speedManual</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00155">InputParameter.h:155</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_aead01c343a4f8798d654baeba5ce4a51"><div class="ttname"><a href="class_c_input_parameter.html#aead01c343a4f8798d654baeba5ce4a51">CInputParameter::speed</a></div><div class="ttdeci">double speed</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00151">InputParameter.h:151</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_aebed0a8873555a54cbed12a61219fce8"><div class="ttname"><a href="class_c_input_parameter.html#aebed0a8873555a54cbed12a61219fce8">CInputParameter::getOffset</a></div><div class="ttdeci">tuple&lt; double, double, double &gt; getOffset(void)</div><div class="ttdoc">Gibt Offset zurueck.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00104">InputParameter.cpp:104</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_af3b25ec5c1398b83da05f6d9d680ad2f"><div class="ttname"><a href="class_c_input_parameter.html#af3b25ec5c1398b83da05f6d9d680ad2f">CInputParameter::initialPath</a></div><div class="ttdeci">vector&lt; list&lt; CInputPoint3D &gt; &gt; initialPath</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00147">InputParameter.h:147</a></div></div>
+<div class="ttc" id="aclass_c_input_parameter_html_af4692e32d893bf00164e897f8a19f17a"><div class="ttname"><a href="class_c_input_parameter.html#af4692e32d893bf00164e897f8a19f17a">CInputParameter::getLoggingManual</a></div><div class="ttdeci">bool getLoggingManual(void)</div><div class="ttdoc">Gibt zurueck ob ein detailliertes Logging ausgegeben werden soll.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8cpp_source.html#l00094">InputParameter.cpp:94</a></div></div>
+<div class="ttc" id="aclass_c_input_point3_d_html"><div class="ttname"><a href="class_c_input_point3_d.html">CInputPoint3D</a></div><div class="ttdoc">Input Punkt.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00106">Point3D.h:107</a></div></div>
+<div class="ttc" id="aclass_c_input_point3_d_html_a71805ac924595c9e4fb977ca21246f6b"><div class="ttname"><a href="class_c_input_point3_d.html#a71805ac924595c9e4fb977ca21246f6b">CInputPoint3D::setPoint</a></div><div class="ttdeci">void setPoint(double time, double X, double Y, double Z, CEulerMatrix orientation)</div><div class="ttdoc">Setzt einen Input Punkt.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00135">Point3D.cpp:135</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_a73feea0036b64b0604c10058b193ae43"><div class="ttname"><a href="class_c_point3_d.html#a73feea0036b64b0604c10058b193ae43">CPoint3D::getZ</a></div><div class="ttdeci">double getZ()</div><div class="ttdoc">Gibt Z zurueck.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00042">Point3D.cpp:42</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_a7d6b88b707eef43f162f6da8de9a4a62"><div class="ttname"><a href="class_c_point3_d.html#a7d6b88b707eef43f162f6da8de9a4a62">CPoint3D::getX</a></div><div class="ttdeci">double getX()</div><div class="ttdoc">Gibt X zurueck.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00032">Point3D.cpp:32</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_ace64e8f7777f557ef0ca44bc5fed7326"><div class="ttname"><a href="class_c_point3_d.html#ace64e8f7777f557ef0ca44bc5fed7326">CPoint3D::getY</a></div><div class="ttdeci">double getY()</div><div class="ttdoc">Gibt Y zurueck.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00037">Point3D.cpp:37</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

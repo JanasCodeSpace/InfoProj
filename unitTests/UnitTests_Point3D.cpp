@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../header/Point3D.h"
-#include "../header/Line3D.h"
+#include "../RobPathGen/header/Point3D.h"
+#include "../RobPathGen/header/Line3D.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace Point3D

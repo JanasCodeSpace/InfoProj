@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RobCodeGenerator: header/RobCodeGenerator.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RobCodeGenerator
+   </div>
+   <div id="projectbrief">Dieses Tool erstellt aus mit einem Sensor aufgenommenen Pfaden einen Kuka Roboter lesbaren Code. Dabei sind ein paar Werte einstellbar.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Lade ...</div>
+<div class="SRStatus" id="Searching">Suche ...</div>
+<div class="SRStatus" id="NoMatches">Keine Treffer</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_1ec98ce50fa6ec55b40b8ffb1df38c3c.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">RobCodeGenerator.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_rob_code_generator_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_point3_d_8h.html">Point3D.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_logging_8h.html">Logging.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_input_parameter_8h.html">InputParameter.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_rob_code_generator_8h.html#ac2cd96d53dd3ba6407db6766c3d92b26">   18</a></span><span class="preprocessor">#define MAX_SPEED 2.0</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_c_rob_code_generator.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_rob_code_generator.html">CRobCodeGenerator</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="class_c_rob_code_generator.html#aca0cd42605627710ccd271b877f8835e">CRobCodeGenerator</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="class_c_rob_code_generator.html#aca0cd42605627710ccd271b877f8835e">CRobCodeGenerator</a>(<a class="code hl_class" href="class_c_input_parameter.html">CInputParameter</a> inputParam);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="class_c_rob_code_generator.html#a56ba70ada888827409eff9288282b48b">~CRobCodeGenerator</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_rob_code_generator.html#ab5d4efbaf76bcaaff34a79259dd699bf">generateRobCode</a>(vector&lt;CInputPoint3D&gt;&amp; path, <span class="keywordtype">string</span> filepath, <span class="keywordtype">string</span> filename, <a class="code hl_class" href="class_c_logging.html">CLogging</a> log);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_rob_code_generator.html#ae075389c789bb131a6b8209a7b7d0690">postProcessing</a>(vector&lt;CInputPoint3D&gt;&amp; path);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_c_rob_code_generator.html#a7d1b9da357bc85b5d6942adb41eed931">calculateSpeed</a>(<a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a>&amp; p, <span class="keywordtype">size_t</span> i, <span class="keywordtype">double</span> timePrev);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_rob_code_generator.html#a322a66503f10674f4479388ed0bc2328">calculateAngles</a>(<a class="code hl_class" href="class_c_output_point3_d.html">COutputPoint3D</a>&amp; p, <a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a>&amp; pIn);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_c_rob_code_generator.html#a4cd474d8c607e9df2ec52885c7d68bdc">   84</a></span>    vector&lt;COutputPoint3D&gt; <a class="code hl_variable" href="class_c_rob_code_generator.html#a4cd474d8c607e9df2ec52885c7d68bdc">processedPath</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_c_rob_code_generator.html#a1c77ee1390f46dabf0d04aeb50ca7a1a">   88</a></span>    <a class="code hl_class" href="class_c_input_parameter.html">CInputParameter</a> <a class="code hl_variable" href="class_c_rob_code_generator.html#a1c77ee1390f46dabf0d04aeb50ca7a1a">input</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="ttc" id="a_input_parameter_8h_html"><div class="ttname"><a href="_input_parameter_8h.html">InputParameter.h</a></div><div class="ttdoc">Header File Daten Einlesen.</div></div>
+<div class="ttc" id="a_logging_8h_html"><div class="ttname"><a href="_logging_8h.html">Logging.h</a></div><div class="ttdoc">Logging der Daten.</div></div>
+<div class="ttc" id="a_point3_d_8h_html"><div class="ttname"><a href="_point3_d_8h.html">Point3D.h</a></div><div class="ttdoc">Verarbeitung der Punkte.</div></div>
+<div class="ttc" id="aclass_c_input_parameter_html"><div class="ttname"><a href="class_c_input_parameter.html">CInputParameter</a></div><div class="ttdoc">Handling Eingabedaten.</div><div class="ttdef"><b>Definition</b> <a href="_input_parameter_8h_source.html#l00025">InputParameter.h:26</a></div></div>
+<div class="ttc" id="aclass_c_input_point3_d_html"><div class="ttname"><a href="class_c_input_point3_d.html">CInputPoint3D</a></div><div class="ttdoc">Input Punkt.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00106">Point3D.h:107</a></div></div>
+<div class="ttc" id="aclass_c_logging_html"><div class="ttname"><a href="class_c_logging.html">CLogging</a></div><div class="ttdoc">Gleitender Mittelwertfilter.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8h_source.html#l00022">Logging.h:23</a></div></div>
+<div class="ttc" id="aclass_c_output_point3_d_html"><div class="ttname"><a href="class_c_output_point3_d.html">COutputPoint3D</a></div><div class="ttdoc">Output Punkt.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00177">Point3D.h:178</a></div></div>
+<div class="ttc" id="aclass_c_rob_code_generator_html"><div class="ttname"><a href="class_c_rob_code_generator.html">CRobCodeGenerator</a></div><div class="ttdoc">Klasse zum erstellen des Roboter Codes.</div><div class="ttdef"><b>Definition</b> <a href="_rob_code_generator_8h_source.html#l00025">RobCodeGenerator.h:26</a></div></div>
+<div class="ttc" id="aclass_c_rob_code_generator_html_a1c77ee1390f46dabf0d04aeb50ca7a1a"><div class="ttname"><a href="class_c_rob_code_generator.html#a1c77ee1390f46dabf0d04aeb50ca7a1a">CRobCodeGenerator::input</a></div><div class="ttdeci">CInputParameter input</div><div class="ttdef"><b>Definition</b> <a href="_rob_code_generator_8h_source.html#l00088">RobCodeGenerator.h:88</a></div></div>
+<div class="ttc" id="aclass_c_rob_code_generator_html_a322a66503f10674f4479388ed0bc2328"><div class="ttname"><a href="class_c_rob_code_generator.html#a322a66503f10674f4479388ed0bc2328">CRobCodeGenerator::calculateAngles</a></div><div class="ttdeci">void calculateAngles(COutputPoint3D &amp;p, CInputPoint3D &amp;pIn)</div><div class="ttdoc">Berechnet die Geschwindigkeit zwischen zwei Punkten.</div><div class="ttdef"><b>Definition</b> <a href="_rob_code_generator_8cpp_source.html#l00131">RobCodeGenerator.cpp:131</a></div></div>
+<div class="ttc" id="aclass_c_rob_code_generator_html_a4cd474d8c607e9df2ec52885c7d68bdc"><div class="ttname"><a href="class_c_rob_code_generator.html#a4cd474d8c607e9df2ec52885c7d68bdc">CRobCodeGenerator::processedPath</a></div><div class="ttdeci">vector&lt; COutputPoint3D &gt; processedPath</div><div class="ttdef"><b>Definition</b> <a href="_rob_code_generator_8h_source.html#l00084">RobCodeGenerator.h:84</a></div></div>
+<div class="ttc" id="aclass_c_rob_code_generator_html_a56ba70ada888827409eff9288282b48b"><div class="ttname"><a href="class_c_rob_code_generator.html#a56ba70ada888827409eff9288282b48b">CRobCodeGenerator::~CRobCodeGenerator</a></div><div class="ttdeci">~CRobCodeGenerator(void)</div><div class="ttdoc">Dekonstruktor.</div><div class="ttdef"><b>Definition</b> <a href="_rob_code_generator_8cpp_source.html#l00020">RobCodeGenerator.cpp:20</a></div></div>
+<div class="ttc" id="aclass_c_rob_code_generator_html_a7d1b9da357bc85b5d6942adb41eed931"><div class="ttname"><a href="class_c_rob_code_generator.html#a7d1b9da357bc85b5d6942adb41eed931">CRobCodeGenerator::calculateSpeed</a></div><div class="ttdeci">double calculateSpeed(CInputPoint3D &amp;p, size_t i, double timePrev)</div><div class="ttdoc">Berechnet die Geschwindigkeit zwischen zwei Punkten.</div><div class="ttdef"><b>Definition</b> <a href="_rob_code_generator_8cpp_source.html#l00114">RobCodeGenerator.cpp:114</a></div></div>
+<div class="ttc" id="aclass_c_rob_code_generator_html_ab5d4efbaf76bcaaff34a79259dd699bf"><div class="ttname"><a href="class_c_rob_code_generator.html#ab5d4efbaf76bcaaff34a79259dd699bf">CRobCodeGenerator::generateRobCode</a></div><div class="ttdeci">void generateRobCode(vector&lt; CInputPoint3D &gt; &amp;path, string filepath, string filename, CLogging log)</div><div class="ttdoc">Erstellt Roboter Code File.</div><div class="ttdef"><b>Definition</b> <a href="_rob_code_generator_8cpp_source.html#l00024">RobCodeGenerator.cpp:24</a></div></div>
+<div class="ttc" id="aclass_c_rob_code_generator_html_aca0cd42605627710ccd271b877f8835e"><div class="ttname"><a href="class_c_rob_code_generator.html#aca0cd42605627710ccd271b877f8835e">CRobCodeGenerator::CRobCodeGenerator</a></div><div class="ttdeci">CRobCodeGenerator(void)</div><div class="ttdoc">Default Konstruktor.</div><div class="ttdef"><b>Definition</b> <a href="_rob_code_generator_8cpp_source.html#l00010">RobCodeGenerator.cpp:10</a></div></div>
+<div class="ttc" id="aclass_c_rob_code_generator_html_ae075389c789bb131a6b8209a7b7d0690"><div class="ttname"><a href="class_c_rob_code_generator.html#ae075389c789bb131a6b8209a7b7d0690">CRobCodeGenerator::postProcessing</a></div><div class="ttdeci">void postProcessing(vector&lt; CInputPoint3D &gt; &amp;path)</div><div class="ttdoc">Nachbearbeitung der Daten.</div><div class="ttdef"><b>Definition</b> <a href="_rob_code_generator_8cpp_source.html#l00076">RobCodeGenerator.cpp:76</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

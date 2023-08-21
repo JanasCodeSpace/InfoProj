@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../mainProject/header/PathBuilder.h"
+#include "../RobPathGen/header/PathBuilder.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace PathBuilder

@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../mainProject/header/EulerMatrix.h"
+#include "../RobPathGen/header/EulerMatrix.h"
 #include <math.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;

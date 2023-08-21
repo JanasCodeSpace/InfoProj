@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../mainProject/header/Line3D.h"
+#include "../RobPathGen/header/Line3D.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace Line3D

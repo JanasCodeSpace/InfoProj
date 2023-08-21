@@ -1,7 +1,8 @@
 /* Niedrige Prio, da Ergebnis bei Integrationstests geprüft wird */
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../mainProject/header/Logging.h"
+#include "../RobPathGen/header/Logging.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace Logging

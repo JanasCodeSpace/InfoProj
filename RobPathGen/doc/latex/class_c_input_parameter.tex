@@ -1,0 +1,903 @@
+\doxysection{CInput\+Parameter Klassenreferenz}
+\hypertarget{class_c_input_parameter}{}\label{class_c_input_parameter}\index{CInputParameter@{CInputParameter}}
+
+
+Handling Eingabedaten.  
+
+
+
+
+{\ttfamily \#include $<$Input\+Parameter.\+h$>$}
+
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0}{CInput\+Parameter}} (void)
+\begin{DoxyCompactList}\small\item\em Default Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_input_parameter_a476e60fd10e2430c388f335398f095cb}{CInput\+Parameter}} (double init\+Speed, bool init\+Seep\+Manual, bool init\+Orientation\+Manual, double initA, double initB, double initC)
+\begin{DoxyCompactList}\small\item\em Konstruktor mit Werten. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_input_parameter_a229e6b9e7d884fa57cd032e8fd1dccdb}{\texorpdfstring{$\sim$}{\string~}\+CInput\+Parameter}} (void)
+\begin{DoxyCompactList}\small\item\em Dekonstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_input_parameter_a04c9fc7d2724593c144586edea4f004e}{set\+Orientation}} (bool init\+Orientation\+Manual, double initA, double initB, double initC)
+\begin{DoxyCompactList}\small\item\em Setzt Orientierungs Daten. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_input_parameter_a7a9327fd632b7a18eac4e3650cf1375f}{set\+Speed}} (double init\+Speed, bool init\+Speed\+Manual)
+\begin{DoxyCompactList}\small\item\em Setzt Geschwindigkeits Daten. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_input_parameter_a7d054f366f9568f02d604708d5529c23}{set\+Offset}} (double X, double Y, double Z, bool \mbox{\hyperlink{class_c_input_parameter_a0a846cec65de60f9c444f507edc69317}{offset\+Manual}})
+\begin{DoxyCompactList}\small\item\em Setzt den gewuenschten Offset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_input_parameter_a848430192a01d3a79c7f84664ab04f55}{set\+Logging}} (bool init\+Logging\+Manual)
+\begin{DoxyCompactList}\small\item\em Setzt ob es ein detailliertes Logging geben soll. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575}{get\+Speed}} (void)
+\begin{DoxyCompactList}\small\item\em Gibt Geschwindigkeit zurueck. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}{get\+Speed\+Manual}} (void)
+\begin{DoxyCompactList}\small\item\em Gibt zurueck ob haendische Geschwindigkeit verwendet werden soll. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_input_parameter_a0cce4aa7d1efbbca24fa9e531a700097}{get\+Orientation\+Manual}} (void)
+\begin{DoxyCompactList}\small\item\em Gibt zurueck ob haendische Orientierung verwendet werden soll. \end{DoxyCompactList}\item 
+tuple$<$ double, double, double $>$ \mbox{\hyperlink{class_c_input_parameter_a39a7079b2eccaf59200c42d02f5e7a58}{get\+Angles}} (void)
+\begin{DoxyCompactList}\small\item\em Gibt Winkel zurueck. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_input_parameter_a7702087cae7dae327790ba4beeb0740b}{get\+Offset\+Manual}} (void)
+\begin{DoxyCompactList}\small\item\em Gibt zurueck ob ein Offset eingestellt werden soll. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_input_parameter_af4692e32d893bf00164e897f8a19f17a}{get\+Logging\+Manual}} (void)
+\begin{DoxyCompactList}\small\item\em Gibt zurueck ob ein detailliertes Logging ausgegeben werden soll. \end{DoxyCompactList}\item 
+tuple$<$ double, double, double $>$ \mbox{\hyperlink{class_c_input_parameter_aebed0a8873555a54cbed12a61219fce8}{get\+Offset}} (void)
+\begin{DoxyCompactList}\small\item\em Gibt Offset zurueck. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_input_parameter_a2c6f7c743f45164703be3e489d0fb4f0}{open\+File}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Liest die Daten aus dem Input File ein. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_input_parameter_a7ada1c037dfd55298b2d7d3c865ec667}{detect\+Jump}} (\mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} p, double x\+\_\+prev, double y\+\_\+prev, double z\+\_\+prev)
+\begin{DoxyCompactList}\small\item\em Erkennt Spruenge in den Daten. \end{DoxyCompactList}\item 
+vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \& \mbox{\hyperlink{class_c_input_parameter_a1b7ac3c105dea6e2c2cd38b88157feee}{get\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Gibt Pfad zurueck. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \mbox{\hyperlink{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}{initial\+Path}}
+\item 
+double \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}}
+\item 
+bool \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speed\+Manual}}
+\item 
+bool \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientation\+Manual}}
+\item 
+double \mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}}
+\item 
+double \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}}
+\item 
+double \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}}
+\item 
+double \mbox{\hyperlink{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}{difference}} = 20
+\item 
+bool \mbox{\hyperlink{class_c_input_parameter_a0a846cec65de60f9c444f507edc69317}{offset\+Manual}}
+\item 
+double \mbox{\hyperlink{class_c_input_parameter_aab1e077fb692132e6c656d05dc4413ba}{offsetX}}
+\item 
+double \mbox{\hyperlink{class_c_input_parameter_ae1a6fcdaed5065678bb97b0cdd4546d9}{offsetY}}
+\item 
+double \mbox{\hyperlink{class_c_input_parameter_a420116b3f1382f85859259f57a7a2f95}{offsetZ}}
+\item 
+bool \mbox{\hyperlink{class_c_input_parameter_a7b6fcb6b63c77adbe75dc476f3e299f3}{logging\+Manual}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+Handling Eingabedaten. 
+
+In dieser Klasse werden die eingelesenen einstellbaren Daten und das einlesen der Daten aus der Eingabedatei gehandelt. 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00025}{25}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\Hypertarget{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0}\label{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0} 
+\index{CInputParameter@{CInputParameter}!CInputParameter@{CInputParameter}}
+\index{CInputParameter@{CInputParameter}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{CInputParameter()}{CInputParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CInput\+Parameter\+::\+CInput\+Parameter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Default Konstruktor. 
+
+Initialisiert die Input Daten mit Null \begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_input_parameter_a476e60fd10e2430c388f335398f095cb}{CInput\+Parameter(double init\+Speed, bool init\+Seep\+Manual, bool init\+Orientation\+Manual, double init\+A, double init\+B, double init\+C)} 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00024}{24}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}}\ =\ 0.1;}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}}\ =\ 0;}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}}\ =\ 75;}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}}\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speedManual}}\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientationManual}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00163}{A}}, \mbox{\hyperlink{_input_parameter_8h_source_l00167}{B}}, \mbox{\hyperlink{_input_parameter_8h_source_l00171}{C}}, \mbox{\hyperlink{_input_parameter_8h_source_l00159}{orientation\+Manual}}, \mbox{\hyperlink{_input_parameter_8h_source_l00151}{speed}} und \mbox{\hyperlink{_input_parameter_8h_source_l00155}{speed\+Manual}}.
+
+\Hypertarget{class_c_input_parameter_a476e60fd10e2430c388f335398f095cb}\label{class_c_input_parameter_a476e60fd10e2430c388f335398f095cb} 
+\index{CInputParameter@{CInputParameter}!CInputParameter@{CInputParameter}}
+\index{CInputParameter@{CInputParameter}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{CInputParameter()}{CInputParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CInput\+Parameter\+::\+CInput\+Parameter (\begin{DoxyParamCaption}\item[{double}]{init\+Speed,  }\item[{bool}]{init\+Seep\+Manual,  }\item[{bool}]{init\+Orientation\+Manual,  }\item[{double}]{initA,  }\item[{double}]{initB,  }\item[{double}]{initC }\end{DoxyParamCaption})}
+
+
+
+Konstruktor mit Werten. 
+
+Initialisiert die Input Daten 
+\begin{DoxyParams}{Parameter}
+{\em double} & init\+Speed \\
+\hline
+{\em bool} & init\+Seep\+Manual \\
+\hline
+{\em bool} & init\+Orientation\+Manual \\
+\hline
+{\em double} & initA \\
+\hline
+{\em double} & initB \\
+\hline
+{\em double} & initC \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Siehe auch}
+\doxylink{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0}{CInput\+Parameter()} 
+
+\doxylink{class_c_input_parameter_a229e6b9e7d884fa57cd032e8fd1dccdb}{\texorpdfstring{$\sim$}{\string~}\+CInput\+Parameter()} 
+
+\doxylink{class_c_input_parameter_aae7de58c19fc12c32ddd38732f4a33e0}{CInput\+Parameter(void)}; 
+\end{DoxySeeAlso}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00012}{12}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}}\ =\ initSpeed;}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speedManual}}\ =\ initSpeedManual;}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientationManual}}\ =\ initOrientationManual;}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}}\ =\ initA;}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}}\ =\ initB;}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}}\ =\ initC;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00163}{A}}, \mbox{\hyperlink{_input_parameter_8h_source_l00167}{B}}, \mbox{\hyperlink{_input_parameter_8h_source_l00171}{C}}, \mbox{\hyperlink{_input_parameter_8h_source_l00159}{orientation\+Manual}}, \mbox{\hyperlink{_input_parameter_8h_source_l00151}{speed}} und \mbox{\hyperlink{_input_parameter_8h_source_l00155}{speed\+Manual}}.
+
+\Hypertarget{class_c_input_parameter_a229e6b9e7d884fa57cd032e8fd1dccdb}\label{class_c_input_parameter_a229e6b9e7d884fa57cd032e8fd1dccdb} 
+\index{CInputParameter@{CInputParameter}!````~CInputParameter@{\texorpdfstring{$\sim$}{\string~}CInputParameter}}
+\index{````~CInputParameter@{\texorpdfstring{$\sim$}{\string~}CInputParameter}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CInputParameter()}{\string~CInputParameter()}}
+{\footnotesize\ttfamily CInput\+Parameter\+::\texorpdfstring{$\sim$}{\string~}\+CInput\+Parameter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Dekonstruktor. 
+
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00035}{35}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{class_c_input_parameter_a7ada1c037dfd55298b2d7d3c865ec667}\label{class_c_input_parameter_a7ada1c037dfd55298b2d7d3c865ec667} 
+\index{CInputParameter@{CInputParameter}!detectJump@{detectJump}}
+\index{detectJump@{detectJump}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{detectJump()}{detectJump()}}
+{\footnotesize\ttfamily bool CInput\+Parameter\+::detect\+Jump (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}}}]{p,  }\item[{double}]{x\+\_\+prev,  }\item[{double}]{y\+\_\+prev,  }\item[{double}]{z\+\_\+prev }\end{DoxyParamCaption})}
+
+
+
+Erkennt Spruenge in den Daten. 
+
+Um zu erkennen ob es mehrere Pfade sind wird nach Spruengen gesucht, bei einem Sprung wird eine neue Liste angefangen. 
+\begin{DoxyParams}{Parameter}
+{\em \doxylink{class_c_input_point3_d}{CInput\+Point3D}} & p den aktuellen Punkt \\
+\hline
+{\em double} & x\+\_\+prev die vorherige x Position \\
+\hline
+{\em double} & y\+\_\+prev die vorherige y Position \\
+\hline
+{\em double} & z\+\_\+prev die vorherige z Position \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00153}{153}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00154\ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordflow}{if}(abs(p.\mbox{\hyperlink{class_c_point3_d_a7d6b88b707eef43f162f6da8de9a4a62}{getX}}()\ -\/\ x\_prev)\ >\ \mbox{\hyperlink{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}{difference}})\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Abstand\ zwischen\ Punkten\ groesser\ max\ Differenz??}}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(abs(p.\mbox{\hyperlink{class_c_point3_d_ace64e8f7777f557ef0ca44bc5fed7326}{getY}}()\ -\/\ y\_prev)\ >\ \mbox{\hyperlink{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}{difference}})\ \ \ \ \ \ \textcolor{comment}{//\ Abstand\ zwischen\ Punkten\ groesser\ max\ Differenz??}}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(abs(p.\mbox{\hyperlink{class_c_point3_d_a73feea0036b64b0604c10058b193ae43}{getZ}}()\ -\/\ z\_prev)\ >\ \mbox{\hyperlink{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}{difference}})\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Abstand\ zwischen\ Punkten\ groesser\ max\ Differenz??}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00163\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00175}{difference}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00032}{CPoint3\+D\+::get\+X()}}, \mbox{\hyperlink{_point3_d_8cpp_source_l00037}{CPoint3\+D\+::get\+Y()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00042}{CPoint3\+D\+::get\+Z()}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00111}{open\+File()}}.
+
+\Hypertarget{class_c_input_parameter_a39a7079b2eccaf59200c42d02f5e7a58}\label{class_c_input_parameter_a39a7079b2eccaf59200c42d02f5e7a58} 
+\index{CInputParameter@{CInputParameter}!getAngles@{getAngles}}
+\index{getAngles@{getAngles}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{getAngles()}{getAngles()}}
+{\footnotesize\ttfamily tuple$<$ double, double, double $>$ CInput\+Parameter\+::get\+Angles (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt Winkel zurueck. 
+
+Gibt die eingegebenen Winkel als tuple zurueck \begin{DoxyReturn}{Rückgabe}
+\+: tuple $<$double double double$>$ angles 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00099}{99}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00100\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordflow}{return}\ make\_tuple(\mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}},\ \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}},\ \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}});\ \ \ \ \ \ \textcolor{comment}{//\ Winkel\ zurueck\ geben}}
+\DoxyCodeLine{00102\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00163}{A}}, \mbox{\hyperlink{_input_parameter_8h_source_l00167}{B}} und \mbox{\hyperlink{_input_parameter_8h_source_l00171}{C}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00076}{CRob\+Code\+Generator\+::post\+Processing()}}.
+
+\Hypertarget{class_c_input_parameter_af4692e32d893bf00164e897f8a19f17a}\label{class_c_input_parameter_af4692e32d893bf00164e897f8a19f17a} 
+\index{CInputParameter@{CInputParameter}!getLoggingManual@{getLoggingManual}}
+\index{getLoggingManual@{getLoggingManual}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{getLoggingManual()}{getLoggingManual()}}
+{\footnotesize\ttfamily bool CInput\+Parameter\+::get\+Logging\+Manual (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt zurueck ob ein detailliertes Logging ausgegeben werden soll. 
+
+Gibt zurueck ob ein detailliertes Logging ausgegeben werden soll 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00094}{94}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_a7b6fcb6b63c77adbe75dc476f3e299f3}{loggingManual}};\ \ \ \ \ \ \textcolor{comment}{//\ Vorgewaehlte\ Einstellung\ fuer\ das\ Logging\ zurueck}}
+\DoxyCodeLine{00097\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00195}{logging\+Manual}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{GUI\+::calculate()}}.
+
+\Hypertarget{class_c_input_parameter_aebed0a8873555a54cbed12a61219fce8}\label{class_c_input_parameter_aebed0a8873555a54cbed12a61219fce8} 
+\index{CInputParameter@{CInputParameter}!getOffset@{getOffset}}
+\index{getOffset@{getOffset}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{getOffset()}{getOffset()}}
+{\footnotesize\ttfamily tuple$<$ double, double, double $>$ CInput\+Parameter\+::get\+Offset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt Offset zurueck. 
+
+Gibt den Offset als tuple zurueck \begin{DoxyReturn}{Rückgabe}
+\+: tuple $<$double double double$>$ offset 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00104}{104}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00105\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordflow}{return}\ make\_tuple(\mbox{\hyperlink{class_c_input_parameter_aab1e077fb692132e6c656d05dc4413ba}{offsetX}},\ \mbox{\hyperlink{class_c_input_parameter_ae1a6fcdaed5065678bb97b0cdd4546d9}{offsetY}},\ \mbox{\hyperlink{class_c_input_parameter_a420116b3f1382f85859259f57a7a2f95}{offsetZ}});\ \ \ \ \ \ \textcolor{comment}{//\ Offset\ zurueck\ geben}}
+\DoxyCodeLine{00107\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00183}{offsetX}}, \mbox{\hyperlink{_input_parameter_8h_source_l00187}{offsetY}} und \mbox{\hyperlink{_input_parameter_8h_source_l00191}{offsetZ}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00024}{CRob\+Code\+Generator\+::generate\+Rob\+Code()}}.
+
+\Hypertarget{class_c_input_parameter_a7702087cae7dae327790ba4beeb0740b}\label{class_c_input_parameter_a7702087cae7dae327790ba4beeb0740b} 
+\index{CInputParameter@{CInputParameter}!getOffsetManual@{getOffsetManual}}
+\index{getOffsetManual@{getOffsetManual}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{getOffsetManual()}{getOffsetManual()}}
+{\footnotesize\ttfamily bool CInput\+Parameter\+::get\+Offset\+Manual (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt zurueck ob ein Offset eingestellt werden soll. 
+
+Gibt zurueck ob ein Offset eingestellt werden soll 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00089}{89}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00090\ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_a0a846cec65de60f9c444f507edc69317}{offsetManual}};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Vorgewaehlte\ Einstellung\ fuer\ den\ Offset\ zurueck}}
+\DoxyCodeLine{00092\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00179}{offset\+Manual}}.
+
+\Hypertarget{class_c_input_parameter_a0cce4aa7d1efbbca24fa9e531a700097}\label{class_c_input_parameter_a0cce4aa7d1efbbca24fa9e531a700097} 
+\index{CInputParameter@{CInputParameter}!getOrientationManual@{getOrientationManual}}
+\index{getOrientationManual@{getOrientationManual}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{getOrientationManual()}{getOrientationManual()}}
+{\footnotesize\ttfamily bool CInput\+Parameter\+::get\+Orientation\+Manual (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt zurueck ob haendische Orientierung verwendet werden soll. 
+
+Gibt zurueck ob haendische Orientierung verwendet werden soll, sonst wird sie spaeter berechnet. 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00084}{84}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085\ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientationManual}};\ \ \ \ \ \ \textcolor{comment}{//\ Vorgewaehlte\ Einstellung\ fuer\ Orientierung\ zurueck\ geben}}
+\DoxyCodeLine{00087\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00159}{orientation\+Manual}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00076}{CRob\+Code\+Generator\+::post\+Processing()}}.
+
+\Hypertarget{class_c_input_parameter_a1b7ac3c105dea6e2c2cd38b88157feee}\label{class_c_input_parameter_a1b7ac3c105dea6e2c2cd38b88157feee} 
+\index{CInputParameter@{CInputParameter}!getPath@{getPath}}
+\index{getPath@{getPath}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily vector$<$ list$<$ \mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}} $>$ $>$ \& CInput\+Parameter\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt Pfad zurueck. 
+
+\begin{DoxyReturn}{Rückgabe}
+\+: vector$<$list$<$\+CInput\+Point3\+D$>$$>$ den eingelesen Pfad 
+\end{DoxyReturn}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00069}{69}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}{initialPath}};\ \ \ \ \ \ \textcolor{comment}{//\ Path\ zurueck\ geben}}
+\DoxyCodeLine{00072\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00147}{initial\+Path}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{GUI\+::calculate()}}.
+
+\Hypertarget{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575}\label{class_c_input_parameter_a15d6fb6e9ed6a2f74ab8d29f21a51575} 
+\index{CInputParameter@{CInputParameter}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily double CInput\+Parameter\+::get\+Speed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt Geschwindigkeit zurueck. 
+
+Gibt die eingegebene Geschwindigkeit zurueck 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00074}{74}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Geschwindigkeit\ zurueck\ geben}}
+\DoxyCodeLine{00077\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00151}{speed}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00024}{CRob\+Code\+Generator\+::generate\+Rob\+Code()}} und \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00076}{CRob\+Code\+Generator\+::post\+Processing()}}.
+
+\Hypertarget{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47}\label{class_c_input_parameter_a94105d489929c9c6c36391ae90806e47} 
+\index{CInputParameter@{CInputParameter}!getSpeedManual@{getSpeedManual}}
+\index{getSpeedManual@{getSpeedManual}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{getSpeedManual()}{getSpeedManual()}}
+{\footnotesize\ttfamily bool CInput\+Parameter\+::get\+Speed\+Manual (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gibt zurueck ob haendische Geschwindigkeit verwendet werden soll. 
+
+Gibt zurueck ob haendische Geschwindigekit verwendet werden soll, sonst wird sie spaeter berechnet. 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00079}{79}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00080\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speedManual}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Vorgewaehlte\ Einstellung\ fuer\ Geschwindigkeit\ zurueck\ geben}}
+\DoxyCodeLine{00082\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00155}{speed\+Manual}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00024}{CRob\+Code\+Generator\+::generate\+Rob\+Code()}} und \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00076}{CRob\+Code\+Generator\+::post\+Processing()}}.
+
+\Hypertarget{class_c_input_parameter_a2c6f7c743f45164703be3e489d0fb4f0}\label{class_c_input_parameter_a2c6f7c743f45164703be3e489d0fb4f0} 
+\index{CInputParameter@{CInputParameter}!openFile@{openFile}}
+\index{openFile@{openFile}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{openFile()}{openFile()}}
+{\footnotesize\ttfamily void CInput\+Parameter\+::open\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Liest die Daten aus dem Input File ein. 
+
+Liest die Daten aus einen beliebigen File ein und ruft @detect\+Jump auf um zu erkennen ob es mehrere Aufnahmen sind. 
+\begin{DoxyParams}{Parameter}
+{\em File} & Pfad \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00111}{111}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00112\ \{}
+\DoxyCodeLine{00113\ \ \ \ \ ifstream\ fin(path);}
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{class_c_input_point3_d}{CInputPoint3D}}\ tmpPoint;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Zwischenspeicher\ zum\ konvertieren\ von\ tmpEuler\ in\ Point3D}}
+\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ tmpEuler;\ \ \ \ \ \ \textcolor{comment}{//\ Zwischenspeicher\ zum\ konverteiren\ von\ DummyMatrix\ in\ EulerMatrix}}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{double}\ x,\ y,\ z;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Punktkoordinaten}}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{double}\ x\_prev\ =\ 0,\ y\_prev\ =\ 0,\ z\_prev\ =\ 0;\ \ \ \ \ \ \textcolor{comment}{//\ Zwischenspeicher\ fuer\ Punktkoordinaten}}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{double}\ timestamp;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Zeitstempel}}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{int}\ segmentCount\ =\ -\/1;\ \ \ \ \ \ \textcolor{comment}{//\ Segmentzaehler}}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{float}\ dummyMatrix[3][3];\ \ \ \ \textcolor{comment}{//\ DummyMatrix\ zum\ speichern}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordflow}{if}\ (!fin.is\_open())}
+\DoxyCodeLine{00124\ \ \ \ \ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Datei\ konnte\ nicht\ geoeffnet\ werden"{}}\ <<\ endl;\ \ \ \ \ \ \textcolor{comment}{//\ Fehler\ Datei\ konnte\ nicht\ geoeffnet\ werden.}}
+\DoxyCodeLine{00126\ \ \ \ \ \}}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{string}\ line;}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordflow}{while}(getline(fin,\ line))}
+\DoxyCodeLine{00130\ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ std::istringstream\ sStream\ (line);}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ sStream\ >>\ timestamp\ >>\ x\ >>\ y\ >>\ z\ >>\ dummyMatrix[0][0]\ >>\ dummyMatrix[0][1]\ >>\ dummyMatrix[0][2]\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Zeile\ in\ die\ einzelnen\ Parameter\ zerlegen\ }}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ >>\ dummyMatrix[1][0]\ >>\ dummyMatrix[1][1]\ >>\ dummyMatrix[1][2]\ >>\ dummyMatrix[2][0]\ >>\ dummyMatrix[2][1]\ >>\ dummyMatrix[2][2];\ \ \ \ \ \ \textcolor{comment}{//\ und\ in\ DummyMatrix\ bzw.\ Variablen\ abspeichern}}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_aee7e2a7b47908dd7f9771e1dfb98cc41}{setMatrix}}(dummyMatrix);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ DummyMatrix[3][3]\ in\ EulerMatrix\ speichern\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ tmpPoint.\mbox{\hyperlink{class_c_input_point3_d_a71805ac924595c9e4fb977ca21246f6b}{setPoint}}(timestamp,\ x,\ y,\ z,\ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}{getEulerMatrix}}());\ \textcolor{comment}{//\ Variablen\ und\ EulerWinkel\ in\ CPoint3D\ speichern}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_c_input_parameter_a7ada1c037dfd55298b2d7d3c865ec667}{detectJump}}(tmpPoint,\ x\_prev,\ y\_prev,\ z\_prev))\ \textcolor{comment}{//\ if\ there\ is\ a\ jump\ in\ the\ data,\ start\ da\ new\ segment\ }}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ segmentCount++;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ neues\ Segement\ anlegen}}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}{initialPath}}.push\_back(list<CInputPoint3D>());\ \ \ \ \textcolor{comment}{//\ Punkt\ in\ Segent\ speichern}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}{initialPath}}[segmentCount].push\_back(tmpPoint);\ \ \ \ \ \ \ \textcolor{comment}{//\ Punkt\ in\ bestehendes\ Segment\ abspeichern}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ x\_prev\ =\ x;\ \ \ \ \ \textcolor{comment}{//\ X-\/Wert\ zwischenspeichern}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ y\_prev\ =\ y;\ \ \ \ \ \textcolor{comment}{//\ Y-\/Wert\ zwischenspeichern}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ z\_prev\ =\ z;\ \ \ \ \ \textcolor{comment}{//\ Z-\/Wert\ zwischenspeichern}}
+\DoxyCodeLine{00149\ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ fin.close();\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Datei\ schliessen}}
+\DoxyCodeLine{00151\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8cpp_source_l00153}{detect\+Jump()}}, \mbox{\hyperlink{_euler_matrix_8cpp_source_l00042}{CEuler\+Matrix\+::get\+Euler\+Matrix()}}, \mbox{\hyperlink{_input_parameter_8h_source_l00147}{initial\+Path}}, \mbox{\hyperlink{_euler_matrix_8cpp_source_l00031}{CEuler\+Matrix\+::set\+Matrix()}} und \mbox{\hyperlink{_point3_d_8cpp_source_l00135}{CInput\+Point3\+D\+::set\+Point()}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00185}{GUI\+::calculate()}}.
+
+\Hypertarget{class_c_input_parameter_a848430192a01d3a79c7f84664ab04f55}\label{class_c_input_parameter_a848430192a01d3a79c7f84664ab04f55} 
+\index{CInputParameter@{CInputParameter}!setLogging@{setLogging}}
+\index{setLogging@{setLogging}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{setLogging()}{setLogging()}}
+{\footnotesize\ttfamily void CInput\+Parameter\+::set\+Logging (\begin{DoxyParamCaption}\item[{bool}]{init\+Logging\+Manual }\end{DoxyParamCaption})}
+
+
+
+Setzt ob es ein detailliertes Logging geben soll. 
+
+Setzt ob es ein detailliertes Logging geben soll 
+\begin{DoxyParams}{Parameter}
+{\em bool} & init\+Logging\+Manual \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00057}{57}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a7b6fcb6b63c77adbe75dc476f3e299f3}{loggingManual}}\ =\ initLoggingManual;}
+\DoxyCodeLine{00060\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00195}{logging\+Manual}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00094}{GUI\+::activate\+Logging()}}.
+
+\Hypertarget{class_c_input_parameter_a7d054f366f9568f02d604708d5529c23}\label{class_c_input_parameter_a7d054f366f9568f02d604708d5529c23} 
+\index{CInputParameter@{CInputParameter}!setOffset@{setOffset}}
+\index{setOffset@{setOffset}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{setOffset()}{setOffset()}}
+{\footnotesize\ttfamily void CInput\+Parameter\+::set\+Offset (\begin{DoxyParamCaption}\item[{double}]{X,  }\item[{double}]{Y,  }\item[{double}]{Z,  }\item[{bool}]{offset\+Manual }\end{DoxyParamCaption})}
+
+
+
+Setzt den gewuenschten Offset. 
+
+Setzt den gewuenschten Offset 
+\begin{DoxyParams}{Parameter}
+{\em double} & X \\
+\hline
+{\em double} & Y \\
+\hline
+{\em double} & Z \\
+\hline
+{\em bool} & offset\+Manual \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00049}{49}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a0a846cec65de60f9c444f507edc69317}{offsetManual}}\ =\ initOffsetManual;}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aab1e077fb692132e6c656d05dc4413ba}{offsetX}}\ =\ X;}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_ae1a6fcdaed5065678bb97b0cdd4546d9}{offsetY}}\ =\ Y;}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a420116b3f1382f85859259f57a7a2f95}{offsetZ}}\ =\ Z;}
+\DoxyCodeLine{00055\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00179}{offset\+Manual}}, \mbox{\hyperlink{_input_parameter_8h_source_l00183}{offsetX}}, \mbox{\hyperlink{_input_parameter_8h_source_l00187}{offsetY}} und \mbox{\hyperlink{_input_parameter_8h_source_l00191}{offsetZ}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00105}{GUI\+::activate\+Offset()}}, \mbox{\hyperlink{_g_u_i_8cpp_source_l00015}{GUI\+::\+GUI()}} und \mbox{\hyperlink{_g_u_i_8cpp_source_l00099}{GUI\+::set\+Offset()}}.
+
+\Hypertarget{class_c_input_parameter_a04c9fc7d2724593c144586edea4f004e}\label{class_c_input_parameter_a04c9fc7d2724593c144586edea4f004e} 
+\index{CInputParameter@{CInputParameter}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{setOrientation()}{setOrientation()}}
+{\footnotesize\ttfamily void CInput\+Parameter\+::set\+Orientation (\begin{DoxyParamCaption}\item[{bool}]{init\+Orientation\+Manual,  }\item[{double}]{initA,  }\item[{double}]{initB,  }\item[{double}]{initC }\end{DoxyParamCaption})}
+
+
+
+Setzt Orientierungs Daten. 
+
+Setzt ob die Orientierung Haendisch eingegeben werden soll und die drei Winkel 
+\begin{DoxyParams}{Parameter}
+{\em bool} & init\+Orientation\+Manual \\
+\hline
+{\em double} & initA \\
+\hline
+{\em double} & initB \\
+\hline
+{\em double} & initC \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00041}{41}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00042\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}{orientationManual}}\ =\ initOrientationManual;}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}{A}}\ =\ initA;}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}{B}}\ =\ initB;}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}{C}}\ =\ initC;}
+\DoxyCodeLine{00047\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00163}{A}}, \mbox{\hyperlink{_input_parameter_8h_source_l00167}{B}}, \mbox{\hyperlink{_input_parameter_8h_source_l00171}{C}} und \mbox{\hyperlink{_input_parameter_8h_source_l00159}{orientation\+Manual}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_g_u_i_8cpp_source_l00123}{GUI\+::set\+Orientation()}}.
+
+\Hypertarget{class_c_input_parameter_a7a9327fd632b7a18eac4e3650cf1375f}\label{class_c_input_parameter_a7a9327fd632b7a18eac4e3650cf1375f} 
+\index{CInputParameter@{CInputParameter}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void CInput\+Parameter\+::set\+Speed (\begin{DoxyParamCaption}\item[{double}]{init\+Speed,  }\item[{bool}]{init\+Speed\+Manual }\end{DoxyParamCaption})}
+
+
+
+Setzt Geschwindigkeits Daten. 
+
+Setzt ob die Geschwindigkeit Haendisch eingegeben werden soll und die Geschwindigkeit in m/s 
+\begin{DoxyParams}{Parameter}
+{\em double} & init\+Speed \\
+\hline
+{\em bool} & init\+Seep\+Manual \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8cpp_source_l00063}{63}} der Datei \mbox{\hyperlink{_input_parameter_8cpp_source}{Input\+Parameter.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00064\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}{speed}}\ =\ initSpeed;}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}{speedManual}}\ =\ initSpeedManual;}
+\DoxyCodeLine{00067\ \}}
+
+\end{DoxyCode}
+
+
+Benutzt \mbox{\hyperlink{_input_parameter_8h_source_l00151}{speed}} und \mbox{\hyperlink{_input_parameter_8h_source_l00155}{speed\+Manual}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_rob_code_generator_8cpp_source_l00076}{CRob\+Code\+Generator\+::post\+Processing()}} und \mbox{\hyperlink{_g_u_i_8cpp_source_l00143}{GUI\+::set\+Speed()}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\Hypertarget{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9}\label{class_c_input_parameter_a083030f7932a1139f5eb97cd642f76e9} 
+\index{CInputParameter@{CInputParameter}!A@{A}}
+\index{A@{A}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily double CInput\+Parameter\+::A\hspace{0.3cm}{\ttfamily [private]}}
+
+User eingegebener Winkel A 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00163}{163}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00012}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00024}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00099}{get\+Angles()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00041}{set\+Orientation()}}.
+
+\Hypertarget{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329}\label{class_c_input_parameter_abc1db148f5a759b3da7a283ae7a67329} 
+\index{CInputParameter@{CInputParameter}!B@{B}}
+\index{B@{B}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily double CInput\+Parameter\+::B\hspace{0.3cm}{\ttfamily [private]}}
+
+User eingegebener Winkel B 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00167}{167}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00012}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00024}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00099}{get\+Angles()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00041}{set\+Orientation()}}.
+
+\Hypertarget{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20}\label{class_c_input_parameter_a64ef7dbb87e3eebfae624dede13fcb20} 
+\index{CInputParameter@{CInputParameter}!C@{C}}
+\index{C@{C}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{C}{C}}
+{\footnotesize\ttfamily double CInput\+Parameter\+::C\hspace{0.3cm}{\ttfamily [private]}}
+
+User eingegebener Winkel C 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00171}{171}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00012}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00024}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00099}{get\+Angles()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00041}{set\+Orientation()}}.
+
+\Hypertarget{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc}\label{class_c_input_parameter_a08dcd2762795aa2a4271a28fe61ed4fc} 
+\index{CInputParameter@{CInputParameter}!difference@{difference}}
+\index{difference@{difference}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{difference}{difference}}
+{\footnotesize\ttfamily double CInput\+Parameter\+::difference = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+Sprung ab dem eine neue Liste angefangen wird 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00175}{175}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00153}{detect\+Jump()}}.
+
+\Hypertarget{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f}\label{class_c_input_parameter_af3b25ec5c1398b83da05f6d9d680ad2f} 
+\index{CInputParameter@{CInputParameter}!initialPath@{initialPath}}
+\index{initialPath@{initialPath}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{initialPath}{initialPath}}
+{\footnotesize\ttfamily vector$<$list$<$\mbox{\hyperlink{class_c_input_point3_d}{CInput\+Point3D}}$>$ $>$ CInput\+Parameter\+::initial\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+Vector mit Listen an Input Daten 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00147}{147}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00069}{get\+Path()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00111}{open\+File()}}.
+
+\Hypertarget{class_c_input_parameter_a7b6fcb6b63c77adbe75dc476f3e299f3}\label{class_c_input_parameter_a7b6fcb6b63c77adbe75dc476f3e299f3} 
+\index{CInputParameter@{CInputParameter}!loggingManual@{loggingManual}}
+\index{loggingManual@{loggingManual}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{loggingManual}{loggingManual}}
+{\footnotesize\ttfamily bool CInput\+Parameter\+::logging\+Manual\hspace{0.3cm}{\ttfamily [private]}}
+
+Auswahl ob ein Offset eingegeben werden soll 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00195}{195}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00094}{get\+Logging\+Manual()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00057}{set\+Logging()}}.
+
+\Hypertarget{class_c_input_parameter_a0a846cec65de60f9c444f507edc69317}\label{class_c_input_parameter_a0a846cec65de60f9c444f507edc69317} 
+\index{CInputParameter@{CInputParameter}!offsetManual@{offsetManual}}
+\index{offsetManual@{offsetManual}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{offsetManual}{offsetManual}}
+{\footnotesize\ttfamily bool CInput\+Parameter\+::offset\+Manual\hspace{0.3cm}{\ttfamily [private]}}
+
+Auswahl ob ein Offset eingegeben werden soll 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00179}{179}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00089}{get\+Offset\+Manual()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00049}{set\+Offset()}}.
+
+\Hypertarget{class_c_input_parameter_aab1e077fb692132e6c656d05dc4413ba}\label{class_c_input_parameter_aab1e077fb692132e6c656d05dc4413ba} 
+\index{CInputParameter@{CInputParameter}!offsetX@{offsetX}}
+\index{offsetX@{offsetX}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{offsetX}{offsetX}}
+{\footnotesize\ttfamily double CInput\+Parameter\+::offsetX\hspace{0.3cm}{\ttfamily [private]}}
+
+Offset X 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00183}{183}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00104}{get\+Offset()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00049}{set\+Offset()}}.
+
+\Hypertarget{class_c_input_parameter_ae1a6fcdaed5065678bb97b0cdd4546d9}\label{class_c_input_parameter_ae1a6fcdaed5065678bb97b0cdd4546d9} 
+\index{CInputParameter@{CInputParameter}!offsetY@{offsetY}}
+\index{offsetY@{offsetY}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{offsetY}{offsetY}}
+{\footnotesize\ttfamily double CInput\+Parameter\+::offsetY\hspace{0.3cm}{\ttfamily [private]}}
+
+Offset Y 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00187}{187}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00104}{get\+Offset()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00049}{set\+Offset()}}.
+
+\Hypertarget{class_c_input_parameter_a420116b3f1382f85859259f57a7a2f95}\label{class_c_input_parameter_a420116b3f1382f85859259f57a7a2f95} 
+\index{CInputParameter@{CInputParameter}!offsetZ@{offsetZ}}
+\index{offsetZ@{offsetZ}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{offsetZ}{offsetZ}}
+{\footnotesize\ttfamily double CInput\+Parameter\+::offsetZ\hspace{0.3cm}{\ttfamily [private]}}
+
+Offset Z 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00191}{191}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00104}{get\+Offset()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00049}{set\+Offset()}}.
+
+\Hypertarget{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78}\label{class_c_input_parameter_a20dc6bd4fe1582dd645a886114ae1d78} 
+\index{CInputParameter@{CInputParameter}!orientationManual@{orientationManual}}
+\index{orientationManual@{orientationManual}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{orientationManual}{orientationManual}}
+{\footnotesize\ttfamily bool CInput\+Parameter\+::orientation\+Manual\hspace{0.3cm}{\ttfamily [private]}}
+
+Auswahl ob berechnete oder eingegebene Winkel verwendet werden soll 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00159}{159}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00012}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00024}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00084}{get\+Orientation\+Manual()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00041}{set\+Orientation()}}.
+
+\Hypertarget{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51}\label{class_c_input_parameter_aead01c343a4f8798d654baeba5ce4a51} 
+\index{CInputParameter@{CInputParameter}!speed@{speed}}
+\index{speed@{speed}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily double CInput\+Parameter\+::speed\hspace{0.3cm}{\ttfamily [private]}}
+
+User eingegebene Geschwindigkeit 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00151}{151}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00012}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00024}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00074}{get\+Speed()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00063}{set\+Speed()}}.
+
+\Hypertarget{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1}\label{class_c_input_parameter_ae7d3f34951c79600ff11c30a8cca3cc1} 
+\index{CInputParameter@{CInputParameter}!speedManual@{speedManual}}
+\index{speedManual@{speedManual}!CInputParameter@{CInputParameter}}
+\doxysubsubsection{\texorpdfstring{speedManual}{speedManual}}
+{\footnotesize\ttfamily bool CInput\+Parameter\+::speed\+Manual\hspace{0.3cm}{\ttfamily [private]}}
+
+Auswahl ob berechnete oder eingegebene Geschwindigkeit verwendet werden soll 
+
+Definiert in Zeile \mbox{\hyperlink{_input_parameter_8h_source_l00155}{155}} der Datei \mbox{\hyperlink{_input_parameter_8h_source}{Input\+Parameter.\+h}}.
+
+
+
+Wird benutzt von \mbox{\hyperlink{_input_parameter_8cpp_source_l00012}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00024}{CInput\+Parameter()}}, \mbox{\hyperlink{_input_parameter_8cpp_source_l00079}{get\+Speed\+Manual()}} und \mbox{\hyperlink{_input_parameter_8cpp_source_l00063}{set\+Speed()}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{_input_parameter_8h}{Input\+Parameter.\+h}}\item 
+source/\mbox{\hyperlink{_input_parameter_8cpp}{Input\+Parameter.\+cpp}}\end{DoxyCompactItemize}

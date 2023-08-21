@@ -1,7 +1,8 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../mainProject/header/Point3D.h"
-#include "../mainProject/header/SegmentApproximator.h"
+#include "../RobPathGen/header/Point3D.h"
+#include "../RobPathGen/header/SegmentApproximator.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace SegmentApproximator
@@ -21,7 +22,7 @@ namespace SegmentApproximator
         {
             CSegmentApproximator approximator;
             CEulerMatrix Euler;
-            CLogging log("../output"); // Pfad zum Testen
+            CLogging log("../output", true); // Pfad zum Testen
             vector<list<CInputPoint3D>> outputVector;
             double maxDistance = 1.0;
 

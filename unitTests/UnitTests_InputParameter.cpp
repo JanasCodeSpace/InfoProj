@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../mainProject/header/InputParameter.h"
+#include "../RobPathGen/header/InputParameter.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace InputParameter
@@ -70,7 +71,7 @@ namespace InputParameter
         TEST_METHOD(OpenFile)
         {
             CInputParameter inputParam;
-            string testPath = "../../../mainProject/input/path_01.csv"; // Pfad relativ zu den erstellten Objects            
+            string testPath = "../../../RobPathGen/input/path_01.csv"; // Pfad relativ zu den erstellten Objects            
             inputParam.openFile(testPath);
 
             vector<list<CInputPoint3D>>& path = inputParam.getPath();

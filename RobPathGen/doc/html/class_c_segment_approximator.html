@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RobCodeGenerator: CSegmentApproximator Klassenreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RobCodeGenerator
+   </div>
+   <div id="projectbrief">Dieses Tool erstellt aus mit einem Sensor aufgenommenen Pfaden einen Kuka Roboter lesbaren Code. Dabei sind ein paar Werte einstellbar.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Lade ...</div>
+<div class="SRStatus" id="Searching">Suche ...</div>
+<div class="SRStatus" id="NoMatches">Keine Treffer</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pri-methods">Private Methoden</a> &#124;
+<a href="#pri-attribs">Private Attribute</a> &#124;
+<a href="class_c_segment_approximator-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle"><div class="title">CSegmentApproximator Klassenreferenz</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ausduennen des Pfades.  
+ <a href="class_c_segment_approximator.html#details">Mehr ...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_segment_approximator_8h_source.html">SegmentApproximator.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:a47c403bea113a7b09e8d25c5401ddf16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_segment_approximator.html#a47c403bea113a7b09e8d25c5401ddf16">CSegmentApproximator</a> (void)</td></tr>
+<tr class="memdesc:a47c403bea113a7b09e8d25c5401ddf16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Konstruktor.  <br /></td></tr>
+<tr class="separator:a47c403bea113a7b09e8d25c5401ddf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac145e1245b9b540aba79204210e95a22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_segment_approximator.html#ac145e1245b9b540aba79204210e95a22">~CSegmentApproximator</a> (void)</td></tr>
+<tr class="memdesc:ac145e1245b9b540aba79204210e95a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dekonstruktor.  <br /></td></tr>
+<tr class="separator:ac145e1245b9b540aba79204210e95a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9e03a7f07a723f9d516dfda659c949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_segment_approximator.html#adf9e03a7f07a723f9d516dfda659c949">approx</a> (const vector&lt; list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt; &gt; &amp;Segments, <a class="el" href="class_c_logging.html">CLogging</a> log)</td></tr>
+<tr class="memdesc:adf9e03a7f07a723f9d516dfda659c949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruft die Douglas-Peuker Funktion auf.  <br /></td></tr>
+<tr class="separator:adf9e03a7f07a723f9d516dfda659c949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38b31a78abcd8eadcb6d014bfb7fe85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_segment_approximator.html#aa38b31a78abcd8eadcb6d014bfb7fe85">setmaxDistance</a> (double maxDistanceSource)</td></tr>
+<tr class="memdesc:aa38b31a78abcd8eadcb6d014bfb7fe85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt die maximale Abweichung.  <br /></td></tr>
+<tr class="separator:aa38b31a78abcd8eadcb6d014bfb7fe85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5626d8afc213e3ed2637b610671b03"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_segment_approximator.html#a6c5626d8afc213e3ed2637b610671b03">getmaxDistance</a> ()</td></tr>
+<tr class="memdesc:a6c5626d8afc213e3ed2637b610671b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt die maximale Abweichung zurueck.  <br /></td></tr>
+<tr class="separator:a6c5626d8afc213e3ed2637b610671b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844d1beeb790d3f00a7c8154b1632ec6"><td class="memItemLeft" align="right" valign="top">vector&lt; list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_segment_approximator.html#a844d1beeb790d3f00a7c8154b1632ec6">getSegmentsApproxVector</a> ()</td></tr>
+<tr class="memdesc:a844d1beeb790d3f00a7c8154b1632ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den bereinigten Pfad zurueck.  <br /></td></tr>
+<tr class="separator:a844d1beeb790d3f00a7c8154b1632ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Methoden</h2></td></tr>
+<tr class="memitem:ad5517eaee16b72b7932095a6431e5d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_segment_approximator.html#ad5517eaee16b72b7932095a6431e5d8c">douglasPeuckerRecursive</a> (list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt; &amp;segment, std::list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt;::iterator startItr, std::list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt;::iterator endItr)</td></tr>
+<tr class="memdesc:ad5517eaee16b72b7932095a6431e5d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rekursive Douglas Peuker Funktion.  <br /></td></tr>
+<tr class="separator:ad5517eaee16b72b7932095a6431e5d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attribute</h2></td></tr>
+<tr class="memitem:a34a3e5c3e787b2adc5f2d4dd09e8e6b0"><td class="memItemLeft" align="right" valign="top">vector&lt; list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_segment_approximator.html#a34a3e5c3e787b2adc5f2d4dd09e8e6b0">segmentsApprox</a></td></tr>
+<tr class="separator:a34a3e5c3e787b2adc5f2d4dd09e8e6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae513075f6c1c8d2f187bffad2922c655"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_segment_approximator.html#ae513075f6c1c8d2f187bffad2922c655">maxDistance</a></td></tr>
+<tr class="separator:ae513075f6c1c8d2f187bffad2922c655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Ausduennen des Pfades. </p>
+<p>In dieser Klasse wird der Pfad mit hilfe des Douglas-Peuker Algorithmusses ausgeduennt </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8h_source.html#l00022">22</a> der Datei <a class="el" href="_segment_approximator_8h_source.html">SegmentApproximator.h</a>.</p>
+</div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="a47c403bea113a7b09e8d25c5401ddf16" name="a47c403bea113a7b09e8d25c5401ddf16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c403bea113a7b09e8d25c5401ddf16">&#9670;&#160;</a></span>CSegmentApproximator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSegmentApproximator::CSegmentApproximator </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default Konstruktor. </p>
+<p>Initialisiert die Klasse </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8cpp_source.html#l00011">11</a> der Datei <a class="el" href="_segment_approximator_8cpp_source.html">SegmentApproximator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>{</div>
+<div class="line"><span class="lineno">   13</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac145e1245b9b540aba79204210e95a22" name="ac145e1245b9b540aba79204210e95a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac145e1245b9b540aba79204210e95a22">&#9670;&#160;</a></span>~CSegmentApproximator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSegmentApproximator::~CSegmentApproximator </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dekonstruktor. </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8cpp_source.html#l00015">15</a> der Datei <a class="el" href="_segment_approximator_8cpp_source.html">SegmentApproximator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>{</div>
+<div class="line"><span class="lineno">   17</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="adf9e03a7f07a723f9d516dfda659c949" name="adf9e03a7f07a723f9d516dfda659c949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf9e03a7f07a723f9d516dfda659c949">&#9670;&#160;</a></span>approx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSegmentApproximator::approx </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Segments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_logging.html">CLogging</a>&#160;</td>
+          <td class="paramname"><em>log</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ruft die Douglas-Peuker Funktion auf. </p>
+<p>Iteriert durch die Listen im Vektor und ruft die Douglas-Peuker-Funktion auf </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Segments</td><td>const vector&lt;list&lt;CInputPoint3D&gt;&gt;&amp; </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_c_logging.html" title="Gleitender Mittelwertfilter.">CLogging</a></td><td>log fuer das Logging </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8cpp_source.html#l00019">19</a> der Datei <a class="el" href="_segment_approximator_8cpp_source.html">SegmentApproximator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
+<div class="line"><span class="lineno">   21</span>    <a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a> p;</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>    <a class="code hl_variable" href="class_c_segment_approximator.html#a34a3e5c3e787b2adc5f2d4dd09e8e6b0">segmentsApprox</a> = segments;</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    <span class="comment">/* Douglas Peucker fuer Segmente aufrufen*/</span></div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> s = 0; s &lt; segments.size(); s++)</div>
+<div class="line"><span class="lineno">   27</span>    {</div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_function" href="class_c_segment_approximator.html#ad5517eaee16b72b7932095a6431e5d8c">douglasPeuckerRecursive</a>(<a class="code hl_variable" href="class_c_segment_approximator.html#a34a3e5c3e787b2adc5f2d4dd09e8e6b0">segmentsApprox</a>[s], <a class="code hl_variable" href="class_c_segment_approximator.html#a34a3e5c3e787b2adc5f2d4dd09e8e6b0">segmentsApprox</a>[s].begin(), --(<a class="code hl_variable" href="class_c_segment_approximator.html#a34a3e5c3e787b2adc5f2d4dd09e8e6b0">segmentsApprox</a>[s].end()));</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    <span class="comment">/*  Logging der Daten*/</span></div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> (log.<a class="code hl_function" href="class_c_logging.html#a144e10c211b3e044ce15970514f1d231">getDetailed</a>())</div>
+<div class="line"><span class="lineno">   33</span>    {</div>
+<div class="line"><span class="lineno">   34</span>        log.<a class="code hl_function" href="class_c_logging.html#a143b13eb97fb0a7b8306ec707e822cba">setStep</a>(2);</div>
+<div class="line"><span class="lineno">   35</span>        log.<a class="code hl_function" href="class_c_logging.html#a1416b9fdd6d86c53d268580ed9912cff">logData</a>(<a class="code hl_variable" href="class_c_segment_approximator.html#a34a3e5c3e787b2adc5f2d4dd09e8e6b0">segmentsApprox</a>);</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+<div class="ttc" id="aclass_c_input_point3_d_html"><div class="ttname"><a href="class_c_input_point3_d.html">CInputPoint3D</a></div><div class="ttdoc">Input Punkt.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8h_source.html#l00106">Point3D.h:107</a></div></div>
+<div class="ttc" id="aclass_c_logging_html_a1416b9fdd6d86c53d268580ed9912cff"><div class="ttname"><a href="class_c_logging.html#a1416b9fdd6d86c53d268580ed9912cff">CLogging::logData</a></div><div class="ttdeci">void logData(vector&lt; list&lt; CInputPoint3D &gt; &gt; &amp;sourcePath)</div><div class="ttdoc">Ruft calculateMean fuer die einzelnen Segmente auf.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00037">Logging.cpp:37</a></div></div>
+<div class="ttc" id="aclass_c_logging_html_a143b13eb97fb0a7b8306ec707e822cba"><div class="ttname"><a href="class_c_logging.html#a143b13eb97fb0a7b8306ec707e822cba">CLogging::setStep</a></div><div class="ttdeci">void setStep(int Step)</div><div class="ttdoc">Setzt in welchem Schritt wir uns befinden.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00032">Logging.cpp:32</a></div></div>
+<div class="ttc" id="aclass_c_logging_html_a144e10c211b3e044ce15970514f1d231"><div class="ttname"><a href="class_c_logging.html#a144e10c211b3e044ce15970514f1d231">CLogging::getDetailed</a></div><div class="ttdeci">bool getDetailed(void)</div><div class="ttdoc">Gibt es ein detailliertes Logging.</div><div class="ttdef"><b>Definition</b> <a href="_logging_8cpp_source.html#l00027">Logging.cpp:27</a></div></div>
+<div class="ttc" id="aclass_c_segment_approximator_html_a34a3e5c3e787b2adc5f2d4dd09e8e6b0"><div class="ttname"><a href="class_c_segment_approximator.html#a34a3e5c3e787b2adc5f2d4dd09e8e6b0">CSegmentApproximator::segmentsApprox</a></div><div class="ttdeci">vector&lt; list&lt; CInputPoint3D &gt; &gt; segmentsApprox</div><div class="ttdef"><b>Definition</b> <a href="_segment_approximator_8h_source.html#l00063">SegmentApproximator.h:63</a></div></div>
+<div class="ttc" id="aclass_c_segment_approximator_html_ad5517eaee16b72b7932095a6431e5d8c"><div class="ttname"><a href="class_c_segment_approximator.html#ad5517eaee16b72b7932095a6431e5d8c">CSegmentApproximator::douglasPeuckerRecursive</a></div><div class="ttdeci">void douglasPeuckerRecursive(list&lt; CInputPoint3D &gt; &amp;segment, std::list&lt; CInputPoint3D &gt;::iterator startItr, std::list&lt; CInputPoint3D &gt;::iterator endItr)</div><div class="ttdoc">Rekursive Douglas Peuker Funktion.</div><div class="ttdef"><b>Definition</b> <a href="_segment_approximator_8cpp_source.html#l00054">SegmentApproximator.cpp:54</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_segment_approximator_8cpp_source.html#l00054">douglasPeuckerRecursive()</a>, <a class="el" href="_logging_8cpp_source.html#l00027">CLogging::getDetailed()</a>, <a class="el" href="_logging_8cpp_source.html#l00037">CLogging::logData()</a>, <a class="el" href="_segment_approximator_8h_source.html#l00063">segmentsApprox</a> und <a class="el" href="_logging_8cpp_source.html#l00032">CLogging::setStep()</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_g_u_i_8cpp_source.html#l00185">GUI::calculate()</a>.</p>
+
+</div>
+</div>
+<a id="ad5517eaee16b72b7932095a6431e5d8c" name="ad5517eaee16b72b7932095a6431e5d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5517eaee16b72b7932095a6431e5d8c">&#9670;&#160;</a></span>douglasPeuckerRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSegmentApproximator::douglasPeuckerRecursive </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt;::iterator&#160;</td>
+          <td class="paramname"><em>startItr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt;::iterator&#160;</td>
+          <td class="paramname"><em>endItr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rekursive Douglas Peuker Funktion. </p>
+<p>Rekursive Funktion die durch das Segment geht und Punkte aus dem Pfad loescht wenn ihr Abstand zu gross wird. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list&lt;CInputPoint3D&gt;&amp;</td><td>segment </td></tr>
+    <tr><td class="paramname">std::list&lt;CInputPoint3D&gt;::iterator</td><td>startIt </td></tr>
+    <tr><td class="paramname">std::list&lt;CInputPoint3D&gt;::iterator</td><td>endItr </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8cpp_source.html#l00054">54</a> der Datei <a class="el" href="_segment_approximator_8cpp_source.html">SegmentApproximator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (segment.size() &lt; 3) <span class="keywordflow">return</span>;  <span class="comment">// min Groesse pro Seg 3</span></div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (distance(startItr, endItr) == 2) <span class="keywordflow">return</span>;        <span class="comment">// Zeigerabstand == 2</span></div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a> pStart; <a class="code hl_class" href="class_c_input_point3_d.html">CInputPoint3D</a> pEnd;       <span class="comment">// Variablen deklarieren</span></div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>    <span class="comment">/* Startpunkt setzen */</span></div>
+<div class="line"><span class="lineno">   62</span>    pStart.<a class="code hl_function" href="class_c_point3_d.html#aee2748ffe7a8505efd2c303b53941647">setX</a>(startItr-&gt;getX()); pStart.<a class="code hl_function" href="class_c_point3_d.html#a81465a058c428fe65edef926d975110e">setY</a>(startItr-&gt;getY()); pStart.<a class="code hl_function" href="class_c_point3_d.html#ac8765fa73306e534a386f87c8c691c24">setZ</a>(startItr-&gt;getZ());</div>
+<div class="line"><span class="lineno">   63</span>    pStart.<a class="code hl_function" href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">setTime</a>(startItr-&gt;getTime());</div>
+<div class="line"><span class="lineno">   64</span>    pStart.<a class="code hl_function" href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">setEulerMatrix</a>(startItr-&gt;getEulerMatrix());</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">/* Endpunkt setzen */</span></div>
+<div class="line"><span class="lineno">   67</span>    pEnd.<a class="code hl_function" href="class_c_point3_d.html#aee2748ffe7a8505efd2c303b53941647">setX</a>(endItr-&gt;getX()); pEnd.<a class="code hl_function" href="class_c_point3_d.html#a81465a058c428fe65edef926d975110e">setY</a>(endItr-&gt;getY()); pEnd.<a class="code hl_function" href="class_c_point3_d.html#ac8765fa73306e534a386f87c8c691c24">setZ</a>(endItr-&gt;getZ());</div>
+<div class="line"><span class="lineno">   68</span>    pEnd.<a class="code hl_function" href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">setTime</a>(endItr-&gt;getTime());</div>
+<div class="line"><span class="lineno">   69</span>    pEnd.<a class="code hl_function" href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">setEulerMatrix</a>(endItr-&gt;getEulerMatrix());</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordtype">double</span> dist = 0.0, maxDist = 0.0;                   <span class="comment">// dist und maxDist initialisieren </span></div>
+<div class="line"><span class="lineno">   72</span>    std::list&lt;CInputPoint3D&gt;::iterator maxItr, itr;     <span class="comment">// Zeiger bilden</span></div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">/* am weitesten Entfernten Punkt suchen */</span></div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">for</span> (itr = startItr; itr != endItr; itr++)</div>
+<div class="line"><span class="lineno">   77</span>    {</div>
+<div class="line"><span class="lineno">   78</span>        <a class="code hl_class" href="class_c_line3_d.html">CLine3D</a> line = <a class="code hl_class" href="class_c_line3_d.html">CLine3D</a>(pStart, pEnd);</div>
+<div class="line"><span class="lineno">   79</span>        <span class="comment">// calc distance</span></div>
+<div class="line"><span class="lineno">   80</span>        dist = itr-&gt;distanceTo(line);</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span> (dist &gt; maxDist) {</div>
+<div class="line"><span class="lineno">   82</span>            maxDist = dist;</div>
+<div class="line"><span class="lineno">   83</span>            maxItr = itr;</div>
+<div class="line"><span class="lineno">   84</span>        }</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (maxDist &lt;= <a class="code hl_variable" href="class_c_segment_approximator.html#ae513075f6c1c8d2f187bffad2922c655">maxDistance</a>) {</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>        segment.erase((++startItr), endItr);        <span class="comment">// Punkt loeschen</span></div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="comment">/*  Douglas Peucker erneut aufrufen */</span></div>
+<div class="line"><span class="lineno">   94</span>    <a class="code hl_function" href="class_c_segment_approximator.html#ad5517eaee16b72b7932095a6431e5d8c">douglasPeuckerRecursive</a>(segment, startItr, maxItr);</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_function" href="class_c_segment_approximator.html#ad5517eaee16b72b7932095a6431e5d8c">douglasPeuckerRecursive</a>(segment, maxItr, endItr);</div>
+<div class="line"><span class="lineno">   96</span>}</div>
+<div class="ttc" id="aclass_c_input_point3_d_html_a64595602198fb39f73b3ba7ca23670fd"><div class="ttname"><a href="class_c_input_point3_d.html#a64595602198fb39f73b3ba7ca23670fd">CInputPoint3D::setTime</a></div><div class="ttdeci">void setTime(double time)</div><div class="ttdoc">Setzt den Zeitstempel.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00142">Point3D.cpp:142</a></div></div>
+<div class="ttc" id="aclass_c_input_point3_d_html_aa1ffef5d44dbf0f82fea3c6ff25dd1e8"><div class="ttname"><a href="class_c_input_point3_d.html#aa1ffef5d44dbf0f82fea3c6ff25dd1e8">CInputPoint3D::setEulerMatrix</a></div><div class="ttdeci">void setEulerMatrix(CEulerMatrix orientation)</div><div class="ttdoc">Setzt die Eulermatrix.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00129">Point3D.cpp:129</a></div></div>
+<div class="ttc" id="aclass_c_line3_d_html"><div class="ttname"><a href="class_c_line3_d.html">CLine3D</a></div><div class="ttdoc">Berechnung Geraden.</div><div class="ttdef"><b>Definition</b> <a href="_line3_d_8h_source.html#l00018">Line3D.h:19</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_a81465a058c428fe65edef926d975110e"><div class="ttname"><a href="class_c_point3_d.html#a81465a058c428fe65edef926d975110e">CPoint3D::setY</a></div><div class="ttdeci">void setY(double Y)</div><div class="ttdoc">Setzt Y.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00052">Point3D.cpp:52</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_ac8765fa73306e534a386f87c8c691c24"><div class="ttname"><a href="class_c_point3_d.html#ac8765fa73306e534a386f87c8c691c24">CPoint3D::setZ</a></div><div class="ttdeci">void setZ(double Z)</div><div class="ttdoc">Setzt Z.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00057">Point3D.cpp:57</a></div></div>
+<div class="ttc" id="aclass_c_point3_d_html_aee2748ffe7a8505efd2c303b53941647"><div class="ttname"><a href="class_c_point3_d.html#aee2748ffe7a8505efd2c303b53941647">CPoint3D::setX</a></div><div class="ttdeci">void setX(double X)</div><div class="ttdoc">Setzt X.</div><div class="ttdef"><b>Definition</b> <a href="_point3_d_8cpp_source.html#l00047">Point3D.cpp:47</a></div></div>
+<div class="ttc" id="aclass_c_segment_approximator_html_ae513075f6c1c8d2f187bffad2922c655"><div class="ttname"><a href="class_c_segment_approximator.html#ae513075f6c1c8d2f187bffad2922c655">CSegmentApproximator::maxDistance</a></div><div class="ttdeci">double maxDistance</div><div class="ttdef"><b>Definition</b> <a href="_segment_approximator_8h_source.html#l00067">SegmentApproximator.h:67</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_segment_approximator_8cpp_source.html#l00054">douglasPeuckerRecursive()</a>, <a class="el" href="_segment_approximator_8h_source.html#l00067">maxDistance</a>, <a class="el" href="_point3_d_8cpp_source.html#l00129">CInputPoint3D::setEulerMatrix()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00142">CInputPoint3D::setTime()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00047">CPoint3D::setX()</a>, <a class="el" href="_point3_d_8cpp_source.html#l00052">CPoint3D::setY()</a> und <a class="el" href="_point3_d_8cpp_source.html#l00057">CPoint3D::setZ()</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_segment_approximator_8cpp_source.html#l00019">approx()</a> und <a class="el" href="_segment_approximator_8cpp_source.html#l00054">douglasPeuckerRecursive()</a>.</p>
+
+</div>
+</div>
+<a id="a6c5626d8afc213e3ed2637b610671b03" name="a6c5626d8afc213e3ed2637b610671b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c5626d8afc213e3ed2637b610671b03">&#9670;&#160;</a></span>getmaxDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CSegmentApproximator::getmaxDistance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gibt die maximale Abweichung zurueck. </p>
+<dl class="section return"><dt>Rückgabe</dt><dd>maxDistanceSource double </dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8cpp_source.html#l00044">44</a> der Datei <a class="el" href="_segment_approximator_8cpp_source.html">SegmentApproximator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_segment_approximator.html#ae513075f6c1c8d2f187bffad2922c655">maxDistance</a>;     <span class="comment">// Rueckgabe von maxDistance</span></div>
+<div class="line"><span class="lineno">   47</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_segment_approximator_8h_source.html#l00067">maxDistance</a>.</p>
+
+</div>
+</div>
+<a id="a844d1beeb790d3f00a7c8154b1632ec6" name="a844d1beeb790d3f00a7c8154b1632ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844d1beeb790d3f00a7c8154b1632ec6">&#9670;&#160;</a></span>getSegmentsApproxVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; list&lt; <a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a> &gt; &gt; &amp; CSegmentApproximator::getSegmentsApproxVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gibt den bereinigten Pfad zurueck. </p>
+<dl class="section return"><dt>Rückgabe</dt><dd>vector&lt;list&lt;CInputPoint3D&gt;&gt;&amp; </dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8cpp_source.html#l00049">49</a> der Datei <a class="el" href="_segment_approximator_8cpp_source.html">SegmentApproximator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_c_segment_approximator.html#a34a3e5c3e787b2adc5f2d4dd09e8e6b0">segmentsApprox</a>;      <span class="comment">// Rueckgabe der Segmente</span></div>
+<div class="line"><span class="lineno">   52</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_segment_approximator_8h_source.html#l00063">segmentsApprox</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_g_u_i_8cpp_source.html#l00185">GUI::calculate()</a>.</p>
+
+</div>
+</div>
+<a id="aa38b31a78abcd8eadcb6d014bfb7fe85" name="aa38b31a78abcd8eadcb6d014bfb7fe85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa38b31a78abcd8eadcb6d014bfb7fe85">&#9670;&#160;</a></span>setmaxDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSegmentApproximator::setmaxDistance </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxDistanceSource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setzt die maximale Abweichung. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxDistanceSource</td><td>double </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8cpp_source.html#l00039">39</a> der Datei <a class="el" href="_segment_approximator_8cpp_source.html">SegmentApproximator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_variable" href="class_c_segment_approximator.html#ae513075f6c1c8d2f187bffad2922c655">maxDistance</a> = maxDistanceSource;        <span class="comment">// setze maxDistance</span></div>
+<div class="line"><span class="lineno">   42</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Benutzt <a class="el" href="_segment_approximator_8h_source.html#l00067">maxDistance</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_g_u_i_8cpp_source.html#l00185">GUI::calculate()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a id="ae513075f6c1c8d2f187bffad2922c655" name="ae513075f6c1c8d2f187bffad2922c655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae513075f6c1c8d2f187bffad2922c655">&#9670;&#160;</a></span>maxDistance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CSegmentApproximator::maxDistance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Einstellbare Distanz fuer den Douglas-Peuker-Algorithmus </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8h_source.html#l00067">67</a> der Datei <a class="el" href="_segment_approximator_8h_source.html">SegmentApproximator.h</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_segment_approximator_8cpp_source.html#l00054">douglasPeuckerRecursive()</a>, <a class="el" href="_segment_approximator_8cpp_source.html#l00044">getmaxDistance()</a> und <a class="el" href="_segment_approximator_8cpp_source.html#l00039">setmaxDistance()</a>.</p>
+
+</div>
+</div>
+<a id="a34a3e5c3e787b2adc5f2d4dd09e8e6b0" name="a34a3e5c3e787b2adc5f2d4dd09e8e6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34a3e5c3e787b2adc5f2d4dd09e8e6b0">&#9670;&#160;</a></span>segmentsApprox</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;list&lt;<a class="el" href="class_c_input_point3_d.html">CInputPoint3D</a>&gt; &gt; CSegmentApproximator::segmentsApprox</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bereinigten Pfad </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="_segment_approximator_8h_source.html#l00063">63</a> der Datei <a class="el" href="_segment_approximator_8h_source.html">SegmentApproximator.h</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="_segment_approximator_8cpp_source.html#l00019">approx()</a> und <a class="el" href="_segment_approximator_8cpp_source.html#l00049">getSegmentsApproxVector()</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
+<li>header/<a class="el" href="_segment_approximator_8h_source.html">SegmentApproximator.h</a></li>
+<li>source/<a class="el" href="_segment_approximator_8cpp_source.html">SegmentApproximator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

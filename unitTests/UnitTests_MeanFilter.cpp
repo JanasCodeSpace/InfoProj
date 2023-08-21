@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../mainProject/header/MeanFilter.h"
+#include "../RobPathGen/header/MeanFilter.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace MeanFilter

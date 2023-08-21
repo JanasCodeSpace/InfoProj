@@ -1,0 +1,406 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Beschreibung Roboter Path Editor}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Nutzen}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Aufbau}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Logging}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Daten einlesen}{1}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Daten verarbeiten}{1}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Roboter Code erstellen}{1}{subsection.1.2.4}%
+\contentsline {chapter}{\numberline {2}Verzeichnis der Namensbereiche}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Liste aller Namensbereiche}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Hierarchie-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verzeichnis}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Klassenhierarchie}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Klassen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verzeichnis}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Auflistung der Klassen}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Datei-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verzeichnis}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Auflistung der Dateien}{9}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Dokumentation der Namensbereiche}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}QT\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}WARNING\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DISABLE\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DEPRECATED-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Namensbereichsreferenz}{11}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Ui-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Namensbereichsreferenz}{11}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Klassen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{13}{chapter.7}%
+\contentsline {section}{\numberline {7.1}CEuler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matrix Klassenreferenz}{13}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Ausführliche Beschreibung}{13}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Beschreibung der Konstruktoren und Destruktoren}{14}{subsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.2.1}CEulerMatrix()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{14}{subsubsection.7.1.2.1}%
+\contentsline {subsubsection}{\numberline {7.1.2.2}CEulerMatrix()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{14}{subsubsection.7.1.2.2}%
+\contentsline {subsubsection}{\numberline {7.1.2.3}$\sim $CEulerMatrix()}{15}{subsubsection.7.1.2.3}%
+\contentsline {subsection}{\numberline {7.1.3}Dokumentation der Elementfunktionen}{15}{subsection.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.3.1}angels2mat()}{15}{subsubsection.7.1.3.1}%
+\contentsline {subsubsection}{\numberline {7.1.3.2}calculateAngels()}{15}{subsubsection.7.1.3.2}%
+\contentsline {subsubsection}{\numberline {7.1.3.3}getEulerMatrix()}{16}{subsubsection.7.1.3.3}%
+\contentsline {subsubsection}{\numberline {7.1.3.4}getMatrix()}{17}{subsubsection.7.1.3.4}%
+\contentsline {subsubsection}{\numberline {7.1.3.5}setMatrix()}{18}{subsubsection.7.1.3.5}%
+\contentsline {subsection}{\numberline {7.1.4}Dokumentation der Datenelemente}{18}{subsection.7.1.4}%
+\contentsline {subsubsection}{\numberline {7.1.4.1}eulerMatrix}{18}{subsubsection.7.1.4.1}%
+\contentsline {section}{\numberline {7.2}CInput\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameter Klassenreferenz}{19}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Ausführliche Beschreibung}{20}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Beschreibung der Konstruktoren und Destruktoren}{20}{subsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2.1}CInputParameter()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{20}{subsubsection.7.2.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2.2}CInputParameter()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{21}{subsubsection.7.2.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2.3}$\sim $CInputParameter()}{22}{subsubsection.7.2.2.3}%
+\contentsline {subsection}{\numberline {7.2.3}Dokumentation der Elementfunktionen}{22}{subsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.3.1}detectJump()}{22}{subsubsection.7.2.3.1}%
+\contentsline {subsubsection}{\numberline {7.2.3.2}getAngles()}{23}{subsubsection.7.2.3.2}%
+\contentsline {subsubsection}{\numberline {7.2.3.3}getLoggingManual()}{23}{subsubsection.7.2.3.3}%
+\contentsline {subsubsection}{\numberline {7.2.3.4}getOffset()}{24}{subsubsection.7.2.3.4}%
+\contentsline {subsubsection}{\numberline {7.2.3.5}getOffsetManual()}{24}{subsubsection.7.2.3.5}%
+\contentsline {subsubsection}{\numberline {7.2.3.6}getOrientationManual()}{24}{subsubsection.7.2.3.6}%
+\contentsline {subsubsection}{\numberline {7.2.3.7}getPath()}{25}{subsubsection.7.2.3.7}%
+\contentsline {subsubsection}{\numberline {7.2.3.8}getSpeed()}{25}{subsubsection.7.2.3.8}%
+\contentsline {subsubsection}{\numberline {7.2.3.9}getSpeedManual()}{25}{subsubsection.7.2.3.9}%
+\contentsline {subsubsection}{\numberline {7.2.3.10}openFile()}{25}{subsubsection.7.2.3.10}%
+\contentsline {subsubsection}{\numberline {7.2.3.11}setLogging()}{26}{subsubsection.7.2.3.11}%
+\contentsline {subsubsection}{\numberline {7.2.3.12}setOffset()}{27}{subsubsection.7.2.3.12}%
+\contentsline {subsubsection}{\numberline {7.2.3.13}setOrientation()}{27}{subsubsection.7.2.3.13}%
+\contentsline {subsubsection}{\numberline {7.2.3.14}setSpeed()}{28}{subsubsection.7.2.3.14}%
+\contentsline {subsection}{\numberline {7.2.4}Dokumentation der Datenelemente}{28}{subsection.7.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.4.1}A}{28}{subsubsection.7.2.4.1}%
+\contentsline {subsubsection}{\numberline {7.2.4.2}B}{28}{subsubsection.7.2.4.2}%
+\contentsline {subsubsection}{\numberline {7.2.4.3}C}{29}{subsubsection.7.2.4.3}%
+\contentsline {subsubsection}{\numberline {7.2.4.4}difference}{29}{subsubsection.7.2.4.4}%
+\contentsline {subsubsection}{\numberline {7.2.4.5}initialPath}{29}{subsubsection.7.2.4.5}%
+\contentsline {subsubsection}{\numberline {7.2.4.6}loggingManual}{29}{subsubsection.7.2.4.6}%
+\contentsline {subsubsection}{\numberline {7.2.4.7}offsetManual}{29}{subsubsection.7.2.4.7}%
+\contentsline {subsubsection}{\numberline {7.2.4.8}offsetX}{30}{subsubsection.7.2.4.8}%
+\contentsline {subsubsection}{\numberline {7.2.4.9}offsetY}{30}{subsubsection.7.2.4.9}%
+\contentsline {subsubsection}{\numberline {7.2.4.10}offsetZ}{30}{subsubsection.7.2.4.10}%
+\contentsline {subsubsection}{\numberline {7.2.4.11}orientationManual}{30}{subsubsection.7.2.4.11}%
+\contentsline {subsubsection}{\numberline {7.2.4.12}speed}{30}{subsubsection.7.2.4.12}%
+\contentsline {subsubsection}{\numberline {7.2.4.13}speedManual}{31}{subsubsection.7.2.4.13}%
+\contentsline {section}{\numberline {7.3}CInput\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Point3D Klassenreferenz}{31}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Ausführliche Beschreibung}{32}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Beschreibung der Konstruktoren und Destruktoren}{33}{subsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.1}CInputPoint3D()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{33}{subsubsection.7.3.2.1}%
+\contentsline {subsubsection}{\numberline {7.3.2.2}CInputPoint3D()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{33}{subsubsection.7.3.2.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.3}$\sim $CInputPoint3D()}{34}{subsubsection.7.3.2.3}%
+\contentsline {subsection}{\numberline {7.3.3}Dokumentation der Elementfunktionen}{34}{subsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3.1}getEulerMatrix()}{34}{subsubsection.7.3.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.3.2}getTime()}{34}{subsubsection.7.3.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3.3}setEulerMatrix()}{34}{subsubsection.7.3.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3.4}setPoint()}{35}{subsubsection.7.3.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.3.5}setTime()}{35}{subsubsection.7.3.3.5}%
+\contentsline {subsection}{\numberline {7.3.4}Dokumentation der Datenelemente}{36}{subsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.4.1}orientationMatrix}{36}{subsubsection.7.3.4.1}%
+\contentsline {subsubsection}{\numberline {7.3.4.2}timestamp}{36}{subsubsection.7.3.4.2}%
+\contentsline {section}{\numberline {7.4}CLine3D Klassenreferenz}{36}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Ausführliche Beschreibung}{37}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Beschreibung der Konstruktoren und Destruktoren}{37}{subsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.1}CLine3D()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{37}{subsubsection.7.4.2.1}%
+\contentsline {subsubsection}{\numberline {7.4.2.2}CLine3D()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{37}{subsubsection.7.4.2.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.3}$\sim $CLine3D()}{38}{subsubsection.7.4.2.3}%
+\contentsline {subsection}{\numberline {7.4.3}Dokumentation der Datenelemente}{38}{subsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.4.3.1}p1}{38}{subsubsection.7.4.3.1}%
+\contentsline {subsubsection}{\numberline {7.4.3.2}p2}{38}{subsubsection.7.4.3.2}%
+\contentsline {section}{\numberline {7.5}CLogging Klassenreferenz}{38}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Ausführliche Beschreibung}{39}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Beschreibung der Konstruktoren und Destruktoren}{39}{subsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.2.1}CLogging()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{39}{subsubsection.7.5.2.1}%
+\contentsline {subsubsection}{\numberline {7.5.2.2}CLogging()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{40}{subsubsection.7.5.2.2}%
+\contentsline {subsubsection}{\numberline {7.5.2.3}$\sim $CLogging()}{40}{subsubsection.7.5.2.3}%
+\contentsline {subsection}{\numberline {7.5.3}Dokumentation der Elementfunktionen}{40}{subsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.3.1}getDetailed()}{40}{subsubsection.7.5.3.1}%
+\contentsline {subsubsection}{\numberline {7.5.3.2}logData()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{40}{subsubsection.7.5.3.2}%
+\contentsline {subsubsection}{\numberline {7.5.3.3}logData()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{41}{subsubsection.7.5.3.3}%
+\contentsline {subsubsection}{\numberline {7.5.3.4}logData()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{42}{subsubsection.7.5.3.4}%
+\contentsline {subsubsection}{\numberline {7.5.3.5}setStep()}{42}{subsubsection.7.5.3.5}%
+\contentsline {subsection}{\numberline {7.5.4}Dokumentation der Datenelemente}{43}{subsection.7.5.4}%
+\contentsline {subsubsection}{\numberline {7.5.4.1}detailed}{43}{subsubsection.7.5.4.1}%
+\contentsline {subsubsection}{\numberline {7.5.4.2}path}{43}{subsubsection.7.5.4.2}%
+\contentsline {subsubsection}{\numberline {7.5.4.3}step}{43}{subsubsection.7.5.4.3}%
+\contentsline {section}{\numberline {7.6}CMean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Filter Klassenreferenz}{44}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Ausführliche Beschreibung}{44}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Beschreibung der Konstruktoren und Destruktoren}{44}{subsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.2.1}CMeanFilter()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{44}{subsubsection.7.6.2.1}%
+\contentsline {subsubsection}{\numberline {7.6.2.2}CMeanFilter()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{45}{subsubsection.7.6.2.2}%
+\contentsline {subsubsection}{\numberline {7.6.2.3}$\sim $CMeanFilter()}{45}{subsubsection.7.6.2.3}%
+\contentsline {subsection}{\numberline {7.6.3}Dokumentation der Elementfunktionen}{45}{subsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.3.1}calculateMean()}{45}{subsubsection.7.6.3.1}%
+\contentsline {subsubsection}{\numberline {7.6.3.2}getPath()}{46}{subsubsection.7.6.3.2}%
+\contentsline {subsubsection}{\numberline {7.6.3.3}getWindowSize()}{46}{subsubsection.7.6.3.3}%
+\contentsline {subsubsection}{\numberline {7.6.3.4}mean()}{47}{subsubsection.7.6.3.4}%
+\contentsline {subsubsection}{\numberline {7.6.3.5}setWindowSize()}{47}{subsubsection.7.6.3.5}%
+\contentsline {subsection}{\numberline {7.6.4}Dokumentation der Datenelemente}{48}{subsection.7.6.4}%
+\contentsline {subsubsection}{\numberline {7.6.4.1}meanPath}{48}{subsubsection.7.6.4.1}%
+\contentsline {subsubsection}{\numberline {7.6.4.2}windowSize}{48}{subsubsection.7.6.4.2}%
+\contentsline {section}{\numberline {7.7}COutput\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Point3D Klassenreferenz}{48}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Ausführliche Beschreibung}{50}{subsection.7.7.1}%
+\contentsline {subsection}{\numberline {7.7.2}Beschreibung der Konstruktoren und Destruktoren}{50}{subsection.7.7.2}%
+\contentsline {subsubsection}{\numberline {7.7.2.1}COutputPoint3D()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{50}{subsubsection.7.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.7.2.2}COutputPoint3D()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{50}{subsubsection.7.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.7.2.3}$\sim $COutputPoint3D()}{51}{subsubsection.7.7.2.3}%
+\contentsline {subsection}{\numberline {7.7.3}Dokumentation der Elementfunktionen}{51}{subsection.7.7.3}%
+\contentsline {subsubsection}{\numberline {7.7.3.1}getA()}{51}{subsubsection.7.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.7.3.2}getB()}{52}{subsubsection.7.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.7.3.3}getC()}{52}{subsubsection.7.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.7.3.4}getSpeed()}{52}{subsubsection.7.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.7.3.5}setA()}{52}{subsubsection.7.7.3.5}%
+\contentsline {subsubsection}{\numberline {7.7.3.6}setB()}{53}{subsubsection.7.7.3.6}%
+\contentsline {subsubsection}{\numberline {7.7.3.7}setC()}{53}{subsubsection.7.7.3.7}%
+\contentsline {subsubsection}{\numberline {7.7.3.8}setSpeed()}{54}{subsubsection.7.7.3.8}%
+\contentsline {subsection}{\numberline {7.7.4}Dokumentation der Datenelemente}{54}{subsection.7.7.4}%
+\contentsline {subsubsection}{\numberline {7.7.4.1}a}{54}{subsubsection.7.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.7.4.2}b}{54}{subsubsection.7.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.7.4.3}c}{54}{subsubsection.7.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.7.4.4}speed}{55}{subsubsection.7.7.4.4}%
+\contentsline {section}{\numberline {7.8}CPath\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder Klassenreferenz}{55}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Ausführliche Beschreibung}{55}{subsection.7.8.1}%
+\contentsline {subsection}{\numberline {7.8.2}Beschreibung der Konstruktoren und Destruktoren}{56}{subsection.7.8.2}%
+\contentsline {subsubsection}{\numberline {7.8.2.1}CPathBuilder()}{56}{subsubsection.7.8.2.1}%
+\contentsline {subsubsection}{\numberline {7.8.2.2}$\sim $CPathBuilder()}{56}{subsubsection.7.8.2.2}%
+\contentsline {subsection}{\numberline {7.8.3}Dokumentation der Elementfunktionen}{56}{subsection.7.8.3}%
+\contentsline {subsubsection}{\numberline {7.8.3.1}createPath()}{56}{subsubsection.7.8.3.1}%
+\contentsline {subsubsection}{\numberline {7.8.3.2}getPath()}{57}{subsubsection.7.8.3.2}%
+\contentsline {subsection}{\numberline {7.8.4}Dokumentation der Datenelemente}{57}{subsection.7.8.4}%
+\contentsline {subsubsection}{\numberline {7.8.4.1}path}{57}{subsubsection.7.8.4.1}%
+\contentsline {section}{\numberline {7.9}CPoint3D Klassenreferenz}{58}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Ausführliche Beschreibung}{59}{subsection.7.9.1}%
+\contentsline {subsection}{\numberline {7.9.2}Beschreibung der Konstruktoren und Destruktoren}{59}{subsection.7.9.2}%
+\contentsline {subsubsection}{\numberline {7.9.2.1}CPoint3D()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{59}{subsubsection.7.9.2.1}%
+\contentsline {subsubsection}{\numberline {7.9.2.2}CPoint3D()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{59}{subsubsection.7.9.2.2}%
+\contentsline {subsubsection}{\numberline {7.9.2.3}$\sim $CPoint3D()}{60}{subsubsection.7.9.2.3}%
+\contentsline {subsection}{\numberline {7.9.3}Dokumentation der Elementfunktionen}{60}{subsection.7.9.3}%
+\contentsline {subsubsection}{\numberline {7.9.3.1}distanceTo()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{60}{subsubsection.7.9.3.1}%
+\contentsline {subsubsection}{\numberline {7.9.3.2}distanceTo()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{61}{subsubsection.7.9.3.2}%
+\contentsline {subsubsection}{\numberline {7.9.3.3}getX()}{61}{subsubsection.7.9.3.3}%
+\contentsline {subsubsection}{\numberline {7.9.3.4}getY()}{62}{subsubsection.7.9.3.4}%
+\contentsline {subsubsection}{\numberline {7.9.3.5}getZ()}{62}{subsubsection.7.9.3.5}%
+\contentsline {subsubsection}{\numberline {7.9.3.6}set()}{62}{subsubsection.7.9.3.6}%
+\contentsline {subsubsection}{\numberline {7.9.3.7}setX()}{63}{subsubsection.7.9.3.7}%
+\contentsline {subsubsection}{\numberline {7.9.3.8}setY()}{63}{subsubsection.7.9.3.8}%
+\contentsline {subsubsection}{\numberline {7.9.3.9}setZ()}{63}{subsubsection.7.9.3.9}%
+\contentsline {subsection}{\numberline {7.9.4}Dokumentation der Datenelemente}{65}{subsection.7.9.4}%
+\contentsline {subsubsection}{\numberline {7.9.4.1}x}{65}{subsubsection.7.9.4.1}%
+\contentsline {subsubsection}{\numberline {7.9.4.2}y}{65}{subsubsection.7.9.4.2}%
+\contentsline {subsubsection}{\numberline {7.9.4.3}z}{65}{subsubsection.7.9.4.3}%
+\contentsline {section}{\numberline {7.10}CRob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Code\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator Klassenreferenz}{66}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}Ausführliche Beschreibung}{66}{subsection.7.10.1}%
+\contentsline {subsection}{\numberline {7.10.2}Beschreibung der Konstruktoren und Destruktoren}{66}{subsection.7.10.2}%
+\contentsline {subsubsection}{\numberline {7.10.2.1}CRobCodeGenerator()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{66}{subsubsection.7.10.2.1}%
+\contentsline {subsubsection}{\numberline {7.10.2.2}CRobCodeGenerator()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{67}{subsubsection.7.10.2.2}%
+\contentsline {subsubsection}{\numberline {7.10.2.3}$\sim $CRobCodeGenerator()}{67}{subsubsection.7.10.2.3}%
+\contentsline {subsection}{\numberline {7.10.3}Dokumentation der Elementfunktionen}{67}{subsection.7.10.3}%
+\contentsline {subsubsection}{\numberline {7.10.3.1}calculateAngles()}{67}{subsubsection.7.10.3.1}%
+\contentsline {subsubsection}{\numberline {7.10.3.2}calculateSpeed()}{68}{subsubsection.7.10.3.2}%
+\contentsline {subsubsection}{\numberline {7.10.3.3}generateRobCode()}{69}{subsubsection.7.10.3.3}%
+\contentsline {subsubsection}{\numberline {7.10.3.4}postProcessing()}{70}{subsubsection.7.10.3.4}%
+\contentsline {subsection}{\numberline {7.10.4}Dokumentation der Datenelemente}{70}{subsection.7.10.4}%
+\contentsline {subsubsection}{\numberline {7.10.4.1}input}{70}{subsubsection.7.10.4.1}%
+\contentsline {subsubsection}{\numberline {7.10.4.2}processedPath}{71}{subsubsection.7.10.4.2}%
+\contentsline {section}{\numberline {7.11}CSegment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator Klassenreferenz}{71}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Ausführliche Beschreibung}{72}{subsection.7.11.1}%
+\contentsline {subsection}{\numberline {7.11.2}Beschreibung der Konstruktoren und Destruktoren}{72}{subsection.7.11.2}%
+\contentsline {subsubsection}{\numberline {7.11.2.1}CSegmentApproximator()}{72}{subsubsection.7.11.2.1}%
+\contentsline {subsubsection}{\numberline {7.11.2.2}$\sim $CSegmentApproximator()}{72}{subsubsection.7.11.2.2}%
+\contentsline {subsection}{\numberline {7.11.3}Dokumentation der Elementfunktionen}{72}{subsection.7.11.3}%
+\contentsline {subsubsection}{\numberline {7.11.3.1}approx()}{72}{subsubsection.7.11.3.1}%
+\contentsline {subsubsection}{\numberline {7.11.3.2}douglasPeuckerRecursive()}{73}{subsubsection.7.11.3.2}%
+\contentsline {subsubsection}{\numberline {7.11.3.3}getmaxDistance()}{74}{subsubsection.7.11.3.3}%
+\contentsline {subsubsection}{\numberline {7.11.3.4}getSegmentsApproxVector()}{74}{subsubsection.7.11.3.4}%
+\contentsline {subsubsection}{\numberline {7.11.3.5}setmaxDistance()}{75}{subsubsection.7.11.3.5}%
+\contentsline {subsection}{\numberline {7.11.4}Dokumentation der Datenelemente}{75}{subsection.7.11.4}%
+\contentsline {subsubsection}{\numberline {7.11.4.1}maxDistance}{75}{subsubsection.7.11.4.1}%
+\contentsline {subsubsection}{\numberline {7.11.4.2}segmentsApprox}{75}{subsubsection.7.11.4.2}%
+\contentsline {section}{\numberline {7.12}GUI Klassenreferenz}{76}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Ausführliche Beschreibung}{77}{subsection.7.12.1}%
+\contentsline {subsection}{\numberline {7.12.2}Beschreibung der Konstruktoren und Destruktoren}{77}{subsection.7.12.2}%
+\contentsline {subsubsection}{\numberline {7.12.2.1}GUI()}{77}{subsubsection.7.12.2.1}%
+\contentsline {subsubsection}{\numberline {7.12.2.2}$\sim $GUI()}{78}{subsubsection.7.12.2.2}%
+\contentsline {subsection}{\numberline {7.12.3}Dokumentation der Elementfunktionen}{78}{subsection.7.12.3}%
+\contentsline {subsubsection}{\numberline {7.12.3.1}activateLogging}{78}{subsubsection.7.12.3.1}%
+\contentsline {subsubsection}{\numberline {7.12.3.2}activateOffset}{79}{subsubsection.7.12.3.2}%
+\contentsline {subsubsection}{\numberline {7.12.3.3}activateOrientation}{79}{subsubsection.7.12.3.3}%
+\contentsline {subsubsection}{\numberline {7.12.3.4}activateSpeed}{80}{subsubsection.7.12.3.4}%
+\contentsline {subsubsection}{\numberline {7.12.3.5}calculate}{80}{subsubsection.7.12.3.5}%
+\contentsline {subsubsection}{\numberline {7.12.3.6}setDP}{81}{subsubsection.7.12.3.6}%
+\contentsline {subsubsection}{\numberline {7.12.3.7}setInputPath}{81}{subsubsection.7.12.3.7}%
+\contentsline {subsubsection}{\numberline {7.12.3.8}setMean}{82}{subsubsection.7.12.3.8}%
+\contentsline {subsubsection}{\numberline {7.12.3.9}setOffset}{82}{subsubsection.7.12.3.9}%
+\contentsline {subsubsection}{\numberline {7.12.3.10}setOrientation}{82}{subsubsection.7.12.3.10}%
+\contentsline {subsubsection}{\numberline {7.12.3.11}setOutputPath}{83}{subsubsection.7.12.3.11}%
+\contentsline {subsubsection}{\numberline {7.12.3.12}setSpeed}{83}{subsubsection.7.12.3.12}%
+\contentsline {subsection}{\numberline {7.12.4}Dokumentation der Datenelemente}{83}{subsection.7.12.4}%
+\contentsline {subsubsection}{\numberline {7.12.4.1}dpTolerance}{83}{subsubsection.7.12.4.1}%
+\contentsline {subsubsection}{\numberline {7.12.4.2}inputParameter}{83}{subsubsection.7.12.4.2}%
+\contentsline {subsubsection}{\numberline {7.12.4.3}inputPathUI}{84}{subsubsection.7.12.4.3}%
+\contentsline {subsubsection}{\numberline {7.12.4.4}meanLength}{84}{subsubsection.7.12.4.4}%
+\contentsline {subsubsection}{\numberline {7.12.4.5}outputPathUI}{84}{subsubsection.7.12.4.5}%
+\contentsline {subsubsection}{\numberline {7.12.4.6}ui}{84}{subsubsection.7.12.4.6}%
+\contentsline {section}{\numberline {7.13}Ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::GUIClass Klassenreferenz}{85}{section.7.13}%
+\contentsline {subsection}{\numberline {7.13.1}Ausführliche Beschreibung}{86}{subsection.7.13.1}%
+\contentsline {section}{\numberline {7.14}QT\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}WARNING\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DISABLE\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DEPRECATED\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::qt\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}meta\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}stringdata\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CLASSGUIENDCLASS\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Strukturreferenz}{86}{section.7.14}%
+\contentsline {subsection}{\numberline {7.14.1}Ausführliche Beschreibung}{86}{subsection.7.14.1}%
+\contentsline {subsection}{\numberline {7.14.2}Dokumentation der Datenelemente}{86}{subsection.7.14.2}%
+\contentsline {subsubsection}{\numberline {7.14.2.1}offsetsAndSizes}{86}{subsubsection.7.14.2.1}%
+\contentsline {subsubsection}{\numberline {7.14.2.2}stringdata0}{86}{subsubsection.7.14.2.2}%
+\contentsline {subsubsection}{\numberline {7.14.2.3}stringdata1}{87}{subsubsection.7.14.2.3}%
+\contentsline {subsubsection}{\numberline {7.14.2.4}stringdata10}{87}{subsubsection.7.14.2.4}%
+\contentsline {subsubsection}{\numberline {7.14.2.5}stringdata11}{87}{subsubsection.7.14.2.5}%
+\contentsline {subsubsection}{\numberline {7.14.2.6}stringdata12}{87}{subsubsection.7.14.2.6}%
+\contentsline {subsubsection}{\numberline {7.14.2.7}stringdata13}{87}{subsubsection.7.14.2.7}%
+\contentsline {subsubsection}{\numberline {7.14.2.8}stringdata2}{87}{subsubsection.7.14.2.8}%
+\contentsline {subsubsection}{\numberline {7.14.2.9}stringdata3}{87}{subsubsection.7.14.2.9}%
+\contentsline {subsubsection}{\numberline {7.14.2.10}stringdata4}{87}{subsubsection.7.14.2.10}%
+\contentsline {subsubsection}{\numberline {7.14.2.11}stringdata5}{88}{subsubsection.7.14.2.11}%
+\contentsline {subsubsection}{\numberline {7.14.2.12}stringdata6}{88}{subsubsection.7.14.2.12}%
+\contentsline {subsubsection}{\numberline {7.14.2.13}stringdata7}{88}{subsubsection.7.14.2.13}%
+\contentsline {subsubsection}{\numberline {7.14.2.14}stringdata8}{88}{subsubsection.7.14.2.14}%
+\contentsline {subsubsection}{\numberline {7.14.2.15}stringdata9}{88}{subsubsection.7.14.2.15}%
+\contentsline {section}{\numberline {7.15}QT\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}WARNING\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DISABLE\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DEPRECATED\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::qt\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}meta\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}stringdata\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CLASSSwitch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ENDCLASS\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Strukturreferenz}{88}{section.7.15}%
+\contentsline {subsection}{\numberline {7.15.1}Ausführliche Beschreibung}{89}{subsection.7.15.1}%
+\contentsline {subsection}{\numberline {7.15.2}Dokumentation der Datenelemente}{89}{subsection.7.15.2}%
+\contentsline {subsubsection}{\numberline {7.15.2.1}offsetsAndSizes}{89}{subsubsection.7.15.2.1}%
+\contentsline {subsubsection}{\numberline {7.15.2.2}stringdata0}{89}{subsubsection.7.15.2.2}%
+\contentsline {subsubsection}{\numberline {7.15.2.3}stringdata1}{89}{subsubsection.7.15.2.3}%
+\contentsline {subsubsection}{\numberline {7.15.2.4}stringdata2}{89}{subsubsection.7.15.2.4}%
+\contentsline {section}{\numberline {7.16}Ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUIClass Klassenreferenz}{89}{section.7.16}%
+\contentsline {subsection}{\numberline {7.16.1}Ausführliche Beschreibung}{90}{subsection.7.16.1}%
+\contentsline {subsection}{\numberline {7.16.2}Dokumentation der Elementfunktionen}{91}{subsection.7.16.2}%
+\contentsline {subsubsection}{\numberline {7.16.2.1}retranslateUi()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{91}{subsubsection.7.16.2.1}%
+\contentsline {subsubsection}{\numberline {7.16.2.2}retranslateUi()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{91}{subsubsection.7.16.2.2}%
+\contentsline {subsubsection}{\numberline {7.16.2.3}setupUi()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{92}{subsubsection.7.16.2.3}%
+\contentsline {subsubsection}{\numberline {7.16.2.4}setupUi()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{95}{subsubsection.7.16.2.4}%
+\contentsline {subsection}{\numberline {7.16.3}Dokumentation der Datenelemente}{98}{subsection.7.16.3}%
+\contentsline {subsubsection}{\numberline {7.16.3.1}AValue}{98}{subsubsection.7.16.3.1}%
+\contentsline {subsubsection}{\numberline {7.16.3.2}bLogging}{98}{subsubsection.7.16.3.2}%
+\contentsline {subsubsection}{\numberline {7.16.3.3}bManOrientation}{99}{subsubsection.7.16.3.3}%
+\contentsline {subsubsection}{\numberline {7.16.3.4}bOffset}{99}{subsubsection.7.16.3.4}%
+\contentsline {subsubsection}{\numberline {7.16.3.5}bSpeed}{99}{subsubsection.7.16.3.5}%
+\contentsline {subsubsection}{\numberline {7.16.3.6}BValue}{99}{subsubsection.7.16.3.6}%
+\contentsline {subsubsection}{\numberline {7.16.3.7}centralWidget}{99}{subsubsection.7.16.3.7}%
+\contentsline {subsubsection}{\numberline {7.16.3.8}CValue}{99}{subsubsection.7.16.3.8}%
+\contentsline {subsubsection}{\numberline {7.16.3.9}dpToleranz}{100}{subsubsection.7.16.3.9}%
+\contentsline {subsubsection}{\numberline {7.16.3.10}frame}{100}{subsubsection.7.16.3.10}%
+\contentsline {subsubsection}{\numberline {7.16.3.11}label\_10}{100}{subsubsection.7.16.3.11}%
+\contentsline {subsubsection}{\numberline {7.16.3.12}label\_11}{100}{subsubsection.7.16.3.12}%
+\contentsline {subsubsection}{\numberline {7.16.3.13}label\_12}{100}{subsubsection.7.16.3.13}%
+\contentsline {subsubsection}{\numberline {7.16.3.14}label\_13}{100}{subsubsection.7.16.3.14}%
+\contentsline {subsubsection}{\numberline {7.16.3.15}label\_14}{101}{subsubsection.7.16.3.15}%
+\contentsline {subsubsection}{\numberline {7.16.3.16}label\_15}{101}{subsubsection.7.16.3.16}%
+\contentsline {subsubsection}{\numberline {7.16.3.17}label\_4}{101}{subsubsection.7.16.3.17}%
+\contentsline {subsubsection}{\numberline {7.16.3.18}label\_5}{101}{subsubsection.7.16.3.18}%
+\contentsline {subsubsection}{\numberline {7.16.3.19}label\_dp}{101}{subsubsection.7.16.3.19}%
+\contentsline {subsubsection}{\numberline {7.16.3.20}meanLength}{101}{subsubsection.7.16.3.20}%
+\contentsline {subsubsection}{\numberline {7.16.3.21}offset}{102}{subsubsection.7.16.3.21}%
+\contentsline {subsubsection}{\numberline {7.16.3.22}offsetX}{102}{subsubsection.7.16.3.22}%
+\contentsline {subsubsection}{\numberline {7.16.3.23}offsetY}{102}{subsubsection.7.16.3.23}%
+\contentsline {subsubsection}{\numberline {7.16.3.24}offsetZ}{102}{subsubsection.7.16.3.24}%
+\contentsline {subsubsection}{\numberline {7.16.3.25}orientation}{102}{subsubsection.7.16.3.25}%
+\contentsline {subsubsection}{\numberline {7.16.3.26}pathInput}{102}{subsubsection.7.16.3.26}%
+\contentsline {subsubsection}{\numberline {7.16.3.27}pathOutput}{103}{subsubsection.7.16.3.27}%
+\contentsline {subsubsection}{\numberline {7.16.3.28}pushInput}{103}{subsubsection.7.16.3.28}%
+\contentsline {subsubsection}{\numberline {7.16.3.29}pushOutput}{103}{subsubsection.7.16.3.29}%
+\contentsline {subsubsection}{\numberline {7.16.3.30}speed}{103}{subsubsection.7.16.3.30}%
+\contentsline {subsubsection}{\numberline {7.16.3.31}speed\_2}{103}{subsubsection.7.16.3.31}%
+\contentsline {subsubsection}{\numberline {7.16.3.32}startCalculation}{103}{subsubsection.7.16.3.32}%
+\contentsline {subsubsection}{\numberline {7.16.3.33}textBrowser}{103}{subsubsection.7.16.3.33}%
+\contentsline {chapter}{\numberline {8}Datei-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{105}{chapter.8}%
+\contentsline {section}{\numberline {8.1}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Euler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matrix.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{105}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Ausführliche Beschreibung}{105}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{105}{subsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.2.1}\_USE\_MATH\_DEFINES}{105}{subsubsection.8.1.2.1}%
+\contentsline {section}{\numberline {8.2}Euler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matrix.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{106}{section.8.2}%
+\contentsline {section}{\numberline {8.3}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{106}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Ausführliche Beschreibung}{106}{subsection.8.3.1}%
+\contentsline {section}{\numberline {8.4}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{107}{section.8.4}%
+\contentsline {section}{\numberline {8.5}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameter.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{107}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Ausführliche Beschreibung}{108}{subsection.8.5.1}%
+\contentsline {section}{\numberline {8.6}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameter.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{108}{section.8.6}%
+\contentsline {section}{\numberline {8.7}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Line3D.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{108}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}Ausführliche Beschreibung}{109}{subsection.8.7.1}%
+\contentsline {section}{\numberline {8.8}Line3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{109}{section.8.8}%
+\contentsline {section}{\numberline {8.9}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logging.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{109}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}Ausführliche Beschreibung}{110}{subsection.8.9.1}%
+\contentsline {section}{\numberline {8.10}Logging.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{110}{section.8.10}%
+\contentsline {section}{\numberline {8.11}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Filter.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{110}{section.8.11}%
+\contentsline {subsection}{\numberline {8.11.1}Ausführliche Beschreibung}{110}{subsection.8.11.1}%
+\contentsline {section}{\numberline {8.12}Mean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Filter.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{111}{section.8.12}%
+\contentsline {section}{\numberline {8.13}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{111}{section.8.13}%
+\contentsline {subsection}{\numberline {8.13.1}Ausführliche Beschreibung}{111}{subsection.8.13.1}%
+\contentsline {section}{\numberline {8.14}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{112}{section.8.14}%
+\contentsline {section}{\numberline {8.15}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Point3D.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{112}{section.8.15}%
+\contentsline {subsection}{\numberline {8.15.1}Ausführliche Beschreibung}{112}{subsection.8.15.1}%
+\contentsline {section}{\numberline {8.16}Point3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{113}{section.8.16}%
+\contentsline {section}{\numberline {8.17}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Code\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{113}{section.8.17}%
+\contentsline {subsection}{\numberline {8.17.1}Ausführliche Beschreibung}{114}{subsection.8.17.1}%
+\contentsline {subsection}{\numberline {8.17.2}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{114}{subsection.8.17.2}%
+\contentsline {subsubsection}{\numberline {8.17.2.1}MAX\_SPEED}{114}{subsubsection.8.17.2.1}%
+\contentsline {section}{\numberline {8.18}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Code\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{114}{section.8.18}%
+\contentsline {section}{\numberline {8.19}header/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Segment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{115}{section.8.19}%
+\contentsline {subsection}{\numberline {8.19.1}Ausführliche Beschreibung}{115}{subsection.8.19.1}%
+\contentsline {section}{\numberline {8.20}Segment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{115}{section.8.20}%
+\contentsline {section}{\numberline {8.21}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Euler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matrix.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{116}{section.8.21}%
+\contentsline {section}{\numberline {8.22}Euler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matrix.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{116}{section.8.22}%
+\contentsline {section}{\numberline {8.23}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{117}{section.8.23}%
+\contentsline {subsection}{\numberline {8.23.1}Ausführliche Beschreibung}{117}{subsection.8.23.1}%
+\contentsline {section}{\numberline {8.24}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{118}{section.8.24}%
+\contentsline {section}{\numberline {8.25}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameter.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{120}{section.8.25}%
+\contentsline {subsection}{\numberline {8.25.1}Ausführliche Beschreibung}{121}{subsection.8.25.1}%
+\contentsline {section}{\numberline {8.26}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameter.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{121}{section.8.26}%
+\contentsline {section}{\numberline {8.27}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Line3D.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{123}{section.8.27}%
+\contentsline {subsection}{\numberline {8.27.1}Ausführliche Beschreibung}{123}{subsection.8.27.1}%
+\contentsline {section}{\numberline {8.28}Line3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{123}{section.8.28}%
+\contentsline {section}{\numberline {8.29}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logging.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{123}{section.8.29}%
+\contentsline {subsection}{\numberline {8.29.1}Ausführliche Beschreibung}{124}{subsection.8.29.1}%
+\contentsline {section}{\numberline {8.30}Logging.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{124}{section.8.30}%
+\contentsline {section}{\numberline {8.31}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Filter.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{125}{section.8.31}%
+\contentsline {subsection}{\numberline {8.31.1}Ausführliche Beschreibung}{125}{subsection.8.31.1}%
+\contentsline {section}{\numberline {8.32}Mean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Filter.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{126}{section.8.32}%
+\contentsline {section}{\numberline {8.33}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{127}{section.8.33}%
+\contentsline {subsection}{\numberline {8.33.1}Ausführliche Beschreibung}{127}{subsection.8.33.1}%
+\contentsline {section}{\numberline {8.34}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{127}{section.8.34}%
+\contentsline {section}{\numberline {8.35}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Point3D.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{128}{section.8.35}%
+\contentsline {subsection}{\numberline {8.35.1}Ausführliche Beschreibung}{128}{subsection.8.35.1}%
+\contentsline {section}{\numberline {8.36}Point3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{128}{section.8.36}%
+\contentsline {section}{\numberline {8.37}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Code\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{131}{section.8.37}%
+\contentsline {subsection}{\numberline {8.37.1}Ausführliche Beschreibung}{131}{subsection.8.37.1}%
+\contentsline {section}{\numberline {8.38}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Code\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{131}{section.8.38}%
+\contentsline {section}{\numberline {8.39}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Editor.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{133}{section.8.39}%
+\contentsline {subsection}{\numberline {8.39.1}Ausführliche Beschreibung}{133}{subsection.8.39.1}%
+\contentsline {subsection}{\numberline {8.39.2}Dokumentation der Funktionen}{133}{subsection.8.39.2}%
+\contentsline {subsubsection}{\numberline {8.39.2.1}main()}{133}{subsubsection.8.39.2.1}%
+\contentsline {section}{\numberline {8.40}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Editor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{133}{section.8.40}%
+\contentsline {section}{\numberline {8.41}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Segment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{134}{section.8.41}%
+\contentsline {subsection}{\numberline {8.41.1}Ausführliche Beschreibung}{134}{subsection.8.41.1}%
+\contentsline {section}{\numberline {8.42}Segment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{134}{section.8.42}%
+\contentsline {section}{\numberline {8.43}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{135}{section.8.43}%
+\contentsline {subsection}{\numberline {8.43.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{136}{subsection.8.43.1}%
+\contentsline {subsubsection}{\numberline {8.43.1.1}Q\_CONSTINIT}{136}{subsubsection.8.43.1.1}%
+\contentsline {subsubsection}{\numberline {8.43.1.2}QT\_MOC\_LITERAL}{136}{subsubsection.8.43.1.2}%
+\contentsline {section}{\numberline {8.44}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{136}{section.8.44}%
+\contentsline {section}{\numberline {8.45}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{139}{section.8.45}%
+\contentsline {subsection}{\numberline {8.45.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{139}{subsection.8.45.1}%
+\contentsline {subsubsection}{\numberline {8.45.1.1}Q\_CONSTINIT}{139}{subsubsection.8.45.1.1}%
+\contentsline {subsubsection}{\numberline {8.45.1.2}QT\_MOC\_LITERAL}{140}{subsubsection.8.45.1.2}%
+\contentsline {section}{\numberline {8.46}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{140}{section.8.46}%
+\contentsline {section}{\numberline {8.47}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{143}{section.8.47}%
+\contentsline {subsection}{\numberline {8.47.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{143}{subsection.8.47.1}%
+\contentsline {subsubsection}{\numberline {8.47.1.1}Q\_CONSTINIT}{143}{subsubsection.8.47.1.1}%
+\contentsline {subsubsection}{\numberline {8.47.1.2}QT\_MOC\_LITERAL}{143}{subsubsection.8.47.1.2}%
+\contentsline {section}{\numberline {8.48}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{144}{section.8.48}%
+\contentsline {section}{\numberline {8.49}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{146}{section.8.49}%
+\contentsline {subsection}{\numberline {8.49.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{146}{subsection.8.49.1}%
+\contentsline {subsubsection}{\numberline {8.49.1.1}Q\_CONSTINIT}{146}{subsubsection.8.49.1.1}%
+\contentsline {subsubsection}{\numberline {8.49.1.2}QT\_MOC\_LITERAL}{146}{subsubsection.8.49.1.2}%
+\contentsline {section}{\numberline {8.50}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{147}{section.8.50}%
+\contentsline {section}{\numberline {8.51}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/rcc/qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{149}{section.8.51}%
+\contentsline {subsection}{\numberline {8.51.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{149}{subsection.8.51.1}%
+\contentsline {subsubsection}{\numberline {8.51.1.1}QT\_RCC\_MANGLE\_NAMESPACE}{149}{subsubsection.8.51.1.1}%
+\contentsline {subsubsection}{\numberline {8.51.1.2}QT\_RCC\_PREPEND\_NAMESPACE}{149}{subsubsection.8.51.1.2}%
+\contentsline {subsection}{\numberline {8.51.2}Dokumentation der Funktionen}{149}{subsection.8.51.2}%
+\contentsline {subsubsection}{\numberline {8.51.2.1}qCleanupResources\_GUI()}{149}{subsubsection.8.51.2.1}%
+\contentsline {subsubsection}{\numberline {8.51.2.2}qInitResources\_GUI()}{149}{subsubsection.8.51.2.2}%
+\contentsline {section}{\numberline {8.52}qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{150}{section.8.52}%
+\contentsline {section}{\numberline {8.53}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/rcc/qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{150}{section.8.53}%
+\contentsline {subsection}{\numberline {8.53.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{151}{subsection.8.53.1}%
+\contentsline {subsubsection}{\numberline {8.53.1.1}QT\_RCC\_MANGLE\_NAMESPACE}{151}{subsubsection.8.53.1.1}%
+\contentsline {subsubsection}{\numberline {8.53.1.2}QT\_RCC\_PREPEND\_NAMESPACE}{151}{subsubsection.8.53.1.2}%
+\contentsline {subsection}{\numberline {8.53.2}Dokumentation der Funktionen}{151}{subsection.8.53.2}%
+\contentsline {subsubsection}{\numberline {8.53.2.1}qCleanupResources\_GUI()}{151}{subsubsection.8.53.2.1}%
+\contentsline {subsubsection}{\numberline {8.53.2.2}qInitResources\_GUI()}{151}{subsubsection.8.53.2.2}%
+\contentsline {section}{\numberline {8.54}qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{151}{section.8.54}%
+\contentsline {section}{\numberline {8.55}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/uic/ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{152}{section.8.55}%
+\contentsline {section}{\numberline {8.56}ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{153}{section.8.56}%
+\contentsline {section}{\numberline {8.57}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/uic/ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{157}{section.8.57}%
+\contentsline {section}{\numberline {8.58}ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{157}{section.8.58}%
+\contentsline {chapter}{Index}{163}{section*.81}%
