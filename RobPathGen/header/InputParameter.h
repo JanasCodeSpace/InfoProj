@@ -44,7 +44,7 @@ public:
 	* @see ~CInputParameter()
 	* @see CInputParameter(void);
 	*/
-	CInputParameter(double initSpeed, bool initSeepManual, bool initOrientationManual, double initA, double initB, double initC);
+	CInputParameter(double initSpeed, bool initSpeedManual, bool initOrientationManual, double initA, double initB, double initC);
 	/**
 	* @brief Dekonstruktor
 	*/

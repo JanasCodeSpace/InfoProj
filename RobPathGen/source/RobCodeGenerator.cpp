@@ -5,6 +5,8 @@
  */
 
 #include "../header/RobCodeGenerator.h"
+#include "../header/RobCodeGenerator.h"
+#include "../header/Point3D.h"
 
 /* CRobCodeGenerator mit 0 initialiseren */
 CRobCodeGenerator::CRobCodeGenerator(void)

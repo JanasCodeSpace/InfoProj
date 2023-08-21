@@ -4,45 +4,70 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace UnitTests
+namespace MeanFilter
 {
-    TEST_CLASS(MeanFilterTests)
+    TEST_CLASS(MeanFilterTests_1)
     {
     public:
-        TEST_METHOD(Constructor_Default)
+        TEST_METHOD(DefaultConstructor)
         {
             CMeanFilter filter;
             Assert::AreEqual(3, filter.getWindowSize());
         }
 
-        TEST_METHOD(Constructor_WithWindowSize)
+        TEST_METHOD(ParamterizedConstructor)
         {
             int windowSize = 5;
             CMeanFilter filter(windowSize);
             Assert::AreEqual(windowSize, filter.getWindowSize());
         }
 
-        TEST_METHOD(SetWindowSize)
+        TEST_METHOD(SetterAndGetter)
         {
             CMeanFilter filter;
             int windowSize = 7;
             filter.setWindowSize(windowSize);
             Assert::AreEqual(windowSize, filter.getWindowSize());
         }
-
-        TEST_METHOD(GetPath)
+        TEST_METHOD(Mean)
         {
             CMeanFilter filter;
-            vector<list<CInputPoint3D>>& path = filter.getPath();
-            Assert::IsTrue(path.empty());
-        }
+            CLogging log;
+            CInputPoint3D testPoint;
+            CEulerMatrix eulerMatrix;
+            int numberPoints = 10;
+            vector<list<CInputPoint3D>> sourcePath, destinationPath;
+            list<CInputPoint3D> dummyDaten, outputDaten;
+            for (int i = 1; i <= numberPoints; i++)
+            {
+                CInputPoint3D point;
+                point.setX(i);
+                point.setY(i * 2);
+                point.setZ(i * 3);
+                dummyDaten.push_back(point);
+            }            
+            sourcePath.push_back(dummyDaten);
+            filter.mean(sourcePath, log);
+            destinationPath = filter.getPath();
+            outputDaten = destinationPath[0];
 
+            list<CInputPoint3D>::iterator it = outputDaten.begin();            
+            for (int i = 2; i <= numberPoints-filter.getWindowSize(); i++)
+            {
+                testPoint.setPoint(it->getTime(), it->getX(), it->getY(), it->getZ(), eulerMatrix);
+                Assert::AreEqual(testPoint.getX(), (double)i);
+                Assert::AreEqual(testPoint.getY(), (double)i*2);
+                Assert::AreEqual(testPoint.getZ(), (double)i*3);
+                it++;
+            }
+        }
         TEST_METHOD(CalculateMean)
         {
             CMeanFilter filter;
             list<CInputPoint3D> inputSegment;
+            int numberPoints = 10;
                         
-            for (int i = 1; i <= 5; i++)
+            for (int i = 1; i <= numberPoints; i++)
             {
                 CInputPoint3D point;
                 point.setX(i);

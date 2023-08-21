@@ -86,9 +86,9 @@ double CPoint3D::distanceTo(CLine3D line)
 	vp1, vp2, vp3	== Vektorprodukte
 	*/
 
-	int rvx = line.p1.x - line.p2.x;		// Parameter X des Linienvektor berechnen
-	int rvy = line.p1.y - line.p2.y;		// Parameter Y des Linienvektor berechnen
-	int rvz = line.p1.z - line.p2.z;		// Parameter Z des Linienvektor berechnen
+	double rvx = line.p1.x - line.p2.x;		// Parameter X des Linienvektor berechnen
+	double rvy = line.p1.y - line.p2.y;		// Parameter Y des Linienvektor berechnen
+	double rvz = line.p1.z - line.p2.z;		// Parameter Z des Linienvektor berechnen
 
 	rv_sq = sqrt(((double)rvx * (double)rvx) + ((double)rvy * (double)rvy) + ((double)rvz * (double)rvz));		// Betrag des Linienvektor berechnen
 

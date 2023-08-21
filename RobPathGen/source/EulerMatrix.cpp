@@ -1,3 +1,9 @@
+/**
+ * @file EulerMatrix.cpp
+ *
+ * @brief Source Code der Euler Matrix
+ */
+
 #include "../header/EulerMatrix.h"
 #include <math.h>
 
@@ -55,7 +61,6 @@ void CEulerMatrix::getMatrix(float Matrix[][3])
     }
 }
 
-//TODO: Kommentar
 CEulerMatrix CEulerMatrix::angels2mat(double A, double B, double C)
 {
     float Matrix[3][3];     // DummyMatrix erstellen
@@ -78,7 +83,6 @@ CEulerMatrix CEulerMatrix::angels2mat(double A, double B, double C)
     return buffer;                      // Matrix zurueck geben
 }
 
-//TODO: Kommentar
 tuple<double , double , double> CEulerMatrix::calculateAngels(void)
 {
     double a, b, c, sin_a, cos_a, sin_b, abs_cos_b, sin_c, cos_c;

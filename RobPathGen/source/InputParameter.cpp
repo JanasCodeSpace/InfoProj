@@ -135,7 +135,7 @@ void CInputParameter::openFile(string path)
 		tmpEuler.setMatrix(dummyMatrix);									// DummyMatrix[3][3] in EulerMatrix speichern							
 		tmpPoint.setPoint(timestamp, x, y, z, tmpEuler.getEulerMatrix());	// Variablen und EulerWinkel in CPoint3D speichern
 
-		if (detectJump(tmpPoint, x_prev, y_prev, z_prev)) // if there is a jump in the data, start da new segment 
+		if (detectJump(tmpPoint, x_prev, y_prev, z_prev)) // if there is a jump in the data, start a new segment 
 		{
 			segmentCount++;									// neues Segement anlegen
 			initialPath.push_back(list<CInputPoint3D>());	// Punkt in Segent speichern

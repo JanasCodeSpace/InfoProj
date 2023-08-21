@@ -1,15 +1,16 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "../RobPathGen/header/EulerMatrix.h"
+#include <math.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace UnitTests
+namespace EulerMatrix
 {
-    TEST_CLASS(EulerMatrixTests)
+    TEST_CLASS(EulerMatrixTests_1)
     {
     public:
-        TEST_METHOD(TestDefaultConstructor)
+        TEST_METHOD(DefaultConstructor)
         {
             CEulerMatrix matrix;
 
@@ -25,7 +26,7 @@ namespace UnitTests
             }
         }
 
-        TEST_METHOD(TestParameterizedConstructor)
+        TEST_METHOD(ParameterizedConstructor)
         {
             float inputMatrix[3][3] = {
         {1.0f, 2.0f, 3.0f},
@@ -45,8 +46,8 @@ namespace UnitTests
                 }
             }
         }
-        /*
-        TEST_METHOD(TestSetMatrix)
+
+        TEST_METHOD(SetMatrix)
         {
             CEulerMatrix eulerMatrix;
             float inputMatrix[3][3] = {
@@ -54,36 +55,45 @@ namespace UnitTests
         {1.0f, 2.0f, 3.0f},
         {4.0f, 5.0f, 6.0f},
             };
-            eulerMatrix.setMatrix(inputMatrix);
-                        
-            Assert::AreEqual(inputMatrix[0][0], eulerMatrix.getEulerMatrix()[0][0]);
-            Assert::AreEqual(inputMatrix[1][1], eulerMatrix.getEulerMatrix()[1][1]);
-            Assert::AreEqual(inputMatrix[2][2], eulerMatrix.getEulerMatrix()[2][2]);
-            // ...
-        }
+            float testMatrix[3][3];
 
-        TEST_METHOD(TestAngels2Mat)
+            eulerMatrix.setMatrix(inputMatrix);
+            eulerMatrix.getMatrix(testMatrix);
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int m = 0; m < 3; m++)
+                {
+                    Assert::AreEqual(testMatrix[i][m], inputMatrix[i][m]);
+                }
+            }
+        }
+        /* Not used
+        TEST_METHOD(Angels2Mat)
         {
-            CEulerMatrix eulerMatrix = CEulerMatrix::angels2mat(0.5, 0.4, 0.2);
+            CEulerMatrix eulerMatrix;
+
             float expectedMatrix[3][3] = {
-                {0.888075, 0.216529, 0.408082},
-                {0.457920, 0.744418, - 0.484291},
-                {-0.0498453, 0.632051, 0.77389}
+                {0.772361, -0.607127, 0.186697},
+                {0.630455, 0.696948, -0.341747},
+                {0.077365, 0.381656, 0.921061}
             };
+
+            eulerMatrix = eulerMatrix.angels2mat(0.5, 0.4, 0.2);
+
             float actualMatrix[3][3];
             eulerMatrix.getMatrix(actualMatrix);
+            double tolerance = 0.000001;
 
-            
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    Assert::AreEqual(expectedMatrix[i][j], actualMatrix[i][j]);
+                    Assert::AreEqual<double>(expectedMatrix[i][j], actualMatrix[i][j]);
                 }
             }
-        }
-        */
-        TEST_METHOD(TestCalculateAngels)
+        }*/
+        TEST_METHOD(CalculateAngels)
         {
             float inputMatrix[3][3] = {
                 {0.866, -0.5, 0.0},
@@ -92,20 +102,47 @@ namespace UnitTests
             };
             CEulerMatrix eulerMatrix(inputMatrix);
 
-            double expectedA = 1.047; // 60 Grad in Bogenmaß
-            double expectedB = 0.785; // 45 Grad in Bogenmaß
-            double expectedC = 0.523; // 30 Grad in Bogenmaß
-                        
-            std::tuple<double, double, double> calculatedAngles = eulerMatrix.calculateAngels();
-                        
-            double epsilon = 0.001; // Toleranz für Gleitkommavergleich
+            double expectedA = 0.523611 * 180 / M_PI;
+            double expectedB = 0.0 * 180 / M_PI;
+            double expectedC = 0.0 * 180 / M_PI;
 
+            std::tuple<double, double, double> calculatedAngles = eulerMatrix.calculateAngels();
+
+            double epsilon = 0.0001; // Toleranz für Gleitkommavergleich
+            
             Assert::IsTrue(abs(expectedA - std::get<0>(calculatedAngles)) < epsilon,
                 L"A stimmt nicht überein");
             Assert::IsTrue(abs(expectedB - std::get<1>(calculatedAngles)) < epsilon,
                 L"B stimmt nicht überein");
             Assert::IsTrue(abs(expectedC - std::get<2>(calculatedAngles)) < epsilon,
                 L"C stimmt nicht überein");
+        }
+
+        TEST_METHOD(GetEulerMatrix)
+        {
+            CEulerMatrix eulerMatrix1;
+            CEulerMatrix eulerMatrix2;
+
+            float inputMatrix[3][3] = {
+                {1.0, 2.0, 4.0},
+                {3.0, 9.0, 27.0},
+                {12.0, 144.0, 0.26}
+            };
+            float testMatrix[3][3];
+
+            eulerMatrix1.setMatrix(inputMatrix);
+            eulerMatrix2 = eulerMatrix1.getEulerMatrix();
+
+            eulerMatrix2.getMatrix(testMatrix);
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int m = 0; m < 3; m++)
+                {
+                    Assert::AreEqual(testMatrix[i][m], inputMatrix[i][m]);
+                }
+            }
+
         }
     };
 }
