@@ -90,6 +90,7 @@ void CLogging::logData(vector<CInputPoint3D>& sourcePath)
 	/* Ausgeben der Punkte mit dummyMatrix */
 	for (size_t s = 0; s < sourcePath.size(); s++) //for all points in the vector
 	{
+		tmpEuler = sourcePath[s].getEulerMatrix();
 		tmpEuler.getMatrix(dummyMatrix);
 
 		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)sourcePath[s].getTime(), 

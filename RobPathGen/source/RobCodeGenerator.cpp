@@ -73,6 +73,7 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 	}
 
 	fputs("END", fid);
+	fclose(fid);
 }
 
 void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)

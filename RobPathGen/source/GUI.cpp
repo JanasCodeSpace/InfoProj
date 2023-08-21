@@ -30,17 +30,20 @@ GUI::GUI(QWidget *parent)
 	//Douglas-Peuker-Toleranz
 	ui.dpToleranz->setRange(1, 100);
 	ui.dpToleranz->setSingleStep(1);
-	ui.dpToleranz->setValue(40);
+	ui.dpToleranz->setValue(10);
 	connect(ui.dpToleranz, &QSpinBox::valueChanged, this, &GUI::setDP);
+	dpTolerance = ui.dpToleranz->value();
 
 	//Fenster fuer gleitenden Mittelwert
 	ui.meanLength->setRange(3, 500);
 	ui.meanLength->setSingleStep(1);
 	ui.meanLength->setValue(50);
 	connect(ui.meanLength, &QSpinBox::valueChanged, this, &GUI::setMean);
+	meanLength = ui.meanLength->value();
 
 	//Geschwindigkeit
 	connect(ui.bSpeed, &QCheckBox::clicked, this, &GUI::activateSpeed);
+	inputParameter.setSpeed(0, false);
 	ui.speed->setRange(0.01, 2);
 	ui.speed->setSingleStep(0.01);
 	ui.speed->setValue(1);
@@ -48,6 +51,9 @@ GUI::GUI(QWidget *parent)
 
 	//Ausrichtung
 	connect(ui.bManOrientation, &QCheckBox::clicked, this, &GUI::activateOrientation);
+
+
+	inputParameter.setOrientation(false, 0, 0, 0);
 	ui.AValue->setRange(-180, 180);
 	ui.AValue->setSingleStep(5);
 	ui.AValue->setValue(0);
@@ -65,6 +71,9 @@ GUI::GUI(QWidget *parent)
 
 	//Offset
 	connect(ui.bOffset, &QCheckBox::clicked, this, &GUI::activateOffset);
+	inputParameter.setOffset(0, 0, 0, false);
+
+
 	ui.offsetX->setRange(-400, 400);
 	ui.offsetX->setSingleStep(10);
 	ui.offsetX->setValue(0);
