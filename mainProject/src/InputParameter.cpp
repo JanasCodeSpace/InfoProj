@@ -4,9 +4,9 @@
  * @brief Source File Daten Einlesen
  */
 
-#include "./header/InputParameter.h"
-#include "./header/Point3D.h"
-#include "./header/EulerMatrix.h"
+#include "../header/InputParameter.h"
+#include "../header/Point3D.h"
+#include "../header/EulerMatrix.h"
 
 /* CInputParamameter mir Übergabewerten initialisieren */ 
 CInputParameter::CInputParameter(double initSpeed, bool initSpeedManual, bool initOrientationManual, double initA, double initB, double initC)
@@ -108,7 +108,7 @@ void CInputParameter::openFile(string path)
 		tmpEuler.setMatrix(dummyMatrix);									// DummyMatrix[3][3] in EulerMatrix speichern							
 		tmpPoint.setPoint(timestamp, x, y, z, tmpEuler.getEulerMatrix());	// Variablen und EulerWinkel in CPoint3D speichern
 
-		if (detectJump(tmpPoint, x_prev, y_prev, z_prev)) // if there is a jump in the data, start da new segment 
+		if (detectJump(tmpPoint, x_prev, y_prev, z_prev)) // if there is a jump in the data, start a new segment 
 		{
 			segmentCount++;									// neues Segement anlegen
 			initialPath.push_back(list<CInputPoint3D>());	// Punkt in Segent speichern

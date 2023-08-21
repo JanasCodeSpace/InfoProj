@@ -40,13 +40,13 @@
   * Als letzter Schritt werden die Nutzereinstellungen in die Daten übernommen und der Robotercode erstellt.
   */
 
-#include "./header/SegmentApproximator.h"
-#include "./header/PathBuilder.h"
-#include "./header/RobCodeGenerator.h"
-#include "./header/InputParameter.h"
-#include "./header/MeanFilter.h"
-#include "./header/GUI.h"
-#include "./header/Logging.h"
+#include "../header/SegmentApproximator.h"
+#include "../header/PathBuilder.h"
+#include "../header/RobCodeGenerator.h"
+#include "../header/InputParameter.h"
+#include "../header/MeanFilter.h"
+#include "../header/GUI.h"
+#include "../header/Logging.h"
 #include <iostream>
 #include <ctime>
 

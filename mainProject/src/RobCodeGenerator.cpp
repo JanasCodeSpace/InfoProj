@@ -4,8 +4,8 @@
  * @brief Source File Roboter Code Erstellung
  */
 
-#include "./header/RobCodeGenerator.h"
-#include "./header/Point3D.h"
+#include "../header/RobCodeGenerator.h"
+#include "../header/Point3D.h"
 
 /* CRobCodeGenerator mit 0 initialiseren */
 CRobCodeGenerator::CRobCodeGenerator(void)
