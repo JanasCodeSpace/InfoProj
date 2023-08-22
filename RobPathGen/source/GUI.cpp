@@ -244,6 +244,9 @@ void GUI::calculate()
 
 	catch (exception& e)
 	{
-		cerr << e.what() << "\n";
+		QMessageBox messageBox;
+		messageBox.critical(0, "Error", e.what());
+		messageBox.setFixedSize(500, 200);
+		return;
 	}
 }
