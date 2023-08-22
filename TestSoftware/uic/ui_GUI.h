@@ -189,7 +189,7 @@ public:
 "border: 0px"));
         meanLength = new QSpinBox(frame);
         meanLength->setObjectName("meanLength");
-        meanLength->setGeometry(QRect(200, 48, 116, 20));
+        meanLength->setGeometry(QRect(210, 48, 106, 20));
         meanLength->setStyleSheet(QString::fromUtf8("background-color: rgb(210, 211, 218);\n"
 "\n"
 "border-radius: 6px;"));
@@ -201,13 +201,13 @@ public:
 "border: 0px"));
         label_4 = new QLabel(frame);
         label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(14, 48, 180, 16));
+        label_4->setGeometry(QRect(14, 48, 191, 16));
         label_4->setFont(font1);
         label_4->setStyleSheet(QString::fromUtf8("color: rgb(3, 8, 14);\n"
 "border: 0px"));
         dpToleranz = new QSpinBox(frame);
         dpToleranz->setObjectName("dpToleranz");
-        dpToleranz->setGeometry(QRect(200, 22, 116, 20));
+        dpToleranz->setGeometry(QRect(210, 22, 106, 20));
         dpToleranz->setStyleSheet(QString::fromUtf8("background-color: rgb(210, 211, 218);\n"
 "\n"
 "border-radius: 6px;"));
@@ -338,7 +338,7 @@ public:
         label_12->setText(QCoreApplication::translate("GUIClass", "C", nullptr));
         bManOrientation->setText(QCoreApplication::translate("GUIClass", "Manuelle Ausrichtung", nullptr));
         label_dp->setText(QCoreApplication::translate("GUIClass", "Douglas-Peuker-Toleranz", nullptr));
-        label_4->setText(QCoreApplication::translate("GUIClass", "Filterlaenge gleitender Mittelwert", nullptr));
+        label_4->setText(QCoreApplication::translate("GUIClass", "Filterl\303\244nge gleitender Mittelwert", nullptr));
         dpToleranz->setSpecialValueText(QString());
         dpToleranz->setSuffix(QString());
         bLogging->setText(QCoreApplication::translate("GUIClass", "Detailliertes Logging", nullptr));
@@ -346,8 +346,8 @@ public:
         label_13->setText(QCoreApplication::translate("GUIClass", "X", nullptr));
         label_14->setText(QCoreApplication::translate("GUIClass", "Y", nullptr));
         label_15->setText(QCoreApplication::translate("GUIClass", "Z", nullptr));
-        pushInput->setText(QCoreApplication::translate("GUIClass", "Datei waehlen", nullptr));
-        pushOutput->setText(QCoreApplication::translate("GUIClass", "Pfad waehlen", nullptr));
+        pushInput->setText(QCoreApplication::translate("GUIClass", "Datei w\303\244hlen", nullptr));
+        pushOutput->setText(QCoreApplication::translate("GUIClass", "Pfad w\303\244hlen", nullptr));
         startCalculation->setText(QCoreApplication::translate("GUIClass", "Datei erstellen", nullptr));
         pathOutput->setText(QCoreApplication::translate("GUIClass", "Ausgabeordner", nullptr));
     } // retranslateUi
