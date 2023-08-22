@@ -194,10 +194,17 @@ void GUI::setOutputPath(void)
 void GUI::calculate()
 {
 
-	if (inputPathUI.isEmpty() || outputPathUI.isEmpty())
+	if (inputPathUI.isEmpty())
 	{
 		QMessageBox messageBox;
 		messageBox.critical(0, "Error", "Keine Datei ausgewaehlt!");
+		messageBox.setFixedSize(500, 200);
+		return;
+	}
+	if (outputPathUI.isEmpty())
+	{
+		QMessageBox messageBox;
+		messageBox.critical(0, "Error", "Kein Pfad ausgewaehlt!");
 		messageBox.setFixedSize(500, 200);
 		return;
 	}
