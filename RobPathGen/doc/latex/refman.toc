@@ -103,7 +103,7 @@
 \contentsline {subsubsection}{\numberline {7.5.3.2}logData()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{40}{subsubsection.7.5.3.2}%
 \contentsline {subsubsection}{\numberline {7.5.3.3}logData()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{41}{subsubsection.7.5.3.3}%
 \contentsline {subsubsection}{\numberline {7.5.3.4}logData()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{42}{subsubsection.7.5.3.4}%
-\contentsline {subsubsection}{\numberline {7.5.3.5}setStep()}{42}{subsubsection.7.5.3.5}%
+\contentsline {subsubsection}{\numberline {7.5.3.5}setStep()}{43}{subsubsection.7.5.3.5}%
 \contentsline {subsection}{\numberline {7.5.4}Dokumentation der Datenelemente}{43}{subsection.7.5.4}%
 \contentsline {subsubsection}{\numberline {7.5.4.1}detailed}{43}{subsubsection.7.5.4.1}%
 \contentsline {subsubsection}{\numberline {7.5.4.2}path}{43}{subsubsection.7.5.4.2}%
@@ -184,8 +184,8 @@
 \contentsline {subsubsection}{\numberline {7.10.3.2}calculateSpeed()}{68}{subsubsection.7.10.3.2}%
 \contentsline {subsubsection}{\numberline {7.10.3.3}generateRobCode()}{69}{subsubsection.7.10.3.3}%
 \contentsline {subsubsection}{\numberline {7.10.3.4}postProcessing()}{70}{subsubsection.7.10.3.4}%
-\contentsline {subsection}{\numberline {7.10.4}Dokumentation der Datenelemente}{70}{subsection.7.10.4}%
-\contentsline {subsubsection}{\numberline {7.10.4.1}input}{70}{subsubsection.7.10.4.1}%
+\contentsline {subsection}{\numberline {7.10.4}Dokumentation der Datenelemente}{71}{subsection.7.10.4}%
+\contentsline {subsubsection}{\numberline {7.10.4.1}input}{71}{subsubsection.7.10.4.1}%
 \contentsline {subsubsection}{\numberline {7.10.4.2}processedPath}{71}{subsubsection.7.10.4.2}%
 \contentsline {section}{\numberline {7.11}CSegment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator Klassenreferenz}{71}{section.7.11}%
 \contentsline {subsection}{\numberline {7.11.1}Ausführliche Beschreibung}{72}{subsection.7.11.1}%
@@ -330,77 +330,73 @@
 \contentsline {subsection}{\numberline {8.19.1}Ausführliche Beschreibung}{115}{subsection.8.19.1}%
 \contentsline {section}{\numberline {8.20}Segment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{115}{section.8.20}%
 \contentsline {section}{\numberline {8.21}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Euler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matrix.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{116}{section.8.21}%
+\contentsline {subsection}{\numberline {8.21.1}Ausführliche Beschreibung}{116}{subsection.8.21.1}%
 \contentsline {section}{\numberline {8.22}Euler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matrix.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{116}{section.8.22}%
 \contentsline {section}{\numberline {8.23}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{117}{section.8.23}%
-\contentsline {subsection}{\numberline {8.23.1}Ausführliche Beschreibung}{117}{subsection.8.23.1}%
+\contentsline {subsection}{\numberline {8.23.1}Ausführliche Beschreibung}{118}{subsection.8.23.1}%
 \contentsline {section}{\numberline {8.24}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{118}{section.8.24}%
-\contentsline {section}{\numberline {8.25}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameter.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{120}{section.8.25}%
+\contentsline {section}{\numberline {8.25}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameter.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{121}{section.8.25}%
 \contentsline {subsection}{\numberline {8.25.1}Ausführliche Beschreibung}{121}{subsection.8.25.1}%
 \contentsline {section}{\numberline {8.26}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameter.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{121}{section.8.26}%
 \contentsline {section}{\numberline {8.27}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Line3D.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{123}{section.8.27}%
 \contentsline {subsection}{\numberline {8.27.1}Ausführliche Beschreibung}{123}{subsection.8.27.1}%
-\contentsline {section}{\numberline {8.28}Line3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{123}{section.8.28}%
-\contentsline {section}{\numberline {8.29}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logging.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{123}{section.8.29}%
+\contentsline {section}{\numberline {8.28}Line3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{124}{section.8.28}%
+\contentsline {section}{\numberline {8.29}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logging.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{124}{section.8.29}%
 \contentsline {subsection}{\numberline {8.29.1}Ausführliche Beschreibung}{124}{subsection.8.29.1}%
 \contentsline {section}{\numberline {8.30}Logging.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{124}{section.8.30}%
-\contentsline {section}{\numberline {8.31}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Filter.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{125}{section.8.31}%
-\contentsline {subsection}{\numberline {8.31.1}Ausführliche Beschreibung}{125}{subsection.8.31.1}%
+\contentsline {section}{\numberline {8.31}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Filter.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{126}{section.8.31}%
+\contentsline {subsection}{\numberline {8.31.1}Ausführliche Beschreibung}{126}{subsection.8.31.1}%
 \contentsline {section}{\numberline {8.32}Mean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Filter.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{126}{section.8.32}%
 \contentsline {section}{\numberline {8.33}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{127}{section.8.33}%
 \contentsline {subsection}{\numberline {8.33.1}Ausführliche Beschreibung}{127}{subsection.8.33.1}%
-\contentsline {section}{\numberline {8.34}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{127}{section.8.34}%
+\contentsline {section}{\numberline {8.34}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{128}{section.8.34}%
 \contentsline {section}{\numberline {8.35}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Point3D.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{128}{section.8.35}%
 \contentsline {subsection}{\numberline {8.35.1}Ausführliche Beschreibung}{128}{subsection.8.35.1}%
-\contentsline {section}{\numberline {8.36}Point3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{128}{section.8.36}%
+\contentsline {section}{\numberline {8.36}Point3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{129}{section.8.36}%
 \contentsline {section}{\numberline {8.37}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Code\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{131}{section.8.37}%
 \contentsline {subsection}{\numberline {8.37.1}Ausführliche Beschreibung}{131}{subsection.8.37.1}%
-\contentsline {section}{\numberline {8.38}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Code\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{131}{section.8.38}%
+\contentsline {section}{\numberline {8.38}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Code\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{132}{section.8.38}%
 \contentsline {section}{\numberline {8.39}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Editor.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{133}{section.8.39}%
-\contentsline {subsection}{\numberline {8.39.1}Ausführliche Beschreibung}{133}{subsection.8.39.1}%
-\contentsline {subsection}{\numberline {8.39.2}Dokumentation der Funktionen}{133}{subsection.8.39.2}%
-\contentsline {subsubsection}{\numberline {8.39.2.1}main()}{133}{subsubsection.8.39.2.1}%
-\contentsline {section}{\numberline {8.40}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Editor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{133}{section.8.40}%
+\contentsline {subsection}{\numberline {8.39.1}Ausführliche Beschreibung}{134}{subsection.8.39.1}%
+\contentsline {subsection}{\numberline {8.39.2}Dokumentation der Funktionen}{134}{subsection.8.39.2}%
+\contentsline {subsubsection}{\numberline {8.39.2.1}main()}{134}{subsubsection.8.39.2.1}%
+\contentsline {section}{\numberline {8.40}Rob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Path\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Editor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{134}{section.8.40}%
 \contentsline {section}{\numberline {8.41}source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Segment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{134}{section.8.41}%
-\contentsline {subsection}{\numberline {8.41.1}Ausführliche Beschreibung}{134}{subsection.8.41.1}%
-\contentsline {section}{\numberline {8.42}Segment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{134}{section.8.42}%
-\contentsline {section}{\numberline {8.43}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{135}{section.8.43}%
+\contentsline {subsection}{\numberline {8.41.1}Ausführliche Beschreibung}{135}{subsection.8.41.1}%
+\contentsline {section}{\numberline {8.42}Segment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Approximator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{135}{section.8.42}%
+\contentsline {section}{\numberline {8.43}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{136}{section.8.43}%
 \contentsline {subsection}{\numberline {8.43.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{136}{subsection.8.43.1}%
 \contentsline {subsubsection}{\numberline {8.43.1.1}Q\_CONSTINIT}{136}{subsubsection.8.43.1.1}%
-\contentsline {subsubsection}{\numberline {8.43.1.2}QT\_MOC\_LITERAL}{136}{subsubsection.8.43.1.2}%
-\contentsline {section}{\numberline {8.44}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{136}{section.8.44}%
-\contentsline {section}{\numberline {8.45}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{139}{section.8.45}%
-\contentsline {subsection}{\numberline {8.45.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{139}{subsection.8.45.1}%
-\contentsline {subsubsection}{\numberline {8.45.1.1}Q\_CONSTINIT}{139}{subsubsection.8.45.1.1}%
+\contentsline {subsubsection}{\numberline {8.43.1.2}QT\_MOC\_LITERAL}{137}{subsubsection.8.43.1.2}%
+\contentsline {section}{\numberline {8.44}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{137}{section.8.44}%
+\contentsline {section}{\numberline {8.45}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{140}{section.8.45}%
+\contentsline {subsection}{\numberline {8.45.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{140}{subsection.8.45.1}%
+\contentsline {subsubsection}{\numberline {8.45.1.1}Q\_CONSTINIT}{140}{subsubsection.8.45.1.1}%
 \contentsline {subsubsection}{\numberline {8.45.1.2}QT\_MOC\_LITERAL}{140}{subsubsection.8.45.1.2}%
-\contentsline {section}{\numberline {8.46}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{140}{section.8.46}%
-\contentsline {section}{\numberline {8.47}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{143}{section.8.47}%
-\contentsline {subsection}{\numberline {8.47.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{143}{subsection.8.47.1}%
-\contentsline {subsubsection}{\numberline {8.47.1.1}Q\_CONSTINIT}{143}{subsubsection.8.47.1.1}%
-\contentsline {subsubsection}{\numberline {8.47.1.2}QT\_MOC\_LITERAL}{143}{subsubsection.8.47.1.2}%
-\contentsline {section}{\numberline {8.48}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{144}{section.8.48}%
-\contentsline {section}{\numberline {8.49}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{146}{section.8.49}%
-\contentsline {subsection}{\numberline {8.49.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{146}{subsection.8.49.1}%
-\contentsline {subsubsection}{\numberline {8.49.1.1}Q\_CONSTINIT}{146}{subsubsection.8.49.1.1}%
-\contentsline {subsubsection}{\numberline {8.49.1.2}QT\_MOC\_LITERAL}{146}{subsubsection.8.49.1.2}%
-\contentsline {section}{\numberline {8.50}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{147}{section.8.50}%
-\contentsline {section}{\numberline {8.51}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/rcc/qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{149}{section.8.51}%
+\contentsline {section}{\numberline {8.46}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{141}{section.8.46}%
+\contentsline {section}{\numberline {8.47}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/moc/moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{144}{section.8.47}%
+\contentsline {subsection}{\numberline {8.47.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{144}{subsection.8.47.1}%
+\contentsline {subsubsection}{\numberline {8.47.1.1}Q\_CONSTINIT}{144}{subsubsection.8.47.1.1}%
+\contentsline {subsubsection}{\numberline {8.47.1.2}QT\_MOC\_LITERAL}{144}{subsubsection.8.47.1.2}%
+\contentsline {section}{\numberline {8.48}moc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}switch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{145}{section.8.48}%
+\contentsline {section}{\numberline {8.49}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/rcc/qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{147}{section.8.49}%
+\contentsline {subsection}{\numberline {8.49.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{147}{subsection.8.49.1}%
+\contentsline {subsubsection}{\numberline {8.49.1.1}QT\_RCC\_MANGLE\_NAMESPACE}{147}{subsubsection.8.49.1.1}%
+\contentsline {subsubsection}{\numberline {8.49.1.2}QT\_RCC\_PREPEND\_NAMESPACE}{147}{subsubsection.8.49.1.2}%
+\contentsline {subsection}{\numberline {8.49.2}Dokumentation der Funktionen}{147}{subsection.8.49.2}%
+\contentsline {subsubsection}{\numberline {8.49.2.1}qCleanupResources\_GUI()}{147}{subsubsection.8.49.2.1}%
+\contentsline {subsubsection}{\numberline {8.49.2.2}qInitResources\_GUI()}{147}{subsubsection.8.49.2.2}%
+\contentsline {section}{\numberline {8.50}qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{148}{section.8.50}%
+\contentsline {section}{\numberline {8.51}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/rcc/qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{148}{section.8.51}%
 \contentsline {subsection}{\numberline {8.51.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{149}{subsection.8.51.1}%
 \contentsline {subsubsection}{\numberline {8.51.1.1}QT\_RCC\_MANGLE\_NAMESPACE}{149}{subsubsection.8.51.1.1}%
 \contentsline {subsubsection}{\numberline {8.51.1.2}QT\_RCC\_PREPEND\_NAMESPACE}{149}{subsubsection.8.51.1.2}%
 \contentsline {subsection}{\numberline {8.51.2}Dokumentation der Funktionen}{149}{subsection.8.51.2}%
 \contentsline {subsubsection}{\numberline {8.51.2.1}qCleanupResources\_GUI()}{149}{subsubsection.8.51.2.1}%
 \contentsline {subsubsection}{\numberline {8.51.2.2}qInitResources\_GUI()}{149}{subsubsection.8.51.2.2}%
-\contentsline {section}{\numberline {8.52}qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{150}{section.8.52}%
-\contentsline {section}{\numberline {8.53}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/rcc/qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.cpp-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{150}{section.8.53}%
-\contentsline {subsection}{\numberline {8.53.1}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{151}{subsection.8.53.1}%
-\contentsline {subsubsection}{\numberline {8.53.1.1}QT\_RCC\_MANGLE\_NAMESPACE}{151}{subsubsection.8.53.1.1}%
-\contentsline {subsubsection}{\numberline {8.53.1.2}QT\_RCC\_PREPEND\_NAMESPACE}{151}{subsubsection.8.53.1.2}%
-\contentsline {subsection}{\numberline {8.53.2}Dokumentation der Funktionen}{151}{subsection.8.53.2}%
-\contentsline {subsubsection}{\numberline {8.53.2.1}qCleanupResources\_GUI()}{151}{subsubsection.8.53.2.1}%
-\contentsline {subsubsection}{\numberline {8.53.2.2}qInitResources\_GUI()}{151}{subsubsection.8.53.2.2}%
-\contentsline {section}{\numberline {8.54}qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{151}{section.8.54}%
-\contentsline {section}{\numberline {8.55}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/uic/ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{152}{section.8.55}%
-\contentsline {section}{\numberline {8.56}ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{153}{section.8.56}%
-\contentsline {section}{\numberline {8.57}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/uic/ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{157}{section.8.57}%
-\contentsline {section}{\numberline {8.58}ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{157}{section.8.58}%
-\contentsline {chapter}{Index}{163}{section*.81}%
+\contentsline {section}{\numberline {8.52}qrc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{149}{section.8.52}%
+\contentsline {section}{\numberline {8.53}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/uic/ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{150}{section.8.53}%
+\contentsline {section}{\numberline {8.54}ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{151}{section.8.54}%
+\contentsline {section}{\numberline {8.55}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/uic/ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.h-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dateireferenz}{155}{section.8.55}%
+\contentsline {section}{\numberline {8.56}ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GUI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{155}{section.8.56}%
+\contentsline {chapter}{Index}{161}{section*.78}%

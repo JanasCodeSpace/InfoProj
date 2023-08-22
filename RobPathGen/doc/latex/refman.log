@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.4)  20 AUG 2023 19:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.4)  22 AUG 2023 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1000,8 +1000,6 @@ Underfull \hbox (badness 10000) detected at line 163
 [][][]
  []
 
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.09995pt on input line 164.
 [15]
 Underfull \hbox (badness 10000) detected at line 204
 [][][]
@@ -1052,7 +1050,7 @@ Overfull \vbox (32.3443pt too high) has occurred while \output is active []
 
 
 [27] [28] [29]) (class_c_input_point3_d.tex [30] <./class_c_input_point3_d.pdf>
-<class_c_input_point3_d.pdf, id=2821, 501.875pt x 401.5pt>
+<class_c_input_point3_d.pdf, id=2800, 501.875pt x 401.5pt>
 File: class_c_input_point3_d.pdf Graphic file (type pdf)
 <use class_c_input_point3_d.pdf>
 Package pdftex.def Info: class_c_input_point3_d.pdf  used on input line 15.
@@ -1112,13 +1110,18 @@ Underfull \hbox (badness 10000) detected at line 143
 [][][]
  []
 
+
+Overfull \hbox (31.70952pt too wide) in paragraph at lines 163--164
+[]\T1/phv/m/n/10 Wird be-nutzt von [], [], []
+ []
+
 [40] [41]
-Overfull \hbox (31.70952pt too wide) in paragraph at lines 334--335
+Overfull \hbox (31.70952pt too wide) in paragraph at lines 338--339
 []\T1/phv/m/n/10 Wird be-nutzt von [], [], []
  []
 
 [42]
-Overfull \hbox (31.70952pt too wide) in paragraph at lines 368--369
+Overfull \hbox (31.70952pt too wide) in paragraph at lines 372--373
 []\T1/phv/m/n/10 Wird be-nutzt von [], [], []
  []
 
@@ -1143,7 +1146,7 @@ Underfull \hbox (badness 10000) detected at line 243
  []
 
 [46] [47]) (class_c_output_point3_d.tex <./class_c_output_point3_d.pdf>
-<class_c_output_point3_d.pdf, id=3373, 501.875pt x 365.365pt>
+<class_c_output_point3_d.pdf, id=3355, 501.875pt x 365.365pt>
 File: class_c_output_point3_d.pdf Graphic file (type pdf)
 <use class_c_output_point3_d.pdf>
 Package pdftex.def Info: class_c_output_point3_d.pdf  used on input line 15.
@@ -1190,7 +1193,7 @@ Underfull \hbox (badness 10000) detected at line 149
  []
 
 ) (class_c_point3_d.tex <./class_c_point3_d.pdf>
-<class_c_point3_d.pdf, id=3655, 501.875pt x 182.6825pt>
+<class_c_point3_d.pdf, id=3637, 501.875pt x 182.6825pt>
 File: class_c_point3_d.pdf Graphic file (type pdf)
 <use class_c_point3_d.pdf>
 Package pdftex.def Info: class_c_point3_d.pdf  used on input line 15.
@@ -1264,13 +1267,23 @@ Underfull \hbox (badness 10000) detected at line 201
 [][][]
  []
 
-[68] [69]
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 2
+20.
+(C:\Users\anche\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+[68]
+Overfull \hbox (68.07687pt too wide) in paragraph at lines 315--316
+[]\T1/phv/m/n/10 Benutzt [], [], [], [],
+ []
+
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 []\T1/phv/m/n/10 , [], [], [], [],
  []
 
 
-Overfull \hbox (23.30257pt too wide) in paragraph at lines 379--380
+Overfull \hbox (23.30257pt too wide) in paragraph at lines 382--383
 []\T1/phv/m/n/10 , [], [], [], []
  []
 
@@ -1295,48 +1308,58 @@ Underfull \hbox (badness 10000) detected at line 260
  []
 
 [74]) (class_g_u_i.tex <./class_g_u_i.pdf>
-<class_g_u_i.pdf, id=4224, 501.875pt x 394.47375pt>
+<class_g_u_i.pdf, id=4207, 501.875pt x 394.47375pt>
 File: class_g_u_i.pdf Graphic file (type pdf)
 <use class_g_u_i.pdf>
 Package pdftex.def Info: class_g_u_i.pdf  used on input line 15.
 (pdftex.def)             Requested size: 72.39859pt x 56.9055pt.
  [75] [76] [77]
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 []\T1/phv/m/n/10 Benutzt [], [], [], [], [],
  []
 
 
-Overfull \hbox (42.0323pt too wide) in paragraph at lines 173--174
+Overfull \hbox (42.0323pt too wide) in paragraph at lines 182--183
 []\T1/phv/m/n/10 , [], [], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+[]\T1/phv/m/n/10 , [], [], [], [], [],
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 182--183
 []\T1/phv/m/n/10 , [], [], [], [],
+ []
+
+
+Overfull \hbox (30.77295pt too wide) in paragraph at lines 182--183
+[]\T1/phv/m/n/10 , [], [], [], [], [],
  []
 
 [78] [79] [80]
-Overfull \hbox (51.87805pt too wide) in paragraph at lines 419--420
+Overfull \hbox (51.87805pt too wide) in paragraph at lines 440--441
 []\T1/phv/m/n/10 Benutzt [], [], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
 []\T1/phv/m/n/10 , [], [], [],
  []
 
 
-Overfull \hbox (72.70372pt too wide) in paragraph at lines 419--420
+Overfull \hbox (72.70372pt too wide) in paragraph at lines 440--441
 []\T1/phv/m/n/10 , [], [], [], [],
  []
 
 [81]
-Underfull \hbox (badness 7397) in paragraph at lines 567--568
+Underfull \hbox (badness 7397) in paragraph at lines 588--589
 []\T1/phv/m/n/10 Benutzt [], [], [], [],
  []
 
 [82] [83]) (class_ui_1_1_g_u_i_class.tex <./class_ui_1_1_g_u_i_class.pdf>
-<class_ui_1_1_g_u_i_class.pdf, id=4805, 501.875pt x 451.6875pt>
+<class_ui_1_1_g_u_i_class.pdf, id=4807, 501.875pt x 451.6875pt>
 File: class_ui_1_1_g_u_i_class.pdf Graphic file (type pdf)
 <use class_ui_1_1_g_u_i_class.pdf>
 Package pdftex.def Info: class_ui_1_1_g_u_i_class.pdf  used on input line 10.
@@ -1355,14 +1378,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [87])
 (struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__
-stringdata___c_l_a_s_s_switch_e_n_d_c_l_a_s_s__t.tex [88])
-(class_ui___g_u_i_class.tex <./class_ui___g_u_i_class.pdf>
-<class_ui___g_u_i_class.pdf, id=4995, 501.875pt x 451.6875pt>
+stringdata___c_l_a_s_s_switch_e_n_d_c_l_a_s_s__t.tex
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+\T1/pcr/m/n/8 uint QT[]_[][]WARNING[]_[][]DISABLE[]_[][]DEPRECATED[]::qt[]_[]me
+ta[]_[]stringdata[]_[][]CLASSSwitch[]ENDCLASS[]_[]t[]::offsets[]And[]
+ []
+
+[88]) (class_ui___g_u_i_class.tex <./class_ui___g_u_i_class.pdf>
+<class_ui___g_u_i_class.pdf, id=4996, 501.875pt x 451.6875pt>
 File: class_ui___g_u_i_class.pdf Graphic file (type pdf)
 <use class_ui___g_u_i_class.pdf>
 Package pdftex.def Info: class_ui___g_u_i_class.pdf  used on input line 10.
 (pdftex.def)             Requested size: 63.22432pt x 56.9055pt.
- [89] [90] [91
+ [89] [90]
+[91
 pdfTeX warning (ext4): destination with the same identifier (name{class_ui___g_
 u_i_class_adb316b97c3459c7335479a71bbebd9de}) has been already used, duplicate 
 ignored
@@ -1433,50 +1462,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
  []
 
-) (_segment_approximator_8h_source.tex) (_euler_matrix_8cpp.tex)
-(_euler_matrix_8cpp_source.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--1
-
- []
-
-[115] [116]) (_g_u_i_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--14
-
- []
-
-) (_g_u_i_8cpp_source.tex [117] [118] [119]) (_input_parameter_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--11
-
- []
-
-[120]) (_input_parameter_8cpp_source.tex [121] [122]) (_line3_d_8cpp.tex
+) (_segment_approximator_8h_source.tex) (_euler_matrix_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-) (_line3_d_8cpp_source.tex) (_logging_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+[115]) (_euler_matrix_8cpp_source.tex [116]) (_g_u_i_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
  []
 
-) (_logging_8cpp_source.tex [123] [124]) (_mean_filter_8cpp.tex
+[117]) (_g_u_i_8cpp_source.tex [118] [119] [120]) (_input_parameter_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-) (_mean_filter_8cpp_source.tex [125] [126]) (_path_builder_8cpp.tex
+) (_input_parameter_8cpp_source.tex [121] [122]) (_line3_d_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+) (_line3_d_8cpp_source.tex [123]) (_logging_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-) (_path_builder_8cpp_source.tex) (_point3_d_8cpp.tex
+) (_logging_8cpp_source.tex [124] [125]) (_mean_filter_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[127]) (_point3_d_8cpp_source.tex [128] [129]) (_rob_code_generator_8cpp.tex
-[130]
+) (_mean_filter_8cpp_source.tex [126]) (_path_builder_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (_path_builder_8cpp_source.tex [127]) (_point3_d_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+) (_point3_d_8cpp_source.tex [128] [129] [130]) (_rob_code_generator_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
@@ -1485,12 +1512,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
 
-) (_rob_path_editor_8cpp_source.tex) (_segment_approximator_8cpp.tex [133]
+[133]) (_rob_path_editor_8cpp_source.tex) (_segment_approximator_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-) (_segment_approximator_8cpp_source.tex [134])
+) (_segment_approximator_8cpp_source.tex [134] [135])
 (_debug_2moc_2moc___g_u_i_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
@@ -1502,7 +1529,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 ]_[][]CLASSGUIENDCLASS[]_[]t[]::offsets[]And[]Sizes) +
  []
 
-[135]) (_debug_2moc_2moc___g_u_i_8cpp_source.tex [136] [137] [138])
+) (_debug_2moc_2moc___g_u_i_8cpp_source.tex [136] [137] [138] [139])
 (_release_2moc_2moc___g_u_i_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
@@ -1514,55 +1541,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 ]_[][]CLASSGUIENDCLASS[]_[]t[]::offsets[]And[]Sizes) +
  []
 
-) (_release_2moc_2moc___g_u_i_8cpp_source.tex [139] [140] [141] [142])
-(_debug_2moc_2moc__switch_8cpp.tex
+) (_release_2moc_2moc___g_u_i_8cpp_source.tex [140] [141] [142])
+(moc__switch_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-
+[143]
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 |   \T1/pcr/m/sl/8 len \T1/pcr/m/n/8 )  uint(sizeof(qt[]_[]meta[]_[]stringdata[
 ]_[][]CLASSSwitch[]ENDCLASS[]_[]t[]::offsets[]And[]Sizes) +
  []
 
-) (_debug_2moc_2moc__switch_8cpp_source.tex [143] [144])
-(_release_2moc_2moc__switch_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--8
-
- []
-
-[145]
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-|   \T1/pcr/m/sl/8 len \T1/pcr/m/n/8 )  uint(sizeof(qt[]_[]meta[]_[]stringdata[
-]_[][]CLASSSwitch[]ENDCLASS[]_[]t[]::offsets[]And[]Sizes) +
- []
-
-) (_release_2moc_2moc__switch_8cpp_source.tex [146] [147])
-(_debug_2rcc_2qrc___g_u_i_8cpp.tex [148])
-(_debug_2rcc_2qrc___g_u_i_8cpp_source.tex [149])
-(_release_2rcc_2qrc___g_u_i_8cpp.tex [150])
-(_release_2rcc_2qrc___g_u_i_8cpp_source.tex [151])
+) (moc__switch_8cpp_source.tex [144] [145]) (_debug_2rcc_2qrc___g_u_i_8cpp.tex
+[146]) (_debug_2rcc_2qrc___g_u_i_8cpp_source.tex [147])
+(_release_2rcc_2qrc___g_u_i_8cpp.tex [148])
+(_release_2rcc_2qrc___g_u_i_8cpp_source.tex [149])
 (_debug_2uic_2ui___g_u_i_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--14
 
  []
 
-) (_debug_2uic_2ui___g_u_i_8h_source.tex [152] [153] [154] [155] [156])
+) (_debug_2uic_2ui___g_u_i_8h_source.tex [150] [151] [152] [153] [154])
 (_release_2uic_2ui___g_u_i_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--14
 
  []
 
-) (_release_2uic_2ui___g_u_i_8h_source.tex [157] [158] [159] [160] [161])
-[162] (refman.ind
+) (_release_2uic_2ui___g_u_i_8h_source.tex [155] [156] [157] [158] [159])
+[160] (refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
- [163
+ [161
 
 
 
-] [164] [165]
+] [162] [163]
 Overfull \hbox (157.58717pt too wide) in paragraph at lines 408--410
 []| \T1/phv/m/n/10 QT_WARNING_DISABLE_DEPRECATED::qt_meta_stringdata_CLASSGUIEN
 DCLASS_t,
@@ -1586,7 +1600,7 @@ Overfull \hbox (148.09003pt too wide) in paragraph at lines 495--497
 NDCLASS_t,
  []
 
-[166]
+[164]
 Overfull \hbox (157.58717pt too wide) in paragraph at lines 589--591
 []| \T1/phv/m/n/10 QT_WARNING_DISABLE_DEPRECATED::qt_meta_stringdata_CLASSGUIEN
 DCLASS_t,
@@ -1652,7 +1666,7 @@ Overfull \hbox (157.58717pt too wide) in paragraph at lines 616--618
 DCLASS_t,
  []
 
-[167]
+[165]
 Overfull \hbox (157.58717pt too wide) in paragraph at lines 619--621
 []| \T1/phv/m/n/10 QT_WARNING_DISABLE_DEPRECATED::qt_meta_stringdata_CLASSGUIEN
 DCLASS_t,
@@ -1688,21 +1702,21 @@ Overfull \hbox (157.58717pt too wide) in paragraph at lines 634--636
 DCLASS_t,
  []
 
-[168]) (refman.aux)
+[166]) (refman.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 88901868FB4A5C640C07E37E0AAC927A;82813.
+(rerunfilecheck)             Checksum: 27BD9E5F671EE03EBB059E6DA5ECE9B3;82003.
  ) 
 Here is how much of TeX's memory you used:
- 24347 strings out of 478582
- 502513 string characters out of 2844345
- 752099 words of memory out of 3000000
- 37750 multiletter control sequences out of 15000+600000
- 528587 words of font info for 100 fonts, out of 8000000 for 9000
+ 24200 strings out of 478582
+ 492753 string characters out of 2844345
+ 751691 words of memory out of 3000000
+ 37752 multiletter control sequences out of 15000+600000
+ 526150 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,117p,2963b,710s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,16n,117p,3268b,710s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -1711,19 +1725,16 @@ amsfonts/cm/cmmi8.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/anche/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/anche/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/anche/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/U
-sers/anche/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:
-/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><
-C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pf
-b><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a
-.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhv
-b8ac.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic
-/uhvr8a.pfb><C:/Users/anche/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helve
-tic/uhvro8a.pfb>
-Output written on refman.pdf (180 pages, 2484177 bytes).
+ograms/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/anche/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/anche/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/anche/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/anche/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/anche/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/anche
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (178 pages, 2434218 bytes).
 PDF statistics:
- 12506 PDF objects out of 12825 (max. 8388607)
- 4268 named destinations out of 4296 (max. 500000)
- 3263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 12315 PDF objects out of 12825 (max. 8388607)
+ 4121 named destinations out of 4296 (max. 500000)
+ 3231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
