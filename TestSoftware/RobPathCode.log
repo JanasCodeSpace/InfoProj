@@ -1,5 +1,44 @@
-﻿  Logging.cpp
+﻿  Reading Qt configuration (C:/Qt/6.5.2/msvc2019_64/bin/qmake)
+  EulerMatrix.cpp
+  GUI.cpp
+  InputParameter.cpp
+  Line3D.cpp
+  Logging.cpp
+  MeanFilter.cpp
+  PathBuilder.cpp
+  Point3D.cpp
+  RobCodeGenerator.cpp
+  RobPathEditor.cpp
+  SegmentApproximator.cpp
 C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\source\Logging.cpp(126,16): warning C4473: "fprintf": nicht genügend Argumente für Formatzeichenfolge übergeben
 C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\source\Logging.cpp(126,16): message : Platzhalter und deren Parameter erwarten 13 variadic-Argumente, es wurden aber 7 variadic-Argumente bereitgestellt.
 C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\source\Logging.cpp(126,16): message : Das fehlende variadic-Argument "8" ist für die Zeichenfolge "%f" erforderlich.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(23,1): warning C4005: "M_E": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(189,1): message : Siehe vorherige Definition von "M_E" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(24,1): warning C4005: "M_LOG2E": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(193,1): message : Siehe vorherige Definition von "M_LOG2E" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(25,1): warning C4005: "M_LOG10E": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(197,1): message : Siehe vorherige Definition von "M_LOG10E" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(26,1): warning C4005: "M_LN2": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(201,1): message : Siehe vorherige Definition von "M_LN2" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(27,1): warning C4005: "M_LN10": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(205,1): message : Siehe vorherige Definition von "M_LN10" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(28,1): warning C4005: "M_PI": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(209,1): message : Siehe vorherige Definition von "M_PI" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: "M_PI_2": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(213,1): message : Siehe vorherige Definition von "M_PI_2" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(30,1): warning C4005: "M_PI_4": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(217,1): message : Siehe vorherige Definition von "M_PI_4" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(31,1): warning C4005: "M_1_PI": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(221,1): message : Siehe vorherige Definition von "M_1_PI" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(32,1): warning C4005: "M_2_PI": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(225,1): message : Siehe vorherige Definition von "M_2_PI" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(33,1): warning C4005: "M_2_SQRTPI": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(229,1): message : Siehe vorherige Definition von "M_2_SQRTPI" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(34,1): warning C4005: "M_SQRT2": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(233,1): message : Siehe vorherige Definition von "M_SQRT2" (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math_defines.h(35,1): warning C4005: "M_SQRT1_2": Makro-Neudefinition (Quelldatei wird kompiliert source\GUI.cpp)
+C:\Qt\6.5.2\msvc2019_64\include\QtCore\qmath.h(237,1): message : Siehe vorherige Definition von "M_SQRT1_2" (Quelldatei wird kompiliert source\GUI.cpp)
+  qrc_GUI.cpp
+  moc_GUI.cpp
   RobPathCode.vcxproj -> C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\x64\Release\RobPathCode.exe
