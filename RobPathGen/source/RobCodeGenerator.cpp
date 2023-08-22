@@ -5,7 +5,6 @@
  */
 
 #include "../header/RobCodeGenerator.h"
-#include "../header/RobCodeGenerator.h"
 #include "../header/Point3D.h"
 
 /* CRobCodeGenerator mit 0 initialiseren */
@@ -29,9 +28,11 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 	
 	postProcessing(points); // Calculates all the necessary values
 
-	log.setStep(4);
-	log.logData(processedPath);
-
+	if(log.getDetailed())
+	{
+		log.setStep(4);
+		log.logData(processedPath);
+	}
 	errno_t err;
 	
 	FILE* fid;
