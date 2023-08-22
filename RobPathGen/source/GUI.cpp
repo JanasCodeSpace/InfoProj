@@ -212,7 +212,9 @@ void GUI::calculate()
 		CLogging logging(outputPath, inputParameter.getLoggingManual());
 
 		//read Data
-		inputParameter.openFile(inputPath);
+		CInputParameter input;
+		input = inputParameter;
+		input.openFile(inputPath);
 		ui.textBrowser->insertPlainText("Datei eingelesen\n");
 
 		//moving Average
