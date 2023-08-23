@@ -248,13 +248,6 @@ void GUI::calculate()
 		CRobCodeGenerator codeGenerator(input);
 		codeGenerator.generateRobCode(pathBuilder.getPath(), outputPath, inputPath, logging);
 		ui.textBrowser->insertPlainText("Datei erstellt\n");
-
-		input.~CInputParameter();
-		logging.~CLogging();
-		meanFilter.~CMeanFilter();
-		segmentApproximator.~CSegmentApproximator();
-		pathBuilder.~CPathBuilder();
-		codeGenerator.~CRobCodeGenerator();
 	}
 
 	catch (exception& e)
@@ -264,5 +257,4 @@ void GUI::calculate()
 		return;
 	}
 
-	messageBox.~QMessageBox();
 }
