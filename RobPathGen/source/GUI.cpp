@@ -116,6 +116,8 @@ void GUI::activateOffset(void)
 	if (ui.bOffset->isChecked())
 	{
 		ui.offset->setEnabled(true);
+		inputParameter.setOffset(ui.offsetX->value(), ui.offsetY->value(), ui.offsetZ->value(),
+			ui.bOffset->isChecked());
 		ui.offset->setStyleSheet("background-color:  rgb(67, 72, 91); color: rgb(3, 8, 14); border: 1px solid black;");
 	}
 	else
@@ -140,6 +142,8 @@ void GUI::activateOrientation(void)
 	if (ui.bManOrientation->isChecked())
 	{
 		ui.orientation->setEnabled(true);
+		inputParameter.setOrientation(ui.AValue->value(), ui.BValue->value(), ui.CValue->value(),
+			ui.bManOrientation->isChecked());
 		ui.orientation->setStyleSheet("background-color:  rgb(67, 72, 91); color: rgb(3, 8, 14); border: 1px solid black;");
 	}
 	else
@@ -159,6 +163,7 @@ void GUI::activateSpeed(void)
 	if (ui.bSpeed->isChecked())
 	{
 		ui.speed_2->setEnabled(true);
+		inputParameter.setSpeed(ui.speed->value(), ui.bSpeed->isChecked());
 		ui.speed_2->setStyleSheet("background-color:  rgb(67, 72, 91); color: rgb(3, 8, 14); border: 1px solid black; ");
 	}
 	else
