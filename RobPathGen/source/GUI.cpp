@@ -193,17 +193,16 @@ void GUI::setOutputPath(void)
 
 void GUI::calculate()
 {
+	QMessageBox messageBox;
 
 	if (inputPathUI.isEmpty())
 	{
-		QMessageBox messageBox;
 		messageBox.critical(0, "Error", "Keine Datei ausgewaehlt!");
 		messageBox.setFixedSize(500, 200);
 		return;
 	}
 	if (outputPathUI.isEmpty())
 	{
-		QMessageBox messageBox;
 		messageBox.critical(0, "Error", "Kein Pfad ausgewaehlt!");
 		messageBox.setFixedSize(500, 200);
 		return;
@@ -220,7 +219,6 @@ void GUI::calculate()
 		input = inputParameter;
 		input.openFile(inputPath);
 		ui.textBrowser->insertPlainText("Datei eingelesen\n");
-
 
 		//logging Initialisieren
 		CLogging logging(outputPath, input.getLoggingManual());
@@ -249,14 +247,22 @@ void GUI::calculate()
 
 		CRobCodeGenerator codeGenerator(input);
 		codeGenerator.generateRobCode(pathBuilder.getPath(), outputPath, inputPath, logging);
-		ui.textBrowser->insertPlainText("Datei erstellt\n");;
+		ui.textBrowser->insertPlainText("Datei erstellt\n");
+
+		input.~CInputParameter();
+		logging.~CLogging();
+		meanFilter.~CMeanFilter();
+		segmentApproximator.~CSegmentApproximator();
+		pathBuilder.~CPathBuilder();
+		codeGenerator.~CRobCodeGenerator();
 	}
 
 	catch (exception& e)
 	{
-		QMessageBox messageBox;
 		messageBox.critical(0, "Error", e.what());
 		messageBox.setFixedSize(500, 200);
 		return;
 	}
+
+	messageBox.~QMessageBox();
 }
