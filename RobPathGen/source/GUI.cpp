@@ -133,8 +133,7 @@ void GUI::activateOffset(void)
 
 void GUI::setOrientation(void)
 {
-	inputParameter.setOrientation(ui.AValue->value(), ui.BValue->value(), ui.CValue->value(),
-		ui.bManOrientation->isChecked());
+	inputParameter.setOrientation(ui.bManOrientation->isChecked(), ui.AValue->value(), ui.BValue->value(), ui.CValue->value());
 }
 
 void GUI::activateOrientation(void)
@@ -142,8 +141,7 @@ void GUI::activateOrientation(void)
 	if (ui.bManOrientation->isChecked())
 	{
 		ui.orientation->setEnabled(true);
-		inputParameter.setOrientation(ui.AValue->value(), ui.BValue->value(), ui.CValue->value(),
-			ui.bManOrientation->isChecked());
+		inputParameter.setOrientation(ui.bManOrientation->isChecked(), ui.AValue->value(), ui.BValue->value(), ui.CValue->value());
 		ui.orientation->setStyleSheet("background-color:  rgb(67, 72, 91); color: rgb(3, 8, 14); border: 1px solid black;");
 	}
 	else
