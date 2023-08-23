@@ -215,20 +215,21 @@ void GUI::calculate()
 		string inputPath = inputPathUI.toUtf8().constData();
 		ui.textBrowser->clear();
 
-		//logging Initialisieren
-		CLogging logging(outputPath, inputParameter.getLoggingManual());
-
 		//read Data
 		CInputParameter input;
 		input = inputParameter;
 		input.openFile(inputPath);
 		ui.textBrowser->insertPlainText("Datei eingelesen\n");
 
+
+		//logging Initialisieren
+		CLogging logging(outputPath, input.getLoggingManual());
+
 		//moving Average
 
 		CMeanFilter meanFilter;
 		meanFilter.setWindowSize(meanLength);
-		meanFilter.mean(inputParameter.getPath(), logging);
+		meanFilter.mean(input.getPath(), logging);
 		ui.textBrowser->insertPlainText("Gleitender Mittelwert berechnet\n");
 
 		// Douglas-Peuker Algorithm
@@ -246,7 +247,7 @@ void GUI::calculate()
 
 		// Calculates Speed, Angle and generates the Output Data
 
-		CRobCodeGenerator codeGenerator(inputParameter);
+		CRobCodeGenerator codeGenerator(input);
 		codeGenerator.generateRobCode(pathBuilder.getPath(), outputPath, inputPath, logging);
 		ui.textBrowser->insertPlainText("Datei erstellt\n");;
 	}
