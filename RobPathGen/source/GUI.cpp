@@ -184,13 +184,13 @@ void GUI::setDP(void)
 
 void GUI::setInputPath(void)
 {
-	inputPathUI = QFileDialog::getOpenFileName(this);
+	inputPathUI = QFileDialog::getOpenFileName(this, "Datei mit Pfad auswaehlen", QDir::currentPath(), "csv(*.csv)");
 	ui.pathInput->setText(inputPathUI);
 }
 
 void GUI::setOutputPath(void)
 {
-	outputPathUI = QFileDialog::getExistingDirectory(this);
+	outputPathUI = QFileDialog::getExistingDirectory(this, "Ausgabepfad waehlen", QDir::currentPath());
 	ui.pathOutput->setText(outputPathUI);
 }
 
