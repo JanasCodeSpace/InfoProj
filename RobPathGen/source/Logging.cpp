@@ -54,12 +54,12 @@ void CLogging::logData(vector<list<CInputPoint3D>>& sourcePath)
 	{
 		list<CInputPoint3D>::iterator itr = sourcePath[s].begin();
 
-		tmpEuler = itr->getEulerMatrix();
-		tmpEuler.getMatrix(dummyMatrix);
-
 		/* Ausgeben der Punkte mit dummyMatrix */
 		for (; itr != sourcePath[s].end(); itr++) //for all points in the segment
 		{
+			tmpEuler = itr->getEulerMatrix();
+			tmpEuler.getMatrix(dummyMatrix);
+
 			fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)itr->getTime(), (double)itr->getX(), (double)itr->getY(), (double)itr->getZ(),
 				dummyMatrix[0][0], dummyMatrix[0][1], dummyMatrix[0][2],
 				dummyMatrix[1][0], dummyMatrix[1][1], dummyMatrix[1][2],
