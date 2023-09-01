@@ -3,18 +3,16 @@
  *
  * @brief Logging der Daten
  */
+#pragma once
 
 #include "EulerMatrix.h"
 #include "Point3D.h"
 
 #include <iostream>
-#include <fstream>
-#include <sstream> 
 #include <string>
 #include <vector>
 #include <list>
 
-#pragma once
  /**
   * In dieser Klasse werden die eingelesenen Daten mit einem gleitenden Mittelwertfilter mit einstellbarem Fenster geglaettet.
   * @brief Gleitender Mittelwertfilter

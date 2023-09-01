@@ -67,62 +67,66 @@
 \DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00068}00068\ }
 \DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ itr-\/-\/;}
 \DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00070}00070\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00071}00071\ \}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00072}00072\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00073}\mbox{\hyperlink{class_c_logging_abbbb0154126a0f8e8db1b37d34e2019d}{00073}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{CLogging::logData}}(vector<CInputPoint3D>\&\ sourcePath)}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00074}00074\ \{}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordtype}{string}\ filepath;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ file\ Pfad}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordtype}{float}\ dummyMatrix[3][3];\ \ \ \ \textcolor{comment}{//\ dummyMatrix\ zum\ Zwischenspeichern}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00077}00077\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ tmpEuler;\ \ \ \ \ \ \textcolor{comment}{//\ CEulerMatrix\ zum\ Zwischenspeichern}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00078}00078\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00079}00079\ \ \ \ \ filepath\ =\ \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ \textcolor{stringliteral}{"{}0"{}}\ +\ std::to\_string(\mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}})\ +\ \textcolor{stringliteral}{"{}\_log.csv"{}};}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00080}00080\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00081}00081\ \ \ \ \ FILE*\ fid\ =\ fopen(filepath.c\_str(),\ \textcolor{stringliteral}{"{}w"{}});\ \ \ \textcolor{comment}{//\ file\ oeffnen}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00082}00082\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{keywordflow}{if}\ (fid\ ==\ NULL)}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00084}00084\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR\ -\/\ Can\ NOT\ write\ to\ output\ file!\(\backslash\)n"{}};\ \ \textcolor{comment}{//\ Fehler\ beim\ file\ oeffnen}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00087}00087\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00088}00088\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{comment}{/*\ Ausgeben\ der\ Punkte\ mit\ dummyMatrix\ */}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ vector}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00091}00091\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{getMatrix}}(dummyMatrix);}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00093}00093\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})sourcePath[s].getTime(),\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keywordtype}{double})sourcePath[s].getX(),\ (\textcolor{keywordtype}{double})sourcePath[s].getY(),\ (\textcolor{keywordtype}{double})sourcePath[s].getZ(),}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[0][0],\ dummyMatrix[0][1],\ dummyMatrix[0][2],}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[1][0],\ dummyMatrix[1][1],\ dummyMatrix[1][2],}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[2][0],\ dummyMatrix[2][1],\ dummyMatrix[2][2]);}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00099}00099\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00100}00100\ \}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00101}00101\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00102}\mbox{\hyperlink{class_c_logging_a60e0aeeac421c452bf83e7dd3778be2a}{00102}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{CLogging::logData}}(vector<COutputPoint3D>\&\ sourcePath)}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00103}00103\ \{}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00104}00104\ \ \ \ \ \textcolor{keywordtype}{string}\ filepath;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ file\ Pfad}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00105}00105\ \ \ \ \ \textcolor{keywordtype}{float}\ dummyMatrix[3][3];\ \ \ \ \textcolor{comment}{//\ dummyMatrix\ zum\ Zwischenspeichern}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00106}00106\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ tmpEuler;\ \ \ \ \ \ \textcolor{comment}{//\ CEulerMatrix\ zum\ Zwischenspeichern}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00107}00107\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00108}00108\ \ \ \ \ filepath\ =\ \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ \textcolor{stringliteral}{"{}0"{}}\ +\ std::to\_string(\mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}})\ +\ \textcolor{stringliteral}{"{}\_path.csv"{}};}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00109}00109\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00110}00110\ \ \ \ \ FILE*\ fid\ =\ fopen(filepath.c\_str(),\ \textcolor{stringliteral}{"{}w"{}});\ \ \ \textcolor{comment}{//\ file\ oeffnen}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00111}00111\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00112}00112\ \ \ \ \ \textcolor{keywordflow}{if}\ (fid\ ==\ NULL)}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00113}00113\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00114}00114\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR\ -\/\ Can\ NOT\ write\ to\ output\ file!\(\backslash\)n"{}};\ \ \textcolor{comment}{//\ Fehler\ beim\ file\ oeffnen}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00115}00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00116}00116\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00117}00117\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00118}00118\ \ \ \ \ \textcolor{comment}{/*\ Ausgeben\ der\ Punkte\ mit\ dummyMatrix\ */}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00119}00119\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ vector}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00120}00120\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00121}00121\ \ \ \ \ \ \ \ \ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{getMatrix}}(dummyMatrix);}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00122}00122\ }
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00123}00123\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})sourcePath[s].getSpeed(),}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keywordtype}{double})sourcePath[s].getX(),\ (\textcolor{keywordtype}{double})sourcePath[s].getY(),\ (\textcolor{keywordtype}{double})sourcePath[s].getZ(),}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keywordtype}{double})sourcePath[s].getA(),\ (\textcolor{keywordtype}{double})sourcePath[s].getB(),\ (\textcolor{keywordtype}{double})sourcePath[s].getC());}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00126}00126\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00127}00127\ \}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00071}00071\ \ \ \ \ fclose(fid);}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00074}\mbox{\hyperlink{class_c_logging_abbbb0154126a0f8e8db1b37d34e2019d}{00074}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{CLogging::logData}}(vector<CInputPoint3D>\&\ sourcePath)}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00075}00075\ \{}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordtype}{string}\ filepath;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ file\ Pfad}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{keywordtype}{float}\ dummyMatrix[3][3];\ \ \ \ \textcolor{comment}{//\ dummyMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00078}00078\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ tmpEuler;\ \ \ \ \ \ \textcolor{comment}{//\ CEulerMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00080}00080\ \ \ \ \ filepath\ =\ \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ \textcolor{stringliteral}{"{}0"{}}\ +\ std::to\_string(\mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}})\ +\ \textcolor{stringliteral}{"{}\_log.csv"{}};}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00082}00082\ \ \ \ \ FILE*\ fid\ =\ fopen(filepath.c\_str(),\ \textcolor{stringliteral}{"{}w"{}});\ \ \ \textcolor{comment}{//\ file\ oeffnen}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{keywordflow}{if}\ (fid\ ==\ NULL)}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00085}00085\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR\ -\/\ Can\ NOT\ write\ to\ output\ file!\(\backslash\)n"{}};\ \ \textcolor{comment}{//\ Fehler\ beim\ file\ oeffnen}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00088}00088\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{comment}{/*\ Ausgeben\ der\ Punkte\ mit\ dummyMatrix\ */}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ vector}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00092}00092\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ tmpEuler\ =\ sourcePath[s].\mbox{\hyperlink{class_c_euler_matrix_a5df41a830311468a806e1ae7c3e165ef}{getEulerMatrix}}();}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{getMatrix}}(dummyMatrix);}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})sourcePath[s].getTime(),\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keywordtype}{double})sourcePath[s].getX(),\ (\textcolor{keywordtype}{double})sourcePath[s].getY(),\ (\textcolor{keywordtype}{double})sourcePath[s].getZ(),}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[0][0],\ dummyMatrix[0][1],\ dummyMatrix[0][2],}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[1][0],\ dummyMatrix[1][1],\ dummyMatrix[1][2],}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ dummyMatrix[2][0],\ dummyMatrix[2][1],\ dummyMatrix[2][2]);}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00101}00101\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00102}00102\ \ \ \ \ fclose(fid);}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00103}00103\ \}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00105}\mbox{\hyperlink{class_c_logging_a60e0aeeac421c452bf83e7dd3778be2a}{00105}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_logging_a1416b9fdd6d86c53d268580ed9912cff}{CLogging::logData}}(vector<COutputPoint3D>\&\ sourcePath)}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00106}00106\ \{}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00107}00107\ \ \ \ \ \textcolor{keywordtype}{string}\ filepath;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ file\ Pfad}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00108}00108\ \ \ \ \ \textcolor{keywordtype}{float}\ dummyMatrix[3][3];\ \ \ \ \textcolor{comment}{//\ dummyMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00109}00109\ \ \ \ \ \mbox{\hyperlink{class_c_euler_matrix}{CEulerMatrix}}\ tmpEuler;\ \ \ \ \ \ \textcolor{comment}{//\ CEulerMatrix\ zum\ Zwischenspeichern}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00111}00111\ \ \ \ \ filepath\ =\ \mbox{\hyperlink{class_c_logging_a1ea1d4e9eaa094e793f309169a0aee27}{path}}\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ \textcolor{stringliteral}{"{}0"{}}\ +\ std::to\_string(\mbox{\hyperlink{class_c_logging_a5728c680af8a761ba8d050407fb05b03}{step}})\ +\ \textcolor{stringliteral}{"{}\_log.csv"{}};}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00113}00113\ \ \ \ \ FILE*\ fid\ =\ fopen(filepath.c\_str(),\ \textcolor{stringliteral}{"{}w"{}});\ \ \ \textcolor{comment}{//\ file\ oeffnen}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00115}00115\ \ \ \ \ \textcolor{keywordflow}{if}\ (fid\ ==\ NULL)}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00116}00116\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00117}00117\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR\ -\/\ Can\ NOT\ write\ to\ output\ file!\(\backslash\)n"{}};\ \ \textcolor{comment}{//\ Fehler\ beim\ file\ oeffnen}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00118}00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00119}00119\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00121}00121\ \ \ \ \ \textcolor{comment}{/*\ Ausgeben\ der\ Punkte\ mit\ dummyMatrix\ */}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00122}00122\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ s\ =\ 0;\ s\ <\ sourcePath.size();\ s++)\ \textcolor{comment}{//for\ all\ points\ in\ the\ vector}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00123}00123\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ tmpEuler.\mbox{\hyperlink{class_c_euler_matrix_a6232c19bef1e0dfc66cf37a4f7f8c26d}{getMatrix}}(dummyMatrix);}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00126}00126\ \ \ \ \ \ \ \ \ fprintf(fid,\ \textcolor{stringliteral}{"{}\%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\ \%f\(\backslash\)n"{}},\ (\textcolor{keywordtype}{double})sourcePath[s].getSpeed(),}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keywordtype}{double})sourcePath[s].getX(),\ (\textcolor{keywordtype}{double})sourcePath[s].getY(),\ (\textcolor{keywordtype}{double})sourcePath[s].getZ(),}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keywordtype}{double})sourcePath[s].getA(),\ (\textcolor{keywordtype}{double})sourcePath[s].getB(),\ (\textcolor{keywordtype}{double})sourcePath[s].getC());}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00129}00129\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00130}00130\ \ \ \ \ fclose(fid);}
+\DoxyCodeLine{\Hypertarget{_logging_8cpp_source_l00131}00131\ \}}
 
 \end{DoxyCode}

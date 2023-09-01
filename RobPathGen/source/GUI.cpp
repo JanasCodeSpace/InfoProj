@@ -6,16 +6,10 @@
 
 #include "../header/GUI.h"
 
-#include "../header/SegmentApproximator.h"
-#include "../header/PathBuilder.h"
-#include "../header/RobCodeGenerator.h"
-#include "../header/MeanFilter.h"
-#include "../header/Logging.h"
-
-GUI::GUI(QWidget *parent)
-    : QMainWindow(parent)
+GUI::GUI(QWidget* parent)
+	: QMainWindow(parent)
 {
-    ui.setupUi(this);
+	ui.setupUi(this);
 
 	//Dateioperationen und Anzeige
 	inputPathUI = "";
@@ -30,17 +24,20 @@ GUI::GUI(QWidget *parent)
 	//Douglas-Peuker-Toleranz
 	ui.dpToleranz->setRange(1, 100);
 	ui.dpToleranz->setSingleStep(1);
-	ui.dpToleranz->setValue(40);
+	ui.dpToleranz->setValue(10);
 	connect(ui.dpToleranz, &QSpinBox::valueChanged, this, &GUI::setDP);
+	dpTolerance = ui.dpToleranz->value();
 
 	//Fenster fuer gleitenden Mittelwert
 	ui.meanLength->setRange(3, 500);
 	ui.meanLength->setSingleStep(1);
 	ui.meanLength->setValue(50);
 	connect(ui.meanLength, &QSpinBox::valueChanged, this, &GUI::setMean);
+	meanLength = ui.meanLength->value();
 
 	//Geschwindigkeit
 	connect(ui.bSpeed, &QCheckBox::clicked, this, &GUI::activateSpeed);
+	inputParameter.setSpeed(0, false);
 	ui.speed->setRange(0.01, 2);
 	ui.speed->setSingleStep(0.01);
 	ui.speed->setValue(1);
@@ -48,6 +45,9 @@ GUI::GUI(QWidget *parent)
 
 	//Ausrichtung
 	connect(ui.bManOrientation, &QCheckBox::clicked, this, &GUI::activateOrientation);
+
+
+	inputParameter.setOrientation(false, 0, 0, 0);
 	ui.AValue->setRange(-180, 180);
 	ui.AValue->setSingleStep(5);
 	ui.AValue->setValue(0);
@@ -65,6 +65,9 @@ GUI::GUI(QWidget *parent)
 
 	//Offset
 	connect(ui.bOffset, &QCheckBox::clicked, this, &GUI::activateOffset);
+	inputParameter.setOffset(0, 0, 0, false);
+
+
 	ui.offsetX->setRange(-400, 400);
 	ui.offsetX->setSingleStep(10);
 	ui.offsetX->setValue(0);
@@ -118,12 +121,13 @@ void GUI::activateOffset(void)
 		ui.offsetZ->setValue(0);
 		inputParameter.setOffset(0, 0, 0, false);
 	}
+	inputParameter.setOffset(ui.offsetX->value(), ui.offsetY->value(), ui.offsetZ->value(),
+		ui.bOffset->isChecked());
 }
 
 void GUI::setOrientation(void)
 {
-	inputParameter.setOrientation(ui.AValue->value(), ui.BValue->value(), ui.CValue->value(),
-		ui.bManOrientation->isChecked());
+	inputParameter.setOrientation(ui.bManOrientation->isChecked(), ui.AValue->value(), ui.BValue->value(), ui.CValue->value());
 }
 
 void GUI::activateOrientation(void)
@@ -138,6 +142,7 @@ void GUI::activateOrientation(void)
 		ui.orientation->setEnabled(false);
 		ui.orientation->setStyleSheet("background-color: rgb(210,211,218); color: rgb(117,125,149)");
 	}
+	inputParameter.setOrientation(ui.bManOrientation->isChecked(), ui.AValue->value(), ui.BValue->value(), ui.CValue->value());
 }
 
 void GUI::setSpeed(void)
@@ -157,6 +162,7 @@ void GUI::activateSpeed(void)
 		ui.speed_2->setEnabled(false);
 		ui.speed_2->setStyleSheet("background-color: rgb(210,211,218); color: rgb(117,125,149)");
 	}
+	inputParameter.setSpeed(ui.speed->value(), ui.bSpeed->isChecked());
 }
 
 void GUI::setMean(void)
@@ -172,23 +178,29 @@ void GUI::setDP(void)
 
 void GUI::setInputPath(void)
 {
-	inputPathUI = QFileDialog::getOpenFileName(this);
+	inputPathUI = QFileDialog::getOpenFileName(this, "Datei mit Pfad auswaehlen", QDir::currentPath(), "csv(*.csv)");
 	ui.pathInput->setText(inputPathUI);
 }
 
 void GUI::setOutputPath(void)
 {
-	outputPathUI = QFileDialog::getExistingDirectory(this);
+	outputPathUI = QFileDialog::getExistingDirectory(this, "Ausgabepfad waehlen", QDir::currentPath());
 	ui.pathOutput->setText(outputPathUI);
 }
 
 void GUI::calculate()
 {
+	QMessageBox messageBox;
 
-	if (inputPathUI.isEmpty() || outputPathUI.isEmpty())
+	if (inputPathUI.isEmpty())
 	{
-		QMessageBox messageBox;
 		messageBox.critical(0, "Error", "Keine Datei ausgewaehlt!");
+		messageBox.setFixedSize(500, 200);
+		return;
+	}
+	if (outputPathUI.isEmpty())
+	{
+		messageBox.critical(0, "Error", "Kein Pfad ausgewaehlt!");
 		messageBox.setFixedSize(500, 200);
 		return;
 	}
@@ -199,18 +211,20 @@ void GUI::calculate()
 		string inputPath = inputPathUI.toUtf8().constData();
 		ui.textBrowser->clear();
 
-		//logging Initialisieren
-		CLogging logging(outputPath, inputParameter.getLoggingManual());
-
 		//read Data
-		inputParameter.openFile(inputPath);
+		CInputParameter input;
+		input = inputParameter;
+		input.openFile(inputPath);
 		ui.textBrowser->insertPlainText("Datei eingelesen\n");
+
+		//logging Initialisieren
+		CLogging logging(outputPath, input.getLoggingManual());
 
 		//moving Average
 
 		CMeanFilter meanFilter;
 		meanFilter.setWindowSize(meanLength);
-		meanFilter.mean(inputParameter.getPath(), logging);
+		meanFilter.mean(input.getPath(), logging);
 		ui.textBrowser->insertPlainText("Gleitender Mittelwert berechnet\n");
 
 		// Douglas-Peuker Algorithm
@@ -228,13 +242,16 @@ void GUI::calculate()
 
 		// Calculates Speed, Angle and generates the Output Data
 
-		CRobCodeGenerator codeGenerator(inputParameter);
+		CRobCodeGenerator codeGenerator(input);
 		codeGenerator.generateRobCode(pathBuilder.getPath(), outputPath, inputPath, logging);
-		ui.textBrowser->insertPlainText("Datei erstellt\n");;
+		ui.textBrowser->insertPlainText("Datei erstellt\n");
 	}
 
 	catch (exception& e)
 	{
-		cerr << e.what() << "\n";
+		messageBox.critical(0, "Error", e.what());
+		messageBox.setFixedSize(500, 200);
+		return;
 	}
+
 }

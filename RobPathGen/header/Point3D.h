@@ -3,6 +3,7 @@
  *
  * @brief Verarbeitung der Punkte
  */
+#pragma once
 
 #include "EulerMatrix.h"
 
@@ -10,10 +11,8 @@ class CLine3D;
 
 using namespace std;
 
-#pragma once
-
 /**
- * Das ist die Grundklasse eines Punktes, hier lassen sich die Basiswerte 
+ * Das ist die Grundklasse eines Punktes, hier lassen sich die Basiswerte
  * setzten und Abstaende zwishen Punkten berechnen.
  * @brief Grundklasse Punkt
  */
@@ -104,7 +103,7 @@ protected:
  * @brief Input Punkt
  */
 class CInputPoint3D : public CPoint3D
-{	
+{
 public:
 	/**
 	* Initialisiert des eingelesenen Punktes mit Null
@@ -143,7 +142,7 @@ public:
 	* @brief Setzt den Zeitstempel
 	* @param double time
 	*/
-	void setTime(double time);	
+	void setTime(double time);
 	/**
 	* @brief Setzt die Eulermatrix
 	* @param CEulerMatrix orientation

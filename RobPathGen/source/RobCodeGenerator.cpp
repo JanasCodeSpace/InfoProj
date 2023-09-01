@@ -5,10 +5,9 @@
  */
 
 #include "../header/RobCodeGenerator.h"
-#include "../header/RobCodeGenerator.h"
 #include "../header/Point3D.h"
 
-/* CRobCodeGenerator mit 0 initialiseren */
+ /* CRobCodeGenerator mit 0 initialiseren */
 CRobCodeGenerator::CRobCodeGenerator(void)
 {
 }
@@ -26,14 +25,16 @@ CRobCodeGenerator::~CRobCodeGenerator(void)
 void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string filepath, string inputPath, CLogging log)
 {
 	string filename;
-	
+
 	postProcessing(points); // Calculates all the necessary values
 
-	log.setStep(4);
-	log.logData(processedPath);
-
+	if (log.getDetailed())
+	{
+		log.setStep(4);
+		log.logData(processedPath);
+	}
 	errno_t err;
-	
+
 	FILE* fid;
 
 	filename = inputPath.substr(inputPath.find_last_of("/\\") + 1);
@@ -43,7 +44,7 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 	string fullPath = filepath + "/" + filename;
 
 	if ((err = fopen_s(&fid, fullPath.c_str(), "w")) != 0) // Errorhandling for File opening
-	{ 
+	{
 		string msg = "Open file: ";
 		msg += filename;
 		msg += " failed!";
@@ -51,7 +52,7 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 		throw exception(msg.c_str());
 	}
 
-	filename.erase(filename.end()-4,filename.end());		// loescht .src
+	filename.erase(filename.end() - 4, filename.end());		// loescht .src
 	fprintf(fid, "DEF %s \n", filename.c_str());			// DEF in file schreiben
 
 	fputs("PTP $POS_ACT\n", fid);							// PTP zur aktuellen Position in file schreiben
@@ -73,6 +74,7 @@ void CRobCodeGenerator::generateRobCode(vector<CInputPoint3D>& points, string fi
 	}
 
 	fputs("END", fid);
+	fclose(fid);
 }
 
 void CRobCodeGenerator::postProcessing(vector<CInputPoint3D>& path)

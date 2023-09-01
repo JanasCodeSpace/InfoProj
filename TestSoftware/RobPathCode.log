@@ -1,5 +1,14 @@
-﻿  Logging.cpp
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\source\Logging.cpp(123,16): warning C4473: "fprintf": nicht genügend Argumente für Formatzeichenfolge übergeben
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\source\Logging.cpp(123,16): message : Platzhalter und deren Parameter erwarten 13 variadic-Argumente, es wurden aber 7 variadic-Argumente bereitgestellt.
-C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\source\Logging.cpp(123,16): message : Das fehlende variadic-Argument "8" ist für die Zeichenfolge "%f" erforderlich.
+﻿  moc header\GUI.h
+  EulerMatrix.cpp
+  GUI.cpp
+  InputParameter.cpp
+  Line3D.cpp
+  Logging.cpp
+  MeanFilter.cpp
+  PathBuilder.cpp
+  Point3D.cpp
+  RobCodeGenerator.cpp
+  RobPathEditor.cpp
+  SegmentApproximator.cpp
+  moc_GUI.cpp
   RobPathCode.vcxproj -> C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\x64\Release\RobPathCode.exe

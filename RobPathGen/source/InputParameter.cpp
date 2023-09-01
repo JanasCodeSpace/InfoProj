@@ -1,6 +1,6 @@
 /**
  * @file InputParameter.cpp
- * 
+ *
  * @brief Source File Daten Einlesen
  */
 
@@ -8,15 +8,20 @@
 #include "../header/Point3D.h"
 #include "../header/EulerMatrix.h"
 
-/* CInputParamameter mir Uebergabewerten initialisieren */ 
+ /* CInputParamameter mir Uebergabewerten initialisieren */
 CInputParameter::CInputParameter(double initSpeed, bool initSpeedManual, bool initOrientationManual, double initA, double initB, double initC)
 {
 	speed = initSpeed;
 	speedManual = initSpeedManual;
 	orientationManual = initOrientationManual;
+	loggingManual = true;
+	offsetManual = false;
 	A = initA;
 	B = initB;
 	C = initC;
+	offsetX = 0;
+	offsetY = 0;
+	offsetZ = 0;
 
 }
 
@@ -28,7 +33,12 @@ CInputParameter::CInputParameter(void)
 	B = 75;
 	C = 0;
 	speedManual = false,
-	orientationManual = false;
+		orientationManual = false;
+	loggingManual = true;
+	offsetManual = false;
+	offsetX = 0;
+	offsetY = 0;
+	offsetZ = 0;
 
 }
 
@@ -107,7 +117,7 @@ tuple <double, double, double> CInputParameter::getOffset(void)
 }
 
 
-/* Eingabedatei oeffnen */ 
+/* Eingabedatei oeffnen */
 void CInputParameter::openFile(string path)
 {
 	ifstream fin(path);
@@ -117,7 +127,7 @@ void CInputParameter::openFile(string path)
 	double x_prev = 0, y_prev = 0, z_prev = 0;		// Zwischenspeicher fuer Punktkoordinaten
 	double timestamp;			// Zeitstempel
 	int segmentCount = -1;		// Segmentzaehler
-	float dummyMatrix[3][3];	// DummyMatrix zum speichern
+	float dummyMatrix[3][3] = {};	// DummyMatrix zum speichern
 
 
 	if (!fin.is_open())
@@ -126,9 +136,9 @@ void CInputParameter::openFile(string path)
 	}
 	string line;
 
-	while(getline(fin, line))
+	while (getline(fin, line))
 	{
-		std::istringstream sStream (line);
+		std::istringstream sStream(line);
 		sStream >> timestamp >> x >> y >> z >> dummyMatrix[0][0] >> dummyMatrix[0][1] >> dummyMatrix[0][2]										// Zeile in die einzelnen Parameter zerlegen 
 			>> dummyMatrix[1][0] >> dummyMatrix[1][1] >> dummyMatrix[1][2] >> dummyMatrix[2][0] >> dummyMatrix[2][1] >> dummyMatrix[2][2];		// und in DummyMatrix bzw. Variablen abspeichern
 
@@ -152,11 +162,11 @@ void CInputParameter::openFile(string path)
 
 bool CInputParameter::detectJump(CInputPoint3D p, double x_prev, double  y_prev, double z_prev)
 {
-	if(abs(p.getX() - x_prev) > difference)				// Abstand zwischen Punkten groesser max Differenz??
+	if (abs(p.getX() - x_prev) > difference)				// Abstand zwischen Punkten groesser max Differenz??
 		return true;
-	else if(abs(p.getY() - y_prev) > difference)		// Abstand zwischen Punkten groesser max Differenz??
+	else if (abs(p.getY() - y_prev) > difference)		// Abstand zwischen Punkten groesser max Differenz??
 		return true;
-	else if(abs(p.getZ() - z_prev) > difference)			// Abstand zwischen Punkten groesser max Differenz??
+	else if (abs(p.getZ() - z_prev) > difference)			// Abstand zwischen Punkten groesser max Differenz??
 		return true;
 	else
 		return false;

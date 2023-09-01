@@ -1,8 +1,9 @@
 /**
  * @file InputParameter.h
- * 
+ *
  * @brief Header File Daten Einlesen
  */
+#pragma once
 
 #include "EulerMatrix.h"
 #include "Point3D.h"
@@ -15,8 +16,6 @@
 #include <tuple>
 
 using namespace std;
-
-#pragma once
 
 /**
  * In dieser Klasse werden die eingelesenen einstellbaren Daten und das einlesen der Daten aus der Eingabedatei gehandelt.

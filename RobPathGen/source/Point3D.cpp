@@ -9,7 +9,7 @@
 #include <math.h>
 
 
-/* initialisieren des Punktes mit 0-Werten */
+ /* initialisieren des Punktes mit 0-Werten */
 CPoint3D::CPoint3D(void)
 {
 	x = 0;
@@ -65,7 +65,7 @@ void CPoint3D::set(double X, double Y, double Z)
 	x = X;	// X-Koordinate setzen
 	y = Y;	// Y-Koordinate setzen
 	z = Z;	// Z-Koordinate setzen
-}	
+}
 
 /* Distanz zwischen Punkt und uebergebenen Punkt berechnen */
 double CPoint3D::distanceTo(CPoint3D point)

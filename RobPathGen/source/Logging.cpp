@@ -6,10 +6,11 @@
 
 #include "../header/Logging.h"
 
-/* Step mit 0 initialisiren */
+ /* Step mit 0 initialisiren */
 CLogging::CLogging(void)
 {
 	step = 0;
+	detailed = true;
 }
 
 /* Path mit Parameter initialisieren*/
@@ -54,12 +55,12 @@ void CLogging::logData(vector<list<CInputPoint3D>>& sourcePath)
 	{
 		list<CInputPoint3D>::iterator itr = sourcePath[s].begin();
 
-		tmpEuler = itr->getEulerMatrix();
-		tmpEuler.getMatrix(dummyMatrix);
-
 		/* Ausgeben der Punkte mit dummyMatrix */
 		for (; itr != sourcePath[s].end(); itr++) //for all points in the segment
 		{
+			tmpEuler = itr->getEulerMatrix();
+			tmpEuler.getMatrix(dummyMatrix);
+
 			fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)itr->getTime(), (double)itr->getX(), (double)itr->getY(), (double)itr->getZ(),
 				dummyMatrix[0][0], dummyMatrix[0][1], dummyMatrix[0][2],
 				dummyMatrix[1][0], dummyMatrix[1][1], dummyMatrix[1][2],
@@ -68,6 +69,7 @@ void CLogging::logData(vector<list<CInputPoint3D>>& sourcePath)
 
 		itr--;
 	}
+	fclose(fid);
 }
 
 void CLogging::logData(vector<CInputPoint3D>& sourcePath)
@@ -89,14 +91,16 @@ void CLogging::logData(vector<CInputPoint3D>& sourcePath)
 	/* Ausgeben der Punkte mit dummyMatrix */
 	for (size_t s = 0; s < sourcePath.size(); s++) //for all points in the vector
 	{
+		tmpEuler = sourcePath[s].getEulerMatrix();
 		tmpEuler.getMatrix(dummyMatrix);
 
-		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)sourcePath[s].getTime(), 
+		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)sourcePath[s].getTime(),
 			(double)sourcePath[s].getX(), (double)sourcePath[s].getY(), (double)sourcePath[s].getZ(),
 			dummyMatrix[0][0], dummyMatrix[0][1], dummyMatrix[0][2],
 			dummyMatrix[1][0], dummyMatrix[1][1], dummyMatrix[1][2],
 			dummyMatrix[2][0], dummyMatrix[2][1], dummyMatrix[2][2]);
 	}
+	fclose(fid);
 }
 
 void CLogging::logData(vector<COutputPoint3D>& sourcePath)
@@ -120,8 +124,9 @@ void CLogging::logData(vector<COutputPoint3D>& sourcePath)
 	{
 		tmpEuler.getMatrix(dummyMatrix);
 
-		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)sourcePath[s].getSpeed(),
+		fprintf(fid, "%f %f %f %f %f %f %f\n", (double)sourcePath[s].getSpeed(),
 			(double)sourcePath[s].getX(), (double)sourcePath[s].getY(), (double)sourcePath[s].getZ(),
 			(double)sourcePath[s].getA(), (double)sourcePath[s].getB(), (double)sourcePath[s].getC());
 	}
+	fclose(fid);
 }

@@ -3,13 +3,12 @@
  *
  * @brief Header File Daten Einlesen
  */
+#pragma once
 
 #include "Point3D.h"
 #include <math.h>
 
 using namespace std;
-
-#pragma once
 
 /**
  * In dieser Klasse werden alle Berechnungen die zwischen zwei Punken passieren gehandhabt.

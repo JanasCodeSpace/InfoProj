@@ -365,9 +365,9 @@ border: 0px</string>
     <widget class="QSpinBox" name="meanLength">
      <property name="geometry">
       <rect>
-       <x>200</x>
+       <x>210</x>
        <y>48</y>
-       <width>116</width>
+       <width>106</width>
        <height>20</height>
       </rect>
      </property>
@@ -406,7 +406,7 @@ border: 0px</string>
       <rect>
        <x>14</x>
        <y>48</y>
-       <width>180</width>
+       <width>191</width>
        <height>16</height>
       </rect>
      </property>
@@ -422,15 +422,15 @@ border: 0px</string>
 border: 0px</string>
      </property>
      <property name="text">
-      <string>Filterlaenge gleitender Mittelwert</string>
+      <string>Filterlänge gleitender Mittelwert</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="dpToleranz">
      <property name="geometry">
       <rect>
-       <x>200</x>
+       <x>210</x>
        <y>22</y>
-       <width>116</width>
+       <width>106</width>
        <height>20</height>
       </rect>
      </property>
@@ -660,7 +660,7 @@ background-color: rgb(117, 125, 149);
 color: rgb(3, 8, 14);</string>
     </property>
     <property name="text">
-     <string>Datei waehlen</string>
+     <string>Datei wählen</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushOutput">
@@ -686,7 +686,7 @@ background-color: rgb(117, 125, 149);
 color: rgb(3, 8, 14);</string>
     </property>
     <property name="text">
-     <string>Pfad waehlen</string>
+     <string>Pfad wählen</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">

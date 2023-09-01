@@ -83,7 +83,7 @@ list<CInputPoint3D> CMeanFilter::calculateMean(list<CInputPoint3D>& segment)
 			it--;
 		}
 		p.set(sumX / div, sumY / div, sumZ / div); // Calculate smoothed values
-		if(it != segment.end())
+		if (it != segment.end())
 			it++;
 		newSegment.push_back(p);
 	}

@@ -36,7 +36,7 @@
   \item {activateLogging}
     \subitem {GUI}, \hyperpage{78}
   \item {activateOffset}
-    \subitem {GUI}, \hyperpage{78}
+    \subitem {GUI}, \hyperpage{79}
   \item {activateOrientation}
     \subitem {GUI}, \hyperpage{79}
   \item {activateSpeed}
@@ -209,7 +209,7 @@
     \subitem {calculateSpeed}, \hyperpage{68}
     \subitem {CRobCodeGenerator}, \hyperpage{66}
     \subitem {generateRobCode}, \hyperpage{68}
-    \subitem {input}, \hyperpage{70}
+    \subitem {input}, \hyperpage{71}
     \subitem {postProcessing}, \hyperpage{70}
     \subitem {processedPath}, \hyperpage{71}
   \item {CSegmentApproximator}, \hyperpage{71}
@@ -308,7 +308,7 @@
   \item {GUI}, \hyperpage{76}
     \subitem {\texorpdfstring{$\sim$}{\string~}GUI}, \hyperpage{78}
     \subitem {activateLogging}, \hyperpage{78}
-    \subitem {activateOffset}, \hyperpage{78}
+    \subitem {activateOffset}, \hyperpage{79}
     \subitem {activateOrientation}, \hyperpage{79}
     \subitem {activateSpeed}, \hyperpage{79}
     \subitem {calculate}, \hyperpage{80}
@@ -345,7 +345,7 @@
   \item {initialPath}
     \subitem {CInputParameter}, \hyperpage{29}
   \item {input}
-    \subitem {CRobCodeGenerator}, \hyperpage{70}
+    \subitem {CRobCodeGenerator}, \hyperpage{71}
   \item {inputParameter}
     \subitem {GUI}, \hyperpage{83}
   \item {inputPathUI}
@@ -379,7 +379,7 @@
   \indexspace
 
   \item {main}
-    \subitem {RobPathEditor.cpp}, \hyperpage{133}
+    \subitem {RobPathEditor.cpp}, \hyperpage{134}
   \item {MAX\_SPEED}
     \subitem {RobCodeGenerator.h}, \hyperpage{114}
   \item {maxDistance}
@@ -392,11 +392,11 @@
   \item {meanPath}
     \subitem {CMeanFilter}, \hyperpage{48}
   \item {moc\_GUI.cpp}
-    \subitem {Q\_CONSTINIT}, \hyperpage{136}, \hyperpage{139}
-    \subitem {QT\_MOC\_LITERAL}, \hyperpage{136}, \hyperpage{139}
+    \subitem {Q\_CONSTINIT}, \hyperpage{136}, \hyperpage{140}
+    \subitem {QT\_MOC\_LITERAL}, \hyperpage{136}, \hyperpage{140}
   \item {moc\_switch.cpp}
-    \subitem {Q\_CONSTINIT}, \hyperpage{143}, \hyperpage{146}
-    \subitem {QT\_MOC\_LITERAL}, \hyperpage{143}, \hyperpage{146}
+    \subitem {Q\_CONSTINIT}, \hyperpage{144}
+    \subitem {QT\_MOC\_LITERAL}, \hyperpage{144}
 
   \indexspace
 
@@ -454,26 +454,26 @@
   \indexspace
 
   \item {Q\_CONSTINIT}
-    \subitem {moc\_GUI.cpp}, \hyperpage{136}, \hyperpage{139}
-    \subitem {moc\_switch.cpp}, \hyperpage{143}, \hyperpage{146}
+    \subitem {moc\_GUI.cpp}, \hyperpage{136}, \hyperpage{140}
+    \subitem {moc\_switch.cpp}, \hyperpage{144}
   \item {qCleanupResources\_GUI}
-    \subitem {qrc\_GUI.cpp}, \hyperpage{149}, \hyperpage{151}
+    \subitem {qrc\_GUI.cpp}, \hyperpage{147}, \hyperpage{149}
   \item {qInitResources\_GUI}
-    \subitem {qrc\_GUI.cpp}, \hyperpage{149}, \hyperpage{151}
+    \subitem {qrc\_GUI.cpp}, \hyperpage{147}, \hyperpage{149}
   \item {qrc\_GUI.cpp}
-    \subitem {qCleanupResources\_GUI}, \hyperpage{149}, \hyperpage{151}
-    \subitem {qInitResources\_GUI}, \hyperpage{149}, \hyperpage{151}
-    \subitem {QT\_RCC\_MANGLE\_NAMESPACE}, \hyperpage{149}, 
-		\hyperpage{151}
-    \subitem {QT\_RCC\_PREPEND\_NAMESPACE}, \hyperpage{149}, 
-		\hyperpage{151}
+    \subitem {qCleanupResources\_GUI}, \hyperpage{147}, \hyperpage{149}
+    \subitem {qInitResources\_GUI}, \hyperpage{147}, \hyperpage{149}
+    \subitem {QT\_RCC\_MANGLE\_NAMESPACE}, \hyperpage{147}, 
+		\hyperpage{149}
+    \subitem {QT\_RCC\_PREPEND\_NAMESPACE}, \hyperpage{147}, 
+		\hyperpage{149}
   \item {QT\_MOC\_LITERAL}
-    \subitem {moc\_GUI.cpp}, \hyperpage{136}, \hyperpage{139}
-    \subitem {moc\_switch.cpp}, \hyperpage{143}, \hyperpage{146}
+    \subitem {moc\_GUI.cpp}, \hyperpage{136}, \hyperpage{140}
+    \subitem {moc\_switch.cpp}, \hyperpage{144}
   \item {QT\_RCC\_MANGLE\_NAMESPACE}
-    \subitem {qrc\_GUI.cpp}, \hyperpage{149}, \hyperpage{151}
+    \subitem {qrc\_GUI.cpp}, \hyperpage{147}, \hyperpage{149}
   \item {QT\_RCC\_PREPEND\_NAMESPACE}
-    \subitem {qrc\_GUI.cpp}, \hyperpage{149}, \hyperpage{151}
+    \subitem {qrc\_GUI.cpp}, \hyperpage{147}, \hyperpage{149}
   \item {QT\_WARNING\_DISABLE\_DEPRECATED}, \hyperpage{11}
   \item {QT\_WARNING\_DISABLE\_DEPRECATED::qt\_meta\_stringdata\_CLASSGUIENDCLASS\_t}, 
 		\hyperpage{86}
@@ -506,7 +506,7 @@
   \item {RobCodeGenerator.h}
     \subitem {MAX\_SPEED}, \hyperpage{114}
   \item {RobPathEditor.cpp}
-    \subitem {main}, \hyperpage{133}
+    \subitem {main}, \hyperpage{134}
 
   \indexspace
 
@@ -564,15 +564,15 @@
     \subitem {CPoint3D}, \hyperpage{63}
   \item {source/EulerMatrix.cpp}, \hyperpage{116}
   \item {source/GUI.cpp}, \hyperpage{117, 118}
-  \item {source/InputParameter.cpp}, \hyperpage{120, 121}
-  \item {source/Line3D.cpp}, \hyperpage{123}
-  \item {source/Logging.cpp}, \hyperpage{123, 124}
-  \item {source/MeanFilter.cpp}, \hyperpage{125, 126}
-  \item {source/PathBuilder.cpp}, \hyperpage{127}
-  \item {source/Point3D.cpp}, \hyperpage{128}
-  \item {source/RobCodeGenerator.cpp}, \hyperpage{131}
-  \item {source/RobPathEditor.cpp}, \hyperpage{133}
-  \item {source/SegmentApproximator.cpp}, \hyperpage{134}
+  \item {source/InputParameter.cpp}, \hyperpage{121}
+  \item {source/Line3D.cpp}, \hyperpage{123, 124}
+  \item {source/Logging.cpp}, \hyperpage{124}
+  \item {source/MeanFilter.cpp}, \hyperpage{126}
+  \item {source/PathBuilder.cpp}, \hyperpage{127, 128}
+  \item {source/Point3D.cpp}, \hyperpage{128, 129}
+  \item {source/RobCodeGenerator.cpp}, \hyperpage{131, 132}
+  \item {source/RobPathEditor.cpp}, \hyperpage{133, 134}
+  \item {source/SegmentApproximator.cpp}, \hyperpage{134, 135}
   \item {speed}
     \subitem {CInputParameter}, \hyperpage{30}
     \subitem {COutputPoint3D}, \hyperpage{54}
@@ -693,14 +693,13 @@
 
   \item {x}
     \subitem {CPoint3D}, \hyperpage{65}
-  \item {x64/Debug/moc/moc\_GUI.cpp}, \hyperpage{135, 136}
-  \item {x64/Debug/moc/moc\_switch.cpp}, \hyperpage{143, 144}
-  \item {x64/Debug/rcc/qrc\_GUI.cpp}, \hyperpage{149, 150}
-  \item {x64/Debug/uic/ui\_GUI.h}, \hyperpage{152, 153}
-  \item {x64/Release/moc/moc\_GUI.cpp}, \hyperpage{139, 140}
-  \item {x64/Release/moc/moc\_switch.cpp}, \hyperpage{146, 147}
-  \item {x64/Release/rcc/qrc\_GUI.cpp}, \hyperpage{150, 151}
-  \item {x64/Release/uic/ui\_GUI.h}, \hyperpage{157}
+  \item {x64/Debug/moc/moc\_GUI.cpp}, \hyperpage{136, 137}
+  \item {x64/Debug/moc/moc\_switch.cpp}, \hyperpage{144, 145}
+  \item {x64/Debug/rcc/qrc\_GUI.cpp}, \hyperpage{147, 148}
+  \item {x64/Debug/uic/ui\_GUI.h}, \hyperpage{150, 151}
+  \item {x64/Release/moc/moc\_GUI.cpp}, \hyperpage{140, 141}
+  \item {x64/Release/rcc/qrc\_GUI.cpp}, \hyperpage{148, 149}
+  \item {x64/Release/uic/ui\_GUI.h}, \hyperpage{155}
 
   \indexspace
 
