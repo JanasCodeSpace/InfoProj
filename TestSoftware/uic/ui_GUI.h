@@ -195,7 +195,7 @@ public:
 "border-radius: 6px;"));
         label_dp = new QLabel(frame);
         label_dp->setObjectName("label_dp");
-        label_dp->setGeometry(QRect(14, 22, 144, 16));
+        label_dp->setGeometry(QRect(14, 22, 161, 16));
         label_dp->setFont(font1);
         label_dp->setStyleSheet(QString::fromUtf8("color: rgb(3, 8, 14);\n"
 "border: 0px"));
