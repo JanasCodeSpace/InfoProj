@@ -1,4 +1,1 @@
-﻿  GUI.cpp
-  RobPathEditor.cpp
-  moc_GUI.cpp
-LINK : fatal error LNK1104: Datei "C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\x64\Release\RobPathCode.exe" kann nicht geöffnet werden.
+﻿  RobPathCode.vcxproj -> C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\x64\Release\RobPathCode.exe
