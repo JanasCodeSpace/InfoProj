@@ -398,7 +398,7 @@ border-radius: 6px;</string>
 border: 0px</string>
      </property>
      <property name="text">
-      <string>Douglas-Peuker-Toleranz</string>
+      <string>Douglas-Peucker-Toleranz</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">

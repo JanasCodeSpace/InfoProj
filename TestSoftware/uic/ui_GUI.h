@@ -337,7 +337,7 @@ public:
         label_11->setText(QCoreApplication::translate("GUIClass", "B", nullptr));
         label_12->setText(QCoreApplication::translate("GUIClass", "C", nullptr));
         bManOrientation->setText(QCoreApplication::translate("GUIClass", "Manuelle Ausrichtung", nullptr));
-        label_dp->setText(QCoreApplication::translate("GUIClass", "Douglas-Peuker-Toleranz", nullptr));
+        label_dp->setText(QCoreApplication::translate("GUIClass", "Douglas-Peucker-Toleranz", nullptr));
         label_4->setText(QCoreApplication::translate("GUIClass", "Filterl\303\244nge gleitender Mittelwert", nullptr));
         dpToleranz->setSpecialValueText(QString());
         dpToleranz->setSuffix(QString());
