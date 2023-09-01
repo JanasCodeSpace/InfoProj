@@ -3,6 +3,7 @@
  *
  * @brief Erstellung des Roboter Codes
  */
+#pragma once
 
 #include <vector>
 #include <iostream>
@@ -13,13 +14,11 @@
 
 using namespace std;
 
-#pragma once
-
 #define MAX_SPEED 2.0
 
 /**
  * In dieser Klasse wird die Nachbearbeitung der Daten mit den einstellbaren Daten durchgefuehrt.
- * 
+ *
  * @brief Klasse zum erstellen des Roboter Codes
  */
 class CRobCodeGenerator

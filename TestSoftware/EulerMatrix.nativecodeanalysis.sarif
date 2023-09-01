@@ -1,0 +1,73 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetischer Überlauf: Wenn Sie den Operator \"*\" für einen 4-Bytewert verwenden und das Ergebnis in einen 8-Bytewert umwandeln, wandeln Sie den Wert in den breiteren Typ um, bevor Sie den Operator \"*\" verwenden, um einen Überlauf zu vermeiden (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/RobPathGen/source/EulerMatrix.cpp"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 13,
+                  "endLine": 110,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CEulerMatrix::calculateAngels",
+                  "decoratedName": "?calculateAngels@CEulerMatrix@@QEAA?AV?$tuple@NNN@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.36.32532.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/anche/Documents/Studium/InfoProjekt/Projekt/InfoProj/RobPathGen/source/EulerMatrix.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "c266571c1f3740b9a553aeb1d4fa0790363c28aa8748d27dfae35962de1c2090"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/anche/documents/studium/infoprojekt/projekt/infoproj/robpathgen/header/eulermatrix.h"
+          },
+          "hashes": {
+            "sha-256": "b69f83784f7e2790fb476a80a7efbc1ac342de1848857265b7f091231443f445"
+          }
+        }
+      ]
+    }
+  ]
+}

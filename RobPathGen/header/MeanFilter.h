@@ -3,14 +3,13 @@
  *
  * @brief Berechnung des gleitenden Mittelwertfilters
  */
+#pragma once
 
 #include <vector>
 #include <list>
 #include <string>
 #include "Point3D.h"
 #include "Logging.h"
-
-#pragma once
 
 using namespace std;
 

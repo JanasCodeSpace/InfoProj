@@ -10,6 +10,7 @@
 
 CSegmentApproximator::CSegmentApproximator(void)
 {
+	maxDistance = 3;
 }
 
 CSegmentApproximator::~CSegmentApproximator(void)

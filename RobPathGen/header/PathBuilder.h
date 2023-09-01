@@ -3,6 +3,7 @@
  *
  * @brief Setzt die einzelnen Segmente zu einem Vector zusammen
  */
+#pragma once
 
 #include <vector>
 #include <list>
@@ -11,8 +12,6 @@
 #include "Logging.h"
 
 using namespace std;
-
-#pragma once
 
 /**
  * In dieser Klasse wird aus den Segmenten ein zusammenhaengender Pfad erstellt

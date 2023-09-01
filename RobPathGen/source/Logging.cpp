@@ -6,10 +6,11 @@
 
 #include "../header/Logging.h"
 
-/* Step mit 0 initialisiren */
+ /* Step mit 0 initialisiren */
 CLogging::CLogging(void)
 {
 	step = 0;
+	detailed = true;
 }
 
 /* Path mit Parameter initialisieren*/
@@ -93,7 +94,7 @@ void CLogging::logData(vector<CInputPoint3D>& sourcePath)
 		tmpEuler = sourcePath[s].getEulerMatrix();
 		tmpEuler.getMatrix(dummyMatrix);
 
-		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)sourcePath[s].getTime(), 
+		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)sourcePath[s].getTime(),
 			(double)sourcePath[s].getX(), (double)sourcePath[s].getY(), (double)sourcePath[s].getZ(),
 			dummyMatrix[0][0], dummyMatrix[0][1], dummyMatrix[0][2],
 			dummyMatrix[1][0], dummyMatrix[1][1], dummyMatrix[1][2],
@@ -123,7 +124,7 @@ void CLogging::logData(vector<COutputPoint3D>& sourcePath)
 	{
 		tmpEuler.getMatrix(dummyMatrix);
 
-		fprintf(fid, "%f %f %f %f %f %f %f %f %f %f %f %f %f\n", (double)sourcePath[s].getSpeed(),
+		fprintf(fid, "%f %f %f %f %f %f %f\n", (double)sourcePath[s].getSpeed(),
 			(double)sourcePath[s].getX(), (double)sourcePath[s].getY(), (double)sourcePath[s].getZ(),
 			(double)sourcePath[s].getA(), (double)sourcePath[s].getB(), (double)sourcePath[s].getC());
 	}

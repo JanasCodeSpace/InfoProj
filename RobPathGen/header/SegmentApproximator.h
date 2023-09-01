@@ -3,6 +3,7 @@
  *
  * @brief Berechnung des Douglas Peuker Algorithmusses
  */
+#pragma once
 
 #include <vector>
 #include <list>
@@ -12,8 +13,6 @@
 #include "Logging.h"
 
 using namespace std;
-
-#pragma once
 
 /**
  * In dieser Klasse wird der Pfad mit hilfe des Douglas-Peuker Algorithmusses ausgeduennt

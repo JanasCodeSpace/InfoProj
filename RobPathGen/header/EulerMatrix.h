@@ -6,9 +6,6 @@
 #pragma once
 
 #include <tuple>
-#include <cmath>
-
-#define _USE_MATH_DEFINES
 
 using namespace std;
 
@@ -62,11 +59,11 @@ public:
 	*/
 	CEulerMatrix angels2mat(double A, double B, double C);
 
-/**
-	* @brief Berechnet die Kuka Wunkel A,B,C
-	* @return: tuple<double , double , double> gibt die berechneten Winkel A, B, C zurueck
-	*/
-	tuple<double , double , double> calculateAngels(void);
+	/**
+		* @brief Berechnet die Kuka Wunkel A,B,C
+		* @return: tuple<double , double , double> gibt die berechneten Winkel A, B, C zurueck
+		*/
+	tuple<double, double, double> calculateAngels(void);
 
 private:
 	/**

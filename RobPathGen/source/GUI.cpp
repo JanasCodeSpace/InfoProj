@@ -6,16 +6,10 @@
 
 #include "../header/GUI.h"
 
-#include "../header/SegmentApproximator.h"
-#include "../header/PathBuilder.h"
-#include "../header/RobCodeGenerator.h"
-#include "../header/MeanFilter.h"
-#include "../header/Logging.h"
-
-GUI::GUI(QWidget *parent)
-    : QMainWindow(parent)
+GUI::GUI(QWidget* parent)
+	: QMainWindow(parent)
 {
-    ui.setupUi(this);
+	ui.setupUi(this);
 
 	//Dateioperationen und Anzeige
 	inputPathUI = "";
@@ -128,7 +122,7 @@ void GUI::activateOffset(void)
 		inputParameter.setOffset(0, 0, 0, false);
 	}
 	inputParameter.setOffset(ui.offsetX->value(), ui.offsetY->value(), ui.offsetZ->value(),
-			ui.bOffset->isChecked());
+		ui.bOffset->isChecked());
 }
 
 void GUI::setOrientation(void)

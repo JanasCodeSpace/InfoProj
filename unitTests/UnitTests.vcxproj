@@ -183,11 +183,6 @@
   <ItemGroup>
     <ClInclude Include="pch.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RobPathEditorGUI\RobPathEditorGUI.vcxproj">
-      <Project>{26c8e7c5-b16c-4b00-be5d-6ee7f2f870bc}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
