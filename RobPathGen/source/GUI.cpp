@@ -46,7 +46,6 @@ GUI::GUI(QWidget* parent)
 	//Ausrichtung
 	connect(ui.bManOrientation, &QCheckBox::clicked, this, &GUI::activateOrientation);
 
-
 	inputParameter.setOrientation(false, 0, 0, 0);
 	ui.AValue->setRange(-180, 180);
 	ui.AValue->setSingleStep(5);
@@ -66,7 +65,6 @@ GUI::GUI(QWidget* parent)
 	//Offset
 	connect(ui.bOffset, &QCheckBox::clicked, this, &GUI::activateOffset);
 	inputParameter.setOffset(0, 0, 0, false);
-
 
 	ui.offsetX->setRange(-400, 400);
 	ui.offsetX->setSingleStep(10);
