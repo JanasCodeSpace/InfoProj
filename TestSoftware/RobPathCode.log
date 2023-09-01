@@ -1,14 +1,4 @@
-﻿  moc header\GUI.h
-  EulerMatrix.cpp
-  GUI.cpp
-  InputParameter.cpp
-  Line3D.cpp
-  Logging.cpp
-  MeanFilter.cpp
-  PathBuilder.cpp
-  Point3D.cpp
-  RobCodeGenerator.cpp
+﻿  GUI.cpp
   RobPathEditor.cpp
-  SegmentApproximator.cpp
   moc_GUI.cpp
   RobPathCode.vcxproj -> C:\Users\anche\Documents\Studium\InfoProjekt\Projekt\InfoProj\RobPathGen\x64\Release\RobPathCode.exe

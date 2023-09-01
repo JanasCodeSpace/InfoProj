@@ -70,7 +70,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(GUIClass->sizePolicy().hasHeightForWidth());
         GUIClass->setSizePolicy(sizePolicy);
-        GUIClass->setMinimumSize(QSize(355, 530));
+        GUIClass->setMinimumSize(QSize(355, 700));
         GUIClass->setMaximumSize(QSize(355, 700));
         QFont font;
         font.setFamilies({QString::fromUtf8("Rubik")});
